@@ -1,6 +1,9 @@
 <template>
-  <div class="layout">
+  <div class="antialiased text-gray-900">  
+    <div class="bg-red-700">
+     
     <NavBar/>
+    </div>
     <slot/>
   </div>
 </template>
@@ -23,3 +26,12 @@ export default {
   
 }
 </script>
+
+
+<style >
+  body {
+    background: #c8c8c8;
+    background: #335;
+    background: #00336a;
+  }
+</style>
