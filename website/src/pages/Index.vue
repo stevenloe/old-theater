@@ -29,7 +29,7 @@ export default {
           description: "A book on philosphy about the origins of man",
           imageUrl: "/img/poster/scrooged.png",
           imageAlt: "image alt text",
-          formattedPrice: "1.99",
+          formattedPrice: "Donation",
         },
         {
           title: "Goldfinger",
@@ -46,7 +46,7 @@ export default {
           title: "Nunsense",
           date: "February 11, 2020",
           time: "7:00 PM",
-          category: "theater",
+          category: "Theater",
           location: "The Old Theater",
           description: "Sci-Fi Futuristic book about mind reading",
           imageUrl: "/img/poster/nunsense.png",

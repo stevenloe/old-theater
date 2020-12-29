@@ -14,8 +14,8 @@
         </div>
         <h4 class="mt-1 font-semibold text-lg leading-tight truncate">{{ item.title }}</h4>
         <div class="mt-1">
-          {{ item.formattedPrice }}
-          <span class="text-gray-600 text-sm"> / wk</span>
+          ${{ item.formattedPrice }}
+          <span class="text-gray-600 text-sm"></span>
         </div>
         <!-- <div class="mt-2 flex items-center">
           <svg v-for="i in 5" :key="i" viewBox="0 0 24 24" :class="i <= item.rating ? 'text-teal-500' : 'text-gray-400'" class="h-4 w-4 fill-current">
