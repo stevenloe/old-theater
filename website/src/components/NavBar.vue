@@ -18,11 +18,16 @@
     <div>
       <nav :class="isOpen ? 'block' : 'hidden'" class="px-4 pt-2 pb-4 md:flex md:p-0">
         <a href="#" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Shows</a>
-        <a href="#" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Community</a>
+        <a href="#" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Community &amp; Education</a>
         <a href="#" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Get Involved</a>
         <a href="#" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Support</a>
-        <a href="#" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Calendar</a>
         <a href="#" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">About</a>
+        <a href="#" class="text-gray-700">
+          <svg class="h-6 w-6 ml-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"  width="48" height="48" fill="currentColor"><g><path d="M17 3h-1v2h-3V3H7v2H4V3H3c-1.101 0-2 .9-2 2v12c0 1.1.899 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V9h14v8zM6.5 1h-2v3.5h2V1zm9 0h-2v3.5h2V1z"/></g></svg>
+        </a>
+        <a href="#" class="text-gray-700">
+          <svg class="h-6 w-6 ml-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"  width="48" height="48" fill="currentColor"><g><path d="M17.545 15.467l-3.779-3.779a6.15 6.15 0 0 0 .898-3.21c0-3.417-2.961-6.377-6.378-6.377A6.185 6.185 0 0 0 2.1 8.287c0 3.416 2.961 6.377 6.377 6.377a6.15 6.15 0 0 0 3.115-.844l3.799 3.801a.953.953 0 0 0 1.346 0l.943-.943c.371-.371.236-.84-.135-1.211zM4.004 8.287a4.282 4.282 0 0 1 4.282-4.283c2.366 0 4.474 2.107 4.474 4.474a4.284 4.284 0 0 1-4.283 4.283c-2.366-.001-4.473-2.109-4.473-4.474z"/></g></svg>
+        </a>
       </nav>
 
       <div :class="isOpen ? 'block' : 'hidden'"  class="ml-4 md:hidden">
