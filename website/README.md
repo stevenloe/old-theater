@@ -10,8 +10,8 @@ A jamstack site for The Old Theater, Oriental NC
 
 
 ## Technologies
-* Gridsome 0.7.23
-* Tailwindcss 2.0.2
+* Gridsome 0.7.15
+* Tailwindcss 1.4.6
 
 	
 ## Setup
