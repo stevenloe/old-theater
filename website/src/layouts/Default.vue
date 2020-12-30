@@ -1,10 +1,10 @@
 <template>
   <div class="antialiased text-gray-900">  
-    <div class="bg-red-700">
      
     <NavBar/>
-    </div>
+   
     <slot/>
+    <Footer/>
   </div>
 </template>
 
@@ -18,10 +18,12 @@ query {
 
 <script>
 import NavBar from '@/components/NavBar'
+import Footer from '@/components/Footer'
 
 export default {
   components: {
-    NavBar
+    NavBar,
+    Footer
   }
   
 }

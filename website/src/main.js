@@ -8,4 +8,7 @@ require('~/main.css')
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+
+  head.htmlAttrs = { lang: 'en', class: 'h-full' }
+  head.bodyAttrs = { class: 'antialiased font-sans' }
 }

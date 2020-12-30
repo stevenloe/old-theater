@@ -1,9 +1,17 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
+  prefix: '',
+  important: false,
+  separator: ':',
+  purge: {
+    content: [
+      './src/assets/**/*.css',
+      './src/**/*.vue',
+      './src/**/*.js'
+    ],
+    options: {
+      defaultExtractor: content => content.match(/[\w-/:%]+(?<!:)/g) || []
+    },
   },
-  variants: {},
+  corePlugins: {},
   plugins: [],
 }

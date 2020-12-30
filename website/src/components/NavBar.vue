@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-gray-100 md:flex md:justify-between md:items-center md:px-4 md:py-3">
+  <header class="bg-gray-100 md:flex md:justify-between md:items-center md:px-4 md:py-3 sm:bg-red-300 md:bg-blue-300">
     
     <div class="flex items-center justify-between px-4 py-3 md:p-0">
       <h2 class="font-serif text-lg tracking-wide rounded hover:bg-gray-200">

@@ -1,26 +1,38 @@
-// This is where project configuration and plugin options are located.
-// Learn more: https://gridsome.org/docs/config
-
-// Changes here require a server restart.
-// To restart press CTRL + C in terminal and run `gridsome develop`
-
-const tailwind = require('tailwindcss')
-const purgecss = require('@fullhuman/postcss-purgecss')
-
-const postcssPlugins = [
-  tailwind(),
-]
-
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
-
 module.exports = {
-    siteName: 'The Old Theater',
-    plugins: [],
-    css: {
-        loaderOptions: {
-            postcss: {
-                plugins: postcssPlugins,
-            },
-        },
-    },
+  siteName: 'The Old Theater',
+  siteDescription: "",
+  siteUrl: 'https://oldtheater.org',
+  titleTemplate: `%s | The Old Theater`,
+  icon: 'src/favicon.png',
+
+  transformers: {
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      plugins: [
+      ]
+    }
+  },
+
+  plugins: [
+  ],
+
+  templates: {
+
+  },
+
+  chainWebpack: config => {
+    config.module
+      .rule('css')
+      .oneOf('normal')
+      .use('postcss-loader')
+      .tap(options => {
+        options.plugins.unshift(...[
+          require('postcss-import'),
+          require('tailwindcss'),
+        ])
+
+        return options
+      })
+  },
 }
