@@ -72,13 +72,19 @@
       </div>
 
     </div>
+    <member-crawl/>
   </ContentLayout>
 </template>
 
 <script>
+
+import MemberCrawl from '@/components/MemberCrawl'
 export default {
   metaInfo: {
     title: "About us",
   },
+  components: {
+    MemberCrawl
+  }
 };
 </script>

@@ -18,7 +18,7 @@
           <!-- <div class="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide">At {{ item.location}}</div> -->
         </div>
 
-        <p class="ml-2 truncate md:break-normal border border-blue-400"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquid minima ipsum sint perspiciatis expedita autAssumenda aliquid minima ipsum sint perspiciatis expedita aut ullam sed ut inventore vitae cupiditate labore eos doloribus, optio cum tempore facere officia.</p>
+        <p class="ml-2 block truncate md:break-normal border border-blue-400"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquid minima ipsum sint perspiciatis expedita autAssumenda aliquid minima ipsum sint perspiciatis expedita aut ullam sed ut inventore vitae cupiditate labore eos doloribus, optio cum tempore facere officia.</p>
 
         <!-- <div v-bind:style="styleObject"></div> -->
 
