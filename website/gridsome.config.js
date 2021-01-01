@@ -3,7 +3,7 @@ module.exports = {
   siteDescription: "",
   siteUrl: 'https://oldtheater.org',
   titleTemplate: `%s | The Old Theater`,
-  icon: 'src/favicon.png',
+  // icon: 'src/favicon.png',
 
   transformers: {
     remark: {

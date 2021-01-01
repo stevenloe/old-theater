@@ -1,8 +1,10 @@
 <template>
-  <div class="antialiased text-gray-900 bg-blue-800"> 
+  <div class="antialiased text-gray-900 bg-gray-100">  
     <NavBar/>
-   
+   <div class="m-8">
+     
     <slot/>
+   </div>
     <Footer/>
   </div>
 </template>
@@ -33,6 +35,7 @@ export default {
   body {
     /* background: #c8c8c8;
     background: #335;
-    background: #00336a; */
-  }
+    background: #00336a;
+    */
+  } 
 </style>
