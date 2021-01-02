@@ -1,10 +1,18 @@
 <template>
-  <header class="bg-gray-100 md:flex md:justify-between md:items-center md:px-4 md:py-3 sm:bg-red-300 md:bg-blue-300">
+  <header class="bg-gray-100 md:flex md:justify-between md:items-center md:px-4 md:py-3 ">
     
     <div class="flex items-center justify-between px-4 py-3 md:p-0">
-      <h2 class="font-serif text-lg tracking-wide rounded hover:bg-gray-200">
-        <g-link to="/" class="px-2 py-1">The Old Theater</g-link>
+      <h2 class="font-serif text-lg tracking-wide rounded hover:bg-gray-200  sm:bg-red-100 md:bg-blue-100">
+        <g-link to="/" class="">
+        <div class="-mb-2 tracking-wide">
+          The Old Theater
+        </div>
+        <div class="text-xs text-gray-600 tracking-widest">
+          ORIENTAL, NC
+        </div>
+        </g-link>
       </h2> 
+      <!-- menu / menu-close buttons -->
       <div class="md:hidden">
         <button @click="isOpen = !isOpen" type="button" class="block text-gray-700 hover:text-gray-900 focus:text-gray-900">
           <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -13,13 +21,14 @@
           </svg>
         </button>
       </div>
+      
     </div>
 
     <div>
       <nav :class="isOpen ? 'block' : 'hidden'" class="px-4 pt-2 pb-4 md:flex md:p-0">
         <g-link to="/" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Shows</g-link>
         <g-link to="/community-education/" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Community &amp; Education</g-link>
-        <g-link to="/get-involved/" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Get Involved</g-link>
+        <g-link to="/get-involved/" class="mt-1 block px-0 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Get Involved</g-link>
         <g-link to="/support/" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Support</g-link>
         <g-link to="/about/" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">About</g-link>
         
