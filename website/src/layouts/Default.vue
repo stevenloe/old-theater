@@ -27,12 +27,3 @@ export default {
   
 }
 </script>
-
-
-<style >
-  body {
-    /* background: #c8c8c8;
-    background: #335;
-    background: #00336a; */
-  }
-</style>
