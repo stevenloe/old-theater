@@ -2,6 +2,11 @@
   <ContentLayout>
     <div class="container md:mx-auto max-w-3xl">
 
+
+     
+                     
+   
+
       <div class="mb-4">
         <h1 class="text-3xl font-semibold">Support</h1>
         <div>
