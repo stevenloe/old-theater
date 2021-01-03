@@ -1,21 +1,23 @@
 <template>
-  <Layout>
+  <DefaultLayout>
     <div v-for="(item, i) in items" :key="i">
       <ShowCard :item="item"/>
     </div>
 
-  </Layout>
+  </DefaultLayout>
 </template>
 
 <script>
-import ShowCard from "~/components/ShowCard.vue";
+import ShowCard from '~/components/ShowCard.vue';
+import DefaultLayout from '~/layouts/Default.vue'
 
 export default {
   metaInfo: {
     title: 'The Old Theater'
   },
    components: {
-    ShowCard
+    ShowCard,
+    DefaultLayout
   },
     data() {
     return {

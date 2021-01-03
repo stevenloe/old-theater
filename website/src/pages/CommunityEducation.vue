@@ -27,8 +27,6 @@
         </div>
       </div>
 
-      
-
       <div class="mb-4 p-4">
         <h2 class="text-2xl font-semibold">Pamlico Musical Society</h2>
         <p class="mb-4">Nostrum minus eligendi esse qui cupiditate neque, at, enim ipsa blanditiis vero aperiam culpa labore amet corporis! Consequatur rem illum illo fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsa iusto et exercitationem sed modi quod quas officiis eos ducimus, repellendus molestiae consequatur harum! Aspernatur velit perspiciatis veritatis tenetur dolores.</p>
@@ -81,12 +79,14 @@
 <script>
 
 import MemberCrawl from '@/components/MemberCrawl'
+import ContentLayout from '~/layouts/Content.vue'
 export default {
   metaInfo: {
     title: "About us",
   },
   components: {
-    MemberCrawl
+    MemberCrawl,
+    ContentLayout
   }
 };
 </script>

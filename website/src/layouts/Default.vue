@@ -1,5 +1,5 @@
 <template>
-  <div class="antialiased text-gray-900 bg-gray-2 00"> 
+  <div class="antialiased text-gray-900 bg-gray-300"> 
     <NavBar/>
    
     <slot/>

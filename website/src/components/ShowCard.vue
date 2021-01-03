@@ -9,18 +9,12 @@
     <div class="relative -mt-1 bg-white rounded-b-lg md:mt-0 md:rounded-b-none md:rounded-r-lg md:-ml-4 md:flex md:w-1/3  md:p-0 shadow-lg">
       <div class="p-6 pt-2 w-full">
         <div class="">
-          <!-- <div class="inline-block  bg-red-200 text-teal-900 text-xs px-2 rounded-full uppercase font-semibold tracking-wide">{{item.category}}</div> -->
-
           <h4 class="  font-semibold text-2xl ">{{ item.title }}</h4>
           <div class=" text-xs uppercase font-semibold tracking-wide">
             {{ item.date }} &bull; {{ item.time}} &bull; ${{ item.formattedPrice }}
           </div>
-          <!-- <div class="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide">At {{ item.location}}</div> -->
         </div>
-
         <p class="block overflow md:break-normal"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquid minima ipsum sint perspiciatis .</p>
-
-        <!-- <div v-bind:style="styleObject"></div> -->
 
         <div class="flex w-full mt-2 md:inline-block">
           <button class="w-1/2 bg-orange-300 md:w-full  border border-gray-800 text-gray-900 font-bold py-1 px-4 rounded-lg  hover:bg-yellow-300 hover:text-gray-900">Buy Tickets</button>
@@ -34,15 +28,7 @@
 
 <script>
 export default {
-  props: ["item"],
-  computed: {
-    // classObject: function () {
-    //   return {
-    //     // active: this.isActive && !this.error,
-    //     // 'text-danger': this.error && this.error.type === 'fatal'
-    //     "foo"
-    //   }
-    // }
-  },
+  props: ['item']
+ 
 };
 </script>
