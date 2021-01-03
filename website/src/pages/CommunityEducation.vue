@@ -13,7 +13,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint amet enim earum. Eligendi reprehenderit aliquid eveniet nostrum! Error deleniti maiores quae dolore, cupiditate ullam dolorem earum impedit quas soluta!</p>
       </div>
 
-      <div class="mb-4 p-4 bg-blue-200">
+      <div class="mb-4 bg-blue-200">
         <h2 class="text-2xl font-semibold">Children's Theater Workshop</h2>
         <p>Mauris eros sem, volutpat ut, blandit ut, pharetra quis, pede. Aliquam vel libero. Suspendisse erat lacus, malesuada at, rutrum posuere, scelerisque ut, ante. In non orci.</p>
         <p class="mb-4">Aliquam eleifend. Aenean facilisis adipiscing urna. Maecenas sagittis, velit at scelerisque ornare, elit dolor elementum ante, in vestibulum elit metus sed quam. Mauris mauris ante, adipiscing vitae, scelerisque vitae, luctus at, pede. Integer sagittis dui. Morbi dictum mauris ac tellus. Nullam vehicula. Mauris erat neque, tempor eu, posuere et, lobortis vel, enim. In mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
@@ -27,7 +27,7 @@
         </div>
       </div>
 
-      <div class="mb-4 p-4">
+      <div class="mb-4">
         <h2 class="text-2xl font-semibold">Pamlico Musical Society</h2>
         <p class="mb-4">Nostrum minus eligendi esse qui cupiditate neque, at, enim ipsa blanditiis vero aperiam culpa labore amet corporis! Consequatur rem illum illo fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsa iusto et exercitationem sed modi quod quas officiis eos ducimus, repellendus molestiae consequatur harum! Aspernatur velit perspiciatis veritatis tenetur dolores.</p>
         <p class="mb-4">Mauris eros sem, volutpat ut, blandit ut, pharetra quis, pede. Aliquam vel libero. Suspendisse erat lacus, malesuada at, rutrum posuere, scelerisque ut, ante. In non orci.</p>
