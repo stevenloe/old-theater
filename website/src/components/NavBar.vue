@@ -76,14 +76,13 @@ export default {
   data() {
     return {
       isOpen: false,
-
       aboutMenuItems: {
         title: "About",
         items: [
-          { text: "Venue?", link: "/venue/", id: 1 },
-          { text: "rent?", link: "/rent/", id: 2 },
-          { text: "history?", link: "/history/", id: 3 },
-          { text: "board-volunteers", link: "/board-volunteers/", id: 4 },
+          { text: "Venue", link: "/venue/", id: 1 },
+          { text: "Rent the Theater", link: "/rent/", id: 2 },
+          { text: "Our History", link: "/history/", id: 3 },
+          { text: "Volunteers & Board", link: "/volunteers-board/", id: 4 },
         ],
       },
     };
