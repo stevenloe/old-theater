@@ -1,27 +1,29 @@
 <template>
   <DefaultLayout>
-    <div v-for="(item, i) in items" :key="i">
-      <ShowCard :item="item"/>
+    <div v-for="(show, i) in shows" :key="i">
+      <ShowCard :item="show"/>
     </div>
 
   </DefaultLayout>
 </template>
 
 <script>
-import ShowCard from '~/components/ShowCard.vue';
 import DefaultLayout from '~/layouts/Default.vue'
+import ShowCard from '~/components/ShowCard.vue';
+import Education from '~/components/Education.vue';
 
 export default {
   metaInfo: {
     title: 'The Old Theater'
   },
    components: {
+    DefaultLayout,
     ShowCard,
-    DefaultLayout
+    Education
   },
     data() {
     return {
-      items: [
+      shows: [
         { 
           title: "Scrooged",
           date: "December 21, 2020",
@@ -67,16 +69,6 @@ export default {
           formattedPrice: "11.99",
         },
         { 
-          title: "Education",
-          date: "February 11, 2020",
-          time: "7:00 PM",
-          category: "Education",
-          description: "Conspiracy theories about secrets of the holy grail",
-          imageUrl: "/img_new/processed/education_result.jpg",
-          imageAlt: "Some Alt Text",
-          formattedPrice: "17.99",
-        },
-        { 
           title: "Support",
           date: "February 11, 2020",
           time: "7:00 PM",
@@ -88,6 +80,16 @@ export default {
           formattedPrice: "16.99",
         },
       ],
+      educationData: { 
+          title: "Education",
+          date: "February 11, 2020",
+          time: "7:00 PM",
+          category: "Education",
+          description: "Conspiracy theories about secrets of the holy grail",
+          imageUrl: "/img_new/processed/education_result.jpg",
+          imageAlt: "Some Alt Text",
+          formattedPrice: "17.99",
+        },
     };
   },
 }
