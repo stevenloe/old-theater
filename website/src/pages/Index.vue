@@ -4,7 +4,7 @@
       <ShowCard :item="show"/>
     </div>
     <Education :item="educationData"/>
-    <Support :item="supportData"/>
+    <Membership :item="membershipData"/>
 
   </DefaultLayout>
 </template>
@@ -13,7 +13,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import ShowCard from '~/components/ShowCard.vue';
 import Education from '~/components/Education.vue';
-import Support from '~/components/Support.vue';
+import Membership from '~/components/Membership.vue';
 
 export default {
   metaInfo: {
@@ -23,7 +23,7 @@ export default {
     DefaultLayout,
     ShowCard,
     Education,
-    Support
+    Membership
   },
     data() {
     return {
@@ -81,7 +81,7 @@ export default {
           imageAlt: "education image",
           cta: "Learn More",
         },
-      supportData:         { 
+      membershipData:         { 
           title: "Membership",
           subhead: "PATREON MEMBERSHIP",
           category: "Membership",
