@@ -3,6 +3,8 @@
     <div v-for="(show, i) in shows" :key="i">
       <ShowCard :item="show"/>
     </div>
+    <Education :item="educationData"/>
+    <Support :item="supportData"/>
 
   </DefaultLayout>
 </template>
@@ -11,6 +13,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import ShowCard from '~/components/ShowCard.vue';
 import Education from '~/components/Education.vue';
+import Support from '~/components/Support.vue';
 
 export default {
   metaInfo: {
@@ -19,7 +22,8 @@ export default {
    components: {
     DefaultLayout,
     ShowCard,
-    Education
+    Education,
+    Support
   },
     data() {
     return {
@@ -67,28 +71,26 @@ export default {
           imageUrl: "/img_new/processed/barbra-lica_result.jpg",
           imageAlt: "Some Alt Text",
           formattedPrice: "11.99",
-        },
-        { 
-          title: "Support",
-          date: "February 11, 2020",
-          time: "7:00 PM",
-          category: "Support",
-          location: "The Old Theater",
-          description: "Travel back in time and experience the banking system",
-          imageUrl: "/img_new/processed/cast-edit_result.jpg",
-          imageAlt: "Some Alt Text",
-          formattedPrice: "16.99",
-        },
+        }
       ],
       educationData: { 
           title: "Education",
-          date: "February 11, 2020",
-          time: "7:00 PM",
           category: "Education",
-          description: "Conspiracy theories about secrets of the holy grail",
-          imageUrl: "/img_new/processed/education_result.jpg",
-          imageAlt: "Some Alt Text",
-          formattedPrice: "17.99",
+          description: "The Old Theater impacts area youth though education and engagement programs.",
+          imageUrl: "/img/childrens_theater_workshop_crop.jpg",
+          imageAlt: "education image",
+          cta: "Learn More",
+        },
+      supportData:         { 
+          title: "Membership",
+          subhead: "PATREON MEMBERSHIP",
+          category: "Membership",
+          location: "The Old Theater",
+          description: "Enjoy the benefits of membership while providing the support that enables us to continue creating magical experiences both in front of and behind the curtains. We thank our generous donors who help the Old Theater bring outstanding entertainment to our community.",
+          imageUrl: "/img_new/processed/cast-edit_result.jpg",
+          imageAlt: "Membership Photo",
+          cta: "Join",
+        
         },
     };
   },

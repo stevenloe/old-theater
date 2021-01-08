@@ -1,27 +1,14 @@
 <template>
-<div class="m-4 sm:m-8 md:flex md:m-8 ">
+<div class="m-4 sm:m-8 md:m-8 ">
   <!-- image card-->
-    <div class="relative pb-5/6 md:w-2/3 rounded-lg overflow-hidden shadow-lg">
+    <div class="rounded-t-lg overflow-hidden shadow-lg">
       <img class="h-full w-full object-cover" :src="item.imageUrl" :alt="item.imageAlt">
     </div>
-
-    <!-- details card-->
-    <div class="relative -mt-1 bg-gray-200 rounded-b-lg md:mt-0 md:rounded-b-none md:rounded-r-lg md:-ml-4 md:flex md:w-1/3  md:p-0 shadow-lg">
-      <div class="p-6 pt-2 w-full">
-        <div class="">
-          <h4 class="  font-semibold text-2xl ">{{ item.title }}</h4>
-          <div class=" text-xs uppercase font-semibold tracking-wide">
-            {{ item.date }} &bull; {{ item.time}} &bull; ${{ item.formattedPrice }}
-          </div>
-        </div>
-        <p class="block overflow md:break-normal"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquid minima ipsum sint perspiciatis .</p>
-
-        <div class="flex w-full mt-2 md:inline-block">
-          <button class="w-1/2 bg-orange-300 md:w-full  border border-gray-800 text-gray-900 font-bold py-1 px-4 rounded-lg  hover:bg-yellow-300 hover:text-gray-900">Buy Tickets</button>
-          <button class="w-1/2 ml-3 md:ml-0 md:mt-3 md:w-full bg-white  border border-gray-700  text-gray-800 font-semibold py-1 px-4  rounded-lg  hover:bg-gray-100 hover:text-gray-900">Learn More</button>
-        </div>
-
-      </div>
+    <!-- details -->
+    <div class=" bg-blue-500 rounded-b-lg  pl-6 pt-3 pb-4 shadow-lg">
+      <h2 class="text-white font-medium text-4xl ">{{ item.title }}</h2>
+      <p class="text-white mb-3 block font-medium text-lg">{{ item.description }}</p>
+      <g-link to="/education/" class="w-1/2 block  mb-3 bg-blue-500  text-center border-2 border-white  text-white font-semibold text-lg py-1 px-4 pb-2  rounded-lg  hover:bg-blue-700 ">{{ item.cta }}</g-link>
     </div>
   </div>
 </template>
