@@ -5,6 +5,7 @@
     </div>
     <Education :item="educationData"/>
     <Membership :item="membershipData"/>
+    <NewsWidget :items="newsItems"/>
 
   </DefaultLayout>
 </template>
@@ -14,6 +15,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 import ShowCard from '~/components/ShowCard.vue';
 import Education from '~/components/Education.vue';
 import Membership from '~/components/Membership.vue';
+import NewsWidget from '~/components/NewsWidget.vue';
 
 export default {
   metaInfo: {
@@ -23,7 +25,8 @@ export default {
     DefaultLayout,
     ShowCard,
     Education,
-    Membership
+    Membership,
+    NewsWidget
   },
     data() {
     return {
@@ -90,8 +93,26 @@ export default {
           imageUrl: "/img_new/processed/cast-edit_result.jpg",
           imageAlt: "Membership Photo",
           cta: "Join",
-        
         },
+        newsItems: [
+          {
+            title: 'Casting call for production of Sex Please We’re Sixty, “A Saucy Senior Scandal”',
+            category: "News",
+            description: "On January 21st at 6:00pm there will be a casting call for The Old Theater's production of Sex Please We’re Sixty.. ",
+            cta: "Read More",
+            date: '1/3/2020',
+            link: "/news/2020-01-03-casting-call/"
+          },
+          {
+            title: "Old Theater is seeking board members",
+            category: "News",
+            location: "The Old Theater",
+            description: "The Old Theater has the following open board positions open...",
+            cta: "Read More",
+            date: '1/5/2020',
+            link: "/news/2020-01-03-new-board-members/"
+          },
+        ]
     };
   },
 }
