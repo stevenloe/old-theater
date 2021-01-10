@@ -10,6 +10,7 @@
         <div class="text-gray-700"> <g-link class="ml-1 italic underline " :to="item.link">{{ item.cta }}</g-link></div>
       </div>
     </div>
+    <g-link to="/news/" class="block mb-3  italic underline text-lg"> Older news stories</g-link>
   </div>
 </template>
 
