@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer-link {
+  word-spacing: 1px;
+  @apply block py-1 text-gray-800 font-light tracking-wide ;
+}
+
+

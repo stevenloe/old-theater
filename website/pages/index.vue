@@ -24,13 +24,11 @@
                 <p class="block overflow md:break-normal">{{ article.shortDesc }}.</p>
               </div>
               
-              <div class="flex w-full mt-2 md:inline-block pl-6 pr-6">
+              <div class="flex w-full mt-2 md:inline-block pl-6 pr-6 pb-6">
                 <nuxt-link :to="{ name: 'slug', params: { slug: article.slug }}" class="w-1/2 bg-orange-300 md:w-full  md:block border border-gray-800 text-gray-900 font-bold py-1 px-4 rounded-lg text-lg text-center hover:bg-yellow-300 hover:text-gray-900">Buy Tickets</nuxt-link>
                 <nuxt-link :to="{ name: 'slug', params: { slug: article.slug }}" class="w-1/2 ml-3 md:ml-0 md:mt-3 md:w-full md:block bg-white  border border-gray-700  text-gray-800 font-semibold py-1 px-4 text-lg text-center rounded-lg  hover:bg-gray-100 hover:text-gray-900">Learn More</nuxt-link>
               </div>
 						</div>
-
-				 
 			  
 		  </div>
 	  </div>
