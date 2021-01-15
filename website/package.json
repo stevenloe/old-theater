@@ -1,18 +1,26 @@
 {
-  "name": "old-theater",
+  "name": "nuxt-tailwind",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "gridsome": "^0.7.15"
+    "@nuxt/content": "^1.11.1",
+    "@tailwindcss/typography": "^0.3.1",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6"
   },
   "devDependencies": {
-    "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.4",
-    "postcss-import": "^12.0.1",
-    "tailwindcss": "^1.4.6"
+    "@nuxtjs/tailwindcss": "^3.1.0",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9.8.6",
+    "install": "^0.13.0",
+    "npm": "^6.14.11",
+    "postcss": "^7.0.35",
+    "tailwindcss": "^1.9.6"
   }
 }

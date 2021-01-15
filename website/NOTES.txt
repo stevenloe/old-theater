@@ -1,0 +1,17 @@
+NOTES
+-------
+
+Performance:
+------------------------------------------------
+Minimal create-nuxt-app build lighthouse results:
+perf: 100
+size 104kb 8 requests
+- - - - - - - - - - - - - - - - - - - - - - - - 
+Tailwind nuxt build lighthouse results:
+perf: 100
+size 110kb 8 requests
+-------------------------------------------------
+
+
+npm run dev
+

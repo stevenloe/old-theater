@@ -1,25 +1,27 @@
-# Old Theater Website
-## Table of contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
+# nuxt-tailwind
 
+## Build Setup
 
-### General info
-A jamstack site for The Old Theater, Oriental NC
-
-
-## Technologies
-* Gridsome 0.7.15
-* Tailwindcss 1.4.6
-
-	
-## Setup
-To run this project, install it locally using npm:
-
-```
-$ cd ../site
+```bash
+# install dependencies
 $ npm install
-$ npm start
+
+
+
+
+
+
+# serve with hot reload at localhost:3000
+#########################################
+$  npm run dev
+########################################
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
 ```
-`gridsome develop` to start a local dev server at `http://localhost:8080`
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

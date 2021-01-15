@@ -7,3 +7,4 @@ src/.temp/*
 node_modules
 dist
 website/TODO.txt
+website/PLATFORM.txt

@@ -1,17 +1,25 @@
 module.exports = {
-  prefix: '',
-  important: false,
-  separator: ':',
   purge: {
+    enabled: process.env.NODE_ENV === 'production',
     content: [
-      './src/assets/**/*.css',
-      './src/**/*.vue',
-      './src/**/*.js'
-    ],
-    options: {
-      defaultExtractor: content => content.match(/[\w-/:%]+(?<!:)/g) || []
-    },
+      'components/**/*.vue',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+      'nuxt.config.js',
+      // TypeScript
+      'plugins/**/*.ts',
+      'nuxt.config.ts'
+    ]
   },
-  corePlugins: {},
-  plugins: [],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

@@ -1,0 +1,4 @@
+Source: https://www.youtube.com/watch?v=z3VcXnk06p4
+
+
+REpo https://github.com/codewithchu/tailwindcss-v2-nuxt-setup-install
