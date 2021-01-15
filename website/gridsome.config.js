@@ -15,10 +15,39 @@ module.exports = {
   },
 
   plugins: [
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "shows/**/*.md",
+        typeName: "Show"
+      }
+    },   
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Article',
+        baseDir: './content/articles',
+        path: '**/*.md',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        }
+      }
+    },
   ],
 
   templates: {
-
+    Article: [{
+      path: '/articles/:title'
+    }],
+    // News: [
+    //   {
+    //     path: '/news/:title',
+    //     component: './src/templates/News.vue'
+    //   }
+    // ],
   },
 
   chainWebpack: config => {

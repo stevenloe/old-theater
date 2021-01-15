@@ -16,8 +16,8 @@
         </div>
         <p class="block overflow md:break-normal">{{ item.shortDesc }}.</p>
         <div class="flex w-full mt-2 md:inline-block">
-          <button class="w-1/2 bg-orange-300 md:w-full border border-gray-800 text-gray-900 font-bold py-1 px-4 rounded-lg text-lg hover:bg-yellow-300 hover:text-gray-900">Buy Tickets</button>
-          <button class="w-1/2 ml-3 md:ml-0 md:mt-3 md:w-full bg-white  border border-gray-700  text-gray-800 font-semibold py-1 px-4 text-lg rounded-lg  hover:bg-gray-100 hover:text-gray-900">Learn More</button>
+          <g-link to="/" class="w-1/2 bg-orange-300 md:w-full border border-gray-800 text-gray-900 font-bold py-1 px-4 rounded-lg text-lg hover:bg-yellow-300 hover:text-gray-900">Buy Tickets</g-link>
+          <g-link to="/show/" class="w-1/2 ml-3 md:ml-0 md:mt-3 md:w-full bg-white  border border-gray-700  text-gray-800 font-semibold py-1 px-4 text-lg rounded-lg  hover:bg-gray-100 hover:text-gray-900">Learn More</g-link>
         </div>
       </div>
     </div>
@@ -27,6 +27,5 @@
 <script>
 export default {
   props: ['item']
- 
 };
 </script>
