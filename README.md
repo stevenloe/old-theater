@@ -7,7 +7,7 @@
 
 
 ### General info
-A jamstack site for The Old Theater of Oriental, NC
+A Nuxt.js site for The Old Theater of Oriental, NC
 
 ### Sitemap
 ![](sitemap/old-theater-sitemap.png)
