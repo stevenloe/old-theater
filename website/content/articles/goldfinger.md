@@ -8,10 +8,9 @@ imgAlt: some alt text
 eventDate: 'January, 1 2021 19:00:30 EST'
 eventTime: '2021-01-12T21:09:38.963Z'
 formattedPrice: Donation
+ticketURL: https://example.com
 ---
 
-
-# Goldfinger
 
 Welcome to my first blog post using content module
 

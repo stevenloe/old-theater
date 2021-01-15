@@ -8,6 +8,7 @@ imgAlt: Some alt text here
 eventDate: 'April, 21 2020 19:30:00 EST'
 eventTime: '2021-02-14T21:09:38.963Z'
 formattedPrice: 22.00
+ticketURL: https://example.com
 ---
 
 # event two

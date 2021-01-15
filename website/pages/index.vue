@@ -19,7 +19,7 @@
             <!-- details card -->
 						<div class="relative -mt-1 bg-gray-200 rounded-b-lg md:mt-0 md:rounded-b-none md:rounded-r-lg  md:w-1/3  md:p-0 ">
               <div class="p-6 pt-2 w-full">
-                <h3 class="font-semibold text-4xl">{{ article.title }}</h3>
+                <h3 class="font-bold text-4xl">{{ article.title }}</h3>
                 <div class="text-xs uppercase font-semibold tracking-wide">{{ article.eventTime | formatDate}} • {{ article.eventTime | formatTime }} • ${{ article.formattedPrice}}</div>
                 <p class="block overflow md:break-normal">{{ article.shortDesc }}.</p>
               </div>
