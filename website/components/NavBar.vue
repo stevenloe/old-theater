@@ -1,7 +1,7 @@
 <template>
   <header class="bg-white md:flex md:justify-between md:items-start md:px-4 md:py-3">
     <div class="flex items-center justify-between px-4 py-3 md:p-0">
-      <h2 class="font-serif text-lg tracking-wide rounded hover:bg-gray-200 sm:bg-red-300 md:bg-orange-300 lg:bg-yellow-300 xl:bg-purple-300 2xl:bg-pink-300">
+      <h2 class="font-serif text-lg tracking-wide rounded hover:bg-gray-200 sm:bg-red-300 md:bg-orange-300 lg:bg-yellow-300 xl:bg-indigo-400 2xl:bg-red-600">
         <nuxt-link to="/" class>
           <div class="-mb-2 tracking-wide">The Old Theater</div>
           <div class="text-xs text-gray-600 tracking-widest">ORIENTAL, NC</div>
