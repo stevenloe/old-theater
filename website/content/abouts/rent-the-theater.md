@@ -2,7 +2,7 @@
 title: Rent the Theater
 description:  Irure eiusmod dolore amet anim non laboris amet consectetur quis laboris consectetur. Ad dolore et pariatur ad sit ex officia ipsum proident adipisicing pariatur culpa duis. Irure nulla excepteur nulla dolore quis reprehenderit elit aliqua dolor voluptate anim do elit cupidatat.
 shortDesc: Irure eiusmod dolore amet anim non laboris amet.
-slug: rent-the-theater
+slug: /about/rent-the-theater
 img: nunsense-big.jpg
 imgAlt: some alt text
 eventDate: 'March, 21 2020 19:30:00 EST'

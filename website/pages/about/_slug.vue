@@ -5,6 +5,7 @@
       <img :src="require(`~/assets/img_new/processed/${about.img}`)" :alt="about.imgAlt" />
     </div>
 
+
     <!-- <nuxt-content class="prose  lg:prose-lg xl:prose-2xl mx-auto" :document="about" /> -->
     <nuxt-content class="prose lg:prose-lg xl:prose-2xl mx-auto" :document="about" />
 

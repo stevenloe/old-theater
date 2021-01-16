@@ -13,7 +13,7 @@
     >
       <li v-for="result of results" :key="result.slug">
         <NuxtLink
-          :to="{ name: 'slug', params: { slug: result.slug } }"
+          :to="result.slug"
           class="flex px-4 py-2 items-center leading-5 transition ease-in-out duration-150 text-green-500 hover:text-black"
         >
           {{ result.title }}
