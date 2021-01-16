@@ -79,10 +79,10 @@ export default {
       aboutMenuItems: {
         title: "About",
         items: [
-          { text: "Venue", link: "/venue/", id: 1 },
-          { text: "Rent the Theater", link: "/rent/", id: 2 },
-          { text: "Our History", link: "/history/", id: 3 },
-          { text: "Volunteers & Board", link: "/volunteers-board/", id: 4 },
+          { text: "Venue", link: "/about/venue/", id: 1 },
+          { text: "Rent the Theater", link: "/about/rent-the-theater", id: 2 },
+          { text: "Our History", link: "/about/history", id: 3 },
+          { text: "Volunteers & Board", link: "/about/volunteers-and-board", id: 4 },
         ],
       },
     };
