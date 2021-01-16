@@ -36,11 +36,21 @@ export default {
         this.articles = []
         return
       }
-      this.articles = await this.$content('articles')
-        .limit(6)
+      let result1 = await this.$content('articles')
+        .limit(20)
         .search(searchQuery)
         .fetch()
+      let result2 = await this.$content('abouts')
+        .limit(20)
+        .search(searchQuery)
+        .fetch()
+        console.log("result1", result1, "result2", result2)
+
+        this.articles = [...result1, ...result2]
     }
+  },
+  methods:{
+
   }
 }
 </script>
