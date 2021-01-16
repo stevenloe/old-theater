@@ -4,19 +4,19 @@
       v-model="searchQuery"
       type="search"
       autocomplete="off"
-      placeholder="Search Articles"
+      placeholder="Search results"
       class="block w-full pl-10 pr-3 py-2 truncate leading-5 placeholder-gray-500 border border-gray-500 text-gray-700 focus:border-gray-300 rounded-md focus:outline-none focus:bg-white bg-white"
     />
     <ul
-      v-if="articles.length"
+      v-if="results.length"
       class="z-10 absolute w-auto flex-1 top-40 bg-white dark:bg-gray-900 rounded-md border border-gray-300 overflow-hidden"
     >
-      <li v-for="article of articles" :key="article.slug">
+      <li v-for="result of results" :key="result.slug">
         <NuxtLink
-          :to="{ name: 'blog-slug', params: { slug: article.slug } }"
+          :to="{ name: 'slug', params: { slug: result.slug } }"
           class="flex px-4 py-2 items-center leading-5 transition ease-in-out duration-150 text-green-500 hover:text-black"
         >
-          {{ article.title }}
+          {{ result.title }}
         </NuxtLink>
       </li>
     </ul>
@@ -27,26 +27,26 @@ export default {
   data() {
     return {
       searchQuery: '',
-      articles: []
+      results: []
     }
   },
   watch: {
     async searchQuery(searchQuery) {
       if (!searchQuery) {
-        this.articles = []
+        this.results = []
         return
       }
-      let result1 = await this.$content('articles')
+      let articles = await this.$content('articles')
         .limit(20)
         .search(searchQuery)
         .fetch()
-      let result2 = await this.$content('abouts')
+      let abouts = await this.$content('abouts')
         .limit(20)
         .search(searchQuery)
         .fetch()
-        console.log("result1", result1, "result2", result2)
+        console.log("articles", articles, "abouts", abouts)
 
-        this.articles = [...result1, ...result2]
+        this.results = [...articles, ...abouts]
     }
   },
   methods:{

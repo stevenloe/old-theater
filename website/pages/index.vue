@@ -8,7 +8,7 @@
 		  <div class="show-card m-4 sm:m-8 md:flex md:m-8 md:mr-8  rounded-lg p-0" v-for="article of articles" :key="article">
 
         <!-- <pre>{{ article }}</pre> -->
-			  
+        
             <!-- image card -->
             <div class="relative md:w-2/3 md:rounded-r-none rounded-lg overflow-hidden ">
               <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
