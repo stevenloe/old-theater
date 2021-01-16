@@ -21,6 +21,8 @@
 
     <div>
       <nav :class="isOpen ? 'block' : 'hidden'" class="px-4 pt-2 pb-4 md:flex md:p-0">
+        <AppSearchInput />
+        
         <div class="flex mb-4 md:hidden">
           <input class="shadow w-full rounded-xl text-lg p-2 border border-gray-400 focus:shadow-none" type="text" placeholder="Search oldtheater.org" />
           <button class="ml-2 underline text-blue-600 text-lg">Search</button>
@@ -72,6 +74,7 @@
 
 <script>
 import SubMenu from "~/components/SubMenu.vue";
+import AppSearchInput from "~/components/AppSearchInput.vue";
 export default {
   data() {
     return {
@@ -90,6 +93,7 @@ export default {
   methods: {},
   components: {
     SubMenu,
+    AppSearchInput,
   },
 };
 </script>
