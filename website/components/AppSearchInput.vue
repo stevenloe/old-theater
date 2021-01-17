@@ -5,7 +5,7 @@
       type="search"
       autocomplete="off"
       placeholder="Search oldtheater.org"
-      class="block w-56  pl-3 py-2 truncate leading-5 placeholder-gray-700 border border-gray-500 text-gray-700 focus:border-gray-300 rounded-md focus:outline-none focus:bg-white bg-white"
+      class="block w-full md:w-48 py-3 px-4  md:py-2 md:mr-6 truncate leading-5 placeholder-gray-700 border border-gray-400 text-gray-700 focus:border-gray-600 rounded-lg focus:outline-none focus:bg-white bg-white"
     />
     <ul
       v-if="results.length"
@@ -15,7 +15,7 @@
         <NuxtLink
           @click="clear()"
           :to="result.slug"
-          class="flex px-8 py-2 items-center leading-5 transition ease-in-out duration-150 text-green-500 hover:text-black"
+          class="flex px-8 py-2 items-center leading-5 transition ease-in-out duration-150 text-blue-800 hover:text-black"
         >
           {{ result.title }}
         </NuxtLink>

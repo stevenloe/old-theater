@@ -1,7 +1,6 @@
 <template>
-  <div class="antialiased text-gray-900 bg-gray-100 "> 
-    <NavBar/>
-    <div class="m-8 mb-12">
+  <div class="antialiased text-gray-900 bg-gray-200 "> 
+    <div class="">
       <Nuxt />
     </div>
     <Footer/>
@@ -9,14 +8,11 @@
 </template>
 
 <script>
-import NavBar from '@/components/NavBar'
 import Footer from '@/components/Footer'
-
 export default {
   components: {
-    NavBar,
     Footer
   }
-  
 }
 </script>
+

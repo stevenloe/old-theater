@@ -21,11 +21,11 @@
 
     <div>
       <nav :class="isOpen ? 'block' : 'hidden'" class="px-4 pt-2 pb-4 md:flex md:p-0">
-        <AppSearchInput  />
+        <AppSearchInput />
         
         <div class="flex mb-4 md:hidden">
-          <input class="shadow w-full rounded-xl text-lg p-2 border border-gray-400 focus:shadow-none" type="text" placeholder="Search oldtheater.org" />
-          <button class="ml-2 underline text-blue-600 text-lg">Search</button>
+          <!-- <input class="shadow w-full rounded-xl text-lg p-2 border border-gray-400 focus:shadow-none" type="text" placeholder="Search oldtheater.org" />
+          <button class="ml-2 underline text-blue-600 text-lg">Search</button> -->
         </div>
         <nuxt-link to="/" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Shows</nuxt-link>
         <nuxt-link to="/community-education/" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Community &amp; Education</nuxt-link>
@@ -45,13 +45,13 @@
         </nuxt-link>
 
         <!-- search  icon-->
-        <a href="#" class="text-gray-700 hidden md:inline-block">
+        <!-- <a href="#" class="text-gray-700 hidden md:inline-block">
           <svg class="h-6 w-6 ml-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="48" height="48" fill="currentColor">
             <g>
               <path d="M17.545 15.467l-3.779-3.779a6.15 6.15 0 0 0 .898-3.21c0-3.417-2.961-6.377-6.378-6.377A6.185 6.185 0 0 0 2.1 8.287c0 3.416 2.961 6.377 6.377 6.377a6.15 6.15 0 0 0 3.115-.844l3.799 3.801a.953.953 0 0 0 1.346 0l.943-.943c.371-.371.236-.84-.135-1.211zM4.004 8.287a4.282 4.282 0 0 1 4.282-4.283c2.366 0 4.474 2.107 4.474 4.474a4.284 4.284 0 0 1-4.283 4.283c-2.366-.001-4.473-2.109-4.473-4.474z" />
             </g>
           </svg>
-        </a>
+        </a> -->
       </nav>
 
       <!-- logo  -->
