@@ -2,7 +2,7 @@
     <div class="container md:mx-auto max-w-3xl">
 
       <div class="mb-4">
-        <h1 class="text-3xl font-semibold">Community &amp; Education</h1>
+        <h1 class="text-4xl font-extrabold">Community &amp; Education</h1>
         <div>
           <img src="http://via.placeholder.com/400x200" class=" w-full mr-3  " alt="">
           <p class="text-xs italic mb-3 p-1 text-gray-700 bg-gray-200">This is caption text adipisicing elit. Vel itaque velit ipsam repellat amet, earum.</p>
@@ -83,7 +83,7 @@ export default {
   },
   components: {
     MemberCrawl,
- 
-  }
+  },
+     layout: "content",
 };
 </script>
