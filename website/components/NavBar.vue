@@ -28,7 +28,7 @@
           <button class="ml-2 underline text-blue-600 text-lg">Search</button> -->
         </div>
         <nuxt-link to="/" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Shows</nuxt-link>
-        <nuxt-link to="/community-education/" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Community &amp; Education</nuxt-link>
+        <nuxt-link to="/community-education" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Community &amp; Education</nuxt-link>
         <nuxt-link to="/support/" class="mt-1 block px-1 py-1 text-2xl rounded hover:bg-gray-200 md:text-base md:mt-0 md:ml-2">Support</nuxt-link>
 
         <SubMenu v-bind:menuData='aboutMenuItems' />

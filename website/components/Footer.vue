@@ -18,13 +18,13 @@
       <nav class="flex border-t pt-1 pb-1 mb-10 border-b border-gray-500">
         <div class="w-1/2 text-left">
           <nuxt-link to="/news" class="footer-link tracking-wider md:text-lg hover:text-black">NEWS</nuxt-link>
-          <nuxt-link to="/" class="footer-link tracking-wider md:text-lg hover:text-black">OUR HISTORY</nuxt-link>
-          <nuxt-link to="/" class="footer-link tracking-wider md:text-lg hover:text-black">CONTACT US</nuxt-link>
+          <nuxt-link to="/about/history" class="footer-link tracking-wider md:text-lg hover:text-black">OUR HISTORY</nuxt-link>
+          <nuxt-link to="/contact" class="footer-link tracking-wider md:text-lg hover:text-black">CONTACT US</nuxt-link>
         </div>
         <div class="w-1/2 text-right">
-          <nuxt-link to="/" class="footer-link tracking-wider md:text-lg  hover:text-black">BOARD OF DIRECTORS</nuxt-link>
+          <nuxt-link to="/about/volunteers-and-board" class="footer-link tracking-wider md:text-lg  hover:text-black">BOARD OF DIRECTORS</nuxt-link>
           <nuxt-link to="/calendar" class="footer-link tracking-wider  md:text-lg hover:text-black">CALENDAR</nuxt-link>
-          <nuxt-link to="/" class="footer-link tracking-wider md:text-lg  hover:text-black">VENUE</nuxt-link>
+          <nuxt-link to="/about/venue" class="footer-link tracking-wider md:text-lg  hover:text-black">VENUE</nuxt-link>
         </div>
       </nav>
 
