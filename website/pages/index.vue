@@ -31,8 +31,7 @@
 
     <Education />
     <Membership />
-
-    <!-- <Testing /> -->
+    <Sponsorship />
 
   </div>
 </template>
@@ -42,7 +41,7 @@ import AlertBox from '~/components/AlertBox'
 import Education from '~/components/Education'
 import Membership from '~/components/Membership'
 import MemberCrawl from '~/components/MemberCrawl'
-import Testing from '~/components/Testing'
+import Sponsorship from '~/components/Sponsorship'
 export default {
   async asyncData({ $content, params }) {
     console.log("PARAMS", params);
@@ -91,7 +90,7 @@ export default {
     Education,
     Membership,
     MemberCrawl,
-    Testing,
+    Sponsorship,
   }
 };
 </script>
