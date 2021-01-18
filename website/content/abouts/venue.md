@@ -15,4 +15,8 @@ ticketURL: https://example.com
 
 Non id incididunt sint minim ad irure fugiat ipsum. Velit excepteur duis quis aliquip nostrud exercitation deserunt eiusmod aute ex elit incididunt labore. In cupidatat ex velit laboris veniam aliqua et sunt voluptate exercitation reprehenderit in duis.
 
+<p class="prose-lg border-gray-300  border-4 p-4 text-red-600 overflow-visible">
+  lets try some inline css
+</p>
+
 Irure eiusmod dolore amet anim non laboris amet consectetur quis laboris consectetur. Ad dolore et pariatur ad sit ex officia ipsum proident adipisicing pariatur culpa duis. Irure nulla excepteur nulla dolore quis reprehenderit elit aliqua dolor voluptate anim do elit cupidatat.

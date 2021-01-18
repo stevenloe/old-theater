@@ -7,8 +7,8 @@
       </div>
 
       <div class="pl-8 pr-8 sm:max-w-lg  md:max-w-xl md:text-4xl lg:max-w-3xl  xl:max-w-4xl   sm:bg-red-200  md:bg-orange-200 lg:bg-yellow-400 mx-auto">
-        <h3 class="font-bold text-4xl">{{ article.title }}</h3>
-        <div class="text-xs uppercase font-semibold tracking-wide">{{ article.eventTime | formatDate}} • {{ article.eventTime | formatTime }} • ${{ article.formattedPrice}}</div>
+        <h3 class="font-extrabold text-4xl">{{ article.title }}</h3>
+        <div class="text-xs uppercase font-semibold tracking-wide mb-8">{{ article.eventTime | formatDate}} • {{ article.eventTime | formatTime }} • ${{ article.formattedPrice}}</div>
 
         <nuxt-content :document="article"  class="prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl mb-8" />
 

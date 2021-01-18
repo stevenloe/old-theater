@@ -11,8 +11,6 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-# event two
-
 Non id incididunt sint minim ad irure fugiat ipsum. Velit excepteur duis quis aliquip nostrud exercitation deserunt eiusmod aute ex elit incididunt labore. In cupidatat ex velit laboris veniam aliqua et sunt voluptate exercitation reprehenderit in duis.
 
 Irure eiusmod dolore amet anim non laboris amet consectetur quis laboris consectetur. Ad dolore et pariatur ad sit ex officia ipsum proident adipisicing pariatur culpa duis. Irure nulla excepteur nulla dolore quis reprehenderit elit aliqua dolor voluptate anim do elit cupidatat.

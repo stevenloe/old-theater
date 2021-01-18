@@ -11,7 +11,6 @@ formattedPrice: Donation
 ticketURL: https://example.com
 ---
 
-# Scrooged
 
 Non id incididunt sint minim ad irure fugiat ipsum. Velit excepteur duis quis aliquip nostrud exercitation deserunt eiusmod aute ex elit incididunt labore. In cupidatat ex velit laboris veniam aliqua et sunt voluptate exercitation reprehenderit in duis.
 
