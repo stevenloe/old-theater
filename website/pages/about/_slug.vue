@@ -1,5 +1,3 @@
-
-
 <template>
   <div class="">
     <NavBar class="sm:mb-8" />
@@ -30,5 +28,9 @@ export default {
 };
 </script>
 
-<style  scoped>
+<style >
+p {
+  margin-bottom: 2em !important;
+}
 </style>
+
