@@ -15,7 +15,7 @@
             </svg>
         </div> 
       </address>
-      <nav class="flex border-t pt-1 pb-1 mb-8 border-b border-gray-500">
+      <nav class="flex border-t pt-1 pb-1 mb-10 border-b border-gray-500">
         <div class="w-1/2 text-left">
           <nuxt-link to="/news" class="footer-link tracking-wider md:text-lg hover:text-black">NEWS</nuxt-link>
           <nuxt-link to="/" class="footer-link tracking-wider md:text-lg hover:text-black">OUR HISTORY</nuxt-link>
