@@ -3,7 +3,12 @@
 
       <div class="mb-4">
         <h1 class="text-3xl font-semibold">Calendar</h1>
-        <img src="/temp/january-caledar.jpg" class=" w-full mr-3  " alt="">
+        
+        <div class="text-lg font-semibold text-white mb-5">
+          This a placeholder image. Actual calendar has yet to be created.
+        </div>
+
+        <img :src="require(`~/assets/temp/january-caledar.jpg`)" alt="" />
       </div>
     </div>
 </template>
@@ -12,11 +17,8 @@
 
 export default {
   metaInfo: {
-    title: "About us",
+    title: "Calendar",
   },
-  components: {
-
- 
-  },
+    layout: "home",
 };
 </script>
