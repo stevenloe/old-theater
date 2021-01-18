@@ -29,9 +29,11 @@
       </div>
     </div>
 
+    <NewsWidget/>
     <Education />
     <Membership />
     <Sponsorship />
+
 
   </div>
 </template>
@@ -42,6 +44,7 @@ import Education from '~/components/Education'
 import Membership from '~/components/Membership'
 import MemberCrawl from '~/components/MemberCrawl'
 import Sponsorship from '~/components/Sponsorship'
+import NewsWidget from '~/components/NewsWidget'
 export default {
   async asyncData({ $content, params }) {
     console.log("PARAMS", params);
@@ -91,6 +94,7 @@ export default {
     Membership,
     MemberCrawl,
     Sponsorship,
+    NewsWidget,
   }
 };
 </script>
