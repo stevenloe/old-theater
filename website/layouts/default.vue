@@ -1,6 +1,6 @@
 <template>
   <div class="antialiased text-gray-900 bg-gray-200 "> 
-    <div class="">
+    <div class="mb-12">
       <Nuxt />
     </div>
     <Footer/>

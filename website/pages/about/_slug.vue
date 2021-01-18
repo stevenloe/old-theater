@@ -1,16 +1,21 @@
+
+
 <template>
-  <div>
-    <NavBar />
-    <about class="block m-8 mb-12">
-      <div class="rounded-lg overflow-hidden shadow-lg mb-6">
+  <div class="">
+    <NavBar class="sm:mb-8" />
+    <about>
+      <div class="sm:rounded-lg sm:ml-8 sm:mr-8 overflow-hidden shadow-lg mb-6 max-w-6xl mx-auto">
         <img :src="require(`~/assets/img_new/processed/${about.img}`)" :alt="about.imgAlt" />
       </div>
-      <!-- <nuxt-content class="prose  lg:prose-lg xl:prose-2xl mx-auto" :document="about" /> -->
-      <nuxt-content class="prose lg:prose-lg xl:prose-2xl mx-auto" :document="about" />
-      <nuxt-link :to="{ name: 'slug', params: { slug: about.slug }}" class="w-1/2 bg-orange-300 md:w-full  md:block border border-gray-800 text-gray-900 font-bold py-1 px-4 rounded-lg text-lg text-center hover:bg-yellow-300 hover:text-gray-900">Buy Tickets</nuxt-link>
+
+      <div class="pl-8 pr-8 sm:max-w-lg  md:max-w-xl md:text-4xl lg:max-w-3xl  xl:max-w-4xl   sm:bg-red-200  md:bg-orange-200 lg:bg-yellow-400 mx-auto">
+        <nuxt-content :document="about" class="prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl mb-8" />
+      </div>
     </about>
+
   </div>
 </template>
+
 
 <script>
 import NavBar from "@/components/NavBar";
@@ -24,3 +29,6 @@ export default {
   },
 };
 </script>
+
+<style  scoped>
+</style>
