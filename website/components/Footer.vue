@@ -17,18 +17,18 @@
       </address>
       <nav class="flex border-t pt-1 pb-1 mb-8 border-b border-gray-500">
         <div class="w-1/2 text-left">
-          <a href="#" class="footer-link tracking-wider md:text-lg hover:text-black">NEWS</a>
-          <a href="#" class="footer-link tracking-wider md:text-lg hover:text-black">OUR HISTORY</a>
-          <a href="#" class="footer-link tracking-wider md:text-lg hover:text-black">CONTACT US</a>
+          <nuxt-link to="/news" class="footer-link tracking-wider md:text-lg hover:text-black">NEWS</nuxt-link>
+          <nuxt-link to="/" class="footer-link tracking-wider md:text-lg hover:text-black">OUR HISTORY</nuxt-link>
+          <nuxt-link to="/" class="footer-link tracking-wider md:text-lg hover:text-black">CONTACT US</nuxt-link>
         </div>
         <div class="w-1/2 text-right">
-          <a href="#" class="footer-link tracking-wider md:text-lg  hover:text-black">BOARD OF DIRECTORS</a>
-          <a href="#" class="footer-link tracking-wider  md:text-lg hover:text-black">HALL OF FAME</a>
-          <a href="#" class="footer-link tracking-wider md:text-lg  hover:text-black">VENUE</a>
+          <nuxt-link to="/" class="footer-link tracking-wider md:text-lg  hover:text-black">BOARD OF DIRECTORS</nuxt-link>
+          <nuxt-link to="/calendar" class="footer-link tracking-wider  md:text-lg hover:text-black">CALENDAR</nuxt-link>
+          <nuxt-link to="/" class="footer-link tracking-wider md:text-lg  hover:text-black">VENUE</nuxt-link>
         </div>
       </nav>
 
-      <a class="w-full text-gray-700 hover:text-gray-900 mb-16 md:text-lg " href="https://stevenloe.com">Website by Steven Loe</a>
+      <nuxt-link to="https://stevenloe.com" class="w-full text-gray-700 hover:text-gray-900 mb-16 md:text-lg " href="https://stevenloe.com">Website by Steven Loe</nuxt-link>
 
     </div>
 
