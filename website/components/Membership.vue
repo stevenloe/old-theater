@@ -1,23 +1,34 @@
 <template>
-<div class="m-4 sm:m-8 md:m-8 ">
-  <!-- image card-->
-    <div class="relative rounded-t-lg overflow-hidden shadow-lg">
+  <div class="m-4 sm:m-8 md:m-8 ">
+    <!-- image card-->
+    <div class="rounded-t-lg overflow-hidden shadow-lg">
       <img class="h-full w-full object-cover" :src="item.imageUrl" :alt="item.imageAlt">
-      <!-- <h2 class="absolute inset-x-0 top-0 pt-2 h-16  text-white text-center font-medium text-4xl ">{{ item.title }}</h2> -->
     </div>
     <!-- details -->
-    <div class=" bg-yellow-900 rounded-b-lg  pl-6 pr-6 pt-3 pb-4 pr-4 shadow-lg">
-      <h2 class="text-white font-medium text-4xl mb-2">{{ item.title }}</h2>
-      <h4 class="text-gray-300 text-lg font-semibold mb-3">{{item.subhead}}</h4>
-      <p class="text-white mb-5 block font-medium text-lg">{{ item.description }}</p>
-      <nuxt-link to="/education/" class=" block  mb-3 bg-yellow-800  text-center border-2 border-white  text-white font-semibold text-lg py-2 px-4  tracking-wider rounded-lg shadow-md hover:bg-yellow-700 uppercase sm:w-1/3">{{ item.cta }}</nuxt-link>
+    <div class=" bg-yellow-600 rounded-b-lg  pl-6 pr-6 pt-3 pb-4 shadow-lg">
+      <h2 class="text-white  font-bold text-4xl text-shadow">{{ item.title }}</h2>
+      <p class="text-white mb-5 block font-medium text-lg md:text-2xl lg:text-3xl">{{ item.description }}</p>
+      <nuxt-link to="/education" class="block mb-3 bg-blue-600  text-center border-2 border-white text-white font-semibold text-lg py-2 px-4 shadow-md rounded-lg tracking-wide hover:bg-blue-700 uppercase sm:w-1/3">{{ item.cta }}</nuxt-link>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['item']
- 
+  data() {
+    return {
+      item: {
+        title: "Membership",
+        subhead: "PATREON MEMBERSHIP",
+        category: "Membership",
+        location: "The Old Theater",
+        description:
+          "Enjoy the benefits of membership while providing the support that enables us to continue creating magical experiences both in front of and behind the curtains. We thank our generous donors who help the Old Theater bring outstanding entertainment to our community.",
+        imageUrl: "_nuxt/assets/img_new/processed/cast-edit.jpg",
+        imageAlt: "Membership Photo",
+        cta: "Join",
+      },
+    };
+  },
 };
 </script>
