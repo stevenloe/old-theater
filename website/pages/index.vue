@@ -5,7 +5,6 @@
 
     <div class="articles">
       <div class="show-card m-4 sm:m-8 md:flex md:m-8 md:mr-8  rounded-lg p-0" v-for="article of articles" :key="article">
-
         <!-- <pre>{{ article }}</pre> -->
         <!-- image card -->
         <div class="relative md:w-2/3 md:rounded-r-none rounded-lg overflow-hidden ">
@@ -27,17 +26,25 @@
             <nuxt-link :to="{ name: 'slug', params: { slug: article.slug }}" class="w-1/2 ml-3 md:ml-0 md:mt-3 md:w-full md:block bg-white  border border-gray-700  text-gray-800 font-semibold py-1 px-4 text-lg text-center rounded-lg  hover:bg-gray-100 hover:text-gray-900">Learn More</nuxt-link>
           </div>
         </div>
-
       </div>
     </div>
+
+    <Education />
+
+    <!-- <Testing /> -->
 
   </div>
 </template>
 
 <script>
 import AlertBox from '~/components/AlertBox'
+import Education from '~/components/Education'
+import Membership from '~/components/Membership'
+import MemberCrawl from '~/components/MemberCrawl'
+import Testing from '~/components/Testing'
 export default {
   async asyncData({ $content, params }) {
+    console.log("PARAMS", params);
     let articles = await $content("articles", params.slug)
       .only([
         "title",
@@ -79,7 +86,11 @@ export default {
   },
   layout: "home",
   components: {
-    AlertBox
+    AlertBox,
+    Education,
+    Membership,
+    MemberCrawl,
+    Testing,
   }
 };
 </script>
