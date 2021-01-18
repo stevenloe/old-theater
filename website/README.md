@@ -1,4 +1,4 @@
-# nuxt-tailwind
+# The Old Theater
 
 ## Build Setup
 
