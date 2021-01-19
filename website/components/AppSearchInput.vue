@@ -14,7 +14,7 @@
       <li v-for="result of results" :key="result.slug">
         <NuxtLink
           @click="clear()"
-          :to="result.slug"
+          :to="'/' + result.slug"
           class="flex px-8 py-2 items-center leading-5 transition ease-in-out duration-150 text-blue-800 hover:text-black"
         >
           {{ result.title }}
