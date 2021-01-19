@@ -29,7 +29,7 @@ export default {
             "Calling actors! Please join us at our call casting call for The Old Theater's production of Sex Please We’re Sixty.. ",
           cta: "Read More",
           date: "1/3/2020",
-          link: "/news/2020-01-03-casting-call/",
+          link: "",
         },
         {
           title: "The Old Theater announces new board members",
@@ -39,7 +39,7 @@ export default {
             "The Old Theater is pleased to announce ...",
           cta: "Read More",
           date: "1/5/2020",
-          link: "/news/2020-01-03-new-board-members/",
+          link: "",
         },
       ],
     };
