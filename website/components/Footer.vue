@@ -28,7 +28,7 @@
         </div>
       </nav>
 
-      <nuxt-link to="https://stevenloe.com" class="w-full text-gray-700 hover:text-gray-900 mb-16 text-sm sm:text-base  " href="https://stevenloe.com">Website by Steven Loe</nuxt-link>
+      <a href="https://stevenloe.com" class="w-full text-gray-700 hover:text-gray-900 mb-16 text-sm sm:text-base ">Website by Steven Loe</a>
 
     </div>
 
