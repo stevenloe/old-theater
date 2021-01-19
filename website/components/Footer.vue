@@ -22,7 +22,7 @@
           <nuxt-link to="/contact" class="footer-link tracking-wider md:text-lg hover:text-black">CONTACT US</nuxt-link>
         </div>
         <div class="w-1/2 text-right">
-          <nuxt-link to="/about/volunteers-and-board" class="footer-link tracking-wider md:text-lg  hover:text-black">BOARD OF DIRECTORS</nuxt-link>
+          <nuxt-link to="/support/donate" class="footer-link tracking-wider md:text-lg  hover:text-black">DONATE</nuxt-link>
           <nuxt-link to="/calendar" class="footer-link tracking-wider  md:text-lg hover:text-black">CALENDAR</nuxt-link>
           <nuxt-link to="/about/venue" class="footer-link tracking-wider md:text-lg  hover:text-black">VENUE</nuxt-link>
         </div>
