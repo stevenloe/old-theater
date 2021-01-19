@@ -2,7 +2,7 @@
   <div class="m-4 sm:m-8 md:m-8 ">
     <!-- image card-->
     <div class="rounded-t-lg overflow-hidden shadow-lg">
-      <img class="h-full w-full object-cover" :src="item.imageUrl" :alt="item.imageAlt">
+      <img class="h-full w-full object-cover" :src="require(`~/assets/img_new/processed/${item.imageUrl}`)" :alt="item.imgAlt" />
     </div>
     <!-- details -->
     <div class=" bg-yellow-600 rounded-b-lg  pl-6 pr-6 pt-3 pb-4 shadow-lg">
@@ -24,7 +24,7 @@ export default {
         location: "The Old Theater",
         description:
           "Enjoy the benefits of membership while providing the support that enables us to continue creating magical experiences both in front of and behind the curtains. We thank our generous donors who help the Old Theater bring outstanding entertainment to our community.",
-        imageUrl: "_nuxt/assets/img_new/processed/cast-edit.jpg",
+        imageUrl: "cast-edit.jpg",
         imageAlt: "Membership Photo",
         cta: "Join",
       },

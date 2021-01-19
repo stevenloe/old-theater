@@ -2,7 +2,7 @@
   <div class="m-4 sm:m-8 md:m-8 ">
     <!-- image card-->
     <div class="rounded-t-lg overflow-hidden shadow-lg">
-      <img class="h-full w-full object-cover" :src="randomImg" :alt="item.imageAlt">
+      <img class="h-full w-full object-cover" :src="require(`~/assets/img/sponsorship/${randomImg}`)" :alt="item.imgAlt" />
     </div>
     <!-- details -->
     <div class=" bg-blue-800 rounded-b-lg  pl-6 pr-6 pt-3 pb-4 shadow-lg">
@@ -33,9 +33,7 @@ export default {
   computed: {
     randomImg() {
       const i = Math.floor((Math.random() * 3))
-      const path = '_nuxt/assets/img/sponsorship/'
-      console.log();
-      return path + this.item.images[i]
+      return  this.item.images[i]
     }
   }
 };

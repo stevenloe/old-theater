@@ -2,7 +2,7 @@
   <div class="m-4 sm:m-8 md:m-8 bg-indigo-700 pt-1 rounded-lg shadow-lg ">
     <!-- image card-->
     <div class=" m-6  rounded-lg overflow-hidden shadow-xl">
-      <img class="h-full w-full object-cover" :src="item.imageUrl" :alt="item.imageAlt">
+      <img class="h-full w-full object-cover" :src="require(`~/assets/img/${item.imageUrl}`)" :alt="item.imgAlt" />
     </div>
     <!-- details -->
     <div class="rounded-b-lg  pl-6 pr-6 pt-0 pb-4 -mt-4">
@@ -22,7 +22,7 @@ export default {
         category: "Education",
         description:
           "The Old Theater impacts area youth though education and engagement programs.",
-        imageUrl: "_nuxt/assets/img/childrens_theater_workshop_crop.jpg",
+        imageUrl: "childrens_theater_workshop_crop.jpg",
         imageAlt: "education image",
         cta: "Learn More",
       },
