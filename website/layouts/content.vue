@@ -1,5 +1,5 @@
 <template>
-  <div class="antialiased text-gray-900 bg-gray-200 mb-12"> 
+  <div class="antialiased text-gray-900 bg-gray-100 mb-12"> 
     <NavBar/>
     <div>
       <Nuxt />
