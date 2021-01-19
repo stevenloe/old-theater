@@ -2,7 +2,7 @@
 title: Goldfinger
 description:  Suscipit unde labore necessitatibus fugiat? Repellendus magnam reprehenderit, repudiandae impedit suscipit pariatur unde reiciendis aperiam dolore aliquam aut eum sapiente molestiae animi praesentium numquam, dolores quisquam exercitationem beatae nulla? Maxime.
 shortDesc: Suscipit unde labore necessitatibus fugiat?
-slug: goldfinger
+slug: /goldfinger
 img: goldfinger.jpg
 imgAlt: some alt text
 eventDate: 'January, 1 2021 19:00:30 EST'
