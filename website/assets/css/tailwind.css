@@ -4,7 +4,7 @@
 
 .footer-link {
   word-spacing: 1px;
-  @apply block py-1 text-gray-800 text-sm font-light tracking-wide;
+  @apply block py-2 text-gray-800 font-light tracking-wide;
 }
 
 

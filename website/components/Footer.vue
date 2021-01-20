@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-300 p-8 ">
+  <footer class="bg-gray-200 p-8  border-t border-gray-500">
     <div class="mt-0 text-center sm:w-3/4 md:w-8/12 lg:w-1/2  xl:w-5/12 mx-auto">
       <img class="inline-block h-20 md:h-24" src="~/assets/img/old-theater-logo-final.svg" alt="The Old Theater, Oriental North Carolina">
 
