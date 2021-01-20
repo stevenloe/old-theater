@@ -1,6 +1,7 @@
 <template>
   <header class="bg-white md:flex md:justify-between md:items-start md:px-4 md:py-3">
     <div class="flex items-center justify-between px-4 py-3 md:p-0">
+      <img class="inline-block h-10 md:mr-2 md:h-12" src="~/assets/img/old-theater-logo-final.svg" alt="The Old Theater, Oriental North Carolina">
       <!-- <h2 class="font-serif text-lg tracking-wide rounded hover:bg-gray-200 sm:bg-red-300 md:bg-orange-300 lg:bg-yellow-300 xl:bg-indigo-400 2xl:bg-red-600"> -->
       <h2 class="font-serif text-lg tracking-wide rounded hover:bg-gray-200 ">
         <nuxt-link to="/" class>
@@ -11,7 +12,7 @@
 
       <!-- menu / menu-close buttons -->
       <div class="md:hidden">
-        <button @click="isOpen = !isOpen" type="button" class="block text-gray-700 hover:text-gray-900 focus:text-gray-900">
+        <button @click="isOpen = !isOpen" type="button" class="block text-gray-700 hover:text-gray-900 focus:text-gray-900" name="mobile menu navigation open/close">
           <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
             <path v-if="isOpen" fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
             <path v-if="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
