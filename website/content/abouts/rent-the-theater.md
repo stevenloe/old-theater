@@ -11,7 +11,7 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-# Rent the Old Theater for Your Event
+## Rent the Old Theater for Your Event
 
 You can rent the Old Theater for your business, community or entertainment event. We have a graduated schedule of rates depending on time, date and purpose, and provide support for your technical needs.
 
