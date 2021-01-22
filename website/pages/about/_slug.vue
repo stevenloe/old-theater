@@ -1,7 +1,6 @@
 <template>
-  <div class="">
-    <NavBar class="sm:mb-8" />
-    <article>
+  <div>
+    <article class="pt-12 sm:pt-24">
       <div v-if="about.img" class="sm:rounded-lg sm:ml-8 sm:mr-8 overflow-hidden shadow-lg mb-6 max-w-6xl mx-auto">
         <img :src="require(`~/assets/img/about/${about.img}`)" :alt="about.imgAlt" />
       </div>
