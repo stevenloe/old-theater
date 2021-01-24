@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="overflow-auto">
       <nav :class="isMenuOpen ? 'block' : 'hidden'" class="px-4 pt-2 pb-4 md:flex md:p-0">
         <AppSearchInput />
 
@@ -150,7 +150,7 @@ export default {
   },
   computed: {
     headerClass  () {
-      const full = this.isOpen ? ' h-full overflow-y-scroll' : ''
+      const full = this.isMenuOpen ? ' h-full overflow-y-scroll' : ''
       return `fixed bg-white w-full md:flex md:justify-between md:items-start md:px-4 md:py-3 z-30 top-0 ${full}`
     }
   },
