@@ -1,6 +1,10 @@
 <template>
   <div class="antialiased text-gray-900 bg-gray-500"> 
-    <NavBar/>
+
+    <client-only>
+      <NavBar/>
+    </client-only>
+    
     <div class="pt-16">
       <Nuxt />
     </div>
