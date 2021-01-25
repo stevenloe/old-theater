@@ -1,6 +1,8 @@
 <template>
   <div class="">
-    <!-- <NavBar class="sm:mb-8"/> -->
+    <client-only>
+      <NavBar/>
+    </client-only>
     <article>
       <div class="sm:rounded-lg sm:ml-8 sm:mr-8 overflow-hidden shadow-lg mb-6 max-w-6xl mx-auto">
         <img :src="require(`~/assets/img_new/processed/${article.img}`)" :alt="article.imgAlt" />

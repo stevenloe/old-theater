@@ -1,10 +1,10 @@
 <template>
   <header :class="headerClass">
     <div class="flex items-center justify-between px-4 py-3 md:p-0">
-            <img class="inline-block h-10 md:mr-2 md:h-12" src="~/assets/img/old-theater-logo-final.svg" alt="The Old Theater, Oriental North Carolina">
+      <img class="inline-block h-10 md:mr-2 md:h-12" src="~/assets/img/old-theater-logo-final.svg" alt="The Old Theater, Oriental North Carolina">
 
       <h2 class="font-serif text-lg tracking-wide rounded hover:bg-gray-200 ">
-        <nuxt-link to="/" class>
+        <nuxt-link to="/">
           <div class="-mb-2 tracking-wide">The Old Theater</div>
           <div class="text-xs text-gray-600 tracking-widest">ORIENTAL, NC</div>
         </nuxt-link>
@@ -21,8 +21,8 @@
       </div>
     </div>
 
-    <div class="overflow-auto">
-      <nav :class="isMenuOpen ? 'block' : 'hidden'" class="px-4 pt-2 pb-4 md:flex md:p-0">
+    <div class="overflow-auto md:overflow-visible">
+      <nav :class="isMenuOpen ? 'block' : 'hidden'" class="relative px-4 pt-2 pb-4 md:flex md:p-0">
         <AppSearchInput />
 
         <div class="flex mb-4 md:hidden">
@@ -134,13 +134,17 @@ export default {
       };
     },
 
-    on_resize: function () {
+    on_resize() {
       this.isMobile = window.innerWidth < 768;
       console.log("ON RESIZE", window.innerWidth, this.isMobile);
+      this.isMenuOpen = false;
     },
+
   },
   created() {
     this.on_resize();
+    this.isMenuOpen = false;
+    window.addEventListener('hashchange', function(e){console.log('hash changed')});
   },
   mounted: function () {
     window.addEventListener("resize", this.debounce(this.on_resize, 25));
@@ -151,7 +155,7 @@ export default {
   computed: {
     headerClass  () {
       const full = this.isMenuOpen ? ' h-full overflow-y-scroll' : ''
-      return `fixed bg-white w-full md:flex md:justify-between md:items-start md:px-4 md:py-3 z-30 top-0 ${full}`
+      return `fixed bg-white w-full md:flex md:justify-between md:items-start md:px-4 md:py-3 z-20 top-0 ${full}`
     }
   },
   components: {

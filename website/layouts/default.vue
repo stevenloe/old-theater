@@ -1,11 +1,6 @@
 <template>
-  <div class="antialiased text-gray-900 bg-gray-200"> 
-
-    <client-only>
-      <NavBar class="sm:mb-8" />
-    </client-only>
-    
-    <div class="pt-24 mb-12">
+  <div class="antialiased text-gray-900 bg-gray-100"> 
+    <div class="pt-12">
       <Nuxt />
     </div>
     <Footer/>

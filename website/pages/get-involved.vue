@@ -1,7 +1,10 @@
 <template>
+  <div>
+    <client-only>
+      <NavBar />
+    </client-only>
 
     <div class="container md:mx-auto max-w-3xl  pl-8 pr-8 md:p-0">
-
       <div class="mb-4">
         <h1 class="text-4xl font-extrabold">Get Involved</h1>
         <div>
@@ -67,15 +70,13 @@
         <div class="flex">
         </div>
       </div>
-      <member-crawl/>
+      <member-crawl />
     </div>
-    
-
+  </div>
 </template>
 
 <script>
-
-import MemberCrawl from '@/components/MemberCrawl'
+import MemberCrawl from "@/components/MemberCrawl";
 
 export default {
   metaInfo: {
@@ -84,6 +85,6 @@ export default {
   components: {
     MemberCrawl,
   },
-   layout: "content",
+  layout: "content",
 };
 </script>

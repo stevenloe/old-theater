@@ -1,11 +1,6 @@
 <template>
   <div class="antialiased text-gray-900 bg-gray-500"> 
-
-    <client-only>
-      <NavBar/>
-    </client-only>
-    
-    <div class="pt-16">
+    <div class="pt-20">
       <Nuxt />
     </div>
     <Footer/>

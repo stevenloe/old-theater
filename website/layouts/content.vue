@@ -1,8 +1,5 @@
 <template>
   <div class="antialiased text-gray-900 bg-gray-100 mb-12"> 
-    <client-only>
-      <NavBar/>
-    </client-only>
     <div>
       <Nuxt />
     </div>

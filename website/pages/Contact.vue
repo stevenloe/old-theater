@@ -1,4 +1,9 @@
 <template>
+  <div>
+    <client-only>
+      <NavBar />
+    </client-only>
+    
     <div class="container md:mx-auto max-w-3xl">
       <div class="mb-4">
         <h1 class="text-3xl font-semibold">Contact</h1>
@@ -7,14 +12,14 @@
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
-
 export default {
   metaInfo: {
     title: "Contact",
   },
-    layout: "content",
+  layout: "content",
 };
 </script>

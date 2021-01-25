@@ -1,5 +1,8 @@
 <template>
   <div class="home-page">
+    <client-only>
+      <NavBar/>
+    </client-only>
 
     <AlertBox />
 
