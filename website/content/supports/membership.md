@@ -15,7 +15,7 @@ ticketURL: https://example.com
 
 Oriental’s Old Theater first opened its doors as a movie theater in 1946, and served as a social entertainment center until the late 50s. It was revitalized and reopened in 1995, providing a venue where performing arts can thrive in Pamlico County.
 
-The Old Theater is owned and managed by the Old Theater Corporation, a registered 501©(3) non-profit organization. All memberships and donations are tax deductible. Its Board is comprised of Pamlico County volunteers whose mission is to ensure that Pamlico County and the town of Oriental has a venue for civic and cultural events. The ability to achieve this mission depends on the ongoing support and participation of individuals, businesses, service organizations, grants and volunteers on stage and behind the scenes.
+The Old Theater is owned and managed by the Old Theater Corporation, a registered 501(c)(3) non-profit organization. All memberships and donations are tax deductible. Its Board is comprised of Pamlico County volunteers whose mission is to ensure that Pamlico County and the town of Oriental has a venue for civic and cultural events. The ability to achieve this mission depends on the ongoing support and participation of individuals, businesses, service organizations, grants and volunteers on stage and behind the scenes.
 
 Thanks to the generosity of people like YOU, significant improvements have been accomplished over the past few years. A successful 2021 membership drive will enable us to continue needed improvements and the variety of entertainment our community has come to enjoy.
 

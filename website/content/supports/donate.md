@@ -33,7 +33,7 @@ The Old Theater
 P.O. Box 521   
 Oriental, NC 28571.   
 
-The Old Theater Corporation is a registered 501©(3) non-profit organization, and all donations are tax deductible.
+The Old Theater Corporation is a registered 501(c)(3) non-profit organization, and all donations are tax deductible.
 
 Kind Regards,
 
