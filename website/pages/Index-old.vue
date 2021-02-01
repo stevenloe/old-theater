@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import DefaultLayout from '~/layouts/Default.vue'
+import DefaultLayout from '~/layouts/default.vue'
 import ShowCard from '~/components/ShowCard.vue';
 import Education from '~/components/Education.vue';
 import Membership from '~/components/Membership.vue';

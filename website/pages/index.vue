@@ -43,12 +43,12 @@
 </template>
 
 <script>
-import AlertBox from '~/components/AlertBox'
-import Education from '~/components/Education'
-import Membership from '~/components/Membership'
-import MemberCrawl from '~/components/MemberCrawl'
-import Sponsorship from '~/components/Sponsorship'
-import NewsWidget from '~/components/NewsWidget'
+import AlertBox from '@/components/AlertBox'
+import Education from '@/components/Education'
+import Membership from '@/components/Membership'
+import MemberCrawl from '@/components/MemberCrawl'
+import Sponsorship from '@/components/Sponsorship'
+import NewsWidget from '@/components/NewsWidget'
 export default {
   async asyncData({ $content, params }) {
     console.log("PARAMS", params);
