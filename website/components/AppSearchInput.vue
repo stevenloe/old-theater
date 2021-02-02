@@ -71,8 +71,8 @@ export default {
       console.log("isMobile", this.isMobile, "isOpen", this.isOpen);
       let openClose = (this.isOpen || this.isMobile) ? 'open' : '';
       console.log("openClose", openClose, "Animated", this.isAnimated);
-      if(this.isAnimated === 'true') {return `${openClose} search block w-0 h-10 text-lg`}
-      return `${openClose} search block w-full rounded-lg md:border-0 bg-blue-400 md:text-2xl font-semibold placeholder-white h-0 md:rounded-tr-none`
+      if(this.isAnimated === 'true') {return `${openClose} search  w-0 h-10 text-lg focus:outline-none`}
+      return 'w-full rounded-lg md:border-0 bg-blue-400 md:text-2xl font-semibold placeholder-white h-12 mt-2 md:rounded-tr-none mb-2 focus:outline-none'
     }
   }
 }
