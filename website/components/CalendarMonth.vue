@@ -1,11 +1,12 @@
 <template>
   <div class="relative border border-gray-300 bg-gray-300">
     <div class="flex justify-between bg-white py-4">
-      <div class="hidden md:block w-1/3"> </div>
-    
+      
+      <div class="hidden md:block w-1/3"></div>
+
       <CalendarDateIndicator
         :selected-date="selectedDate"
-        class="calendar-month-header-selected-month "
+        class="calendar-month-header-selected-month"
       />
 
       <CalendarDateSelector
@@ -221,8 +222,6 @@ export default {
   position: relative;
   background-color: var(--grey-200);
   border: solid 1px var(--grey-300);
-
-
 }
 
 .day-of-week {
