@@ -25,8 +25,8 @@
           </div>
 
           <div class="flex w-full mt-2 md:inline-block pl-6 pr-6 pb-6">
-            <nuxt-link to="#" class="w-1/2 bg-orange-300 md:w-full  md:block border border-gray-800 text-gray-900 font-bold py-1 px-4 rounded-lg text-lg text-center hover:bg-yellow-300 hover:text-gray-900">Buy Tickets</nuxt-link>
-            <nuxt-link :to="article.slug" class="w-1/2 ml-3 md:ml-0 md:mt-3 md:w-full md:block bg-white  border border-gray-700  text-gray-800 font-semibold py-1 px-4 text-lg text-center rounded-lg  hover:bg-gray-100 hover:text-gray-900">Learn More</nuxt-link>
+            <nuxt-link to="#" class="w-1/2 bg-indigo-500 md:w-full md:block text-white uppercase tracking-wide font-bold py-2 px-4 text-lg text-center hover:bg-indigo-700 shadow-lg mb-3">Buy Tickets</nuxt-link>
+            <nuxt-link :to="article.slug" class="w-1/2 default-gray md:w-full md:block text-white uppercase tracking-wide font-bold py-2 px-4 text-lg text-center hover:bg-gray-600  shadow-lg">Learn More</nuxt-link>
           </div>
         </div>
       </div>
@@ -106,6 +106,9 @@ export default {
 <style>
 .show-card {
   box-shadow: 3px 3px 13px rgba(0, 0, 0, 0.4);
+}
+.default-gray {
+  background-color: #889;
 }
 </style>
 
