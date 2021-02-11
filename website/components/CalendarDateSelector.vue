@@ -1,4 +1,5 @@
 <template>
+<div class="flex justify-end items-center md:w-1/3">
   <div
     class="flex justify-between w-24 mr-4 text-xl font-semibold select-none cursor-pointer"
   >
@@ -6,6 +7,8 @@
     <span @click="selectCurrent">Today</span>
     <span @click="selectNext">></span>
   </div>
+
+</div>
 </template>
 
 <script>
