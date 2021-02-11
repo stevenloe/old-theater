@@ -9,7 +9,7 @@
       <div
         :class="
           isToday
-            ? 'text-white font-semibold w-6 h-6 rounded-full bg-gray-900'
+            ? 'text-white font-semibold w-6 h-6 rounded-full mt-1 bg-gray-900'
             : 'text-gray-600'
         "
         class="flex justify-center items-center font-light mr-1"
