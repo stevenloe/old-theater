@@ -4,7 +4,7 @@
       <NavBar />
     </client-only>
     
-    <div class="container md:mx-auto max-w-3xl pl-8 pr-8 md:p-0">
+    <div class="container md:mx-auto max-w-3xl pl-8 pr-8 md:pl-0 md:pr-0 pt-16 md:pt-24">
 
       <div class="mb-8">
         <h1 class="text-4xl font-extrabold mt-4 mb-4">Community &amp; Education</h1>
