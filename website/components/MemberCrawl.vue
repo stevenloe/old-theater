@@ -1,14 +1,28 @@
 <template>
-  <div class="p-8 border-t-2 border-gray-500 bg-gray-200">
-    <h2 class="mb-4 text-2xl font-semibold">Thanks to Our 2020 Members! <div class="text-red-500 text-base">(This will be an animated scrolling list of all current members)</div></h2>
-    <div class="flex justify-between">
-      <p class="text-2xl font-serif text-gray-600">Kathy Enzerink</p>
-      <p class="text-2xl font-serif text-gray-600">Katherine Hudson</p>
+  <div class="m-8 border-8 rounded-xl border-blue-700  bg-white overflow-hidden">
+    <div class=" bg-blue-700">
+      <div
+        class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight flex text-white p-5 pt-3"
+      >
+        Thanks to our 2021 Members!
+      </div>
+
+      <client-only>
+        <MemberCarousel />
+      </client-only>
     </div>
   </div>
 </template>
 
 <script>
+import MemberCarousel from "@/components/MemberCarousel";
 export default {
+  components: {
+    MemberCarousel,
+  },
+  created: function () {
+    // `this` points to the vm instance
+    console.log("------- CREATED CRAWL ----------");
+  },
 };
 </script>
