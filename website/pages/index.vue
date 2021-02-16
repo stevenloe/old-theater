@@ -1,32 +1,58 @@
 <template>
   <div class="home-page">
     <client-only>
-      <NavBar/>
+      <NavBar />
     </client-only>
 
     <AlertBox />
 
     <div class="articles">
-      <div class="show-card m-4 sm:m-8 md:flex md:m-8 md:mr-8  rounded-lg p-0" v-for="article of articles" :key="article">
+      <div
+        class="show-card m-4 sm:m-8 md:flex md:m-8 md:mr-8 rounded-lg p-0"
+        v-for="article of articles"
+        :key="article"
+      >
         <!-- <pre>{{ article }}</pre> -->
         <!-- image card -->
-        <div class="relative md:w-2/3 md:rounded-r-none rounded-lg overflow-hidden ">
+        <div
+          class="relative md:w-2/3 md:rounded-r-none rounded-lg overflow-hidden"
+        >
           <nuxt-link :to="article.slug">
-            <img :src="require(`~/assets/img_new/processed/${article.img}`)" :alt="article.imgAlt" />
+            <img
+              :src="require(`~/assets/img_new/processed/${article.img}`)"
+              :alt="article.imgAlt"
+            />
           </nuxt-link>
         </div>
 
         <!-- details card -->
-        <div class="relative -mt-1 bg-gray-200 rounded-b-lg md:mt-0 md:rounded-b-none md:rounded-r-lg  md:w-1/3  md:p-0 ">
+        <div
+          class="relative -mt-1 bg-gray-200 rounded-b-lg md:mt-0 md:rounded-b-none md:rounded-r-lg md:w-1/3 md:p-0"
+        >
           <div class="p-6 pt-2 w-full">
             <h3 class="font-bold text-4xl">{{ article.title }}</h3>
-            <div class="text-xs uppercase font-semibold tracking-wide">{{ article.eventTime | formatDate}} • {{ article.eventTime | formatTime }} • ${{ article.formattedPrice}}</div>
-            <p class="block overflow md:break-normal">{{ article.shortDesc }}.</p>
+            <div class="text-xs uppercase font-semibold tracking-wide">
+              {{ article.eventTime | formatDate }} •
+              {{ article.eventTime | formatTime }} • ${{
+                article.formattedPrice
+              }}
+            </div>
+            <p class="block overflow md:break-normal">
+              {{ article.shortDesc }}.
+            </p>
           </div>
 
           <div class="flex w-full mt-2 md:inline-block pl-6 pr-6 pb-6">
-            <nuxt-link to="#" class="w-1/2 bg-indigo-500 md:w-full md:block text-white uppercase tracking-wide font-bold py-2 px-4 text-lg text-center hover:bg-indigo-700 shadow-lg mb-3">Buy Tickets</nuxt-link>
-            <nuxt-link :to="article.slug" class="w-1/2 default-gray md:w-full md:block text-white uppercase tracking-wide font-bold py-2 px-4 text-lg text-center hover:bg-gray-600  shadow-lg">Learn More</nuxt-link>
+            <nuxt-link
+              to="#"
+              class="w-1/2 bg-indigo-500 md:w-full md:block text-white uppercase tracking-wide font-bold py-2 px-4 text-lg text-center hover:bg-indigo-700 shadow-lg mb-3"
+              >Buy Tickets</nuxt-link
+            >
+            <nuxt-link
+              :to="article.slug"
+              class="w-1/2 default-gray md:w-full md:block text-white uppercase tracking-wide font-bold py-2 px-4 text-lg text-center hover:bg-gray-600 shadow-lg"
+              >Learn More</nuxt-link
+            >
           </div>
         </div>
       </div>
@@ -36,19 +62,21 @@
     <Education />
     <Membership />
     <Sponsorship />
-    <MemberCrawl />
 
-
+    <client-only>
+      <MemberCrawl />
+    </client-only>
   </div>
 </template>
 
 <script>
-import AlertBox from '@/components/AlertBox'
-import Education from '@/components/Education'
-import Membership from '@/components/Membership'
-import MemberCrawl from '@/components/MemberCrawl'
-import Sponsorship from '@/components/Sponsorship'
-import NewsWidget from '@/components/NewsWidget'
+import AlertBox from "@/components/AlertBox";
+import Education from "@/components/Education";
+import Membership from "@/components/Membership";
+import MemberCrawl from "@/components/MemberCrawl";
+import Sponsorship from "@/components/Sponsorship";
+import NewsWidget from "@/components/NewsWidget";
+
 export default {
   async asyncData({ $content, params }) {
     console.log("PARAMS", params);
@@ -80,7 +108,7 @@ export default {
     // });
 
     articles.forEach((element) => {
-      console.log("elem", element);
+      // console.log("elem", element);
     });
 
     // filter out past events
@@ -99,7 +127,11 @@ export default {
     MemberCrawl,
     Sponsorship,
     NewsWidget,
-  }
+  },
+    created: function () {
+    // `this` points to the vm instance
+    console.log("------- CREATED INDEX ----------");
+  },
 };
 </script>
 
