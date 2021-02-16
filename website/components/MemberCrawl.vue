@@ -1,5 +1,5 @@
 <template>
-  <div class="m-8 border-8 rounded-xl border-blue-700  bg-white overflow-hidden">
+  <div class="m-8 border-8 rounded-xl border-blue-700  bg-white overflow-hidden shadow-lg">
     <div class=" bg-blue-700">
       <div
         class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight flex text-white p-5 pt-3"
