@@ -23,7 +23,7 @@
         249 – 0477.
       </p>
 
-      <form name="contact-old-theater" method="POST" data-netlify="true">
+      <form name="contact-old-theater" method="POST" data-netlify="true" action="success-contact/">
 
         <p class="hidden">
           <label
@@ -81,7 +81,6 @@
               placeholder="Jane"
               required
             />
-            <p class="text-red-500 text-xs italic"></p>
           </div>
           <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0">
             <label
@@ -115,7 +114,6 @@
               placeholder="me@mail.com"
               required
             />
-            <p class="text-red-500 text-xs italic"></p>
           </div>
           <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0">
             <label
