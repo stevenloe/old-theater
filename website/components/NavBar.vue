@@ -132,7 +132,7 @@
           isAnimated="true"
         />
 
-        <a href="#" class="text-gray-700 bg-yellow-300 pr-4" @click="toggle">
+        <a href="#" class="text-gray-700 bg-gray-300 pl-1 pr-3 " @click="toggle">
           <svg
             class="h-8 w-10 px-1 pt-1 fill-current"
             xmlns="http://www.w3.org/2000/svg"
