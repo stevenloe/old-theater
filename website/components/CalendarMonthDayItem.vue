@@ -1,16 +1,14 @@
 <template>
   <li
-
-  
     class="calendar-day"
-    :class="day.isCurrentMonth ? 'bg-white' : 'bg-gray-200'"
+    :class="day.isCurrentMonth ? 'bg-white' : 'bg-gray-300'"
   >
     <div class="flex justify-end">
       <div
         :class="
           isToday
             ? 'text-white font-semibold w-6 h-6 rounded-full mt-1 bg-gray-900'
-            : 'text-gray-600'
+            : 'text-gray-700'
         "
         class="flex justify-center items-center font-light mr-1"
       >

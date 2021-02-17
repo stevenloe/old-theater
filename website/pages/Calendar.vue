@@ -5,7 +5,7 @@
     </client-only>
 
     <div class="mt-12 ml-8 mr-8">
-      <div class="mb-4">
+      <div class="mb-8">
         <h1 class="text-3xl font-semibold">Calendar</h1>
         <CalendarMonth />
       </div>
@@ -23,6 +23,6 @@ export default {
   components: {
     CalendarMonth,
   },
-  layout: "default",
+  layout: "home",
 };
 </script>
