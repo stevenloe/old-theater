@@ -42,15 +42,15 @@
             </p>
           </div>
 
-          <div class="flex w-full mt-2 md:inline-block pl-6 pr-6 pb-6">
+          <div class="flex w-full  md:inline-block pl-6 pr-6 pb-4">
             <nuxt-link
               to="#"
-              class="w-1/2 bg-indigo-500 md:w-full md:block text-white uppercase tracking-wide font-bold py-2 px-4 text-lg text-center hover:bg-indigo-700 shadow-lg mb-3"
+              class="w-1/2 bg-blue-600 md:w-full md:block text-white uppercase shadow-md rounded-lg tracking-wide font-bold py-2 px-4 text-lg text-center hover:bg-blue-700 mb-3 mr-2"
               >Buy Tickets</nuxt-link
             >
             <nuxt-link
               :to="article.slug"
-              class="w-1/2 default-gray md:w-full md:block text-white uppercase tracking-wide font-bold py-2 px-4 text-lg text-center hover:bg-gray-600 shadow-lg"
+              class="w-1/2 bg-gray-600 md:w-full md:block text-white uppercase shadow-md rounded-lg tracking-wide font-bold py-2 px-4 text-lg text-center hover:bg-gray-700 mb-3"
               >Learn More</nuxt-link
             >
           </div>
