@@ -1,5 +1,5 @@
 <template>
-  <ol class="grid grid-cols-7">
+  <ol class="hidden md:grid grid-cols-7">
     <li
       class="text-right p-2 font-semibold font-2xl bg-white pt-5"
       v-for="weekday in weekdays"

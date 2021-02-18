@@ -18,7 +18,7 @@
 
     <CalendarWeekdays />
 
-    <ol class="days-grid">
+    <ol class="days-grid grid grid-cols-1 md:grid-cols-7 border-t border-gray-400">
       <CalendarMonthDayItem
         v-for="day in days"
         :key="day.date"
@@ -56,7 +56,7 @@ export default {
       selectedDate: dayjs(),
       eventItems: {
         "2020-21-21": {
-          items: [
+          eventsToday: [
             {
               date: "2020-21-21",
               type: "Friday Flick",
@@ -67,7 +67,7 @@ export default {
           ],
         },
         "2021-01-12": {
-          items: [
+          eventsToday: [
             {
               date: "2020-01-12",
               type: "Casting Call",
@@ -85,7 +85,7 @@ export default {
           ],
         },
         "2021-02-05": {
-          items: [
+          eventsToday: [
             {
               date: "2021-02-05",
               type: "Theatrical Performance",
@@ -96,7 +96,7 @@ export default {
           ],
         },
         "2021-02-14": {
-          items: [
+          eventsToday: [
             {
               date: "2021-02-14",
               type: "Live Music",
@@ -120,9 +120,8 @@ export default {
 
       days.forEach((day) => {
         if (this.eventItems[day.date]) {
-          console.log("FOUND", this.eventItems[day.date].items[0]);
-          day.items = this.eventItems[day.date].items;
-          console.log("DAY IS", day);
+          console.log("FOUND", this.eventItems[day.date].eventsToday[0]);
+          day.eventsToday = this.eventItems[day.date].eventsToday;
         }
       });
 
@@ -216,38 +215,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.calendar-month {
-  position: relative;
-  background-color: var(--grey-200);
-  border: solid 1px var(--grey-300);
-}
-
-.day-of-week {
-  color: var(--grey-800);
-  font-size: 18px;
-  background-color: #fff;
-  padding-bottom: 5px;
-  padding-top: 10px;
-}
-
-.day-of-week,
-.days-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
-
-.day-of-week > * {
-  text-align: right;
-  padding-right: 5px;
-}
-
-.days-grid {
-  height: 100%;
-  position: relative;
-  grid-column-gap: var(--grid-gap);
-  grid-row-gap: var(--grid-gap);
-  border-top: solid 1px var(--grey-200);
-}
-</style>

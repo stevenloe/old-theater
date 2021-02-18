@@ -1,13 +1,13 @@
 <template>
   <div>
-    <li v-for="item in items" :key="item.name">
+    <li v-for="event in eventsToday" :key="event.name">
       <NuxtLink
-        :to="item.url"
-        class="mx-2 my-1 block p-2 rounded-xl hover:bg-gray-200"
+        :to="event.url"
+        class="text-sm md:text-base my-1 block p-2 rounded-xl hover:bg-gray-200"
       >
-        <span class="font-semibold">
-          {{ item.name }}</span
-        >: {{ item.time }}
+        <span class="font-semibold italic pl-4 md:pl-0">
+          {{ event.name }} </span
+        >: {{ event.time }}
       </NuxtLink>
     </li>
   </div>
@@ -17,7 +17,7 @@
 <script>
 export default {
   props: {
-    items: {
+    eventsToday: {
       type: Array,
       required: true,
     },

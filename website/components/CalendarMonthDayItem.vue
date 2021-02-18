@@ -1,18 +1,30 @@
 <template>
   <li
-    class="calendar-day"
-    :class="day.isCurrentMonth ? 'bg-white' : 'bg-gray-300'"
+    class="border border-gray-400 md:min-h-32"
+    :class="
+      day.isCurrentMonth ? 'bg-white' : 'bg-gray-300 hidden md:inline-block'
+    "
   >
     <div class="flex justify-end">
-      <div
-        :class="
-          isToday
-            ? 'text-white font-semibold w-6 h-6 rounded-full mt-1 bg-gray-900'
-            : 'text-gray-700'
-        "
-        class="flex justify-center items-center font-light mr-1"
-      >
-        {{ label }}
+      <div class="block w-full mx-2">
+        <div class="flex justify-between">
+          <div>
+            <div class="inline-block md:hidden">
+              {{ weekday }}
+            </div>
+          </div>
+          
+          <div
+            :class="
+              isToday
+                ? 'text-white font-semibold w-6 h-6 rounded-full my-1 bg-gray-900 -mr-1'
+                : 'text-gray-700'
+            "
+            class="flex justify-center items-center font-light mr-1"
+          >
+            {{ label }}
+          </div>
+        </div>
       </div>
     </div>
 
@@ -45,6 +57,9 @@ export default {
     label() {
       return dayjs(this.day.date).format("D");
     },
+    weekday() {
+      return dayjs(this.day.date).format("ddd");
+    },
   },
   components: {
     CalendarMonthDayEventItem,
@@ -52,35 +67,3 @@ export default {
 };
 </script>
 
-<style scoped>
-.calendar-day {
-  position: relative;
-  min-height: 90px;
-  margin: 1px;
-}
-
-.calendar-day > span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 2px;
-  width: var(--day-label-size);
-  height: var(--day-label-size);
-}
-
-.calendar-day--not-current {
-  background-color: var(--grey-100);
-  color: var(--grey-300);
-}
-
-.calendar-day--today {
-  padding-top: 4px;
-}
-
-.calendar-day--today > span {
-  color: #fff;
-  border-radius: 9999px;
-  background-color: var(--grey-800);
-}
-</style>
