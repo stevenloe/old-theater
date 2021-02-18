@@ -1,5 +1,5 @@
 <template>
-  <div class="antialiased text-gray-900 bg-white"> 
+  <div class="antialiased text-gray-900 bg-gray-100"> 
     <div class="pt-12">
       <Nuxt />
     </div>
