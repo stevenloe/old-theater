@@ -4,7 +4,7 @@
       <NavBar />
     </client-only>
 
-    <div class="mt-12 ml-8 mr-8">
+    <div class="md:mt-8 ml-8 mr-8">
       <div class="mb-8">
         <h1 class="text-3xl font-semibold">Calendar</h1>
         <CalendarMonth />
