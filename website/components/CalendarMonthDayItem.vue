@@ -28,8 +28,8 @@
       </div>
     </div>
 
-    <ul v-if="day.items">
-      <CalendarMonthDayEventItem :items="day.items" />
+    <ul v-if="day.eventsToday">
+      <CalendarMonthDayEventItem :eventsToday="day.eventsToday" />
     </ul>
   </li>
 </template>
