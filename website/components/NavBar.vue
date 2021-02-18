@@ -124,15 +124,14 @@
       </div>
 
       <!-- search icon on medium screens-->
-      <div class="hidden absolute top-0 right-0 bg-blue-400 md:flex">
-        <!-- <div class="relative bg-blue-400 rounded-t-lg overflow-hidden"> -->
+      <div class="hidden absolute top-0 right-0 md:flex">
         <AppSearchInput
           class="w-0 bg-purple-800"
           :isMobile="isMobile"
           isAnimated="true"
         />
 
-        <a href="#" class="text-gray-700 bg-gray-300 pl-1 pr-3 " @click="toggle">
+        <a href="#" class="text-gray-700 bg-gray-300 hover:text-black hover:bg-gray-400 focus:outline-none focus:shadow-outline pl-1 pr-3 rounded-bl-2xl" @click="toggle">
           <svg
             class="h-8 w-10 px-1 pt-1 fill-current"
             xmlns="http://www.w3.org/2000/svg"
