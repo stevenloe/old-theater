@@ -14,7 +14,7 @@
                 alt="The Old Theater, Oriental North Carolina"
               />
               <h2 class="font-serif text-lg tracking-wide rounded">
-                <div class="-mb-2 tracking-wide flex-no-wrap md:mx-4">
+                <div class="-mb-2 tracking-wide flex-no-wrap md:mx-1">
                   The Old Theater
                 </div>
                 <div class="text-xs text-gray-600 tracking-widest md:mx-4">
@@ -57,10 +57,9 @@
           >
             <!-- Search field on mobile menu -->
             <div class="md:hidden w-full">
-              <AppSearchInput :isMobile="true" isAnimated="false" />
+              <SearchMobile :isMobile="true" isAnimated="false" />
             </div>
-            <!-- 
-            <nuxt-link to="/" :class="itemStyle">Home</nuxt-link> -->
+         
             <nuxt-link to="/community-education" :class="itemStyle"
               >Community<span class="tracking-tighter"> &amp; </span
               >Education</nuxt-link
@@ -125,13 +124,13 @@
 
       <!-- search icon on medium screens-->
       <div class="hidden absolute top-0 right-0 md:flex">
-        <AppSearchInput
+        <SearchDesktop
           class="w-0 bg-purple-800"
           :isMobile="isMobile"
           isAnimated="true"
         />
 
-        <a href="#" class="text-gray-700 bg-gray-300 hover:text-black hover:bg-gray-400 focus:outline-none focus:shadow-outline pl-1 pr-3 rounded-bl-2xl" @click="toggle">
+        <a href="#" class="text-white bg-gray-500 hover:bg-gray-600 focus:outline-none  pl-1 pr-3 " @click="toggle">
           <svg
             class="h-8 w-10 px-1 pt-1 fill-current"
             xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +153,10 @@
 
 <script>
 import SubMenu from "~/components/SubMenu.vue";
-import AppSearchInput from "~/components/AppSearchInput.vue";
+import SearchMobile from "~/components/SearchMobile.vue";
+import SearchDesktop from "~/components/SearchDesktop.vue";
+
+import {debounce} from '@/utils/debounce.js'
 export default {
   data() {
     return {
@@ -193,23 +195,7 @@ export default {
     };
   },
   methods: {
-    debounce(func, wait, immediate) {
-      let timeout;
-      return function () {
-        let context = this,
-          args = arguments,
-          later = function () {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-          },
-          call_now = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (call_now) func.apply(context, args);
-      };
-    },
     onResize() {
-      console.log("-- onResize() --");
       this.isMobileMenuOpen = false;
       this.isMobile = this.isSearchOpen = window.innerWidth < 768;
       console.log("ON RESIZE", window.innerWidth, this.isMobile);
@@ -221,7 +207,7 @@ export default {
   },
   mounted: function () {
     this.onResize();
-    window.addEventListener("resize", this.debounce(this.onResize, 25));
+    window.addEventListener("resize", debounce(this.onResize, 250));
   },
   beforeDestroy: function () {
     window.removeEventListener("resize", this.onResize);
@@ -240,7 +226,8 @@ export default {
   },
   components: {
     SubMenu,
-    AppSearchInput,
+    SearchMobile,
+    SearchDesktop
   },
 };
 </script>

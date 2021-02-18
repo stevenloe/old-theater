@@ -1,0 +1,93 @@
+<template>
+  <div class="">
+    <input
+      v-model="searchQuery"
+      type="search"
+      autocomplete="off"
+      placeholder="Search oldtheater.org"
+      class="w-full rounded-lg bg-gray-400 text-xl px-3 font-semibold h-12 mt-2 mb-2 focus:outline-none placeholder-black"
+    />
+    <ul
+      v-if="results.length"
+      class="w-full h-full flex-1 top-40 pb-64 bg-gray-300 rounded-md border border-gray-300 overflow-hidden"
+    >
+      <div class="flex justify-between items-center border-b-2 border-gray-500">
+        <div class="m-4 text-lg font-semibold">Search Results</div>
+        <svg class="h-6 w-6 m-2 fill-current" viewBox="0 0 24 24">
+          <path
+            fill-rule="evenodd"
+            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+          />
+        </svg>
+      </div>
+
+      <li v-for="result of results" :key="result.slug">
+        <NuxtLink
+          :to="result.slug"
+          class="flex px-8 py-4 items-center leading-8 transition ease-in-out duration-150 text-gray-900 text-3xl hover:text-black"
+        >
+          {{ result.title }}
+        </NuxtLink>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    isMobile: Boolean,
+    isAnimated: String,
+  },
+  data() {
+    return {
+      searchQuery: "",
+      results: [],
+      isOpen: false,
+    };
+  },
+  watch: {
+    async searchQuery(searchQuery) {
+      if (!searchQuery) {
+        this.results = [];
+        return;
+      }
+      let articles = await this.$content("articles")
+        .limit(20)
+        .search(searchQuery)
+        .fetch();
+      let abouts = await this.$content("abouts")
+        .limit(20)
+        .search(searchQuery)
+        .fetch();
+      console.log("articles", articles, "abouts", abouts);
+
+      this.results = [...articles, ...abouts];
+    },
+  },
+  methods: {
+    clear() {
+      console.log("CLEAR");
+      // this.results= [];
+    },
+  },
+  created: function () {
+    this.$bus.$on("toggle-search", (e) => {
+      console.log("TOGGLE SEARCH");
+      this.isOpen = !this.isOpen;
+    });
+  },
+};
+</script>
+
+<style scoped>
+.search {
+  transition: all 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.open {
+  width: 220px;
+  padding: 4px;
+}
+</style>
