@@ -89,6 +89,8 @@ export default {
       ])
       .sortBy("eventTime", "asc")
       .fetch();
+
+    return { articles };
   },
   layout: "home",
   components: {
