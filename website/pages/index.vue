@@ -8,17 +8,17 @@
       <AlertBox />
       <div
         class="show-card m-4 sm:m-8 md:flex md:m-8 md:mr-8 rounded-lg p-0"
-        v-for="article of shows"
-        :key="article"
+        v-for="show of shows"
+        :key="show"
       >
         <!-- image card -->
         <div
           class="relative md:w-2/3 md:rounded-r-none rounded-lg overflow-hidden"
         >
-          <nuxt-link :to="article.slug">
+          <nuxt-link :to="show.slug">
             <img
-              :src="require(`~/assets/img_new/processed/${article.img}`)"
-              :alt="article.imgAlt"
+              :src="require(`~/assets/img_new/processed/${show.img}`)"
+              :alt="show.imgAlt"
             />
           </nuxt-link>
         </div>
@@ -28,15 +28,15 @@
           class="relative -mt-1 bg-gray-200 rounded-b-lg md:mt-0 md:rounded-b-none md:rounded-r-lg md:w-1/3 md:p-0"
         >
           <div class="p-6 pt-2 pb-0 w-full">
-            <h3 class="font-bold text-4xl">{{ article.title }}</h3>
+            <h3 class="font-bold text-4xl">{{ show.title }}</h3>
             <div class="text-xs uppercase font-semibold tracking-wide">
-              {{ article.eventTime | formatDate }} •
-              {{ article.eventTime | formatTime }} • ${{
-                article.formattedPrice
+              {{ show.eventTime | formatDate }} •
+              {{ show.eventTime | formatTime }} • ${{
+                show.formattedPrice
               }}
             </div>
             <p class="block overflow md:break-normal">
-              {{ article.shortDesc }}.
+              {{ show.shortDesc }}.
             </p>
           </div>
 
@@ -47,7 +47,7 @@
               >Buy Tickets</nuxt-link
             >
             <nuxt-link
-              :to="article.slug"
+              :to="show.slug"
               class="w-1/2 bg-gray-600 md:w-full md:block text-white uppercase shadow-lg rounded-lg tracking-wide font-bold py-2 px-4 text-lg text-center hover:bg-gray-700 mb-3"
               >Learn More</nuxt-link
             >
@@ -73,7 +73,6 @@ import NewsWidget from "@/components/NewsWidget";
 
 export default {
   async asyncData({ $content, params }) {
-    console.log("PARAMS", params);
     let shows = await $content("shows", params.slug)
       .only([
         "title",
