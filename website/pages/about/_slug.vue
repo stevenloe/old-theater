@@ -1,8 +1,6 @@
 <template>
   <div>
-    <client-only>
-      <NavBar />
-    </client-only>
+     <NavBar />
 
     <article class="pt-4 sm:pt-8 md:pt-16">
       <div v-if="about.img" class="sm:rounded-lg sm:ml-8 sm:mr-8 overflow-hidden shadow-lg mb-6 max-w-6xl mx-auto">

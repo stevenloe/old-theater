@@ -1,8 +1,6 @@
 <template>
   <div>
-    <client-only>
-      <NavBar />
-    </client-only>
+     <NavBar />
 
     <div class="container md:mx-auto max-w-3xl  pl-8 pr-8 md:p-0">
       <div class="mb-4">

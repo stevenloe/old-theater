@@ -1,8 +1,6 @@
 <template>
   <div class="home-page">
-    <client-only>
-      <NavBar />
-    </client-only>
+    <NavBar />
 
     <div class="container mx-auto">
       <AlertBox />
@@ -31,13 +29,9 @@
             <h3 class="font-bold text-4xl">{{ show.title }}</h3>
             <div class="text-xs uppercase font-semibold tracking-wide">
               {{ show.eventTime | formatDate }} •
-              {{ show.eventTime | formatTime }} • ${{
-                show.formattedPrice
-              }}
+              {{ show.eventTime | formatTime }} • ${{ show.formattedPrice }}
             </div>
-            <p class="block overflow md:break-normal">
-              {{ show.shortDesc }}.
-            </p>
+            <p class="block overflow md:break-normal">{{ show.shortDesc }}.</p>
           </div>
 
           <div class="flex w-full md:inline-block pl-6 pr-6 pb-4">

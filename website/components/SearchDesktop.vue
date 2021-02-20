@@ -52,25 +52,21 @@ export default {
         .limit(20)
         .search(searchQuery)
         .fetch();
-      console.log("shows", shows, "abouts", abouts);
 
       this.results = [...shows, ...abouts];
     },
   },
   methods: {
     clearSearch() {
-      console.log("CLEAR SEARCH ----");
       this.searchQuery = "";
       this.isOpen = false;
     },
     onScroll() {
-      console.log("_ _ _ _ __ _ _ SCROLL ---_-_-_-__-");
       this.clearSearch();
     },
   },
   created() {
     this.$bus.$on("toggle-search", (e) => {
-      console.log("TOGGLE SEARCH");
       this.isOpen = !this.isOpen;
       this.searchQuery = "";
     });
@@ -93,7 +89,6 @@ export default {
   computed: {
     searchClass() {
       let openClose = this.isOpen ? "open" : "";
-      console.log("openClose", openClose, "Animated", this.isAnimated);
       return `${openClose} search w-0 h-10 text-lg text-black focus:outline-none bg-gray-300 placeholder-black`;
     },
   },
