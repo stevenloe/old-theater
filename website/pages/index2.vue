@@ -4,7 +4,7 @@
 
 
 	  <div class="m-4 sm:m-8 md:flex md:m-8 md:mr-4">
-		  <div class="article" v-for="article of articles" :key="article">
+		  <div class="article" v-for="article of shows" :key="article">
 			  <nuxt-link :to="{ name: 'slug', params: { slug: article.slug } }">
           <!-- image card -->
 				  <div class="relative md:w-2/3 rounded-lg overflow-hidden shadow-lg">
@@ -29,7 +29,7 @@
 export default {
 
 	async asyncData({ $content, params }) {
-		let articles = await $content('articles', params.slug)
+		let shows = await $content('shows', params.slug)
 			.only(['title', 'description', 'img', 'slug', 'createdAt', 'eventDate'])
 			.sortBy('createdAt', 'asc')
       .fetch();
@@ -39,7 +39,7 @@ export default {
     // const now = n.getTime();
    
 
-    // articles.forEach(element => {
+    // shows.forEach(element => {
     //   const ed = new Date(element.eventDate)
     //   const eventDate = ed.getTime();
     //   console.log("now", now, "eventDate", eventDate);
@@ -48,17 +48,17 @@ export default {
     // });
 
 
-      articles.forEach(element => {
+      shows.forEach(element => {
         console.log("elem", element)
       });
     
       // filter out past events
       const now = new Date()
-      articles = articles.filter(article =>  new Date(article.eventDate) > now)
+      shows = shows.filter(article =>  new Date(article.eventDate) > now)
 
 
 		return {
-			articles
+			shows
 		}
 	}
 }

@@ -28,7 +28,7 @@
 import NavBar from "@/components/NavBar";
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content("articles", params.slug).fetch();
+    const article = await $content("shows", params.slug).fetch();
     return { article };
   },
   components: {

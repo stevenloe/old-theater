@@ -5,7 +5,7 @@
         <h1 class="text-3xl font-semibold">News</h1>
         
         <div class="text-lg font-semibold text-red-400 mb-64">
-          List of news articles goes here
+          List of news shows goes here
         </div>
 
       </div>

@@ -8,7 +8,7 @@
       <AlertBox />
       <div
         class="show-card m-4 sm:m-8 md:flex md:m-8 md:mr-8 rounded-lg p-0"
-        v-for="article of articles"
+        v-for="article of shows"
         :key="article"
       >
         <!-- image card -->
@@ -74,7 +74,7 @@ import NewsWidget from "@/components/NewsWidget";
 export default {
   async asyncData({ $content, params }) {
     console.log("PARAMS", params);
-    let articles = await $content("articles", params.slug)
+    let shows = await $content("shows", params.slug)
       .only([
         "title",
         "description",
@@ -90,7 +90,7 @@ export default {
       .sortBy("eventTime", "asc")
       .fetch();
 
-    return { articles };
+    return { shows };
   },
   layout: "home",
   components: {

@@ -44,7 +44,7 @@ export default {
         this.results = [];
         return;
       }
-      let articles = await this.$content("articles")
+      let shows = await this.$content("shows")
         .limit(20)
         .search(searchQuery)
         .fetch();
@@ -52,9 +52,9 @@ export default {
         .limit(20)
         .search(searchQuery)
         .fetch();
-      console.log("articles", articles, "abouts", abouts);
+      console.log("shows", shows, "abouts", abouts);
 
-      this.results = [...articles, ...abouts];
+      this.results = [...shows, ...abouts];
     },
   },
   methods: {
