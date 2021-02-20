@@ -235,13 +235,11 @@ export default {
       let group = [];
       data.forEach((element) => {
         group.push(element);
-        console.log("grp", group);
         if (group.length === this.groupDataBy) {
           let g = {};
           g.names = Object.assign({}, group);
           g.gid = now + "-" + count;
           count++;
-          console.log("g is:", g);
           dataSet.push(g);
           group = [];
         }
@@ -252,7 +250,6 @@ export default {
         g.names = Object.assign({}, group);
         g.gid = now + "-" + count;
         count++;
-        console.log("g is:", g);
         dataSet.push(g);
       }
 
