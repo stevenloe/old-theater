@@ -1,15 +1,15 @@
 <template>
-  <div class="m-4 md:m-8 border-8 rounded-xl border-blue-700  bg-white overflow-hidden shadow-lg">
-    <div class=" bg-blue-700">
+  <div
+    class="m-4 md:m-8 border-8 rounded-xl border-blue-700 bg-white overflow-hidden shadow-lg"
+  >
+    <div class="bg-blue-700">
       <div
         class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight flex text-white p-5 pt-3"
       >
         Thanks to our 2021 Members!
       </div>
 
-      <client-only>
-        <MemberCarousel />
-      </client-only>
+      <MemberCarousel />
     </div>
   </div>
 </template>
