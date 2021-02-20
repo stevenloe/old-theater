@@ -1,7 +1,15 @@
 <template>
   <div class="box-container">
-    <div v-for="group in members" v-bind:key="group.gid" class="box grid-cols-2 md:grid-cols-3">
-      <div class="name text-xl sm:text-2xl md:3xl" v-for="name in group.names" v-bind:key="name.id">
+    <div
+      v-for="group in members"
+      v-bind:key="group.gid"
+      class="box grid-cols-2 md:grid-cols-3"
+    >
+      <div
+        class="name text-xl sm:text-2xl md:3xl"
+        v-for="name in group.names"
+        v-bind:key="name.id"
+      >
         {{ name.name }}
       </div>
     </div>
@@ -199,20 +207,23 @@ export default {
 
       gsap.delayedCall(2, () => slideIt());
     },
+    // Knuth-Fisher-Yates shuffle
     shuffleData(array) {
-      let counter = array.length;
+      var m = array.length,
+        temp,
+        i;
 
-      while (counter > 0) {
-        // Pick a random index
-        let index = Math.floor(Math.random() * counter);
+      // Check if there's still elements remaining
+      while (m) {
+        // Pick remaining element
+        i = Math.floor(Math.random() * m--);
 
-        counter--;
-
-        // And swap the last element with it
-        let temp = array[counter];
-        array[counter] = array[index];
-        array[index] = temp;
+        // Swap it with the current element
+        temp = array[m];
+        array[m] = array[i];
+        array[i] = temp;
       }
+
       return array;
     },
 
@@ -260,14 +271,14 @@ export default {
   computed: {
     groupDataBy() {
       const result = this.isMobile ? 2 : 3;
-      return result
-    }
+      return result;
+    },
   },
   created: function () {
     this.$bus.$on("resize-window", (e) => {
       if (this.hasLayoutChanged()) {
         this.initAnimation();
-      } 
+      }
     });
   },
   mounted: function () {
@@ -299,7 +310,6 @@ export default {
   display: grid;
   justify-content: center;
   align-content: center;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   background: white;
 }
 
