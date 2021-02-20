@@ -9,7 +9,7 @@
       <div
         class="show-card m-4 sm:m-8 md:flex md:m-8 md:mr-8 rounded-lg p-0"
         v-for="show of shows"
-        :key="show"
+        :key="show.title"
       >
         <!-- image card -->
         <div
