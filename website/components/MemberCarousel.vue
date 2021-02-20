@@ -174,8 +174,6 @@ export default {
   },
   methods: {
     initAnimation() {
-
-      console.log("--- INIT ANIMATION #######");
       this.people = this.shuffleData(this.people);
       this.members = this.groupData(this.people);
 
@@ -187,16 +185,12 @@ export default {
       );
     },
     animateNames() {
-      console.log("ANIMATE");
       let count = 0;
       const targets = document.querySelectorAll(".box");
-      // console.log("TARGETS");
-      // console.log("taragets", targets);
       gsap.set(targets, { xPercent: 100 });
       gsap.set(targets[0], { xPercent: 0 });
 
       function slideIt() {
-        // console.log("DOC", document.querySelectorAll(".box"));
         gsap.to(targets[count], { xPercent: -100 });
         count = count < targets.length - 1 ? ++count : 0;
         gsap.fromTo(targets[count], { xPercent: 100 }, { xPercent: 0 });
@@ -221,8 +215,9 @@ export default {
       }
       return array;
     },
+
+    // TODO: refactor the below to use 1 method and minimize code duplication
     groupData(data) {
-      console.log("--- group data ---");
       let count = 0;
       let now = Date.now();
       let dataSet = [];
@@ -270,9 +265,7 @@ export default {
   },
   created: function () {
     this.$bus.$on("resize-window", (e) => {
-      console.log("---- RESIZE CAROUSEL----- ");
       if (this.hasLayoutChanged()) {
-        console.log("-### LAYOUT CHANGED ####");
         this.initAnimation();
       } 
     });

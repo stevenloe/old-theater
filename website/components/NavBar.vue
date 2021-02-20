@@ -28,7 +28,7 @@
         <div class="md:hidden">
           <!-- mobile menu open/close buttons -->
           <button
-            @click="isMobileMenuOpen = !isMobileMenuOpen"
+            @click="onMenuBtnClick"
             type="button"
             class="block text-gray-700 hover:text-gray-900 focus:text-gray-900 focus:outline-none"
           >
@@ -51,51 +51,55 @@
       <div class="items-center md:justify-between flex md:items-end">
         <!-- Nav items -->
         <div class="md:overflow-visible w-full">
-          <nav
-            :class="isMobileMenuOpen ? 'block' : 'hidden'"
-            class="px-4 pt-2 pb-4 md:flex md:p-0 w-full"
-          >
+          <nav :class="!isMobile || isMobileMenuOpen ? 'block' : 'hidden'">
+
             <!-- Search field on mobile menu -->
             <div class="md:hidden w-full">
               <SearchMobile :isMobile="true" isAnimated="false" />
             </div>
-         
-            <nuxt-link to="/community-education" :class="itemStyle"
-              >Community<span class="tracking-tighter"> &amp; </span
-              >Education</nuxt-link
+
+            <!-- Hide mobile menu items when we have search results -->
+            <div
+              v-if="!isMobile || (isMobile && noSearchResults)"
+              class="px-4 pt-2 pb-4 md:flex md:p-0 w-full"
             >
+              <nuxt-link to="/community-education" :class="itemStyle"
+                >Community<span class="tracking-tighter"> &amp; </span
+                >Education</nuxt-link
+              >
 
-            <SubMenu :menuData="supportMenuItems" :isMobile="isMobile" />
-            <SubMenu :menuData="aboutMenuItems" :isMobile="isMobile" />
+              <SubMenu :menuData="supportMenuItems" :isMobile="isMobile" />
+              <SubMenu :menuData="aboutMenuItems" :isMobile="isMobile" />
 
-            <nuxt-link to="/get-involved/" :class="itemStyle"
-              >Get Involved</nuxt-link
-            >
+              <nuxt-link to="/get-involved/" :class="itemStyle"
+                >Get Involved</nuxt-link
+              >
 
-            <div class="mr-2 rounded hover:bg-gray-200">
-              <nuxt-link to="/calendar/">
-                <div
-                  v-if="isMobileMenuOpen"
-                  :class="itemStyle"
-                  class="md:hidden"
-                >
-                  Calendar
-                </div>
-                <svg
-                  class="hidden md:block h-6 w-8 ml-3 mb-1 pr-3 mt-3 fill-current text-gray-700"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  width="48"
-                  height="48"
-                  fill="currentColor"
-                >
-                  <g>
-                    <path
-                      d="M17 3h-1v2h-3V3H7v2H4V3H3c-1.101 0-2 .9-2 2v12c0 1.1.899 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V9h14v8zM6.5 1h-2v3.5h2V1zm9 0h-2v3.5h2V1z"
-                    />
-                  </g>
-                </svg>
-              </nuxt-link>
+              <div class="mr-2 rounded hover:bg-gray-200">
+                <nuxt-link to="/calendar/">
+                  <div
+                    v-if="isMobileMenuOpen"
+                    :class="itemStyle"
+                    class="md:hidden"
+                  >
+                    Calendar
+                  </div>
+                  <svg
+                    class="hidden md:block h-6 w-8 ml-3 mb-1 pr-3 mt-3 fill-current text-gray-700"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    width="48"
+                    height="48"
+                    fill="currentColor"
+                  >
+                    <g>
+                      <path
+                        d="M17 3h-1v2h-3V3H7v2H4V3H3c-1.101 0-2 .9-2 2v12c0 1.1.899 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V9h14v8zM6.5 1h-2v3.5h2V1zm9 0h-2v3.5h2V1z"
+                      />
+                    </g>
+                  </svg>
+                </nuxt-link>
+              </div>
             </div>
           </nav>
         </div>
@@ -130,7 +134,11 @@
           isAnimated="true"
         />
 
-        <a href="#" class="text-white bg-gray-500 hover:bg-gray-600 focus:outline-none  pl-1 pr-3 " @click="toggle">
+        <a
+          href="#"
+          class="text-white bg-gray-500 hover:bg-gray-600 focus:outline-none pl-1 pr-3"
+          @click="toggle"
+        >
           <svg
             class="h-8 w-10 px-1 pt-1 fill-current"
             xmlns="http://www.w3.org/2000/svg"
@@ -156,12 +164,13 @@ import SubMenu from "~/components/SubMenu.vue";
 import SearchMobile from "~/components/SearchMobile.vue";
 import SearchDesktop from "~/components/SearchDesktop.vue";
 
-import {debounce} from '@/utils/debounce.js'
+import { debounce } from "@/utils/debounce.js";
 export default {
   data() {
     return {
       isSearchOpen: null,
       isMobileMenuOpen: null,
+      noSearchResults: true,
       isMobile: null,
       aboutMenuItems: {
         title: "About",
@@ -198,11 +207,14 @@ export default {
     onResize() {
       this.isMobileMenuOpen = false;
       this.isMobile = this.isSearchOpen = window.innerWidth < 768;
-      console.log("ON RESIZE", window.innerWidth, this.isMobile);
       this.$bus.$emit("resize-window");
     },
     toggle() {
       this.$bus.$emit("toggle-search");
+    },
+    onMenuBtnClick() {
+      this.isMobileMenuOpen = !this.isMobileMenuOpen;
+      this.$bus.$emit("toggle-mobile-menu");
     },
   },
   mounted: function () {
@@ -221,13 +233,15 @@ export default {
     },
   },
   created: function () {
-    // `this` points to the vm instance
-    console.log("------- CREATED ----------");
+    this.$bus.$on("no-search-results", (e) => {
+      this.noSearchResults = e;
+      console.log("---- NAV GOT SEARCH-RESULTS ----- ", e);
+    });
   },
   components: {
     SubMenu,
     SearchMobile,
-    SearchDesktop
+    SearchDesktop,
   },
 };
 </script>
