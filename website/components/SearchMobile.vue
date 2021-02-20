@@ -5,15 +5,19 @@
       type="search"
       autocomplete="off"
       placeholder="Search oldtheater.org"
-      class="w-full rounded-lg bg-gray-400 text-xl px-3 font-semibold h-12 mt-2 mb-2 focus:outline-none placeholder-black"
+      class="w-full rounded-lg bg-gray-400 text-xl px-3  h-12 mt-2 mb-2 focus:outline-none placeholder-black"
     />
     <ul
       v-if="results.length"
-      class="w-full h-full flex-1 top-40 pb-64 bg-gray-300 rounded-md border border-gray-300 overflow-hidden"
+      class="w-full h-full flex-1 top-40 pb-8 bg-gray-300 rounded-md border border-gray-300 overflow-hidden"
     >
       <div class="flex justify-between items-center border-b-2 border-gray-500">
         <div class="m-4 text-lg font-semibold">Search Results</div>
-        <svg class="h-6 w-6 m-2 fill-current" viewBox="0 0 24 24">
+        <svg
+          @click="clearQuery"
+          class="h-6 w-6 m-2 fill-current cursor-pointer"
+          viewBox="0 0 24 24"
+        >
           <path
             fill-rule="evenodd"
             d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
@@ -50,6 +54,7 @@ export default {
     async searchQuery(searchQuery) {
       if (!searchQuery) {
         this.results = [];
+        this.onSearchResults();
         return;
       }
       let articles = await this.$content("articles")
@@ -63,18 +68,25 @@ export default {
       console.log("articles", articles, "abouts", abouts);
 
       this.results = [...articles, ...abouts];
+
+      this.onSearchResults();
     },
   },
   methods: {
-    clear() {
-      console.log("CLEAR");
-      // this.results= [];
+    onSearchResults() {
+      this.$bus.$emit("no-search-results", this.results.length === 0);
+    },
+    clearQuery() {
+      this.searchQuery = "";
     },
   },
   created: function () {
     this.$bus.$on("toggle-search", (e) => {
-      console.log("TOGGLE SEARCH");
       this.isOpen = !this.isOpen;
+    });
+
+    this.$bus.$on("toggle-mobile-menu", (e) => {
+      this.clearQuery()
     });
   },
 };
