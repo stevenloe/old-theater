@@ -5,7 +5,7 @@ shortDesc: News Item 2 short description Irure eiusmod dolore amet anim non labo
 img: 
 imgAlt: some alt text
 eventDate: 'February 25, 2020'
-eventTime: '2021-02-05T21:09:38.963Z'
+eventTime: '2020-02-25T21:09:38.963Z'
 formattedPrice: 19.00
 ticketURL: https://example.com
 ---

@@ -12,7 +12,7 @@
         class="mb-24"
       >
         <div class="text-sm font-semibold uppercase text-gray-700">
-          {{ article.eventDate }}
+          {{ postTime(article.eventTime) }}
         </div>
         <nuxt-content
           :document="article"
@@ -25,15 +25,25 @@
 
 
 <script>
+import dayjs from "dayjs";
+var localizedFormat = require('dayjs/plugin/localizedFormat')
+dayjs.extend(localizedFormat)
+
+
 export default {
   async asyncData({ $content, params }) {
     let articles = await $content("news", params.slug)
-      .sortBy("eventTime", "asc")
+      .sortBy("eventTime", "desc")
       .fetch();
 
     console.log("articles", articles);
 
     return { articles };
+  },
+  methods: {
+    postTime(date) {
+     return dayjs(date).format('LL')
+    }
   },
   metaInfo: {
     title: "News",

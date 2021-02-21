@@ -4,8 +4,8 @@ description:  The Old Theater is pleased to announce... Irure nulla excepteur nu
 shortDesc: News Item 2 short description Irure eiusmod dolore amet anim non laboris amet.
 img: 
 imgAlt: some alt text
-eventDate: 'March, 21 2021'
-eventTime: '2021-02-05T21:09:38.963Z'
+eventDate: 'March 21, 2021'
+eventTime: '2021-03-21T21:09:38.963Z'
 formattedPrice: 19.00
 ticketURL: https://example.com
 ---

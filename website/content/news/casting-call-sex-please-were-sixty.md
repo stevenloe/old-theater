@@ -4,8 +4,8 @@ description:  Calling actors! Please join us at our call casting call for The Ol
 shortDesc: News Item 1 short description Irure eiusmod dolore amet anim non laboris amet.
 img: 
 imgAlt: some alt text
-eventDate: 'March, 10 2021'
-eventTime: '2021-02-05T21:09:38.963Z'
+eventDate: 'March 10, 2021'
+eventTime: '2021-03-10T21:09:38.963Z'
 formattedPrice: 19.00
 ticketURL: https://example.com
 ---
