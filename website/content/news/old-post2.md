@@ -10,6 +10,5 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-### Old Post Two
 
 Ea nisi adipisicing consequat veniam in exercitation ipsum mollit pariatur. Est adipisicing veniam eiusmod eu eu deserunt irure ut in quis tempor magna do. Ullamco laboris consectetur ea aliqua deserunt quis ipsum do Lorem pariatur adipisicing dolore sunt.

@@ -10,6 +10,5 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-### Old Post One
 
 Et sit minim reprehenderit excepteur veniam laboris commodo dolore in do. Eu labore enim in dolor nostrud tempor. Ad et Lorem cupidatat non deserunt laboris non pariatur officia ad nulla elit.

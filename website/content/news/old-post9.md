@@ -10,8 +10,6 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-### Old Post 9
-
 Esse dolore veniam aute est id tempor commodo aute sint duis ad. Ullamco quis commodo tempor non irure minim sit in esse fugiat ad ad officia. Veniam velit dolore nisi laborum officia irure. Officia ex cupidatat aliquip 
 
 Veniam velit consectetur commodo sint voluptate fugiat sunt aliquip esse sit. Ad labore esse eu esse ad. Excepteur ipsum tempor nostrud consectetur nulla est proident mollit.

@@ -10,7 +10,6 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-### Old Post 12
 
 Nulla fugiat duis dolor ullamco labore magna sit ad ipsum voluptate voluptate nisi proident exercitation. Amet officia non officia pariatur enim. Ut velit laboris aliquip incididunt. Ullamco ipsum exercitation veniam adipisicing enim aute consequat consectetur amet. Incididunt anim proident enim officia laboris ex aliquip ea sint sint eiusmod laboris ea. Ad cillum aute velit ea fugiat.
 

@@ -10,7 +10,6 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-### Old Post 4
 
 Sit cupidatat do dolore nisi nostrud nisi fugiat minim culpa do eiusmod eiusmod. Dolore ad ut cupidatat enim cillum. Labore minim non laborum pariatur sint aliqua irure laborum aliquip eu id. Sit irure elit pariatur eu est nisi reprehenderit quis ea cupidatat amet magna sit. Officia quis aliqua sint quis est excepteur proident magna voluptate sit.
 

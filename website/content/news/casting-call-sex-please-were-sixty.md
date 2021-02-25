@@ -10,7 +10,7 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-### Casting Call
+
 #### We need actors, etc. for our upcoming production of *Sex Please We’re Sixty*
 
 ![poster art](/_nuxt/assets/img/news/sex-please.png)

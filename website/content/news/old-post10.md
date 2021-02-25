@@ -10,7 +10,6 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-### Old Post 10
 
 Dolor in dolor duis ut laboris laboris cupidatat adipisicing quis do consequat ullamco sunt. Pariatur laboris quis magna ea in cillum qui nisi commodo reprehenderit. Id nostrud fugiat exercitation dolor in velit magna dolore commodo reprehenderit pariatur. Consectetur minim elit irure exercitation. Mollit voluptate est amet aliquip excepteur.
 

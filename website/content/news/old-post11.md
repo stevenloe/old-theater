@@ -10,7 +10,6 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-### Old Post 11
 
 Velit aliquip velit labore ea incididunt tempor sit. Reprehenderit cupidatat officia voluptate sit ut occaecat amet irure exercitation labore minim. Nulla irure anim exercitation ea. Dolore anim eu qui excepteur minim proident ut ea in mollit laborum est Lorem eiusmod. Labore enim cupidatat eu magna incididunt laboris cupidatat. Tempor nulla duis qui cillum proident.
 

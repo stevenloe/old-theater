@@ -10,7 +10,6 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-### The Old Theater Announces New Board Members
 
 ![als](/_nuxt/assets/img/news/board-directors-2019.jpg)
 

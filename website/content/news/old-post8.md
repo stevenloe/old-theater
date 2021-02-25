@@ -10,6 +10,5 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-### Old Post 8
 
 Labore mollit adipisicing duis consequat. Commodo laborum elit dolor in excepteur aute deserunt occaecat. Eu id excepteur consequat tempor fugiat quis dolore ut ipsum ut voluptate ut voluptate velit.

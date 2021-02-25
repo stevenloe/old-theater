@@ -11,7 +11,7 @@
       >
         <!-- image card -->
         <div
-          class="relative md:w-2/3 md:rounded-r-none rounded-lg overflow-hidden"
+          class="relative md:w-2/3 md:rounded-r-none rounded-lg overflow-hidden text"
         >
           <nuxt-link :to="show.slug">
             <img

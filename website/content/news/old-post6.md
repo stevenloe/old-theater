@@ -10,7 +10,6 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-### Old Post 6
 
 Aute sunt dolor sunt ipsum nostrud esse adipisicing. Sunt nostrud elit irure eu excepteur labore incididunt in. Nulla proident fugiat nulla in Lorem laboris fugiat. Amet laboris adipisicing do eu do dolor sunt voluptate ea in excepteur magna officia. Ut sunt deserunt culpa laboris aliqua. Aliqua adipisicing nisi labore commodo voluptate do reprehenderit aliqua in duis excepteur amet. Sint commodo deserunt dolore velit irure aute.
 
