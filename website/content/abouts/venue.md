@@ -13,6 +13,8 @@ ticketURL: https://example.com
 
 ## Venue
 
+![als](/_nuxt/assets/img/about/old_theater_seats.jpg)
+
 Non id incididunt sint minim ad irure fugiat ipsum. Velit excepteur duis quis aliquip nostrud exercitation deserunt eiusmod aute ex elit incididunt labore. In cupidatat ex velit laboris veniam aliqua et sunt voluptate exercitation reprehenderit in duis.
 
 <!-- <p class="prose-lg border-gray-300  border-4 p-4 text-red-600 overflow-visible">
