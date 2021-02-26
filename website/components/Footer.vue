@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-200 p-8 border-t border-gray-500">
+  <footer class="bg-gray-100 p-8">
     <div class="mt-0 text-center sm:w-3/4 md:w-8/12 lg:w-1/2 xl:w-5/12 mx-auto">
       <nuxt-link to="/" class="focus:outline-none">
         <img
