@@ -11,7 +11,7 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-## Old Theater History
+# Old Theater History
 
 Once upon a time... George Merritt of Swansboro, NC decided Oriental needed a movie house. He purchased land at the corner of Broad and Church Streets from James and Ada Mason in 1946 and, sometime later, built the Mart Theatre, named after his new bride Margaret Jones. According to Billy Johnston, its original projectionist, the first film to be shown at the Mart Theatre was Blue Skies (1946).
 

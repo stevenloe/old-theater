@@ -11,7 +11,7 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-## Sponsor a Show or Production
+# Sponsor a Show or Production
 
 ![Cast of our production of The Indianians](https://old-theater-pics.netlify.app/img/indianians.jpg)
 

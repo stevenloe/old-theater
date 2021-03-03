@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-100 p-8">
+  <footer class="bg-gray-300 text-black p-8">
     <div class="mt-0 text-center sm:w-3/4 md:w-8/12 lg:w-1/2 xl:w-5/12 mx-auto">
       <nuxt-link to="/" class="focus:outline-none">
         <img
@@ -31,38 +31,50 @@
       </address>
       <nav class="flex border-t pt-1 pb-1 mb-10 border-b border-gray-500">
         <div class="w-1/2 text-left">
-          <nuxt-link
-            to="/news"
-            class="footer-link tracking-wider md:text-lg hover:text-black"
-            >NEWS</nuxt-link
-          >
-          <nuxt-link
-            to="/about/history"
-            class="footer-link tracking-wider md:text-lg hover:text-black"
-            >OUR HISTORY</nuxt-link
-          >
-          <nuxt-link
-            to="/contact"
-            class="footer-link tracking-wider md:text-lg hover:text-black"
-            >CONTACT US</nuxt-link
-          >
+          <div class="flex">
+            <nuxt-link
+              to="/news"
+              class="footer-link justify-start tracking-wider md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              >NEWS</nuxt-link
+            >
+          </div>
+          <div class="flex">
+            <nuxt-link
+              to="/about/history"
+              class="footer-link justify-start tracking-wider md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              >OUR HISTORY</nuxt-link
+            >
+          </div>
+          <div class="flex">
+            <nuxt-link
+              to="/contact"
+              class="footer-link justify-start tracking-wider md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              >CONTACT US</nuxt-link
+            >
+          </div>
         </div>
-        <div class="w-1/2 text-right">
-          <nuxt-link
-            to="/support/donate"
-            class="footer-link tracking-wider md:text-lg hover:text-black"
-            >DONATE</nuxt-link
-          >
-          <nuxt-link
-            to="/calendar"
-            class="footer-link tracking-wider md:text-lg hover:text-black"
-            >CALENDAR</nuxt-link
-          >
-          <nuxt-link
-            to="/about/venue"
-            class="footer-link tracking-wider md:text-lg hover:text-black"
-            >VENUE</nuxt-link
-          >
+        <div class="w-1/2">
+          <div class="flex justify-end">
+            <nuxt-link
+              to="/support/donate"
+              class="footer-link tracking-wider md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              >DONATE</nuxt-link
+            >
+          </div>
+          <div class="flex justify-end">
+            <nuxt-link
+              to="/calendar"
+              class="footer-link tracking-wider md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              >CALENDAR</nuxt-link
+            >
+          </div>
+          <div class="flex justify-end">
+            <nuxt-link
+              to="/about/venue"
+              class="footer-link tracking-wider md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              >VENUE</nuxt-link
+            >
+          </div>
         </div>
       </nav>
 

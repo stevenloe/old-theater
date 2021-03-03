@@ -11,7 +11,7 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-## Other Ways to Support the Old Theater
+# Other Ways to Support Us
 
 ### 1.  Shop Locally!  
 Support the wonderful business in our area that are here for you. When you do this, you're helping to keep Oriental and Pamlico county a vibrant, great place to live. You're also supporting local families - many of whom support the Old Theater's programs via sponsorship, membership, co-hosted events and more.

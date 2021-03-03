@@ -1,19 +1,39 @@
 <template>
-  <div>
-    <NavBar />
-    <div class="container m-24 w-3/4">
-      <h1 class="text-3xl font-bold mb-8">News</h1>
-      <article v-for="post of posts" :key="post.title" class="mb-24">
-        <div class="text-sm font-semibold uppercase text-gray-700">
+  <div class="mx-auto">
+    <div
+      class="content-column mx-auto w-full md:w-3/4 lg:w-9/12 xl:3/4  lg:text-xl xl:text-2xl text-red-800 font sm:text-blue-400 md:text-lg lg:text-green-800 xl:text-orange-500"
+    >
+      <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl">News</h1>
+
+      <!-- <nuxt-content class="prose prose-lg mx-auto p-5 bg-white rounded shadow-lg" :document="about" /> -->
+
+      <article
+        class="bg-white rounded shadow mb-12 p-6 lg:p-8"
+        v-for="post of posts"
+        :key="post.title"
+      >
+        <!-- <article
+      class="prose prose-lg mx-auto p-5 bg-white rounded shadow-lg mb-12"
+      v-for="post of posts"
+      :key="post.title"
+    > -->
+        <div class="text-sm md:text-base lg:text-lg font-semibold uppercase text-gray-700 mb-1">
           {{ postTime(post.eventTime) }}
         </div>
-        <nuxt-link :to="`/news/${post.slug}?page=index`">
-          <h1 class="text-2xl font-bold mb-8">{{ post.title }}</h1></nuxt-link
-        >
-        <nuxt-content
-          :document="post"
-          class="prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl mb-8"
-        />
+
+        <h2 class=" text-xl sm:tett-2xl md:text-3xl lg:text-5xl font-semibold mb-4">
+          <nuxt-link 
+            :to="`/news/${post.slug}?page=index`"
+          >
+            {{ post.title }}</nuxt-link
+          >
+        </h2>
+        <!-- <nuxt-content :document="post" /> -->
+
+          <nuxt-content 
+    class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto"
+    :document="post"
+  />
       </article>
 
       <section class="flex justify-end" v-if="nextPage">
@@ -51,6 +71,7 @@ export default {
       return dayjs(date).format("LL");
     },
   },
+  layout: "NewLayout",
 };
 </script>
 
@@ -60,4 +81,8 @@ export default {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
+
+.content-column {
+  max-width: 950px;
+}
 </style>

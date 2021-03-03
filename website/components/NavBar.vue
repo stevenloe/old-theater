@@ -1,32 +1,11 @@
 <template>
-  <div>
-    <header :class="headerClass">
+  <div class="mb-12 md:mb-20">
+    <header class="shadow-lg" :class="headerClass">
       <div class="flex justify-between items-center md:p-0 md:mr-3 md:py-2">
-        <div>
-          <!-- logo & text -->
-          <nuxt-link to="/">
-            <div
-              class="text-left md:text-center flex md:block hover:bg-gray-200 rounded"
-            >
-              <img
-                class="hidden md:inline-block h-10 md:h-12 md:-mb-3"
-                src="~/assets/img/old-theater-logo-final.svg"
-                alt="The Old Theater, Oriental North Carolina"
-              />
-              <h2 class="font-serif text-lg tracking-wide rounded">
-                <div class="-mb-2 tracking-wide flex-no-wrap md:mx-1">
-                  The Old Theater
-                </div>
-                <div class="text-xs text-gray-600 tracking-widest md:mx-4">
-                  ORIENTAL, NC
-                </div>
-              </h2>
-            </div>
-          </nuxt-link>
-        </div>
+        <Logo />
 
+        <!-- mobile menu open/close buttons -->
         <div class="md:hidden">
-          <!-- mobile menu open/close buttons -->
           <button
             @click="onMenuBtnClick"
             type="button"
@@ -105,26 +84,7 @@
         </div>
       </div>
 
-      <!-- footer for mobile navbar -->
-      <div
-        :class="isMobileMenuOpen ? 'block' : 'hidden'"
-        class="ml-4 md:hidden text-center"
-      >
-        <hr />
-        <div class="mt-12">
-          <img
-            class="inline-block h-20 md:h-24"
-            src="~/assets/img/old-theater-logo-final.svg"
-            alt="The Old Theater, Oriental North Carolina"
-          />
-        </div>
-        <address class="-mt-1 font-serif not-italic pb-20">
-          The Old Theater
-          <br />609 Broad Street <br />Oriental, NC 28571 <br />(252) 249
-          &ndash; 0477
-          <br />
-        </address>
-      </div>
+      <FooterMobile :isMobileMenuOpen="isMobileMenuOpen"/>
 
       <!-- search icon on medium screens-->
       <div class="hidden absolute top-0 right-0 md:flex">
@@ -160,6 +120,8 @@
 </template>
 
 <script>
+import Logo from "~/components/Logo.vue";
+import FooterMobile from "~/components/FooterMobile.vue";
 import SubMenu from "~/components/SubMenu.vue";
 import SearchMobile from "~/components/SearchMobile.vue";
 import SearchDesktop from "~/components/SearchDesktop.vue";

@@ -9,4 +9,7 @@ eventTime: '2020-02-26T21:09:38.963Z'
 formattedPrice: 19.00
 ticketURL: https://example.com
 ---
+
+![als](/_nuxt/assets/img/about/old_theater_seats.jpg)
+
 Veniam culpa mollit deserunt fugiat laborum non occaecat aliqua sit ea. Ex exercitation id ad amet anim in. In quis sit cupidatat ad tempor nulla do labore voluptate consectetur duis amet incididunt reprehenderit. Non in velit officia adipisicing. Nisi eiusmod ad sit do ex voluptate ullamco labore cupidatat consequat.

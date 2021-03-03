@@ -1,32 +1,34 @@
 <template>
-  <div>
-    <!-- <header class="text-white mx-auto text-xs">
-      <div class="p-5 bg-indigo-500 md:inline-block">
-        <p>
-          <span class="uppercase">Published:</span>
-          <span>{{ about.published }}</span>
-        </p>
-        <div class="flex">
-          <span class="mr-1 uppercase">Filed under:</span>
-          <ul class="flex">
-            <li v-for="tag in about.tags" :key="tag" class="mr-2">
-              <nuxt-link
-                :to="{ name: 'tags-tag', params: { tag: tag.toLowerCase() } }"
-                class="hover:underline"
-              >
-                {{ tag }}
-              </nuxt-link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header> -->
-    <div class="prose prose-lg text-gray-700 bg-white p-5 pt-1 rounded shadow mx-auto">
-      <nuxt-content :document="about" />
+  <div class="mx-auto">
+    <div
+      class="content-column mx-auto w-full md:w-3/4 lg:w-9/12 xl:3/4  lg:text-xl xl:text-2xl text-red-800 font sm:text-blue-400 md:text-lg lg:text-green-800 xl:text-orange-500"
+    >
+      <!-- <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl">News</h1> -->
+
+      <!-- <nuxt-content class="prose prose-lg mx-auto p-5 bg-white rounded shadow-lg" :document="about" /> -->
+
+      <article
+        class="bg-white rounded shadow mb-12 p-6 lg:p-8"
+      >
+  
+
+        <h2 class=" text-xl sm:tett-2xl md:text-3xl lg:text-5xl font-semibold mb-4">
+       
+        </h2>
+        <!-- <nuxt-content :document="post" /> -->
+
+          <nuxt-content 
+    class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto"
+    :document="about"
+  />
+      </article>
+
+      <section class="flex justify-end" v-if="nextPage">
+        <nuxt-link class="font-medium" v-if="nextPage" to="/news/page/2"
+          >Older Posts <span aria-hidden="true">→</span></nuxt-link
+        >
+      </section>
     </div>
-    <!-- <footer class="py-5 mt-5">
-      <prev-next :prev="prev" :next="next" />
-    </footer> -->
   </div>
 </template>
 

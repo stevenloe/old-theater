@@ -1,24 +1,24 @@
 <template>
-  <div>
-    <NavBar />
-
-    <div class="pt-4 sm:pt-8 md:pt-32">
-      <div
-        class="pl-8 pr-8 pt-8 sm:pt-0 sm:max-w-lg md:max-w-xl md:text-4xl lg:max-w-3xl xl:max-w-4xl mx-auto"
-      >
-        <h1 class="text-2xl font-bold mb-8">{{ post.title }}</h1>
-
-        <nuxt-content
-          :document="post"
-          class="prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl mb-8"
-        />
-      </div>
+  <article class="bg-white p-5 rounded mx-auto mb-12 shadow">
+    <div class="text-sm font-semibold uppercase text-gray-700">
+      {{ postTime(post.eventTime) }}
     </div>
-  </div>
+    <nuxt-link :to="`/news/${post.slug}?page=index`">
+      <h1 class="text-2xl font-bold mb-8">{{ post.title }}</h1></nuxt-link
+    >
+    <nuxt-content
+      :document="post"
+      class="prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl mb-8"
+    />
+  </article>
 </template>
 
+
 <script>
-import NavBar from "@/components/NavBar";
+
+import dayjs from "dayjs";
+const localizedFormat = require("dayjs/plugin/localizedFormat");
+dayjs.extend(localizedFormat);
 
 export default {
   async asyncData({ $content, params }) {
@@ -27,9 +27,12 @@ export default {
 
     return { post, params };
   },
-  components: {
-    NavBar,
+    methods: {
+    postTime(date) {
+      return dayjs(date).format("LL");
+    },
   },
+  layout: 'NewLayout'
 };
 </script>
 
@@ -38,4 +41,3 @@ p {
   margin-bottom: 2em !important;
 }
 </style>
-

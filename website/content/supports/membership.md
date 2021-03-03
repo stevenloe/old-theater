@@ -11,7 +11,8 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-## Membership - Join The Old Theater
+# Membership 
+## Join The Old Theater
 
 Oriental’s Old Theater first opened its doors as a movie theater in 1946, and served as a social entertainment center until the late 50s. It was revitalized and reopened in 1995, providing a venue where performing arts can thrive in Pamlico County.
 
