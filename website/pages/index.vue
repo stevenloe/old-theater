@@ -19,7 +19,6 @@
               {{ show.eventTime | formatDate }} •
               {{ show.eventTime | formatTime }} • ${{ show.formattedPrice }}
             </div>
-            <!-- <p class="block overflow md:break-normal">{{ show.shortDesc }}.</p> -->
           </div>
 
           <div class="flex w-full md:inline-block pl-6 pr-6 pb-4">

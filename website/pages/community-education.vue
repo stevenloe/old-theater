@@ -1,13 +1,8 @@
 <template>
-  <!-- <div> -->
-
   <div class="mx-auto">
     <div
       class="w-full mx-auto content-column md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
-      <!--     
-    <div class="container max-w-3xl p-8 pt-16 pl-8 pr-8 bg-white rounded md:mx-auto md:pl-0 md:pr-0 md:pt-24"> -->
-
       <div class="mb-8">
         <h1 class="mt-4 mb-4 text-4xl font-extrabold">
           Community &amp; Education

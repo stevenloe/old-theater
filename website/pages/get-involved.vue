@@ -3,7 +3,7 @@
     <div
       class="w-full mx-auto content-column md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
-      <div class="p-8 bg-white rounded">
+      <div class="p-8 bg-white rounded shadow-lg">
         <div class="mb-4">
           <h1 class="text-4xl font-extrabold">Get Involved</h1>
           <div>
