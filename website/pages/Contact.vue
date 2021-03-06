@@ -1,11 +1,10 @@
 <template>
   <div>
-     <NavBar />
 
     <div
-      class="container md:mx-auto max-w-3xl pl-8 pr-8 md:pl-0 md:pr-0 pt-16 md:pt-24"
+      class="container max-w-3xl pl-8 pr-8 md:mx-auto md:pl-0 md:pr-0 "
     >
-      <h1 class="text-3xl font-semibold">Contact Us</h1>
+      <h1 class="text-4xl font-semibold">Contact Us</h1>
 
       <p class="block">
         Aute reprehenderit ipsum est duis laboris ullamco qui. Deserunt ex
@@ -30,9 +29,9 @@
           /></label>
         </p>
 <!-- 
-        <div class="block relative w-full md:w-5/12 mb-64">
+        <div class="relative block w-full mb-64 md:w-5/12">
           <select
-            class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-3 pr-8 rounded shadow leading-tight focus:outline-none"
+            class="block w-full px-4 py-3 pr-8 leading-tight bg-white border border-gray-400 rounded shadow appearance-none hover:border-gray-500 focus:outline-none"
             required
           >
             <option value="" selected disabled hidden>
@@ -50,10 +49,10 @@
             <option value="1">Website</option>
           </select>
           <div
-            class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 bg-gray-200 border border-gray-600 rounded-r"
+            class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 bg-gray-200 border border-gray-600 rounded-r pointer-events-none"
           >
             <svg
-              class="fill-current h-4 w-4"
+              class="w-4 h-4 fill-current"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -64,31 +63,31 @@
           </div>
         </div> -->
 
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <div class="flex flex-wrap mb-6 -mx-3">
+          <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
               for="grid-first-name"
             >
-              First Name <span class="text-gray-600 ml-1">(required)</span>
+              First Name <span class="ml-1 text-gray-600">(required)</span>
             </label>
             <input
-              class="appearance-none block w-full text-gray-700 bg-gray-200 border border-gray-800 rounded py-3 px-4 mb-3 leading-tight focus:bg-white focus:border-gray-900 focus:outline-none"
+              class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
               id="first-name"
               type="text"
               placeholder="Jane"
               required
             />
           </div>
-          <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0">
+          <div class="w-full px-3 mb-3 md:w-1/2 md:mb-0">
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
               for="grid-last-name"
             >
-              Last Name <span class="text-gray-600 ml-1">(required)</span>
+              Last Name <span class="ml-1 text-gray-600">(required)</span>
             </label>
             <input
-              class="appearance-none block w-full text-gray-700 bg-gray-200 border border-gray-800 rounded py-3 px-4 mb-3 leading-tight focus:bg-white focus:border-gray-900 focus:outline-none"
+              class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
               id="grid-last-name"
               type="text"
               placeholder="Doe"
@@ -97,31 +96,31 @@
           </div>
         </div>
 
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+        <div class="flex flex-wrap mb-6 -mx-3">
+          <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
               for="grid-first-name"
             >
-              Email <span class="text-gray-600 ml-1">(required)</span>
+              Email <span class="ml-1 text-gray-600">(required)</span>
             </label>
             <input
-              class="appearance-none block w-full text-gray-700 bg-gray-200 border border-gray-800 rounded py-3 px-4 mb-3 leading-tight focus:bg-white focus:border-gray-900 focus:outline-none"
+              class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
               id="first-name"
               type="text"
               placeholder="me@mail.com"
               required
             />
           </div>
-          <div class="w-full md:w-1/2 px-3 mb-3 md:mb-0">
+          <div class="w-full px-3 mb-3 md:w-1/2 md:mb-0">
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
               for="grid-last-name"
             >
               Phone
             </label>
             <input
-              class="appearance-none block w-full text-gray-700 bg-gray-200 border border-gray-800 rounded py-3 px-4 mb-3 leading-tight focus:bg-white focus:border-gray-900 focus:outline-none"
+              class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
               id="grid-last-name"
               type="text"
               placeholder="252-555-4444"
@@ -129,31 +128,31 @@
           </div>
         </div>
 
-        <div class="flex flex-wrap -mx-3 mb-6">
+        <div class="flex flex-wrap mb-6 -mx-3">
           <div class="w-full px-3">
             <label
-              class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+              class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
               for="grid-password"
             >
-              Message <span class="text-gray-600 ml-1">(required)</span>
+              Message <span class="ml-1 text-gray-600">(required)</span>
             </label>
             <textarea
               id="message"
               name="w3review"
               rows="8"
               cols="50"
-              class="appearance-none block w-full text-gray-700 bg-gray-200 border border-gray-800 rounded py-3 px-4 mb-3 leading-tight focus:bg-white focus:border-gray-900 focus:outline-none"
+              class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
               placeholder="Message"
               required
             >
             </textarea>
-            <p class="text-gray-600 ml-1 text-xs italic"></p>
+            <p class="ml-1 text-xs italic text-gray-600"></p>
           </div>
         </div>
 
         <div class="flex mb-12">
           <button
-            class="uppercase bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            class="px-4 py-2 font-bold text-white uppercase bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Send
@@ -169,6 +168,6 @@ export default {
   metaInfo: {
     title: "Contact",
   },
-  layout: "default",
+  layout: "NewLayout",
 };
 </script>

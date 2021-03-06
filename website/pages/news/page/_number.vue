@@ -1,18 +1,32 @@
 <template>
-  <div>
-    <NavBar />
-    <div class="container m-24 w-3/4">
-      <h1 class="text-3xl font-bold mb-8">News</h1>
-      <article v-for="post of posts" :key="post.title" class="mb-24">
-        <div class="text-sm font-semibold uppercase text-gray-700">
+  <div class="mx-auto">
+    <article
+      class="w-full mx-auto content-column md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
+    >
+      <h1 class="text-4xl font-bold md:text-5xl lg:text-5xl">News</h1>
+
+      <article
+        class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg"
+        v-for="post of posts"
+        :key="post.title"
+      >
+        <div
+          class="mb-1 text-sm font-semibold text-gray-700 uppercase md:text-base lg:text-lg"
+        >
           {{ postTime(post.eventTime) }}
         </div>
-        <nuxt-link :to="`/news/${post.slug}`">
-          <h1 class="text-2xl font-bold mb-8">{{ post.title }}</h1></nuxt-link
+
+        <h2
+          class="mb-4 text-xl font-semibold sm:tett-2xl md:text-3xl lg:text-5xl"
         >
+          <nuxt-link :to="`/news/${post.slug}?page=index`">
+            {{ post.title }}</nuxt-link
+          >
+        </h2>
+
         <nuxt-content
+          class="mx-auto prose-sm prose sm:prose lg:prose-lg xl:prose-2xl"
           :document="post"
-          class="prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl mb-8"
         />
       </article>
 
@@ -28,11 +42,9 @@
           >Older Posts <span aria-hidden="true">→</span></nuxt-link
         >
       </section>
-    </div>
+    </article>
   </div>
 </template>
-
-
 
 <script>
 import dayjs from "dayjs";
@@ -66,17 +78,9 @@ export default {
       return dayjs(date).format("LL");
     },
   },
-  created() {
-    console.log("------ HI NUMBER --------"); // john
 
-    console.log(this.$route); // john
-  },
+  layout: "NewLayout",
 };
 </script>
 
-<style >
-p {
-  margin-bottom: 2em !important;
-}
-</style>
 

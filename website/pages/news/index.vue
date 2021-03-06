@@ -1,32 +1,33 @@
 <template>
   <div class="mx-auto">
-    <div
+    <article
       class="w-full mx-auto content-column md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
       <h1 class="text-4xl font-bold md:text-5xl lg:text-5xl">News</h1>
 
       <article
-        class="p-6 mb-12 bg-white rounded shadow lg:p-8"
+        class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg"
         v-for="post of posts"
         :key="post.title"
       >
-
-        <div class="mb-1 text-sm font-semibold text-gray-700 uppercase md:text-base lg:text-lg">
+        <div
+          class="mb-1 text-sm font-semibold text-gray-700 uppercase md:text-base lg:text-lg"
+        >
           {{ postTime(post.eventTime) }}
         </div>
 
-        <h2 class="mb-4 text-xl font-semibold sm:tett-2xl md:text-3xl lg:text-5xl">
-          <nuxt-link 
-            :to="`/news/${post.slug}?page=index`"
-          >
+        <h2
+          class="mb-4 text-xl font-semibold sm:tett-2xl md:text-3xl lg:text-5xl"
+        >
+          <nuxt-link :to="`/news/${post.slug}?page=index`">
             {{ post.title }}</nuxt-link
           >
         </h2>
 
-          <nuxt-content 
-    class="mx-auto prose-sm prose sm:prose lg:prose-lg xl:prose-2xl"
-    :document="post"
-  />
+        <nuxt-content
+          class="mx-auto prose-sm prose sm:prose lg:prose-lg xl:prose-2xl"
+          :document="post"
+        />
       </article>
 
       <section class="flex justify-end" v-if="nextPage">
@@ -34,7 +35,8 @@
           >Older Posts <span aria-hidden="true">→</span></nuxt-link
         >
       </section>
-    </div>
+      <!-- </div> -->
+    </article>
   </div>
 </template>
 
