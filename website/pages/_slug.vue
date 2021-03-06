@@ -1,36 +1,35 @@
 <template>
-  <div>
-    <NavBar />
-
-    <article>
-      <div
-        class="sm:rounded-lg sm:ml-8 sm:mr-8 overflow-hidden shadow-lg mb-6 max-w-6xl mx-auto"
-      >
-        <img
-          :src="require(`~/assets/img_new/processed/${article.img}`)"
-          :alt="article.imgAlt"
-        />
-      </div>
-
-      <div
-        class="pl-8 pr-8 sm:max-w-lg md:max-w-xl md:text-4xl lg:max-w-3xl xl:max-w-4xl mx-auto"
-      >
-        <h3 class="font-extrabold text-4xl">{{ article.title }}</h3>
-        <div class="text-xs uppercase font-semibold tracking-wide mb-8">
-          {{ article.eventTime | formatDate }} •
-          {{ article.eventTime | formatTime }} • ${{ article.formattedPrice }}
+  <div class="mx-auto">
+    <article
+      class="w-full mx-auto content-column md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
+    >
+      <div class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg">
+        <div class="overflow-hidden rounded">
+          <img
+            :src="require(`~/assets/img_new/processed/${article.img}`)"
+            :alt="article.imgAlt"
+          />
         </div>
-
-        <nuxt-content
-          :document="article"
-          class="prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl mb-8"
-        />
-
-        <nuxt-link
-          :to="{ name: 'slug', params: { slug: article.slug } }"
-          class="w-1/2 bg-orange-300 md:w-full md:block border border-gray-800 text-gray-900 font-bold py-1 px-4 rounded-lg text-lg text-center hover:bg-yellow-300 hover:text-gray-900 no-underline"
-          >Buy Tickets</nuxt-link
+        <div
+          class="pl-8 pr-8 mx-auto sm:max-w-lg md:max-w-xl md:text-4xl lg:max-w-3xl xl:max-w-4xl"
         >
+          <h1 class="mt-4 mb-4 text-4xl font-extrabold">{{ article.title }}</h1>
+          <div class="mb-8 text-xs font-semibold tracking-wide uppercase">
+            {{ article.eventTime | formatDate }} •
+            {{ article.eventTime | formatTime }} • ${{ article.formattedPrice }}
+          </div>
+
+          <nuxt-content
+            :document="article"
+            class="mb-8 prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl"
+          />
+
+          <a
+            :href="article.ticketURL"
+            class="block w-full px-4 py-2 mb-3 mr-2 text-lg font-bold tracking-wide text-center text-white uppercase bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700"
+            >Buy tickets</a
+          >
+        </div>
       </div>
     </article>
   </div>
@@ -44,8 +43,6 @@ export default {
     const article = await $content("shows", params.slug).fetch();
     return { article };
   },
-  components: {
-    NavBar,
-  },
+  layout: "NewLayout",
 };
 </script>
