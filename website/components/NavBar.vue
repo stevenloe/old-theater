@@ -179,7 +179,6 @@ export default {
       this.$bus.$emit("toggle-mobile-menu");
     },
     onNavItemClick() {
-      console.log("---- onNavItemClick --+=_+=_-+");
       setTimeout(this.hideMenu, 100)
     },
     hideMenu() {
@@ -188,7 +187,7 @@ export default {
   },
   mounted: function () {
     this.onResize();
-    window.addEventListener("resize", debounce(this.onResize, 250));
+    window.addEventListener("resize", debounce(this.onResize, 10));
   },
   beforeDestroy: function () {
     window.removeEventListener("resize", this.onResize);
@@ -204,7 +203,6 @@ export default {
   created: function () {
     this.$bus.$on("no-search-results", (e) => {
       this.noSearchResults = e;
-      console.log("---- NAV GOT SEARCH-RESULTS ----- ", e);
     });
   },
   components: {
@@ -214,9 +212,3 @@ export default {
   },
 };
 </script>
-
-<style lang="postcss">
-/* .top-space {
-  top: 50px;
-} */
-</style>
