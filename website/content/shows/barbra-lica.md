@@ -8,7 +8,7 @@ imgAlt: Some alt text here
 eventDate: 'April, 21 2020 19:30:00 EST'
 eventTime: '2021-02-14T21:09:38.963Z'
 formattedPrice: 22.00
-ticketURL: https://example.com
+ticketURL: https://www.showclix.com
 ---
 
 Non id incididunt sint minim ad irure fugiat ipsum. Velit excepteur duis quis aliquip nostrud exercitation deserunt eiusmod aute ex elit incididunt labore. In cupidatat ex velit laboris veniam aliqua et sunt voluptate exercitation reprehenderit in duis.

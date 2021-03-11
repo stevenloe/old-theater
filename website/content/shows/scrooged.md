@@ -8,7 +8,7 @@ imgAlt: some alt text
 eventDate: 'January, 21 2020 19:30:00 EST'
 eventTime: '2020-12-21T21:09:38.963Z'
 formattedPrice: Donation
-ticketURL: https://example.com
+ticketURL: https://www.showclix.com
 ---
 
 
