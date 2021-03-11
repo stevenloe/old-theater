@@ -1,6 +1,6 @@
 <template>
   <li
-    class="border border-gray-400 md:min-h-32"
+    class="border border-gray-400 md:min-h-1/4"
     :class="
       day.isCurrentMonth ? 'bg-white' : 'bg-gray-300 hidden md:inline-block'
     "
@@ -20,7 +20,7 @@
                 ? 'text-white font-semibold w-6 h-6 rounded-full my-1 bg-gray-900 -mr-1'
                 : 'text-gray-700'
             "
-            class="flex justify-center items-center font-light mr-1"
+            class="flex items-center justify-center mr-1 font-light"
           >
             {{ label }}
           </div>
