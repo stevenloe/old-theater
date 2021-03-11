@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="md:mt-8 ml-8 mr-8">
+    <div class="ml-8 mr-8 md:mt-8">
       <div class="mb-8">
-        <h1 class="text-4xl font-bold">Calendar</h1>
+        <UiHeadline id="level-1-headline" level="1" >Calendar</UiHeadline>
         <CalendarMonth />
       </div>
     </div>
