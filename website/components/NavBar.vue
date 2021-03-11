@@ -1,7 +1,7 @@
 <template>
   <div class="mb-12 md:mb-20">
     <header class="shadow-lg" :class="headerClass">
-      <div class="flex justify-between items-center md:p-0 md:mr-3 md:py-2">
+      <div class="flex items-center justify-between md:p-0 md:mr-3 md:py-2">
         <Logo />
 
         <!-- mobile menu open/close buttons -->
@@ -11,7 +11,7 @@
             type="button"
             class="block text-gray-700 hover:text-gray-900 focus:text-gray-900 focus:outline-none"
           >
-            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
               <path
                 v-if="isMobileMenuOpen"
                 fill-rule="evenodd"
@@ -27,35 +27,35 @@
         </div>
       </div>
 
-      <div class="items-center md:justify-between flex md:items-end">
+      <div class="flex items-center md:justify-between md:items-end">
         <!-- Nav items -->
-        <div class="md:overflow-visible w-full">
+        <div class="w-full md:overflow-visible">
           <nav :class="!isMobile || isMobileMenuOpen ? 'block' : 'hidden'">
 
             <!-- Search field on mobile menu -->
-            <div class="md:hidden w-full">
+            <div class="w-full md:hidden">
               <SearchMobile :isMobile="true" isAnimated="false" />
             </div>
 
             <!-- Hide mobile menu items when we have search results -->
             <div
               v-if="!isMobile || (isMobile && noSearchResults)"
-              class="px-4 pt-2 pb-4 md:flex md:p-0 w-full"
+              class="w-full px-4 pt-2 pb-4 md:flex md:p-0"
             >
-              <nuxt-link to="/community-education" :class="itemStyle"
+              <nuxt-link to="/community-education" @click.native="onNavItemClick" :class="itemStyle"
                 >Community<span class="tracking-tighter"> &amp; </span
                 >Education</nuxt-link
               >
 
-              <SubMenu :menuData="supportMenuItems" :isMobile="isMobile" />
-              <SubMenu :menuData="aboutMenuItems" :isMobile="isMobile" />
+              <SubMenu :menuData="supportMenuItems" :isMobile="isMobile" @click.native="onNavItemClick" />
+              <SubMenu :menuData="aboutMenuItems" :isMobile="isMobile" @click.native="onNavItemClick" />
 
-              <nuxt-link to="/get-involved/" :class="itemStyle"
+              <nuxt-link to="/get-involved/" @click.native="onNavItemClick" :class="itemStyle"
                 >Get Involved</nuxt-link
               >
 
               <div class="mr-2 rounded hover:bg-gray-200">
-                <nuxt-link to="/calendar/">
+                <nuxt-link to="/calendar/" @click.native="onNavItemClick" >
                   <div
                     v-if="isMobileMenuOpen"
                     :class="itemStyle"
@@ -64,7 +64,7 @@
                     Calendar
                   </div>
                   <svg
-                    class="hidden md:block h-6 w-8 ml-3 mb-1 pr-3 mt-3 fill-current text-gray-700"
+                    class="hidden w-8 h-6 pr-3 mt-3 mb-1 ml-3 text-gray-700 fill-current md:block"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     width="48"
@@ -87,7 +87,7 @@
       <FooterMobile :isMobileMenuOpen="isMobileMenuOpen"/>
 
       <!-- search icon on medium screens-->
-      <div class="hidden absolute top-0 right-0 md:flex">
+      <div class="absolute top-0 right-0 hidden md:flex">
         <SearchDesktop
           class="w-0 bg-purple-800"
           :isMobile="isMobile"
@@ -96,11 +96,11 @@
 
         <a
           href="#"
-          class="text-white bg-gray-500 hover:bg-gray-600 focus:outline-none pl-1 pr-3"
+          class="pl-1 pr-3 text-white bg-gray-500 hover:bg-gray-600 focus:outline-none"
           @click="toggle"
         >
           <svg
-            class="h-8 w-10 px-1 pt-1 fill-current"
+            class="w-10 h-8 px-1 pt-1 fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             width="48"
@@ -178,6 +178,13 @@ export default {
       this.isMobileMenuOpen = !this.isMobileMenuOpen;
       this.$bus.$emit("toggle-mobile-menu");
     },
+    onNavItemClick() {
+      console.log("---- onNavItemClick --+=_+=_-+");
+      setTimeout(this.hideMenu, 100)
+    },
+    hideMenu() {
+      this.isMobileMenuOpen = false
+    }
   },
   mounted: function () {
     this.onResize();
