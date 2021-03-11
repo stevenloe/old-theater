@@ -1,6 +1,7 @@
 <template>
   <div class="w-full">
     <input
+    id="search-input"
       v-model="searchQuery"
       type="search"
       autocomplete="off"
@@ -9,12 +10,12 @@
     />
     <ul
       v-if="results.length"
-      class="z-40 absolute w-auto flex-1 top-40 dark:bg-gray-900 overflow-hidden bg-gray-200 py-4"
+      class="absolute z-40 flex-1 w-auto py-4 overflow-hidden bg-gray-200 top-40 dark:bg-gray-900"
     >
       <li v-for="result of results" :key="result.slug">
         <NuxtLink
           :to="result.slug"
-          class="flex px-8 py-2 mx-2 items-center leading-8 transition ease-in-out duration-150 text-black text-2xl hover:bg-gray-400 rounded-lg "
+          class="flex items-center px-8 py-2 mx-2 text-2xl leading-8 text-black transition duration-150 ease-in-out rounded-lg hover:bg-gray-400 "
         >
           {{ result.title }}
         </NuxtLink>
@@ -69,6 +70,8 @@ export default {
     this.$bus.$on("toggle-search", (e) => {
       this.isOpen = !this.isOpen;
       this.searchQuery = "";
+      const searchInput = document.querySelector('#search-input');
+      searchInput.focus();
     });
 
     this.$bus.$on("resize-window", (e) => {
