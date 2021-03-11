@@ -14,8 +14,24 @@ module.exports = {
   },
 
   theme: {
-    minHeight: {
-      '32': '8rem',
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#444',
+            a: {
+              color: '#3182ce',
+              '&:hover': {
+                color: '#2c5282',
+              },
+            },
+            h1: {
+              color: '#111',
+              fontWeight: 300
+            }
+          },
+        },
+      }
     },
   },
   variants: {
@@ -24,4 +40,42 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
   ],
+
 }
+
+
+
+// module.exports = {
+//   theme: {
+//     extend: {
+//       typography: (theme) => ({
+//         DEFAULT: {
+//           css: {
+//             color: theme('colors.gray.800'),
+
+//             // ...
+//           },
+//         },
+//       }),
+//     }
+//   },
+
+
+// module.exports = {
+//   theme: {
+//     extend: {
+//       typography: {
+//         DEFAULT: {
+//           css: {
+//             color: '#333',
+//             a: {
+//               color: '#3182ce',
+//               '&:hover': {
+//                 color: '#2c5282',
+//               },
+//             },
+//           },
+//         },
+//       }
+//     },
+//   },
