@@ -11,7 +11,7 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-# Our Fundraisers
+
 Lorem magna voluptate sunt et eu quis aliquip consectetur consequat nostrud eiusmod. Occaecat aliqua cupidatat Lorem consectetur eiusmod excepteur irure occaecat ex cupidatat dolor dolor dolor magna. 
 
 

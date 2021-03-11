@@ -11,14 +11,14 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-# Sponsor a Show or Production
+
 
 ![Cast of our production of The Indianians](https://old-theater-pics.netlify.app/img/indianians.jpg)
 
 Sponsor a theater production. Velit excepteur duis quis aliquip nostrud exercitation deserunt eiusmod aute ex elit incididunt labore. In cupidatat ex velit laboris veniam aliqua et sunt voluptate exercitation reprehenderit in duis.
 
 ![poster of friday flick The Blues Brothers](https://old-theater-pics.netlify.app/img/blues-brothers.jpg)
-<!-- <p class="prose-lg border-gray-300  border-4 p-4 text-red-600 overflow-visible">
+<!-- <p class="p-4 overflow-visible prose-lg text-red-600 border-4 border-gray-300">
   lets try some inline css
 </p> -->
 

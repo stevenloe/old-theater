@@ -11,8 +11,6 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-# Donate to The Old Theater
-
 Donations help the theater... text here...
 
 You can donate directly to the Old Theater by clicking the *Donate* button below. 

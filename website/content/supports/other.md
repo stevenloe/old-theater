@@ -1,5 +1,5 @@
 ---
-title: Other Ways to Support the Old Theater
+title: Other Ways to Support Us
 description:  Irure eiusmod dolore amet anim non laboris amet consectetur quis laboris consectetur. Ad dolore et pariatur ad sit ex officia ipsum proident adipisicing pariatur culpa duis. Irure nulla excepteur nulla dolore quis reprehenderit elit aliqua dolor voluptate anim do elit cupidatat.
 shortDesc: Irure eiusmod dolore amet anim non laboris amet.
 slug: /support/other
@@ -11,7 +11,7 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-# Other Ways to Support Us
+
 
 ### 1.  Shop Locally!  
 Support the wonderful business in our area that are here for you. When you do this, you're helping to keep Oriental and Pamlico county a vibrant, great place to live. You're also supporting local families - many of whom support the Old Theater's programs via sponsorship, membership, co-hosted events and more.
