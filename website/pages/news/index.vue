@@ -3,7 +3,7 @@
     <article
       class="w-full mx-auto content-column md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
-      <h1 class="text-4xl font-bold md:text-5xl lg:text-5xl">News</h1>
+      <UiHeadline id="level-2-headline" level="2">News</UiHeadline>
 
       <article
         class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg"
@@ -44,6 +44,7 @@
 
 
 <script>
+import UiHeadline from "@/components/ui/UiHeadline";
 import dayjs from "dayjs";
 const localizedFormat = require("dayjs/plugin/localizedFormat");
 dayjs.extend(localizedFormat);

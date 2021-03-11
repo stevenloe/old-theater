@@ -1,10 +1,11 @@
 <template>
-  <div>
-
+  <div class="mx-auto">
     <div
-      class="container max-w-3xl pl-8 pr-8 md:mx-auto md:pl-0 md:pr-0 "
+      class="w-full mx-auto md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
-      <h1 class="text-4xl font-semibold">Contact Us</h1>
+    <UiHeadline id="level-1-headline" level="2">Contact Us</UiHeadline>
+      <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
+
 
       <p class="block">
         Aute reprehenderit ipsum est duis laboris ullamco qui. Deserunt ex
@@ -159,6 +160,7 @@
           </button>
         </div>
       </form>
+      </article>
     </div>
   </div>
 </template>
