@@ -13,10 +13,30 @@
         <div
           class="pl-8 pr-8 mx-auto sm:max-w-lg md:max-w-xl md:text-4xl lg:max-w-3xl xl:max-w-4xl"
         >
-          <h1 class="mt-4 mb-4 text-4xl font-extrabold">{{ article.title }}</h1>
-          <div class="mb-8 text-xs font-semibold tracking-wide uppercase">
-            {{ article.eventTime | formatDate }} •
-            {{ article.eventTime | formatTime }} • ${{ article.formattedPrice }}
+          <h1 class="mt-4 mb-4 text-4xl font-extrabold leading-tight">
+            {{ article.title }}
+          </h1>
+          <div
+            class="mb-8 text-sm font-semibold leading-relaxed tracking-wide uppercase"
+          >
+            <div class="flex flex-wrap">
+              <div class="mr-4">
+                <span class="text-gray-600">DATE: </span>
+                {{ article.eventTime | formatDate }}
+              </div>
+              <div class="mr-4">
+                <span class="text-gray-600">TIME: </span>
+                {{ article.eventTime | formatTime }}
+              </div>
+              <div class="mr-4">
+                <span class="text-gray-600">COST: </span>
+                ${{ article.formattedPrice }}
+              </div>
+              <div v-if="article.location" class="mr-4">
+                <span class="text-gray-600">LOCATION: </span>{{ article.location }}
+              </div>
+            </div>
+             
           </div>
 
           <nuxt-content
@@ -25,6 +45,7 @@
           />
 
           <a
+            v-if="article.ticketURL"
             :href="article.ticketURL"
             class="block w-full px-4 py-2 mb-3 mr-2 text-lg font-bold tracking-wide text-center text-white uppercase bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700"
             >Buy tickets</a
