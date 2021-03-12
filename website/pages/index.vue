@@ -30,12 +30,15 @@
             </h3>
             <div class="mb-4 text-sm font-semibold tracking-wide uppercase">
               {{ show.eventTime | formatDate }} •
-              {{ show.eventTime | formatTime }} • ${{ show.formattedPrice }}
+              {{ show.eventTime | formatTime }} • ${{ show.formattedPrice }} <div  class="flex flex-wrap" v-if="show.location"> <div>
+                • {{ show.location }}</div> 
+              </div>              
             </div>
           </div>
 
           <div class="flex w-full pb-4 pl-6 pr-6 md:inline-block">
             <a
+              v-if="show.ticketURL"
               :href="show.ticketURL"
               class="w-1/2 px-4 py-2 mb-3 mr-2 font-bold tracking-wide text-center text-white uppercase bg-blue-600 rounded-lg shadow-lg md:w-full md:block hover:bg-blue-700"
             >
@@ -84,7 +87,8 @@ export default {
         "formattedPrice",
         "shortDesc",
         "imgAlt",
-        "ticketURL"
+        "ticketURL",
+        "location"
       ])
       .sortBy("eventTime", "asc")
       .fetch();
@@ -108,7 +112,4 @@ export default {
   /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); */
 }
 
-.default-gray {
-  background-color: #889;
-}
 </style>
