@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto">
     <div class="container mx-auto">
-      <AlertBox />
+      <!-- <AlertBox /> -->
       <div
         class="p-0 m-4 rounded shadow-lg show-card sm:m-8 md:flex md:m-8 md:mr-8"
         v-for="show of shows"
@@ -29,7 +29,6 @@
               {{ show.title }}
             </h3>
             <div class="flex">
-              
               <ShowPill :showtype="show.showtype"></ShowPill>
             </div>
             <div class="flex flex-wrap mb-4 text-sm font-semibold leading-relaxed tracking-wide uppercase flex-start">
