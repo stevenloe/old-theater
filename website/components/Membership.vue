@@ -1,14 +1,14 @@
 <template>
   <div class="m-4 sm:m-8 md:m-8 ">
     <!-- image card-->
-    <div class="rounded-t-lg overflow-hidden shadow-lg">
-      <img class="h-full w-full object-cover" :src="require(`~/assets/img_new/processed/${item.imageUrl}`)" :alt="item.imgAlt" />
+    <div class="overflow-hidden rounded-t-lg shadow-lg">
+      <img class="object-cover w-full h-full" :src="require(`~/assets/img_new/processed/${item.imageUrl}`)" :alt="item.imgAlt" />
     </div>
     <!-- details -->
-    <div class=" bg-yellow-600 rounded-b-lg  pl-6 pr-6 pt-3 pb-4 shadow-lg">
-      <h2 class="text-white  font-bold text-4xl text-shadow">{{ item.title }}</h2>
-      <p class="text-white mb-5 block font-medium text-lg md:text-2xl lg:text-3xl">{{ item.description }}</p>
-      <nuxt-link to="/support" class="block mb-3 bg-blue-600  text-center border-2 border-white text-white font-semibold text-lg py-2 px-4 shadow-md rounded-lg tracking-wide hover:bg-blue-700 uppercase sm:w-1/3">{{ item.cta }}</nuxt-link>
+    <div class="pt-3 pb-4 pl-6 pr-6 bg-yellow-600 rounded-b-lg shadow-lg ">
+      <h2 class="text-4xl font-bold text-white text-shadow">{{ item.title }}</h2>
+      <p class="block mb-5 text-lg font-medium text-white md:text-2xl lg:text-3xl">{{ item.description }}</p>
+      <nuxt-link to="/support" class="block px-4 py-2 mb-3 text-lg font-semibold tracking-wide text-center text-white uppercase bg-blue-600 border-2 border-white rounded-lg shadow-md hover:bg-blue-700 sm:w-1/3">{{ item.cta }}</nuxt-link>
     </div>
   </div>
 </template>
