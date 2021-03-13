@@ -3,7 +3,7 @@
     <div
       class="w-full mx-auto md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
-      <UiHeadline id="level-1-headline" level="2">Membership</UiHeadline>
+      <UiHeadline id="level-1-headline" level="1">Membership</UiHeadline>
 
       <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
         <UiHeadline id="level-1-headline" level="3"

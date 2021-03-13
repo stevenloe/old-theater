@@ -45,7 +45,7 @@
             </div>
           </div>
 
-          <div class="flex w-full pb-0 pl-6 pr-6 md:inline-block">
+          <div class="flex justify-end w-full pb-0 pl-6 pr-6 md:inline-block">
             <a
               v-if="show.ticketURL"
               :href="show.ticketURL"
