@@ -39,8 +39,8 @@
           </p>
         </div>
 
-        <div class="p-8 mb-8 bg-orange-300 rounded-lg shadow-lg">
-          <h2 class="mb-4 text-2xl font-semibold">Pamlico Musical Society</h2>
+        <div class="p-8 mb-8 bg-orange-200 rounded-lg shadow-lg">
+          <UiHeadline  class="mb-4" level="3" >Pamlico Musical Society</UiHeadline>
           <div class="mb-8">
             <img
               src="https://old-theater-pics.netlify.app/img/pms.png"
@@ -67,9 +67,9 @@
       </div>
 
       <div
-        class="p-8 mb-8 bg-white border-4 border-indigo-500 rounded-lg shadow-lg"
+        class="p-8 mb-8 bg-pink-100 rounded-lg shadow-lg"
       >
-        <h2 class="mb-4 text-2xl font-semibold">Children's Theater Workshop</h2>
+        <UiHeadline class="mb-4" level="3" >Children's Theater Workshop</UiHeadline>
         <p class="mb-4 leading-7">
           Mauris eros sem, volutpat ut, blandit ut, pharetra quis, pede. Aliquam
           vel libero. Suspendisse erat lacus, malesuada at, rutrum posuere,
@@ -94,7 +94,7 @@
       </div>
 
       <div class="p-8 pt-4 mb-8 bg-indigo-200 rounded-lg shadow-lg">
-        <h2 class="mb-4 text-2xl font-semibold">Community Band</h2>
+        <UiHeadline class="mb-4" level="3" >Community Band</UiHeadline>
         <div>
           <img
             src="https://old-theater-pics.netlify.app/img/community-band.jpg"
@@ -133,9 +133,11 @@
       </div>
 
       <div
-        class="p-8 pt-4 mb-8 bg-white border-4 border-blue-800 rounded-lg shadow-lg"
+        class="p-8 pt-4 mb-8 bg-white rounded-lg shadow-lg"
       >
-        <h2 class="mb-4 text-2xl font-semibold">Pamlico Chorale</h2>
+
+        <UiHeadline class="mb-4" level="3" >Pamlico Chorale</UiHeadline>
+        
         <div class="float-right ml-2">
           <img
             src="https://old-theater-pics.netlify.app/img/chorale.jpg"
