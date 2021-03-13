@@ -1,15 +1,15 @@
 <template>
-  <footer class="bg-gray-400 text-black p-8">
-    <div class="mt-0 text-center sm:w-3/4 md:w-8/12 lg:w-1/2 xl:w-5/12 mx-auto">
+  <footer class="p-8 text-black bg-gray-400">
+    <div class="mx-auto mt-0 text-center sm:w-3/4 md:w-8/12 lg:w-1/2 xl:w-5/12">
       <nuxt-link to="/" class="focus:outline-none">
         <img
-          class="inline-block h-20 md:h-24 px-4 hover:bg-gray-300 rounded"
+          class="inline-block h-20 px-4 rounded md:h-24 hover:bg-gray-300"
           src="~/assets/img/old-theater-logo-final.svg"
           alt="The Old Theater, Oriental North Carolina"
         />
       </nuxt-link>
       <address
-        class="-mt-2 mb-8 not-italic font-serif md:text-xl w-full xl:text-xl"
+        class="w-full mb-8 -mt-2 font-serif not-italic md:text-xl xl:text-xl"
       >
         The Old Theater<br />
         609 Broad Street<br />
@@ -18,7 +18,7 @@
         <div class="flex justify-center mt-3">
           <!-- decorative rule -->
           <svg
-            class="fill-current text-gray-600 h-5"
+            class="h-5 text-gray-600 fill-current"
             xmlns="http://www.w3.org/2000/svg"
             width="134"
             height="12"
@@ -29,26 +29,26 @@
           </svg>
         </div>
       </address>
-      <nav class="flex border-t pt-1 pb-1 mb-10 border-b border-gray-500">
+      <nav class="flex pt-1 pb-1 mb-10 border-t border-b border-gray-500">
         <div class="w-1/2 text-left">
           <div class="flex">
             <nuxt-link
               to="/news"
-              class="footer-link justify-start tracking-wider md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              class="justify-start tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
               >NEWS</nuxt-link
             >
           </div>
           <div class="flex">
             <nuxt-link
               to="/about/history"
-              class="footer-link justify-start tracking-wider md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              class="justify-start tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
               >OUR HISTORY</nuxt-link
             >
           </div>
           <div class="flex">
             <nuxt-link
               to="/contact"
-              class="footer-link justify-start tracking-wider md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              class="justify-start tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
               >CONTACT US</nuxt-link
             >
           </div>
@@ -57,21 +57,21 @@
           <div class="flex justify-end">
             <nuxt-link
               to="/support/donate"
-              class="footer-link tracking-wider md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              class="tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
               >DONATE</nuxt-link
             >
           </div>
           <div class="flex justify-end">
             <nuxt-link
               to="/calendar"
-              class="footer-link tracking-wider md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              class="tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
               >CALENDAR</nuxt-link
             >
           </div>
           <div class="flex justify-end">
             <nuxt-link
               to="/about/venue"
-              class="footer-link tracking-wider md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              class="tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
               >VENUE</nuxt-link
             >
           </div>
@@ -80,8 +80,8 @@
 
       <a
         href="https://stevenloe.com"
-        class="w-full text-gray-700 hover:text-gray-900 mb-16 text-sm sm:text-base"
-        >Website by Steven Loe</a
+        class="w-full mb-16 text-sm text-gray-700 hover:text-gray-900 sm:text-base"
+        >Website design and development by Steven Loe</a
       >
     </div>
   </footer>

@@ -11,7 +11,7 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
-# I am an H1
+
 
 ## Hold your event or show at oriental's...
 
