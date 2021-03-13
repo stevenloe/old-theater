@@ -1,5 +1,5 @@
 ---
-title: Old Post 7c
+title: News Article 7c
 description:  2021 Member meeting cupidatat.
 shortDesc: News Item 2 short description Irure eiusmod dolore amet anim non laboris amet.
 img: 

@@ -12,9 +12,6 @@ ticketURL: https://example.com
 ---
 
 
-Lorem magna voluptate sunt et eu quis aliquip consectetur consequat nostrud eiusmod. Occaecat aliqua cupidatat Lorem consectetur eiusmod excepteur irure occaecat ex cupidatat dolor dolor dolor magna. 
-
-
 ## Old Theater’s Got Talent Virtual Talent Show Fundraiser  
 **Congratulations to the Winners of the Old Theater’s Got Talent Virtual Talent Show Fundraiser!**  
 

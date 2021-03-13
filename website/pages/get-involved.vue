@@ -3,9 +3,9 @@
     <div
       class="w-full mx-auto content-column md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
+          <UiHeadline level="1">Get Involved</UiHeadline>
       <div class="p-8 bg-white rounded shadow-lg">
         <div class="mb-4">
-          <UiHeadline level="1">Get Involved</UiHeadline>
           <div>
             <img
               src="http://via.placeholder.com/400x200"
@@ -76,7 +76,7 @@
         </div>
 
         <div class="mb-4">
-          <h2 class="text-2xl font-semibold">More</h2>
+          <h2 class="text-2xl font-semibold"></h2>
           <p class="mb-4">
             Nostrum minus eligendi esse qui cupiditate neque, at, enim ipsa
             blanditiis vero aperiam culpa labore amet corporis! Consequatur rem
@@ -117,7 +117,7 @@
 
         <div class="p-8 pt-4 mb-4 bg-indigo-100">
           <h2 class="mb-1 text-2xl font-semibold">
-            More About Getting Involved
+            Volunteers in Action
           </h2>
           <div>
             <img
@@ -153,7 +153,7 @@
         </div>
 
         <div class="p-8 pt-4 mb-4">
-          <h2 class="text-2xl font-semibold">Still More</h2>
+          <h2 class="text-2xl font-semibold">We Need You!</h2>
           <div class="float-right ml-2">
             <img src="http://via.placeholder.com/350x220" alt="" />
             <p class="p-1 mb-3 text-xs italic text-blue">

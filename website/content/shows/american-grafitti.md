@@ -19,5 +19,3 @@ The Old Theater with The Red Rooster present American Graffiti.  Admission is by
   <iframe src="https://www.youtube.com/embed/OZ9Gp6Qc8LQ" class="absolute inset-0 w-full h-full rounded" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
 </div>
   
-  
-Curt and Steve have gotten into a prestigious college, but Curt is having second thoughts on the night before they're going to leave for the school. That night, Curt searches relentlessly for a spellbinding woman in a white T-Bird while Steve tries to patch things up with his girlfriend after suggesting they date other people while he's away. Their two other friends John and Terry also have a wild night, John when he's forced to chauffer a little girl and Terry when he borrows Steve's car and picks up a girl but then has trouble living up to the expectations set by the car.

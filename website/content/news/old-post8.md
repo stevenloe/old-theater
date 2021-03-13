@@ -1,5 +1,5 @@
 ---
-title: Old Post 8
+title: News Article 8
 description:  2021 Member meeting cupidatat.
 shortDesc: News Item 2 short description Irure eiusmod dolore amet anim non laboris amet.
 img: 
