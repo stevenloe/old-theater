@@ -5,7 +5,7 @@
     >
       <div class="mb-8">
 
-        <UiHeadline level="1" @click="shout('h1')">Community &amp; Education - UIHeadline</UiHeadline>
+        <UiHeadline level="1" @click="shout('h1')">Community &amp; Education</UiHeadline>
         <h1 class="mt-4 mb-4 text-4xl font-extrabold">
           
         </h1>
