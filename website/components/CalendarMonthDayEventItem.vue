@@ -3,10 +3,9 @@
     <li v-for="event in eventsToday" :key="event.name">
       <NuxtLink
         :to="event.url"
-        class="text-sm md:text-base my-1 block p-2 rounded-xl hover:bg-gray-300 mx-2"
+        class="block p-2 mx-2 my-1 text-sm md:text-base rounded-xl hover:bg-gray-300"
       >
-        <span class="font-semibold italic pl-4 md:pl-0">
-          {{ event.name }} </span
+        <span class="pl-4 italic font-semibold md:pl-0"> {{ event.name }} </span
         >: {{ event.time }}
       </NuxtLink>
     </li>
