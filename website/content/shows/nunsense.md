@@ -5,10 +5,11 @@ shortDesc: Irure eiusmod dolore amet anim non laboris amet.
 slug: /nunsense
 img: nunsense-big.jpg
 imgAlt: some alt text
-eventDate: 'March, 21 2020 19:30:00 EST'
-eventTime: '2021-02-05T21:09:38.963Z'
+eventDate: 'July, 16 2021 19:00:30 EST'
+eventTime: '2021-07-16T23:00:00.000Z'
 formattedPrice: 19.00
 ticketURL: https://www.showclix.com
+showtype: "LIVE THEATER"
 ---
 
 Non id incididunt sint minim ad irure fugiat ipsum. Velit excepteur duis quis aliquip nostrud exercitation deserunt eiusmod aute ex elit incididunt labore. In cupidatat ex velit laboris veniam aliqua et sunt voluptate exercitation reprehenderit in duis.

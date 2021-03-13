@@ -196,7 +196,6 @@ export default {
     headerClass() {
       // display menu at full viewport height on mobile:
       const full = this.isMobileMenuOpen ? "h-full overflow-y-scroll" : "";
-      // return `${full} bg-white fixed items-end w-full md:flex md:justify-between md:items-end md:px-4 md:pr-8 z-20 top-0 `;
       return `${full} bg-white fixed w-full px-4 py-2 md:flex md:justify-start md:p-0 md:pl-8 z-20 top-0`;
     },
   },

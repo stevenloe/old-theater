@@ -10,7 +10,7 @@
       
         <!-- image card -->
         <div
-          class="relative overflow-hidden rounded md:w-7/12 md:rounded-r-none text"
+          class="relative overflow-hidden rounded-lg md:w-7/12 md:rounded-r-none text"
         >
           <nuxt-link :to="show.slug">
             <img
@@ -22,21 +22,31 @@
 
         <!-- details card -->
         <div
-          class="relative -mt-1 bg-white rounded-b-lg md:mt-0 md:rounded-b-none md:rounded-r-lg md:w-5/12 md:p-0"
+          class="relative pb-3 -mt-1 bg-white rounded-b-lg md:mt-0 md:rounded-b-none md:rounded-r-lg md:w-5/12"
         >
           <div class="w-full p-6 pt-2 pb-0">
             <h3 class="mt-3 mb-2 text-4xl font-bold leading-none">
               {{ show.title }}
             </h3>
-            <div class="mb-4 text-sm font-semibold tracking-wide uppercase">
-              {{ show.eventTime | formatDate }} •
-              {{ show.eventTime | formatTime }} • ${{ show.formattedPrice }} <div  class="flex flex-wrap" v-if="show.location"> <div>
-                • {{ show.location }}</div> 
+            <div class="flex">
+              
+              <ShowPill :showtype="show.showtype"></ShowPill>
+            </div>
+            <div class="flex flex-wrap mb-4 text-sm font-semibold leading-relaxed tracking-wide uppercase flex-start">
+
+              
+              {{ show.eventTime | formatDate }}, 
+              {{ show.eventTime | formatTime }}, ${{ show.formattedPrice }} 
+              
+              <div  class="flex flex-wrap" v-if="show.location"> 
+                <div>
+                 At {{ show.location }}
+              </div> 
               </div>              
             </div>
           </div>
 
-          <div class="flex w-full pb-4 pl-6 pr-6 md:inline-block">
+          <div class="flex w-full pb-0 pl-6 pr-6 md:inline-block">
             <a
               v-if="show.ticketURL"
               :href="show.ticketURL"
@@ -72,6 +82,7 @@ import Membership from "@/components/Membership";
 import MemberCrawl from "@/components/MemberCrawl";
 import Sponsorship from "@/components/Sponsorship";
 import NewsWidget from "@/components/NewsWidget";
+import ShowPill from "@/components/ShowPill";
 
 export default {
   async asyncData({ $content, params }) {
@@ -88,7 +99,8 @@ export default {
         "shortDesc",
         "imgAlt",
         "ticketURL",
-        "location"
+        "location",
+        "showtype"
       ])
       .sortBy("eventTime", "asc")
       .fetch();
@@ -103,6 +115,7 @@ export default {
     MemberCrawl,
     Sponsorship,
     NewsWidget,
+    ShowPill
   },
 };
 </script>
