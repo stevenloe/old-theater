@@ -5,11 +5,11 @@ shortDesc: Suscipit unde labore necessitatibus fugiat?
 slug: /maiden
 img: maiden.jpg
 imgAlt: some alt text
-eventDate: 'May 8, 2021 19:00:30 EST'
-eventTime: '2021-05-08T23:00:00.963Z'
-formattedPrice: Donation
-location: 
-ticketURL: 
+eventDate: 'July 2, 2021 19:00:30 EST'
+eventTime: '2021-07-02T23:00:00.963Z'
+formattedPrice: 5
+location: The Old Theater
+ticketURL: https://www.showclix.com
 showtype: FRIDAY FLICK
 ---
 
