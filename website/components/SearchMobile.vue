@@ -5,17 +5,17 @@
       type="search"
       autocomplete="off"
       placeholder="Search oldtheater.org"
-      class="w-full rounded-lg bg-gray-400 text-xl px-3  h-12 mt-2 mb-2 focus:outline-none placeholder-black"
+      class="w-full h-12 px-3 mt-2 mb-2 text-xl placeholder-black bg-gray-400 rounded-lg focus:outline-none"
     />
     <ul
       v-if="results.length"
-      class="w-full h-full flex-1 top-40 pb-8 bg-gray-300 rounded-md border border-gray-300 overflow-hidden"
+      class="flex-1 w-full h-full pb-8 overflow-hidden bg-gray-300 border border-gray-300 rounded-md top-40"
     >
-      <div class="flex justify-between items-center border-b-2 border-gray-500">
+      <div class="flex items-center justify-between border-b-2 border-gray-500">
         <div class="m-4 text-lg font-semibold">Search Results</div>
         <svg
           @click="clearQuery"
-          class="h-6 w-6 m-2 fill-current cursor-pointer"
+          class="w-6 h-6 m-2 cursor-pointer fill-current"
           viewBox="0 0 24 24"
         >
           <path
@@ -28,7 +28,8 @@
       <li v-for="result of results" :key="result.slug">
         <NuxtLink
           :to="result.slug"
-          class="flex px-8 py-4 items-center leading-8 transition ease-in-out duration-150 text-gray-900 text-3xl hover:text-black"
+          @click.native="close"
+          class="flex items-center px-8 py-4 text-3xl leading-8 text-gray-900 transition duration-150 ease-in-out hover:text-black"
         >
           {{ result.title }}
         </NuxtLink>
@@ -79,6 +80,10 @@ export default {
     clearQuery() {
       this.searchQuery = "";
     },
+    close() {
+      console.log("_-------- LOCAL CLOSE -----");
+      this.$bus.$emit("close-mobile-menu");
+    }
   },
   created: function () {
     this.$bus.$on("toggle-search", (e) => {

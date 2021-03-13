@@ -15,6 +15,7 @@
       <li v-for="result of results" :key="result.slug">
         <NuxtLink
           :to="result.slug"
+          @click.native="clearSearch"
           class="flex items-center px-8 py-2 mx-2 text-2xl leading-8 text-black transition duration-150 ease-in-out rounded-lg hover:bg-gray-400 "
         >
           {{ result.title }}

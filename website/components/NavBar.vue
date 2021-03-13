@@ -2,7 +2,7 @@
   <div class="mb-12 md:mb-20">
     <header class="shadow-lg" :class="headerClass">
       <div class="flex items-center justify-between md:p-0 md:mr-3 md:py-2">
-        <Logo />
+        <Logo @click.native="onNavItemClick" />
 
         <!-- mobile menu open/close buttons -->
         <div class="md:hidden">
@@ -202,6 +202,9 @@ export default {
   created: function () {
     this.$bus.$on("no-search-results", (e) => {
       this.noSearchResults = e;
+    });
+    this.$bus.$on("close-mobile-menu", (e) => {
+      this.hideMenu()
     });
   },
   components: {
