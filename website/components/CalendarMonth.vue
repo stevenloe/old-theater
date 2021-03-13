@@ -1,8 +1,8 @@
 <template>
-  <div class="relative bg-gray-400 rounded-lg shadow-lg overflow-hidden">
-    <div class="flex justify-between bg-white py-4">
+  <div class="relative overflow-hidden bg-gray-400 rounded-lg shadow-lg">
+    <div class="flex justify-between py-4 bg-white">
       
-      <div class="hidden md:block w-1/3"></div>
+      <div class="hidden w-1/3 md:block"></div>
 
       <CalendarDateIndicator
         :selected-date="selectedDate"
@@ -18,7 +18,7 @@
 
     <CalendarWeekdays />
 
-    <ol class="days-grid grid grid-cols-1 md:grid-cols-7 border-t border-gray-400">
+    <ol class="grid grid-cols-1 border-t border-gray-400 days-grid md:grid-cols-7">
       <CalendarMonthDayItem
         v-for="day in days"
         :key="day.date"
@@ -43,6 +43,7 @@ dayjs.extend(weekOfYear);
 
 export default {
   name: "CalendarMonth",
+  
 
   components: {
     CalendarMonthDayItem,
@@ -55,54 +56,54 @@ export default {
     return {
       selectedDate: dayjs(),
       eventItems: {
-        "2020-21-21": {
+        "2021-03-19": {
           eventsToday: [
             {
-              date: "2020-21-21",
-              type: "Friday Flick",
-              name: "Scrooged",
-              time: "5:30 PM",
-              url: "/scrooged",
-            },
-          ],
-        },
-        "2021-01-12": {
-          eventsToday: [
-            {
-              date: "2020-01-12",
-              type: "Casting Call",
-              name: 'Casting call for "Sex Please Were Sixty"',
-              time: "3:00 PM",
-              url: "/news/casting-call-sex-please",
-            },
-            {
-              date: "2021-01-12",
-              type: "Friday Flick",
-              name: "Goldfinger",
-              time: "6:00 PM",
-              url: "/goldfinger",
-            },
-          ],
-        },
-        "2021-02-05": {
-          eventsToday: [
-            {
-              date: "2021-02-05",
-              type: "Theatrical Performance",
-              name: "Nunsense",
+              date: "2021-03-19",
+              type: "FRIDAY FLICK",
+              name: "American Grafitti",
               time: "6:30 PM",
+              url: "/american-grafitti",
+            },
+          ],
+        },
+        "2020-05-21": {
+          eventsToday: [
+            {
+              date: "2021-05-08",
+              type: "FRIDAY FLICK",
+              name: "Maiden",
+              time: "7:00 PM",
+              url: "/maiden",
+            },
+          ],
+        },
+        "2020-05-21": {
+          eventsToday: [
+            {
+              date: "2021-07-16",
+              type: "LIVE THEATER",
+              name: "Nunsense",
+              time: "7:00 PM",
               url: "/nunsense",
             },
           ],
         },
-        "2021-02-14": {
+        "2020-07-24": {
           eventsToday: [
             {
-              date: "2021-02-14",
-              type: "Live Music",
-              name: "Barbra Lica",
-              time: "5:30 PM",
+              date: "2021-07-24",
+              type: "LIVE MUSIC",
+              name: "Barbara Lica",
+              time: "7:00 PM",
               url: "/barbra-lica",
+            },
+             {
+              date: "2021-07-24",
+              type: "CASTING CALL",
+              name: 'Casting call for "Sex Please Were Sixty"',
+              time: "3:00 PM",
+              url: "/news/casting-call-sex-please",
             },
           ],
         },
