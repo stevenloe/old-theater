@@ -13,9 +13,7 @@
         <div
           class="pl-8 pr-8 mx-auto sm:max-w-lg md:max-w-xl md:text-4xl lg:max-w-3xl xl:max-w-4xl"
         >
-          <h1 class="mt-4 mb-4 text-4xl font-extrabold leading-tight">
-            {{ article.title }}
-          </h1>
+          <UiHeadline class="mt-4"  level="1" @click="shout('h1')">{{article.title}} - UIHeadline</UiHeadline>
           <div class="flex">
               <ShowPill :showtype="article.showtype"></ShowPill>
             </div>

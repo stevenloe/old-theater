@@ -4,8 +4,10 @@
       class="w-full mx-auto content-column md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
       <div class="mb-8">
+
+        <UiHeadline level="1" @click="shout('h1')">Community &amp; Education - UIHeadline</UiHeadline>
         <h1 class="mt-4 mb-4 text-4xl font-extrabold">
-          Community &amp; Education
+          
         </h1>
 
         <div class="p-8 mb-8 bg-white rounded-lg shadow-lg">

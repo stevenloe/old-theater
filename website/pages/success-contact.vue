@@ -1,18 +1,17 @@
 <template>
   <div>
-     <NavBar />
+    <NavBar />
 
     <div
-      class="container md:mx-auto max-w-3xl pl-8 pr-8 md:pl-0 md:pr-0 pt-16 md:pt-24"
+      class="container max-w-3xl pt-16 pl-8 pr-8 md:mx-auto md:pl-0 md:pr-0 md:pt-24"
     >
-      <h1 class="text-3xl font-semibold mb-4">Thank you!</h1>
-      <p class="text-lg pb-8">
+      <UiHeadline level="1">Thank you!</UiHeadline>
+      <p class="pb-8 text-lg">
         We've received your message. We'll get back to you soon.
       </p>
-      <p class="text-lg pb-64">
+      <p class="pb-64 text-lg">
         Need to reach someone quickly? Call The Old Theater at (252) 249-0477.
       </p>
-
     </div>
   </div>
 </template>

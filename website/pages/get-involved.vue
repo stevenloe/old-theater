@@ -5,7 +5,7 @@
     >
       <div class="p-8 bg-white rounded shadow-lg">
         <div class="mb-4">
-          <h1 class="text-4xl font-extrabold">Get Involved</h1>
+          <UiHeadline level="1">Get Involved</UiHeadline>
           <div>
             <img
               src="http://via.placeholder.com/400x200"

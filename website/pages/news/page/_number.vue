@@ -3,8 +3,7 @@
     <article
       class="w-full mx-auto content-column md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
-      <h1 class="text-4xl font-bold md:text-5xl lg:text-5xl">News</h1>
-
+    <UiHeadline level="1">News</UiHeadline>
       <article
         class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg"
         v-for="post of posts"

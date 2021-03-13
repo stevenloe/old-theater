@@ -8,7 +8,9 @@
           {{ postTime(post.eventTime) }}
         </div>
         <nuxt-link :to="`/news/${post.slug}?page=index`">
-          <h1 class="mb-8 text-3xl font-bold">{{ post.title }}</h1></nuxt-link
+
+        <UiHeadline level="1">{{ post.title }}></UiHeadline>
+         </nuxt-link
         >
         <nuxt-content
           :document="post"

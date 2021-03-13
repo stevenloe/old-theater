@@ -3,7 +3,7 @@
     <div
       class="w-full mx-auto md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
-    <UiHeadline id="level-1-headline" level="2">Contact Us</UiHeadline>
+    <UiHeadline level="1">Contact Us</UiHeadline>
       <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
 
 
