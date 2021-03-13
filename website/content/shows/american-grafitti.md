@@ -5,8 +5,8 @@ shortDesc: Suscipit unde labore necessitatibus fugiat?
 slug: /american-grafitti
 img: american.jpg
 imgAlt: some alt text
-eventDate: "March, 19 2021 19:00:30 EST"
-eventTime: "2021-03-19T23:00:00.000Z"
+eventDate: "March, 19 2021 17:00:30 EST"
+eventTime: "2021-03-19T22:30:00.000Z"
 formattedPrice: Donation
 location: The Red Rooster
 ticketURL: 
