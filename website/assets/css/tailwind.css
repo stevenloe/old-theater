@@ -4,7 +4,7 @@
 
 .footer-link {
   word-spacing: 1px;
-  @apply block p-2 text-gray-800 font-light tracking-wide rounded-lg;
+  @apply block p-2 font-normal tracking-wide text-gray-800 rounded-lg;
 }
 
 
