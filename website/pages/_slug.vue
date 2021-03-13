@@ -16,6 +16,9 @@
           <h1 class="mt-4 mb-4 text-4xl font-extrabold leading-tight">
             {{ article.title }}
           </h1>
+          <div class="flex">
+              <ShowPill :showtype="article.showtype"></ShowPill>
+            </div>
           <div
             class="mb-8 text-sm font-semibold leading-relaxed tracking-wide uppercase"
           >
