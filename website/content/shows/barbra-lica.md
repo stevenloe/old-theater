@@ -15,8 +15,8 @@ showtype: LIVE MUSIC
 
 Non id incididunt sint minim ad irure fugiat ipsum. Velit excepteur duis quis aliquip nostrud exercitation deserunt eiusmod aute ex elit incididunt labore. In cupidatat ex velit laboris veniam aliqua et sunt voluptate exercitation reprehenderit in duis.
 
-<div class="relative my-3" style="padding-top: 56.25%">
-  <iframe src="https://www.youtube.com/embed/TZDSHoqV20w" class="absolute inset-0 w-full h-full rounded" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="relative h-0" style="padding-bottom: 56.25%">
+  <iframe src="https://www.youtube.com/embed/TZDSHoqV20w" class="absolute top-0 left-0 w-full h-full" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
 </div>
   
 

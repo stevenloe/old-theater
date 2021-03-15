@@ -15,7 +15,7 @@ showtype: "FRIDAY FLICK"
 
 The Old Theater with The Red Rooster present American Graffiti.  Admission is by donation to benefit the Old Theater.
 
-<div class="relative my-3" style="padding-top: 56.25%">
-  <iframe src="https://www.youtube.com/embed/OZ9Gp6Qc8LQ" class="absolute inset-0 w-full h-full rounded" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+<div class="relative h-0" style="padding-bottom: 56.25%">
+  <iframe src="https://www.youtube.com/embed/OZ9Gp6Qc8LQ" class="absolute top-0 left-0 w-full h-full" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
 </div>
   
