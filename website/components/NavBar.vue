@@ -69,7 +69,7 @@
 
               <!-- calendar -->
               <div class="rounded hover:bg-gray-200">
-                <nuxt-link to="/calendar/" @click.native="onNavItemClick">
+                <nuxt-link to="/calendar/" title="Calendar" @click.native="onNavItemClick">
                   <div
                     v-if="isMobileMenuOpen"
                     :class="itemStyle"
@@ -96,7 +96,7 @@
 
               <!-- news -->
               <div class="mr-2 rounded hover:bg-gray-200">
-                <nuxt-link to="/news/" @click.native="onNavItemClick">
+                <nuxt-link to="/news/" title="News" @click.native="onNavItemClick">
                   <div
                     v-if="isMobileMenuOpen"
                     :class="itemStyle"

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- logo & text -->
-    <nuxt-link to="/">
+    <nuxt-link to="/" title="Home">
       <div
         class="flex text-left rounded md:text-center md:block hover:bg-gray-200"
       >
