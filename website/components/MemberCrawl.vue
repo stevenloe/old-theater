@@ -1,15 +1,16 @@
 <template>
   <div
-    class=" border-8 rounded-xl border-blue-700 bg-white overflow-hidden shadow-lg"
+    class="overflow-hidden bg-white border-8 border-blue-700 shadow-lg rounded-xl"
   >
     <div class="bg-blue-700">
       <div
-        class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight flex text-white p-5 pt-3"
+        class="flex p-5 pt-3 text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl"
       >
         Thanks to our 2021 Members!
       </div>
-
-      <MemberCarousel />
+      <client-only>
+        <MemberCarousel />
+      </client-only>
     </div>
   </div>
 </template>
@@ -19,10 +20,6 @@ import MemberCarousel from "@/components/MemberCarousel";
 export default {
   components: {
     MemberCarousel,
-  },
-  created: function () {
-    // `this` points to the vm instance
-    console.log("------- CREATED CRAWL ----------");
   },
 };
 </script>
