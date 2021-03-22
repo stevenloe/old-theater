@@ -1,18 +1,18 @@
 <template>
-  <div>
-    <h1>MEMBER LSIT</h1>
+  <div class="p-8 mt-8 bg-gray-100 border border-gray-400 ">
+    <h1>Welcome {{ currentYear() }} Members!</h1>
     <ul>
-      <li class="mt-4" v-for="(group, name) in membersGrouped" :key="name">
-        <span class="font-bold uppercase">{{ name }}</span>
+      <li v-for="(group, name) in membersGrouped" :key="name">
+        <div class="mt-4 font-bold text-gray-700 uppercase">{{ name }}</div>
         <ul class="ml-4">
           <li
-            class="text-gray-800"
+            class="text-gray-800 "
             v-for="(member, index) in group"
             :key="index"
           >
-            {{ member.first1 }} {{ member.last1 }}
-            <span class="text-gray-800" v-if="member.first2"
-              >&amp; {{ member.first2 }} {{ member.last2 }}</span
+            {{ member.firstName }} {{ member.lastName }}
+            <span class="text-gray-800" v-if="member.spouseFirst"
+              >&amp; {{ member.spouseFirst }} {{ member.spouseLast }}</span
             >
           </li>
         </ul>
@@ -24,20 +24,11 @@
 
 <script>
 
-
-
-
-////////////
-
-
-
 export default {
-  async asyncData({ $content }) {
-    const members = await $content("members").fetch();
+  async fetch() {
+    let data = await this.$content("members", { deep: true }).fetch();
 
-    console.log("members B ", members[0].body);
-
-    let membersGrouped = members[0].body.reduce(function (r, a) {
+    let membersGrouped = data[0].body.reduce(function (r, a) {
       r[a.level] = r[a.level] || [];
       r[a.level].push(a);
       return r;
@@ -66,10 +57,21 @@ export default {
     const keys = Object.keys(membersGrouped);
 
     keys.forEach((key, index) => {
-      membersGrouped[key].sort(compareValues("last1"));
+      membersGrouped[key].sort(compareValues("lastName"));
     });
 
-    return { membersGrouped };
+    this.membersGrouped = membersGrouped;
   },
+  data() {
+    return {
+      membersGrouped: null,
+    };
+  },
+  methods: {
+    currentYear() {
+      const d = new Date()
+      return d.getFullYear()
+    }
+  }
 };
 </script>
