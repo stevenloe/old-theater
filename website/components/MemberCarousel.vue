@@ -27,10 +27,10 @@ export default {
     data = data[0].body;
 
     let list = data.map((item) => {
-      if (item.first2) {
-        return `${item.first1} ${item.last1} & ${item.first2} ${item.last2}`;
+      if (item.spouseFirst) {
+        return `${item.firstName} ${item.lastName} & ${item.spouseFirst} ${item.spouseLast}`;
       } else {
-        return `${item.first1} ${item.last1}`;
+        return `${item.firstName} ${item.lastName}`;
       }
     });
 
