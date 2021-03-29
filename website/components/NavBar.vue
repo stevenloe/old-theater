@@ -191,6 +191,7 @@ export default {
       aboutMenuItems: {
         title: "About",
         items: [
+          { text: "About Us", link: "/about/The Old Theater/", id: 0 },
           { text: "Venue", link: "/about/venue/", id: 1 },
           { text: "Rent the Theater", link: "/about/rent-the-theater", id: 2 },
           { text: "Our History", link: "/about/history", id: 3 },
@@ -221,6 +222,7 @@ export default {
   },
   methods: {
     onResize() {
+      console.log("----- NAVBAR RESIZE----");
       this.isMobileMenuOpen = false;
       this.isMobile = this.isSearchOpen = window.innerWidth < 768;
       this.$bus.$emit("resize-window");
