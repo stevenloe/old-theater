@@ -20,6 +20,7 @@ imgAlt: some alt text
 **Publicity:** Mary Frances Taylor   
 **House / Box Office:** Russ Stevenson   
 **Sponsorship:** (open)   
+**Theater Sponsored Events:** Pat Nocera    
 **Volunteer Coordinator:** Andrea Bayard   
 **Graphic Communications:** (open)   
 **Website:** Steven Loe   
