@@ -17,19 +17,19 @@
               class="w-full overflow-hidden rounded-lg shadow-lg"
               alt=""
             />
-            <p class="p-1 mb-3 text-xs italic text-gray-700">
+            <p class="p-1 mb-3 text-sm italic text-gray-700">
               Children's Theater Workshop participants having fun at The Old Theater.
             </p>
           </div>
-          <p class="mb-4 leading-7">
-            Our mission is to ensure that Pamlico County and the town of Oriental has a great venue for civic and cultural events.
+          <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
+            The Old Theater's goal is to enrich, educate and entertain our community by serving as a great venue for the performing arts. We partner with arts organizations to help them bring educational programs and theatrical, live music, and dance performances to our stage. 
           </p>
-          <p class="mb-4 leading-7">
-            Our goal is to enrich, educate and entertain our community by serving as a venue for the performing arts. We partner with arts organizations to help them bring educational programs and theatrical, live music, and dance performances to our stage. 
+          <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
+            Below are some of the organizations we partner with.
           </p>
         </div>
 
-        <div class="p-8 mb-8 bg-gray-100 rounded-lg shadow-lg">
+        <div class="p-8 mb-8 bg-orange-200 rounded-lg shadow-lg">
           <UiHeadline  class="mb-4" level="3" >Pamlico Musical Society</UiHeadline>
           <div class="mb-8">
             <img
@@ -38,19 +38,20 @@
               alt=""
             />
           </div>
-          <p class="mb-4 leading-7">
+          <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
             Since 1997, Pamlico Musical Society has presented several concerts each year, from September through April or May. Professional artists from a variety of musical genres present the highest caliber musical entertainment, typically in the intimate setting of Oriental's Old Theater. 
           </p>
-          <p class="mb-4 leading-7">
+          <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
             Jazz, classical, folk, rock, Americana, pop, and show tunes ensure that each Pamlico Musical Society season offers something for everyone who loves great music. To learn more visit <a class="underline" href="https://www.pamlicomusic.org">www.pamlicomusic.org</a>.
           </p>
         </div>
       </div>
 
       <div
-        class="p-8 mb-8 bg-gray-100 rounded-lg shadow-lg"
+        class="p-8 mb-8 bg-pink-100 rounded-lg shadow-lg"
       >
-        <UiHeadline class="mb-4" level="3" >Children's Theater Workshop</UiHeadline>
+        <UiHeadline class="mb-2" level="3" >Children's Theater Workshop</UiHeadline>
+        <UiHeadline class="mb-4" level="5" >A Place for Kids to Learn, Grow and Imagine.</UiHeadline>
         <div class="mb-8">
           <img
             src="https://old-theater-pics.netlify.app/img/ctw.png"
@@ -58,17 +59,22 @@
             alt=""
           />
         </div>
-        <p class="mb-4 leading-7">
-          Our purpose is to make the theater a setting where opportunities for telling a story in words, motion and emotions can bring awareness beyond the parameters of their own home/school environment; where life values can be imparted through drama and appreciation of social values can be learned in the play message. 
-          
+        
+
+        <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
+          Children's Theater Workshop has a longstanding commitment to enriching the lives of children by providing a structured arts program led by an exceptional, and carefully chosen, theater arts Drama Coach.
         </p>
-        <p class="mb-4 leading-7">
-          An ensemble of students learning to appreciate the power of drama techniques can display the respect, tolerance and patience for all ages, genders, social and ethnic backgrounds, as they work together toward a common goal.
+
+        <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
+          Besides being great fun, children's theatre has many benefits. Activities like improv and drama performance can boost self-esteem and confidence. The theatre is a place where inner silliness and creativity are embraced. When children learn to be more confident in themselves, it translates to other aspects of their lives &mdash; school, communication, and social situations.
+        </p>
+        <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
+          In addition to boosting confidence and creativity, Children's Theater Workshop has many other benefits. If your child is in the workshop, chances are they’ll have to learn part of a script. When they see what they read come to life on the stage, they’ll likely improve their reading comprehension elsewhere. It might even make them more interested in reading off the stage, too!
           More at <a class="underline" href="https://www.childrenstheateronc.com/">www.childrenstheateronc.com</a>
         </p>
       </div>
 
-      <div class="p-8 pt-4 mb-8 bg-gray-100 rounded-lg shadow-lg">
+      <div class="p-8 pt-4 mb-8 bg-indigo-300 rounded-lg shadow-lg">
         <UiHeadline class="mb-4" level="3" >Pamlico Community Band</UiHeadline>
         <div>
           <img
@@ -77,27 +83,16 @@
             alt=""
           />
           <p class="p-1 mb-3 text-xs italic text-blue">
-            This is caption text adipisicing elit. Vel itaque velit ipsam
-            repellat amet, earum.
+            <!-- Pamlico Community Band -->
           </p>
         </div>
-        <p class="mb-4 leading-7">
+        <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
+          The Pamlico Community Band has members from Pamlico County and surrounding counties. Ages range from the young, to the young at heart! It doesn't matter what experience you have. Only thing that matters, is that you have a passion for music!
+        </p>
+        <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
           More at their <a class="underline" href="https://www.facebook.com/Pamlico-Community-Band-138279799519612/">Facebook page</a>
         </p>
-        <p class="mb-4 leading-7">
-          Mauris eros sem, volutpat ut, blandit ut, pharetra quis, pede. Aliquam
-          vel libero. Suspendisse erat lacus, malesuada at, rutrum posuere,
-          scelerisque ut, ante. In non orci.
-        </p>
-        <p class="mb-4 leading-7">
-          Aliquam eleifend. Aenean facilisis adipiscing urna. Maecenas sagittis,
-          velit at scelerisque ornare, elit dolor elementum ante, in vestibulum
-          elit metus sed quam. Mauris mauris ante, adipiscing vitae, scelerisque
-          vitae, luctus at, pede. Integer sagittis dui. Morbi dictum mauris ac
-          tellus. Nullam vehicula. Mauris erat neque, tempor eu, posuere et,
-          lobortis vel, enim. In mollis. Vestibulum ante ipsum primis in
-          faucibus orci luctus et ultrices posuere cubilia Curae.
-        </p>
+     
         <div class="flex"></div>
       </div>
 
@@ -114,26 +109,16 @@
             alt=""
           />
           <p class="p-1 mb-3 text-xs italic text-blue">
-            Aliquam vel libero. Suspendisse erat lacus.
+            <!-- The Pamlico Chorale  -->
           </p>
         </div>
-        <p class="mb-4 leading-7">
-          <a class="underline" href="https://www.facebook.com/Pamlico-Chorale-158261794372262/">Pamlico Chorale Facebook page</a>
+        <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
+          The Pamlico Chorale is an established choral group in Pamlico County, North Carolina. Its members enjoy singing and rejoicing together. Reba Tiller is the group's beloved, long-standing leader. Participation is open to all who share a love of music.
         </p>
-        <p class="mb-4 leading-7">
-          Mauris eros sem, volutpat ut, blandit ut, pharetra quis, pede. Aliquam
-          vel libero. Suspendisse erat lacus, malesuada at, rutrum posuere,
-          scelerisque ut, ante. In non orci.
+        <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
+          More at their  <a class="underline" href="https://www.facebook.com/Pamlico-Chorale-158261794372262/"> Facebook page</a>
         </p>
-        <p class="mb-4 leading-7">
-          Aliquam eleifend. Aenean facilisis adipiscing urna. Maecenas sagittis,
-          velit at scelerisque ornare, elit dolor elementum ante, in vestibulum
-          elit metus sed quam. Mauris mauris ante, adipiscing vitae, scelerisque
-          vitae, luctus at, pede. Integer sagittis dui. Morbi dictum mauris ac
-          tellus. Nullam vehicula. Mauris erat neque, tempor eu, posuere et,
-          lobortis vel, enim. In mollis. Vestibulum ante ipsum primis in
-          faucibus orci luctus et ultrices posuere cubilia Curae.
-        </p>
+  
       </div>
       <member-crawl />
     </div>
@@ -152,3 +137,9 @@ export default {
   layout: "NewLayout",
 };
 </script>
+
+<style scoped>
+  a:hover {
+    color:#555;
+  }
+</style>
