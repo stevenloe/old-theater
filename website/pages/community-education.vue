@@ -120,7 +120,9 @@
         </p>
   
       </div>
-      <member-crawl />
+      <client-only>
+        <member-crawl />
+      </client-only>
     </div>
   </div>
 </template>
