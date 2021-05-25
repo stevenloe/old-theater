@@ -131,6 +131,7 @@ export default {
     });
   },
   mounted: function () {
+    console.log("---- member carousel MOUNTED ---");
     this.hasLayoutChanged();
   },
   beforeDestroy() {
