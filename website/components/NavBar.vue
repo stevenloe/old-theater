@@ -61,7 +61,7 @@
               />
 
               <nuxt-link
-                to="/get-involved/"
+                to="/volunteer/volunteers-we-need-you"
                 @click.native="onNavItemClick"
                 :class="itemStyle"
                 >Get Involved</nuxt-link
