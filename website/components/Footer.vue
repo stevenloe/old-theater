@@ -81,7 +81,7 @@
       <a
         href="https://stevenloe.com"
         class="w-full mb-16 text-sm text-gray-700 hover:text-gray-900 sm:text-base"
-        >Website design and development by Steven Loe</a
+        >Website designed and developed by <span class="underline">Steven Loe</span></a
       >
     </div>
   </footer>
