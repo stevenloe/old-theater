@@ -154,7 +154,7 @@ export default {
   mounted: function () {
     console.log("---  MemberCarousel --> mounted()");
     
-    console.log("---  MemberCarousel --> mounted() - raw: this.raw");
+    console.log("---  MemberCarousel --> mounted() - raw: ", this.raw);
     this.hasLayoutChanged();
   },
   beforeDestroy() {
