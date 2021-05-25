@@ -5,8 +5,10 @@ shortDesc: Suscipit unde labore necessitatibus fugiat?
 slug: /maiden
 img: maiden.jpg
 imgAlt: some alt text
+dateTime: "2021-04-04T12:00:00.000Z"
 eventDate: 'July 2, 2021 19:00:30 EST'
 eventTime: '2021-07-02T23:00:00.963Z'
+altDate: "2021-08-09T20:30:00"
 formattedPrice: 5
 location: The Old Theater
 ticketURL: https://www.showclix.com

@@ -43,7 +43,7 @@ Over the years, the Old Theater has provided the stage for local theatrical grou
 
 The Old Theater Corporation continues to manage the facility with a controlling Board of Directors that is comprised of Pamlico County volunteers. Keeping this resource alive and strong requires the additional support and participation of individual contributors, community businesses and service organizations, public grants and folks who volunteer on stage and behind the scenes. Contact us TODAY for more information. 
 
-To read our **Anniversary Commemorative Booklet**, celebrating the Old Theater’s history and 70th anniversary, click here: [Once Upon a Time.pdf](../_nuxt/assets/pdf/once_upon_a_time.pdf)
+To read our **Anniversary Commemorative Booklet**, celebrating the Old Theater’s history and 70th anniversary, click here: [Once Upon a Time.pdf](../pdf/once_upon_a_time.pdf)
 
 
 

@@ -5,8 +5,10 @@ shortDesc: Irure eiusmod dolore amet anim non laboris amet consectetur.
 slug: /barbra-lica
 img: barbra-lica.jpg
 imgAlt: Some alt text here
+dateTime: "2021-03-01T11:00:00.000Z"
 eventDate: 'July 24, 2021 19:00:30 EST'
 eventTime: '2021-07-24T23:00:00.000Z'
+altDate: "2021-05-11T14:00:00"
 formattedPrice: 22.00
 ticketURL: https://www.showclix.com
 location: The Old Theater
