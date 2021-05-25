@@ -8,10 +8,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'The Old Theater, Oriental. The building first opened as a movie theater in 1945 and served as a social and entertainment center until the late 1950s. It was revitalized and reopened in 1995 and today provides a venue where performing arts can thrive in Pamlico County ' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
+      { rel: 'apple-touch-icon', type: ' ', href: '/apple-touch-icon.png' }
     ]
   },
 
