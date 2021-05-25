@@ -191,7 +191,7 @@ export default {
       aboutMenuItems: {
         title: "About",
         items: [
-          { text: "About Us", link: "/about/The Old Theater/", id: 0 },
+          { text: "About Us", link: "/about/the-old-theater/", id: 0 },
           { text: "Venue", link: "/about/venue/", id: 1 },
           { text: "Rent the Theater", link: "/about/rent-the-theater", id: 2 },
           { text: "Our History", link: "/about/history", id: 3 },
