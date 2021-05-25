@@ -25,7 +25,7 @@ export default {
   async fetch() {
     console.log("---  MemberCarousel --> 1 Fetch");
     let data = await this.$content("members", { deep: true }).fetch();
-    this.raw = data[0].body;
+    data = data[0].body;
 
     let list = data.map((item) => {
       if (item.spouseFirst) {
@@ -49,29 +49,9 @@ export default {
       targets: null,
       membersGrouped: [],
       members: [],
-      raw: null
     };
   },
   methods: {
-
-  //   async fetch() {
-  //   console.log("---  MemberCarousel --> 1 Fetch");
-  //   let data = await this.$content("members", { deep: true }).fetch();
-  //   data = data[0].body;
-
-  //   let list = data.map((item) => {
-  //     if (item.spouseFirst) {
-  //       return `${item.firstName} ${item.lastName} & ${item.spouseFirst} ${item.spouseLast}`;
-  //     } else {
-  //       return `${item.firstName} ${item.lastName}`;
-  //     }
-  //   });
-
-  //   this.members = list;
-
-  //   this.init();
-  //   this.start();
-  // },
     init() {
       console.log("---  MemberCarousel --> 2 init");
       this.members = this.shuffle(this.members);
@@ -153,8 +133,6 @@ export default {
   },
   mounted: function () {
     console.log("---  MemberCarousel --> mounted()");
-    
-    console.log("---  MemberCarousel --> mounted() - raw: ", this.raw);
     this.hasLayoutChanged();
   },
   beforeDestroy() {
