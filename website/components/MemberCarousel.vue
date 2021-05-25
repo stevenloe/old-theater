@@ -23,6 +23,7 @@ import gsap from "gsap";
 
 export default {
   async fetch() {
+    console.log("---  MemberCarousel --> 1 Fetch");
     let data = await this.$content("members", { deep: true }).fetch();
     data = data[0].body;
 
@@ -52,16 +53,19 @@ export default {
   },
   methods: {
     init() {
+      console.log("---  MemberCarousel --> 2 init");
       this.members = this.shuffle(this.members);
       this.membersGrouped = this.chunk(this.members, this.groupDataBy);
 
       this.$nextTick(() => {
         this.targets = document.querySelectorAll(".box");
+        console.log("---  MemberCarousel --> 2.5 Init got targets:", this.targets);
         gsap.set(this.targets, { xPercent: 100 });
         gsap.set(this.targets[0], { xPercent: 0 });
       });
     },
     slideIt() {
+      console.log("---  MemberCarousel --> 4 slideIt()");
       gsap.to(this.targets[this.count], { xPercent: -100 });
       this.count = this.count < this.targets.length - 1 ? ++this.count : 0;
       gsap.fromTo(this.targets[this.count], { xPercent: 100 }, { xPercent: 0 });
@@ -72,6 +76,7 @@ export default {
       clearInterval(this.interval);
     },
     start() {
+      console.log("---  MemberCarousel --> 3 Start()");
       this.interval = setInterval(this.slideIt, 6000);
     },
     shuffle(array) {
