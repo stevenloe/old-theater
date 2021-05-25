@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar />
+    <NavBarNew1 />
     <main class="pt-5 bg-gray-400 borderborder-gray-300">
       <div class="p-4 mx-auto">
         <Nuxt />
@@ -12,13 +12,13 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar";
+import NavBarNew1 from "@/components/NavBarNew1";
 import Footer from "@/components/Footer";
 
 export default {
   name: "NewLayout",
   components: {
-    NavBar,
+    NavBarNew1,
     Footer,
   },
 };
