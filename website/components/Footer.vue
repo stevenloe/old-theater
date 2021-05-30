@@ -75,6 +75,14 @@
               >VENUE</nuxt-link
             >
           </div>
+
+          <div class="flex justify-end">
+            <nuxt-link
+              to="/hi"
+              class="tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              >HI</nuxt-link
+            >
+          </div>
         </div>
       </nav>
 
