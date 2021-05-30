@@ -78,7 +78,7 @@
 
           <div class="flex justify-end">
             <nuxt-link
-              to="/hi"
+              to="/proptest2"
               class="tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
               >HI</nuxt-link
             >
