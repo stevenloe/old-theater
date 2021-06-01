@@ -12,7 +12,7 @@ ticketURL: https://example.com
 ---
 
 ## Help The Old Theatre Thrive. 
-![timothy mooney performing at The Old Theater, Oriental North Carolina](https://old-theater-pics.netlify.app/img/support/timothy_mooney.jpg)
+![timothy mooney performing at The Old Theater, Oriental North Carolina](/support/timothy_mooney.jpg)
 
 The Old Theater Corporation is a registered 501(c)(3) non-profit organization. All donations are tax deductible.
 
