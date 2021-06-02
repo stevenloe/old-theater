@@ -11,11 +11,10 @@
 import PropMe from "@/components/PropMe";
 export default {
   async asyncData({ $content, params, error }) {
-    const slug = "members";
-    const page = await $content(slug)
+    const page = await $content("members")
       .fetch()
       .catch((err) => {
-        error({ statusCode: 404, message: "Page not found" });
+        error({ statusCode: 404, message: "WE HAVE ERROR!!:", err });
       });
     return {
       page: {
