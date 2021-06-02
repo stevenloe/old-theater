@@ -80,7 +80,7 @@
             <nuxt-link
               to="/proptest2"
               class="tracking-wider footer-link md:text-xl lg:text-xl hover:text-black hover:bg-gray-100"
-              >HI</nuxt-link
+              >HI!!PROPTEST </nuxt-link
             >
           </div>
         </div>
