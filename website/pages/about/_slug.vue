@@ -18,6 +18,7 @@
 import UiHeadline from "@/components/ui/UiHeadline";
 export default {
   async asyncData({ $content, params }) {
+    console.log( "ABOUT ASYNC DATA:: >>PARAMS", params);
     const content = await $content("abouts", params.slug).fetch();
     return { content };
   },
@@ -25,8 +26,10 @@ export default {
   methods: {
     shout(val) {
       console.log("Shout", val);
-      
     }
+  },
+  components: {
+    UiHeadline
   }
 };
 </script>

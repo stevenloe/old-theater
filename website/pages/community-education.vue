@@ -5,7 +5,7 @@
     >
       <div class="mb-8">
 
-        <UiHeadline level="1" @click="shout('h1')">Community &amp; Education!!</UiHeadline>
+        <UiHeadline level="1" @click="shout('h1')">Community &amp; Education</UiHeadline>
         <h1 class="mt-4 mb-4 text-4xl font-extrabold">
           
         </h1>
@@ -129,12 +129,15 @@
 
 <script>
 import MemberCrawl from "@/components/MemberCrawl";
+import UiHeadline from "@/components/ui/UiHeadline";
+
 export default {
   metaInfo: {
     title: "About us",
   },
   components: {
     MemberCrawl,
+    UiHeadline 
   },
   layout: "NewLayout",
 };

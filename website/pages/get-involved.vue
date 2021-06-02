@@ -500,6 +500,7 @@
 
 <script>
 import MemberCrawl from "@/components/MemberCrawl";
+import UiHeadline from "@/components/ui/UiHeadline";
 
 export default {
   metaInfo: {
@@ -507,6 +508,8 @@ export default {
   },
   components: {
     MemberCrawl,
+    UiHeadline
+    
   },
   layout: "NewLayout",
 };

@@ -40,9 +40,12 @@
             year.
           </p>
           <p>
-            For more information email
-            <a href="mailto:OldTheater@gmail.com">OldTheater@gmail.com</a>. To
-            join now, click HERE: [2021 Membership Form](#)
+            To
+            join now, download the <a href ="/pdf/2020_membership_form.pdf" alt="Old Theater 2021 Membership Form">Old Theater Membership Form</a>
+          </p>
+          <p>
+            For more information send an email to
+            <a href="mailto:OldTheater@gmail.com">OldTheater@gmail.com</a>. 
           </p>
           <p><div class="font-bold">
             Let the show go on!
@@ -85,6 +88,7 @@ export default {
   },
   components: {
     MemberList,
+    UiHeadline
   },
 };
 </script>

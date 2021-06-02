@@ -87,13 +87,14 @@
 <script>
 
 import MemberCrawl from '@/components/MemberCrawl'
-
+import UiHeadline from "@/components/ui/UiHeadline";
 export default {
   metaInfo: {
     title: "About us",
   },
   components: {
     MemberCrawl,
+    UiHeadline
   },
   layout: 'content'
 };

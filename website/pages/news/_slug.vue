@@ -24,6 +24,8 @@
 
 <script>
 import dayjs from "dayjs";
+import UiHeadline from "@/components/ui/UiHeadline";
+
 const localizedFormat = require("dayjs/plugin/localizedFormat");
 dayjs.extend(localizedFormat);
 
@@ -40,6 +42,9 @@ export default {
     },
   },
   layout: "NewLayout",
+  components: {
+    UiHeadline
+  }
 };
 </script>
 

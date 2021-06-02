@@ -3,11 +3,12 @@
     <div
       class="w-full mx-auto md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
-      <UiHeadline id="level-1-headline" level="1">Membership</UiHeadline>
+      <UiHeadline  level="1">Membership</UiHeadline>
+      
 
       <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
         <UiHeadline id="level-1-headline" level="3"
-          >Join The Old Theater</UiHeadline
+          >Join The Old Theater!</UiHeadline
         >
 
         <p class="block">
@@ -406,6 +407,7 @@
 </template>
 
 <script>
+import UiHeadline from "@/components/ui/UiHeadline";
 export default {
   metaInfo: {
     title: "Contact",
@@ -416,5 +418,8 @@ export default {
     };
   },
   layout: "NewLayout",
+  components: {
+    UiHeadline
+  }
 };
 </script>

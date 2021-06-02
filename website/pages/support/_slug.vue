@@ -25,8 +25,10 @@ export default {
   methods: {
     shout(val) {
       console.log("Shout", val);
-      
     }
+  },
+  components: {
+    UiHeadline
   }
 };
 </script>

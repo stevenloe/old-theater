@@ -166,10 +166,15 @@
 </template>
 
 <script>
+import UiHeadline from "@/components/ui/UiHeadline";
 export default {
   metaInfo: {
     title: "Contact",
   },
   layout: "NewLayout",
+  
+  components: {
+    UiHeadline
+  }
 };
 </script>

@@ -68,6 +68,9 @@ export default {
     },
   },
   layout: "NewLayout",
+  components: {
+    UiHeadline
+  }
 };
 </script>
 

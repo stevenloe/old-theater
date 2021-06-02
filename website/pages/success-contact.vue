@@ -17,10 +17,14 @@
 </template>
 
 <script>
+import UiHeadline from "@/components/ui/UiHeadline";
 export default {
   metaInfo: {
     title: "SuccessContact",
   },
   layout: "default",
+  components: {
+    UiHeadline,
+  },
 };
 </script>
