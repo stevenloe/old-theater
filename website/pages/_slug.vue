@@ -60,11 +60,17 @@
 
 <script>
 import NavBar from "@/components/NavBar";
+import UiHeadline from "@/components/ui/UiHeadline";
 export default {
   async asyncData({ $content, params }) {
     const article = await $content("shows", params.slug).fetch();
     return { article };
   },
   layout: "NewLayout",
+  
+  components: {
+    NavBar,
+    UiHeadline
+  }
 };
 </script>
