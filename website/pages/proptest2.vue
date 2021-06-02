@@ -1,7 +1,9 @@
 <template>
   <div>
-    <nuxt-content :document="page" />
-    <prop-me :peeps="page" :memberData="mems"/>
+    <nuxt-content :document="page">
+      
+    </nuxt-content> 
+    <prop-me :peeps="page" />
   </div>
 </template>
 
@@ -18,9 +20,9 @@ export default {
     return {
       page: {
         ...page,
-        injected: page[0].body,
+        // injected: page[0].body,
       },
-      mems: page[0].body
+      // mems: page[0].body
     };
   },
   components: {PropMe}
