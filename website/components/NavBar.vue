@@ -61,7 +61,7 @@
               />
 
               <nuxt-link
-                to="/volunteer/volunteers-we-need-you"
+                to="/get-involved"
                 @click.native="onNavItemClick"
                 :class="itemStyle"
                 >Get Involved</nuxt-link
@@ -222,7 +222,7 @@ export default {
   },
   methods: {
     onResize() {
-      console.log("----- NAVBAR RESIZE----");
+      // console.log("----- NAVBAR RESIZE----");
       this.isMobileMenuOpen = false;
       this.isMobile = this.isSearchOpen = window.innerWidth < 768;
       this.$bus.$emit("resize-window");
@@ -267,6 +267,7 @@ export default {
     SubMenu,
     SearchMobile,
     SearchDesktop,
+    Logo
   },
 };
 </script>
