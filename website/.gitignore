@@ -88,3 +88,7 @@ sw.*
 
 # Vim swap files
 *.swp
+
+todo-content.txt
+
+content-management.txt
