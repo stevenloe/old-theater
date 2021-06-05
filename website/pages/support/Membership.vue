@@ -62,7 +62,10 @@
           <p>
             Volunteers are the life blood of our organization. Please consider
             volunteering your time and talents so the Old Theater may continue
-            being the “center stage” in Pamlico County. <nuxt-link to="/volunteer/volunteers-we-need-you">Learn more about volunteering</nuxt-link>
+            being the “center stage” in Pamlico County. 
+            
+            <!-- <nuxt-link to="/volunteer/volunteers-we-need-you">Learn more about volunteering</nuxt-link> -->
+           {LINK HERE} Learn more about volunteering
           </p>
 
           <member-list></member-list>
