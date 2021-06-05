@@ -84,6 +84,12 @@ import NewsWidget from "@/components/NewsWidget";
 import ShowPill from "@/components/ShowPill";
 
 export default {
+
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    };
+  },
   async asyncData({ $content, params }) {
     let shows = await $content("shows", params.slug)
       .only([
@@ -125,3 +131,6 @@ export default {
 }
 
 </style>
+
+
+
