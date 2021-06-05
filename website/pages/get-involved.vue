@@ -67,7 +67,7 @@
           method="post"
           id="zcr009d1cac128b8d3a3c51ca4fca706a52"
           class="zemContactForm"
-          action="/volunteer/volunteers-we-need-you#zcr009d1cac128b8d3a3c51ca4fca706a52"
+          <!-- action="/volunteer/volunteers-we-need-you#zcr009d1cac128b8d3a3c51ca4fca706a52" -->
         >
           <div class="p-8 border border-gray-400">
             <input
