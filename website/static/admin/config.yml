@@ -5,7 +5,9 @@ backend:
 # Uncomment below to enable drafts
 # publish_mode: editorial_workflow
 
-public_folder: "/images"
+
+media_folder: static/images
+public_folder: /imgz
 
 site_url: https://old-theater.netlify.app
 display_url: https://old-theater.netlify.app
