@@ -39,7 +39,8 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/axios',
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
@@ -48,5 +49,15 @@ export default {
 
   content: {
     liveEdit: false
+  },
+  
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000',
+    URL: 'FOOBAR'
+  },
+  
+  axios: {
+    // extra config e.g
+    // BaseURL: 'https://link-to-API'
   }
 }

@@ -20,7 +20,7 @@
     </ul>
 
     <client-only>
-      <axios-test />
+      <!-- <axios-test /> -->
     </client-only>
   </div>
 </template>
@@ -28,6 +28,7 @@
 
 <script>
 import AxiosTest from "@/components/AxiosTest";
+
 export default {
   components: {
     AxiosTest,
@@ -39,9 +40,14 @@ export default {
     }
   },
   async fetch() {
-      this.members = await fetch(
-        'https://old-theater.netlify.app/data/members2.json'
-      ).then(res => res.json())
+
+    console.log("##### ",  process.env);
+
+    console.log("-------- ", `${process.env._AXIOS_BASE_URL_} HI THERE` );
+    // console.log("NOW FETVH THIS", `${baseURL}/data/members2.json`);
+      // this.members = await fetch(
+      //   `${baseURL}/data/members2.json`
+      // ).then(res => res.json())
     },
 };
 </script>
