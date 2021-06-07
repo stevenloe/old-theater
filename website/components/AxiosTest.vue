@@ -37,5 +37,6 @@ export default {
       res.json()
     )
   },
+  fetchOnServer: false
 }
 </script>
