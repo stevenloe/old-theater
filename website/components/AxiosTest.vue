@@ -45,14 +45,14 @@ export default {
     //   });
 
     axios
-      .get("http://localhost:3000/data/members2.json")
-      .then((response) => {
-        // JSON responses are automatically parsed.
-        this.members = response.data;
-      })
-      .catch((e) => {
-        this.errors.push(e);
-      });
+      // .get("https://old-theater.netlify.app/data/members2.json")
+      // .then((response) => {
+      //   // JSON responses are automatically parsed.
+      //   this.members = response.data;
+      // })
+      // .catch((e) => {
+      //   this.errors.push(e);
+      // });
 
       // setTimeout(this.fetchHole, 1000)
 
@@ -63,6 +63,9 @@ export default {
   async fetch() {
       this.mountains = await fetch(
         'https://api.nuxtjs.dev/mountains'
+      ).then(res => res.json())
+      this.members = await fetch(
+        'https://old-theater.netlify.app/data/members2.json'
       ).then(res => res.json())
     },
   data() {
