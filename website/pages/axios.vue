@@ -49,5 +49,17 @@ export default {
       //   `${baseURL}/data/members2.json`
       // ).then(res => res.json())
     },
+    beforeCreate() {
+      console.log("AXIO BEFORE CREATE");
+    },
+    created() {
+      console.log("AXIO CREATED");
+    },
+    mounted() {
+      console.log("AXIO MOUNTED");
+    },
+    
+    
+    
 };
 </script>
