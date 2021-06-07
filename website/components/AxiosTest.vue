@@ -54,22 +54,18 @@ export default {
     // .get('https://api.nuxtjs.dev/posts')
     // .then(response => (this.posts = response.data.bpi))
   },
-  // async fetch() {
-  //     this.mountains = await fetch(
-  //       'https://api.nuxtjs.dev/mountains'
-  //     ).then(res => res.json())
-  //   }
+  async fetch() {
+      this.mountains = await fetch(
+        'https://api.nuxtjs.dev/mountains'
+      ).then(res => res.json())
+    },
   data() {
     return {
       posts: [],
       members: [],
     };
   },
-  async fetch() {
-    // this.posts = await fetch('https://api.nuxtjs.dev/posts').then(res =>
-    //   res.json()
-    // )
-  },
+
   methods: {
     fetchHole() {
       let id = 1;
