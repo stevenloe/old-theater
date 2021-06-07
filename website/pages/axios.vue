@@ -50,13 +50,13 @@ export default {
       // ).then(res => res.json())
     },
     beforeCreate() {
-      console.log("AXIO BEFORE CREATE");
+      console.log("AXIO BEFORE CREATE",process.env._AXIOS_BASE_URL_);
     },
     created() {
-      console.log("AXIO CREATED");
+      console.log("AXIO CREATED", process.env._AXIOS_BASE_URL_);
     },
     mounted() {
-      console.log("AXIO MOUNTED");
+      console.log("AXIO MOUNTED", process.env._AXIOS_BASE_URL_);
     },
     
     
