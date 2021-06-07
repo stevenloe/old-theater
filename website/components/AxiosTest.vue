@@ -4,17 +4,23 @@
 
     <ul id="example-1">
       <li v-for="member in members" :key="member.id">
-        <h2 class="mt-4 font-bold">
+        <h2 class="font-bold ">
           {{ member.lastName }}
         </h2>
       </li>
     </ul>
+
+    <h2 class="mt-4 text-2xl font-bold">
+      
+    MOUNTAINS
+    </h2>
+
     <ul id="example-2">
-      <li v-for="post in posts" :key="post.id">
+      <li v-for="mountain in mountains" :key="mountain.id">
         <h2 class="mt-4 font-bold">
-          {{ post.title }}
+          {{ mountain.title }}
         </h2>
-        <p>{{ post.description }}</p>
+        <p>{{ mountain.description }}</p>
       </li>
     </ul>
   </div>
@@ -28,15 +34,15 @@ export default {
   created() {
     console.log("---- CREATED AXIOS TEST COMPONENT ------");
 
-    axios
-      .get("https://api.nuxtjs.dev/posts")
-      .then((response) => {
-        // JSON responses are automatically parsed.
-        this.posts = response.data;
-      })
-      .catch((e) => {
-        this.errors.push(e);
-      });
+    // axios
+    //   .get("https://api.nuxtjs.dev/posts")
+    //   .then((response) => {
+    //     // JSON responses are automatically parsed.
+    //     this.posts = response.data;
+    //   })
+    //   .catch((e) => {
+    //     this.errors.push(e);
+    //   });
 
     axios
       .get("http://localhost:3000/data/members2.json")
@@ -61,20 +67,12 @@ export default {
     },
   data() {
     return {
-      posts: [],
+      mountains: [],
       members: [],
     };
-  },
+  }
 
-  methods: {
-    fetchHole() {
-      let id = 1;
-      this.members.forEach((element, index) => {
-        element.id = index
-      });
-      console.log(JSON.stringify(this.members));
-    },
-  },
+
 };
 
 // .get("https://old-theater.netlify.app/data/members.json")
