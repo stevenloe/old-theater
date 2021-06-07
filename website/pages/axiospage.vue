@@ -27,11 +27,11 @@
 
 
 <script>
-import AxiosTest from "@/components/AxiosTest";
+import AxiosComponent from "@/components/AxiosComponent";
 
 export default {
   components: {
-    AxiosTest,
+    AxiosComponent,
   },
   data() {
     return {
