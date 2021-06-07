@@ -1,8 +1,10 @@
 <template>
   <div>
     <h1>AXIOS TEST PAGE !</h1>
-    <axios-test></axios-test>
 
+    <client-only>
+      <axios-test />
+    </client-only>
   </div>
 </template>
 
@@ -11,8 +13,7 @@
 import AxiosTest from "@/components/AxiosTest";
 export default {
   components: {
-    AxiosTest
-
-  }
-}
+    AxiosTest,
+  },
+};
 </script>
