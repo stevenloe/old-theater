@@ -19,9 +19,9 @@
       </li>
     </ul>
 
-    <client-only>
+ 
       <axios-test />
-    </client-only>
+  
   </div>
 </template>
 
