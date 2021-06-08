@@ -6,7 +6,7 @@ backend:
 # publish_mode: editorial_workflow
 
 
-media_folder: static/images
+media_folder: website/static/images
 public_folder: /imgz
 
 site_url: https://old-theater.netlify.app
