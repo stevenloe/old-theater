@@ -20,7 +20,7 @@
     </ul>
 
     <client-only>
-      <!-- <axios-test /> -->
+      <axios-test />
     </client-only>
   </div>
 </template>
@@ -41,25 +41,13 @@ export default {
   },
   async fetch() {
 
-    console.log("##### ",  process.env);
-
-    console.log("-------- ", `${process.env._AXIOS_BASE_URL_} HI THERE` );
 
       this.members = await fetch(
         'https://old-theater.netlify.app/data/members2.json'
       ).then(res => res.json())
-    },
-    beforeCreate() {
-      console.log("AXIO BEFORE CREATE",process.env._AXIOS_BASE_URL_);
-    },
-    created() {
-      console.log("AXIO CREATED", process.env._AXIOS_BASE_URL_);
-    },
-    mounted() {
-      console.log("AXIO MOUNTED", process.env._AXIOS_BASE_URL_);
-    },
+
+  }
     
     
-    
-};
+}
 </script>
