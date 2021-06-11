@@ -1,15 +1,7 @@
 <template>
   <div
-    class="overflow-hidden bg-white border-8 border-pink-700 shadow-lg rounded-xl"
+    class="overflow-hidden bg-white border-8 border-blue-700 shadow-lg rounded-xl"
   >
-    <div class="bg-blue-700">
-      <div
-        class="flex p-5 pt-3 text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl">
-        Thanks to our 2021 Members!
-      </div>
-
-
-
       <div class="box-container">
         <div
           v-for="(group, index) in membersGrouped"
@@ -43,11 +35,19 @@ export default {
     const { data } = await axios.get(
       `${this.$axios.defaults.baseURL}data/members2.json`
     );
-    this.members = data;
+    
+    let list = data.map((item) => {
+      if (item.spouseFirst) {
+        return `${item.firstName} ${item.lastName} & ${item.spouseFirst} ${item.spouseLast}`;
+      } else {
+        return `${item.firstName} ${item.lastName}`;
+      }
+    });
+
+    this.members = list;
     this.init();
     this.start();
   },
-
 
   data: function () {
     return {
