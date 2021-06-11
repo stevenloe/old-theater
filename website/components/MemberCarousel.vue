@@ -1,35 +1,14 @@
 <template>
   <div
-    class="overflow-hidden bg-white border-8 border-blue-700 shadow-lg rounded-xl"
+    class="overflow-hidden bg-white border-8 border-pink-700 shadow-lg rounded-xl"
   >
     <div class="bg-blue-700">
       <div
-        class="flex p-5 pt-3 text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl"
-      >
-        <h2>We have this data:</h2>
-        <p>BASE URL{{ $axios.defaults.baseURL }}</p>
-
-        <div class="red">
-          fetched Items
-          <ul>
-            <li v-for="member in members" :key="member.id">
-              <h2 class="font-bold">
-                {{ member.lastName }}
-              </h2>
-            </li>
-          </ul>
-        </div>
-
+        class="flex p-5 pt-3 text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl">
         Thanks to our 2021 Members!
       </div>
 
-      <ul id="example-1">
-        <li v-for="member in members" :key="member.id">
-          <h2 class="font-bold">
-            {{ member.lastName }}
-          </h2>
-        </li>
-      </ul>
+
 
       <div class="box-container">
         <div
@@ -63,11 +42,10 @@ export default {
     console.log("LETS FETCH MEMBERS ", this.$axios.defaults.baseURL);
     const { data } = await axios.get(
       `${this.$axios.defaults.baseURL}data/members2.json`
-      // `https://nuxxty.netlify.app/data/members2.json`
     );
-    // `todos` has to be declared in data()
     this.members = data;
-    console.log("this.members", this.members);
+    this.init();
+    this.start();
   },
 
 
@@ -81,6 +59,7 @@ export default {
       members: [],
     };
   },
+  
   methods: {
     init() {
       console.log("---  MemberCarousel --> 2 init");
