@@ -1,17 +1,49 @@
 <template>
-  <div>
-    <div class="box-container">
+  <div
+    class="overflow-hidden bg-white border-8 border-blue-700 shadow-lg rounded-xl"
+  >
+    <div class="bg-blue-700">
       <div
-        v-for="(group, index) in membersGrouped"
-        v-bind:key="index"
-        class="grid-cols-2 box md:grid-cols-3"
+        class="flex p-5 pt-3 text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl"
       >
+        <h2>We have this data:</h2>
+        <p>BASE URL{{ $axios.defaults.baseURL }}</p>
+
+        <div class="red">
+          fetched Items
+          <ul>
+            <li v-for="member in members" :key="member.id">
+              <h2 class="font-bold">
+                {{ member.lastName }}
+              </h2>
+            </li>
+          </ul>
+        </div>
+
+        Thanks to our 2021 Members!
+      </div>
+
+      <ul id="example-1">
+        <li v-for="member in members" :key="member.id">
+          <h2 class="font-bold">
+            {{ member.lastName }}
+          </h2>
+        </li>
+      </ul>
+
+      <div class="box-container">
         <div
-          class="text-xl name sm:text-2xl md:3xl"
-          v-for="(name, index) in group"
+          v-for="(group, index) in membersGrouped"
           v-bind:key="index"
+          class="grid-cols-2 box md:grid-cols-3"
         >
-          {{ name }}
+          <div
+            class="text-xl name sm:text-2xl md:3xl"
+            v-for="(name, index) in group"
+            v-bind:key="index"
+          >
+            {{ name }}
+          </div>
         </div>
       </div>
     </div>
@@ -19,27 +51,25 @@
 </template>
 
 <script>
+import axios from "axios";
 import gsap from "gsap";
 
+
 export default {
+ 
+
   async fetch() {
-    console.log("---  MemberCarousel --> 1 Fetch");
-    let data = await this.$content("members", { deep: true }).fetch();
-    data = data[0].body;
-
-    let list = data.map((item) => {
-      if (item.spouseFirst) {
-        return `${item.firstName} ${item.lastName} & ${item.spouseFirst} ${item.spouseLast}`;
-      } else {
-        return `${item.firstName} ${item.lastName}`;
-      }
-    });
-
-    this.members = list;
-
-    this.init();
-    this.start();
+    console.log("FETCH 2");
+    console.log("LETS FETCH MEMBERS ", this.$axios.defaults.baseURL);
+    const { data } = await axios.get(
+      `${this.$axios.defaults.baseURL}data/members2.json`
+      // `https://nuxxty.netlify.app/data/members2.json`
+    );
+    // `todos` has to be declared in data()
+    this.members = data;
+    console.log("this.members", this.members);
   },
+
 
   data: function () {
     return {
@@ -59,7 +89,10 @@ export default {
 
       this.$nextTick(() => {
         this.targets = document.querySelectorAll(".box");
-        console.log("---  MemberCarousel --> 2.5 Init got targets:", this.targets);
+        console.log(
+          "---  MemberCarousel --> 2.5 Init got targets:",
+          this.targets
+        );
         gsap.set(this.targets, { xPercent: 100 });
         gsap.set(this.targets[0], { xPercent: 0 });
       });
@@ -123,6 +156,8 @@ export default {
     },
   },
   created: function () {
+    console.log("-------- Created ----------------");
+    this.hasLayoutChanged();
     this.$bus.$on("resize-window", (e) => {
       if (this.hasLayoutChanged()) {
         this.stop();
@@ -131,10 +166,7 @@ export default {
       }
     });
   },
-  mounted: function () {
-    console.log("---  MemberCarousel --> mounted()");
-    this.hasLayoutChanged();
-  },
+
   beforeDestroy() {
     clearInterval(this.interval);
   },

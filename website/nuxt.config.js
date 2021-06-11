@@ -43,6 +43,8 @@ export default {
     '@nuxtjs/axios',
   ],
 
+  axios: {baseURL: '/'},
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   },
@@ -56,8 +58,5 @@ export default {
     URL: 'FOOBAR'
   },
   
-  axios: {
-    // extra config e.g
-    // BaseURL: 'https://link-to-API'
-  }
+ 
 }
