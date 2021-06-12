@@ -2,18 +2,29 @@
   <div
     class="overflow-hidden bg-white border-8 border-blue-700 shadow-lg rounded-xl"
   >
-      <div class="box-container">
-        <div
-          v-for="(group, index) in membersGrouped"
-          v-bind:key="index"
-          class="grid-cols-2 box md:grid-cols-3"
-        >
+    <div class="bg-blue-700">
+      <div
+        class="flex py-2 mx-4 text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl"
+      >
+        Thanks to our {{ currentYear }} Members!
+      </div>
+
+      <div
+        class="overflow-hidden bg-white border-8 border-blue-700 shadow-lg rounded-xl"
+      >
+        <div class="box-container">
           <div
-            class="text-xl name sm:text-2xl md:3xl"
-            v-for="(name, index) in group"
+            v-for="(group, index) in membersGrouped"
             v-bind:key="index"
+            class="grid-cols-2 box md:grid-cols-3"
           >
-            {{ name }}
+            <div
+              class="text-xl name sm:text-2xl md:3xl"
+              v-for="(name, index) in group"
+              v-bind:key="index"
+            >
+              {{ name }}
+            </div>
           </div>
         </div>
       </div>
@@ -25,17 +36,12 @@
 import axios from "axios";
 import gsap from "gsap";
 
-
 export default {
- 
-
   async fetch() {
-    console.log("FETCH 2");
-    console.log("LETS FETCH MEMBERS ", this.$axios.defaults.baseURL);
     const { data } = await axios.get(
       `${this.$axios.defaults.baseURL}data/members2.json`
     );
-    
+
     let list = data.map((item) => {
       if (item.spouseFirst) {
         return `${item.firstName} ${item.lastName} & ${item.spouseFirst} ${item.spouseLast}`;
@@ -59,25 +65,21 @@ export default {
       members: [],
     };
   },
-  
+
   methods: {
     init() {
-      console.log("---  MemberCarousel --> 2 init");
+
       this.members = this.shuffle(this.members);
       this.membersGrouped = this.chunk(this.members, this.groupDataBy);
 
       this.$nextTick(() => {
         this.targets = document.querySelectorAll(".box");
-        console.log(
-          "---  MemberCarousel --> 2.5 Init got targets:",
-          this.targets
-        );
         gsap.set(this.targets, { xPercent: 100 });
         gsap.set(this.targets[0], { xPercent: 0 });
       });
     },
     slideIt() {
-      console.log("---  MemberCarousel --> 4 slideIt()");
+
       gsap.to(this.targets[this.count], { xPercent: -100 });
       this.count = this.count < this.targets.length - 1 ? ++this.count : 0;
       gsap.fromTo(this.targets[this.count], { xPercent: 100 }, { xPercent: 0 });
@@ -88,7 +90,6 @@ export default {
       clearInterval(this.interval);
     },
     start() {
-      console.log("---  MemberCarousel --> 3 Start()");
       this.interval = setInterval(this.slideIt, 6000);
     },
     shuffle(array) {
@@ -118,7 +119,6 @@ export default {
     },
 
     hasLayoutChanged() {
-      console.log("---  MemberCarousel --> hasLayoutChanged()");
       const newIsMobile = window.innerWidth < 768;
       let result = false;
       if (this.isMobile === null || newIsMobile !== this.isMobile) {
@@ -133,9 +133,12 @@ export default {
       const result = this.isMobile ? 2 : 3;
       return result;
     },
+    currentYear() {
+      const d = new Date();
+      return d.getFullYear();
+    },
   },
   created: function () {
-    console.log("-------- Created ----------------");
     this.hasLayoutChanged();
     this.$bus.$on("resize-window", (e) => {
       if (this.hasLayoutChanged()) {
@@ -154,12 +157,6 @@ export default {
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .box-container {
   width: 100%;
   height: 10rem;
