@@ -1,6 +1,6 @@
 <template>
   <div class="p-8 mt-8 bg-gray-100 border border-gray-400">
-    <h1>Welcome {{ currentYear() }} Members!!</h1>
+    <h1>Welcome {{ currentYear }} Members!!</h1>
     <ul>
       <li v-for="(group, name) in membersGrouped" :key="name">
         <div class="mt-4 font-bold text-gray-700 uppercase">{{ name }}</div>
@@ -75,7 +75,7 @@ export default {
       membersGrouped: null,
     };
   },
-  methods: {
+  computed: {
     currentYear() {
       const d = new Date();
       return d.getFullYear();
