@@ -1,6 +1,6 @@
 <template>
   <div class="p-8 mt-8 bg-gray-100 border border-gray-400">
-    <h1>Welcome {{ currentYear() }} Members!</h1>
+    <h1>Welcome {{ currentYear() }} Members!!</h1>
     <ul>
       <li v-for="(group, name) in membersGrouped" :key="name">
         <div class="mt-4 font-bold text-gray-700 uppercase">{{ name }}</div>
@@ -31,13 +31,14 @@ export default {
       `${this.$axios.defaults.baseURL}data/members2.json`
     );
 
+    console.log("DATA", data);
+
     let membersGrouped = data.reduce(function (r, a) {
       r[a.level] = r[a.level] || [];
       r[a.level].push(a);
       return r;
     }, Object.create(null));
-
-
+    
 
     function compareValues(key, order = "asc") {
       return function innerSort(a, b) {
@@ -64,6 +65,8 @@ export default {
     keys.forEach((key, index) => {
       membersGrouped[key].sort(compareValues("lastName"));
     });
+
+    console.log("MEMBERS GROUPED", membersGrouped);
 
     this.membersGrouped = membersGrouped;
   },
