@@ -83,14 +83,6 @@
               >BLOG</nuxt-link
             >
           </div>
-          
-          <div class="flex justify-end">
-            <nuxt-link
-              to="/axiospage"
-              class="tracking-wider footer-link md:text-xl lg:text-xl hover:text-black hover:bg-gray-100"
-              >AXIOS</nuxt-link
-            >
-          </div>
         </div>
       </nav>
 
