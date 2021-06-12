@@ -40,14 +40,13 @@
             year.
           </p>
           <p>
-            To
-            join now, download the <a href ="/pdf/2020_membership_form.pdf" alt="Old Theater 2021 Membership Form">Old Theater Membership Form</a>
+            To join now, download the <a href ="/pdf/2020_membership_form.pdf" >Old Theater Membership Form</a>
           </p>
           <p>
             For more information send an email to
             <a href="mailto:OldTheater@gmail.com">OldTheater@gmail.com</a>. 
           </p>
-          <p><div class="font-bold">
+          <div class="font-bold">
             Let the show go on!
           </div>
 
@@ -58,17 +57,17 @@
              Andrea Bayard, Membership
             & Volunteer Manager
              </div>
-          </p>
           <p>
             Volunteers are the life blood of our organization. Please consider
             volunteering your time and talents so the Old Theater may continue
             being the “center stage” in Pamlico County. 
             
-            <!-- <nuxt-link to="/volunteer/volunteers-we-need-you">Learn more about volunteering</nuxt-link> -->
-           {LINK HERE} Learn more about volunteering
+            <nuxt-link to="/get-involved">Learn more about volunteering</nuxt-link>
           </p>
-
-          <member-list></member-list>
+          
+          <client-only>
+            <MemberList/>
+          </client-only>
         </div>
       </article>
     </div>
@@ -79,10 +78,7 @@
 import UiHeadline from "@/components/ui/UiHeadline";
 import MemberList from "@/components/MemberList";
 export default {
-  async asyncData({ $content, params }) {
-    const content = await $content("supports", params.slug).fetch();
-    return { content };
-  },
+
   layout: "NewLayout",
   methods: {
     shout(val) {
@@ -90,8 +86,8 @@ export default {
     },
   },
   components: {
+    UiHeadline,
     MemberList,
-    UiHeadline
   },
 };
 </script>
