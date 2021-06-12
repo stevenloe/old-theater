@@ -30,6 +30,7 @@
 </template>
 
 <script>
+import UiHeadline from "@/components/ui/UiHeadline";
 export default {
   data() {
     return {
@@ -56,5 +57,8 @@ export default {
       ],
     };
   },
+  components: {
+    UiHeadline
+  }
 };
 </script>
