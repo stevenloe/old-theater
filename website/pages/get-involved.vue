@@ -491,7 +491,9 @@
           </p>
         </div>
         <div class="m-4 md:m-8">
-          <MemberCrawl />
+          <client-only>
+          <MemberCarousel />
+        </client-only>
         </div>
       </div>
     </div>
@@ -499,7 +501,7 @@
 </template>
 
 <script>
-import MemberCrawl from "@/components/MemberCrawl";
+import MemberCarousel from "@/components/MemberCarousel";
 import UiHeadline from "@/components/ui/UiHeadline";
 
 export default {
@@ -507,7 +509,7 @@ export default {
     title: "Get  Involved",
   },
   components: {
-    MemberCrawl,
+    MemberCarousel,
     UiHeadline
     
   },

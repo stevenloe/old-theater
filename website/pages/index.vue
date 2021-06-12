@@ -7,7 +7,6 @@
         v-for="show of shows"
         :key="show.title"
       >
-      
         <!-- image card -->
         <div
           class="relative overflow-hidden rounded-lg md:w-7/12 md:rounded-r-none text"
@@ -31,17 +30,15 @@
             <div class="flex">
               <ShowPill :showtype="show.showtype"></ShowPill>
             </div>
-            <div class="flex flex-wrap mb-4 text-sm font-semibold leading-relaxed tracking-wide uppercase flex-start">
+            <div
+              class="flex flex-wrap mb-4 text-sm font-semibold leading-relaxed tracking-wide uppercase flex-start"
+            >
+              {{ show.eventTime | formatDate }},
+              {{ show.eventTime | formatTime }}, ${{ show.formattedPrice }}
 
-              
-              {{ show.eventTime | formatDate }}, 
-              {{ show.eventTime | formatTime }}, ${{ show.formattedPrice }} 
-              
-              <div  class="flex flex-wrap" v-if="show.location"> 
-                <div>
-                 At {{ show.location }}
-              </div> 
-              </div>              
+              <div class="flex flex-wrap" v-if="show.location">
+                <div> At {{ show.location }}</div>
+              </div>
             </div>
           </div>
 
@@ -68,7 +65,9 @@
       <Sponsorship />
 
       <div class="m-4 md:m-8">
-        <MemberCrawl />
+        <client-only>
+          <MemberCarousel />
+        </client-only>
       </div>
     </div>
   </div>
@@ -78,16 +77,17 @@
 import AlertBox from "@/components/AlertBox";
 import Education from "@/components/Education";
 import Membership from "@/components/Membership";
-import MemberCrawl from "@/components/MemberCrawl";
+import MemberCarousel from "@/components/MemberCarousel";
 import Sponsorship from "@/components/Sponsorship";
 import NewsWidget from "@/components/NewsWidget";
 import ShowPill from "@/components/ShowPill";
 
 export default {
-
   head() {
     return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+      script: [
+        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
+      ],
     };
   },
   async asyncData({ $content, params }) {
@@ -105,7 +105,7 @@ export default {
         "imgAlt",
         "ticketURL",
         "location",
-        "showtype"
+        "showtype",
       ])
       .sortBy("eventTime", "asc")
       .fetch();
@@ -117,10 +117,10 @@ export default {
     AlertBox,
     Education,
     Membership,
-    MemberCrawl,
+    MemberCarousel,
     Sponsorship,
     NewsWidget,
-    ShowPill
+    ShowPill,
   },
 };
 </script>
@@ -129,7 +129,6 @@ export default {
 .show-card {
   /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); */
 }
-
 </style>
 
 
