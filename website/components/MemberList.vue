@@ -1,12 +1,12 @@
 <template>
-  <div class="p-8 mt-8 bg-gray-100 border border-gray-400 ">
+  <div class="p-8 mt-8 bg-gray-100 border border-gray-400">
     <h1>Welcome {{ currentYear() }} Members!</h1>
     <ul>
       <li v-for="(group, name) in membersGrouped" :key="name">
         <div class="mt-4 font-bold text-gray-700 uppercase">{{ name }}</div>
         <ul class="ml-4">
           <li
-            class="text-gray-800 "
+            class="text-gray-800"
             v-for="(member, index) in group"
             :key="index"
           >
@@ -23,16 +23,21 @@
 
 
 <script>
+import axios from "axios";
 
 export default {
   async fetch() {
-    let data = await this.$content("members", { deep: true }).fetch();
+    const { data } = await axios.get(
+      `${this.$axios.defaults.baseURL}data/members2.json`
+    );
 
-    let membersGrouped = data[0].body.reduce(function (r, a) {
+    let membersGrouped = data.reduce(function (r, a) {
       r[a.level] = r[a.level] || [];
       r[a.level].push(a);
       return r;
     }, Object.create(null));
+
+
 
     function compareValues(key, order = "asc") {
       return function innerSort(a, b) {
@@ -69,9 +74,9 @@ export default {
   },
   methods: {
     currentYear() {
-      const d = new Date()
-      return d.getFullYear()
-    }
-  }
+      const d = new Date();
+      return d.getFullYear();
+    },
+  },
 };
 </script>
