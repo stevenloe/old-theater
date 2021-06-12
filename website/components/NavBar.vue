@@ -267,7 +267,8 @@ export default {
     SubMenu,
     SearchMobile,
     SearchDesktop,
-    Logo
+    Logo,
+    FooterMobile,
   },
 };
 </script>
