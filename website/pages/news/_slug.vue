@@ -9,7 +9,7 @@
         </div>
         <nuxt-link :to="`/news/${post.slug}?page=index`">
 
-        <UiHeadline level="1">{{ post.title }}</UiHeadline>
+        <UiHeadline level="3">{{ post.title }}</UiHeadline>
          </nuxt-link
         >
         <nuxt-content

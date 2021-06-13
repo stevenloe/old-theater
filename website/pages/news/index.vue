@@ -3,7 +3,7 @@
     <article
       class="w-full mx-auto content-column md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
-      <UiHeadline level="1">News</UiHeadline>
+      <UiHeadline level="4">News</UiHeadline>
 
       <article
         class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg"
@@ -17,7 +17,7 @@
         </div>
 
         <h2
-          class="mb-4 text-xl font-semibold sm:tett-2xl md:text-3xl lg:text-5xl"
+          class="mb-4 text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl"
         >
           <nuxt-link :to="`/news/${post.slug}?page=index`">
             {{ post.title }}</nuxt-link
