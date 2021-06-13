@@ -12,13 +12,12 @@
             >
 
             <img
-              src="http://via.placeholder.com/400x200"
+              src="/images/volunteer/cast-edit.jpg"
               class="w-full mr-3"
               alt=""
             />
-            <p class="p-1 mb-3 text-xs italic text-gray-700 bg-gray-200">
-              Community theatre is made possible because of community
-              involvement and support.
+            <p class="p-1 mb-3 text-sm italic text-gray-700 bg-gray-200">
+              Community theatre in Oriental is made possible by people like you.
             </p>
           </div>
           <p class="my-4 text-gray-800">
@@ -63,13 +62,207 @@
           </p>
 
         </div>
+
+
+       
+
+        <div class="mb-4">
+          <h2 class="text-2xl font-semibold"></h2>
+          <p class="mb-4">
+            Nostrum minus eligendi esse qui cupiditate neque, at, enim ipsa
+            blanditiis vero aperiam culpa labore amet corporis! Consequatur rem
+            illum illo fuga! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Accusamus ipsa iusto et exercitationem sed modi quod quas
+            officiis eos ducimus, repellendus molestiae consequatur harum!
+            Aspernatur velit perspiciatis veritatis tenetur dolores.
+          </p>
+          <p class="mb-4">
+            Mauris eros sem, volutpat ut, blandit ut, pharetra quis, pede.
+            Aliquam vel libero. Suspendisse erat lacus, malesuada at, rutrum
+            posuere, scelerisque ut, ante. In non orci.
+          </p>
+          
+        </div>
+
+        <div class="p-8 pt-4 mb-4 bg-indigo-100">
+          <h2 class="mb-1 text-2xl font-semibold">Volunteers in Action</h2>
+          <div>
+            <img
+              src="/images/volunteer/villians_with_horses.jpg"
+              class="w-full mr-3"
+              loading="lazy"
+              alt=""
+            />
+            <p class="p-1 mb-3 text-sm italic text-blue">
+              The cast of Villians with Horses.
+            </p>
+          </div>
+
+          <div class="flex">
+            <div class="w-1/3 m-2">
+              <img
+              src="/images/volunteer/popcorn.jpg"
+                class="w-full"
+                alt="lots of free popcorn for a Friday Night Flick"
+                loading="lazy"
+              />
+              <p class="p-1 mb-3 text-sm italic text-blue">
+              Making & serving free popcorn.
+            </p>
+            </div>
+            <div class="w-1/3 m-2">
+              <img
+              src="/images/volunteer/tickets.jpg"
+                class="w-full"
+                alt="The box office a the Old Theater"
+                loading="lazy"
+              />
+              <p class="p-1 mb-3 text-sm italic text-blue">
+              The Box office
+            </p>
+            </div>
+            <div class="w-1/3 m-2">
+              <img
+              src="/images/volunteer/chili_cookoff.jpg"
+                class="w-full"
+                alt="Fresh popcorn at the Old theater"
+                loading="lazy"
+              />
+              <p class="p-1 mb-3 text-sm italic text-blue">
+              The Chili Cookoff fundraiser
+            </p>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+          <div class="flex">
+            <div class="w-1/2 mr-4">
+              <img
+              src="/images/volunteer/nunsense.jpg"
+                class="w-full"
+                loading="lazy"
+                alt="Nunsense at the Old Theater, Oriental, NC"
+              />
+              <p class="p-1 mb-3 text-sm italic text-blue">
+              Cast of Nunsense
+            </p>
+            </div>
+            <div class="w-1/2 ">
+              <img
+              src="/images/volunteer/bo-and_sal.jpg"
+                class="w-full"
+                alt="Bo and Sal at the Old Theater Oriental NC"
+                loading="lazy"
+              />
+              <p class="p-1 mb-3 text-sm italic text-blue">
+              Cast members: Villians with Horses
+            </p>
+            </div>
+          </div>
+        </div>
+
+        
+          <div class="">
+          <div class="flex mb-4">
+            <div class="w-1/2 mr-4">
+              <img
+              src="/images/volunteer/community_youth_performance.jpg"
+                class="w-full"
+                loading="lazy"
+                alt="Community Youth Performance"
+              />
+              <p class="p-1 mb-3 text-sm italic text-blue">
+                Community Youth Performance
+            </p>
+            </div>
+            <div class="w-1/2 ">
+              <img
+              src="/images/volunteer/polar_express.jpg"
+                class="w-full"
+                alt="The Polar Express"
+                loading="lazy"
+              />
+              <p class="p-1 mb-3 text-sm italic text-blue">
+              The Polar Express
+            </p>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="/images/volunteer/on_stage.jpg"
+              class="w-full mr-3"
+              loading="lazy"
+              alt=""
+            />
+            <p class="p-1 mb-3 text-sm italic text-blue">
+              Production of...
+            </p>
+        </div>
+      </div> 
+      
+      <div class="mb-4">
+        <div class="flex">
+          <div class="w-1/2 mr-4">
+              <img
+              src="/images/volunteer/storytelling_tom.jpg"
+                class="w-full"
+                loading="lazy"
+                alt="Storytelling Tom at the Old Theater, Oriental, NC"
+              />
+              <p class="p-1 mb-3 text-sm italic text-blue">
+              Storytelling  Tom 
+            </p>
+            </div>
+            <div class="w-1/2 ">
+              <img
+              src="/images/volunteer/ladies_of_theater.jpg"
+                class="w-full"
+                alt="Ladies of Theater at the Old Theater Oriental NC"
+                loading="lazy"
+              />
+              <p class="p-1 mb-3 text-sm italic text-blue">
+                Ladies of Theater 
+            </p>
+            </div>
+        </div>
+        
+      </div>
+      
+      </div>
+
+      
+
+        <div class="p-8 pt-4 mb-4">
+          <h2 class="text-2xl font-semibold">We Need You!</h2>
+          <div class="float-right ml-2">
+            <img src="/images/volunteer/the_indianians.jpg" alt="" />
+            <p class="p-1 mb-3 text-sm italic text-blue">
+              Cast of ...
+            </p>
+          </div>
+          <p class="mb-4">
+            Eligendi esse qui cupiditate neque, at, enim ipsa blanditiis vero
+            aperiam culpa labore amet corporis! Consequatur rem illum illo fuga!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            ipsa iusto et exercitationem sed modi quod quas officiis eos
+            ducimus, repellendus molestiae consequatur harum! Aspernatur velit
+            perspiciatis veritatis tenetur dolores.
+          </p>
+          <p class="mb-4">
+            Mauris eros sem, volutpat ut, blandit ut, pharetra quis, pede.
+            Aliquam vel libero. Suspendisse erat lacus, malesuada at, rutrum
+            posuere, scelerisque ut, ante. In non orci.
+          </p>
+        </div>
         <form
           method="post"
           id="zcr009d1cac128b8d3a3c51ca4fca706a52"
           class="zemContactForm"
           <!-- action="/volunteer/volunteers-we-need-you#zcr009d1cac128b8d3a3c51ca4fca706a52" -->
-        >
+        
           <div class="p-8 border border-gray-400">
+            <div class="mb-4 text-2xl font-bold">Volunteer Form</div>
             <input
               type="hidden"
               name="zem_contact_nonce"
@@ -373,123 +566,6 @@
             />
           </div>
         </form>
-
-        <div class="mb-4">
-          <div class="flex bg-orange-200">
-            <div class="w-1/2 m-4">
-              <img
-                src="http://via.placeholder.com/400x200"
-                class="w-full"
-                alt=""
-              />
-            </div>
-            <div class="w-1/2 m-4 ml-0">
-              <img
-                src="http://via.placeholder.com/400x200"
-                class="w-full"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-4">
-          <h2 class="text-2xl font-semibold"></h2>
-          <p class="mb-4">
-            Nostrum minus eligendi esse qui cupiditate neque, at, enim ipsa
-            blanditiis vero aperiam culpa labore amet corporis! Consequatur rem
-            illum illo fuga! Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Accusamus ipsa iusto et exercitationem sed modi quod quas
-            officiis eos ducimus, repellendus molestiae consequatur harum!
-            Aspernatur velit perspiciatis veritatis tenetur dolores.
-          </p>
-          <p class="mb-4">
-            Mauris eros sem, volutpat ut, blandit ut, pharetra quis, pede.
-            Aliquam vel libero. Suspendisse erat lacus, malesuada at, rutrum
-            posuere, scelerisque ut, ante. In non orci.
-          </p>
-          <div class="flex">
-            <div class="w-1/3 m-2">
-              <img
-                src="http://via.placeholder.com/400x200"
-                class="w-full"
-                alt=""
-              />
-            </div>
-            <div class="w-1/3 m-2">
-              <img
-                src="http://via.placeholder.com/400x200"
-                class="w-full"
-                alt=""
-              />
-            </div>
-            <div class="w-1/3 m-2">
-              <img
-                src="http://via.placeholder.com/400x200"
-                class="w-full"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="p-8 pt-4 mb-4 bg-indigo-100">
-          <h2 class="mb-1 text-2xl font-semibold">Volunteers in Action</h2>
-          <div>
-            <img
-              src="http://via.placeholder.com/600x300"
-              class="w-full mr-3"
-              alt=""
-            />
-            <p class="p-1 mb-3 text-xs italic bg-blue-300 text-blue">
-              This is caption text adipisicing elit. Vel itaque velit ipsam
-              repellat amet, earum.
-            </p>
-          </div>
-          <p class="mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            minus eligendi esse qui cupiditate neque, at, enim ipsa blanditiis
-            vero aperiam culpa labore amet corporis! Consequatur rem illum illo
-            fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Accusamus ipsa iusto et exercitationem sed modi quod quas officiis
-            eos ducimus, repellendus molestiae consequatur harum! Aspernatur
-            velit perspiciatis veritatis tenetur dolores.
-          </p>
-          <p class="mb-4">
-            Aliquam eleifend. Aenean facilisis adipiscing urna. Maecenas
-            sagittis, velit at scelerisque ornare, elit dolor elementum ante, in
-            vestibulum elit metus sed quam. Mauris mauris ante, adipiscing
-            vitae, scelerisque vitae, luctus at, pede. Integer sagittis dui.
-            Morbi dictum mauris ac tellus. Nullam vehicula. Mauris erat neque,
-            tempor eu, posuere et, lobortis vel, enim. In mollis. Vestibulum
-            ante ipsum primis in faucibus orci luctus et ultrices posuere
-            cubilia Curae.
-          </p>
-          <div class="flex"></div>
-        </div>
-
-        <div class="p-8 pt-4 mb-4">
-          <h2 class="text-2xl font-semibold">We Need You!</h2>
-          <div class="float-right ml-2">
-            <img src="http://via.placeholder.com/350x220" alt="" />
-            <p class="p-1 mb-3 text-xs italic text-blue">
-              Aliquam vel libero. Suspendisse erat lacus.
-            </p>
-          </div>
-          <p class="mb-4">
-            Eligendi esse qui cupiditate neque, at, enim ipsa blanditiis vero
-            aperiam culpa labore amet corporis! Consequatur rem illum illo fuga!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            ipsa iusto et exercitationem sed modi quod quas officiis eos
-            ducimus, repellendus molestiae consequatur harum! Aspernatur velit
-            perspiciatis veritatis tenetur dolores.
-          </p>
-          <p class="mb-4">
-            Mauris eros sem, volutpat ut, blandit ut, pharetra quis, pede.
-            Aliquam vel libero. Suspendisse erat lacus, malesuada at, rutrum
-            posuere, scelerisque ut, ante. In non orci.
-          </p>
-        </div>
         <div class="m-4 md:m-8">
           <client-only>
           <MemberCarousel />
