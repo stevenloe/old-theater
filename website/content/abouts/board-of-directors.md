@@ -15,7 +15,7 @@ imgAlt: some alt text
 
  ### Department Managers
 **Facilities:**  Brian Hough   
-**Friday Flicks Coordinator:** Nancy Crain
+**Friday Flicks Coordinator:** Nancy Crain  
 **Grants** (open)
 **Graphic Communications:** (open)   
 **House Manager & Ticket Master:** Russ Stevenson   
