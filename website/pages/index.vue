@@ -41,20 +41,24 @@
               <div class="flex flex-wrap" v-if="show.location">
                 <div> At {{ show.location }}</div>
               </div>
+              
+              
             </div>
           </div>
+          
+          <div class="visible mx-6 my-6 text-gray-700 md:hidden lg:block xl:text-lg lg:mt-6">{{show.shortDesc}} </div>
 
           <div class="flex justify-end w-full pb-0 pl-6 pr-6 md:inline-block">
             <a
               v-if="show.ticketURL"
               :href="show.ticketURL"
-              class="w-1/2 px-4 py-2 mb-3 mr-2 font-bold tracking-wide text-center text-white uppercase bg-blue-600 rounded-lg shadow-lg md:w-full md:block hover:bg-blue-700"
+              class="px-4 py-2 mb-3 mr-2 font-bold tracking-wide text-center text-white uppercase bg-blue-600 rounded-lg shadow-lg md:block hover:bg-blue-700"
             >
               Buy tickets</a
             >
             <nuxt-link
               :to="show.slug"
-              class="w-1/2 px-4 py-2 mb-3 font-bold tracking-wide text-center text-white uppercase bg-gray-600 rounded-lg shadow-lg md:w-full md:block hover:bg-gray-700"
+              class="w-full px-4 py-2 mb-3 font-bold tracking-wide text-center text-white uppercase bg-gray-600 rounded-lg shadow-lg md:block hover:bg-gray-700"
             >
               Learn More</nuxt-link
             >
