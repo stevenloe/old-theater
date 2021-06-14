@@ -7,6 +7,7 @@ imgAlt: some alt text
 eventDate: 'September 15, 2020'
 eventTime: '2021-06-10T21:09:38.963Z'
 ticketURL: https://example.com
+slug: "news/old-theaters-summer-outdoor-cinema"
 ---
 
 The Old Theater’s Summer Outdoor Cinema, in Collaboration with the Silos in Oriental, presents:

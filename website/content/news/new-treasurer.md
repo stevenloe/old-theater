@@ -7,6 +7,8 @@ imgAlt: some alt text
 eventDate: 'September 15, 2020'
 eventTime: '2020-09-15T21:09:38.963Z'
 ticketURL: https://example.com
+slug: "news/new-treasurer"
+subhead: "We are pleased to annonce that Shelby Loe has joined the Old Theater board as Treasurer."
 ---
 
 We are pleased to annonce that Shelby Loe has joined the Old Theater board as Treasurer.
