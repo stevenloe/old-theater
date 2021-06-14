@@ -23,11 +23,11 @@
             <div class="flex flex-wrap">
               <div class="mr-4">
                 <span class="text-gray-600">DATE: </span>
-                {{ article.eventTime | formatDate }}
+                {{ article.showDate }}
               </div>
               <div class="mr-4">
                 <span class="text-gray-600">TIME: </span>
-                {{ article.eventTime | formatTime }}
+                {{ article.showTime }}
               </div>
               <div class="mr-4">
                 <span class="text-gray-600">COST: </span>
@@ -37,13 +37,15 @@
                 <span class="text-gray-600">LOCATION: </span>{{ article.location }}
               </div>
             </div>
-             
+
           </div>
 
           <nuxt-content
             :document="article"
             class="mb-8 prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl"
           />
+
+          <div class="mb-8 prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl">{{article.shortDesc}}</div>
 
           <a
             v-if="article.ticketURL"
