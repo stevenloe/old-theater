@@ -56,57 +56,57 @@ export default {
     return {
       selectedDate: dayjs(),
       eventItems: {
-        "2021-03-19": {
+        "2021-06-19": {
           eventsToday: [
             {
-              date: "2021-03-19",
+              date: "2021-06-19",
               type: "FRIDAY FLICK",
-              name: "American Grafitti",
-              time: "6:30 PM",
-              url: "/american-grafitti",
+              name: "Ghostbusters",
+              time: "8:30 PM",
+              url: "/ghostbusters",
             },
           ],
         },
-        "2020-05-21": {
+        "2021-07-21": {
           eventsToday: [
             {
-              date: "2021-05-08",
+              date: "2021-07-21",
               type: "FRIDAY FLICK",
-              name: "Maiden",
-              time: "7:00 PM",
-              url: "/maiden",
+              name: "Back to The Future",
+              time: "8:30 PM",
+              url: "/back-to-the-future",
             },
           ],
         },
-        "2020-05-21": {
+        "2021-08-21": {
           eventsToday: [
             {
-              date: "2021-07-16",
+              date: "2021-08-21",
               type: "LIVE THEATER",
-              name: "Nunsense",
-              time: "7:00 PM",
-              url: "/nunsense",
+              name: "Lethal Weapon",
+              time: "8:00 PM",
+              url: "/lethal-weapon",
             },
           ],
         },
-        "2020-07-24": {
-          eventsToday: [
-            {
-              date: "2021-07-24",
-              type: "LIVE MUSIC",
-              name: "Barbara Lica",
-              time: "7:00 PM",
-              url: "/barbra-lica",
-            },
-             {
-              date: "2021-07-24",
-              type: "CASTING CALL",
-              name: 'Casting call for "Sex Please Were Sixty"',
-              time: "3:00 PM",
-              url: "/news/casting-call-sex-please",
-            },
-          ],
-        },
+        // "2020-07-24": {
+        //   eventsToday: [
+        //     {
+        //       date: "2021-07-24",
+        //       type: "LIVE MUSIC",
+        //       name: "Barbara Lica",
+        //       time: "7:00 PM",
+        //       url: "/barbra-lica",
+        //     },
+        //      {
+        //       date: "2021-07-24",
+        //       type: "CASTING CALL",
+        //       name: 'Casting call for "Sex Please Were Sixty"',
+        //       time: "3:00 PM",
+        //       url: "/news/casting-call-sex-please",
+        //     },
+        //   ],
+        // },
       },
     };
   },
