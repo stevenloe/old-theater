@@ -15,18 +15,17 @@ imgAlt: some alt text
 
  ### Department Managers
 **Facilities:**  Brian Hough   
-**Tecnical Services:** Mark Milos   
-**Membership:** Andrea Bayard   
-**Publicity:** Mary Frances Taylor   
-**House / Box Office:** Russ Stevenson   
-**Sponsorship:** (open)   
-**Theater Sponsored Events:** Pat Nocera    
-**Volunteer Coordinator:** Andrea Bayard   
+**Friday Flicks Coordinator:** Nancy Crain
+**Grants** (open)
 **Graphic Communications:** (open)   
-**Website:** Steven Loe   
+**House Manager & Ticket Master:** Russ Stevenson   
+**Membership & Volunteers:** Andrea Bayard   
+**Publicity:** Marlena Montgomery   
+**Tecnical Services:** Mark Milos   
+**Theater Sponsored Events:** Pat Nocera      
 **Stage Production Coordinator:** (open)   
 **Performing Artists Coordinator:** (open)   
-**Friday Flicks Coordinator:** (open)
+**Website:** Steven Loe   
 
 
 
