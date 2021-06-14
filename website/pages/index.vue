@@ -39,7 +39,7 @@
               <span class="mr-2">${{ show.formattedPrice }}</span>
 
               <div class="flex flex-wrap" v-if="show.location">
-                <div> At {{ show.location }}</div>
+                <div>At {{ show.location }}</div>
               </div>
               
               
