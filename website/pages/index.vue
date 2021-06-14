@@ -33,8 +33,10 @@
             <div
               class="flex flex-wrap mb-4 text-sm font-semibold leading-relaxed tracking-wide uppercase flex-start"
             >
-              {{ show.eventTime | formatDate }},
-              {{ show.eventTime | formatTime }}, ${{ show.formattedPrice }}
+              <span class="mr-2">{{ show.showDate }}</span>
+        
+              <span class="mr-2">{{ show.showTime }} </span>
+              <span class="mr-2">${{ show.formattedPrice }}</span>
 
               <div class="flex flex-wrap" v-if="show.location">
                 <div> At {{ show.location }}</div>
@@ -98,7 +100,6 @@ export default {
         "img",
         "slug",
         "createdAt",
-        "eventDate",
         "eventTime",
         "formattedPrice",
         "shortDesc",
@@ -106,6 +107,8 @@ export default {
         "ticketURL",
         "location",
         "showtype",
+        "showDate",
+        "showTime"
       ])
       .sortBy("eventTime", "asc")
       .fetch();
