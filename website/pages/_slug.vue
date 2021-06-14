@@ -20,7 +20,7 @@
           <div
             class="mb-8 text-sm font-semibold leading-relaxed tracking-wide uppercase"
           >
-            <div class="flex flex-wrap">
+            <div class="flex flex-wrap lg:text-lg">
               <div class="mr-4">
                 <span class="text-gray-600">DATE: </span>
                 {{ article.showDate }}
