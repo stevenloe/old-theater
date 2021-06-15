@@ -6,19 +6,13 @@
     <UiHeadline level="1">Contact Us</UiHeadline>
       <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
 
+        <h2 class="mb-6 text-3xl font-semibold">We’d love to hear from you!</h2>
 
-      <p class="block">
-        Aute reprehenderit ipsum est duis laboris ullamco qui. Deserunt ex
-        tempor ipsum ad proident eu ipsum. Officia magna eu nisi deserunt Lorem
-        sint elit non magna pariatur proident. Excepteur quis tempor irure et
-        proident id consectetur. Minim eiusmod quis reprehenderit proident velit
-        deserunt Lorem.
-      </p>
+
+   
 
       <p class="pb-8">
-        Nulla deserunt officia ipsum consectetur pariatur nisi labore incididunt
-        deserunt minim. In amet id elit or by calling the Old Theater at (252)
-        249 – 0477.
+        To contact us, please fill out the form below. Or call The Old Theater directly at (252) 249 – 0477.
       </p>
 
       <form name="contact-old-theater" method="POST" data-netlify="true" action="success-contact/">

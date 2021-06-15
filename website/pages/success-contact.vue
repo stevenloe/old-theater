@@ -22,7 +22,7 @@ export default {
   metaInfo: {
     title: "SuccessContact",
   },
-  layout: "default",
+  layout: "NewLayout",
   components: {
     UiHeadline,
   },
