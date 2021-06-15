@@ -13,7 +13,7 @@ ticketURL: https://example.com
 
 <figure>
   <img
-    src="/images/about//old_theater_seats.jpg"
+    src="/images/about/old_theater_seats.jpg"
     alt="Drawing of The Old Theater by Betty Brown"
   />
   <figcaption class="italic">
