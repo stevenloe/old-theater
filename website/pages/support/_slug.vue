@@ -16,6 +16,7 @@
 
 <script>
 import UiHeadline from "@/components/ui/UiHeadline";
+import ButtonLink from "@/components/ui/ButtonLink";
 export default {
   async asyncData({ $content, params }) {
     const content = await $content("supports", params.slug).fetch();
@@ -28,7 +29,8 @@ export default {
     }
   },
   components: {
-    UiHeadline
+    UiHeadline,
+    ButtonLink
   }
 };
 </script>
