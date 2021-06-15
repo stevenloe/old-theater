@@ -11,6 +11,15 @@ formattedPrice: 19.00
 ticketURL: https://example.com
 ---
 
+<figure>
+  <img
+    src="/images/about//old_theater_seats.jpg"
+    alt="Drawing of The Old Theater by Betty Brown"
+  />
+  <figcaption class="italic">
+     Seating at The Old Theater
+  </figcaption>
+</figure>
 
 
 ## Have your show or event at Oriental's Old Theater.
