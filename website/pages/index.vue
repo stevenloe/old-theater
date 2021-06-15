@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto">
     <div class="container mx-auto">
-      <!-- <AlertBox /> -->
+      <AlertBox posts="alerts"/>
       <div
         class="p-0 m-4 rounded shadow-lg show-card sm:m-8 md:flex md:m-8 md:mr-8"
         v-for="show of shows"
@@ -100,15 +100,17 @@ export default {
 
 
   async asyncData ({ $content, params }) {
-  const [shows, news] = await Promise.all([ 
+  const [shows, news, alerts] = await Promise.all([ 
     $content("shows", params.slug).sortBy("eventTime", "asc").fetch(),
     $content("news", params.slug).sortBy("eventTime", "desc").fetch(),
+    $content("alerts", params.slug).fetch(),
     
   ])
 
   return {
     shows: shows,
     news: news,
+    alerts: alerts
   }
 },
   layout: "NewLayout",
