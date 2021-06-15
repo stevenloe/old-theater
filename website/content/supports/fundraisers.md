@@ -12,11 +12,22 @@ ticketURL: https://example.com
 ---
 
 
-## Old Theater’s Got Talent Virtual Talent Show Fundraiser  
+## Old Theater’s Got Talent Virtual Talent Show Fundraiser 
 **Congratulations to the Winners of the Old Theater’s Got Talent Virtual Talent Show Fundraiser!**  
 
-![Trophies](https://old-theater-pics.netlify.app/img/old-theaters-got-talent-trophies.jpg)
-*Trophies await our lucky winners*
+
+<figure>
+  <img
+    src="/images/fundraisers/old-theaters-got-talent-trophies.jpg"
+    alt="Old Theater's got talent fundraiser trophies"
+    loading="lazy"
+  />
+  <figcaption class="italic">
+     Trophies await our lucky winners
+  </figcaption>
+</figure>
+
+This event was a 2020 replacement for the Chili Cookoff which was cancelled due to COVID.
 
 
 **Here are the Judge’s Choices:**   
@@ -41,7 +52,7 @@ Isabel Keppner
 President, Old Theater Corp.
 
 
-## Chili Cookoff Fundraiser
-Laboris nostrud consectetur velit consequat exercitation veniam culpa reprehenderit non id ullamco non. Et sunt proident aute est incididunt velit. In cupidatat ex pariatur nisi id pariatur occaecat eu dolor aliqua eiusmod consectetur cupidatat. 
+<!-- ## Chili Cookoff Fundraiser
+Laboris nostrud consectetur velit consequat exercitation veniam culpa reprehenderit non id ullamco non. Et sunt proident aute est incididunt velit. In cupidatat ex pariatur nisi id pariatur occaecat eu dolor aliqua eiusmod consectetur cupidatat.  -->
 
 
