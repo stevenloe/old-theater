@@ -1,17 +1,15 @@
 ---
 title: Lethal Weapon
-description:  Suscipit unde labore necessitatibus fugiat? Repellendus magnam reprehenderit, repudiandae impedit suscipit pariatur unde reiciendis aperiam dolore aliquam aut eum sapiente molestiae animi praesentium numquam, dolores quisquam exercitationem beatae nulla? Maxime.
+description:  
 shortDesc: "With Mel Gibson, Danny Glover, Gary Busey, Mitchell Ryan. Two newly paired cops who are complete opposites must put aside their differences in order to catch a gang of drug smugglers."
 slug: /lethal-weapon
 img: lethal-weapon.jpg
 imgAlt: Old Theater presents Ghostbusters at the Red Rooster
 
-
 eventTime: "2021-08-21T23:30:00.2Z"
 
 showDate: "August, 21 2021"
 showTime: "8:00 PM"
-
 
 
 formattedPrice: Donation
