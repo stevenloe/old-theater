@@ -23,7 +23,7 @@ ticketURL: https://example.com
 
 
 
-We're a small theater. Our small size is part of what makes The Old Theater such a *great* place to see a performance. You'll be close to the action on stage... much closer than you would be at a larger venue.
+We're a small theater. Our small size is a big part of what makes The Old Theater such a *great* place to see a performance. You'll be close to the action on stage... much closer than you would be at a larger venue.
 
 The challenge of running a small non-profit theater is, revenue from ticket sales alone often won't cover the costs of staging a production, bringing a musical artist to town, or putting a movie you love on our big screen. 
 
