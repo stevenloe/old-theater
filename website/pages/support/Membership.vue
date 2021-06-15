@@ -4,8 +4,10 @@
       class="w-full mx-auto md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
       <UiHeadline id="level-1-headline" level="1" > Membership </UiHeadline>
-      <UiHeadline id="level-1-headline" level="3" > Join the Old Theater</UiHeadline>
+      <UiHeadline id="level-1-headline" level="3" > </UiHeadline>
       <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
+
+       <h2 class="mb-6 text-3xl">Join the Old Theater</h2>
 
         <figure class="mb-6">
           <img
