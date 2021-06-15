@@ -23,7 +23,7 @@ export default {
         category: "Membership",
         location: "The Old Theater",
         description:
-          "Give back to the community by sponsoring a theatrical production, a live music event, or a Friday flick. ... more text goes here",
+          "Give back to the community by sponsoring a theatrical production, a live music event, or a Friday flick.",
         images: ['gravy_boys.jpg', 'henri_herbert.jpg', 'on_stage_edit.jpg'],
         imageAlt: "musical or theatrical artist image",
         cta: "Learn More",
