@@ -17,7 +17,8 @@
       <div class="flex mb-4">
         <div class="p-0 mb-0 text-gray-700">{{ item.date }}</div>
         <div class="text-gray-700">
-          <nuxt-link class="ml-1 italic underline" :to="item.slug">
+          <nuxt-link class="ml-1 italic underline" 
+            :to="'news/'+item.slug">
             Read more...
           </nuxt-link>
         </div>
@@ -33,31 +34,6 @@
 import UiHeadline from "@/components/ui/UiHeadline";
 export default {
   props: ['news'],
-  data() {
-    return {
-      items: [
-        {
-          title:
-            "Casting call for production of Sex Please We’re Sixty, “A Saucy Senior Scandal”",
-          category: "News",
-          description:
-            "Calling actors! Please join us at our call casting call for The Old Theater's production of Sex Please We’re Sixty.. ",
-          cta: "Read More",
-          date: "1/3/2020",
-          link: "news/casting-call-sex-please-were-sixty?",
-        },
-        {
-          title: "The Old Theater announces new board members",
-          category: "News",
-          location: "The Old Theater",
-          description: "The Old Theater is pleased to announce ...",
-          cta: "Read More",
-          date: "1/5/2020",
-          link: "news/new-board-members",
-        },
-      ],
-    };
-  },
   components: {
     UiHeadline
   }

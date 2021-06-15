@@ -7,7 +7,7 @@
         <div class="text-sm font-semibold text-gray-700 uppercase">
           {{ postTime(post.eventTime) }}
         </div>
-        <nuxt-link :to="`/news/${post.slug}?page=index`">
+        <nuxt-link :to="`${post.slug}?page=index`">
 
         <UiHeadline level="3">{{ post.title }}</UiHeadline>
          </nuxt-link
