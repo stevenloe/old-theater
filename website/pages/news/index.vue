@@ -53,7 +53,7 @@ export default {
   async asyncData({ $content }) {
     const posts = await $content("news")
       // .only(["author", "createdAt", "description", "path", "title"])
-      .sortBy("createdAt", "desc")
+      .sortBy("eventTime", "desc")
       .limit(10)
       .fetch();
 
