@@ -70,12 +70,12 @@
           </div>
           <div class="flex justify-end">
             <nuxt-link
-              to="/about/venue"
+              to="/about/rent-the-theater"
               class="tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
-              >VENUE</nuxt-link
+              >RENT</nuxt-link
             >
           </div>
-          
+
         </div>
       </nav>
 
