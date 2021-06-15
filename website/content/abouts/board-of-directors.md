@@ -21,9 +21,10 @@ imgAlt: some alt text
 **House Manager & Ticket Master:** Russ Stevenson   
 **Membership & Volunteers:** Andrea Bayard   
 **Publicity:** Marlena Montgomery   
+**Sponsorship Manager :** (open)      
+**Stage Production Coordinator:** (open)   
 **Tecnical Services:** Mark Milos   
 **Theater Sponsored Events:** Pat Nocera      
-**Stage Production Coordinator:** (open)   
 **Performing Artists Coordinator:** (open)   
 **Website:** Steven Loe   
 
