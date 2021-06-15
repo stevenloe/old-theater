@@ -13,11 +13,11 @@ ticketURL: https://example.com
 
 
 
-### 1.  Shop Locally!  
-Support the wonderful business in our area that are here for you. When you do this, you're helping to keep Oriental and Pamlico county a vibrant, great place to live. You're also supporting local families - many of whom support the Old Theater's programs via sponsorship, membership, co-hosted events and more.
+### 1.  Shop Local 
+Our local businesses are here for you and your families.  Your patronage of their products and services not only helps ensure the future of their business here in the community it ensures the livelihood of those business owners and their families.  In turn those businesses help The Old Theater and other local organizations by sponsoring events, advertising at events, and membership dues.
 
 ### 2. Amazon Smile  
-Sometimes it's not possible to find that certain special item in our local shops. If you find yourself shopping at Amazon for those items, you can still support the Old Theater. When you shop at smile.amazon.com, Amazon will make a small donation to the charity of your choice.
+There is no way that our wonderful shops here locally can supply every want and need of our community.   If and when you find yourself shopping at Amazon for those items you can still support The Old Theater.  
 
 ![amazon Smile logo](https://old-theater-pics.netlify.app/img/amazon-smile-sm.jpg)
 

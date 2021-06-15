@@ -14,7 +14,7 @@ ticketURL: https://example.com
 ## Help The Old Theatre Thrive. 
 ![timothy mooney performing at The Old Theater, Oriental North Carolina](/images/support/timothy_mooney.jpg)
 
-The Old Theater Corporation is a registered 501(c)(3) non-profit organization. All donations are tax deductible.
+Old Theater Corporation is a registered 501(c)(3) non-profit organization.  As such, all cash donations and donations in kind are tax deductible.
 
 Although we are successful at bringing arts performances and movies to the community, ticket sales provide only a portion of the necessary income to match our expenses. We depend on the generous support of those who believe in the arts in Pamlico County. 
 

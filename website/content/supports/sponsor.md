@@ -21,13 +21,11 @@ ticketURL: https://example.com
 </figure>
 
 
+As a small community theater, we take pride in bringing you great productions and performers from around Pamlico county, across the country, and across the globe.   Our intimate setting is part of what makes The Old Theater such a *great* place to see a performance.  You’re close to the action on stage… much closer than you would be at a larger venue.
 
+Being a small theater also presents some challenges, one of which is that revenue from ticket sales alone often does not cover the costs of staging a production, bringing a musical artist to town, or putting a movie you love on our big screen.  
 
-We're a small theater. Our small size is a big part of what makes The Old Theater such a *great* place to see a performance. You'll be close to the action on stage... much closer than you would be at a larger venue.
-
-The challenge of running a small non-profit theater is, revenue from ticket sales alone often won't cover the costs of staging a production, bringing a musical artist to town, or putting a movie you love on our big screen. 
-
-This is why we reach out to our community and ask for help bringing events to our stage.
+Because of this, we ask for your help bringing events to our stage.  Your support in sponsoring these acts will help ensure the future of The Old Theater and our ability to continue to provide talented artists and performers for your enjoyment.
 
 ### Sponsor a Friday Night Flick
 
