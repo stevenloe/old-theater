@@ -1,6 +1,6 @@
 ---
 title: Ghostbusters
-description:  Suscipit unde labore necessitatibus fugiat? Repellendus magnam reprehenderit, repudiandae impedit suscipit pariatur unde reiciendis aperiam dolore aliquam aut eum sapiente molestiae animi praesentium numquam, dolores quisquam exercitationem beatae nulla? Maxime.
+description:  
 shortDesc: "With Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis. Three former parapsychology professors set up shop as a unique ghost removal service."
 slug: /ghostbusters
 img: ghostbusters.jpg

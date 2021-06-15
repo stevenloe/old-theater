@@ -1,6 +1,6 @@
 ---
 title: Our History
-description:  Irure eiusmod dolore amet anim non laboris amet consectetur quis laboris consectetur. Ad dolore et pariatur ad sit ex officia ipsum proident adipisicing pariatur culpa duis. Irure nulla excepteur nulla dolore quis reprehenderit elit aliqua dolor voluptate anim do elit cupidatat.
+description:  
 shortDesc: Irure eiusmod dolore amet anim non laboris amet.
 slug: /about/history
 img: 

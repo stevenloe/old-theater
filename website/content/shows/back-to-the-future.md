@@ -1,6 +1,6 @@
 ---
 title: Back to The Future
-description:  Suscipit unde labore necessitatibus fugiat? Repellendus magnam reprehenderit, repudiandae impedit suscipit pariatur unde reiciendis aperiam dolore aliquam aut eum sapiente molestiae animi praesentium numquam, dolores quisquam exercitationem beatae nulla? Maxime.
+description:  
 shortDesc: "With Michael J. Fox, Christopher Lloyd, Lea Thompson, Crispin Glover. Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown."
 slug: /back-to-the-future
 img: backtothefuture.jpg
