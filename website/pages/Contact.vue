@@ -17,6 +17,7 @@
           method="POST"
           data-netlify="true"
           action="success-contact/"
+          netlify-honeypot="bot-field"
         >
           <p class="hidden">
             <label
@@ -70,7 +71,7 @@
               <input
                 class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
                 id="first-name"
-                name="first_name"
+                name="firstname"
                 type="text"
                 placeholder="Jane"
                 required
@@ -79,7 +80,7 @@
             <div class="w-full px-3 mb-3 md:w-1/2 md:mb-0">
               <label
                 class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase "
-                for="last-name"
+                for="lastname"
               >
                 Last Name <span class="ml-1 text-gray-600">(required)</span>
               </label>
@@ -106,6 +107,7 @@
                 class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
                 id="email"
                 type="email"
+                name="email"
                 placeholder="me@mail.com"
                 required
               />
@@ -120,6 +122,7 @@
               <input
                 class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
                 id="phone"
+                name="phone"
                 type="text"
                 placeholder="252-555-4444"
               />
@@ -161,6 +164,9 @@
     </div>
   </div>
 </template>
+
+
+
 
 <script>
 import UiHeadline from "@/components/ui/UiHeadline";
