@@ -54,8 +54,16 @@ export default {
         .limit(20)
         .search(searchQuery)
         .fetch();
+      let supports = await this.$content("supports")
+        .limit(20)
+        .search(searchQuery)
+        .fetch();
+      let news = await this.$content("news")
+        .limit(20)
+        .search(searchQuery)
+        .fetch();
 
-      this.results = [...shows, ...abouts];
+      this.results = [...shows, ...abouts, ...supports, ...news ];
     },
   },
   methods: {
