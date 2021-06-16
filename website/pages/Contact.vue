@@ -3,27 +3,28 @@
     <div
       class="w-full mx-auto md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
-    <UiHeadline level="1">Contact Us</UiHeadline>
+      <UiHeadline level="1">Contact Us</UiHeadline>
       <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
-
         <h2 class="mb-6 text-3xl font-semibold">We’d love to hear from you!</h2>
 
-
-   
-
-      <p class="pb-8">
-        To contact us, please fill out the form below. Or call The Old Theater directly at (252) 249 – 0477.
-      </p>
-
-      <form name="contact-old-theater" method="POST" data-netlify="true" action="success-contact/">
-
-        <p class="hidden">
-          <label
-            >Don’t fill out this field if you are human
-            <input class="form-field" name="bot-field"
-          /></label>
+        <p class="mb-4">
+          To contact us, please fill out the form below. Or call The Old Theater
+          directly at (252) 249 – 0477.
         </p>
-<!-- 
+
+        <form
+          name="contact-old-theater"
+          method="POST"
+          data-netlify="true"
+          action="success-contact/"
+        >
+          <p class="hidden">
+            <label
+              >Don’t fill out this field if you are human
+              <input class="form-field" name="bot-field"
+            /></label>
+          </p>
+          <!-- 
         <div class="relative block w-full mb-64 md:w-5/12">
           <select
             class="block w-full px-4 py-3 pr-8 leading-tight bg-white border border-gray-400 rounded shadow appearance-none hover:border-gray-500 focus:outline-none"
@@ -58,102 +59,104 @@
           </div>
         </div> -->
 
-        <div class="flex flex-wrap mb-6 -mx-3">
-          <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
-            <label
-              class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
-              for="grid-first-name"
-            >
-              First Name <span class="ml-1 text-gray-600">(required)</span>
-            </label>
-            <input
-              class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
-              id="first-name"
-              type="text"
-              placeholder="Jane"
-              required
-            />
+          <div class="flex flex-wrap mb-6 -mx-3">
+            <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
+              <label
+                class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase "
+                for="first-name"
+              >
+                First Name <span class="ml-1 text-gray-600">(required)</span>
+              </label>
+              <input
+                class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
+                id="first-name"
+                name="first_name"
+                type="text"
+                placeholder="Jane"
+                required
+              />
+            </div>
+            <div class="w-full px-3 mb-3 md:w-1/2 md:mb-0">
+              <label
+                class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase "
+                for="last-name"
+              >
+                Last Name <span class="ml-1 text-gray-600">(required)</span>
+              </label>
+              <input
+                class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
+                id="grid-last-name"
+                type="text"
+                name="last_name"
+                placeholder="Doe"
+                required
+              />
+            </div>
           </div>
-          <div class="w-full px-3 mb-3 md:w-1/2 md:mb-0">
-            <label
-              class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
-              for="grid-last-name"
-            >
-              Last Name <span class="ml-1 text-gray-600">(required)</span>
-            </label>
-            <input
-              class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
-              id="grid-last-name"
-              type="text"
-              placeholder="Doe"
-              required
-            />
-          </div>
-        </div>
 
-        <div class="flex flex-wrap mb-6 -mx-3">
-          <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
-            <label
-              class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
-              for="grid-first-name"
-            >
-              Email <span class="ml-1 text-gray-600">(required)</span>
-            </label>
-            <input
-              class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
-              id="first-name"
-              type="text"
-              placeholder="me@mail.com"
-              required
-            />
+          <div class="flex flex-wrap mb-6 -mx-3">
+            <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
+              <label
+                class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase "
+                for="email"
+              >
+                Email <span class="ml-1 text-gray-600">(required)</span>
+              </label>
+              <input
+                class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
+                id="email"
+                type="email"
+                placeholder="me@mail.com"
+                required
+              />
+            </div>
+            <div class="w-full px-3 mb-3 md:w-1/2 md:mb-0">
+              <label
+                class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase "
+                for="phone"
+              >
+                Phone
+              </label>
+              <input
+                class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
+                id="phone"
+                type="text"
+                placeholder="252-555-4444"
+              />
+            </div>
           </div>
-          <div class="w-full px-3 mb-3 md:w-1/2 md:mb-0">
-            <label
-              class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
-              for="grid-last-name"
-            >
-              Phone
-            </label>
-            <input
-              class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
-              id="grid-last-name"
-              type="text"
-              placeholder="252-555-4444"
-            />
-          </div>
-        </div>
 
-        <div class="flex flex-wrap mb-6 -mx-3">
-          <div class="w-full px-3">
-            <label
-              class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
-              for="grid-password"
-            >
-              Message <span class="ml-1 text-gray-600">(required)</span>
-            </label>
-            <textarea
-              id="message"
-              name="w3review"
-              rows="8"
-              cols="50"
-              class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
-              placeholder="Message"
-              required
-            >
-            </textarea>
-            <p class="ml-1 text-xs italic text-gray-600"></p>
+          <div class="flex flex-wrap mb-6 -mx-3">
+            <div class="w-full px-3">
+              <label
+                class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase "
+                for="message"
+              >
+                Message <span class="ml-1 text-gray-600">(required)</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="8"
+                cols="50"
+                class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none"
+                placeholder="Message"
+                required
+              >
+              </textarea>
+              <p class="ml-1 text-xs italic text-gray-600"></p>
+            </div>
           </div>
-        </div>
 
-        <div class="flex mb-12">
-          <button
-            class="px-4 py-2 font-bold text-white uppercase bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
-            type="submit"
-          >
-            Send
-          </button>
-        </div>
-      </form>
+          <div class="flex mb-12">
+            <button
+              class="px-4 py-2 font-bold text-white uppercase bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+              type="submit"
+            >
+              Send
+            </button>
+          </div>
+        </form>
       </article>
     </div>
   </div>
@@ -166,9 +169,9 @@ export default {
     title: "Contact",
   },
   layout: "NewLayout",
-  
+
   components: {
-    UiHeadline
-  }
+    UiHeadline,
+  },
 };
 </script>
