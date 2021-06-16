@@ -22,4 +22,6 @@ The Old Theater with The Red Rooster present *Ghostbusters*.  Admission is by do
 <div class="relative h-0 mt-4" style="padding-bottom: 56.25%">
   <iframe src="https://www.youtube.com/embed/6hDkhw5Wkas" class="absolute top-0 left-0 w-full h-full" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
 </div>
+
+With Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis. Three former parapsychology professors set up shop as a unique ghost removal service.
   

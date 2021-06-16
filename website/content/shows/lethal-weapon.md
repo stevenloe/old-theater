@@ -24,3 +24,4 @@ The Old Theater with The Red Rooster present *Lethal Weapon*.  Admission is by d
   <iframe src="https://www.youtube.com/embed/bKeW-MGu-qQ" class="absolute top-0 left-0 w-full h-full" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
 </div>
   
+With Mel Gibson, Danny Glover, Gary Busey, Mitchell Ryan. Two newly paired cops who are complete opposites must put aside their differences in order to catch a gang of drug smugglers.
