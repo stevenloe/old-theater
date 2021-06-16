@@ -45,7 +45,7 @@
             class="mb-8 prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl"
           />
 
-          <div class="mb-8 prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl">{{article.shortDesc}}</div>
+          <!-- <div class="mb-8 prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl">{{article.shortDesc}}</div> -->
 
           <a
             v-if="article.ticketURL"
