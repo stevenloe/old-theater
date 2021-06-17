@@ -13,15 +13,15 @@ site_url: https://old-theater.netlify.app
 display_url: https://old-theater.netlify.app
 
 collections:
-  - name: "" # Used in routes, e.g., /admin/collections/blog
-    label: "Shows" # Used in the UI
-    folder: "website/content/shows" # The path to the folder where the documents are stored
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "website/content/blog" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "img", widget: "image"}
-      - {label: "Youtube video id: on youtube.com in the url bar, we want just the text after the = sign. Example: https://www.youtube.com/watch?v=98OyES12wIM we want 98OyES12wIM", name: "youtubeVideo", widget: "string"} 
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
