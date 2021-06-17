@@ -24,7 +24,10 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "img", widget: "image"}
       - {label: "Image Description", name: "imgAlt", widget: "string"}
-      - label: "Show Type", name: "showtype", widget: "select", options: ["FRIDAY FLICK", "LIVE MUSIC", "LIVE THEATER"]
+      - label: "Align Content"
+        name: "align"
+        widget: "select"
+        options: ["left", "center", "right"]
       - {label: "Price - Example: 12.50 or 'Donation' for an event that has a voluntary donation", name: "formattedPrice", widget: "string"}
       - {label: "Youtube video id: on youtube.com in the url bar, we want just the text after the = sign. Example: for this youtube page: https://www.youtube.com/watch?v=98OyES12wIM we want 98OyES12wIM", name: "youtubeVideo", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
