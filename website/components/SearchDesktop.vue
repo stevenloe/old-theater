@@ -10,13 +10,13 @@
     />
     <ul
       v-if="results.length"
-      class="absolute z-40 flex-1 w-auto py-4 overflow-hidden bg-gray-200 top-40 dark:bg-gray-900"
+      class="absolute z-40 flex-1 w-auto py-4 overflow-scroll bg-gray-200 top-40 dark:bg-gray-900" 
     >
       <li v-for="result of results" :key="result.slug">
         <NuxtLink
           :to="result.slug"
           @click.native="clearSearch"
-          class="flex items-center px-8 py-2 mx-2 text-2xl leading-8 text-black transition duration-150 ease-in-out rounded-lg hover:bg-gray-400 "
+          class="flex items-center px-8 py-2 mx-2 text-lg leading-6 text-black transition duration-150 ease-in-out rounded-lg hover:bg-gray-400 "
         >
           {{ result.title }}
         </NuxtLink>
@@ -71,9 +71,9 @@ export default {
       this.searchQuery = "";
       this.isOpen = false;
     },
-    onScroll() {
-      this.clearSearch();
-    },
+    // onScroll() {
+    //   this.clearSearch();
+    // },
   },
   created() {
     this.$bus.$on("toggle-search", (e) => {
