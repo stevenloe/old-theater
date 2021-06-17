@@ -39,20 +39,15 @@
             </div>
           </div>
           
-
           <nuxt-content
             :document="article"
             class="mb-8 prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl"
           />
 
-          <p class="bg-red-400">article.youtubeVideo is: {{ article.youtubeVideo }}</p>
-
           <client-only>
-            <p class="bg-blue-400">article.youtubeVideo is: {{ article.youtubeVideo }}</p>
             <YoutubeWidget v-if="article.youtubeVideo" :videoUrl="article.youtubeVideo"/>
           </client-only>
             
-        
           <a
             v-if="article.ticketURL"
             :href="article.ticketURL"
