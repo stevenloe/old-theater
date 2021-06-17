@@ -37,16 +37,22 @@
                 <span class="text-gray-600">LOCATION: </span>{{ article.location }}
               </div>
             </div>
-
           </div>
+          
 
           <nuxt-content
             :document="article"
             class="mb-8 prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl"
           />
 
-          <!-- <div class="mb-8 prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl">{{article.shortDesc}}</div> -->
+          <p class="bg-red-400">article.youtubeVideo is: {{ article.youtubeVideo }}</p>
 
+          <client-only>
+            <p class="bg-blue-400">article.youtubeVideo is: {{ article.youtubeVideo }}</p>
+            <YoutubeWidget v-if="article.youtubeVideo" :videoUrl="article.youtubeVideo"/>
+          </client-only>
+            
+        
           <a
             v-if="article.ticketURL"
             :href="article.ticketURL"
@@ -63,7 +69,9 @@
 <script>
 import NavBar from "@/components/NavBar";
 import UiHeadline from "@/components/ui/UiHeadline";
+import YoutubeWidget from "@/components/YoutubeWidget";
 export default {
+
   async asyncData({ $content, params }) {
     const article = await $content("shows", params.slug).fetch();
     return { article };
@@ -72,7 +80,8 @@ export default {
   
   components: {
     NavBar,
-    UiHeadline
+    UiHeadline,
+    YoutubeWidget
   }
 };
 </script>
