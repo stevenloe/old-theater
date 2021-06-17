@@ -17,13 +17,11 @@ collections:
     label: "Shows" # Used in the UI
     folder: "website/content/shows" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "img", widget: "image"}
-      - {label: "Image Description", name: "imgAlt", widget: "string"}
-      - {label: "Price - Example: 12.50 or 'Donation' for an event that has a voluntary donation", name: "formattedPrice", widget: "string"}
-      - {label: "Youtube video id: on youtube.com in the url bar, we want just the text after the = sign. Example: for this youtube page: https://www.youtube.com/watch?v=98OyES12wIM we want 98OyES12wIM", name: "youtubeVideo", widget: "string"}
+      - {label: "Youtube video id: on youtube.com in the url bar, we want just the text after the = sign. Example: https://www.youtube.com/watch?v=98OyES12wIM we want 98OyES12wIM", name: "youtubeVideo", widget: "string"} 
       - {label: "Body", name: "body", widget: "markdown"}
