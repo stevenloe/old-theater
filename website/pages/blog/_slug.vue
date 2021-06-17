@@ -1,11 +1,13 @@
 <template>
-  <div>
+  <div class="m-8">
   This is slug
     <h2>{{ post.title }}</h2>
     <img :src="post.thumbnail" alt="">
     <p>
-
     image is {{post.thumbnail}}
+    </p>
+    <p>
+    date is {{post.date}}
     </p>
     <nuxt-content :document="post" />
   </div>
