@@ -24,7 +24,7 @@ When you shop at smile.amazon.com, Amazon will donate 0.5% of your purchase doll
 
 ### How to set up your smile.amazon account to benefit The Old Theater: 
 
-
+ 
 ##### 1. Go to [https://smile.amazon.com](https://smile.amazon.com)
 ##### 2. Sign into your Amazon account
 ##### 3. Under the heading: *"Or pick your own charitable organization"* In the search box, type "Old Theater Corporation". 
