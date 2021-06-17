@@ -2,12 +2,22 @@
   <div>
   This is slug
     <h2>{{ post.title }}</h2>
+    <img :src="post.thumbnail" alt="">
+    <p>
+
+    image is {{post.thumbnail}}
+    </p>
     <nuxt-content :document="post" />
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      post: {}
+    }
+  },
   async asyncData({ $content, params, error }) {
     let post;
     try {

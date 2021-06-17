@@ -7,7 +7,7 @@ backend:
 
 
 media_folder: website/static/images
-public_folder: /static/images
+public_folder: /images
 
 site_url: https://old-theater.netlify.app
 display_url: https://old-theater.netlify.app
