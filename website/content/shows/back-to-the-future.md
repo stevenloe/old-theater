@@ -13,7 +13,7 @@ eventTime: "2021-07-17T23:30:00.2Z"
 showDate: "July, 17 2021"
 showTime: "8:30 PM"
 
-youtubeVideo: qvsgGtivCgs
+youtubeVideo: 
 
 
 formattedPrice: Donation
