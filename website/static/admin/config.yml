@@ -26,7 +26,12 @@ collections:
       - {label: 'Show Time', name: 'showTime', widget: 'string' }
       - {label: 'Price', name: 'formattedPrice', widget: 'string' }
       - {label: 'Location', name: 'location', widget: 'string' }
-      - {label: 'Show Type', name: 'showtype', widget: 'string' }
+      - {
+          label: 'Show Type',
+          name: 'showtype',
+          widget: 'select',
+          options: [{ label: 'FRIDAY FLICK', value: 'FRIDAY FLICK' }, { label: 'LIVE MUSIC', value: 'LIVE MUSIC' }, { label: 'LIVE THEATER', value: 'LIVE THEATER' }],
+        }
       - {label: 'Short Description', name: 'shortDesc', widget: 'text' }
       - {label: 'Ticket Url', name: 'ticketUrl', widget: 'string', required: false  }
       - {label: 'Featured Image', name: 'img', widget: 'image'}
