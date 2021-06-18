@@ -1,0 +1,14 @@
+---
+title: test 5
+date: 2021-06-18T22:38:59.534Z
+showDate: June 12
+showTime: 8:30
+formattedPrice: DONATION
+location: RED ROOSTER
+showtype: FRIDAY FLICK
+shortDesc: some test
+img: goldfinger.jpg
+imgAlt: fooos
+youtubeVideo: "123"
+---
+hi there this is text
