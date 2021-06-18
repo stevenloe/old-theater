@@ -21,7 +21,7 @@ export default {
 
       let color = ''
       switch (this.showtype.toUpperCase()) {
-        case 'FRIDAY FLICK' :
+        case 'FLICK' :
            color = " bg-pink-300 "
           break;
         case 'LIVE MUSIC' :

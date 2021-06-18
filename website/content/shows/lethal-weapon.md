@@ -18,7 +18,7 @@ youtubeVideo: bKeW-MGu-qQ
 formattedPrice: Donation
 location: The Red Rooster
 ticketURL: 
-showtype: "FRIDAY FLICK"
+showtype: "FLICK"
 ---
 
 The Old Theater with The Red Rooster present *Lethal Weapon*.  Admission is by donation to benefit the Old Theater.

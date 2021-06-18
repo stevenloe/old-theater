@@ -30,7 +30,7 @@ collections:
           label: 'Show Type',
           name: 'showtype',
           widget: 'select',
-          options: [{ label: 'FRIDAY FLICK', value: 'FRIDAY FLICK' }, { label: 'LIVE MUSIC', value: 'LIVE MUSIC' }, { label: 'LIVE THEATER', value: 'LIVE THEATER' }],
+          options: [{ label: 'FLICK', value: 'FLICK' }, { label: 'LIVE MUSIC', value: 'LIVE MUSIC' }, { label: 'LIVE THEATER', value: 'LIVE THEATER' }],
         }
       - {label: 'Short Description', name: 'shortDesc', widget: 'text' }
       - {label: 'Ticket Url', name: 'ticketUrl', widget: 'string', required: false  }

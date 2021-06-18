@@ -60,21 +60,21 @@ export default {
           eventsToday: [
             {
               date: "2021-06-19",
-              type: "FRIDAY FLICK",
+              type: "FLICK",
               name: "Ghostbusters",
               time: "8:30 PM",
-              url: "/ghostbusters",
+              url: "/shows/ghostbusters",
             },
           ],
         },
         "2021-07-21": {
           eventsToday: [
             {
-              date: "2021-07-21",
-              type: "FRIDAY FLICK",
+              date: "2021-07-17",
+              type: "FLICK",
               name: "Back to The Future",
               time: "8:30 PM",
-              url: "/back-to-the-future",
+              url: "/shows/back-to-the-future",
             },
           ],
         },
@@ -82,10 +82,10 @@ export default {
           eventsToday: [
             {
               date: "2021-08-21",
-              type: "LIVE THEATER",
+              type: "FLICK",
               name: "Lethal Weapon",
               time: "8:00 PM",
-              url: "/lethal-weapon",
+              url: "/shows/lethal-weapon",
             },
           ],
         },

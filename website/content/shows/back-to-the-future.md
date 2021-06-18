@@ -19,7 +19,7 @@ youtubeVideo: qvsgGtivCgs
 formattedPrice: Donation
 location: The Red Rooster
 ticketURL: 
-showtype: "FRIDAY FLICK"
+showtype: "FLICK"
 ---
 
 The Old Theater with The Red Rooster present *Back to The Future*.  Admission is by donation to benefit the Old Theater.
