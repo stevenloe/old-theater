@@ -1,5 +1,6 @@
 ---
 title: Ghostbusters
+path: "/shows/"
 description:  
 shortDesc: "With Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis. Three former parapsychology professors set up shop as a unique ghost removal service."
 slug: /ghostbusters

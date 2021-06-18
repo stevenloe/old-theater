@@ -57,7 +57,7 @@
               Buy tickets</a
             >
             <nuxt-link
-              :to="show.slug"
+              :to="show.path"
               class="w-full px-4 py-2 mb-3 font-bold tracking-wide text-center text-white uppercase bg-gray-600 rounded-lg shadow-lg md:block hover:bg-gray-700"
             >
               Learn More</nuxt-link
@@ -97,7 +97,6 @@ export default {
       ],
     };
   },
-
 
   async asyncData ({ $content, params }) {
   const [shows, news, alerts] = await Promise.all([ 
