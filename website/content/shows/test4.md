@@ -5,7 +5,7 @@ showDate: June 12
 showTime: 8:30
 formattedPrice: DONATION
 location: RED ROOSTER
-showtype: FLICK
+showtype: FRIDAY FLICK
 shortDesc: some test
 img: goldfinger.jpg
 imgAlt: fooos
