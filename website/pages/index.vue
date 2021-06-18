@@ -11,7 +11,7 @@
         <div
           class="relative overflow-hidden rounded-lg md:w-7/12 md:rounded-r-none text"
         >
-          <nuxt-link :to="show.slug">
+          <nuxt-link :to="show.path">
             <img
               :src="require(`~/assets/img_new/processed/${show.img}`)"
               :alt="show.imgAlt"
