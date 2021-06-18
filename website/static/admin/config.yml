@@ -21,7 +21,14 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog'}
       - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Publish Date', name: 'date', widget: 'datetime'}
+      - {label: 'Event Date / Time', name: 'date', widget: 'datetime'}
+      - {label: 'Show Date', name: 'showDate', widget: 'string' }
+      - {label: 'Show Time', name: 'showTime', widget: 'string' }
+      - {label: 'Price', name: 'formattedPrice', widget: 'string' }
+      - {label: 'Location', name: 'location', widget: 'string' }
+      - {label: 'Show Type', name: 'showtype', widget: 'string' }
+      - {label: 'Short Description', name: 'shortDesc', widget: 'text' }
+      - {label: 'Ticket Url', name: 'ticketUrl', widget: 'string' }
       - {label: 'Featured Image', name: 'img', widget: 'image'}
       - {label: 'Image Description', name: 'imgAlt', widget: 'string' }
       - {label: 'YouTube Video Id', name: 'youtubeVideo', widget: 'string' }
