@@ -7,13 +7,13 @@ showTime: 8:30PM
 formattedPrice: DONATION
 location: The Red Rooster
 showtype: FRIDAY FLICK
-shortDesc: James Bond (Sir Sean Connery) is back and his next mission takes him
-  to Fort Knox, where Auric Goldfinger (Gert Fröbe) and his henchman are
+shortDesc: "\"James Bond (Sir Sean Connery) is back and his next mission takes
+  him to Fort Knox, where Auric Goldfinger (Gert Fröbe) and his henchman are
   planning to raid Fort Knox and obliterate the world economy. To save the world
   once again, Bond will need to become friends with Goldfinger, dodge killer
   hats, and avoid Goldfinger's personal pilot, the sexy Pussy Galore (Honor
   Blackman). She might not have feelings for Bond, but will 007 help her change
-  her mind?
+  her mind?\""
 ticketUrl: foo
 img: goldfinger.jpg
 imgAlt: Golfinger movie poster art
