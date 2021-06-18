@@ -10,7 +10,7 @@ imgAlt: Old Theater presents *Back to The Future* at the Red Rooster
 
 eventTime: "2021-07-17T23:30:00.2Z"
 
-showDate: "July, 17 2021"
+showDate: "SATURDAY July, 17 2021"
 showTime: "8:30 PM"
 
 youtubeVideo: qvsgGtivCgs

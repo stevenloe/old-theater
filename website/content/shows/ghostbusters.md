@@ -9,7 +9,7 @@ imgAlt: Old Theater presents *Ghostbusters* at the Red Rooster
 
 eventTime: "2021-06-19T23:30:00.2Z"
 
-showDate: "June, 19 2021"
+showDate: "SATURDAY June, 19 2021"
 showTime: "8:30 PM"
 
 youtubeVideo: 6hDkhw5Wkas
