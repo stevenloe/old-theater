@@ -26,7 +26,7 @@
 
 <h2 class="mb-6 text-3xl font-semibold">We’d love to hear from you!</h2>
 <p class="mb-6"> To contact us, please fill out the form below. Or call The Old Theater directly at (252) 249 – 0477.</p>
-<form name="contact-old-theater" method="POST" data-netlify="true" action="success-contact/" netlify-honeypot="bot-field" >
+<form name="contact-old-theater" method="POST" data-netlify="true" action="/success-contact" netlify-honeypot="bot-field" >
 
 <p class="hidden"> <label >Don’t fill out this field if you are human <input class="form-field" name="bot-field"/></label></p>
 <div class="flex flex-wrap mb-6 -mx-3"><div class="w-full px-3 mb-6 md:mb-0"><label class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase" for="subject">Subject<span class="ml-1 text-gray-600">(required)</span></label>
