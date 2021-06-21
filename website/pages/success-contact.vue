@@ -7,7 +7,7 @@
     >
       <UiHeadline level="1">Thank you!</UiHeadline>
       <p class="pb-8 text-lg">
-        We've received your message. We'll get back to you soon.
+        Thank you for contacting The Old Theater. We'll get back to you soon.
       </p>
       <p class="pb-64 text-lg">
         Need to reach someone quickly? Call The Old Theater at (252) 249-0477.
