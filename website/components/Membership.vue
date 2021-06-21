@@ -23,7 +23,7 @@ export default {
         category: "Membership",
         location: "The Old Theater",
         description:
-          "Enjoy the benefits of membership while providing the support that enables us to continue creating magical experiences both in front of and behind the curtains. We thank our generous donors who help the Old Theater bring outstanding entertainment to our community.",
+          "Enjoy the benefits of membership while providing the support that enables us to continue creating magical experiences both in front of and behind the curtains. We thank our generous donors who help The Old Theater bring outstanding entertainment to our community.",
         imageUrl: "cast-edit.jpg",
         imageAlt: "Membership Photo",
         cta: "Join",
