@@ -63,7 +63,7 @@ export default {
               type: "FLICK",
               name: "Ghostbusters",
               time: "8:30 PM",
-              url: "/shows/ghostbusters",
+              url: "",
             },
           ],
         },

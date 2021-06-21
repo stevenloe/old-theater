@@ -18,6 +18,7 @@ export default {
 
   computed: {
     colorClass() {
+      console.log("this.showtype", this.showtype);
 
       let color = ''
       switch (this.showtype.toUpperCase()) {
@@ -26,6 +27,9 @@ export default {
           break;
         case 'FRIDAY FLICK' :
            color = " bg-pink-300 "
+          break;
+        case 'SATURDAY FLICK' :
+           color = " bg-pink-200 "
           break;
         case 'LIVE MUSIC' :
            color = " bg-green-300 "
