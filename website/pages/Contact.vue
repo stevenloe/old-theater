@@ -3,44 +3,50 @@
 <div class="w-full mx-auto md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl" >
 <UiHeadline level="1">Contact Us</UiHeadline>
 <article class="p-6 mt-6 bg-white rounded shadow lg:p-8"> 
+
+  <div class="flex flex-wrap ">
+  <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
+  <h2 class="text-2xl font-semibold">Our Physical Address</h2>
+    <address class="mb-8 font-serif not-italic md:text-xl xl:text-xl">
+      The Old Theater<br />
+      609 Broad Street<br />
+      Oriental, NC 28571<br />
+      (252) 249 &ndash; 0477<br />
+    </address></div>
+  <div class="w-full px-3 mb-6 md:w-1/2">
+  <h2 class="text-2xl font-semibold">Our Mailing Address</h2>
+    <address
+      class="mb-8 font-serif not-italic md:text-xl xl:text-xl"
+    >
+      The Old Theater<br />
+      P.O. Box 521<br />
+      Oriental, NC 28571<br />
+    </address></div>
+</div>
+
 <h2 class="mb-6 text-3xl font-semibold">We’d love to hear from you!</h2>
-<p class="mb-4"> To contact us, please fill out the form below. Or call The Old Theater directly at (252) 249 – 0477.</p>
+<p class="mb-6"> To contact us, please fill out the form below. Or call The Old Theater directly at (252) 249 – 0477.</p>
 <form name="contact-old-theater" method="POST" data-netlify="true" action="success-contact/" netlify-honeypot="bot-field" >
+
 <p class="hidden"> <label >Don’t fill out this field if you are human <input class="form-field" name="bot-field"/></label></p>
-          <!-- 
-        <div class="relative block w-full mb-64 md:w-5/12">
-          <select
-            class="block w-full px-4 py-3 pr-8 leading-tight bg-white border border-gray-400 rounded shadow appearance-none hover:border-gray-500 focus:outline-none"
-            required
-          >
-            <option value="" selected disabled hidden>
-              Select a Recipient
-            </option>
-            <option value="1">General</option>
-            <option value="1">Box Office</option>
-            <option value="1">Facilities</option>
-            <option value="1">Membership</option>
-            <option value="1">Rent the Theater</option>
-            <option value="1">Sponsorship</option>
-            <option value="1">Treasurer</option>
-            <option value="1">Technical Services</option>
-            <option value="1">Volunteering</option>
-            <option value="1">Website</option>
-          </select>
-          <div
-            class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 bg-gray-200 border border-gray-600 rounded-r pointer-events-none"
-          >
-            <svg
-              class="w-4 h-4 fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-              />
-            </svg>
-          </div>
-        </div> -->
+<div class="flex flex-wrap mb-6 -mx-3"><div class="w-full px-3 mb-6 md:mb-0"><label class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase" for="subject">Subject<span class="ml-1 text-gray-600">(required)</span></label>
+
+<select
+  class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded focus:bg-white focus:border-gray-900 focus:outline-none" required >
+  <option name="subject" value="" >Please select a subject</option>
+  <option value="General">General</option>
+  <option value="Box Office">Box Office</option>
+  <option value="Facilities">Facilities</option>
+  <option value="Membership">Membership</option>
+  <option value="Rent the Theater">Rent the Theater</option>
+  <option value="Sponsor a Show">Sponsor a Show</option>
+  <option value="Treasurer">Treasurer</option>
+  <option value="Technical Services">Technical Services</option>
+  <option value="Membership / Volunteering">Membership / Volunteering</option>
+  <option value="Website">Website</option>
+  <option value="Other">Other</option>
+</select>
+</div></div>        
 <div class="flex flex-wrap mb-6 -mx-3"><div class="w-full px-3 mb-6 md:w-1/2 md:mb-0"><label class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase" for="first-name">First Name<span class="ml-1 text-gray-600">(required)</span></label><input class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none" id="first-name" name="firstname" type="text" placeholder="Jane" required /></div>
 <div class="w-full px-3 mb-3 md:w-1/2 md:mb-0"><label class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase" for="lastname">Last Name <span class="ml-1 text-gray-600">(required)</span></label><input class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none" id="grid-last-name"type="text" name="lastname" placeholder="Doe" required /></div></div>
 <div class="flex flex-wrap mb-6 -mx-3"><div class="w-full px-3 mb-6 md:w-1/2 md:mb-0"><label class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase" for="email">Email<span class="ml-1 text-gray-600">(required)</span></label><input class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded appearance-none focus:bg-white focus:border-gray-900 focus:outline-none" id="email" type="email" name="email" placeholder="me@mail.com" required /></div>
