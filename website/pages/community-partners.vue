@@ -84,9 +84,9 @@
         </p>
 
         <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
-          Besides being great fun, children's theatre has many benefits.
+          Besides being great fun, children's theater has many benefits.
           Activities like improv and drama performance can boost self-esteem and
-          confidence. The theatre is a place where inner silliness and
+          confidence. The theater is a place where inner silliness and
           creativity are embraced. When children learn to be more confident in
           themselves, it translates to other aspects of their lives &mdash;
           school, communication, and social situations.

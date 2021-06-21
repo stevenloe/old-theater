@@ -17,7 +17,7 @@
               alt=""
             />
             <p class="p-1 mb-3 text-sm italic text-gray-700 bg-gray-200">
-              Community theatre in Oriental is made possible by people like you.
+              Community theater in Oriental is made possible by people like you.
             </p>
           </div>
           <p class="my-4 text-gray-800">
@@ -194,7 +194,7 @@
             Our success - past, present, and future - is dependent on the
             dedication of our volunteers whose time, talents and spirit continue
             to bring the quality entertainment that The Old Theater prides
-            itself on. Many faces truly bring our theatre to life - booking
+            itself on. Many faces truly bring our theater to life - booking
             touring acts, selling tickets, planning fundraisers, planning shows
             & rehearsals, running sound &amp; lights, serving popcorn, sweeping
             floors and shining on stage. We welcome volunteers from throughout
