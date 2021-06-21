@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto">
     <!-- <NavBar class="sm:mb-8" /> -->
-    <article class="w-full mx-auto md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl">
+    <article class="w-full mx-auto content-column lg:text-xl xl:text-2xl">
       <div v-if="alert.img" class="max-w-6xl mx-auto mb-6 overflow-hidden shadow-lg sm:rounded-lg sm:ml-8 sm:mr-8">
         <img :src="require(`~/assets/img/${alert.img}`)" :alt="alert.imgAlt" />
       </div>

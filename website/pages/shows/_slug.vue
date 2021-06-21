@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto">
     <article
-      class="w-full mx-auto content-column md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
+      class="w-full mx-auto content-column lg:text-xl xl:text-2xl"
     >
       <div class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg">
         <div class="overflow-hidden rounded">
@@ -11,7 +11,7 @@
           />
         </div>
         <div
-          class="pl-8 pr-8 mx-auto sm:max-w-lg md:max-w-xl md:text-4xl lg:max-w-3xl xl:max-w-4xl"
+          class="pl-8 pr-8 mx-auto"
         >
           <UiHeadline class="mt-4"  level="1">{{article.title}}</UiHeadline>
           <div class="flex">
@@ -41,7 +41,7 @@
           
           <nuxt-content
             :document="article"
-            class="mb-8 prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl"
+            class="mb-8 prose md:prose-lg lg:prose-xl lg:prose-2xl"
           />
 
           <client-only>

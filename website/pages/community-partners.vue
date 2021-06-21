@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto">
     <div
-      class="w-full mx-auto content-column md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
+      class="w-full mx-auto content-column lg:text-xl xl:text-2xl"
     >
       <div class="mb-8">
         <UiHeadline level="1"

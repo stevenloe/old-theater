@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto">
     <article
-      class="w-full mx-auto md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
+      class="w-full mx-auto content-column lg:text-xl xl:text-2xl"
     >
       <div class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg">
         <div class="text-sm font-semibold text-gray-700 uppercase">
@@ -32,7 +32,6 @@ dayjs.extend(localizedFormat);
 export default {
   async asyncData({ $content, params }) {
     const post = await $content("news", params.slug).fetch();
-    console.log("post", post, "PARAMS", params);
 
     return { post, params };
   },

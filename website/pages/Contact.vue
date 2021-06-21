@@ -1,6 +1,6 @@
 <template>
 <div class="mx-auto">
-<div class="w-full mx-auto md:w-3/4 lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl" >
+<div class="w-full mx-auto content-column lg:text-xl xl:text-2xl" >
 <UiHeadline level="1">Contact Us</UiHeadline>
 <article class="p-6 mt-6 bg-white rounded shadow lg:p-8"> 
 
