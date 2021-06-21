@@ -42,11 +42,10 @@
               class="w-full px-4 pt-2 pb-4 md:flex md:p-0"
             >
               <nuxt-link
-                to="/community-education"
+                to="/community-partners"
                 @click.native="onNavItemClick"
                 :class="itemStyle"
-                >Community<span class="tracking-tighter"> &amp; </span
-                >Education</nuxt-link
+                >Community Partners</nuxt-link
               >
 
               <SubMenu

@@ -67,7 +67,7 @@
       </div>
 
       <NewsWidget  :news="news"/>
-      <Education />
+      <CommunityPartners />
       <Membership />
       <Sponsorship />
 
@@ -82,7 +82,7 @@
 
 <script>
 import AlertBox from "@/components/AlertBox";
-import Education from "@/components/Education";
+import CommunityPartners from "@/components/CommunityPartners";
 import Membership from "@/components/Membership";
 import MemberCarousel from "@/components/MemberCarousel";
 import Sponsorship from "@/components/Sponsorship";
@@ -115,7 +115,7 @@ export default {
   layout: "NewLayout",
   components: {
     AlertBox,
-    Education,
+    CommunityPartners,
     Membership,
     MemberCarousel,
     Sponsorship,
