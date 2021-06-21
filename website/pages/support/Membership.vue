@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto">
     <div
-      class="w-full max-w-sm lg:text-xl xl:text-2xl"
+      class="w-full mx-auto content-column lg:text-xl xl:text-2xl"
     >
       <UiHeadline id="level-1-headline" level="1" > Membership </UiHeadline>
       <UiHeadline id="level-1-headline" level="3" > </UiHeadline>
