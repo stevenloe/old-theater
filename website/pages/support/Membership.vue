@@ -53,7 +53,7 @@
             year.
           </p>
           <p>
-            To join now, download the <a href ="/pdf/2020_membership_form.pdf" >Old Theater Membership Form</a>
+            To join now, download the <a href ="/pdf/2021_membership_form.pdf" >Old Theater Membership Form</a>
           </p>
           <p>
             For more information send an email to
