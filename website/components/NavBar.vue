@@ -42,6 +42,12 @@
               class="w-full px-4 pt-2 pb-4 md:flex md:p-0"
             >
               <nuxt-link
+                to="/"
+                @click.native="onNavItemClick"
+                :class="itemStyle"
+                >Home</nuxt-link
+              >
+              <nuxt-link
                 to="/community-partners"
                 @click.native="onNavItemClick"
                 :class="itemStyle"
