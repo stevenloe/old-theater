@@ -52,7 +52,7 @@
               alt=""
             />
             <p class="p-1 mb-3 text-sm italic text-blue">
-              The cast of Villians with Horses.
+              Villians with Horses - How The West Was Dun 
             </p>
           </div>
 
@@ -72,7 +72,7 @@
               <img
               src="/images/volunteer/tickets.jpg"
                 class="w-full"
-                alt="The box office a the Old Theater"
+                alt="Annual member meeting at The Old Theater"
                 loading="lazy"
               />
               <p class="p-1 mb-3 text-sm italic text-blue">
@@ -113,7 +113,7 @@
                 loading="lazy"
               />
               <p class="p-1 mb-3 text-sm italic text-blue">
-              Cast members: Villians with Horses
+              How The West Was Dun 
             </p>
             </div>
           </div>
@@ -127,10 +127,10 @@
               src="/images/volunteer/community_youth_performance.jpg"
                 class="w-full"
                 loading="lazy"
-                alt="Community Youth Performance"
+                alt="Children's Theater Workshop"
               />
               <p class="p-1 mb-3 text-sm italic text-blue">
-                Community Youth Performance
+                Children's Theater Workshop
             </p>
             </div>
             <div class="w-1/2 ">
@@ -154,7 +154,7 @@
               alt=""
             />
             <p class="p-1 mb-3 text-sm italic text-blue">
-              Production of...
+              Production of Radio Show
             </p>
         </div>
       </div> 
@@ -169,7 +169,7 @@
                 alt="Storytelling Tom at the Old Theater, Oriental, NC"
               />
               <p class="p-1 mb-3 text-sm italic text-blue">
-              Storytelling  Tom 
+              Storytelling Tom 
             </p>
             </div>
             <div class="w-1/2 ">
@@ -206,7 +206,7 @@
           <div class="w-full">
             <img src="/images/volunteer/the_indianians.jpg" alt="" />
             <p class="p-1 mb-3 text-sm italic text-blue">
-              Cast of ...
+              Cast of How The West Was Dun 
             </p>
           </div>
         </div>
