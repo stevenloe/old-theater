@@ -27,7 +27,9 @@ Bring a chair or park your golf cart.
 50/50 raffle to benefit the Old Theater  
 Admission by donation.  Includes **FREE** popcorn.  
  
-The Silos has their regular menu available for take-out via Chow Now app. Better yet: Dinner and Movie - Have a sit down dinner at The Silos, then walk outside and watch a movie under the stars at the Red Rooster. Cash bar available with beer, wine, soft drinks. No outside food or beverages please, by order of the state.
+**Dinner and Movie**: Have a sit down dinner at The Silos, then walk outside and watch a movie under the stars at the Red Rooster. Cash bar available with beer, wine, soft drinks. No outside food or beverages please, by order of the state.
+
+The Silos also has their regular menu available for take-out via Chow Now app. 
  
 All proceeds from ticket donations and the 50/50 raffle will go to benefit the Old Theater, a registered 501(c)(3) non-profit organization, located at 609 Broad Street in Oriental, NC.
 
