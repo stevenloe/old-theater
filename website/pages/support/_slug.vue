@@ -1,8 +1,6 @@
 <template>
-  <div class="mx-auto">
-    <div
-      class="w-full mx-auto content-column lg:text-xl xl:text-2xl"
-    >
+   <div>
+    <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
     <UiHeadline id="level-1-headline" level="1">{{content.title}}</UiHeadline>
       <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
         <nuxt-content

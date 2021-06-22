@@ -1,8 +1,6 @@
 <template>
-  <div class="mx-auto">
-    <div
-      class="w-full mx-auto content-column lg:text-xl xl:text-2xl"
-    >
+  <div>
+    <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
       <UiHeadline level="1" class="mb-6">Get Involved</UiHeadline>
       <div class="p-8 bg-white rounded shadow-lg">
         <div class="mb-4">

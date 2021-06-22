@@ -1,7 +1,6 @@
 <template>
   <div>
     <NavBar />
-
     <div
       class="container max-w-3xl pt-16 pl-8 pr-8 md:mx-auto md:pl-0 md:pr-0 md:pt-24"
     >

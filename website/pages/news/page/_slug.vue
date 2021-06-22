@@ -1,6 +1,7 @@
 <template>
-  <post>
-    <header class="text-white mx-auto text-xs">
+  <div>
+    <article class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
+    <header class="mx-auto text-xs text-white">
       <div class="p-5 bg-indigo-500 md:inline-block">
         <p>
           <span class="uppercase">Published:</span>
@@ -21,13 +22,14 @@
         </div>
       </div>
     </header>
-    <div class="prose prose-lg text-gray-500 bg-white p-5 rounded mx-auto">
+    <div class="p-5 mx-auto prose prose-lg text-gray-500 bg-white rounded">
       <nuxt-content :document="post" />
     </div>
     <footer class="py-5 mt-5">
       <prev-next :prev="prev" :next="next" />
     </footer>
-  </post>
+    </article>
+  </div>
 </template>
 
 
