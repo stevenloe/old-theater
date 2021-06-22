@@ -5,7 +5,7 @@
 Volunteer Form 
 </UiHeadline>
 <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
-<form name="volunteer-form" method="POST" data-netlify="true" action="success-contact/ "netlify-honeypot="bot-field">
+<form name="volunteer-form" id="volunteer-form" method="POST" data-netlify="true" action="success-contact/" netlify-honeypot="bot-field">
 <p class="hidden">
 <label>
 Don’t fill out this field if you are human<input class="form-field" name="bot-field" />
