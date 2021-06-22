@@ -11,11 +11,11 @@ eventTime: '2021-02-05T21:09:38.963Z'
 
 <figure>
   <img
-    src="/images/volunteer/the_indianians.jpg"
-    alt="Drawing of The Old Theater by Betty Brown"
+    src="/images/support/nunsense_crop.jpg"
+    alt="Production of Nunsense at The Old Theater"
   />
   <figcaption class="italic">
-     Production of The Indianians at the Old Theater
+     Production of Nunsense at The Old Theater
   </figcaption>
 </figure>
 
@@ -45,12 +45,12 @@ We will at times reach out to our community to ask for help bringing events to o
 
 <figure>
   <img
-    src="/images/support/quebe_sisters3.jpg"
-    alt="The Quebe Sisters at The Old Theater"
+    src="/images/support/henri_herbert_crop.jpg"
+    alt="Henri Herbert at The Old Theater"
     loading="lazy"
   />
   <figcaption class="italic">
-     The Quebe Sisters at The Old Theater
+     Herri Herbert at The Old Theater
   </figcaption>
 </figure>
 
