@@ -21,5 +21,9 @@ export default {
     NavBar,
     Footer,
   },
+  mounted() {
+    console.log("MOUNTED");
+    window.scrollTo(0, 0);
+  },
 };
 </script>
