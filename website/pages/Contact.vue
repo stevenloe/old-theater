@@ -56,7 +56,7 @@
                 class="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-800 rounded focus:bg-white focus:border-gray-900 focus:outline-none"
                 required
               >
-                <option name="subject" value="">Please select a subject</option>
+                <option value="">Please select a subject</option>
                 <option value="General">General</option>
                 <option value="Box Office">Box Office</option>
                 <option value="Facilities">Facilities</option>
