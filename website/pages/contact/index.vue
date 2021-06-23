@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
-      <!-- <UiHeadline level="1">Contact Us.</UiHeadline> -->
+      <h1 class="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">Contact Us</h1>
       <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
         <div class="flex flex-wrap">
           <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">

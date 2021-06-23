@@ -4,12 +4,12 @@
       class="w-full mx-auto content-column lg:text-xl xl:text-2xl"
     >
       <UiHeadline  level="1">Membership</UiHeadline>
+
+      <h1 class="text-xl font-semibold">Membership</h1>
       
 
       <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
-        <UiHeadline id="level-1-headline" level="3"
-          >Join The Old Theater!</UiHeadline
-        >
+       <h2 class="text-lg text-semibold">Join The Old Theater!</h2>
 
         <p class="block">
           Aute reprehenderit ipsum est duis laboris ullamco qui. Deserunt ex
@@ -26,10 +26,9 @@
         </p>
 
         <form
-          name="contact-old-theater"
+          name="membership-form"
           method="POST"
           data-netlify="true"
-          action="success-contact/"
         >
           <div class="mr-4">
             <h2 class="text-3xl font-bold leading-none text-right">
@@ -407,7 +406,7 @@
 </template>
 
 <script>
-import UiHeadline from "@/components/ui/UiHeadline";
+
 export default {
   metaInfo: {
     title: "Contact",
@@ -419,7 +418,7 @@ export default {
   },
   layout: "NewLayout",
   components: {
-    UiHeadline
+ 
   }
 };
 </script>

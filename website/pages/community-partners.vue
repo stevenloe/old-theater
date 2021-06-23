@@ -5,7 +5,7 @@
     >
       <div class="mb-8">
         <UiHeadline level="1"
-          >Community &amp; Education</UiHeadline
+          >Community Partners</UiHeadline
         >
         <h1 class="mt-4 mb-4 text-4xl font-extrabold"></h1>
 
@@ -24,8 +24,7 @@
           <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
             The Old Theater's goal is to enrich, educate and entertain our
             community by serving as a great venue for the performing arts. We
-            partner with arts organizations to help them bring educational
-            programs and theatrical, live music, and dance performances to our
+            partner with local arts organizations to help them bring educational, live theater,  &amp; live music performances to our
             stage.
           </p>
           <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
