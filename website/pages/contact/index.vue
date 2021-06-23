@@ -173,7 +173,6 @@
 
 
 <script>
-import UiHeadline from "@/components/ui/UiHeadline";
 export default {
   metaInfo: {
     title: "Contact",
@@ -181,7 +180,7 @@ export default {
   layout: "NewLayout",
 
   components: {
-    UiHeadline,
+  
   },
 };
 </script>
