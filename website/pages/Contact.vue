@@ -32,11 +32,9 @@
           name="contact-old-theater"
           method="POST"
           data-netlify="true"
-          
+          action="/success-contact"
           netlify-honeypot="bot-field"
         >
-
-  
           <p class="hidden">
             <label
               >Don’t fill out this field if you are human
