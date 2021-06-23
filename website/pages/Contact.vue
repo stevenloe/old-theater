@@ -32,9 +32,11 @@
           name="contact-old-theater"
           method="POST"
           data-netlify="true"
-          action="/success-contact"
+          
           netlify-honeypot="bot-field"
         >
+
+        <!-- action="/success-contact" -->
           <p class="hidden">
             <label
               >Don’t fill out this field if you are human
@@ -65,7 +67,7 @@
                 <option value="Sponsor a Show">Sponsor a Show</option>
                 <option value="Treasurer">Treasurer</option>
                 <option value="Technical Services">Technical Services</option>
-                <option value="Membership / Volunteering">
+                <option value="Membership - Volunteering">
                   Membership / Volunteering
                 </option>
                 <option value="Website">Website</option>
