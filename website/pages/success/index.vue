@@ -19,7 +19,7 @@
 import UiHeadline from "@/components/ui/UiHeadline";
 export default {
   metaInfo: {
-    title: "SuccessContact",
+    title: "Success",
   },
   layout: "NewLayout",
   components: {
