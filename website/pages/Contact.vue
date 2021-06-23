@@ -36,7 +36,7 @@
           netlify-honeypot="bot-field"
         >
 
-        <!-- action="/success-contact" -->
+  
           <p class="hidden">
             <label
               >Don’t fill out this field if you are human
