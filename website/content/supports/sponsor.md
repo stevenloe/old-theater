@@ -26,6 +26,15 @@ Being a small theater also presents some challenges, one of which is that revenu
 
 We will at times reach out to our community to ask for help bringing events to our stage. Your support in sponsoring these acts will help ensure the future of The Old Theater and our ability to continue to provide talented artists and performers for your enjoyment.
 
+<figure>
+  <img
+    src="/images/support/lady-pirates-captain-bree.jpg"
+    alt="Poster for The Old Theater's production of The Lady Pirates of Captain Bree"
+  />
+  <figcaption class="italic">
+     Poster for The Old Theater's production of The Lady Pirates of Captain Bree
+  </figcaption>
+</figure>
 
 ### Sponsor a Friday Night Flick
 
