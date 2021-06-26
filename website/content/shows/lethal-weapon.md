@@ -15,7 +15,7 @@ showTime: "8:00 PM"
 youtubeVideo: bKeW-MGu-qQ
 
 
-formattedPrice: Donation
+formattedPrice: admission by Donation
 location: The Red Rooster (behind The Silos, 1111 Broad Street, Oriental, NC)
 ticketURL: 
 showtype: "SATURDAY FLICK"
