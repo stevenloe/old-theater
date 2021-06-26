@@ -45,12 +45,23 @@ We will at times reach out to our community to ask for help bringing events to o
 
 <figure>
   <img
-    src="/images/support/henri_herbert_crop.jpg"
+    src="/images/support/portrait-street-henri-herbert-1500w.jpg"
     alt="Henri Herbert at The Old Theater"
     loading="lazy"
   />
   <figcaption class="italic">
-     Herri Herbert at The Old Theater
+     Herri Herbert
+  </figcaption>
+</figure>
+
+<figure>
+  <img
+    src="/images/support/danielle-madrid-and-wendy-osserman2-edit.jpg"
+    alt="Danielle Madrid and Wendy Osserman"
+    loading="lazy"
+  />
+  <figcaption class="italic">
+     Danielle Madrid and Wendy Osserman
   </figcaption>
 </figure>
 
