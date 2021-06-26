@@ -2,7 +2,7 @@
   <div>
     <NavBar />
     <main class="pt-5 bg-gray-400 borderborder-gray-300">
-      <div class="p-4 mx-auto">
+      <div class="p-4 mx-auto" @click="onContentClick">
         <Nuxt />
       </div>
     </main>
@@ -24,5 +24,10 @@ export default {
   mounted() {
     window.scrollTo(0, 0);
   },
+  methods: {
+    onContentClick() {
+      this.$bus.$emit("toggle-search");
+    }
+  }
 };
 </script>
