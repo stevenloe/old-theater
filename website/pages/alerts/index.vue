@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto">
     <article
-      class="w-full mx-auto content-column  lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
+      class="w-full mx-auto content-column lg:w-9/12 xl:3/4 lg:text-xl xl:text-2xl"
     >
       <UiHeadline level="1">Alerts</UiHeadline>
 
@@ -52,14 +52,11 @@ dayjs.extend(localizedFormat);
 export default {
   async asyncData({ $content }) {
     const posts = await $content("alerts")
-      // .only(["author", "createdAt", "description", "path", "title"])
       .sortBy("eventTime", "desc")
       .limit(10)
       .fetch();
 
     const nextPage = posts.length === 10;
-    console.log("nextPage", nextPage);
-    console.log("POSTS Len", posts.length);
     return { nextPage, posts };
   },
   methods: {

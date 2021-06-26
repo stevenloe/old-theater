@@ -41,14 +41,11 @@ dayjs.extend(localizedFormat);
 export default {
   async asyncData({ $content }) {
     const posts = await $content("news")
-      // .only(["author", "createdAt", "description", "path", "title"])
       .sortBy("createdAt", "desc")
       .limit(10)
       .fetch();
 
     const nextPage = posts.length === 10;
-    console.log("nextPage", nextPage);
-    console.log("POSTS Len", posts.length);
     return { nextPage, posts };
   },
   methods: {
