@@ -70,10 +70,7 @@ export default {
     clearSearch() {
       this.searchQuery = "";
       this.isOpen = false;
-    },
-    // onScroll() {
-    //   this.clearSearch();
-    // },
+    }
   },
   created() {
     this.$bus.$on("toggle-search", (e) => {
@@ -87,17 +84,17 @@ export default {
       this.clearSearch();
     });
 
-    if (process.client) {
-      // window is undefined because nuxt JS is server side rendered.
-      // Using the process.client variable allow us to access the window object
-      window.addEventListener("scroll", debounce(this.onScroll, 250));
-    }
+    // if (process.client) {
+    //   // window is undefined because nuxt JS is server side rendered.
+    //   // Using the process.client variable allow us to access the window object
+    //   window.addEventListener("scroll", debounce(this.onScroll, 250));
+    // }
   },
-  destroy() {
-    if (process.client) {
-      window.removeEventListener("scroll", this.onScroll);
-    }
-  },
+  // destroy() {
+  //   if (process.client) {
+  //     window.removeEventListener("scroll", this.onScroll);
+  //   }
+  // },
   computed: {
     searchClass() {
       let openClose = this.isOpen ? "open" : "";
