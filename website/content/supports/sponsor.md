@@ -51,7 +51,7 @@ We will at times reach out to our community to ask for help bringing events to o
 </figure>
 
 
-### Sponsor a musical performance
+### Sponsor a performance
 
 <figure>
   <img
