@@ -156,7 +156,7 @@
         <a
           href="#"
           class="pl-1 pr-3 text-white bg-gray-500 hover:bg-gray-600 focus:outline-none"
-          @click="toggle"
+          @click="toggleSearch"
         >
           <svg
             class="w-10 h-8 px-1 pt-1 fill-current"
@@ -227,12 +227,11 @@ export default {
   },
   methods: {
     onResize() {
-      // console.log("----- NAVBAR RESIZE----");
       this.isMobileMenuOpen = false;
       this.isMobile = this.isSearchOpen = window.innerWidth < 768;
       this.$bus.$emit("resize-window");
     },
-    toggle() {
+    toggleSearch() {
       this.$bus.$emit("toggle-search");
     },
     onMenuBtnClick() {
