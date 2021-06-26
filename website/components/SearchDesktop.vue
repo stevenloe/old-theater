@@ -79,6 +79,9 @@ export default {
       const searchInput = document.querySelector('#search-input');
       searchInput.focus();
     });
+    this.$bus.$on("hide-search", (e) => {
+      this.isOpen = false;
+    });
 
     this.$bus.$on("resize-window", (e) => {
       this.clearSearch();

@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     onContentClick() {
-      this.$bus.$emit("toggle-search");
+      this.$bus.$emit("hide-search", "hide");
     }
   }
 };
