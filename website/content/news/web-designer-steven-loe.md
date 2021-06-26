@@ -8,7 +8,7 @@ eventDate: 'September 15, 2020'
 eventTime: '2020-09-15T21:07:38.963Z'
 ticketURL: https://example.com
 subhead: "Steven Loe has joined the Old Theater board as web developer, volunteering to create..."
-slug: "web-designer-steven-loe"
+slug: "/news/web-designer-steven-loe"
 ---
 
 Steven Loe has joined the Old Theater board as web developer, volunteering to create and maintain a modern website for the Old Theater that will be both mobile and computer friendly.

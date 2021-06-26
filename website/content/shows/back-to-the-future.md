@@ -2,7 +2,7 @@
 title: Back to The Future
 description:  
 shortDesc: "With Michael J. Fox, Christopher Lloyd, Lea Thompson, Crispin Glover. Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown."
-slug: /back-to-the-future
+slug: /shows/back-to-the-future
 img: backtothefuture.jpg
 imgAlt: Old Theater presents *Back to The Future* at the Red Rooster
 
