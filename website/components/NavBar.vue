@@ -260,6 +260,11 @@ export default {
       return `${full} bg-white fixed w-full px-4 py-2 md:flex md:justify-start md:p-0 md:pl-8 z-20 top-0`;
     },
   },
+  watch: {
+    $route() {
+      this.$bus.$emit("toggle-search");
+    },
+  },
   created: function () {
     this.$bus.$on("no-search-results", (e) => {
       this.noSearchResults = e;
