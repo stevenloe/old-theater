@@ -30,6 +30,7 @@ We will at times reach out to our community to ask for help bringing events to o
   <img
     src="/images/support/lady-pirates-captain-bree.jpg"
     alt="Poster for The Old Theater's production of The Lady Pirates of Captain Bree"
+    loading="lazy"
   />
   <figcaption class="italic">
      Poster for The Old Theater's production of The Lady Pirates of Captain Bree
