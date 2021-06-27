@@ -34,9 +34,9 @@ collections:
         }
       - {label: 'Short Description', name: 'shortDesc', widget: 'text' }
       - {label: 'Ticket Url', name: 'ticketUrl', widget: 'string', required: false  }
-      - {label: 'Featured Image', name: 'img', widget: 'image', , required: false }
+      - {label: 'Featured Image', name: 'img', widget: 'image', required: false }
       - {label: 'Image Description', name: 'imgAlt', widget: 'string' }
-      - {label: 'YouTube Video Id', name: 'youtubeVideo', widget: 'string' , required: false  }
+      - {label: 'YouTube Video Id', name: 'youtubeVideo', widget: 'string', required: false  }
       - {label: 'Body', name: 'body', widget: 'markdown'}
       - {label: "Start time",
           name: "start",
