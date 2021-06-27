@@ -21,7 +21,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog'}
       - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Event Date / Time', name: 'eventDate', widget: 'datetime', hint: 'Please select the Date and Time (see below) of the event'}
+      - {label: 'Event Date / Time', name: 'eventDate', widget: 'datetime', hint: 'Please select the event Date and Time (At bottom of picker)'}
       - {label: 'Show Date', name: 'showDate', widget: 'string' }
       - {label: 'Show Time', name: 'showTime', widget: 'string' }
       - {label: 'Price', name: 'formattedPrice', widget: 'string' }
@@ -35,7 +35,7 @@ collections:
       - {label: 'Short Description', name: 'shortDesc', widget: 'text' }
       - {label: 'Ticket Url', name: 'ticketUrl', widget: 'string', required: false  }
       - {label: 'Featured Image', name: 'img', widget: 'image', required: false }
-      - {label: 'Image Description', name: 'imgAlt', widget: 'string' }
+      - {label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
       - {label: 'YouTube Video Id', name: 'youtubeVideo', widget: 'string', required: false  }
       - {label: 'Body', name: 'body', widget: 'markdown'}
       - {label: "Start time",
