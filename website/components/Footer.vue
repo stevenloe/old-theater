@@ -33,6 +33,13 @@
         <div class="w-1/2 text-left">
           <div class="flex">
             <nuxt-link
+              to="/shows"
+              class="justify-start tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              >SHOWS</nuxt-link
+            >
+          </div>
+          <div class="flex">
+            <nuxt-link
               to="/news"
               class="justify-start tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
               >NEWS</nuxt-link
