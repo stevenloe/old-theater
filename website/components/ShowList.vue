@@ -1,10 +1,11 @@
 <template>
   <div>
     <div
-      class="p-0 m-4 rounded-lg shadow-lg sm:m-8 md:flex md:m-8 md:mr-8" style="border: solid 1px #999"
+      class="p-0 m-4 rounded-lg shadow-lg sm:m-8 md:flex md:m-8 md:mr-8 content-border"
       v-for="show of shows"
       :key="show.title"
     >
+
       <!-- image card -->
       <div
         class="relative overflow-hidden rounded-lg md:w-7/12 md:rounded-r-none text"
