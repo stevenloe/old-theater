@@ -31,3 +31,9 @@ export default {
   }
 };
 </script>
+
+<style>
+.content-border {
+  border: solid 1px #999 !important;
+}
+</style>
