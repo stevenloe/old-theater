@@ -77,6 +77,13 @@
           </div>
           <div class="flex justify-end">
             <nuxt-link
+              to="/get-involved"
+              class="tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
+              >GET INVOLVED</nuxt-link
+            >
+          </div>
+          <div class="flex justify-end">
+            <nuxt-link
               to="/about/rent-the-theater"
               class="tracking-wider footer-link md:text-lg lg:text-xl hover:text-black hover:bg-gray-100"
               >RENT</nuxt-link
