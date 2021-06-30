@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Event Friday April 16, 2021 7pm
-eventDate: 2021-04-16T23:00:57.570Z
+date: 2021-04-16T23:00:57.570Z
 showDate: "00"
 showTime: "00"
 formattedPrice: "00"

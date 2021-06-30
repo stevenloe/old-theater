@@ -8,7 +8,7 @@ imgAlt: Old Theater presents *Back to The Future* at the Red Rooster
 
 
 
-eventTime: "2021-07-17T23:30:00.2Z"
+date: "2021-07-17T23:30:00.2Z"
 
 showDate: "SATURDAY July, 17 2021"
 showTime: "8:30 PM"
@@ -17,7 +17,8 @@ youtubeVideo: qvsgGtivCgs
 
 
 formattedPrice: admission by Donation
-location: The Red Rooster (behind The Silos, 1111 Broad Street, Oriental, NC)
+location: The Red Rooster 
+locationDetail: (behind The Silos, 1111 Broad Street, Oriental, NC)
 ticketURL: 
 showtype: "SATURDAY FLICK"
 ---

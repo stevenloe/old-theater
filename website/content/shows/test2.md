@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Test 2
-eventDate: 2021-06-23T00:37:42.159Z
+date: 2021-06-23T00:37:42.159Z
 showDate: July 7
 showTime: 8:30
 formattedPrice: Donation

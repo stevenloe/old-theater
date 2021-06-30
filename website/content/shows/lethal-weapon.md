@@ -7,7 +7,7 @@ slug: /shows/lethal-weapon
 img: lethal-weapon.jpg
 imgAlt: Old Theater presents Ghostbusters at the Red Rooster
 
-eventTime: "2021-08-21T23:30:00.2Z"
+date: "2021-08-21T23:30:00.2Z"
 
 showDate: "SATURDAY August, 21 2021"
 showTime: "8:00 PM"
@@ -16,7 +16,8 @@ youtubeVideo: bKeW-MGu-qQ
 
 
 formattedPrice: admission by Donation
-location: The Red Rooster (behind The Silos, 1111 Broad Street, Oriental, NC)
+location: The Red Rooster 
+locationDetail: (behind The Silos, 1111 Broad Street, Oriental, NC)
 ticketURL: 
 showtype: "SATURDAY FLICK"
 ---

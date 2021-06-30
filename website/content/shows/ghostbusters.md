@@ -7,7 +7,7 @@ slug: /ghostbusters
 img: ghostbusters.jpg
 imgAlt: Old Theater presents *Ghostbusters* at the Red Rooster
 
-eventTime: "2021-06-19T23:30:00.2Z"
+date: "2021-06-19T23:30:00.2Z"
 
 showDate: "SATURDAY June, 19 2021"
 showTime: "8:30 PM"
@@ -15,7 +15,8 @@ showTime: "8:30 PM"
 youtubeVideo: 6hDkhw5Wkas
 
 formattedPrice: Admission by donation
-location: The Red Rooster
+location: The Red Rooster 
+locationDetail: (behind The Silos, 1111 Broad Street, Oriental, NC)
 ticketURL: 
 showtype: "SATURDAY FLICK"
 ---
