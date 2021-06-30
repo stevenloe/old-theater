@@ -36,24 +36,24 @@
           <UiHeadline class="mb-4" level="3"
             >Pamlico Musical Society</UiHeadline
           >
+          <UiHeadline class="mb-4" level="5"
+          >Remarkable Musical Experiences for our Amazing Community</UiHeadline
+        >
           <div class="mb-8">
             <img
               src="https://old-theater-pics.netlify.app/img/pms.png"
               class="w-full overflow-hidden rounded-lg shadow-lg"
-              alt=""
+              alt="Pamlico musical society"
             />
           </div>
           <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
-            Since 1997, Pamlico Musical Society has presented several concerts
-            each year, from September through April or May. Professional artists
-            from a variety of musical genres present the highest caliber musical
-            entertainment, typically in the intimate setting of Oriental's Old
-            Theater.
+            The mission of the Pamlico Musical Society is to present diverse musical experiences that enrich the quality of life in our community.  Since 1997, our concert performances and outreach activities have provided opportunities to enjoy and interact with a wide variety of high quality musical groups representing many musical genres.
           </p>
           <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
-            Jazz, classical, folk, rock, Americana, pop, and show tunes ensure
-            that each Pamlico Musical Society season offers something for
-            everyone who loves great music. To learn more visit
+            Our primary performance venue is the Old Theater, where the small hall promotes intimate exchanges between the artists and audiences &mdash; further enhancing the significance of the musical experience.  Many of our artists also present an outreach component which extends the impact of our programs to partners including the Pamlico County Public Schools, the Arapahoe Charter School, the Pamlico Christian Academy, HeartWorks, Prime Time, the Holt's Chapel Community Center, and the Pamlico Community College.
+          </p>
+          <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
+            With a season that runs from September/October through April/May each year, our Grammy-quality programming embraces bluegrass, jazz, classical, folk, rock, Americana, pop, blues and more, offering something special for everyone who loves great music.To learn more visit
             <a class="underline" href="https://www.pamlicomusic.org"
               >www.pamlicomusic.org</a
             >.
@@ -62,12 +62,19 @@
       </div>
 
       <div class="p-8 mb-8 bg-pink-100 rounded-lg shadow-lg">
-        <UiHeadline class="mb-2" level="3"
-          >Children's Theater Workshop</UiHeadline
-        >
-        <UiHeadline class="mb-4" level="5"
-          >A Place for Kids to Learn, Grow and Imagine.</UiHeadline
-        >
+        <div class="flex justify-between">
+          <div class="w-4/5">
+            <UiHeadline class="mb-2" level="3"
+              >Children's Theater Workshop</UiHeadline
+            >
+            <UiHeadline class="mb-4" level="4"
+              >A Place for Kids to Learn, Grow and Imagine.</UiHeadline
+            >  
+          </div>
+         
+            <img class="object-contain h-16" src="/images/community/ctw-logo.gif" alt="Childrens Theater Workshop logo">
+        
+        </div>
         <div class="mb-8">
           <img
             src="https://old-theater-pics.netlify.app/img/ctw.png"
@@ -91,12 +98,10 @@
           school, communication, and social situations.
         </p>
         <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
-          In addition to boosting confidence and creativity, Children's Theater
-          Workshop has many other benefits. If your child is in the workshop,
-          chances are they’ll have to learn part of a script. When they see what
-          they read come to life on the stage, they’ll likely improve their
-          reading comprehension elsewhere. It might even make them more
-          interested in reading off the stage, too! More at
+          During the age-divided, two-week sessions, children are introduced to theater skills such as acting fundamentals, learning to speak on stage, using drama exercises by playing theater games, see the behind-the-scenes work, learn to work in peer groups, and meet new friends.
+        </p>
+        <p class="mb-4 leading-7 text-gray-900 lg:leading-9 lg:mb-6">
+Learning about the performing arts can teach important skills in life, such as self-confidence, cooperation, self-discipline, and concentration. Imagination is encouraged! More at
           <a class="underline" href="https://www.childrenstheateronc.com/"
             >www.childrenstheateronc.com</a
           >
