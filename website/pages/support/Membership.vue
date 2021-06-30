@@ -5,7 +5,7 @@
     >
       <UiHeadline id="level-1-headline" level="1" > Membership </UiHeadline>
       <UiHeadline id="level-1-headline" level="3" > </UiHeadline>
-      <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
+      <article class="p-6 mt-6 bg-white rounded shadow-lg lg:p-8 content-border">
 
        <h2 class="mb-6 text-3xl">Join the Old Theater</h2>
 

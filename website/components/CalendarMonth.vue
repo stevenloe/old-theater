@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden bg-gray-400 rounded-lg shadow-lg">
+  <div class="relative overflow-hidden bg-gray-400 rounded-lg shadow-lg content-border">
     <div class="flex justify-between py-4 bg-white">
       
       <div class="hidden w-1/3 md:block"></div>

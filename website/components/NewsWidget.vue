@@ -1,6 +1,6 @@
 <template>
   <div
-    class="pt-3 pb-4 pl-6 pr-4 m-4 mb-8 bg-gray-100 rounded-lg shadow-lg sm:m-8 md:m-8"
+    class="pt-3 pb-4 pl-6 pr-4 m-4 mb-8 bg-gray-100 rounded-lg shadow-lg sm:m-8 md:m-8 content-border"
   >
     <UiHeadline class="mb-3" level="1">News</UiHeadline>
     <div v-for="(item, i) in news" :key="i">

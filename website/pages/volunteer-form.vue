@@ -2,7 +2,7 @@
   <div>
     <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
       <UiHeadline level="1">Volunteer Form</UiHeadline>
-      <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
+      <article class="p-6 mt-6 bg-white rounded shadow-lg lg:p-8 content-border">
         <form
           name="volunteer-form"
           id="volunteer-form"

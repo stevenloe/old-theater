@@ -2,7 +2,7 @@
   <div>
     <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
       <UiHeadline level="1" class="mb-6">Get Involved</UiHeadline>
-      <div class="p-8 bg-white rounded shadow-lg">
+      <div class="p-8 bg-white rounded shadow-lg content-border">
         <div class="mb-4">
           <div>
             <UiHeadline level="2" class="mb-8"
@@ -14,7 +14,7 @@
               class="w-full mr-3"
               alt=""
             />
-            <p class="p-1 mb-3 text-sm italic text-gray-700 bg-gray-200">
+            <p class="p-1 mb-3 text-sm italic text-gray-700 ">
               Community theater in Oriental is made possible by people like you.
             </p>
           </div>

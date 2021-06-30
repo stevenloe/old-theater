@@ -4,7 +4,7 @@
       <UiHeadline level="1">News</UiHeadline>
 
       <article
-        class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg"
+        class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg content-border"
         v-for="post of posts"
         :key="post.title"
       >

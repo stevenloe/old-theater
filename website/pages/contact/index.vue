@@ -2,7 +2,7 @@
   <div>
     <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
       <h1 class="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">Contact Us</h1>
-      <article class="p-6 mt-6 bg-white rounded shadow lg:p-8">
+      <article class="p-6 mt-6 bg-white rounded shadow-lg lg:p-8 content-border">
         <div class="flex flex-wrap">
           <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
             <h2 class="text-2xl font-semibold">Our Physical Address</h2>
@@ -43,13 +43,13 @@
           </p>
           <div class="flex flex-wrap mb-6 -mx-3">
             <div class="w-full px-3 mb-6 md:mb-0">
-              <label
+              <!-- <label
                 class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase "
                 for="subject"
                 >Subject<span class="ml-1 text-gray-600"
                   >(required)</span
                 ></label
-              >
+              > -->
 
               <!-- <select
                 id="subject"

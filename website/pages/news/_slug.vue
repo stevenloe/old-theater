@@ -1,7 +1,7 @@
 <template>
   <div>
     <article class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
-      <div class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg">
+      <div class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg content-border">
         <div class="text-sm font-semibold text-gray-700 uppercase">
           {{ postTime(post.eventTime) }}
         </div>
