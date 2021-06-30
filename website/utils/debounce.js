@@ -6,6 +6,7 @@
 
 
 export function debounce(func, wait, immediate) {
+  console.log("DEBOUNCE:: func", func, "wait", wait, "immediate", immediate);
     var timeout;
     return function() {
       var context = this, args = arguments;
