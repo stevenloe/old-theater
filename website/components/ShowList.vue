@@ -21,7 +21,9 @@
       >
         <div class="w-full p-6 pt-2 pb-0">
           <h3 class="mt-3 mb-2 text-4xl font-bold leading-none">
-            {{ show.title }}
+            <nuxt-link  :to="show.path">
+              {{ show.title }}
+            </nuxt-link>
           </h3>
           <div class="flex">
             <ShowPill :showtype="show.showtype"></ShowPill>

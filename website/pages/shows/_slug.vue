@@ -34,6 +34,9 @@
               <div v-if="article.location" class="mr-4">
                 <span class="text-gray-600">LOCATION: </span>{{ article.location }}
               </div>
+              <div v-if="article.locationDetail" class="mr-4">
+                <span class="text-gray-600"> </span>{{ article.locationDetail }}
+              </div>
             </div>
           </div>
           
