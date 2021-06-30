@@ -1,15 +1,13 @@
 <template>
-  <div class="mx-auto">
-    <div class="w-full mx-auto content-column lg:text-xl xl:text-2xl">
-      <div class="mb-8">
-        <UiHeadline level="1">Community Partners</UiHeadline>
-        <h1 class="mt-4 mb-4 text-4xl font-extrabold"></h1>
-
-        <div class="p-8 mb-8 bg-white rounded-lg shadow-lg content-border">
+  <div>
+    <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
+      <UiHeadline level="1" class="mb-6">Community Partners</UiHeadline>
+      <div class="p-8 bg-white rounded shadow-lg content-border">
+        <div class="mb-4">
           <div>
             <img
               src="https://old-theater-pics.netlify.app/img/ctw-2019.jpg"
-              class="w-full overflow-hidden rounded-lg shadow-lg"
+              class="w-full overflow-hidden rounded-lg shadow-lg content-border"
               alt=""
             />
             <p class="p-1 mb-3 text-sm italic text-gray-700">
@@ -205,6 +203,7 @@
       </client-only>
     </div>
   </div>
+</div>
 </template>
 
 <script>
