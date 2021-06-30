@@ -4,8 +4,7 @@ description:
 shortDesc: 
 img: 
 imgAlt: some alt text
-eventDate: 'September 15, 2020'
-eventTime: '2021-06-10T21:09:38.963Z'
+date: '2021-06-10T21:09:38.963Z'
 ticketURL: https://example.com
 slug: "/news/old-theaters-summer-outdoor-cinema"
 ---

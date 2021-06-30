@@ -4,8 +4,7 @@ description:
 shortDesc: 
 img: 
 imgAlt: some alt text
-eventDate: 'May 15, 2021'
-eventTime: '2021-05-15T21:07:38.963Z'
+date: '2021-05-15T21:07:38.963Z'
 ticketURL: https://example.com
 subhead: "We are pleased to announce that Marlena Ivey has joined the Old Theater board as Publicity Manager"
 slug: "/news/marlena-ivey-publicity-manager"

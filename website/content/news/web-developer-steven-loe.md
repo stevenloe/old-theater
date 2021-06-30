@@ -4,8 +4,8 @@ description:
 shortDesc: 
 img: 
 imgAlt: some alt text
-eventDate: 'September 15, 2020'
-eventTime: '2020-09-15T21:07:38.963Z'
+
+date: '2020-09-15T21:07:38.963Z'
 subhead: "Steven Loe has joined the Old Theater board as web developer, volunteering to create..."
 slug: "/news/web-developer-steven-loe"
 ---

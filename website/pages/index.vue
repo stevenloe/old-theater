@@ -48,7 +48,7 @@ export default {
   async asyncData ({ $content, params }) {
   const [shows, news, alerts] = await Promise.all([ 
     $content("shows", params.slug).sortBy("date", "asc").fetch(),
-    $content("news", params.slug).sortBy("eventTime", "desc").fetch(),
+    $content("news", params.slug).sortBy("date", "desc").fetch(),
     $content("alerts", params.slug).fetch(),
   ])
 
