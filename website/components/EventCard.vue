@@ -13,7 +13,7 @@
         </div>
         <h4 class="mt-1 font-semibold text-lg leading-tight truncate">{{ bookData.title }}</h4>
         <div class="mt-1">
-          {{ bookData.formattedPrice }}
+          {{ bookData.price }}
           <span class="text-gray-600 text-sm"> / wk</span>
         </div>
         <div class="mt-2 flex items-center">

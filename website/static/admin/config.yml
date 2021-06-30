@@ -24,7 +24,7 @@ collections:
       - {label: 'Event Date / Time', name: 'eventDate', widget: 'datetime', hint: 'Please select the event Date and Time (At bottom of picker)'}
       - {label: 'Show Date', name: 'showDate', widget: 'string' }
       - {label: 'Show Time', name: 'showTime', widget: 'string' }
-      - {label: 'Price', name: 'formattedPrice', widget: 'string' }
+      - {label: 'Price', name: 'price', widget: 'string' }
       - {label: 'Location', name: 'location', widget: 'string' }
       - {label: 'Location Detail', name: 'locationDetail', widget: 'string', required: false }
       - {

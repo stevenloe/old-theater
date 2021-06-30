@@ -29,7 +29,7 @@
               </div>
               <div class="mr-4">
                 <span class="text-gray-600">COST: </span>
-                ${{ article.formattedPrice }}
+                ${{ article.price }}
               </div>
               <div v-if="article.location" class="mr-4">
                 <span class="text-gray-600">LOCATION: </span>{{ article.location }}

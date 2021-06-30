@@ -15,7 +15,7 @@ showTime: "8:00 PM"
 youtubeVideo: bKeW-MGu-qQ
 
 
-formattedPrice: admission by Donation
+price: admission by Donation
 location: The Red Rooster 
 locationDetail: (behind The Silos, 1111 Broad Street, Oriental, NC)
 ticketURL: 
