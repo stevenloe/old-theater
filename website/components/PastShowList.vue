@@ -1,27 +1,15 @@
 <template>
-  <div class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg content-border">
-    <div class="mb-12" v-for="show of pastShows" :key="show.title">
-      <div
-        class="mb-1 text-sm font-semibold uppercase text-gray-00 md:text-base lg:text-lg"
-      >
-        <span class="mr-2">{{ showDate(show.date) }}</span>
-        {{ showTime(show.date) }}
-      </div>
-      <h2
-        class="text-xl font-semibold text-gray-600 sm:text-2xl md:text-3xl lg:text-4xl"
-      >
-        <nuxt-link :to="`${show.slug}?page=index`"> {{ show.title }}</nuxt-link>
-      </h2>
-      <nuxt-content
-        class="mx-auto prose-sm prose sm:prose xl:prose-lg "
-        :document="show"
-      />
-    </div>
+  <div>
+    <div v-for="show of pastShows" :key="show.title" class="mb-8">
+      <PastShowCard :show="show" />
+  </div>
   </div>
 </template>
 
 <script>
+  import PastShowCard from './PastShowCard'
   import {formatShowDate} from '@/utils/dates.js'
+  
 export default {
   props: {
     pastShows: {
@@ -37,5 +25,8 @@ export default {
       return formatShowDate(date, "time")
     }
   },
+  components: {
+    PastShowCard
+  }
 };
 </script>
