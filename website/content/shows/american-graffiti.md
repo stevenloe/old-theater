@@ -13,7 +13,7 @@ img: american_graffiti.jpg
 imgAlt: American Graffiti poster art
 youtubeVideo: OZ9Gp6Qc8LQ
 ---
-The Old Theater with The Red Rooster present \*American Graffiti\*. Admission is by donation to benefit the Old Theater.
+The Old Theater with The Red Rooster present **American Graffiti**. Admission is by donation to benefit the Old Theater.
 
 
 
