@@ -13,7 +13,7 @@
         >
           <UiHeadline class="mt-4"  level="1">{{article.title}}</UiHeadline>
           <div class="flex">
-              <ShowPill :showtype="article.showtype"></ShowPill>
+              <ShowPill :showtype="showType"></ShowPill>
             </div>
           <div
             class="mb-8 text-sm font-semibold leading-relaxed tracking-wide uppercase"
@@ -23,19 +23,22 @@
                 <span class="text-gray-600">DATE: </span>
                 {{ article.showDate }}
               </div>
-              <div class="mr-4">
-                <span class="text-gray-600">TIME: </span>
-                {{ article.showTime }}
-              </div>
-              <div class="mr-4">
-                <span class="text-gray-600">COST: </span>
-                ${{ article.price }}
-              </div>
-              <div v-if="article.location" class="mr-4">
-                <span class="text-gray-600">LOCATION: </span>{{ article.location }}
-              </div>
-              <div v-if="article.locationDetail" class="mr-4">
-                <span class="text-gray-600"> </span>{{ article.locationDetail }}
+              <div v-if="isFutureShow">
+                
+                <div class="mr-4">
+                  <span class="text-gray-600">TIME: </span>
+                  {{ article.showTime }}
+                </div>
+                <div class="mr-4">
+                  <span class="text-gray-600">COST: </span>
+                  ${{ article.price }}
+                </div>
+                <div v-if="article.location" class="mr-4">
+                  <span class="text-gray-600">LOCATION: </span>{{ article.location }}
+                </div>
+                <div v-if="article.locationDetail" class="mr-4">
+                  <span class="text-gray-600"> </span>{{ article.locationDetail }}
+                </div>
               </div>
             </div>
           </div>
@@ -67,14 +70,22 @@ import NavBar from "@/components/NavBar";
 import UiHeadline from "@/components/ui/UiHeadline";
 import YoutubeWidget from "@/components/YoutubeWidget";
 import ShowPill from "@/components/ShowPill";
-export default {
+import {isFutureDate} from '@/utils/dates.js'
 
+export default {
   async asyncData({ $content, params }) {
     const article = await $content("shows", params.slug).fetch();
     return { article };
   },
+  computed: {
+    isFutureShow() {
+      return isFutureDate(this.article.date)
+    },
+    showType() {
+       return this.isFutureShow ? this.article.showType : "Past Show"
+    }
+  },
   layout: "NewLayout",
-  
   components: {
     NavBar,
     UiHeadline,

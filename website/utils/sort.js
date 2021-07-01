@@ -6,8 +6,6 @@ import utc from "dayjs/plugin/utc";
 dayjs.extend(utc);
 
 export function sortShows(shows) {
-  console.log(" ######  SORT SHOWS ############################");
-
   const pastShows = [];
   const futureShows = [];
 
@@ -42,4 +40,6 @@ export function sortShows(shows) {
   return { futureShows, pastShows };
 
   }
+
+
 
