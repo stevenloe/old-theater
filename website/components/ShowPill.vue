@@ -39,7 +39,7 @@ export default {
           break;
       
         default:
-          color = " bg-yellow-300 "
+          color = " bg-gray-300 "
           break;
       }
 
