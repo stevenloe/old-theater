@@ -1,22 +1,20 @@
 ---
 layout: blog
 title: A League of Their Own
-eventDate: 2021-05-15T00:30:57.163Z
-showDate: "234"
-showTime: "234"
+date: 2021-05-15T00:30:57.163Z
 formattedPrice: Admission by donation
 location: AT THE RED ROOSTER
-locationDetail: (BEHIND THE SILOS, 1111 BROAD STREET, ORIENTAL, NC)
+locationDetail: THE SILOS, 1111 BROAD STREET, ORIENTAL, NC
 showtype: FRIDAY FLICK
 shortDesc: Directed by Penny Marshall. With Tom Hanks, Geena Davis, Lori Petty,
   Madonna. Two sisters join the first female professional baseball league and
   struggle to help it succeed amidst their own growing rivalry.
 img: a_league_of_their_own.jpg
 imgAlt: A League of Their Own poster art
-youtubeVideo: https://www.youtube.com/watch?v=WcN392H2jx0
-start: July 1, 2021 4:24 PM
+youtubeVideo: WcN392H2jx0
+
 ---
-The Old Theater’s May Outdoor Friday Flick in collaboration with The Silos in Oriental present **A League of Their Own.** Admission by donation. Includes FREE popcorn.
+The Old Theater in collaboration with The Silos in Oriental present our May Friday Flick:  **A League of Their Own.** Admission by donation. Includes FREE popcorn.
 
 The Silos is cooking Stadium favorites for purchase. Regular menu available for take-out via ChowNow app. Cash bar available with beer, wine, soft drinks, and concessions. No outside food or beverages please, by order of the state.
 
