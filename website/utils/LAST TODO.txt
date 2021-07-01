@@ -1,0 +1,40 @@
+
+
+DONE home page shows
+
+DONE News Items on home page.
+
+
+DONE (first pass ) Sponsor a Show or production text!
+
+DONE Other ways to support text
+
+
+
+DONE Volunteer form is ugly, make it work
+
+DONE Contact form - make it work
+BUGS! Search: make it work for entire site
+  1. Results are included, but links are broken for everything but shows (on mobile & desktop)
+  2. results on desktop should be scrollable See this --> https://www.w3docs.com/snippets/css/how-to-make-a-div-vertically-scrollable.html
+  3. Results should hide on navigate, and on body click. 
+  3A. Search Desktop: when results don't fit in window, scroll them --- or else make a multi colulm layout of results
+
+-------------------------------------------------------------------------------
+Stuff I need from you:
+
+  I need a sanity check on the photo captions in the "Volunteers in Action" section on the Get Involved page --> https://old-theater.netlify.app/get-involved
+  
+  I need the following for the News Section:
+    Bios for: 
+      Publicity – Marlena Montgomery
+      Theater Sponsored Events – Pat Nocera 
+      Facilities – Brian Hough
+        - These can be brief, something in the range of 80 - 120 words.
+        See 
+
+    Details on our Air filtration system upgrade
+
+    Are there other news items that should be added?
+-------------------------------------------------------------------------------    
+

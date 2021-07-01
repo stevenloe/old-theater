@@ -2,10 +2,10 @@
   <div>
     <article class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
       <div class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg">
-        <div class="overflow-hidden rounded">
+        <div class="mb-10 overflow-hidden rounded">
           <img
-            :src="require(`~/assets/img_new/processed/${article.img}`)"
-            :alt="article.imgAlt"
+          :src="`/images/shows/${article.img}`"
+          :alt="article.imgAlt"
           />
         </div>
         <div
@@ -21,7 +21,7 @@
             <div class="flex flex-wrap lg:text-lg">
               <div class="mr-4">
                 <span class="text-gray-600">DATE: </span>
-                {{ article.showDate }}
+                {{ showDate(article.date) }}
               </div>
               <div v-if="isFutureShow">
                 
@@ -71,18 +71,26 @@ import UiHeadline from "@/components/ui/UiHeadline";
 import YoutubeWidget from "@/components/YoutubeWidget";
 import ShowPill from "@/components/ShowPill";
 import {isFutureDate} from '@/utils/dates.js'
+import {formatShowDate} from '@/utils/dates.js'
 
 export default {
   async asyncData({ $content, params }) {
     const article = await $content("shows", params.slug).fetch();
     return { article };
   },
+  methods: {
+    showDate(date) {
+      return formatShowDate(date, "date")
+    }
+  },
   computed: {
     isFutureShow() {
       return isFutureDate(this.article.date)
     },
     showType() {
-       return this.isFutureShow ? this.article.showType : "Past Show"
+      console.log("SHowType()", this.article.showtype);
+       return this.isFutureShow ? this.article.showtype : "Past Show"
+   
     }
   },
   layout: "NewLayout",
