@@ -140,7 +140,7 @@
     </div>
 
     <div
-      class="p-8 pt-4 mb-8 bg-indigo-100 rounded-lg shadow-lg content-border"
+      class="p-8 mb-8 bg-indigo-100 rounded-lg shadow-lg content-border"
     >
       <UiHeadline class="mb-4" level="3">Pamlico Community Band</UiHeadline>
       <div>
@@ -171,7 +171,7 @@
       <div class="flex"></div>
     </div>
 
-    <div class="p-8 pt-4 mb-8 bg-gray-100 rounded-lg shadow-lg content-border">
+    <div class="p-8 mb-8 bg-gray-100 rounded-lg shadow-lg content-border">
       <UiHeadline class="mb-4" level="3">Pamlico Chorale</UiHeadline>
 
       <div class="float-right ml-2">
