@@ -29,7 +29,7 @@
               </div>
               <div v-if="isFutureShow" class="mr-4">
                 <span class="text-gray-600">COST: </span>
-                ${{ formattedPrice }}
+                {{ formattedPrice }}
               </div>
               <div v-if="isFutureShow" class="mr-4">
                 <span class="text-gray-600">LOCATION: </span>{{ show.location }}
