@@ -12,7 +12,7 @@
         <div
           class="mb-1 text-sm font-semibold text-gray-700 uppercase md:text-base lg:text-lg"
         >
-          {{ postTime(post.eventTime) }}
+          {{ showDate(post.date) }}
         </div>
 
         <h2
@@ -48,15 +48,13 @@
 <script>
 import dayjs from "dayjs";
 import UiHeadline from "@/components/ui/UiHeadline";
-const localizedFormat = require("dayjs/plugin/localizedFormat");
-dayjs.extend(localizedFormat);
+
 
 export default {
   async asyncData({ $content, params, error }) {
     const pageNo = parseInt(params.number);
     const posts = await $content("news")
-      // .only(["author", "createdAt", "description", "path", "title"])
-      .sortBy("createdAt", "desc")
+      .sortBy("date", "desc")
       .limit(10)
       .skip(10 * (pageNo - 1))
       .fetch();
@@ -74,11 +72,10 @@ export default {
     },
   },
   methods: {
-    postTime(date) {
-      return dayjs(date).format("LL");
+    showDate(date) {
+      return formatShowDate(date, "date")
     },
   },
-
   layout: "NewLayout",
   components: {
     UiHeadline

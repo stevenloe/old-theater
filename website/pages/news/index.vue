@@ -11,7 +11,7 @@
         <div
           class="mb-1 text-sm font-semibold text-gray-700 uppercase md:text-base lg:text-lg"
         >
-          {{ postTime(post.eventTime) }}
+          {{ showDate(post.date) }}
         </div>
 
         <h2
@@ -33,24 +33,19 @@
           >Older Posts <span aria-hidden="true">→</span></nuxt-link
         >
       </section>
-      <!-- </div> -->
     </article>
   </div>
 </template>
 
 
-
-
 <script>
 import UiHeadline from "@/components/ui/UiHeadline";
-import dayjs from "dayjs";
-const localizedFormat = require("dayjs/plugin/localizedFormat");
-dayjs.extend(localizedFormat);
+import {formatShowDate} from '@/utils/dates.js'
 
 export default {
   async asyncData({ $content }) {
     const posts = await $content("news")
-      .sortBy("eventTime", "desc")
+      .sortBy("date", "desc")
       .limit(10)
       .fetch();
 
@@ -58,8 +53,8 @@ export default {
     return { nextPage, posts };
   },
   methods: {
-    postTime(date) {
-      return dayjs(date).format("LL");
+    showDate(date) {
+      return formatShowDate(date, "date")
     },
   },
   layout: "NewLayout",
@@ -69,14 +64,7 @@ export default {
 };
 </script>
 
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
 
-.content-column {
-  max-width: 950px;
-}
-</style>
+methods: {
+
+},
