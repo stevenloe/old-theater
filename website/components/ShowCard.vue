@@ -30,13 +30,13 @@
           class="mb-4 text-sm font-semibold leading-relaxed tracking-wide uppercase flex-start"
         >
           <div>
-            <div class="mr-2">{{ showDate(show.date) }}</div>
+            <span class="mr-2">{{ showDate(show.date) }}</span>
             {{ showTime(show.date) }}
           </div>
           <span class="mr-2">{{ formattedPrice }}</span>
-          <div class="flex flex-wrap" v-if="show.location">
-            <div>At {{ show.location }}</div>
-          </div>
+          <span v-if="show.location">
+            <span>At {{ show.location }}</span>
+          </span>
         </div>
       </div>
 
@@ -68,6 +68,7 @@
 <script>
 import ShowPill from './ShowPill'
 import {formatShowDate} from '@/utils/dates.js'
+import {formatPrice} from '@/utils/format.js'
 
 export default {
   props: {
@@ -86,7 +87,7 @@ export default {
   },
   computed:{
     formattedPrice() {
-      return typeof(this.show.price) === 'number' ? '$' + this.show.price : this.show.price
+      return formatPrice(this.show.price) 
     }
   },
   components: {

@@ -49,6 +49,7 @@
 <script>
 import ShowPill from './ShowPill'
 import {formatShowDate} from '@/utils/dates.js'
+import {formatPrice} from '@/utils/format.js'
 
 export default {
   props: {
@@ -67,7 +68,7 @@ export default {
   },
   computed:{
     formattedPrice() {
-      return typeof(this.show.price) === 'number' ? '$' + this.show.price : this.show.price
+      return formatPrice(this.show.price) 
     }
   },
   components: {
