@@ -43,14 +43,14 @@
         </div>
 
         <img
-          class="object-contain h-16 ml-2 md:h-20"
-          src="/images/community/pms_logo.jpg"
+          class="object-contain ml-2 h-14 md:h-16"
+          src="/images/community/pms-logo-padded.jpg"
           alt="Pamlico Musical Society logo"
         />
       </div>
       <div class="mb-8">
         <img
-          src="https://old-theater-pics.netlify.app/img/pms.png"
+          src="/images/community/22years.png"
           class="w-full overflow-hidden rounded-lg shadow-lg"
           alt="Pamlico musical society"
         />
