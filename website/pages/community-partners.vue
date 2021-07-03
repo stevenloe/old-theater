@@ -50,7 +50,7 @@
       </div>
       <div class="mb-8">
         <img
-          src="/images/community/22years.png"
+          src="/images/community/new_pms_collage_brighter-saturation_small.jpg"
           class="w-full overflow-hidden rounded-lg shadow-lg"
           alt="Pamlico musical society"
         />
