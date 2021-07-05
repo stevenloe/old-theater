@@ -5,7 +5,9 @@
       class="cover-image"
       :src="img"
       :alt="alt"
-      sizes=" xs:100vw sm:100vw md:100vw lg:100vw xl:100vw"
+      sizes=" xs:100vw sm:100vw md:100vw lg:100vw"
+      quality="50"
+      loading="lazy"
     >
     </nuxt-picture>
     
