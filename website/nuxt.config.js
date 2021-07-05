@@ -34,15 +34,37 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    // docs: https://go.nuxtjs.dev/tailwindcss
+    '@nuxtjs/tailwindcss', 
+    // docs: https://image.nuxtjs.org/
+    '@nuxt/image',
   ],
+  image: {
+      // Generate images to `/_nuxt/image/file.png`
+      staticFilename: '[publicPath]/images/[name]-[hash][ext]',
+    // The screen sizes predefined by `@nuxt/image`:
+    screens: {
 
+    },
+  },
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxt/content',
     '@nuxtjs/axios',
   ],
+
+  image: {
+    // The screen sizes predefined by `@nuxt/image`:
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536
+    },
+  },
 
   axios: {baseURL: '/'},
 

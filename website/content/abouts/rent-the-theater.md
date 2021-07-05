@@ -3,23 +3,15 @@ title: Rent the Theater
 description:  
 shortDesc: Irure eiusmod dolore amet anim non laboris amet.
 slug:  /about/rent-the-theater
-img: old_theater_seats.jpg
+img: /images/about/old_theater_seats.jpg
 imgAlt: interior photo of the old theater showing the theater's seats
+caption: Seating at The Old Theater
 eventDate: 'March, 21 2020 19:30:00 EST'
 eventTime: '2021-02-05T21:09:38.963Z'
 price: 19.00
 ticketURL: https://example.com
 ---
 
-<figure>
-  <img
-    src="/images/about/old_theater_seats.jpg"
-    alt="Drawing of The Old Theater by Betty Brown"
-  />
-  <figcaption class="italic">
-     Seating at The Old Theater
-  </figcaption>
-</figure>
 
 
 ## Have your show or event at Oriental's Old Theater.
