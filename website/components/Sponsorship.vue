@@ -2,7 +2,9 @@
   <div class="m-4 sm:m-8 md:m-8 ">
     <!-- image card-->
     <div class="overflow-hidden rounded-t-lg shadow-lg">
-      <img class="object-cover w-full h-full" :src="require(`~/assets/img/sponsorship/${randomImg}`)" :alt="item.imgAlt" />
+      <!-- <img class="object-cover w-full h-full" :src="require(`~/assets/img/sponsorship/${randomImg}`)" :alt="item.imgAlt" /> -->
+
+      <show-picture :img="`/images/widgets/${randomImg}`" :alt="item.alt"></show-picture>
     </div>
     <!-- details -->
     <div class="pt-3 pb-4 pl-6 pr-6 bg-purple-800 rounded-b-lg shadow-lg ">
@@ -14,6 +16,7 @@
 </template>
 
 <script>
+import ShowPicture from './ShowPicture.vue'
 export default {
   data() {
     return {
@@ -25,7 +28,7 @@ export default {
         description:
           "Give back to the community by sponsoring a theatrical production, a live music event, or a Friday flick.",
         images: ['gravy_boys.jpg', 'henri_herbert.jpg', 'on_stage_edit.jpg'],
-        imageAlt: "musical or theatrical artist image",
+        alt: "musical or theatrical artist image",
         cta: "Learn More",
       },
     };
@@ -35,6 +38,9 @@ export default {
       const i = Math.floor((Math.random() * 3))
       return  this.item.images[i]
     }
+  },
+  components: {
+    ShowPicture
   }
 };
 </script>

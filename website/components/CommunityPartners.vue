@@ -1,8 +1,8 @@
 <template>
   <div class="pt-1 m-4 bg-indigo-700 rounded-lg shadow-lg sm:m-8 md:m-8 ">
     <!-- image card-->
-    <div class="m-6 overflow-hidden rounded-lg shadow-xl ">
-      <img class="object-cover w-full h-full" :src="require(`~/assets/img/${item.imageUrl}`)" :alt="item.imgAlt" />
+    <div class="m-6 overflow-hidden rounded-lg shadow-xl">
+      <show-picture :img="item.img" :alt="item.alt"></show-picture>
     </div>
     <!-- details -->
     <div class="pt-0 pb-4 pl-6 pr-6 -mt-4 rounded-b-lg">
@@ -14,6 +14,8 @@
 </template>
 
 <script>
+
+import ShowPicture from './ShowPicture.vue'
 export default {
   data() {
     return {
@@ -22,11 +24,12 @@ export default {
         category: "Community Partners",
         description:
           "The Old Theater partners with local organizations that impact area youth though education and engagement programs.",
-        imageUrl: "childrens_theater_workshop_crop.jpg",
-        imageAlt: "education image",
+        img: "/images/widgets/childrens_theater_workshop_crop.jpg",
+        alt: "Community Partners - Children's Theater Workshop",
         cta: "Learn More",
       },
     };
   },
+  components:{ ShowPicture}
 };
 </script>

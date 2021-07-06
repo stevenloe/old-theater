@@ -2,8 +2,8 @@
   <div class="m-4 sm:m-8 md:m-8 ">
     <!-- image card-->
     <div class="overflow-hidden rounded-t-lg shadow-lg">
-      <img class="object-cover w-full h-full" :src="require(`~/assets/img_new/processed/${item.imageUrl}`)" :alt="item.imgAlt" />
-    </div>
+      <show-picture :img="item.img" :alt="item.alt"></show-picture>    
+      </div>
     <!-- details -->
     <div class="pt-3 pb-4 pl-6 pr-6 bg-yellow-600 rounded-b-lg shadow-lg ">
       <h2 class="text-4xl font-bold text-white text-shadow">{{ item.title }}</h2>
@@ -14,6 +14,7 @@
 </template>
 
 <script>
+import ShowPicture from './ShowPicture.vue'
 export default {
   data() {
     return {
@@ -24,11 +25,14 @@ export default {
         location: "The Old Theater",
         description:
           "Enjoy the benefits of membership while providing the support that enables us to continue creating magical experiences both in front of and behind the curtains. We thank our generous donors who help The Old Theater bring outstanding entertainment to our community.",
-        imageUrl: "cast-edit.jpg",
-        imageAlt: "Membership Photo",
+        img: "/images/widgets/cast-edit.jpg",
+        alt: "Membership Photo",
         cta: "Join",
       },
     };
   },
+  components: {
+    ShowPicture
+  }
 };
 </script>
