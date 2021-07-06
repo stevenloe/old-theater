@@ -5,12 +5,9 @@
       class="relative overflow-hidden rounded-lg md:w-7/12 md:rounded-r-none text"
     >
       <nuxt-link :to="show.path">
-        <img
-          class="object-cover w-full h-full"
-          :src="`/images/shows/${show.img}`"
-          :alt="show.imgAlt"
-        />
+        <show-picture :img="`/images/shows/${show.img}`" :alt="show.imgAlt"></show-picture>
       </nuxt-link>
+
     </div>
 
     <!-- details card -->
@@ -67,6 +64,7 @@
 
 <script>
 import ShowPill from './ShowPill'
+import ShowPicture from './ShowPicture.vue'
 import {formatShowDate} from '@/utils/dates.js'
 import {formatPrice} from '@/utils/format.js'
 
@@ -91,7 +89,8 @@ export default {
     }
   },
   components: {
-    ShowPill
+    ShowPill,
+    ShowPicture
   }
 };
 </script>
