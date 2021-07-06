@@ -4,15 +4,7 @@
     <div class="p-8 mb-8 bg-white rounded-lg shadow-lg content-border">
       <div class="mb-4">
         <div>
-          <img
-            src="https://old-theater-pics.netlify.app/img/ctw-2019.jpg"
-            class="w-full overflow-hidden rounded-lg shadow-lg content-border"
-            alt=""
-          />
-          <p class="p-1 mb-3 text-sm italic text-gray-700">
-            Children's Theater Workshop participants having fun at The Old
-            Theater.
-          </p>
+          <base-picture :img="communityPartners.img" :alt="communityPartners.alt" :caption="communityPartners.caption" ></base-picture>
         </div>
         <p
           class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6"
@@ -41,7 +33,6 @@
             Community</UiHeadline
           >
         </div>
-
         <img
           class="object-contain ml-2 h-14 md:h-16"
           src="/images/community/pms-logo-padded.jpg"
@@ -49,11 +40,7 @@
         />
       </div>
       <div class="mb-8">
-        <img
-          src="/images/community/new_pms_collage_brighter-saturation_small.jpg"
-          class="w-full overflow-hidden rounded-lg shadow-lg"
-          alt="Pamlico musical society"
-        />
+        <base-picture :img="pms.img" :alt="pms.alt" :caption="pms.caption"></base-picture>
       </div>
       <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
         The mission of the Pamlico Musical Society is to present diverse musical
@@ -101,11 +88,7 @@
         />
       </div>
       <div class="mb-8">
-        <img
-          src="https://old-theater-pics.netlify.app/img/ctw.png"
-          class="w-full overflow-hidden rounded-lg shadow-lg"
-          alt=""
-        />
+        <base-picture :img="ctw.img" :alt="ctw.alt" :caption="ctw.caption"></base-picture>
       </div>
 
       <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
@@ -143,15 +126,8 @@
       class="p-8 mb-8 bg-indigo-100 rounded-lg shadow-lg content-border"
     >
       <UiHeadline class="mb-4" level="3">Pamlico Community Band</UiHeadline>
-      <div>
-        <img
-          src="https://old-theater-pics.netlify.app/img/community-band.jpg"
-          class="w-full overflow-hidden rounded-lg shadow-lg"
-          alt=""
-        />
-        <p class="p-1 mb-3 text-xs italic text-blue">
-          <!-- Pamlico Community Band -->
-        </p>
+      <div class="mb-8">
+        <base-picture :img="pcb.img" :alt="pcb.alt" :caption="pcb.caption"></base-picture>
       </div>
       <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
         The Pamlico Community Band has members from Pamlico County and
@@ -174,15 +150,8 @@
     <div class="p-8 mb-8 bg-gray-100 rounded-lg shadow-lg content-border">
       <UiHeadline class="mb-4" level="3">Pamlico Chorale</UiHeadline>
 
-      <div class="float-right ml-2">
-        <img
-          src="https://old-theater-pics.netlify.app/img/chorale.jpg"
-          class="w-full overflow-hidden rounded-lg"
-          alt=""
-        />
-        <p class="p-1 mb-3 text-xs italic text-blue">
-          <!-- The Pamlico Chorale  -->
-        </p>
+      <div class="mb-8">
+        <base-picture :img="pc.img" :alt="pc.alt" :caption="pc.caption"></base-picture>
       </div>
       <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
         The Pamlico Chorale is an established choral group in Pamlico County,
@@ -209,15 +178,48 @@
 <script>
 import MemberCarousel from "@/components/MemberCarousel";
 import UiHeadline from "@/components/ui/UiHeadline";
+import BasePicture from '@/components/BasePicture.vue'
 
 export default {
   metaInfo: {
     title: "About us",
   },
+  data() {
+    return {
+      communityPartners: {
+        img: "/images/widgets/childrens_theater_workshop_crop.jpg",
+        alt: "Children's Theater Workshop participants having fun at The Old Theater",
+        caption: "Children's Theater Workshop participants having fun at The Old Theater"
+      },
+      pms: {
+        img: "/images/community/new_pms_collage_brighter-saturation_small.jpg",
+        alt: "Pamlico Musical Society",
+        caption: ""
+      },
+      ctw: {
+        img: "/images/community/ctw.png",
+        alt: "Children's Theater Workshop, Oriental, NC",
+        caption: ""
+      },
+      pc: {
+        img: "/images/community/pamlico_chorale.jpg",
+        alt: "Pamlico Chorale performing on stage",
+        caption: ""
+      },
+      pcb: {
+        img: "/images/community/pamlico-community-band.jpg",
+        alt: "Pamlico Community Band",
+        caption: ""
+      },
+
+  
+    };
+  },
   components: {
     MemberCarousel,
     UiHeadline,
     MemberCarousel,
+    BasePicture
   },
   layout: "NewLayout",
 
