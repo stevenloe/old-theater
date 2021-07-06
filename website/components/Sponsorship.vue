@@ -2,8 +2,6 @@
   <div class="m-4 sm:m-8 md:m-8 ">
     <!-- image card-->
     <div class="overflow-hidden rounded-t-lg shadow-lg">
-      <!-- <img class="object-cover w-full h-full" :src="require(`~/assets/img/sponsorship/${randomImg}`)" :alt="item.imgAlt" /> -->
-
       <show-picture :img="`/images/widgets/${randomImg}`" :alt="item.alt"></show-picture>
     </div>
     <!-- details -->
