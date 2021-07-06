@@ -1,12 +1,12 @@
 <template>
-  <figure class="mb-6">
+  <figure>
     <nuxt-picture
       v-if="img"
-      class="cover-image"
+      :fit="fit"
       :src="img"
       :alt="alt"
       sizes=" xs:100vw sm:100vw md:100vw lg:100vw"
-      quality="50"
+      quality="70"
       loading="lazy"
     >
     </nuxt-picture>
@@ -26,6 +26,10 @@ export default {
       required: true,
     },
     caption: {
+      type: String,
+      required: false,
+    },
+    fit: {
       type: String,
       required: false,
     },
