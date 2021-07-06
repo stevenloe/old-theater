@@ -8,16 +8,7 @@
       <article class="p-6 mt-6 bg-white rounded shadow-lg lg:p-8 content-border">
 
        <h2 class="mb-6 text-3xl">Join the Old Theater</h2>
-
-        <figure class="mb-6">
-          <img
-            src="/images/support/my-theater-pic-1100w.jpg"
-            alt="Drawing of The Old Theater by Betty Brown"
-          />
-          <figcaption class="italic">
-            The Old Theater
-          </figcaption>
-        </figure>
+       <base-picture class="mb-6" :v-if="content.img" :caption="content.caption" :img="content.img" :alt="content.alt"></base-picture>
         <div
           class="mx-auto mb-8 prose-sm prose sm:prose lg:prose-lg xl:prose-2xl"
         >
@@ -90,12 +81,22 @@
 <script>
 import UiHeadline from "@/components/ui/UiHeadline";
 import MemberList from "@/components/MemberList";
+import BasePicture from "@/components/BasePicture";
 export default {
-
+  data() {
+    return {
+      content: {
+        img:"/images/support/my-theater-pic-1100w.jpg",
+        alt:"Drawing of The Old Theater by Betty Brown",
+        caption: "The Old Theater"
+      }
+    }
+  },
   layout: "NewLayout",
   components: {
     UiHeadline,
     MemberList,
+    BasePicture
   },
 };
 </script>
