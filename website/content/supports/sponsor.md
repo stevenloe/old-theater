@@ -7,18 +7,24 @@ imgAlt: some alt text
 eventDate: 'March, 21 2020 19:30:00 EST'
 eventTime: '2021-02-05T21:09:38.963Z'
 
+img1: /images/support/nunsense_crop.jpg
+alt1: Production of Nunsense at The Old Theater
+caption1: Production of Nunsense at The Old Theater
+img2: /images/support/blues_brothers.jpg
+alt2: The Blues Brothers poster art
+caption2: Friday Night Flicks at The Old Theater
+img3: /images/support/portrait-street-henri-herbert-1500w.jpg
+alt3: Henri Herbert at The Old Theater
+caption3: Henri Herbert
+img4: /images/support/danielle-madrid-and-wendy-osserman2-edit.jpg
+alt4: Danielle Madrid and Wendy Osserman
+caption4: Danielle Madrid and Wendy Osserman
+
 ---
 
-<figure>
-  <img
-    src="/images/support/nunsense_crop.jpg"
-    alt="Production of Nunsense at The Old Theater"
-  />
-  <figcaption class="italic">
-     Production of Nunsense at The Old Theater
-  </figcaption>
-</figure>
 
+
+<base-image  :caption="caption1" :img="img1" :alt="alt1"></base-image>
 
 As a small community theater, we take pride in bringing you great productions and performers from around Pamlico county, across the country, and across the globe.   Our intimate setting is part of what makes The Old Theater such a *great* place to see a performance.  You’re close to the action on stage… *much* closer than you would be at a larger venue.
 
@@ -39,41 +45,13 @@ We will at times reach out to our community to ask for help bringing events to o
 
 ### Sponsor a Friday Night Flick
 
-<figure>
-  <img
-    src="/images/support/blues_brothers.jpg"
-    alt="Friday Night Flicks at The Old Theater"
-    loading="lazy"
-  />
-  <figcaption class="italic">
-     Friday Night Flicks at The Old Theater
-  </figcaption>
-</figure>
-
+<base-image  :caption="caption2" :img="img2" :alt="alt2"></base-image>
 
 ### Sponsor a performance
 
-<figure>
-  <img
-    src="/images/support/portrait-street-henri-herbert-1500w.jpg"
-    alt="Henri Herbert at The Old Theater"
-    loading="lazy"
-  />
-  <figcaption class="italic">
-     Herri Herbert
-  </figcaption>
-</figure>
+<base-image  :caption="caption3" :img="img3" :alt="alt3"></base-image>
 
-<figure>
-  <img
-    src="/images/support/danielle-madrid-and-wendy-osserman2-edit.jpg"
-    alt="Danielle Madrid and Wendy Osserman"
-    loading="lazy"
-  />
-  <figcaption class="italic">
-     Danielle Madrid and Wendy Osserman
-  </figcaption>
-</figure>
+<base-image  :caption="caption4" :img="img4" :alt="alt4"></base-image>
 
 Contact us to find out more about sponsoring a show. 
 
