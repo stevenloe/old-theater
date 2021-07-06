@@ -1,11 +1,9 @@
 <template>
-  <div class="mx-auto">
-    <div
-      class="w-full mx-auto content-column lg:text-xl xl:text-2xl"
-    >
+  <div>
+    <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
       <UiHeadline id="level-1-headline" level="1" > Membership </UiHeadline>
       <UiHeadline id="level-1-headline" level="3" > </UiHeadline>
-      <article class="p-6 mt-6 bg-white rounded shadow-lg lg:p-8 content-border">
+      <article class="p-6 mt-6 bg-white rounded-lg shadow-lg lg:p-8 content-border">
 
        <h2 class="mb-6 text-3xl">Join the Old Theater</h2>
        <base-picture class="mb-6" :v-if="content.img" :caption="content.caption" :img="content.img" :alt="content.alt"></base-picture>
