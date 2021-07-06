@@ -2,8 +2,8 @@
 title: Our Fundraisers
 description:  
 slug:  /support/fundraisers
-img: /images/about/old_theater_seats.jpg
-imgAlt: interior photo of the old theater showing the theater's seats
+img: /images/fundraisers/old-theaters-got-talent-trophies.jpg
+imgAlt: Old Theater's got talent fundraiser trophies
 eventDate: 'March, 21 2020 19:30:00 EST'
 eventTime: '2021-02-05T21:09:38.963Z'
 
@@ -16,7 +16,7 @@ eventTime: '2021-02-05T21:09:38.963Z'
 
 <figure>
   <img
-    src="/images/fundraisers/old-theaters-got-talent-trophies.jpg"
+    src=""
     alt="Old Theater's got talent fundraiser trophies"
     loading="lazy"
   />
