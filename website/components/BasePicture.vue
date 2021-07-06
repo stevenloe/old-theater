@@ -7,11 +7,12 @@
       :alt="alt"
       sizes=" xs:100vw sm:100vw md:100vw lg:100vw"
       quality="70"
+      class="overflow-hidden rounded-lg shadow"
       loading="lazy"
     >
     </nuxt-picture>
-    
-    <figcaption v-if="caption" class="italic">
+
+    <figcaption class="py-2 mb-6 text-base italic text-gray-700" v-if="caption">
       {{ caption }}
     </figcaption>
   </figure>
@@ -40,3 +41,18 @@ export default {
   },
 };
 </script>
+
+
+<style scoped>
+picture {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+picture img {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  border: solid 1px red;
+}
+</style>

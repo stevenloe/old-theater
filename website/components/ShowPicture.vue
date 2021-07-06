@@ -10,8 +10,8 @@
       loading="lazy"
     >
     </nuxt-picture>
-    
-    <figcaption v-if="caption" class="italic">
+
+    <figcaption class="py-2 mb-6 text-base italic text-gray-700" v-if="caption">
       {{ caption }}
     </figcaption>
   </figure>
@@ -42,14 +42,14 @@ export default {
 </script>
 
 <style scoped>
-  picture {
+picture {
   width: 100%;
   height: 100%;
   display: flex;
 }
 picture img {
- object-fit: cover; 
-    height: auto;
-    width:100%;
+  object-fit: cover;
+  height: auto;
+  width: 100%;
 }
 </style>
