@@ -42,7 +42,7 @@ collections:
     folder: '/website/content/fundraisers'
     create: true
     format: 'frontmatter'
-    slug: '/support/fundraisers/{{slug}}'
+    slug: '{{slug}}'
     # editor:
     #   preview: true
     fields:
@@ -53,6 +53,8 @@ collections:
       - { label: 'Cover Image Alt Text', name: 'alt', widget: 'string', required: true }
       - { label: 'Cover Image Caption', name: 'caption', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+      - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/support/fundraisers/'}
+      
       - {
         label: 'Gallery',
         name: 'gallery',
