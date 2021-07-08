@@ -9,7 +9,7 @@
         :key="post.title"
       >
 
-      <base-picture class="mb-6" :v-if="post.img" :caption="post.caption" :img="post.img" :alt="post.alt"></base-picture>
+      <base-picture class="mb-6" :v-if="post.img" :caption="imagePath(post.image, post.date)" :img="post.img" :alt="post.alt"></base-picture>
         <div
           class="mb-1 text-sm font-semibold text-gray-700 uppercase md:text-base lg:text-lg"
         >
@@ -67,6 +67,12 @@ export default {
     showDate(date) {
       return formatShowDate(date, "date");
     },
+    imagePath(path, date) {
+      console.log("path", path, "date", date);
+      let result = path + new Date(date).getFullYear()
+      console.log("RESULT", result);
+      return result
+    }
   },
   layout: "NewLayout",
   components: {
