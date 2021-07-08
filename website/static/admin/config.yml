@@ -42,7 +42,7 @@ collections:
     folder: '/website/content/fundraisers'
     create: true
     format: 'frontmatter'
-    slug: '{{slug}}'
+    slug: '/support/fundraisers/{{slug}}'
     # editor:
     #   preview: true
     fields:
