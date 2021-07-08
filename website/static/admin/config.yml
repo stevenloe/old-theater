@@ -39,6 +39,7 @@ collections:
       - {label: 'Body', name: 'body', widget: 'markdown'}
   - name: 'fundraisers'
     label: 'Fundraisers'
+    media_folder: '/website/static/images/support'
     folder: '/website/content/fundraisers'
     create: true
     format: 'frontmatter'
