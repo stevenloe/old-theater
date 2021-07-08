@@ -39,7 +39,7 @@ collections:
       - {label: 'Body', name: 'body', widget: 'markdown'}
   - name: 'fundraisers'
     label: 'Fundraisers'
-    folder: 'website/content/fundraisers'
+    folder: 'fundraisers'
     create: true
     format: 'frontmatter'
     slug: '{{slug}}'
