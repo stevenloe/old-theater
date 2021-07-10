@@ -9,7 +9,7 @@
         :key="post.title"
       >
 
-      <base-picture class="mb-6" :v-if="post.img" :caption="imagePath(post.image, post.date)" :img="post.img" :alt="post.alt"></base-picture>
+      <base-picture class="mb-6" :v-if="post.img" :caption="post.caption" :img="post.img" :alt="post.alt"></base-picture>
         <div
           class="mb-1 text-sm font-semibold text-gray-700 uppercase md:text-base lg:text-lg"
         >
@@ -19,7 +19,7 @@
         <h2
           class="mb-4 text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl"
         >
-          <nuxt-link :to="`${post.slug}?page=index`">
+          <nuxt-link :to="`${post.path}?page=index`">
             {{ post.title }}</nuxt-link
           >
         </h2>
@@ -29,7 +29,7 @@
 
           <nuxt-link
             class="block mt-2 text-lg italic underline"
-            :to="`${post.slug}?page=index`"
+            :to="`${post.path}?page=index`"
           >
             Learn more...</nuxt-link
           >
@@ -68,9 +68,8 @@ export default {
       return formatShowDate(date, "date");
     },
     imagePath(path, date) {
-      console.log("path", path, "date", date);
-      let result = path + new Date(date).getFullYear()
-      console.log("RESULT", result);
+      let result = path + new Date(theDate).getFullYear()
+      console.log("result");
       return result
     }
   },

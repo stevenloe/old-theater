@@ -217,7 +217,7 @@ export default {
             id: 12,
           },
           { text: "Donate", link: "/support/donate", id: 13 },
-          { text: "Our Fundraisers", link: "/support/fundraisers", id: 14 },
+          { text: "Our Fundraisers", link: "/fundraisers", id: 14 },
           { text: "Other Ways to Support", link: "/support/other", id: 15 },
         ],
       },
