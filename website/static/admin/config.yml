@@ -69,11 +69,11 @@ collections:
         widget: "list"
         summary: '{{fields.quote}} - {{fields.author.name}}'
         fields:
-          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
           - label: Author
             name: author
             widget: object
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+              - {label: Image alt text, name: alt, widget: string}
+              - {label: Image Heading, name: alt, widget: string}
+              - {label: Image, name: img, widget: image, default: "/img/emmet.jpg"}
       
