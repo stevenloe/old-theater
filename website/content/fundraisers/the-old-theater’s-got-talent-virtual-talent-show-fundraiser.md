@@ -9,6 +9,22 @@ img: /images/fundraisers/2020/old-theaters-got-talent-trophies.jpg
 alt: Trophies await
 caption: Trophies await
 folder: /support/fundraisers/
+gallery:
+  - /images/fundraisers/2020/barry-bey-one-man-band.jpg
+  - /images/fundraisers/2020/ben-gaskill-point-of-light.jpg
+  - /images/fundraisers/2020/byron-lambdin-till-i-gain-control-again.jpg
+  - /images/fundraisers/2020/elaine-creel-turn-up-the-spotlight.jpg
+  - /images/fundraisers/2020/emily-wheeley-she-used-to-be-mine.jpg
+  - /images/fundraisers/2020/flying-blind-voyage.jpg
+  - /images/fundraisers/2020/isabella-rodriguez-never-enough.jpg
+  - /images/fundraisers/2020/ken-belangia-the-skye-boat-song.jpg
+  - /images/fundraisers/2020/luke-douglas-river-rapids.jpg
+  - /images/fundraisers/2020/michele-rodriguez-crazy.jpg
+  - /images/fundraisers/2020/per-erichsen-as-hercule-poirot.jpg
+  - /images/fundraisers/2020/rosa-cardona-three-little-birds.jpg
+  - /images/fundraisers/2020/russ-stevenson-sarie-marais.jpg
+  - /images/fundraisers/2020/terrylynn-melody-desire.jpg
+  - /images/fundraisers/2020/yolanda-cristiani-and-abby.jpg
 ---
 # Congratulations to the Winners of The Old Theater’s Got Talent Virtual Talent Show Fundraiser!
 
