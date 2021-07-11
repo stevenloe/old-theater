@@ -74,6 +74,6 @@ collections:
             widget: object
             fields:
               - {label: Image alt text, name: alt, widget: string}
-              - {label: Image Heading, name: alt, widget: string}
+              - {label: Image Heading, name: heading, widget: string}
               - {label: Image, name: img, widget: image, default: "/img/emmet.jpg"}
       
