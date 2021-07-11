@@ -74,6 +74,6 @@ collections:
             fields:
               - {label: Image Headline, name: headline, widget: string, required: false }
               - {label: Image description, name: alt, widget: string}
-              - {label: Image Caption, name: alt, widget: string, required: false}
+              - {label: Image Caption, name: caption, widget: string, required: false}
               - {label: Image, name: img, widget: image}
       
