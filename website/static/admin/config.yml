@@ -52,7 +52,7 @@ collections:
       - { label: 'Event Date', name: 'date', widget: 'datetime', hint: 'Please select the event Date'}
       - { label: 'Summary', name: 'summary', widget: 'string', required: false }
       - { label: 'Cover Image', name: 'img', widget: 'image', required: false, allow_multiple: false }
-      - { label: 'Cover Image Alt Text', name: 'alt', widget: 'string', required: true }
+      - { label: 'Cover Image Alt Text', name: 'alt', widget: 'string', required: false }
       - { label: 'Cover Image Caption', name: 'caption', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
       - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/support/fundraisers/'}
@@ -64,16 +64,15 @@ collections:
         summary: '{{fields.image}}',
         field: { label: 'Image', name: 'image', widget: 'image' }
       }
-      - label: "Testimonials"
-        name: "testimonials"
+      - label: "Image Gallery"
+        name: "img_gallery"
         widget: "list"
-        summary: '{{fields.quote}} - {{fields.author.name}}'
         fields:
-          - label: Author
-            name: author
+          - label: Image
+            name: image
             widget: object
             fields:
-              - {label: Image alt text, name: alt, widget: string}
-              - {label: Image Heading, name: heading, widget: string}
-              - {label: Image, name: img, widget: image, default: "/img/emmet.jpg"}
+              - {label: Image Headline, name: headline, widget: string, required: false }
+              - {label: Image description, name: alt, widget: string}
+              - {label: Image, name: img, widget: image}
       
