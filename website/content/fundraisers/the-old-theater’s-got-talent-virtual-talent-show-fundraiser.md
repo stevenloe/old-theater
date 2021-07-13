@@ -7,7 +7,7 @@ summary: "Congratulations to the Winners of The Old Theater’s Got Talent Virtu
   Used to be Mine. 3rd Place – Flying Blind of Swansboro, NC – Voyage."
 img: /images/fundraisers/2020/old-theaters-got-talent-trophies.jpg
 alt: Trophies await
-caption: Trophies await
+caption: Trophies for our very talented contestants
 folder: /support/fundraisers/
 gallery: []
 img_gallery:
