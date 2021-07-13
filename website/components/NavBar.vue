@@ -261,7 +261,7 @@ export default {
   },
   watch: {
     $route() {
-      this.$bus.$emit("toggle-search");
+      this.$bus.$emit("toggle-search", "close");
     },
   },
   created: function () {

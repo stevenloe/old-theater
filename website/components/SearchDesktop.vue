@@ -14,7 +14,7 @@
     >
       <li v-for="result of results" :key="result.slug">
         <NuxtLink
-          :to="result.slug"
+          :to="result.path"
           @click.native="clearSearch"
           class="flex items-center px-8 py-2 mx-2 text-lg leading-6 text-black transition duration-150 ease-in-out rounded-lg hover:bg-gray-400 "
         >
@@ -62,8 +62,16 @@ export default {
         .limit(20)
         .search(searchQuery)
         .fetch();
+      let fundraisers = await this.$content("fundraisers")
+        .limit(20)
+        .search(searchQuery)
+        .fetch();
 
-      this.results = [...shows, ...abouts, ...supports, ...news ];
+      this.results = [...shows, ...abouts, ...supports, ...news , ...fundraisers ];
+
+      this.results.forEach(e => {
+        console.log("--- slug", e.slug, "path", e.path);
+      });
     },
   },
   methods: {
@@ -74,10 +82,17 @@ export default {
   },
   created() {
     this.$bus.$on("toggle-search", (e) => {
-      this.isOpen = !this.isOpen;
+      if (e === 'close') {
+        this.isOpen = false
+      } else {
+        this.isOpen = !this.isOpen;
+      }
+      
       this.searchQuery = "";
-      const searchInput = document.querySelector('#search-input');
-      searchInput.focus();
+      if (this.isOpen) {
+        const searchInput = document.querySelector('#search-input');
+        searchInput.focus();
+      }
     });
     this.$bus.$on("hide-search", (e) => {
       this.isOpen = false;
@@ -86,21 +101,12 @@ export default {
     this.$bus.$on("resize-window", (e) => {
       this.clearSearch();
     });
-
-    // if (process.client) {
-    //   // window is undefined because nuxt JS is server side rendered.
-    //   // Using the process.client variable allow us to access the window object
-    //   window.addEventListener("scroll", debounce(this.onScroll, 250));
-    // }
   },
-  // destroy() {
-  //   if (process.client) {
-  //     window.removeEventListener("scroll", this.onScroll);
-  //   }
-  // },
+
   computed: {
     searchClass() {
       let openClose = this.isOpen ? "open" : "";
+      console.log("SEARCH CLASS:: open", openClose);
       return `${openClose} search w-0 h-10 text-lg text-black focus:outline-none bg-gray-300 placeholder-black`;
     },
   },
