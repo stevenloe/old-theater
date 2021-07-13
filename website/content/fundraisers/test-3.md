@@ -8,9 +8,11 @@ testimonials:
       img: /images/fundraisers/2021/22years.png
       alt: Img 1 Alt
       heading: This is img 1 heading
+      caption: this is caption 1
   - author:
       img: /images/fundraisers/2021/pms-about.jpg
       alt: img 2 alt text
       heading: This the  heading
+      caption: this is caption 2
 ---
 this 

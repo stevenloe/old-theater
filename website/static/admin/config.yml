@@ -56,14 +56,6 @@ collections:
       - { label: 'Cover Image Caption', name: 'caption', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
       - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/support/fundraisers/'}
-      - {
-        label: 'Gallery',
-        name: 'gallery',
-        widget: 'list',
-        required: false,
-        summary: '{{fields.image}}',
-        field: { label: 'Image', name: 'image', widget: 'image' }
-      }
       - label: "Image Gallery"
         name: "img_gallery"
         widget: "list"
