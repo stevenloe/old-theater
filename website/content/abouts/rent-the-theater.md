@@ -2,7 +2,7 @@
 title: Rent the Theater
 description:  
 shortDesc: Irure eiusmod dolore amet anim non laboris amet.
-slug:  /about/rent-the-theater
+folder: /about/
 img: /images/about/old_theater_seats.jpg
 imgAlt: interior photo of the old theater showing the theater's seats
 caption: Seating at The Old Theater

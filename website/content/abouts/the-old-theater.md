@@ -2,12 +2,9 @@
 title: About Us
 description: 
 shortDesc: Irure eiusmod dolore amet anim non laboris amet.
-slug: /about/the-old-theater
 img: "/images/about/old-theater-sketch-by-betty-brown.jpg"
 imgAlt: Drawing of The Old Theater by Betty Brown
-caption: Drawing of The Old Theater by Betty Brown
-eventDate: 'March, 21 2020 19:30:00 EST'
-eventTime: '2021-02-05T21:09:38.963Z'
+folder: /about/
 
 ---
 

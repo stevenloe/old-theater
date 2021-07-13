@@ -1,14 +1,8 @@
 ---
 title: Our History
 description:  
-shortDesc: Irure eiusmod dolore amet anim non laboris amet.
-slug: /about/history
 img: 
-imgAlt: some alt text
-eventDate: 'March, 21 2020 19:30:00 EST'
-eventTime: '2021-02-05T21:09:38.963Z'
-price: 19.00
-ticketURL: https://example.com
+imgAlt: folder: /about/
 ---
 
 

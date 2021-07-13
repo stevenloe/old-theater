@@ -3,6 +3,7 @@ title: Board of Directors
 slug: /about/volunteers-and-board
 img: 
 imgAlt: some alt text
+folder: /about/
 ---
 
 
