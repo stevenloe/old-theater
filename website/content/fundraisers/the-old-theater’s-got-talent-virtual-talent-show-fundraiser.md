@@ -109,7 +109,7 @@ img_gallery:
         Afrikaans.
       img: /images/fundraisers/2020/russ-stevenson-sarie-marais.jpg
 ---
-## Congratulations to the Winners of The Old Theater’s Got Talent Virtual Talent Show Fundraiser!
+### Congratulations to the Winners of The Old Theater’s Got Talent Virtual Talent Show Fundraiser!
 
 ### Here are the Judge’s Choices:
 
