@@ -17,6 +17,32 @@ img_gallery:
       caption: Luke Douglas is a 16 year old pianist. He plays “River Rapids”, a song
         he wrote at 15.
       img: /images/fundraisers/2020/luke-douglas-river-rapids.jpg
+  - image:
+      headline: Emily Wheeley - "She Used to be Mine"
+      alt: Emily Wheeley  performs She Used to be Mine
+      caption: mily Wheeley is 15 and loves community theater. She sings "She Used to
+        be Mine" from the Broadway Musical Waitress.
+      img: /images/fundraisers/2020/emily-wheeley-she-used-to-be-mine.jpg
+  - image:
+      headline: Flying Blind - "Voyage"
+      alt: Flying Blind performs Voyage
+      caption: ob Laverty wrote "Voyage" on a trip to Oriental, NC in his 29’ sloop
+        "Joie De Vie". He performs his song with his Swansboro based group
+        "Flying Blind" featuring Jack Ketner on fiddle and Gary Edmisten on
+        bass.
+      img: /images/fundraisers/2020/flying-blind-voyage.jpg
+  - image:
+      headline: Barry Bey - "One Man Band"
+      alt: Barry Bey performs One Man Band
+      caption: Singer/songwriter Byron "Barry" Bey has performed on radio and
+        television. He performs "One Man Band" by Old Dominion.
+      img: /images/fundraisers/2020/barry-bey-one-man-band.jpg
+  - image:
+      headline: Byron Lambdin - "Till I Gain Control Again"
+      alt: Byron Lambdin performs Till I Gain Control Again
+      caption: Byron Lambdin is retired, plays his guitar, and does a lot of fishing
+        in the Oriental area. He plays and sings "Till I Gain Control Again".
+      img: /images/fundraisers/2020/byron-lambdin-till-i-gain-control-again.jpg
 ---
 ## Congratulations to the Winners of The Old Theater’s Got Talent Virtual Talent Show Fundraiser!
 
