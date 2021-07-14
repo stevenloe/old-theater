@@ -100,7 +100,6 @@ export default {
   computed: {
     searchClass() {
       let openClose = this.isOpen ? "open" : "";
-      console.log("SEARCH CLASS:: open", openClose);
       return `${openClose} search w-0 h-10 text-lg text-black focus:outline-none bg-gray-300 placeholder-black`;
     },
   },

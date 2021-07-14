@@ -9,6 +9,7 @@
           <button
             @click="onMenuBtnClick"
             type="button"
+            aria-label="Open / Close Navigation Menu">
             class="block text-gray-700 hover:text-gray-900 focus:text-gray-900 focus:outline-none"
           >
             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
@@ -73,7 +74,7 @@
               >
 
               <!-- calendar -->
-              <div class="rounded hover:bg-gray-200">
+              <div class="rounded hover:bg-gray-200" aria-label="Calendar menu button">
                 <nuxt-link to="/calendar/" title="Calendar" @click.native="onNavItemClick">
                   <div
                     v-if="isMobileMenuOpen"
@@ -100,7 +101,7 @@
               </div>
 
               <!-- news -->
-              <div class="mr-2 rounded hover:bg-gray-200">
+              <div class="mr-2 rounded hover:bg-gray-200" aria-label="News menu button">
                 <nuxt-link to="/news/" title="News" @click.native="onNavItemClick">
                   <div
                     v-if="isMobileMenuOpen"
@@ -146,7 +147,7 @@
       <FooterMobile :isMobileMenuOpen="isMobileMenuOpen" />
 
       <!-- search icon on medium screens-->
-      <div class="absolute top-0 right-0 hidden md:flex">
+      <div class="absolute top-0 right-0 hidden md:flex" aria-label="Search menu button">
         <SearchDesktop
           class="w-0 bg-purple-800"
           :isMobile="isMobile"
