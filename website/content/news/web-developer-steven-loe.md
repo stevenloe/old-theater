@@ -7,7 +7,7 @@ imgAlt: some alt text
 
 date: '2020-09-15T21:07:38.963Z'
 subhead: "Steven Loe has joined the Old Theater board as web developer, volunteering to create..."
-slug: "/news/web-developer-steven-loe"
+folder: /news/
 ---
 
 Steven Loe has joined the Old Theater board as web developer, volunteering to create and maintain a modern website for the Old Theater that will be both mobile and computer friendly.

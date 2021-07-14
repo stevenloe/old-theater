@@ -1,8 +1,7 @@
 ---
 title: Our History
-description:  
-img: 
-imgAlt: folder: /about/
+folder: /about/ 
+
 ---
 
 

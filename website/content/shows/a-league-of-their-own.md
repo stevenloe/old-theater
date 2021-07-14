@@ -12,6 +12,7 @@ shortDesc: Directed by Penny Marshall. With Tom Hanks, Geena Davis, Lori Petty,
 img: a_league_of_their_own.jpg
 imgAlt: A League of Their Own poster art
 youtubeVideo: WcN392H2jx0
+folder: /shows/
 
 ---
 The Old Theater in collaboration with The Silos in Oriental present our May Friday Flick:  **A League of Their Own.** Admission by donation. Includes FREE popcorn.

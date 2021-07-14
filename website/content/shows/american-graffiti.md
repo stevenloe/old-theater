@@ -12,6 +12,7 @@ shortDesc: Directed by George Lucas. With Richard Dreyfuss, Ron Howard, Paul Le
 img: american_graffiti.jpg
 imgAlt: American Graffiti poster art
 youtubeVideo: OZ9Gp6Qc8LQ
+folder: /shows/
 ---
 The Old Theater with The Red Rooster present **American Graffiti**. Admission is by donation to benefit the Old Theater.
 

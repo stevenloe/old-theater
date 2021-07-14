@@ -3,7 +3,6 @@ title: Ghostbusters
 path: "/shows/"
 description:  
 shortDesc: "With Bill Murray, Dan Aykroyd, Sigourney Weaver, Harold Ramis. Three former parapsychology professors set up shop as a unique ghost removal service."
-slug: /ghostbusters
 img: ghostbusters.jpg
 imgAlt: Old Theater presents *Ghostbusters* at the Red Rooster
 
@@ -19,6 +18,7 @@ location: The Red Rooster
 locationDetail: (behind The Silos, 1111 Broad Street, Oriental, NC)
 ticketURL: 
 showtype: "SATURDAY FLICK"
+folder: /shows/
 ---
 
 The Old Theater with The Red Rooster present *Ghostbusters*.  Admission is by donation to benefit the Old Theater.

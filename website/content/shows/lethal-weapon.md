@@ -3,7 +3,6 @@ title: Lethal Weapon
 path: "/shows/"
 description:  
 shortDesc: "With Mel Gibson, Danny Glover, Gary Busey, Mitchell Ryan. Two newly paired cops who are complete opposites must put aside their differences in order to catch a gang of drug smugglers."
-slug: /shows/lethal-weapon
 img: lethal-weapon.jpg
 imgAlt: Old Theater presents Ghostbusters at the Red Rooster
 
@@ -20,6 +19,7 @@ location: The Red Rooster
 locationDetail: The Silos, 1111 Broad Street, Oriental, NC
 ticketURL: 
 showtype: "SATURDAY FLICK"
+folder: /shows/
 ---
 
 The Old Theater with The Red Rooster present *Lethal Weapon*.  Admission is by donation to benefit the Old Theater.

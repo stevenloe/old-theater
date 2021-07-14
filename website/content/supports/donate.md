@@ -1,11 +1,11 @@
 ---
 title: Donate
-slug: /support/donate
 img: /images/support/timothy_mooney.jpg
 imgAlt: timothy mooney performing at The Old Theater, Oriental North Carolina
 caption: Timothy Mooney performing at The Old Theater
 eventDate: 'March, 21 2020 19:30:00 EST'
 eventTime: '2021-02-05T21:09:38.963Z'
+folder: /support/
 
 ---
 

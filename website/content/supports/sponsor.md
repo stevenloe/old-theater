@@ -1,7 +1,6 @@
 ---
 title: Sponsor a Show or Production
 description:   
-slug: /support/sponsor
 img: 
 imgAlt: some alt text
 eventDate: 'March, 21 2020 19:30:00 EST'
@@ -19,6 +18,8 @@ caption3: Henri Herbert
 img4: /images/support/danielle-madrid-and-wendy-osserman2-edit.jpg
 alt4: Danielle Madrid and Wendy Osserman
 caption4: Danielle Madrid and Wendy Osserman
+
+folder: /support/
 
 ---
 

@@ -10,11 +10,11 @@
     />
     <ul
       v-if="results.length"
-      class="absolute z-40 flex-1 w-auto py-4 overflow-scroll bg-gray-200 top-40 dark:bg-gray-900" 
+      class="absolute z-40 flex-1 w-auto py-4 pb-6 overflow-scroll bg-gray-200 top-40 dark:bg-gray-900 results" 
     >
       <li v-for="result of results" :key="result.slug">
         <NuxtLink
-          :to="result.path"
+          :to="result.folder + result.slug"
           @click.native="clearSearch"
           class="flex items-center px-8 py-2 mx-2 text-lg leading-6 text-black transition duration-150 ease-in-out rounded-lg hover:bg-gray-400 "
         >
@@ -26,8 +26,6 @@
 </template>
 
 <script>
-import {debounce} from '@/utils/debounce.js'
-
 export default {
   props: {
     isMobile: Boolean,
@@ -47,31 +45,27 @@ export default {
         return;
       }
       let shows = await this.$content("shows")
-        .limit(20)
+        .limit(50)
         .search(searchQuery)
         .fetch();
       let abouts = await this.$content("abouts")
-        .limit(20)
+        .limit(50)
         .search(searchQuery)
         .fetch();
       let supports = await this.$content("supports")
-        .limit(20)
+        .limit(50)
         .search(searchQuery)
         .fetch();
       let news = await this.$content("news")
-        .limit(20)
+        .limit(50)
         .search(searchQuery)
         .fetch();
       let fundraisers = await this.$content("fundraisers")
-        .limit(20)
+        .limit(50)
         .search(searchQuery)
         .fetch();
 
       this.results = [...shows, ...abouts, ...supports, ...news , ...fundraisers ];
-
-      this.results.forEach(e => {
-        console.log("--- slug", e.slug, "path", e.path);
-      });
     },
   },
   methods: {
@@ -117,6 +111,10 @@ export default {
 .search {
   transition: all 0.3s;
   transition-timing-function: ease-in-out;
+}
+
+.results {
+  height: 96vh;
 }
 
 .open {

@@ -12,7 +12,7 @@
       class="flex-1 w-full h-full pb-8 overflow-hidden bg-gray-300 border border-gray-300 rounded-md top-40"
     >
       <div class="flex items-center justify-between border-b-2 border-gray-500">
-        <div class="m-4 text-lg font-semibold">Search Results</div>
+        <div class="m-4 text-2xl font-semibold">Search Results</div>
         <svg
           @click="clearQuery"
           class="w-6 h-6 m-2 cursor-pointer fill-current"
@@ -27,7 +27,7 @@
 
       <li v-for="result of results" :key="result.slug">
         <NuxtLink
-          :to="result.slug"
+          :to="result.folder + result.slug"
           @click.native="close"
           class="flex items-center px-8 py-4 text-3xl leading-8 text-gray-900 transition duration-150 ease-in-out hover:text-black"
         >
@@ -59,23 +59,27 @@ export default {
         return;
       }
       let shows = await this.$content("shows")
-        .limit(20)
+        .limit(50)
         .search(searchQuery)
         .fetch();
       let abouts = await this.$content("abouts")
-        .limit(20)
+        .limit(50)
         .search(searchQuery)
         .fetch();
       let supports = await this.$content("supports")
-        .limit(20)
+        .limit(50)
         .search(searchQuery)
         .fetch();
       let news = await this.$content("news")
-        .limit(20)
+        .limit(50)
+        .search(searchQuery)
+        .fetch();
+      let fundraisers = await this.$content("fundraisers")
+        .limit(50)
         .search(searchQuery)
         .fetch();
 
-      this.results = [...shows, ...abouts, ...supports, ...news ];
+      this.results = [...shows, ...abouts, ...supports, ...news , ...fundraisers ];
 
       this.onSearchResults();
     },
@@ -88,7 +92,6 @@ export default {
       this.searchQuery = "";
     },
     close() {
-      console.log("_-------- LOCAL CLOSE -----");
       this.$bus.$emit("close-mobile-menu");
     }
   },

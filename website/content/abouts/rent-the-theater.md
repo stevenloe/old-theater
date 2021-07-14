@@ -4,12 +4,10 @@ description:
 shortDesc: Irure eiusmod dolore amet anim non laboris amet.
 folder: /about/
 img: /images/about/old_theater_seats.jpg
-imgAlt: interior photo of the old theater showing the theater's seats
+imgAlt: Interior photo of the old theater showing the theater's seats
 caption: Seating at The Old Theater
 eventDate: 'March, 21 2020 19:30:00 EST'
 eventTime: '2021-02-05T21:09:38.963Z'
-price: 19.00
-ticketURL: https://example.com
 ---
 
 
