@@ -6,7 +6,7 @@
       :src="img"
       :alt="alt"
       sizes=" xs:100vw sm:100vw md:100vw lg:100vw"
-      quality="70"
+      quality="85"
       loading="lazy"
     >
     </nuxt-picture>

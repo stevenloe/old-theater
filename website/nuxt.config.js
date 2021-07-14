@@ -14,7 +14,10 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
       { rel: 'apple-touch-icon', type: ' ', href: '/apple-touch-icon.png' }
-    ]
+    ],
+    htmlAttrs: {
+      lang: "en",  // it sets the language English
+    }
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -56,13 +59,13 @@ export default {
   image: {
     // The screen sizes predefined by `@nuxt/image`:
     screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-      xxl: 1536,
-      '2xl': 1536
+      xs: 150,
+      sm: 225,
+      md: 338,
+      lg: 830,
+      xl: 762,
+      xxl: 1143,
+      '2xl': 1715
     },
   },
 

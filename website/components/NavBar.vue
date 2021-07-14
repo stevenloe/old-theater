@@ -1,6 +1,6 @@
 <template>
   <div class="mb-12 md:mb-20">
-    <header class="shadow-lg" :class="headerClass">
+    <header class="bg-gray-400 shadow-lg sm:bg-blue-400 md:bg-green-400 lg:bg-red-400 xl:bg-orange-200" :class="headerClass">
       <div class="flex items-center justify-between md:p-0 md:mr-3 md:py-2">
         <Logo @click.native="onNavItemClick" />
 
@@ -9,7 +9,7 @@
           <button
             @click="onMenuBtnClick"
             type="button"
-            aria-label="Open / Close Navigation Menu">
+            aria-label="Open / Close Navigation Menu"
             class="block text-gray-700 hover:text-gray-900 focus:text-gray-900 focus:outline-none"
           >
             <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
