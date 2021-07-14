@@ -2,7 +2,7 @@
 layout: blog
 folder: /news/
 title: The Old Theater Welcomes Brian Hough as Facilities Manager
-date: 2021-07-14T18:42:43.956Z
+date: 2021-03-01T19:42:43.956Z
 subhead: Brian brings a wealth of experience in carpentry, and construction to
   The Old Theater
 imgAlt: ""
