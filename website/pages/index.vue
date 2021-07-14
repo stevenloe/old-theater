@@ -29,6 +29,7 @@ import NewsWidget from "@/components/NewsWidget";
 import ShowPill from "@/components/ShowPill";
 
 import {sortShows} from '@/utils/sort.js'
+import {sortByDate} from '@/utils/sort.js'
 
 export default {
   head() {
@@ -47,17 +48,19 @@ export default {
 
   async asyncData ({ $content, params }) {
   const [shows, news, alerts] = await Promise.all([ 
-    $content("shows", params.slug).sortBy("date", "asc").fetch(),
-    $content("news", params.slug).sortBy("date", "desc").fetch(),
+    $content("shows", params.slug).fetch(),
+    $content("news", params.slug).fetch(),
     $content("alerts", params.slug).fetch(),
   ])
+
+  const sortedNews = sortByDate(news).slice(0, 5)
 
   const {futureShows, pastShows} = sortShows(shows)
 
   return {
     shows: shows,
     futureShows:futureShows,
-    news: news,
+    news: sortedNews,
     alerts: alerts
   }
 },

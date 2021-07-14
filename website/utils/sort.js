@@ -28,5 +28,15 @@ export function sortShows(shows) {
   return { futureShows, pastShows };
 }
 
+export function sortByDate(news) {
+  news.sort(function (a, b) {
+    var c = new Date(a.date);
+    var d = new Date(b.date);
+    return d - c;
+  });
+
+  return news
+}
+
 
 

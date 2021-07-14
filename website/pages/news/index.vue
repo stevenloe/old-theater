@@ -41,13 +41,16 @@
 <script>
 import UiHeadline from "@/components/ui/UiHeadline";
 import {formatShowDate} from '@/utils/dates.js'
+import {sortByDate} from '@/utils/sort.js'
 
 export default {
   async asyncData({ $content }) {
-    const posts = await $content("news")
+    let posts = await $content("news")
       .sortBy("date", "desc")
       .limit(10)
       .fetch();
+
+      posts = sortByDate(posts)
 
     const nextPage = posts.length === 10;
     return { nextPage, posts };

@@ -51,6 +51,7 @@ import UiHeadline from "@/components/ui/UiHeadline";
 import BasePicture from "@/components/BasePicture";
 import { formatShowDate } from "@/utils/dates.js";
 
+
 export default {
   async asyncData({ $content }) {
     const posts = await $content("fundraisers")
