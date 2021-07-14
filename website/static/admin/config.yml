@@ -53,12 +53,14 @@ collections:
     folder: 'website/content/news' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
-      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog'}
-      - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/news/'}
-      - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Featured Image', name: 'img', widget: 'image', required: false }
-      - {label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
-      - {label: 'Body', name: 'body', widget: 'markdown'}
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      - { label: 'Folder', name: 'folder', widget: 'hidden', default: '/news/' }
+      - { label: 'Title', name: 'title', widget: 'string'}
+      - { label: 'News Item Date', name: 'date', widget: 'datetime', hint: 'Please select the Date of this news item' }
+      - { label: 'Summary', name: 'subhead', widget: 'string', required: true, hint: 'Please enter a short summary of this event' }
+      - { label: 'Featured Image', name: 'img', widget: 'image', required: false }
+      - { label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown'}
   - name: 'fundraisers'
     label: 'Fundraisers'
     media_folder: '/website/static/images/fundraisers/{{year}}'
