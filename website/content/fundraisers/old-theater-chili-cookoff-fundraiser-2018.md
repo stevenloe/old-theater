@@ -1,5 +1,5 @@
----
-title: Old Theater Chili Cookoff Fundraiser 2018
+--- 
+title: Old Theater Chili Cookoff Fundraiser 2018.
 date: 2018-10-27T15:16:09.571Z
 img: /images/fundraisers/2018/1.jpg
 alt: Endurance seafood at the Old Theater Chili Cookoff Fundraiser 2018
