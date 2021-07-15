@@ -21,7 +21,7 @@
         <div class="p-0 mb-0 text-gray-700">{{ showDate(item.date) }}</div>
         <div class="text-gray-900">
           <nuxt-link class="ml-3 italic underline" 
-            :to="item.slug">
+            :to="`${item.folder}${item.slug}`">
             Read more...
           </nuxt-link>
         </div>

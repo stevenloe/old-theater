@@ -7,7 +7,7 @@
         >
           {{ showDate(post.date) }}
         </div>
-        <nuxt-link :to="`${post.slug}?page=index`">
+        <nuxt-link :to="`${post.folder}${post.slug}?page=index`">
 
         <UiHeadline level="3" class="mb-4">{{ post.title }}</UiHeadline>
          </nuxt-link
