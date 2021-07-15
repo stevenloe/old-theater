@@ -1,7 +1,7 @@
 ---
-title: The Old Theater Welcomes Steven Loe as Web Developer/Designer
+title: The Old Theater Welcomes Andrea Bayard as Membership and Volunteer Coordinator
 date: '2020-07-15T21:07:38.963Z'
-subhead: "Andrea Bayard has joined The Old Theter as Membership and Voluneteer Coordinator"
+subhead: "Andrea Bayard has joined The Old Theter as Membership and Volunteer Coordinator"
 folder: /news/
 ---
 
