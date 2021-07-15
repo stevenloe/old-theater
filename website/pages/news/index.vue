@@ -17,7 +17,7 @@
         <h2
           class="mb-4 text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl"
         >
-          <nuxt-link :to="`${post.slug}?page=index`">
+        <nuxt-link :to="`/news/${post.slug}?page=index`">
             {{ post.title }}</nuxt-link
           >
         </h2>

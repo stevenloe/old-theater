@@ -31,6 +31,8 @@ export default {
       .sortBy("date", "desc")
       .fetch();
 
+      console.log("SHOWS", shows);
+
     return sortShows(shows)
   },
   layout: "NewLayout",
