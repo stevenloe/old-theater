@@ -29,4 +29,17 @@ img_gallery:
   - image:
       img: /images/fundraisers/2018/45869398_991042591088337_926680309833924608_n.jpg
       alt: Old Theater Chili Cookoff Fundraiser 2018
+  - image:
+      img: /images/fundraisers/2018/46091053_991044691088127_8994182252543868928_n.jpg
+      alt: Old Theater Chili Cookoff Fundraiser 2018
+  - image:
+      img: /images/fundraisers/2018/46022145_991044651088131_1605194093590216704_n.jpg
+      alt: Old Theater Chili Cookoff Fundraiser 2018
+  - image:
+      alt: Old Theater Chili Cookoff Fundraiser 2018
+      img: /images/fundraisers/2018/45941365_991043934421536_4900572515258073088_n.jpg
+  - image:
+      img: /images/fundraisers/2018/45773029_991049904420939_4685828050288377856_n.jpg
+      caption: Old Theater Chili Cookoff Fundraiser 2018
+      alt: Old Theater Chili Cookoff Fundraiser 2018
 ---
