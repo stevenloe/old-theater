@@ -1,8 +1,11 @@
 --- 
 title: Old Theater Chili Cookoff Fundraiser 2018.
 date: 2018-10-27T15:16:09.571Z
+summary: "The 2018 Old Theater Chili Cookoff was great fun and a huge success. Tastebuds were tantalized, awards were won."
+
 img: /images/fundraisers/2018/1.jpg
 alt: Endurance seafood at the Old Theater Chili Cookoff Fundraiser 2018
+caption: Endurance Seafood's chili was made with six different varieties of peppers
 folder: /support/fundraisers/
 img_gallery:
   - image:
