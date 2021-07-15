@@ -1,6 +1,6 @@
 <template>
   <div class="mb-12 md:mb-20">
-    <header class="bg-gray-400 shadow-lg sm:bg-blue-400 md:bg-green-400 lg:bg-red-400 xl:bg-orange-200" :class="headerClass">
+    <header class="shadow-lg " :class="headerClass">
       <div class="flex items-center justify-between md:p-0 md:mr-3 md:py-2">
         <Logo @click.native="onNavItemClick" />
 
