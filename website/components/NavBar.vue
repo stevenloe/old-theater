@@ -1,6 +1,6 @@
 <template>
   <div class="mb-12 md:mb-20">
-    <header class="shadow-lg " :class="headerClass">
+    <header v-show="isMounted" class="shadow-lg " :class="headerClass">
       <div class="flex items-center justify-between md:p-0 md:mr-3 md:py-2">
         <Logo @click.native="onNavItemClick" />
 
@@ -190,6 +190,7 @@ import { debounce } from "@/utils/debounce.js";
 export default {
   data() {
     return {
+      isMounted: false,
       isSearchOpen: null,
       isMobileMenuOpen: null,
       noSearchResults: true,
@@ -247,6 +248,8 @@ export default {
     },
   },
   mounted: function () {
+    console.log("-------------------------------------------MOUNTED-------------------------------------------");
+    this.isMounted = true
     this.onResize();
     window.addEventListener("resize", debounce(this.onResize, 10));
   },
