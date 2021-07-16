@@ -34,7 +34,7 @@
           >
         </div>
         <img
-          class="object-contain ml-2 h-14 md:h-16"
+          class="object-contain h-8 ml-2 md:h-16"
           src="/images/community/pms-logo-padded.jpg"
           alt="Pamlico Musical Society logo"
         />
