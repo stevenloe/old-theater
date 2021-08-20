@@ -4,9 +4,8 @@
   >
     <UiHeadline class="mb-3" level="1">News</UiHeadline>
     <div v-for="(item, i) in news" :key="i">
-      <!-- <UiHeadline class="pb-0 mb-0 leading-snug" level="3">{{ item.title }}</UiHeadline> -->
       <div class="text-2xl font-semibold">
-        {{item.title}}
+        <nuxt-link :to="item.path"> {{item.title}} </nuxt-link>
       </div>
 
       <h4 
