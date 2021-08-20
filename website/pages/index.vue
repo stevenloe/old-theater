@@ -5,7 +5,6 @@
       <AlertBox posts="alerts"/>
       <ShowList :shows="futureShows" />
       <NewsWidget  :news="news"/>
-      <CommunityPartners />
       <Membership />
       <Sponsorship />
 
@@ -21,7 +20,6 @@
 <script>
 import ShowList from "@/components/ShowList";
 import AlertBox from "@/components/AlertBox";
-import CommunityPartners from "@/components/CommunityPartners";
 import Membership from "@/components/Membership";
 import MemberCarousel from "@/components/MemberCarousel";
 import Sponsorship from "@/components/Sponsorship";
@@ -68,7 +66,6 @@ export default {
   components: {
     ShowList,
     AlertBox,
-    CommunityPartners,
     Membership,
     MemberCarousel,
     Sponsorship,
