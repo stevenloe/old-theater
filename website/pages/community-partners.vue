@@ -211,7 +211,7 @@ export default {
           "Children's Theater Workshop participants having fun at The Old Theater",
       },
       pms: {
-        img: "/images/community/new_pms_collage_brighter-saturation_small.jpg",
+        img: "/images/community/pms_supplied_collage.jpg",
         alt: "Pamlico Musical Society",
         caption: "",
       },
