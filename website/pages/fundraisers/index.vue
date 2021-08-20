@@ -8,8 +8,9 @@
         v-for="post of posts"
         :key="post.title"
       >
-
-      <base-picture class="mb-6" :v-if="post.img" :caption="post.caption" :img="post.img" :alt="post.alt"></base-picture>
+      <nuxt-link :to="`${post.path}?page=index`">
+        <base-picture class="mb-6" :v-if="post.img" :caption="post.caption" :img="post.img" :alt="post.alt"></base-picture>
+      </nuxt-link>
         <div
           class="mb-1 text-sm font-semibold text-gray-700 uppercase md:text-base lg:text-lg"
         >
@@ -31,7 +32,7 @@
             class="block mt-2 text-lg italic underline"
             :to="`${post.path}?page=index`"
           >
-            Learn more...</nuxt-link
+            More about {{ post.title }}</nuxt-link
           >
         </p>
       </article>
