@@ -74,6 +74,7 @@ import {formatPrice} from '@/utils/format.js'
 export default {
   async asyncData({ $content, params }) {
     const show = await $content("shows", params.slug).fetch();
+    console.log("Show is:", show);
     return { show };
   },
   methods: {
