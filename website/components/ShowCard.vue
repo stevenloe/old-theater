@@ -28,7 +28,7 @@
         >
           <div>
             <span class="mr-2">{{ showDate(show.date) }}</span>
-            {{ showTime(show.date) }}
+            {{ show.showTime }}
           </div>
           <span class="mr-2">{{ formattedPrice }}</span>
           <span v-if="show.location">
