@@ -13,17 +13,17 @@ folder: /about/
 
  ### Department Managers
 **Facilities:**  Brian Hough   
-**Friday Flicks Coordinator:** Nancy Crain  
+**Friday Flicks:** Nancy Crain  
 **Grants** (open)   
 **Graphic Communications:** (open)   
-**House Manager & Ticket Master:** Russ Stevenson   
+**House & Tickets:** Russ Stevenson   
 **Membership & Volunteers:** Andrea Bayard   
-**Publicity Manager:** Marlena Montgomery   
+**Publicity:** Marlena Ivey   
 **Sponsorship Manager :** (open)      
-**Stage Production Coordinator:** (open)   
-**Technical Services Manager:** Mark Milos   
-**Theater Sponsored Events:** Pat Nocera      
-**Performing Artists Coordinator:** (open)   
+**Stage Production:** (open)   
+**Technical Services:** Mark Milos   
+**Theater Sponsored Events:** (open)      
+**Performing Artists:** (open)   
 **Website:** Steven Loe   
 
 
