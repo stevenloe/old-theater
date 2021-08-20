@@ -9,7 +9,7 @@ date: "2021-11-19T23:30:00.2Z"
 showDate: "FRIDAY Novenber 19th, 2021"
 showTime: "7:30 PM"
 youtubeVideo: 
-price: $??.00
+price: $Price TBD
 location: The Old Theater 
 locationDetail: 609 Broad Street, Oriental, NC
 ticketURL: 
