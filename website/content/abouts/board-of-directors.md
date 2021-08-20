@@ -19,7 +19,7 @@ folder: /about/
 **House & Tickets:** Russ Stevenson   
 **Membership & Volunteers:** Andrea Bayard   
 **Publicity:** Marlena Ivey   
-**Sponsorship Manager :** (open)      
+**Sponsorship:** (open)      
 **Stage Production:** (open)   
 **Technical Services:** Mark Milos   
 **Theater Sponsored Events:** (open)      
