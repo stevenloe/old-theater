@@ -1,7 +1,7 @@
 ---
 title: Old Theater Chili Cookoff Fundraiser 2019
 date: 2019-11-24T15:47:13.027Z
-summary: The delicious fun that only happens at an Old Theater Chili Cookoff!
+summary: A deliciously good time was had at the 2019 Old Theater Chili Cookoff!
 img: /images/fundraisers/2019/1.jpg
 alt: The Old Theater Chili Cookoff Fundraiser 2019
 folder: /support/fundraisers/
