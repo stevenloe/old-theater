@@ -7,6 +7,8 @@
       <NewsWidget  :news="news"/>
       <Membership />
       <Sponsorship />
+      <WhoWeAre :whoWeAre="whoWeAre"/>
+      <BoardOfDirectors :names="boardOfDirectors"/>
 
       <div class="m-4 md:m-8">
         <client-only>
@@ -24,6 +26,8 @@ import Membership from "@/components/Membership";
 import MemberCarousel from "@/components/MemberCarousel";
 import Sponsorship from "@/components/Sponsorship";
 import NewsWidget from "@/components/NewsWidget";
+import WhoWeAre from "@/components/WhoWeAre";
+import BoardOfDirectors from "@/components/BoardOfDirectors";
 import ShowPill from "@/components/ShowPill";
 
 import {sortShows} from '@/utils/sort.js'
@@ -45,10 +49,13 @@ export default {
   },
 
   async asyncData ({ $content, params }) {
-  const [shows, news, alerts] = await Promise.all([ 
+  const [shows, news, alerts, whoWeAre, boardOfDirectors] = await Promise.all([ 
     $content("shows", params.slug).fetch(),
     $content("news", params.slug).limit(3).fetch(),
     $content("alerts", params.slug).fetch(),
+    $content("home/who-we-are", params.slug).fetch(),
+    $content("home/home-board-of-directors", params.slug).fetch(),
+
   ])
 
   const sortedNews = sortByDate(news).slice(0, 5)
@@ -59,8 +66,11 @@ export default {
     shows: shows,
     futureShows:futureShows,
     news: sortedNews,
-    alerts: alerts
+    alerts: alerts,
+    whoWeAre: whoWeAre,
+    boardOfDirectors
   }
+  
 },
   layout: "NewLayout",
   components: {
@@ -71,6 +81,8 @@ export default {
     Sponsorship,
     NewsWidget,
     ShowPill,
+    WhoWeAre,
+    BoardOfDirectors
   },
 };
 </script>

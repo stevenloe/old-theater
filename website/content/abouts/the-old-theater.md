@@ -1,6 +1,6 @@
 ---
 title: About Us
-description: 
+description: this is a desciption
 shortDesc: Irure eiusmod dolore amet anim non laboris amet.
 img: "/images/about/old-theater-sketch-by-betty-brown.jpg"
 imgAlt: Drawing of The Old Theater by Betty Brown

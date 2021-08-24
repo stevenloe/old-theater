@@ -11,9 +11,9 @@ folder: /support/
 
 ## Help The Old Theater Thrive. 
 
-Old Theater Corporation is a registered 501(c)(3) non-profit organization.  As such, all cash donations and donations in kind are tax deductible.
+The Old Theater Corporation is a registered 501(c)(3) non-profit organization.  As such, all cash donations and in-kind donations are tax deductible.
 
-Although we are successful at bringing arts performances and movies to the community, ticket sales provide only a portion of the necessary income to match our expenses. We depend on the generous support of those who believe in the arts in Pamlico County. 
+While we bring performing arts and movies to the community, ticket sales provide only a portion of the needed income to cover the upkeep of the Old Theater.  We appreciate and rely on the generous support of our members, individual donors, community businesses, service organizations, grants, and volunteers both on stage and behind the scenes to keep performing arts alive in Pamlico County.  
 
 <div >
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -31,9 +31,4 @@ P.O. Box 521
 Oriental, NC 28571
 
 
-
-<!-- Kind Regards,
-
-__Isabel Keppner__ 
-President, Old Theater Corp. -->
 

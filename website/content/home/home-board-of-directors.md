@@ -1,11 +1,7 @@
 ---
 title: Board of Directors 
-folder: /about/
 ---
-
-
  ### Executive Officers
-
  **President:**  Izzy Keppner  
  **Vice President:**   Don Henderson  
  **Secretary:** Linda Larson  
@@ -13,18 +9,11 @@ folder: /about/
 
  ### Department Managers
 **Facilities:**  Brian Hough   
-**Friday Flicks:** Nancy Crain  
-**Grants** (open)   
-**Graphic Communications:** (open)   
+**Friday Flicks:** Nancy Crain   
 **House & Tickets:** Russ Stevenson   
 **Membership & Volunteers:** Andrea Bayard   
-**Publicity:** Marlena Ivey   
-**Sponsorship:** (open)      
-**Stage Production:** (open)   
+**Publicity:** Marlena Ivey    
 **Technical Services:** Mark Milos   
-**Theater Sponsored Events:** Nancy Crain     
-**Performing Artists:** (open)   
+**Theater Sponsored Events:** Nancy Crain      
 **Website:** Steven Loe   
-
-
 
