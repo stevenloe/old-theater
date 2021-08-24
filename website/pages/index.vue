@@ -47,7 +47,7 @@ export default {
   async asyncData ({ $content, params }) {
   const [shows, news, alerts] = await Promise.all([ 
     $content("shows", params.slug).fetch(),
-    $content("news", params.slug).fetch(),
+    $content("news", params.slug).limit(3).fetch(),
     $content("alerts", params.slug).fetch(),
   ])
 
