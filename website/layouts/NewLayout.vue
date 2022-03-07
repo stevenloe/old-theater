@@ -1,5 +1,5 @@
 <template>
-  <div style="border:solid 1px red">
+  <div>
     <NavBar />
     <main>
       <div class="" @click="onContentClick">
