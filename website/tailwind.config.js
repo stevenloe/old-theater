@@ -13,16 +13,23 @@ module.exports = {
     ]
   },
   theme: {
+    fontFamily: {
+      sans:['Comfortaa','sans-serif'],
+    },
+    letterSpacing: {
+      normal: '.02em',
+      wide: '.05em',
+      wider: '.08em',
+      widest: '.1em'
+     
+    },
       screens: {
         'sm': '640px',
         // => @media (min-width: 640px) { ... }
-  
-        'md': '834px',
+        'md': '980px',
         // => @media (min-width: 768px) { ... }
-  
         'lg': '1024px',
         // => @media (min-width: 1024px) { ... }
-  
         'xl': '1280px',
         // => @media (min-width: 1280px) { ... }
       },
