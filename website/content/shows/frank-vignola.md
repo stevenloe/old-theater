@@ -1,18 +1,19 @@
 ---
 layout: blog
-title: A League of Their Own
-date: 2021-05-15T00:30:57.163Z
-formattedPrice: Admission by donation
-location: AT THE RED ROOSTER
-locationDetail: THE SILOS, 1111 BROAD STREET, ORIENTAL, NC
+title: Frank Vignola Guitar Magic
+date: "2022-08-21T23:30:00.2Z"
+showTime: "7:30 PM"
+price: $20
+presentedby: PMS
+location: At The Old Theater
+locationDetail: 
 showtype: FRIDAY FLICK
-shortDesc: Directed by Penny Marshall. With Tom Hanks, Geena Davis, Lori Petty,
-  Madonna. Two sisters join the first female professional baseball league and
-  struggle to help it succeed amidst their own growing rivalry.
-img: a_league_of_their_own.jpg
-imgAlt: A League of Their Own poster art
+shortDesc: One of the most extraordinary guitarists performing today, Frank Vignola’s stunning virtuosity and dynamic genre-spanning music...
+img: frank-vignola.jpg
+imgAlt: Frank Vignola Guitar Magic poster art
 youtubeVideo: WcN392H2jx0
 folder: /shows/
+bgcolor: A7A39A
 
 ---
 The Old Theater in collaboration with The Silos in Oriental present our May Friday Flick:  **A League of Their Own.** Admission by donation. Includes FREE popcorn.
