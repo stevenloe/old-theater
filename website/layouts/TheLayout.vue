@@ -1,29 +1,29 @@
 <template>
-  <div style="border:solid 1px red">
+  <div style="border:solid 2px red">
     <NavBar />
-    <main>
-      <div class="" @click="onContentClick">
+    <main class="pt-5 bg-gray-400" style="border:solid 2px orange">
+      <div class="p-4 mx-auto" @click="onContentClick">
         <Nuxt />
       </div>
     </main>
 
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/NavBarRedesign";
 import Footer from "@/components/Footer";
 
 export default {
-  name: "NewLayout",
+  name: "Redesign",
   components: {
     NavBar,
     Footer,
   },
-  // mounted() {
-  //   window.scrollTo(0, 0);
-  // },
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   methods: {
     onContentClick() {
       this.$bus.$emit("hide-search", "hide");

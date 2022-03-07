@@ -5,7 +5,7 @@
       type="search"
       autocomplete="off"
       placeholder="Search oldtheater.org"
-      class="w-full h-12 px-3 mt-2 mb-2 text-xl placeholder-black bg-gray-400 rounded-lg focus:outline-none"
+      class="w-full h-12 px-3 mt-2 mb-2 text-xl placeholder-black bg-gray-200 focus:outline-none"
     />
     <ul
       v-if="results.length"

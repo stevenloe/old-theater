@@ -8,11 +8,11 @@
     </svg>
 
     <div
-      class="grid grid-cols-1 gap-8 pt-12 pb-48 pl-8 pr-8 md:pl-12 md:pr-12 sm:grid-cols-2 wave-content"
+      class="grid grid-cols-2 gap-8 p-12 pb-48 wave-content"
       :style="bgColor"
     >
       <!-- image card -->
-      <div>
+      <div class="relative">
         <nuxt-link :to="show.path">
           <show-picture
             :img="`/images/shows/${show.img}`"
@@ -22,27 +22,25 @@
       </div>
 
       <!-- details card -->
-      <div>
+      <div class="relative">
         <!-- Top info section and body text -->
         <div class="flex flex-col justify-between w-full h-full">
           <div>
-            <!-- <h3 class="mb-2 -mt-1 text-6xl font-bold leading-none"> -->
-            <!-- TODO: Use UI Headline here. Adjust sizes to work with  new design -->
-            <nuxt-link :to="show.path">
-              <UiHeadline class="mb-2 leading-none" level="1">{{
-                show.title
-              }}</UiHeadline>
-            </nuxt-link>
+            <h3 class="mb-2 -mt-1 text-6xl font-bold leading-none">
+              <nuxt-link :to="show.path">
+                {{ show.title }} {{ color }}
+              </nuxt-link>
+            </h3>
 
             <div
-              class="mb-4 font-semibold leading-relaxed tracking-wide sm:text-lg"
+              class="mb-4 text-xl font-semibold leading-relaxed tracking-wide"
             >
               <div>
                 <span
                   v-if="show.presentedby == 'PMS'"
                   class="flex items-baseline"
                 >
-                  <span class="pr-3 "> Presented by: </span>
+                  <span class="pr-3"> Presented by: </span>
                   <img
                     class="h-10"
                     src="/images/logos/pms-logo-300-flat.jpg"
@@ -60,15 +58,17 @@
               </div>
             </div>
 
-            <div class="hidden my-6 text-xl tracking-wide lg:block lg:mt-6">
+            <div
+              class="visible my-6 text-xl tracking-wide md:hidden lg:block lg:mt-6"
+            >
               {{ show.shortDesc }}
             </div>
           </div>
 
           <!-- Learn More / Buy Tickets buttons -->
-          <div class="justify-between md:flex">
+          <div class="flex justify-between">
             <ButtonLink :url="show.path" text="LEARN MORE" />
-            <ButtonLink 
+            <ButtonLink
               v-if="show.ticketURL"
               :url="show.ticketURL"
               text="BUY TICKETS NOW"
@@ -83,17 +83,34 @@
 <script>
 import ButtonLink from "./ui/ButtonLink";
 import ShowPicture from "./ShowPicture.vue";
-import UiHeadline from "./ui/UiHeadline.vue";
 import { formatShowDate } from "@/utils/dates.js";
 import { formatPrice } from "@/utils/format.js";
 
 export default {
   props: {
-    show: {
-      type: Object,
-      required: true,
-    },
-    backgroundColor: String,
+    // show: {
+    //   type: Object,
+    //   required: true,
+    // },
+    // backgroundColor: String,
+  },
+  data() {
+    return {
+      show: {
+      title: "Frank Vignola Guitar Magic",
+      date: "2022-08-21T23:30:00.2Z",
+      showTime: "7:30 PM",
+      price: "$20",
+      presentedby: "PMS",
+      location: "At The Old Theater",
+      shortDesc: "One of the most extraordinary guitarists performing today, Frank Vignolas stunning virtuosity and dynamic genre-spanning music...",
+      img: "frank-vignola.jpg",
+      imgAlt: "Frank Vignola Guitar Magic poster art",
+      youtubeVideo: "WcN392H2jx0",
+      path: "/shows/",
+      bgcolor: "ff0000"
+      }
+    }
   },
   methods: {
     showDate(date) {
@@ -107,9 +124,11 @@ export default {
     // formattedPrice() {
     //   return formatPrice(this.show.price);
     // },
+
     bgColor() {
       return `background-color: #${this.show.bgcolor}`;
     },
+
     presentedBy() {
       if (this.show.presentedby == "PMS") {
         return '<img src="/logos/pms-logo-300-flat.jpg" alt="Pamlico Musical Society Logo">';
@@ -122,7 +141,6 @@ export default {
   components: {
     ShowPicture,
     ButtonLink,
-    UiHeadline,
   },
 };
 </script>

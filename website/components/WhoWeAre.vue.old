@@ -2,12 +2,12 @@
   <div class="pb-8 m-4 bg-white sm:m-8 md:m-8">
     <!-- image card-->
     <div class="overflow-hidden rounded-t-lg shadow-lg">
-      <!-- <show-picture :img="names.img" :alt="names.caption"></show-picture>     -->
+      <show-picture :img="whoWeAre.img" :alt="whoWeAre.caption"></show-picture>    
       </div>
     <!-- details -->
-    <h3 class="mt-8 ml-8 text-3xl font-bold ">Board of Directors</h3>
+    <h3 class="mt-8 ml-8 text-3xl font-bold ">{{ whoWeAre.title }}</h3>
     <nuxt-content
-          :document="names"
+          :document="whoWeAre"
           class="m-8 mb-4 prose max-w-none md:prose-lg"
         />
   </div>
@@ -36,7 +36,7 @@ export default {
     ShowPicture
   },
   props: {
-    names: {
+    whoWeAre: {
       type: Object,
       required: true,
     },

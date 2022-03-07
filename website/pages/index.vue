@@ -1,89 +1,103 @@
 <template>
-  <div class="mx-auto">
-    <div class="container mx-auto">
-      
-      <AlertBox posts="alerts"/>
-      <ShowList :shows="futureShows" />
-      <NewsWidget  :news="news"/>
-      <Membership />
-      <Sponsorship />
-      <WhoWeAre :whoWeAre="whoWeAre"/>
-      <BoardOfDirectors :names="boardOfDirectors"/>
+  <div>
+    <DonateWidget backgroundColor="#A5B69D" path="/" />
+    <ShowList :shows="futureShows" />
 
-      <div class="m-4 md:m-8">
-        <client-only>
-          <MemberCarousel />
-        </client-only>
-      </div>
+      <!-- TODO: remove-->
+      <!-- <WaveWrapperBasic /> -->
+   
+    <NewsWidget :news="news" />
+    <Membership :item="membership"/>
+    <Sponsorship :item="sponsorship"/>
+    <Amazon :content="amazonSmile"/>
+    <WhoWeAre :item="whoWeAre" />
+    <BoardOfDirectors :names="boardOfDirectors" />
+
+    <div class="m-4 md:m-8">
+      <client-only>
+        <MemberCarousel />
+      </client-only>
     </div>
   </div>
 </template>
 
 <script>
 import ShowList from "@/components/ShowList";
-import AlertBox from "@/components/AlertBox";
 import Membership from "@/components/Membership";
 import MemberCarousel from "@/components/MemberCarousel";
 import Sponsorship from "@/components/Sponsorship";
 import NewsWidget from "@/components/NewsWidget";
 import WhoWeAre from "@/components/WhoWeAre";
 import BoardOfDirectors from "@/components/BoardOfDirectors";
-import ShowPill from "@/components/ShowPill";
+import Amazon from "@/components/Amazon";
+import DonateWidget from "@/components/DonateWidget";
+import WaveWrapperBasic from "@/components/WaveWrapperBasic";
 
-import {sortShows} from '@/utils/sort.js'
-import {sortByDate} from '@/utils/sort.js'
+import { sortShows } from "@/utils/sort.js";
+import { sortByDate } from "@/utils/sort.js";
 
 export default {
   head() {
     return {
       script: [
-        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js", defer: true},
+        {
+          src: "https://identity.netlify.com/v1/netlify-identity-widget.js",
+          defer: true,
+        },
       ],
     };
   },
-    data() {
+  data() {
     return {
       futureShows: [],
       pastShows: [],
     };
   },
 
-  async asyncData ({ $content, params }) {
-  const [shows, news, alerts, whoWeAre, boardOfDirectors] = await Promise.all([ 
-    $content("shows", params.slug).fetch(),
-    $content("news", params.slug).limit(3).fetch(),
-    $content("alerts", params.slug).fetch(),
-    $content("home/who-we-are", params.slug).fetch(),
-    $content("home/home-board-of-directors", params.slug).fetch(),
+  async asyncData({ $content, params }) {
+    const [shows, news, alerts, whoWeAre, boardOfDirectors, sponsorship, membership, amazonSmile] = await Promise.all(
+      [
+        $content("shows", params.slug).fetch(),
+        $content("news", params.slug).limit(3).fetch(),
+        $content("alerts", params.slug).fetch(),
+        $content("home/who-we-are", params.slug).fetch(),
+        $content("home/home-board-of-directors", params.slug).fetch(),
+        $content("home/home-sponsorship", params.slug).fetch(),
+        $content("home/home-membership", params.slug).fetch(),
+        $content("home/home-amazon-smile", params.slug).fetch(),
+      ]
+    );
 
-  ])
+    const sortedNews = sortByDate(news).slice(0, 5);
 
-  const sortedNews = sortByDate(news).slice(0, 5)
+    const { futureShows, pastShows } = sortShows(shows);
 
-  const {futureShows, pastShows} = sortShows(shows)
-
-  return {
-    shows: shows,
-    futureShows:futureShows,
-    news: sortedNews,
-    alerts: alerts,
-    whoWeAre: whoWeAre,
-    boardOfDirectors
-  }
-  
-},
+    return {
+      shows: shows,
+      futureShows: futureShows,
+      news: sortedNews,
+      alerts: alerts,
+      whoWeAre: whoWeAre,
+      boardOfDirectors,
+      sponsorship,
+      membership,
+      amazonSmile,
+    };
+  },
   layout: "NewLayout",
   components: {
     ShowList,
-    AlertBox,
     Membership,
     MemberCarousel,
     Sponsorship,
     NewsWidget,
-    ShowPill,
     WhoWeAre,
-    BoardOfDirectors
+    BoardOfDirectors,
+    Amazon,
+    DonateWidget,
+    WaveWrapperBasic
   },
+  // TODO:  ^^Remove WaveWrapperBasic 
 };
 </script>
 
