@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'JosefinSansBold';
+  font-weight: 700;
+  src: url('../fonts/subset-josefin-sans-bold.woff') format('woff')
+}
+
+
+  @font-face {
+    font-family: 'Comfortaa';
+    font-weight: 500;
+    src: 
+    url('../fonts/Comfortaa-Regular.woff2') format('woff2'),
+    url('../fonts/Comfortaa-Regular.woff') format('woff')
+  }
+
+  @font-face {
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    src: 
+    url('../fonts/Comfortaa-Bold.woff2') format('woff2'),
+    url('../fonts/Comfortaa-Bold.woff') format('woff')
+  }
+
+
 .footer-link {
   word-spacing: 1px;
   @apply block p-2 font-normal tracking-wide text-gray-800 rounded-lg;
