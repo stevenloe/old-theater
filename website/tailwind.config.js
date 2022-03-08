@@ -13,25 +13,63 @@ module.exports = {
     ]
   },
   theme: {
+    fontSize: {
+      'xs': ['0.75em', {
+        letterSpacing: '0.025em',
+        lineHeight: '1.5em',
+      }],
+      'sm': ['0.875em', {
+        letterSpacing: '0.025em',
+        lineHeight: '1.5em',
+      }],
+      'base': ['1.0em', {
+        letterSpacing: '0.025em',
+        lineHeight: '1.5em',
+      }],
+      'lg': ['1.125em', {
+        letterSpacing: '0.025em',
+        lineHeight: '1.5em',
+      }],
+      'xl': ['1.25em', {
+        letterSpacing: '0.025em',
+        lineHeight: '1.5em',
+      }],
+      '2xl': ['1.5em', {
+        letterSpacing: '0.025em',
+        lineHeight: '1.5em',
+      }],
+      // Or with a default line-height as well
+      '3xl': ['1.875em', {
+        letterSpacing: '0.025em',
+        lineHeight: '1.5em',
+      }],
+      '4xl': ['2.25em', {
+        letterSpacing: '0.025em',
+        lineHeight: '1.5em',
+      }],
+      // Or with a default line-height as well
+      '5xl': ['3em', {
+        letterSpacing: '0.025em',
+        lineHeight: '1.5em',
+      }],
+      '6xl': ['4em', {
+        letterSpacing: '0.025em',
+        lineHeight: '1.5em',
+      }],
+    },
     fontFamily: {
       sans:['Comfortaa','sans-serif'],
     },
-    letterSpacing: {
-      normal: '.02em',
-      wide: '.05em',
-      wider: '.08em',
-      widest: '.1em'
-     
-    },
+
       screens: {
         'sm': '640px',
         // => @media (min-width: 640px) { ... }
         'md': '980px',
-        // => @media (min-width: 768px) { ... }
+        // => @media (min-width: 980px) { ... }
         'lg': '1024px',
         // => @media (min-width: 1024px) { ... }
-        'xl': '1280px',
-        // => @media (min-width: 1280px) { ... }
+        'xl': '1440px',
+        // => @media (min-width: 1440px) { ... }
       },
     extend: {
       typography: {

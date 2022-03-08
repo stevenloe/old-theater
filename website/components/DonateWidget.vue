@@ -7,12 +7,10 @@
       />
     </svg>
 
-    <div class="pb-48 pl-2 pr-2 wave-content" :style="bgColor">
-      <!-- pl-8 pr-8 md:pl-12 md:pr-12 -->
+    <div class="pb-48 pl-8 pr-8 md:pl-12 md:pr-12 wave-content" :style="bgColor">
       <!-- image card -->
-      <div
-        class=""
-      >
+      <div>
+
         <nuxt-link :to="path">
           <img
           src="/donate/donate-banner-big-min.png"
@@ -25,9 +23,7 @@
             <p class="">The Old Theater continues to follow the state and local guidance provided with regards to the COVID-19 pandemic.</p>
           </div>
           <div class="col-span-2 sm:col-span-1">
-            
               <ButtonLink url="/" color="transparent" text="LEARN MORE" /></div>
-             
         </div>
       </div>
 

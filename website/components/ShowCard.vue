@@ -29,26 +29,26 @@
             <!-- <h3 class="mb-2 -mt-1 text-6xl font-bold leading-none"> -->
             <!-- TODO: Use UI Headline here. Adjust sizes to work with  new design -->
             <nuxt-link :to="show.path">
-              <UiHeadline class="mb-2 leading-none" level="1">{{
+              <UiHeadline class="mb-2" level="1" style="line-height: 1.08em">{{
                 show.title
               }}</UiHeadline>
             </nuxt-link>
 
             <div
-              class="mb-4 font-semibold leading-relaxed tracking-wide sm:text-lg"
+              class="mb-4 md:text-lg lg:text-xl xl:2xl"
             >
-              <div>
+              <div class="">
                 <span
                   v-if="show.presentedby == 'PMS'"
-                  class="flex items-baseline"
+                  class="flex items-baseline "
                 >
-                  <span class="pr-3 "> Presented by: </span>
+                  <span class="pr-3 font-bold"> Presented by: </span>
                   <img
                     class="h-10"
                     src="/images/logos/pms-logo-300-flat.jpg"
                     alt="Pamlico Musical Society Logo"
                 /></span>
-                <span v-else>Presented by: The Old Theater</span>
+                <span class="font-bold" v-else>Presented by: The Old Theater</span>
               </div>
               <div>
                 <span>{{ showDate(show.date) }}</span>
@@ -66,7 +66,7 @@
           </div>
 
           <!-- Learn More / Buy Tickets buttons -->
-          <div class="justify-between md:flex">
+          <div class="md:justify-between md:flex">
             <ButtonLink :url="show.path" text="LEARN MORE" />
             <ButtonLink 
               v-if="show.ticketURL"

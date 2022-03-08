@@ -19,11 +19,11 @@
     <div class="grid grid-cols-1 gap-8 pb-48 md:grid-cols-2 ">
       <!-- image card -->
       <div class="relative">
-        <h3 class="mb-8 -mt-1 text-6xl font-bold leading-none text-white">
-              <nuxt-link :to="item.url">
-                {{ item.title }}
-              </nuxt-link>
-            </h3>
+        <nuxt-link :to="item.url">
+              <UiHeadline class="mb-2" level="1" style="line-height: 1.08em">{{
+                item.title
+              }}</UiHeadline>
+            </nuxt-link>
         
          <p v-for="textL, index in leftParagraphs" :key="index"
               class="mb-4 text-xl leading-relaxed tracking-wide"
@@ -55,7 +55,7 @@
 
           <!-- Learn More Button -->
           <div class="flex justify-end">
-            <ButtonLink :url="item.url" text="LEARN MORE" />
+            <ButtonLink :url="item.url" :level="1" text="LEARN MORE" />
           </div>
         </div>
       </div>
@@ -68,6 +68,7 @@ import ButtonLink from "./ui/ButtonLink";
 import BasePicture from "./BasePicture.vue";
 import { formatShowDate } from "@/utils/dates.js";
 import { formatPrice } from "@/utils/format.js";
+import UiHeadline from "./ui/UiHeadline.vue";
 
 export default {
   props: {
@@ -139,8 +140,9 @@ export default {
     },
   },
   components: {
-   BasePicture,
+    BasePicture,
     ButtonLink,
-  },
+    UiHeadline
+},
 };
 </script>

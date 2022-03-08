@@ -2,10 +2,10 @@
   <Component
     :is="props.tag || `h${props.level}`"
     :ref="data.ref"
-    class="font-semibold leading-tight"
+    
     :class="[
       ...((props.size || props.level) == 1
-        ? ['text-3xl sm:text-4xl md:text-5xl lg:text-6xl']
+        ? ['text-3xl sm:text-4xl md:text-5xl xl:text-6xl']
         : []),
       ...((props.size || props.level) == 2
         ? ['text-2xl sm:text-3xl md:text-4xl']
@@ -22,6 +22,7 @@
     :style="[data.style, data.staticStyle]"
     v-bind="data.attrs"
     v-on="listeners"
+    class="font-semibold"
   >
     <slot />
   </Component>
