@@ -1,29 +1,41 @@
 <template>
-  <div
-    class="overflow-hidden bg-white border-8 border-blue-700 shadow-lg rounded-xl"
-  >
-    <div class="bg-blue-700">
-      <div
-        class="flex py-2 mx-4 text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl"
-      >
-        Thanks to our {{ currentYear }} Members!
-      </div>
+  <div class="wave-section">
+    <svg class="wave" viewBox="0 0 1442 102" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M1442 102H0V0l.037 63.975C138.699 25.665 276.653 6.51 413.897 6.51c240.77 0 397.382 48.349 605.515 48.349 138.754-.002 279.617-16.117 422.577-48.349L1442 0Z"
+        :fill="`#${bgcolor}`"
+      />
+    </svg>
 
+    <div class="p-12 pb-48 wave-content" :style="bgColor">
       <div
-        class="overflow-hidden bg-white border-8 border-blue-700 shadow-lg rounded-xl"
+        class="overflow-hidden"
       >
-        <div class="box-container">
+        <div>
           <div
-            v-for="(group, index) in membersGrouped"
-            v-bind:key="index"
-            class="grid-cols-2 box md:grid-cols-3"
+            class="flex py-2 mx-4 text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl"
           >
-            <div
-              class="text-xl name sm:text-2xl md:3xl"
-              v-for="(name, index) in group"
-              v-bind:key="index"
-            >
-              {{ name }}
+            Thanks to Our {{ currentYear }} Members!
+          </div>
+
+          <div
+            class="overflow-hidden border-2 "
+          >
+            <div class="box-container">
+              <div
+                v-for="(group, index) in membersGrouped"
+                v-bind:key="index"
+                class="grid-cols-2 box md:grid-cols-3"
+                :style="bgColor"
+              >
+                <div
+                  class="text-xl name sm:text-2xl md:3xl"
+                  v-for="(name, index) in group"
+                  v-bind:key="index"
+                >
+                  {{ name }}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -37,6 +49,12 @@ import axios from "axios";
 import gsap from "gsap";
 
 export default {
+  props: {
+    bgcolor: {
+      type: String,
+      required: true,
+    },
+  },
   async fetch() {
     const { data } = await axios.get(
       `${this.$axios.defaults.baseURL}data/members2.json`
@@ -68,7 +86,6 @@ export default {
 
   methods: {
     init() {
-
       this.members = this.shuffle(this.members);
       this.membersGrouped = this.chunk(this.members, this.groupDataBy);
 
@@ -79,7 +96,6 @@ export default {
       });
     },
     slideIt() {
-
       gsap.to(this.targets[this.count], { xPercent: -100 });
       this.count = this.count < this.targets.length - 1 ? ++this.count : 0;
       gsap.fromTo(this.targets[this.count], { xPercent: 100 }, { xPercent: 0 });
@@ -137,6 +153,9 @@ export default {
       const d = new Date();
       return d.getFullYear();
     },
+    bgColor() {
+      return `background-color: #${this.bgcolor}`;
+    },
   },
   created: function () {
     this.hasLayoutChanged();
@@ -171,16 +190,13 @@ export default {
   display: grid;
   justify-content: center;
   align-content: center;
-  background: white;
 }
 
 .name {
   padding-left: 1em;
   padding-right: 1em;
-  font-family: serif;
-  font-style: italic;
-  line-height: 1.25;
-  color: #222;
+  font-family: 'Comfortaa', serif;
+  color: #fff;
   text-align: center;
 }
 </style>

@@ -10,12 +10,12 @@
     <Membership :item="membership"/>
     <Sponsorship :item="sponsorship"/>
     <Amazon :content="amazonSmile"/>
-    <WhoWeAre :item="whoWeAre" />
-    <BoardOfDirectors :names="boardOfDirectors" />
+    <WhoWeAre :leftContent="whoWeAreLeftColumn" :rightContent="whoWeAreRightColumn"/>
+    <BoardOfDirectors :leftContent="boardOfDirectorsLeft" :rightContent="boardOfDirectorsRight" />
 
-    <div class="m-4 md:m-8">
+    <div>
       <client-only>
-        <MemberCarousel />
+        <MemberCarousel bgcolor="723333"/>
       </client-only>
     </div>
   </div>
@@ -55,13 +55,15 @@ export default {
   },
 
   async asyncData({ $content, params }) {
-    const [shows, news, alerts, whoWeAre, boardOfDirectors, sponsorship, membership, amazonSmile] = await Promise.all(
+    const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardOfDirectorsLeft, boardOfDirectorsRight, sponsorship, membership, amazonSmile] = await Promise.all(
       [
         $content("shows", params.slug).fetch(),
         $content("news", params.slug).limit(3).fetch(),
         $content("alerts", params.slug).fetch(),
-        $content("home/who-we-are", params.slug).fetch(),
-        $content("home/home-board-of-directors", params.slug).fetch(),
+        $content("home/who-we-are-left-column", params.slug).fetch(),
+        $content("home/who-we-are-right-column", params.slug).fetch(),
+        $content("home/home-board-of-directors-left-column", params.slug).fetch(),
+        $content("home/home-board-of-directors-right-column", params.slug).fetch(),
         $content("home/home-sponsorship", params.slug).fetch(),
         $content("home/home-membership", params.slug).fetch(),
         $content("home/home-amazon-smile", params.slug).fetch(),
@@ -73,12 +75,14 @@ export default {
     const { futureShows, pastShows } = sortShows(shows);
 
     return {
-      shows: shows,
-      futureShows: futureShows,
+      shows,
+      futureShows,
       news: sortedNews,
-      alerts: alerts,
-      whoWeAre: whoWeAre,
-      boardOfDirectors,
+      alerts,
+      whoWeAreLeftColumn,
+      whoWeAreRightColumn,
+      boardOfDirectorsLeft,
+      boardOfDirectorsRight,
       sponsorship,
       membership,
       amazonSmile,
