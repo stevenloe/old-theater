@@ -1,145 +1,152 @@
 <template>
-  <div class="hero backgroundImage" :style="{ backgroundImage: `url(${backgroundImagePath})` }" >
-    <header v-show="isMounted" class="z-10 home-hero-wave josefin-bold sm:text-xs md:text-base" :class="headerClass">
+  <div
+    class="hero backgroundImage"
+    :style="{ backgroundImage: `url(${backgroundImagePath})` }"
+  >
+    <header
+      v-show="isMounted"
+      class="z-10 home-hero-wave josefin-bold sm:text-xs md:text-base"
+      :class="headerClass"
+    >
       <div class="header-container">
-      
-      <div class="flex">
-         <Logo @click.native="onNavItemClick"  class="w-7/12 bg-yellow-200 sm:bg-orange-400 md:bg-red-300 lg:bg-purple-300 xl:bg-blue-300 "/>
-        <!-- <Logo @click.native="onNavItemClick"/> -->
+        <div class="flex">
+          <nuxt-link to="/" title="Home">
+            <Logo
+              @click.native="onNavItemClick"
+              class="w-7/12 bg-yellow-200 sm:bg-orange-400 md:bg-red-300 lg:bg-purple-300 xl:bg-blue-300 hover:bg-gray-200"
+            />
+            <!-- <Logo @click.native="onNavItemClick"/> -->
+          </nuxt-link>
+
           <div></div>
-        <div class="hidden md:flex md:w-5/12" aria-label="Search menu button">
-          <SearchDesktop
-            class="w-0 mb-6 place-self-end " 
-            :isMobile="isMobile"
-            isAnimated="true"
-          />
+          <div class="hidden md:flex md:w-5/12" aria-label="Search menu button">
+            <SearchDesktop
+              class="w-0 mb-6 place-self-end"
+              :isMobile="isMobile"
+              isAnimated="true"
+            />
 
-          <a
-            href="#"
-            class="pl-1 pr-0 mb-6 text-gray-900 hover:bg-gray-600 focus:outline-none place-self-end"
-            @click="toggleSearch"
-          >
-            <svg
-              class="h-8 px-1 pt-1 fill-current w-100"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              width="48"
-              height="48"
-              fill="currentColor"
+            <a
+              href="#"
+              class="pl-1 pr-0 mb-6 text-gray-900 hover:bg-gray-600 focus:outline-none place-self-end"
+              @click="toggleSearch"
             >
-              <g>
+              <svg
+                class="h-8 px-1 pt-1 fill-current w-100"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                width="48"
+                height="48"
+                fill="currentColor"
+              >
+                <g>
+                  <path
+                    d="M17.545 15.467l-3.779-3.779a6.15 6.15 0 0 0 .898-3.21c0-3.417-2.961-6.377-6.378-6.377A6.185 6.185 0 0 0 2.1 8.287c0 3.416 2.961 6.377 6.377 6.377a6.15 6.15 0 0 0 3.115-.844l3.799 3.801a.953.953 0 0 0 1.346 0l.943-.943c.371-.371.236-.84-.135-1.211zM4.004 8.287a4.282 4.282 0 0 1 4.282-4.283c2.366 0 4.474 2.107 4.474 4.474a4.284 4.284 0 0 1-4.283 4.283c-2.366-.001-4.473-2.109-4.473-4.474z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+
+          <!-- mobile menu open/close buttons -->
+          <div class="flex items-center justify-end w-5/12 md:hidden">
+            <button
+              @click="onMenuBtnClick"
+              type="button"
+              aria-label="Open / Close Navigation Menu"
+              class="block text-gray-700 hover:text-gray-900 focus:text-gray-900 focus:outline-none"
+            >
+              <svg
+                class="w-8 h-8 fill-current sm:w-12 sm:h-12"
+                viewBox="0 0 24 24"
+              >
                 <path
-                  d="M17.545 15.467l-3.779-3.779a6.15 6.15 0 0 0 .898-3.21c0-3.417-2.961-6.377-6.378-6.377A6.185 6.185 0 0 0 2.1 8.287c0 3.416 2.961 6.377 6.377 6.377a6.15 6.15 0 0 0 3.115-.844l3.799 3.801a.953.953 0 0 0 1.346 0l.943-.943c.371-.371.236-.84-.135-1.211zM4.004 8.287a4.282 4.282 0 0 1 4.282-4.283c2.366 0 4.474 2.107 4.474 4.474a4.284 4.284 0 0 1-4.283 4.283c-2.366-.001-4.473-2.109-4.473-4.474z"
+                  v-if="isMobileMenuOpen"
+                  fill-rule="evenodd"
+                  d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
                 />
-              </g>
-            </svg>
-          </a>
+                <path
+                  v-if="!isMobileMenuOpen"
+                  fill-rule="evenodd"
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
 
-        <!-- mobile menu open/close buttons -->
-        <div class="flex items-center justify-end w-5/12 md:hidden" >
-          <button
-            @click="onMenuBtnClick"
-            type="button"
-            aria-label="Open / Close Navigation Menu"
-            class="block text-gray-700 hover:text-gray-900 focus:text-gray-900 focus:outline-none "
-            
-          >
-            <svg class="w-8 h-8 fill-current sm:w-12 sm:h-12" viewBox="0 0 24 24">
-              <path
-                v-if="isMobileMenuOpen"
-                fill-rule="evenodd"
-                d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-              />
-              <path
-                v-if="!isMobileMenuOpen"
-                fill-rule="evenodd"
-                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="flex items-center md:justify-between md:items-end" >
-        <!-- Nav items -->
-        <div class="w-full md:overflow-visible">
-          <nav :class="!isMobile || isMobileMenuOpen ? 'block' : 'hidden'">
-            <!-- Search field on mobile menu -->
-            <div class="w-full md:hidden">
-              <SearchMobile :isMobile="true" isAnimated="false" />
-            </div>
-
-            <!-- MENU ITEMS-->
-            <div
-              v-if="!isMobile || (isMobile && noSearchResults)"
-              :class="menuClass"
-            >
-              <nuxt-link
-                to="/"
-                @click.native="onNavItemClick"
-                :class="itemStyle"
-                >HOME</nuxt-link
-              >
-              <nuxt-link
-                to="/calendar"
-                @click.native="onNavItemClick"
-                :class="itemStyle"
-                >CALENDAR</nuxt-link
-              >
-              <SubMenu
-                :menuData="supportMenuItems"
-                :isMobile="isMobile"
-                @click.native="onNavItemClick"
-              />
-              <nuxt-link
-                to="/get-involved"
-                @click.native="onNavItemClick"
-                :class="itemStyle"
-                >GET INVOLVED</nuxt-link
-              >
-              <nuxt-link
-                to="/community-partners"
-                @click.native="onNavItemClick"
-                :class="itemStyle"
-                >COMMUNITY PARTNERS</nuxt-link
-              >
-              <SubMenu
-                :menuData="aboutMenuItems"
-                :isMobile="isMobile"
-                @click.native="onNavItemClick"
-              />
-              <nuxt-link
-                to="/news"
-                @click.native="onNavItemClick"
-                :class="itemStyle"
-                >NEWS</nuxt-link
-              >
-
-             
-             
-              
-              <!-- Contact -->
-              <div class="mr-2 rounded hover:bg-gray-200 md:hidden">
-                <nuxt-link to="/contact/" @click.native="onNavItemClick">
-                  <div
-                    v-if="isMobileMenuOpen"
-                    :class="itemStyle"
-                    
-                  >
-                   CONTACT US
-                  </div>
-                </nuxt-link>
+        <div class="flex items-center md:justify-between md:items-end">
+          <!-- Nav items -->
+          <div class="w-full md:overflow-visible">
+            <nav :class="!isMobile || isMobileMenuOpen ? 'block' : 'hidden'">
+              <!-- Search field on mobile menu -->
+              <div class="w-full md:hidden">
+                <SearchMobile :isMobile="true" isAnimated="false" />
               </div>
-            </div>
-          </nav>
+
+              <!-- MENU ITEMS-->
+              <div
+                v-if="!isMobile || (isMobile && noSearchResults)"
+                :class="menuClass"
+              >
+                <nuxt-link
+                  to="/"
+                  @click.native="onNavItemClick"
+                  :class="itemStyle"
+                  >HOME</nuxt-link
+                >
+                <nuxt-link
+                  to="/calendar"
+                  @click.native="onNavItemClick"
+                  :class="itemStyle"
+                  >CALENDAR</nuxt-link
+                >
+                <SubMenu
+                  :menuData="supportMenuItems"
+                  :isMobile="isMobile"
+                  @click.native="onNavItemClick"
+                />
+                <nuxt-link
+                  to="/get-involved"
+                  @click.native="onNavItemClick"
+                  :class="itemStyle"
+                  >GET INVOLVED</nuxt-link
+                >
+                <nuxt-link
+                  to="/community-partners"
+                  @click.native="onNavItemClick"
+                  :class="itemStyle"
+                  >COMMUNITY PARTNERS</nuxt-link
+                >
+                <SubMenu
+                  :menuData="aboutMenuItems"
+                  :isMobile="isMobile"
+                  @click.native="onNavItemClick"
+                />
+                <nuxt-link
+                  to="/news"
+                  @click.native="onNavItemClick"
+                  :class="itemStyle"
+                  >NEWS</nuxt-link
+                >
+
+                <!-- Contact -->
+                <div class="mr-2 rounded hover:bg-gray-200 md:hidden">
+                  <nuxt-link to="/contact/" @click.native="onNavItemClick">
+                    <div v-if="isMobileMenuOpen" :class="itemStyle">
+                      CONTACT US
+                    </div>
+                  </nuxt-link>
+                </div>
+              </div>
+            </nav>
+          </div>
         </div>
-      </div>
 
-      <FooterMobile :isMobileMenuOpen="isMobileMenuOpen" />
+        <FooterMobile :isMobileMenuOpen="isMobileMenuOpen" />
 
-      <!-- search icon on medium screens-->
-      <!-- <div class="hidden md:flex" aria-label="Search menu button" style="border: solid 2px pink">
+        <!-- search icon on medium screens-->
+        <!-- <div class="hidden md:flex" aria-label="Search menu button" style="border: solid 2px pink">
         <SearchDesktop
           class="w-0 "
           :isMobile="isMobile"
@@ -178,7 +185,7 @@ import FooterMobile from "~/components/FooterMobile.vue";
 import SubMenu from "~/components/SubMenu.vue";
 import SearchMobile from "~/components/SearchMobile.vue";
 import SearchDesktop from "~/components/SearchDesktop.vue";
-import backgroundImagePath from '~/assets/img/hero/home-old-theater-drawing.jpg'
+import backgroundImagePath from "~/assets/img/hero/home-old-theater-drawing.jpg";
 
 import { debounce } from "@/utils/debounce.js";
 export default {
@@ -189,7 +196,7 @@ export default {
       isMobileMenuOpen: false,
       noSearchResults: true,
       isMobile: null,
-      backgroundImagePath, 
+      backgroundImagePath,
       aboutMenuItems: {
         title: "ABOUT US",
         items: [
@@ -218,8 +225,7 @@ export default {
           { text: "OTHER WAYS TO SUPPORT US", link: "/support/other", id: 15 },
         ],
       },
-      itemStyle:
-        "mt-1 block px-2 py-2  rounded hover:bg-gray-200 ",
+      itemStyle: "mt-1 block px-2 py-2  rounded hover:bg-gray-200 ",
     };
   },
   methods: {
@@ -246,8 +252,10 @@ export default {
     },
   },
   mounted: function () {
-    console.log("-------------------------------------------MOUNTED-------------------------------------------");
-    this.isMounted = true
+    console.log(
+      "-------------------------------------------MOUNTED-------------------------------------------"
+    );
+    this.isMounted = true;
     this.onResize();
     window.addEventListener("resize", debounce(this.onResize, 10));
   },
@@ -261,9 +269,10 @@ export default {
       return `${full} `;
     },
     menuClass() {
-      const base = 'justify-between w-full px-4 pt-2 pb-4 text-base md:flex md:p-0'
-      const mobi = ' bg-white'
-      let  result = this.isMobile ? base + mobi  : base ;
+      const base =
+        "justify-between w-full px-4 pt-2 pb-4 text-base md:flex md:p-0";
+      const mobi = " bg-white";
+      let result = this.isMobile ? base + mobi : base;
       return `${result} `;
     },
   },
@@ -294,35 +303,32 @@ export default {
 
 <style scoped>
 .josefin-bold {
-    font-family: JosefinSansBold;
-    letter-spacing: .03rem;
-  }
+  font-family: JosefinSansBold;
+  letter-spacing: 0.03rem;
+}
 
-    .hero {
-    grid-column: 1 / -1;
-    grid-row: 3;
-    display: grid;
-    background-repeat: no-repeat;
-    background-size: 100vw auto;
-    height: calc(100vw * 0.8);
-    grid-gap: 7%;
-  }
+.hero {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  display: grid;
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  height: calc(100vw * 0.8);
+  grid-gap: 7%;
+}
 
+.header-container {
+  width: 93vw;
+  margin: auto;
+  margin-top: calc(100vw * 0.02);
+}
 
-  .header-container {
-    width: 93vw;
-    margin:auto;
-    margin-top: calc(100vw * 0.02);
-  }
-  
+.home-hero-wave {
+  background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 1151 234' fill='%23eee8aa'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  opacity='0.4' fill-rule='evenodd' clip-rule='evenodd' d='M0.591553 0.00100708V233.859C111.126 203.295 221.095 188.013 330.5 188.013C522.428 188.013 647.271 226.586 813.184 226.586C923.792 226.585 1036.08 213.728 1150.04 188.013V4.57764e-05L0.591553 0.00100708Z' fill='white'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
 
-  .home-hero-wave {
-    background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 1151 234' fill='%23eee8aa'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  opacity='0.4' fill-rule='evenodd' clip-rule='evenodd' d='M0.591553 0.00100708V233.859C111.126 203.295 221.095 188.013 330.5 188.013C522.428 188.013 647.271 226.586 813.184 226.586C923.792 226.585 1036.08 213.728 1150.04 188.013V4.57764e-05L0.591553 0.00100708Z' fill='white'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-  }
-
-  .home-hero-mask {
-    height: calc(100vw * 0.24);
-  }
-
+.home-hero-mask {
+  height: calc(100vw * 0.24);
+}
 </style>

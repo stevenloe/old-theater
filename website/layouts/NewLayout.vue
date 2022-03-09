@@ -2,7 +2,7 @@
   <div>
     <NavBar />
     <main>
-      <div class="" @click="onContentClick">
+      <div @click="onContentClick">
         <Nuxt />
       </div>
     </main>
