@@ -7,7 +7,7 @@
       />
     </svg>
 
-    <div class="p-12 pb-48 wave-content" :style="bgColor">
+    <div class="p-12 pb-56 wave-content" :style="bgColor">
       <div
         class="overflow-hidden"
       >
