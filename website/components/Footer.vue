@@ -8,30 +8,19 @@
     </svg>
 
     <div class="p-12 wave-content" :style="bgColor">
-      <div class="flex col-span-3 mt-12 mb-12">
-        <div class="w-1/12"></div>
-        <Logo class="w-10/12" />
-        <div class="w-1/12"></div>
+      <div class="flex justify-center mt-12 mb-8">
+        
+        <Logo class="w-full sm:w-10/12" />
+        
       </div>
 
-      <div class="flex">
-      
-        <div class="flex mx-auto mb-32">
-          <!-- col 1 -->
+      <div class="content-center mx-auto mb-32">
+        <!-- col 1 -->
 
-          <!-- row 2 -->
-
-          <div class="pr-16">
-            <address class="w-full pt-2 pl-3 not-italic md:text-xl xl:text-xl">
-              <p class="mb-1">The Old Theater</p>
-              <p class="mb-1">609 Broad Street</p>
-              <p class="mb-1">Oriental, NC 28571</p>
-              <p class="mb-1">(252) 249 &ndash; 0477</p>
-            </address>
-          </div>
-
+        <!-- row 2 -->
+        <div class="flex flex-wrap justify-center">
           <!-- Column 3 -->
-          <div class="pr-16">
+          <div class="flex justify-start w-1/2 sm:w-1/3">
             <ul class="px-0">
               <li class="list-none cursor-pointer">
                 <nuxt-link
@@ -65,7 +54,7 @@
           </div>
 
           <!-- Column 4 -->
-          <div>
+          <div class="flex justify-end w-1/2 sm:w-1/3">
             <ul class="px-0">
               <li class="list-none cursor-pointer">
                 <nuxt-link
@@ -90,7 +79,7 @@
               </li>
               <li class="list-none cursor-pointer">
                 <a
-                  class="block pt-2"
+                  class="block pt-2 pl-2"
                   href="https://www.facebook.com/TheOldTheaterOrientalNC"
                 >
                   <svg
@@ -110,7 +99,15 @@
           </div>
         </div>
 
-  
+        
+        <div class="flex justify-center pt-16 pl-4 pr-4">
+          <address class="pt-2 pl-3 text-sm not-italic text-center md:text-xl xl:text-xl">
+            <p class="mb-1">The Old Theater</p>
+            <p class="mb-1">609 Broad Street</p>
+            <p class="mb-1">Oriental, NC 28571</p>
+            <p class="mb-1">(252) 249 &ndash; 0477</p>
+          </address>
+        </div>
       </div>
     </div>
   </div>

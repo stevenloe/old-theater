@@ -11,14 +11,37 @@
       class="grid grid-cols-1 gap-8 p-12 pb-48 md:grid-cols-2 wave-content"
       :style="bgColor"
     >
-      <!-- image card -->
+      <!-- image grid -->
       <div class="relative">
-        <nuxt-link :to="item.url">
-          <show-picture
-            img="/images/home/placeholder-sponsors.png"
-            alt="foo"
-          ></show-picture>
-        </nuxt-link>
+        <div class="grid grid-cols-3 grid-rows-3 gap-6">
+          <div class="bg-red-100 rounded-full">
+            <img class="rounded-full" src="https://source.unsplash.com/random/190x190?orangecat" alt="" />
+          </div>
+          <div class="rounded-full">
+            <img class="rounded-full" src="https://source.unsplash.com/random/201x201?bluecat" alt="wer" />
+          </div>
+          <div class="rounded-full ">
+            <img class="rounded-full" src="https://source.unsplash.com/random/202x202?littlecat" alt="werwer" />
+          </div>
+          <div class="rounded-full">
+            <img class="rounded-full" src="https://source.unsplash.com/random/203x203?redcat" alt="wer" />
+          </div>
+          <div class="bg-red-208">
+            <img class="rounded-full" src="https://source.unsplash.com/random/204x204?mycat" alt="etrwe" />
+          </div>
+          <div class="bg-red-209">
+            <img class="rounded-full" src="https://source.unsplash.com/random/205x205?cutekitten" alt="fdsfd" />
+          </div>
+          <div class="bg-red-290">
+            <img class="rounded-full" src="https://source.unsplash.com/random/206x206?sleepingcat" alt="sdff" />
+          </div>
+          <div class="rounded-full">
+            <img class="rounded-full" src="https://source.unsplash.com/random/207x207?persiancat" alt="sfds" />
+          </div>
+          <div class="bg-red-2099">
+            <img class="rounded-full" src="https://source.unsplash.com/random/208x208?browncat" alt="doo" />
+          </div>
+        </div>
       </div>
 
       <!-- details card -->
@@ -32,9 +55,7 @@
               }}</UiHeadline>
             </nuxt-link>
 
-            <div
-              class="mb-4 text-base leading-relaxed tracking-wide"
-            >
+            <div class="mb-4 md:text-lg lg:text-xl xl:2xl">
               <nuxt-content class="text-white" :document="item" />
             </div>
 
@@ -42,8 +63,6 @@
               class="visible my-6 text-xl tracking-wide md:hidden lg:block lg:mt-6"
             ></div>
           </div>
-
-    
 
           <!-- Learn More Button -->
           <div class="flex justify-end">
@@ -58,8 +77,7 @@
 <script>
 import ButtonLink from "./ui/ButtonLink";
 import ShowPicture from "./ShowPicture.vue";
-import { formatShowDate } from "@/utils/dates.js";
-import { formatPrice } from "@/utils/format.js";
+
 import UiHeadline from "./ui/UiHeadline.vue";
 
 export default {
@@ -69,18 +87,7 @@ export default {
       required: true,
     },
   },
-  methods: {
-    showDate(date) {
-      return formatShowDate(date, "date");
-    },
-    showTime(date) {
-      return formatShowDate(date, "time");
-    },
-  },
   computed: {
-    // formattedPrice() {
-    //   return formatPrice(this.item.price);
-    // },
     bgColor() {
       return `background-color: #${this.item.bgcolor}`;
     },
@@ -96,7 +103,7 @@ export default {
   components: {
     ShowPicture,
     ButtonLink,
-    UiHeadline
-},
+    UiHeadline,
+  },
 };
 </script>

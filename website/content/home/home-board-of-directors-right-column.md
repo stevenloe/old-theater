@@ -1,7 +1,7 @@
 ---
 ---
 
- ### Department Managers
+ ### **Department Managers**
 **Facilities:**  Brian Hough   
 **Friday Flicks:** Nancy Crain   
 **House & Tickets:** Russ Stevenson   

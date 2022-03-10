@@ -10,15 +10,20 @@
     >
       <div class="header-container">
         <div class="flex">
-          <nuxt-link to="/" title="Home">
+          <nuxt-link to="/" class="w-7/12">
             <Logo
               @click.native="onNavItemClick"
-              class="w-7/12 bg-yellow-200 sm:bg-orange-400 md:bg-red-300 lg:bg-purple-300 xl:bg-blue-300 hover:bg-gray-200"
+              class="bg-yellow-200 sm:bg-orange-400 md:bg-red-300 lg:bg-purple-300 xl:bg-blue-300 hover:bg-gray-200"
             />
             <!-- <Logo @click.native="onNavItemClick"/> -->
           </nuxt-link>
 
-          <div></div>
+          <div class="p-2">
+            <p>
+              
+            </p>
+            routePath is: {{routePath}}
+          </div>
           <div class="hidden md:flex md:w-5/12" aria-label="Search menu button">
             <SearchDesktop
               class="w-0 mb-6 place-self-end"
@@ -197,6 +202,11 @@ export default {
       noSearchResults: true,
       isMobile: null,
       backgroundImagePath,
+      backgroundImages: {
+        "/": "~/assets/img/hero/home-old-theater-drawing.jpg",
+        "/news": "news-pexels-anastasia-shuraeva.webp",
+        
+      },
       aboutMenuItems: {
         title: "ABOUT US",
         items: [
@@ -275,6 +285,9 @@ export default {
       let result = this.isMobile ? base + mobi : base;
       return `${result} `;
     },
+    routePath() {
+      return this.$nuxt.$route.path
+    }
   },
   watch: {
     $route() {
