@@ -100,14 +100,20 @@
         </div>
 
         
-        <div class="flex justify-center pt-16 pl-4 pr-4">
+        <div class="flex flex-wrap justify-center pt-16 pl-4 pr-4">
           <address class="pt-2 pl-3 text-sm not-italic text-center md:text-xl xl:text-xl">
             <p class="mb-1">The Old Theater</p>
             <p class="mb-1">609 Broad Street</p>
             <p class="mb-1">Oriental, NC 28571</p>
             <p class="mb-1">(252) 249 &ndash; 0477</p>
+            
           </address>
+          
         </div>
+      </div>
+      <div class="flex justify-center w-full">
+
+      <p class="text-base ">Site designed & developed in North Carolina by Steven Loe</p>
       </div>
     </div>
   </div>

@@ -1,12 +1,19 @@
 <template>
-  <div
+  <!-- <div
     class="hero backgroundImage"
     :style="{ backgroundImage: `url(${backgroundImagePath})` }"
-  >
+  > -->
+  <div  :style="heroClass">
+    <!-- <div :class="heroClass" :style="{ backgroundImage: `url(${headerImage.img})` }"> -->
+    <!-- <img :src="imageForPage" alt=""> -->
+
+    <!-- <img :src="require(`~/assets/${article.img}`)" alt="" />
+  
+  headerClass -->
     <header
       v-show="isMounted"
       class="z-10 home-hero-wave josefin-bold sm:text-xs md:text-base"
-      :class="headerClass"
+      :class="headerClass" :style="waveClass"
     >
       <div class="header-container">
         <div class="flex">
@@ -19,10 +26,8 @@
           </nuxt-link>
 
           <div class="p-2">
-            <p>
-              
-            </p>
-            routePath is: {{routePath}}
+            <p></p>
+            routePath is: {{ routePath }}
           </div>
           <div class="hidden md:flex md:w-5/12" aria-label="Search menu button">
             <SearchDesktop
@@ -36,6 +41,7 @@
               class="pl-1 pr-0 mb-6 text-gray-900 hover:bg-gray-600 focus:outline-none place-self-end"
               @click="toggleSearch"
             >
+              <!-- Search Icon -->
               <svg
                 class="h-8 px-1 pt-1 fill-current w-100"
                 xmlns="http://www.w3.org/2000/svg"
@@ -202,10 +208,85 @@ export default {
       noSearchResults: true,
       isMobile: null,
       backgroundImagePath,
-      backgroundImages: {
-        "/": "~/assets/img/hero/home-old-theater-drawing.jpg",
-        "/news": "news-pexels-anastasia-shuraeva.webp",
-        
+      selectedHeaderImage: {
+          
+          },
+      headerImages: {
+        "/": [
+          {
+            img: "old-theater-drawing.webp",
+            height: "0.8",
+            opacity: "0.4",
+          },
+        ],
+        "/get-involved": [
+          {
+            img: "get-involved.webp",
+            height: "0.8",
+            opacity: "0.9",
+          },
+        ],
+        "/calendar": [
+          {
+            img: " ",
+            height: "0.8",
+            opacity: "0.9",
+          },
+        ],
+        "/support/donate": [
+          {
+            img: "donate.webp",
+            height: "0.8",
+            opacity: "0.8",
+          },
+        ],
+        "/about/board-of-directors": [
+          {
+            img: "board-placeholder.webp",
+            height: "0.8",
+            opacity: "0.9",
+          },
+        ],
+        "/about/the-old-theater/": [
+          {
+            img: "old-theater-drawing.webp",
+            height: "0.8",
+            opacity: "0.4",
+          },
+        ],
+        default: [
+          {
+            img: " ",
+            height: "0.8",
+            opacity: "0.9",
+          },
+        ],
+        "/get-involved": [
+          {
+            img: "get-involved.webp",
+            height: "0.8",
+            opacity: "0.9",
+          },
+        ],
+        "/about/board-of-directors": [
+          {
+            img: "board-placeholder.webp",
+            height: "0.8",
+            opacity: "0.7",
+          },
+        ],
+        "/news": [
+          {
+            img: "/news.webp",
+            height: "0.8",
+            opacity: "0.9",
+          },
+          {
+            img: "news2.webp",
+            height: "0.8",
+            opacity: "0.9",
+          },
+        ],
       },
       aboutMenuItems: {
         title: "ABOUT US",
@@ -239,6 +320,9 @@ export default {
     };
   },
   methods: {
+    test() {
+      console.log("TEST -----------------");
+    },
     onResize() {
       console.log("--- onResize() ---");
       this.isMobileMenuOpen = false;
@@ -260,11 +344,49 @@ export default {
       console.log("hideMenu()");
       this.isMobileMenuOpen = false;
     },
+    setHeroImage() {
+
+     console.log("---------- SET HERO IMAGE -----------")
+      // on every route change, load the hero image for the new page
+      let path = this.$nuxt.$route.path;
+
+      if (this.headerImages[path]) {
+        this.selectedHeaderImage = this.headerImages[path][Math.floor(Math.random() * this.headerImages[path].length)];
+      } else {
+        this.selectedHeaderImage = this.headerImages['default']
+      }
+    }
   },
+
+  //  watch: {
+  //   // $route(to, from) {
+  //   //   // react to route changes...
+  //   //   console.log("ROUTE CHANGE")
+  //   // }
+
+  //   // '$route.params': '$fetch'
+
+  //   '$route.params': 'this.test'
+  // },
   mounted: function () {
     console.log(
       "-------------------------------------------MOUNTED-------------------------------------------"
     );
+
+    // let path = this.$nuxt.$route.path;
+
+    // let foo =
+    //   this.headerImages[path][
+    //     Math.floor(Math.random() * this.headerImages[path].length)
+    //   ];
+
+    // this.selectedHeaderImage = foo;
+
+    // console.log("----------FOO------------", foo);
+    // let { img, height, opacity } = this.headerImages[path];
+
+    this.setHeroImage();
+
     this.isMounted = true;
     this.onResize();
     window.addEventListener("resize", debounce(this.onResize, 10));
@@ -278,6 +400,12 @@ export default {
       const full = this.isMobileMenuOpen ? "h-full " : "";
       return `${full} `;
     },
+    waveClass() {
+      return `background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 1151 234' fill='%23eee8aa'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  opacity='${this.selectedHeaderImage.opacity}' fill-rule='evenodd' clip-rule='evenodd' d='M0.591553 0.00100708V233.859C111.126 203.295 221.095 188.013 330.5 188.013C522.428 188.013 647.271 226.586 813.184 226.586C923.792 226.585 1036.08 213.728 1150.04 188.013V4.57764e-05L0.591553 0.00100708Z' fill='white'/%3E%3C/svg%3E"); background-repeat: no-repeat;`;
+    },
+    fooClass() {
+      return "bar";
+    },
     menuClass() {
       const base =
         "justify-between w-full px-4 pt-2 pb-4 text-base md:flex md:p-0";
@@ -286,12 +414,45 @@ export default {
       return `${result} `;
     },
     routePath() {
-      return this.$nuxt.$route.path
-    }
+      return this.$nuxt.$route.path;
+    },
+    // headerImage() {
+    //   let path = this.$nuxt.$route.path;
+
+    //   let foo = headerimages[path][Math.floor(Math.random() * headerimages[path].length)]
+
+    //   console.log("FOO", foo)
+    //   let { img, height, opacity } = this.headerImages[path];
+
+    //   // console.log(images);
+    //   // let result = {
+    //   //   img:
+    //   //     "/images/hero/" + images[Math.floor(Math.random() * images.length)],
+    //   //   height,
+    //   //   opacity,
+    //   // };
+
+    //   // console.log("HEADER IMAGE", result);
+    //   // return result;
+    // },
+    heroClass() {
+      console.log("HEADER IMAGE 2", this.selectedHeaderImage.height);
+      return ` backgroundImage: url(/images/hero/${this.selectedHeaderImage.img});
+       height: calc(100vw * ${this.selectedHeaderImage.height}); 
+      grid-column: 1 / -1;
+      grid-row: 3;
+      display: grid;
+      background-repeat: no-repeat;
+      background-size: 100vw auto;
+      grid-gap: 7%;`;
+    },
   },
   watch: {
     $route() {
+      console.log("------ CHANGE ROUTE----");
       this.$bus.$emit("toggle-search", "close");
+      
+      this.setHeroImage()
     },
   },
   created: function () {
@@ -320,15 +481,15 @@ export default {
   letter-spacing: 0.03rem;
 }
 
-.hero {
+/* Height of Navbar must be calculated per page. It must be set to the desired height of the hero image */
+/* .hero {
   grid-column: 1 / -1;
   grid-row: 3;
   display: grid;
   background-repeat: no-repeat;
   background-size: 100vw auto;
-  height: calc(100vw * 0.8);
   grid-gap: 7%;
-}
+} */
 
 .header-container {
   width: 93vw;
@@ -336,10 +497,10 @@ export default {
   margin-top: calc(100vw * 0.02);
 }
 
-.home-hero-wave {
+/* .home-hero-wave {
   background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 1151 234' fill='%23eee8aa'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  opacity='0.4' fill-rule='evenodd' clip-rule='evenodd' d='M0.591553 0.00100708V233.859C111.126 203.295 221.095 188.013 330.5 188.013C522.428 188.013 647.271 226.586 813.184 226.586C923.792 226.585 1036.08 213.728 1150.04 188.013V4.57764e-05L0.591553 0.00100708Z' fill='white'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-}
+} */
 
 .home-hero-mask {
   height: calc(100vw * 0.24);

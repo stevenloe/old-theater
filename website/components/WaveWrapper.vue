@@ -121,10 +121,6 @@ export default {
     },
   },
   computed: {
-    // formattedPrice() {
-    //   return formatPrice(this.show.price);
-    // },
-
     bgColor() {
       return `background-color: #${this.show.bgcolor}`;
     },
