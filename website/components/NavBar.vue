@@ -279,12 +279,12 @@ export default {
           {
             img: "/news.webp",
             height: "0.8",
-            opacity: "0.9",
+            opacity: "0.6",
           },
           {
             img: "news2.webp",
             height: "0.8",
-            opacity: "0.9",
+            opacity: "0.6",
           },
         ],
       },
