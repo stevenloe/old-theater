@@ -240,6 +240,20 @@ export default {
             opacity: "0.8",
           },
         ],
+         "/community-partners": [
+          {
+            img: "community-partners-placeholder.webp",
+            height: "0.8",
+            opacity: "0.6",
+          },
+        ],
+         "/get-involved": [
+          {
+            img: "get-involved.webp",
+            height: "0.8",
+            opacity: "0.9",
+          },
+        ],
         "/about/board-of-directors": [
           {
             img: "board-placeholder.webp",
@@ -259,20 +273,6 @@ export default {
             img: " ",
             height: "0.8",
             opacity: "0.9",
-          },
-        ],
-        "/get-involved": [
-          {
-            img: "get-involved.webp",
-            height: "0.8",
-            opacity: "0.9",
-          },
-        ],
-        "/about/board-of-directors": [
-          {
-            img: "board-placeholder.webp",
-            height: "0.8",
-            opacity: "0.7",
           },
         ],
         "/news": [
