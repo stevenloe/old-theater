@@ -113,7 +113,7 @@
       </div>
       <div class="flex justify-center w-full">
 
-      <p class="text-base ">Site designed & developed in North Carolina by Steven Loe</p>
+      <p class="text-base ">Designed & developed in North Carolina by Steven Loe</p>
       </div>
     </div>
   </div>

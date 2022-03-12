@@ -11,6 +11,7 @@
       class="grid grid-cols-1 gap-8 pt-12 pb-48 pl-8 pr-8 md:pl-12 md:pr-12 sm:grid-cols-2 wave-content"
       :style="bgColor"
     >
+    <!-- content area -->
       <!-- image card -->
       <div>
         <nuxt-link :to="show.path">

@@ -3,7 +3,7 @@
     class="hero backgroundImage"
     :style="{ backgroundImage: `url(${backgroundImagePath})` }"
   > -->
-  <div  :style="heroClass">
+  <div :style="heroClass">
     <!-- <div :class="heroClass" :style="{ backgroundImage: `url(${headerImage.img})` }"> -->
     <!-- <img :src="imageForPage" alt=""> -->
 
@@ -13,7 +13,9 @@
     <header
       v-show="isMounted"
       class="z-10 home-hero-wave josefin-bold sm:text-xs md:text-base"
-      :class="headerClass" :style="waveClass"
+      :class="headerClass"
+      :style="waveClass"
+      
     >
       <div class="header-container">
         <div class="flex">
@@ -208,9 +210,7 @@ export default {
       noSearchResults: true,
       isMobile: null,
       backgroundImagePath,
-      selectedHeaderImage: {
-          
-          },
+      selectedHeaderImage: {},
       headerImages: {
         "/": [
           {
@@ -229,9 +229,9 @@ export default {
         "/calendar": [
           {
             img: " ",
-            height: "0.8",
-            opacity: "0.9",
-          },
+            height: "0.3",
+            opacity: "1",
+            bgcolor:  'c8ecf7'        },
         ],
         "/support/donate": [
           {
@@ -240,14 +240,14 @@ export default {
             opacity: "0.8",
           },
         ],
-         "/community-partners": [
+        "/community-partners": [
           {
             img: "community-partners-placeholder.webp",
             height: "0.8",
             opacity: "0.6",
           },
         ],
-         "/get-involved": [
+        "/get-involved": [
           {
             img: "get-involved.webp",
             height: "0.8",
@@ -320,9 +320,6 @@ export default {
     };
   },
   methods: {
-    test() {
-      console.log("TEST -----------------");
-    },
     onResize() {
       console.log("--- onResize() ---");
       this.isMobileMenuOpen = false;
@@ -345,46 +342,22 @@ export default {
       this.isMobileMenuOpen = false;
     },
     setHeroImage() {
-
-     console.log("---------- SET HERO IMAGE -----------")
+      console.log("---------- SET HERO IMAGE -----------");
       // on every route change, load the hero image for the new page
       let path = this.$nuxt.$route.path;
 
       if (this.headerImages[path]) {
-        this.selectedHeaderImage = this.headerImages[path][Math.floor(Math.random() * this.headerImages[path].length)];
+        this.selectedHeaderImage =
+          this.headerImages[path][
+            Math.floor(Math.random() * this.headerImages[path].length)
+          ];
       } else {
-        this.selectedHeaderImage = this.headerImages['default']
+        this.selectedHeaderImage = this.headerImages["default"];
       }
-    }
+    },
   },
 
-  //  watch: {
-  //   // $route(to, from) {
-  //   //   // react to route changes...
-  //   //   console.log("ROUTE CHANGE")
-  //   // }
-
-  //   // '$route.params': '$fetch'
-
-  //   '$route.params': 'this.test'
-  // },
   mounted: function () {
-    console.log(
-      "-------------------------------------------MOUNTED-------------------------------------------"
-    );
-
-    // let path = this.$nuxt.$route.path;
-
-    // let foo =
-    //   this.headerImages[path][
-    //     Math.floor(Math.random() * this.headerImages[path].length)
-    //   ];
-
-    // this.selectedHeaderImage = foo;
-
-    // console.log("----------FOO------------", foo);
-    // let { img, height, opacity } = this.headerImages[path];
-
     this.setHeroImage();
 
     this.isMounted = true;
@@ -398,10 +371,14 @@ export default {
     headerClass() {
       // display menu at full viewport height on mobile:
       const full = this.isMobileMenuOpen ? "h-full " : "";
+
+      const bgcolor= ''
       return `${full} `;
     },
     waveClass() {
-      return `background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 1151 234' fill='%23eee8aa'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  opacity='${this.selectedHeaderImage.opacity}' fill-rule='evenodd' clip-rule='evenodd' d='M0.591553 0.00100708V233.859C111.126 203.295 221.095 188.013 330.5 188.013C522.428 188.013 647.271 226.586 813.184 226.586C923.792 226.585 1036.08 213.728 1150.04 188.013V4.57764e-05L0.591553 0.00100708Z' fill='white'/%3E%3C/svg%3E"); background-repeat: no-repeat;`;
+      let bgcolor = this.selectedHeaderImage.bgcolor ? `background-color: #${this.selectedHeaderImage.bgcolor};` : '';
+      console.log("BGCOLOR ------ ", bgcolor)
+      return `background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 1151 234' fill='%23eee8aa'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  opacity='${this.selectedHeaderImage.opacity}' fill-rule='evenodd' clip-rule='evenodd' d='M0.591553 0.00100708V233.859C111.126 203.295 221.095 188.013 330.5 188.013C522.428 188.013 647.271 226.586 813.184 226.586C923.792 226.585 1036.08 213.728 1150.04 188.013V4.57764e-05L0.591553 0.00100708Z' fill='white'/%3E%3C/svg%3E"); background-repeat: no-repeat; ${bgcolor}` ;
     },
     fooClass() {
       return "bar";
@@ -416,29 +393,15 @@ export default {
     routePath() {
       return this.$nuxt.$route.path;
     },
-    // headerImage() {
-    //   let path = this.$nuxt.$route.path;
-
-    //   let foo = headerimages[path][Math.floor(Math.random() * headerimages[path].length)]
-
-    //   console.log("FOO", foo)
-    //   let { img, height, opacity } = this.headerImages[path];
-
-    //   // console.log(images);
-    //   // let result = {
-    //   //   img:
-    //   //     "/images/hero/" + images[Math.floor(Math.random() * images.length)],
-    //   //   height,
-    //   //   opacity,
-    //   // };
-
-    //   // console.log("HEADER IMAGE", result);
-    //   // return result;
-    // },
     heroClass() {
       console.log("HEADER IMAGE 2", this.selectedHeaderImage.height);
-      return ` backgroundImage: url(/images/hero/${this.selectedHeaderImage.img});
-       height: calc(100vw * ${this.selectedHeaderImage.height}); 
+      let bgImage = this.selectedHeaderImage.img
+        ? ` backgroundImage: url(/images/hero/${this.selectedHeaderImage.img});
+       height: calc(100vw * ${this.selectedHeaderImage.height}); `
+        : "";
+
+      console.log("------------  bgImage:", bgImage);
+      return ` ${bgImage}
       grid-column: 1 / -1;
       grid-row: 3;
       display: grid;
@@ -451,8 +414,7 @@ export default {
     $route() {
       console.log("------ CHANGE ROUTE----");
       this.$bus.$emit("toggle-search", "close");
-      
-      this.setHeroImage()
+      this.setHeroImage();
     },
   },
   created: function () {
