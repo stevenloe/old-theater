@@ -52,7 +52,7 @@
                 <span class="font-bold" v-else>Presented by: The Old Theater</span>
               </div>
               <div>
-                <span>{{ showDate(show.date) }}</span>
+                <span>{{ show.dateText}}</span>
                 {{ show.showTime }}
               </div>
               <span>{{ show.price }}</span>

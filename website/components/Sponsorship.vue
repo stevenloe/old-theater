@@ -14,32 +14,32 @@
       <!-- image grid -->
       <div class="relative">
         <div class="grid grid-cols-3 grid-rows-3 gap-6">
-          <div class="bg-red-100 rounded-full">
-            <img class="rounded-full" src="https://source.unsplash.com/random/190x190?orangecat" alt="" />
+          <div class="bg-white bg-red-100">
+            <img class="bg-white" src="" alt="" />
           </div>
-          <div class="rounded-full">
-            <img class="rounded-full" src="https://source.unsplash.com/random/201x201?bluecat" alt="wer" />
+          <div class="h-full bg-white">
+             d
           </div>
-          <div class="rounded-full ">
-            <img class="rounded-full" src="https://source.unsplash.com/random/202x202?littlecat" alt="werwer" />
+          <div class="bg-white ">
+           d
           </div>
-          <div class="rounded-full">
-            <img class="rounded-full" src="https://source.unsplash.com/random/203x203?redcat" alt="wer" />
+          <div class="bg-white">
+            d
           </div>
-          <div class="bg-red-208">
-            <img class="rounded-full" src="https://source.unsplash.com/random/204x204?mycat" alt="etrwe" />
+          <div class="bg-white">
+            d
           </div>
           <div class="bg-red-209">
-            <img class="rounded-full" src="https://source.unsplash.com/random/205x205?cutekitten" alt="fdsfd" />
+           
           </div>
           <div class="bg-red-290">
-            <img class="rounded-full" src="https://source.unsplash.com/random/206x206?sleepingcat" alt="sdff" />
+           
           </div>
-          <div class="rounded-full">
-            <img class="rounded-full" src="https://source.unsplash.com/random/207x207?persiancat" alt="sfds" />
+          <div class="bg-white">
+           
           </div>
           <div class="bg-red-2099">
-            <img class="rounded-full" src="https://source.unsplash.com/random/208x208?browncat" alt="doo" />
+         
           </div>
         </div>
       </div>
