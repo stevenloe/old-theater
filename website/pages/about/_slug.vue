@@ -21,6 +21,8 @@ import BasePicture from "@/components/BasePicture";
 export default {
   async asyncData({ $content, params }) {
     const content = await $content("abouts", params.slug).fetch();
+
+    // console.log("CONTENT", content);
     return { content };
   },
   layout: "NewLayout",

@@ -1,194 +1,21 @@
 <template>
-  <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
-    <UiHeadline level="1" class="mb-6">Community Partners</UiHeadline>
-    <div class="p-8 mb-8 bg-white rounded-lg shadow-lg content-border">
-      <div class="mb-4">
-        <div>
-          <base-picture
-            :img="communityPartners.img"
-            :alt="communityPartners.alt"
-            :caption="communityPartners.caption"
-          ></base-picture>
-        </div>
-        <p
-          class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6"
-        >
-          The Old Theater's goal is to enrich, educate and entertain our
-          community by serving as a great venue for the performing arts. We
-          partner with local arts organizations to help them bring educational,
-          live theater, &amp; live music performances to our stage.
-        </p>
-        <p
-          class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6"
-        >
-          Below are some of the organizations we partner with.
-        </p>
-      </div>
-    </div>
-    <div class="p-8 mb-8 bg-orange-200 rounded-lg shadow-lg content-border">
-      <div class="flex justify-between">
-        <div>
-          <UiHeadline class="mb-2" level="3"
-            >Pamlico Musical Society</UiHeadline
-          >
-        </div>
-        <div class="flex">
-          <img
-            class="object-contain h-8 mb-2 ml-2 md:h-12"
-            src="/images/community/pms-logo-padded.jpg"
-            alt="Pamlico Musical Society logo"
-          />
-        </div>
-      </div>
-      <UiHeadline class="mb-4" level="4"
-        >Remarkable Musical Experiences for our Amazing Community</UiHeadline
-      >
-      <div class="mb-8">
-        <base-picture
-          :img="pms.img"
-          :alt="pms.alt"
-          :caption="pms.caption"
-        ></base-picture>
-      </div>
-      <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
-        The mission of the Pamlico Musical Society is to present diverse musical
-        experiences that enrich the quality of life in our community. Since
-        1997, our concert performances and outreach activities have provided
-        opportunities to enjoy and interact with a wide variety of high quality
-        musical groups representing many musical genres.
-      </p>
-      <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
-        Our primary performance venue is the Old Theater, where the small hall
-        promotes intimate exchanges between the artists and audiences &mdash;
-        further enhancing the significance of the musical experience. Many of
-        our artists also present an outreach component which extends the impact
-        of our programs to partners including the Pamlico County Public Schools,
-        the Arapahoe Charter School, the Pamlico Christian Academy, HeartWorks,
-        Prime Time, the Holt's Chapel Community Center, and the Pamlico
-        Community College.
-      </p>
-      <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
-        With a season that runs from September/October through April/May each
-        year, our Grammy-quality programming embraces bluegrass, jazz,
-        classical, folk, rock, Americana, pop, blues and more, offering
-        something special for everyone who loves great music.To learn more visit
-        <a class="underline" href="https://www.pamlicomusic.org"
-          >www.pamlicomusic.org</a
-        >.
-      </p>
+  <div>
+    <PageIntro :info="intro"/>
+
+ 
+
+    <div v-for="partner of partners" :key="partner.title">
+      <PartnerCard :info="partner" />
     </div>
 
-    <div class="p-8 mb-8 bg-pink-100 rounded-lg shadow-lg content-border">
-      <div class="flex justify-between">
-        <div class="w-4/5">
-          <UiHeadline class="mb-2" level="3"
-            >Children's Theater Workshop</UiHeadline
-          >
-          <UiHeadline class="mb-4" level="4"
-            >A Place for Kids to Learn, Grow and Imagine.</UiHeadline
-          >
-        </div>
 
-        <img
-          class="object-contain h-20 ml-1"
-          src="/images/community/ctw-logo.gif"
-          alt="Childrens Theater Workshop logo"
-        />
-      </div>
-      <div class="mb-8">
-        <base-picture
-          :img="ctw.img"
-          :alt="ctw.alt"
-          :caption="ctw.caption"
-        ></base-picture>
-      </div>
 
-      <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
-        Children's Theater Workshop has a longstanding commitment to enriching
-        the lives of children by providing a structured arts program led by an
-        exceptional, and carefully chosen, theater arts Drama Coach.
-      </p>
 
-      <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
-        Besides being great fun, children's theater has many benefits.
-        Activities like improv and drama performance can boost self-esteem and
-        confidence. The theater is a place where inner silliness and creativity
-        are embraced. When children learn to be more confident in themselves, it
-        translates to other aspects of their lives &mdash; school,
-        communication, and social situations.
-      </p>
-      <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
-        During the age-divided, two-week sessions, children are introduced to
-        theater skills such as acting fundamentals, learning to speak on stage,
-        using drama exercises by playing theater games, see the
-        behind-the-scenes work, learn to work in peer groups, and meet new
-        friends.
-      </p>
-      <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
-        Learning about the performing arts can teach important skills in life,
-        such as self-confidence, cooperation, self-discipline, and
-        concentration. Imagination is encouraged! More at
-        <a class="underline" href="https://www.childrenstheateronc.com/"
-          >www.childrenstheateronc.com</a
-        >
-      </p>
-    </div>
 
-    <div class="p-8 mb-8 bg-indigo-100 rounded-lg shadow-lg content-border">
-      <UiHeadline class="mb-4" level="3">Pamlico Community Band</UiHeadline>
-      <div class="mb-8">
-        <base-picture
-          :img="pcb.img"
-          :alt="pcb.alt"
-          :caption="pcb.caption"
-        ></base-picture>
-      </div>
-      <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
-        The Pamlico Community Band has members from Pamlico County and
-        surrounding counties. Ages range from the young, to the young at heart!
-        It doesn't matter what experience you have. Only thing that matters, is
-        that you have a passion for music!
-      </p>
-      <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
-        More at their
-        <a
-          class="underline"
-          href="https://www.facebook.com/Pamlico-Community-Band-138279799519612/"
-          >Facebook page</a
-        >
-      </p>
 
-      <div class="flex"></div>
-    </div>
 
-    <div class="p-8 mb-8 bg-gray-100 rounded-lg shadow-lg content-border">
-      <UiHeadline class="mb-4" level="3">Pamlico Chorale</UiHeadline>
-
-      <div class="mb-8">
-        <base-picture
-          :img="pc.img"
-          :alt="pc.alt"
-          :caption="pc.caption"
-        ></base-picture>
-      </div>
-      <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
-        The Pamlico Chorale is an established choral group in Pamlico County,
-        North Carolina. Its members enjoy singing and rejoicing together. Reba
-        Tiller is the group's beloved, long-standing leader. Participation is
-        open to all who share a love of music.
-      </p>
-      <p class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6">
-        More at their
-        <a
-          class="underline"
-          href="https://www.facebook.com/Pamlico-Chorale-158261794372262/"
-        >
-          Facebook page</a
-        >
-      </p>
-    </div>
     <client-only>
-      <member-carousel />
+      <member-carousel bgcolor="8B7B2A" />
     </client-only>
   </div>
 </template>
@@ -197,59 +24,66 @@
 import MemberCarousel from "@/components/MemberCarousel";
 import UiHeadline from "@/components/ui/UiHeadline";
 import BasePicture from "@/components/BasePicture.vue";
-
+import PartnerCard from "@/components/PartnerCard.vue";
+import PageIntro from "@/components/PageIntro.vue";
 export default {
   metaInfo: {
     title: "About us",
   },
   data() {
     return {
-      communityPartners: {
-        img: "/images/widgets/childrens_theater_workshop_crop.jpg",
-        alt: "Children's Theater Workshop participants having fun at The Old Theater",
-        caption:
-          "Children's Theater Workshop participants having fun at The Old Theater",
-      },
-      pms: {
-        img: "/images/community/pms_supplied_collage.jpg",
-        alt: "Pamlico Musical Society",
-        caption: "",
-      },
-      ctw: {
-        img: "/images/community/ctw.png",
-        alt: "Children's Theater Workshop, Oriental, NC",
-        caption: "",
-      },
-      pc: {
-        img: "/images/community/pamlico_chorale.jpg",
-        alt: "Pamlico Chorale performing on stage",
-        caption: "",
-      },
-      pcb: {
-        img: "/images/community/pamlico-community-band.jpg",
-        alt: "Pamlico Community Band",
-        caption: "",
-      },
+
     };
   },
   components: {
     MemberCarousel,
     UiHeadline,
-    MemberCarousel,
+    PartnerCard,
     BasePicture,
+    PageIntro
   },
   layout: "NewLayout",
 
-  async fetch() {
-    this.members = await fetch(
-      "https://old-theater.netlify.app/data/members2.json"
-    ).then((res) => res.json());
+
+
+   async asyncData({ $content, params }) {
+    const [intro, partners] = await Promise.all(
+      [
+        $content("page-intros/community-partners").fetch(),
+        $content("partners", { text: true }).sortBy('order', 'asc').fetch(),
+      ]
+    );
+  
+    return {
+      intro, 
+      partners
+    };
   },
+
+  // async asyncData({ $content, params }) {
+  //   const partners = await Promise.all(
+  //     [
+  //       $content("community", params.slug).fetch(),
+  //     ]
+  //   );
+  //     console.log("---- PARTNERA", partners);
+
+  //   return {
+
+  //     partners
+  //   };
+  // },
+
+  // ---
+  // async fetch() {
+  //   this.members = await fetch(
+  //     "https://old-theater.netlify.app/data/members2.json"
+  //   ).then((res) => res.json());
+  // },
 };
 </script>
 
 
 
 <style >
-
 </style>

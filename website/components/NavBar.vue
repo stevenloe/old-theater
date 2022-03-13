@@ -243,7 +243,7 @@ export default {
         "/community-partners": [
           {
             img: "community-partners-placeholder.webp",
-            height: "0.8",
+            height: "0.65",
             opacity: "0.6",
           },
         ],
@@ -371,8 +371,6 @@ export default {
     headerClass() {
       // display menu at full viewport height on mobile:
       const full = this.isMobileMenuOpen ? "h-full " : "";
-
-      const bgcolor= ''
       return `${full} `;
     },
     waveClass() {
