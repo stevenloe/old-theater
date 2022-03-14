@@ -8,7 +8,7 @@
    
     <NewsWidget :news="news" />
     <Membership :item="membership"/>
-    <Sponsorship :item="sponsorship"/>
+    <Sponsorship :item="sponsorship" :homeSponsorData="homeSponsorData"/>
     <Amazon :content="amazonSmile"/>
     <WhoWeAre :leftContent="whoWeAreLeftColumn" :rightContent="whoWeAreRightColumn"/>
     <BoardOfDirectors :leftContent="boardOfDirectorsLeft" :rightContent="boardOfDirectorsRight" />
@@ -55,7 +55,7 @@ export default {
   },
 
   async asyncData({ $content, params }) {
-    const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardOfDirectorsLeft, boardOfDirectorsRight, sponsorship, membership, amazonSmile] = await Promise.all(
+    const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardOfDirectorsLeft, boardOfDirectorsRight, sponsorship, homeSponsorData, membership, amazonSmile] = await Promise.all(
       [
         $content("shows", params.slug).fetch(),
         $content("news", params.slug).limit(3).fetch(),
@@ -65,11 +65,13 @@ export default {
         $content("home/home-board-of-directors-left-column", params.slug).fetch(),
         $content("home/home-board-of-directors-right-column", params.slug).fetch(),
         $content("home/home-sponsorship", params.slug).fetch(),
+        $content("home-sponsor-data/logos", params.slug).fetch(),
         $content("home/home-membership", params.slug).fetch(),
         $content("home/home-amazon-smile", params.slug).fetch(),
       ]
     );
 
+console.log('_+_+_+_+_+_++_++_ SPONSOR DATA', homeSponsorData)
     const sortedNews = sortByDate(news).slice(0, 5);
 
     const { futureShows, pastShows } = sortShows(shows);
@@ -84,6 +86,7 @@ export default {
       boardOfDirectorsLeft,
       boardOfDirectorsRight,
       sponsorship,
+      homeSponsorData,
       membership,
       amazonSmile,
     };

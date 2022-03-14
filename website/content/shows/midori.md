@@ -3,7 +3,7 @@ title: Midori
 date: "2022-04-23T23:30:00.2Z"
 dateText: April 23, 2022, 7:30 PM
 showTime: 
-price: $25 Sold Out
+price: $20 Sold Out
 presentedby: PMS
 location: At The Old Theater
 locationDetail: 

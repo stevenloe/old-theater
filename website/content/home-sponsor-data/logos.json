@@ -1,0 +1,48 @@
+{
+	"logos": [{
+			"img": "images/home-sponsors/vet.webp",
+			"url": "https://www.orientalvillageveterinaryhospital.com/",
+			"alt": "Oriental Village Veternary Hospital"
+		},
+		{
+			"img": "images/home-sponsors/provision.webp",
+			"url": "https://inlandwaterwayprovisioncompany.com/",
+			"alt": "Inland Waterway Provision Company"
+		},
+		{
+			"img": "images/home-sponsors/towndock.webp",
+			"url": "https://towndock.net/",
+			"alt": "Towndock.net"
+		},
+		{
+			"img": "images/home-sponsors/silos.webp",
+			"url": "https://www.silosnc.com/",
+			"alt": "The Silos Restaurant"
+		},
+		{
+			"img": "images/home-sponsors/piglet.webp",
+			"url": "",
+			"alt": "The Piglet Grocery Store"
+		},
+		{
+			"img": "images/home-sponsors/marina.webp",
+			"url": "https://orientalmarina.com",
+			"alt": "The Oriental Marina & Inn"
+		},
+		{
+			"img": "images/home-sponsors/nautical-wheelers.webp",
+			"url": "https://nauticalwheelersnc.com/",
+			"alt": "Nautical Wheelers"
+		},
+		{
+			"img": "images/home-sponsors/placeholder.webp",
+			"url": "",
+			"alt": "placeholder"
+		},
+		{
+			"img": "images/home-sponsors/placeholder.webp",
+			"url": "",
+			"alt": "placeholder1"
+		}
+	]
+}

@@ -106,9 +106,7 @@ export default {
   computed: {
     computeShowUrl() {
       // PMS shows should not click through to our _slug page. Instead, take the user to  PMS's Calendar page:
-      let foo = this.show.presentedby == 'PMS' ? 'https://www.pamlicomusic.org/calendar1.html' : this.show.path
-      console.log("=================== FOO ", foo)
-      return foo
+      return this.show.presentedby == 'PMS' ? 'https://www.pamlicomusic.org/calendar1.html' : this.show.path
     },
     bgColor() {
       return `background-color: #${this.show.bgcolor}`;

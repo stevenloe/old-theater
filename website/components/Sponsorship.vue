@@ -14,12 +14,15 @@
       <!-- Logo grid -->
       <div class="relative">
         <div class="grid grid-cols-3 grid-rows-3 gap-6 mt-4">
-          <div v-for="logo of logos" :key="logo.alt" class="bg-white">
-            <a v-if="logo.url" :href="logo.url"><img class="bg-white hover:shadow-lg" :src="logo.img" :alt="logo.alt" /></a>
+          <div v-for="logo of homeSponsorData.logos" :key="logo.alt" class="bg-white">
+            <a v-if="logo.url" :href="logo.url"
+              ><img
+                class="bg-white hover:shadow-lg"
+                :src="logo.img"
+                :alt="logo.alt"
+            /></a>
             <img v-else class="bg-white" :src="logo.img" :alt="logo.alt" />
           </div>
-         
-          
         </div>
       </div>
 
@@ -56,7 +59,6 @@
 <script>
 import ButtonLink from "./ui/ButtonLink";
 import ShowPicture from "./ShowPicture.vue";
-
 import UiHeadline from "./ui/UiHeadline.vue";
 
 export default {
@@ -65,21 +67,21 @@ export default {
       type: Object,
       required: true,
     },
+    homeSponsorData: {
+      type: Object,
+      required: true,
+    },
   },
 
-  data() {
-    return {
-      logos: [
-        {img: 'images/home-sponsors/vet.webp', url:'https://www.orientalvillageveterinaryhospital.com/', alt:'Oriental Village Veternary Hospital'},
-        {img: 'images/home-sponsors/provision.webp', url:'https://inlandwaterwayprovisioncompany.com/',  alt:'Inland Waterway Provision Company'},
-        {img: 'images/home-sponsors/towndock.webp', url:'https://towndock.net/', alt:'Towndock.net'},
-        {img: 'images/home-sponsors/silos.webp', url:'https://www.silosnc.com/', alt:'The Silos Restaurant'},
-        {img: 'images/home-sponsors/piglet.webp', url:'', alt:'The Piglet Grocery Store'},
-        {img: 'images/home-sponsors/marina.webp', url:'', url:'https://orientalmarina.com', alt:'The Oriental Marina & Inn'},
-        {img: 'images/home-sponsors/nautical-wheelers.webp', url:'https://nauticalwheelersnc.com/', alt:'Nautical Wheelers'},
-        {img: 'images/home-sponsors/placeholder.webp', url:'', alt:'placeholder'},
-        {img: 'images/home-sponsors/placeholder.webp',url:'', alt:'placeholder1'},
-      ]
+  created: function () {
+    // shuffle sponsor logos
+    let data = this.homeSponsorData.logos;
+
+    for (let i = data.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * i);
+      let k = data[i];
+      data[i] = data[j];
+      data[j] = k;
     }
   },
   computed: {
