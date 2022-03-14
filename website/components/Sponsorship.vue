@@ -11,41 +11,20 @@
       class="grid grid-cols-1 gap-8 p-12 pb-48 md:grid-cols-2 wave-content"
       :style="bgColor"
     >
-      <!-- image grid -->
+      <!-- Logo grid -->
       <div class="relative">
-        <div class="grid grid-cols-3 grid-rows-3 gap-6">
-          <div class="bg-white bg-red-100">
-            <img class="bg-white" src="" alt="" />
+        <div class="grid grid-cols-3 grid-rows-3 gap-6 mt-4">
+          <div v-for="logo of logos" :key="logo.alt" class="bg-white">
+            <a v-if="logo.url" :href="logo.url"><img class="bg-white hover:shadow-lg" :src="logo.img" :alt="logo.alt" /></a>
+            <img v-else class="bg-white" :src="logo.img" :alt="logo.alt" />
           </div>
-          <div class="h-full bg-white">
-             d
-          </div>
-          <div class="bg-white ">
-           d
-          </div>
-          <div class="bg-white">
-            d
-          </div>
-          <div class="bg-white">
-            d
-          </div>
-          <div class="bg-red-209">
-           
-          </div>
-          <div class="bg-red-290">
-           
-          </div>
-          <div class="bg-white">
-           
-          </div>
-          <div class="bg-red-2099">
          
-          </div>
+          
         </div>
       </div>
 
       <!-- details card -->
-      <div class="relative">
+      <div>
         <!-- Top info section and body text -->
         <div class="flex flex-col justify-between w-full h-full">
           <div>
@@ -86,6 +65,22 @@ export default {
       type: Object,
       required: true,
     },
+  },
+
+  data() {
+    return {
+      logos: [
+        {img: 'images/home-sponsors/vet.webp', url:'https://www.orientalvillageveterinaryhospital.com/', alt:'Oriental Village Veternary Hospital'},
+        {img: 'images/home-sponsors/provision.webp', url:'https://inlandwaterwayprovisioncompany.com/',  alt:'Inland Waterway Provision Company'},
+        {img: 'images/home-sponsors/towndock.webp', url:'https://towndock.net/', alt:'Towndock.net'},
+        {img: 'images/home-sponsors/silos.webp', url:'https://www.silosnc.com/', alt:'The Silos Restaurant'},
+        {img: 'images/home-sponsors/piglet.webp', url:'', alt:'The Piglet Grocery Store'},
+        {img: 'images/home-sponsors/marina.webp', url:'', url:'https://orientalmarina.com', alt:'The Oriental Marina & Inn'},
+        {img: 'images/home-sponsors/nautical-wheelers.webp', url:'https://nauticalwheelersnc.com/', alt:'Nautical Wheelers'},
+        {img: 'images/home-sponsors/placeholder.webp', url:'', alt:'placeholder'},
+        {img: 'images/home-sponsors/placeholder.webp',url:'', alt:'placeholder1'},
+      ]
+    }
   },
   computed: {
     bgColor() {

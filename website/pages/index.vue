@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DonateWidget backgroundColor="#A5B69D" path="/" />
+    <DonateWidget backgroundColor="#A5B69D" path="/support/donate" />
     <ShowList :shows="futureShows" />
 
       <!-- TODO: remove-->

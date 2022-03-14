@@ -68,7 +68,7 @@
 
           <!-- Learn More / Buy Tickets buttons -->
           <div class="md:justify-between md:flex">
-            <ButtonLink :url="show.path" text="LEARN MORE" />
+            <ButtonLink :url="computeShowUrl" text="LEARN MORE" />
             <ButtonLink 
               v-if="show.ticketURL"
               :url="show.ticketURL"
@@ -86,7 +86,6 @@ import ButtonLink from "./ui/ButtonLink";
 import ShowPicture from "./ShowPicture.vue";
 import UiHeadline from "./ui/UiHeadline.vue";
 import { formatShowDate } from "@/utils/dates.js";
-import { formatPrice } from "@/utils/format.js";
 
 export default {
   props: {
@@ -105,9 +104,12 @@ export default {
     },
   },
   computed: {
-    // formattedPrice() {
-    //   return formatPrice(this.show.price);
-    // },
+    computeShowUrl() {
+      // PMS shows should not click through to our _slug page. Instead, take the user to  PMS's Calendar page:
+      let foo = this.show.presentedby == 'PMS' ? 'https://www.pamlicomusic.org/calendar1.html' : this.show.path
+      console.log("=================== FOO ", foo)
+      return foo
+    },
     bgColor() {
       return `background-color: #${this.show.bgcolor}`;
     },

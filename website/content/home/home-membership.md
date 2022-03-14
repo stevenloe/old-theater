@@ -1,6 +1,6 @@
 ---
 title: Membership
-url: "/"
+url: "/support/membership"
 bgcolor: '375464'
 
 ---

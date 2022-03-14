@@ -1,6 +1,6 @@
 ---
 title: Sponsorship
-url: "/"
+url: "/support/sponsor"
 bgcolor: '959965'
 
 ---
