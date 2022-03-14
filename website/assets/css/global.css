@@ -71,13 +71,6 @@
   margin-top: -100px;
 }
 
-.red-bg .wave {
-  fill: red 
-}
-.red-bg .wave-content {
-  background-color: red;
-}
-
 .orange-bg .wave {
   fill: orange; 
 }

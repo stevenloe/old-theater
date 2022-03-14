@@ -1,0 +1,86 @@
+{
+	"board": {
+		"executives": {
+		"team":
+		[{
+				"role": "President",
+				"name": "Izzy Keppner",
+				"img": ""
+			},
+			{
+				"role": "Treasurer",
+				"name": "Shelby Loe",
+				"img": ""
+			},
+			{
+				"role": "Secretary",
+				"name": "Linda Larson",
+				"img": ""
+			}
+		],
+		"info": {
+			"title": "Meet Our Board",
+			"subhead": "Executive Officers",
+			"bgcolor": "677949"
+		}
+	},
+		"managers": {
+			"team": [{
+				"role": "Facilities",
+				"name": "Brian Hough",
+				"img": ""
+			},
+			{
+				"role": "Sunday Classic Cinema",
+				"name": "Nancy Crain",
+				"img": ""
+			},
+			{
+				"role": "Graphics",
+				"name": "Pat Dixon",
+				"img": ""
+			},
+			{
+				"role": "House & Tickets",
+				"name": "AnnMarie Wolf",
+				"img": ""
+			},
+			{
+				"role": "Membership & Volunteers",
+				"name": "Andrea Bayard",
+				"img": ""
+			},
+			{
+				"role": "Publicity",
+				"name": "Mary Taylor",
+				"img": ""
+			},
+			{
+				"role": "Sponsorship",
+				"name": "Patrick O’Donnell",
+				"img": ""
+			},
+			{
+				"role": "Technical Services",
+				"name": "Mike & Kris Baum",
+				"img": ""
+			},
+			{
+				"role": "Theater Sponsored Events",
+				"name": "Claudine Fields",
+				"img": ""
+			},
+			{
+				"role": "Website",
+				"name": "Steven Loe",
+				"img": ""
+			}
+		],
+		"info": {
+			"title": "",
+			"subhead": "Department Managers",
+			"bgcolor": "62506D"
+		}
+	}
+	}
+}

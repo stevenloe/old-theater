@@ -1,21 +1,10 @@
 <template>
-  <!-- <div
-    class="hero backgroundImage"
-    :style="{ backgroundImage: `url(${backgroundImagePath})` }"
-  > -->
   <div :style="heroClass">
-    <!-- <div :class="heroClass" :style="{ backgroundImage: `url(${headerImage.img})` }"> -->
-    <!-- <img :src="imageForPage" alt=""> -->
-
-    <!-- <img :src="require(`~/assets/${article.img}`)" alt="" />
-  
-  headerClass -->
     <header
       v-show="isMounted"
       class="z-10 home-hero-wave josefin-bold sm:text-xs md:text-base"
       :class="headerClass"
       :style="waveClass"
-      
     >
       <div class="header-container">
         <div class="flex">
@@ -37,7 +26,6 @@
               :isMobile="isMobile"
               isAnimated="true"
             />
-
             <a
               href="#"
               class="pl-1 pr-0 mb-6 text-gray-900 hover:bg-gray-600 focus:outline-none place-self-end"
@@ -233,12 +221,33 @@ export default {
             opacity: "1",
             bgcolor:  'c8ecf7'        },
         ],
+        "/support/membership": [
+          {
+            img: "membership.webp",
+            height: "0.7",
+            opacity: "0.75",
+          },
+        ],
         "/support/donate": [
           {
             img: "donate.webp",
             height: "0.8",
             opacity: "0.8",
           },
+        ],
+        "/fundraisers": [
+          {
+            img: " ",
+            height: "0.3",
+            opacity: "1",
+            bgcolor:  'c8ecf7'        },
+        ],
+        "/support/other": [
+          {
+            img: " ",
+            height: "0.3",
+            opacity: "1",
+            bgcolor:  'eeecf7'        },
         ],
         "/community-partners": [
           {
@@ -257,8 +266,8 @@ export default {
         "/about/board-of-directors": [
           {
             img: "board-placeholder.webp",
-            height: "0.8",
-            opacity: "0.9",
+            height: "0.6",
+            opacity: "0.8",
           },
         ],
         "/about/the-old-theater/": [
@@ -342,7 +351,7 @@ export default {
       this.isMobileMenuOpen = false;
     },
     setHeroImage() {
-      console.log("---------- SET HERO IMAGE -----------");
+     
       // on every route change, load the hero image for the new page
       let path = this.$nuxt.$route.path;
 
@@ -351,9 +360,12 @@ export default {
           this.headerImages[path][
             Math.floor(Math.random() * this.headerImages[path].length)
           ];
+          console.log(">>>>>>>> typeof(this.selectedHeaderImage)", typeof(this.selectedHeaderImage))
       } else {
         this.selectedHeaderImage = this.headerImages["default"];
       }
+
+      console.log("---------- SET HERO IMAGE ----------->> path ", path, "selected image:",  this.selectedHeaderImage);
     },
   },
 

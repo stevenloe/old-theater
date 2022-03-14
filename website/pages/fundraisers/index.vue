@@ -1,10 +1,9 @@
 <template>
-  <div>
-    <article class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
-      <UiHeadline level="1">Our Fundraisers</UiHeadline>
+  <div style="background-color:#c8ecf7">
+    <article class="w-full max-w-4xl pb-48 mx-auto lg:text-xl xl:text-2xl">
+      <UiHeadline level="2">Our Fundraisers</UiHeadline>
 
-      <article
-        class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg content-border"
+      <article class="mt-8"
         v-for="post of posts"
         :key="post.title"
       >
@@ -17,24 +16,13 @@
           {{ showDate(post.date) }}
         </div>
 
-        <h2
-          class="mb-4 text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl"
-        >
-          <nuxt-link :to="`${post.path}?page=index`">
-            {{ post.title }}</nuxt-link
-          >
-        </h2>
         
+        <UiHeadline level="4">{{ post.title }}</UiHeadline>
         <p>
           {{ post.summary }}
 
-          <nuxt-link
-            class="block mt-2 text-lg italic underline"
-            :to="`${post.path}?page=index`"
-          >
-            More about {{ post.title }}</nuxt-link
-          >
         </p>
+          <div v-if="post.path" class="flex mt-3 mb-20"><ButtonLink :url="post.path" color="black" text="LEARN MORE" /></div>
       </article>
 
       <section class="flex justify-end" v-if="nextPage">
@@ -49,8 +37,10 @@
 
 <script>
 import UiHeadline from "@/components/ui/UiHeadline";
+import WaveImageFirstWidget from "@/components/WaveImageFirstWidget";
 import BasePicture from "@/components/BasePicture";
 import { formatShowDate } from "@/utils/dates.js";
+import ButtonLink from "../../components/ui/ButtonLink.vue";
 
 
 export default {
@@ -78,8 +68,10 @@ export default {
   layout: "NewLayout",
   components: {
     UiHeadline,
-    BasePicture
-  },
+    BasePicture,
+    WaveImageFirstWidget,
+    ButtonLink
+},
 };
 </script>
 

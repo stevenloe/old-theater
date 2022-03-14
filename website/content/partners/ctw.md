@@ -2,14 +2,14 @@
 title: Children's Theater Workshop
 order: 2
 subhead: A Place for Kids to Learn, Grow and Imagine.
-img: /images/community/ctw.png
+img: /images/community/ctw.webp
 alt: Children's Theater Workshop
 logo: /images/community/ctw-logo.gif
 logoheight: h-24
 logoalt: Childrens Theater Workshop logo
 eventDate: 'March, 21 2020 19:30:00 EST'
 eventTime: '2021-02-05T21:09:38.963Z'
-bgcolor: D08E93
+bgcolor: a7eef8
 ---
 Children's Theater Workshop has a longstanding commitment to enriching the lives of children by providing a structured arts program led by an exceptional, and carefully chosen, theater arts Drama Coach.
 

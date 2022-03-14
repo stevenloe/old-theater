@@ -65,13 +65,12 @@ export default {
         $content("home/home-board-of-directors-left-column", params.slug).fetch(),
         $content("home/home-board-of-directors-right-column", params.slug).fetch(),
         $content("home/home-sponsorship", params.slug).fetch(),
-        $content("home-sponsor-data/logos", params.slug).fetch(),
+        $content("data/home/sponsor-logos", params.slug).fetch(),
         $content("home/home-membership", params.slug).fetch(),
         $content("home/home-amazon-smile", params.slug).fetch(),
       ]
     );
 
-console.log('_+_+_+_+_+_++_++_ SPONSOR DATA', homeSponsorData)
     const sortedNews = sortByDate(news).slice(0, 5);
 
     const { futureShows, pastShows } = sortShows(shows);

@@ -10,7 +10,7 @@ bgcolor: 'B4C1B9'
 
 ---
 
-## Help The Old Theater Thrive. 
+## Help The Old Theater Thrive
 
 The Old Theater Corporation is a registered 501(c)(3) non-profit organization.  As such, all cash donations and in-kind donations are tax deductible.
 

@@ -58,32 +58,6 @@ export default {
       intro, 
       partners
     };
-  },
-
-  // async asyncData({ $content, params }) {
-  //   const partners = await Promise.all(
-  //     [
-  //       $content("community", params.slug).fetch(),
-  //     ]
-  //   );
-  //     console.log("---- PARTNERA", partners);
-
-  //   return {
-
-  //     partners
-  //   };
-  // },
-
-  // ---
-  // async fetch() {
-  //   this.members = await fetch(
-  //     "https://old-theater.netlify.app/data/members2.json"
-  //   ).then((res) => res.json());
-  // },
+  }
 };
 </script>
-
-
-
-<style >
-</style>
