@@ -219,8 +219,35 @@ export default {
         "/support/membership": [
           {
             img: "membership.webp",
-            height: "0.7",
+            height: "0.5",
             opacity: "0.75",
+          },
+        ],
+        "/support/sponsor": [
+          {
+            img: "support/back-to-the-future.webp",
+            height: "0.66",
+            opacity: "0.75",
+          },
+          {
+            img: "support/goldfinger.webp",
+            height: "0.75",
+            opacity: "0.6",
+          },
+          {
+            img: "support/nunsense.webp",
+            height: "0.65",
+            opacity: "0.6",
+          },
+          {
+            img: "support/master-and-commander.webp",
+            height: "0.65",
+            opacity: "0.6",
+          },
+          {
+            img: "support/zookeepers-wife.webp",
+            height: "0.65",
+            opacity: "0.6",
           },
         ],
         "/support/donate": [

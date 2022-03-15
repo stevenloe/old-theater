@@ -10,7 +10,7 @@
     <div class="p-12 wave-content" :style="bgColor">
       <div class="flex justify-center mt-12 mb-8">
         
-        <Logo class="w-full sm:w-10/12" />
+        <Logo class="w-full max-w-xl sm:w-10/12" />
         
       </div>
 
