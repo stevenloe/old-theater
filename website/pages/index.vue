@@ -11,7 +11,7 @@
     <Sponsorship :item="sponsorship" :homeSponsorData="homeSponsorData"/>
     <Amazon :content="amazonSmile"/>
     <WhoWeAre :leftContent="whoWeAreLeftColumn" :rightContent="whoWeAreRightColumn"/>
-    <BoardOfDirectors :leftContent="boardOfDirectorsLeft" :rightContent="boardOfDirectorsRight" />
+    <BoardOfDirectors :content="boardData" />
 
     <div>
       <client-only>
@@ -55,15 +55,14 @@ export default {
   },
 
   async asyncData({ $content, params }) {
-    const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardOfDirectorsLeft, boardOfDirectorsRight, sponsorship, homeSponsorData, membership, amazonSmile] = await Promise.all(
+    const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardData, sponsorship, homeSponsorData, membership, amazonSmile] = await Promise.all(
       [
         $content("shows", params.slug).fetch(),
         $content("news", params.slug).limit(3).fetch(),
         $content("alerts", params.slug).fetch(),
         $content("home/who-we-are-left-column", params.slug).fetch(),
         $content("home/who-we-are-right-column", params.slug).fetch(),
-        $content("home/home-board-of-directors-left-column", params.slug).fetch(),
-        $content("home/home-board-of-directors-right-column", params.slug).fetch(),
+        $content("data/board/board-of-directors", params.slug).fetch(),
         $content("home/home-sponsorship", params.slug).fetch(),
         $content("data/home/sponsor-logos", params.slug).fetch(),
         $content("home/home-membership", params.slug).fetch(),
@@ -71,6 +70,8 @@ export default {
       ]
     );
 
+
+console.log("BOARD DARA is" , boardData)
     const sortedNews = sortByDate(news).slice(0, 5);
 
     const { futureShows, pastShows } = sortShows(shows);
@@ -82,8 +83,7 @@ export default {
       alerts,
       whoWeAreLeftColumn,
       whoWeAreRightColumn,
-      boardOfDirectorsLeft,
-      boardOfDirectorsRight,
+      boardData,
       sponsorship,
       homeSponsorData,
       membership,

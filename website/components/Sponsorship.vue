@@ -24,7 +24,7 @@
             <img v-else class="bg-white" :src="logo.img" :alt="logo.alt" />
           </div>
         </div>
-        <p class="mt-8 text-center text-white">Click a logo above to be taken to that sponsor's website.</p>
+        <p class="mt-8 text-center text-white">Click a logo above to be taken to the sponsor's website.</p>
       </div>
 
       <!-- details card -->
