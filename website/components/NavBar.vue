@@ -219,7 +219,7 @@ export default {
         "/support/membership": [
           {
             img: "membership.webp",
-            height: "0.5",
+            height: "0.7",
             opacity: "0.75",
           },
         ],
