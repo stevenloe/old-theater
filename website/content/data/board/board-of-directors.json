@@ -5,17 +5,17 @@
 		[{
 				"role": "President",
 				"name": "Izzy Keppner",
-				"img": ""
+				"img": "/images/board/izzy-keppner.webp"
 			},
 			{
 				"role": "Treasurer",
 				"name": "Shelby Loe",
-				"img": ""
+				"img": "/images/board/shelby-loe.webp"
 			},
 			{
 				"role": "Secretary",
 				"name": "Linda Larson",
-				"img": ""
+				"img": "/images/board/linda-larson.webp"
 			}
 		],
 		"info": {
@@ -28,7 +28,7 @@
 			"team": [{
 				"role": "Facilities",
 				"name": "Brian Hough",
-				"img": ""
+				"img": "/images/board/brian-hough.webp"
 			},
 			{
 				"role": "Sunday Classic Cinema",
@@ -38,27 +38,27 @@
 			{
 				"role": "Graphics",
 				"name": "Pat Dixon",
-				"img": ""
+				"img": "/images/board/pat-dixon.webp"
 			},
 			{
 				"role": "House & Tickets",
 				"name": "AnnMarie Wolf",
-				"img": ""
+				"img": "/images/board/annmarie-wolf.webp"
 			},
 			{
 				"role": "Membership & Volunteers",
 				"name": "Andrea Bayard",
-				"img": ""
+				"img": "/images/board/amdrea-bayard.webp"
 			},
 			{
 				"role": "Publicity",
 				"name": "Mary Taylor",
-				"img": ""
+				"img": "/images/board/mary-taylor.webp"
 			},
 			{
 				"role": "Sponsorship",
 				"name": "Patrick O’Donnell",
-				"img": ""
+				"img": "/images/board/patrick-odonnell.webp"
 			},
 			{
 				"role": "Technical Services",
@@ -73,7 +73,7 @@
 			{
 				"role": "Website",
 				"name": "Steven Loe",
-				"img": ""
+				"img": "/images/board/steven-loe.webp"
 			}
 		],
 		"info": {

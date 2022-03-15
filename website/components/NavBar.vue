@@ -13,14 +13,9 @@
               @click.native="onNavItemClick"
               class="bg-yellow-200 sm:bg-orange-400 md:bg-red-300 lg:bg-purple-300 xl:bg-blue-300 hover:bg-gray-200"
             />
-            <!-- <Logo @click.native="onNavItemClick"/> -->
           </nuxt-link>
-
-          <div class="p-2">
-            <p></p>
-            routePath is: {{ routePath }}
-          </div>
-          <div class="hidden md:flex md:w-5/12" aria-label="Search menu button">
+          
+          <div class="hidden pl-6 md:flex md:w-5/12" aria-label="Search menu button">
             <SearchDesktop
               class="w-0 mb-6 place-self-end"
               :isMobile="isMobile"

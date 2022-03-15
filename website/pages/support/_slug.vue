@@ -16,7 +16,7 @@
 
    
     <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
-    <UiHeadline id="level-1-headline" level="1">{{content.title}}</UiHeadline>
+    <UiHeadline id="level-1-headline" level="2">{{content.title}}</UiHeadline>
       <article>
         <base-picture :v-if="content.img" :caption="content.caption" :img="content.img" :alt="content.imgAlt"></base-picture>
         <nuxt-content

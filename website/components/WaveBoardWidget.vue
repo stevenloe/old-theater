@@ -11,7 +11,7 @@
       class="grid grid-cols-1 gap-8 pt-12 pb-48 pl-8 pr-8 md:pl-12 md:pr-12 wave-content"
       :style="bgColor"
     >
-      <div class="w-full max-w-6xl mx-auto lg:text-xl xl:text-2xl ">
+      <div class="w-full max-w-6xl mx-auto lg:text-xl xl:text-2xl">
         <!-- Top info section and body text -->
         <UiHeadline
           v-if="info.title"
@@ -24,23 +24,22 @@
         }}</UiHeadline>
 
         <div class="grid gap-8 sm:grid-cols-2 green-300">
-          <div
-            v-for="member of team"
-            :key="member.name"
-            class="flex w-full"
-          >
-            <div class="flex justify-center w-32 ">
-              <img
-                class="w-24 h-24 overflow-hidden rounded-full "
-                src="https://source.unsplash.com/random/190x190?cutecat"
-                alt=""
+          <div v-for="member of team" :key="member.name" class="flex w-full">
+            <div
+              class="flex justify-center w-24 h-24 overflow-hidden rounded-full placeholder"
+            >
+              <img v-if="member.img"
+                class="w-24 h-24 overflow-hidden rounded-full alt"
+                :src="member.img"
+                :alt="member.name"
               />
             </div>
-            <div class="flex flex-wrap items-center flex-grow-0 w-2/3 justify-left">
+            <div
+              class="flex flex-wrap items-center flex-grow-0 w-2/3 pl-2 justify-left"
+            >
               <div class="pl-2">
-                
-              <span class="mr-2 font-bold ">{{ member.role }}:</span>
-              <span>{{ member.name }}</span>
+                <span class="mr-2 font-bold">{{ member.role }}:</span>
+                <span>{{ member.name }}</span>
               </div>
             </div>
           </div>
@@ -66,9 +65,11 @@ export default {
       required: true,
     },
   },
-    created: function() {
-      this.team.sort((a, b) => a.role.toLowerCase().localeCompare(b.role.toLowerCase()))
-    },
+  created: function () {
+    this.team.sort((a, b) =>
+      a.role.toLowerCase().localeCompare(b.role.toLowerCase())
+    );
+  },
   computed: {
     bgColor() {
       return `background-color: #${this.info.bgcolor}`;
@@ -81,3 +82,18 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.placeholder {
+  background-image: url(~/assets/img/person-placeholder.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #ccc;
+}
+
+.alt {
+  color: #d9d9d9;
+  font: 10px "sans-serif";
+}
+</style>
