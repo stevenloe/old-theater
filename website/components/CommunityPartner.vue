@@ -115,7 +115,7 @@ export default {
   data() {
     return {
       pms: {
-        img: "/images/community/pms_supplied_collage.jpg",
+        img: "/images/community/pms_supplied_collage.webp",
         alt: "Pamlico Musical Society",
         caption: "",
       },

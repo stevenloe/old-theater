@@ -2,7 +2,7 @@
 title: Pamlico Musical Society
 order: 1
 subhead:  Remarkable Musical Experiences for our Amazing Community
-img: /images/community/pms_supplied_collage.jpg
+img: /images/community/pms_supplied_collage.webp
 alt: Pamlico Musical Society
 logo: /images/community/pms-new-logo-crop-omg.svg
 logoheight: h-16
