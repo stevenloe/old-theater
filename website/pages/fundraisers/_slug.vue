@@ -47,7 +47,7 @@ import { formatShowDate } from "@/utils/dates.js";
 export default {
   async asyncData({ $content, params }) {
     const post = await $content("fundraisers", params.slug).fetch();
-    console.log("--- POST IS", JSON.stringify(post, null, 1));
+    // console.log("--- POST IS", JSON.stringify(post, null, 1));
 
     return { post, params };
   },

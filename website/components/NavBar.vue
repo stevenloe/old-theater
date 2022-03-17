@@ -14,6 +14,9 @@
               class="bg-yellow-200 sm:bg-orange-400 md:bg-red-300 lg:bg-purple-300 xl:bg-blue-300 hover:bg-gray-200"
             />
           </nuxt-link>
+
+Path is:
+          {{$nuxt.$route.path}}
           
           <div class="hidden pl-6 md:flex md:w-5/12" aria-label="Search menu button">
             <SearchDesktop
@@ -205,8 +208,8 @@ export default {
         "/get-involved": [
           {
             img: "get-involved.webp",
-            height: "0.8",
-            opacity: "0.9",
+            height: "0.7",
+            opacity: "0.8",
           },
         ],
         "/calendar": [

@@ -70,8 +70,6 @@ export default {
       ]
     );
 
-
-console.log("BOARD DARA is" , boardData)
     const sortedNews = sortByDate(news).slice(0, 5);
 
     const { futureShows, pastShows } = sortShows(shows);

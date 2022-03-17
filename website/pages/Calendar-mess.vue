@@ -21,7 +21,7 @@ export default {
       // .sortBy("altDate", "asc")
       .fetch();
 
-    console.log("#####>>>>LIST IS.....", JSON.stringify(data2, null, 2));
+    // console.log("#####>>>>LIST IS.....", JSON.stringify(data2, null, 2));
 
   
 

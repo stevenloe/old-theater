@@ -1,0 +1,43 @@
+<template>
+  <div>
+
+
+    <!-- <WaveText :info="getInvolved" /> -->
+    <client-only>
+      <MemberCarousel />
+    </client-only>
+  </div>
+</template>
+
+<script>
+import MemberCarousel from "@/components/MemberCarousel";
+import WaveText from "@/components/WaveText";
+import UiHeadline from "@/components/ui/UiHeadline";
+import ButtonLink from "@/components/ui/ButtonLink";
+
+export default {
+  async asyncData({ $content, params }) {
+    const [getInvolvedText, playYourPart, memberList] = await Promise.all([
+      $content("supports/get-involved-top", params.slug).fetch(),
+      // $content("supports/get-involved-part", params.slug).fetch(),
+      // $content("data/members/members2").fetch(),
+    ]);
+
+    return {
+      getInvolvedText,
+      playYourPart,
+      memberList,
+      WaveText
+    };
+  },
+  metaInfo: {
+    title: "Get  Involved",
+  },
+  components: {
+    MemberCarousel,
+    UiHeadline,
+    ButtonLink,
+  },
+  layout: "NewLayout",
+};
+</script>

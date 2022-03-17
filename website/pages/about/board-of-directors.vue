@@ -14,7 +14,7 @@ export default {
   async asyncData({ $content, params }) {
     const content = await $content("data/board/board-of-directors", params.slug).fetch();
 
-     console.log("BOARD CONTENT", JSON.stringify(content.board.executives.info));
+    //  console.log("BOARD CONTENT", JSON.stringify(content.board.executives.info));
     return { content };
   },
   layout: "NewLayout",
