@@ -8,6 +8,7 @@ imgAlt: Interior photo of the old theater showing the theater's seats
 caption: Seating at The Old Theater
 eventDate: 'March, 21 2020 19:30:00 EST'
 eventTime: '2021-02-05T21:09:38.963Z'
+bgcolor: c8ecf7
 ---
 
 

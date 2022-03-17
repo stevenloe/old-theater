@@ -281,12 +281,20 @@ export default {
             opacity: "0.6",
           },
         ],
-        "/get-involved": [
+      
+     "/about/rent-the-theater": [
           {
-            img: "get-involved.webp",
-            height: "0.8",
-            opacity: "0.9",
-          },
+            img: " ",
+            height: "0.3",
+            opacity: "1",
+            bgcolor:  'c8ecf7'        },
+        ],
+     "/about/history": [
+          {
+            img: " ",
+            height: "0.3",
+            opacity: "1",
+            bgcolor:  'F3F6AC'        },
         ],
         "/about/board-of-directors": [
           {

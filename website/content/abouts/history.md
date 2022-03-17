@@ -1,6 +1,8 @@
 ---
 title: Our History
 folder: /about/ 
+bgcolor: f3f6ac
+
 
 ---
 
