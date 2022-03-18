@@ -1,39 +1,18 @@
 <template>
   <div>
-    <article class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
-      <UiHeadline level="1">News</UiHeadline>
+    <!-- <article class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl"> -->
+      
+    <WaveHeadline :info="headlineInfo" />
+      <WaveNewsText v-for="(info, index) in posts" :key="index" :info="info" />
 
-      <article
-        class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg content-border"
-        v-for="post of posts"
-        :key="post.title"
-      >
-        <div
-          class="mb-1 text-sm font-semibold text-gray-700 uppercase md:text-base lg:text-lg"
-        >
-          {{ showDate(post.date) }}
-        </div>
 
-        <h2
-          class="mb-4 text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl"
-        >
-        <nuxt-link :to="`/news/${post.slug}?page=index`">
-            {{ post.title }}</nuxt-link
-          >
-        </h2>
-
-        <nuxt-content
-          class="mx-auto prose-sm prose sm:prose lg:prose-lg xl:prose-2xl"
-          :document="post"
-        />
-      </article>
 
       <section class="flex justify-end" v-if="nextPage">
         <nuxt-link class="font-medium" v-if="nextPage" to="/news/page/2"
           >Older Posts <span aria-hidden="true">→</span></nuxt-link
         >
       </section>
-    </article>
+    <!-- </article> -->
   </div>
 </template>
 
@@ -42,6 +21,8 @@
 import UiHeadline from "@/components/ui/UiHeadline";
 import {formatShowDate} from '@/utils/dates.js'
 import {sortByDate} from '@/utils/sort.js'
+import WaveNewsText from "../../components/WaveNewsText.vue";
+import WaveHeadline from "../../components/WaveHeadline.vue";
 
 export default {
   async asyncData({ $content }) {
@@ -52,8 +33,33 @@ export default {
 
       posts = sortByDate(posts)
 
+      console.log("BG COLOR ___" , posts[0].bgcolor)
+
+      let headlineInfo =  
+      {
+        title: "News",
+        bgcolor: posts[0].bgcolor
+      }
+        
+  
+
     const nextPage = posts.length === 10;
-    return { nextPage, posts };
+    return { nextPage, posts, headlineInfo };
+  },
+  data() {
+    return {
+      bgcolor: 'ffffff'
+    }
+  },
+  computed: {
+    headlineInfo() {
+      let foo =  {
+        bgcolor: this.info[0].bgcolor,
+        title: "News"
+      }
+      console.log("FOO", foo)
+      return foo
+    }
   },
   methods: {
     showDate(date) {
@@ -62,8 +68,11 @@ export default {
   },
   layout: "NewLayout",
   components: {
-    UiHeadline
-  }
+    UiHeadline,
+    WaveNewsText,
+    WaveHeadline
+},
+
 };
 </script>
 

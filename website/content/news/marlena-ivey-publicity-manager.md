@@ -8,6 +8,7 @@ date: '2021-05-15T21:07:38.963Z'
 ticketURL: https://example.com
 subhead: "We are pleased to announce that Marlena Ivey has joined the Old Theater board as Publicity Manager"
 folder: /news/
+bgcolor: ccdd99
 ---
 
 We are pleased to announce that Marlena Ivey has joined the Old Theater board as Publicity Manager.

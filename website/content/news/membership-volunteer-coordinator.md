@@ -3,6 +3,7 @@ title: The Old Theater Welcomes Andrea Bayard as Membership and Volunteer Coordi
 date: '2019-03-15T21:07:38.963Z'
 subhead: "Andrea Bayard has joined The Old Theter as Membership and Volunteer Coordinator"
 folder: /news/
+bgcolor: ddccaa
 ---
 
 I am Andrea Bayard and I am the Membership and Volunteer Coordinator for the Old Theater.  

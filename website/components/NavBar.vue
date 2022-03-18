@@ -14,9 +14,6 @@
               class="bg-yellow-200 sm:bg-orange-400 md:bg-red-300 lg:bg-purple-300 xl:bg-blue-300 hover:bg-gray-200"
             />
           </nuxt-link>
-
-Path is:
-          {{$nuxt.$route.path}}
           
           <div class="hidden pl-6 md:flex md:w-5/12" aria-label="Search menu button">
             <SearchDesktop
@@ -320,12 +317,12 @@ export default {
         "/news": [
           {
             img: "/news.webp",
-            height: "0.8",
+            height: "0.6",
             opacity: "0.6",
           },
           {
             img: "news2.webp",
-            height: "0.8",
+            height: "0.7",
             opacity: "0.6",
           },
         ],

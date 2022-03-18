@@ -11,10 +11,10 @@
         ? ['text-2xl sm:text-3xl md:text-4xl']
         : []),
       ...((props.size || props.level) == 3
-        ? ['text-xl sm:text-2xl md:text-3xl']
+        ? ['text-xl sm:text-xl md:text-2xl']
         : []),
       ...((props.size || props.level) >= 4
-        ? ['text-lg sm:text-xl md:text-2xl']
+        ? ['text-lg  md:text-xl']
         : []),
       data.class,
       data.staticClass,

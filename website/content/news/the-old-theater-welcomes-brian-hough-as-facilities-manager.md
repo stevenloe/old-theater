@@ -6,6 +6,7 @@ date: 2021-03-01T19:42:43.956Z
 subhead: Brian brings a wealth of experience in carpentry, and construction to
   The Old Theater
 imgAlt: ""
+bgcolor: 99aacc
 ---
 With over 40 years of experience in creative fields, Brian has been part of, or started, numerous organizations and businesses related to sculpture, ceramics, carpentry, and ship construction. His hands-on experience with all these fields will be a great asset to The Old Theater, along with his creative, out of the box thinking.  
 

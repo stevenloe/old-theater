@@ -7,6 +7,7 @@ imgAlt: some alt text
 date: '2021-06-10T21:09:38.963Z'
 ticketURL: https://example.com
 folder: /news/
+bgcolor: ccccdd
 ---
 
 The Old Theater’s Summer Outdoor Cinema, in Collaboration with the Silos in Oriental, presents:

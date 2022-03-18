@@ -8,6 +8,7 @@ date: '2020-09-15T21:09:38.963Z'
 ticketURL: https://example.com
 subhead: "We are pleased to annonce that Shelby Loe has joined the Old Theater board as Treasurer."
 folder: /news/
+bgcolor: 8833ff
 ---
 
 We are pleased to annonce that Shelby Loe has joined the Old Theater board as Treasurer.
