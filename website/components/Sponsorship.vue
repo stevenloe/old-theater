@@ -17,11 +17,11 @@
           <div v-for="logo of homeSponsorData.logos" :key="logo.alt" class="bg-white">
             <a v-if="logo.url" :href="logo.url"
               ><img
-                class="bg-white hover:shadow-lg"
+                class="hover:shadow-lg"
                 :src="logo.img"
                 :alt="logo.alt"
             /></a>
-            <img v-else class="bg-white" :src="logo.img" :alt="logo.alt" />
+            <img v-else  :src="logo.img" :alt="logo.alt" />
           </div>
         </div>
         <p class="mt-8 text-center text-white">Click a logo above to be taken to the sponsor's website.</p>

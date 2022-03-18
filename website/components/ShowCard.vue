@@ -38,18 +38,22 @@
             <div
               class="mb-4 md:text-lg lg:text-xl xl:2xl"
             >
-              <div class="">
-                <span
-                  v-if="show.presentedby == 'PMS'"
-                  class="flex items-baseline "
+              <div class="flex ">
+                <span class="flex items-center"
                 >
                   <span class="pr-3 font-bold"> Presented by: </span>
-                  <img
-                    class="h-10"
-                    src="/images/logos/pms-logo-300-flat.jpg"
-                    alt="Pamlico Musical Society Logo"
-                /></span>
-                <span class="font-bold" v-else>Presented by: The Old Theater</span>
+          
+                <a v-if="show.presentedby == 'PMS'" href="https://www.pamlicomusic.org">
+                <img class="object-contain h-12 p-1 mb-2 ml-2 bg-white" 
+                src="/images/community/pms-new-logo-crop-omg.svg"
+                alt="Pamlico Musical Society logo"
+              />
+              </a>
+                <img  v-else class="object-contain h-10 mb-2 -ml-2 md:h-12" 
+                src="/images/community/old-theater-logo.svg"
+                alt="Pamlico Musical Society logo"
+              />
+                </span>
               </div>
               <div>
                 <span>{{ show.dateText}}</span>

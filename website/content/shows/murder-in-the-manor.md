@@ -33,3 +33,26 @@ Box Office opens on Friday & Saturday at 6:30pm / Doors open at 7:00pm / Show be
 Box Office opens on Sunday at 2:00pm / Doors open at 2:30pm / Matinee performance at 3:00pm. 
 
 Proceeds go to support the Old Theater Corp. and the North Carolina History Theater, both registered 501(c)(3) non-profit organizations. 
+
+
+
+<figure>
+  <img
+    src="/images/shows/murder-in-the-manor-cast1.webp"
+    alt="Murder in the Manor at The Old Theater"
+    loading="lazy"
+  />
+  <figcaption class="italic">
+     The cast of Murder in the Manor
+  </figcaption>
+</figure>
+
+<figure>
+  <img
+    src="/images/shows/murder-in-the-manor-cast2.webp"
+    alt="Murder in the Manor at The Old Theater"
+    loading="lazy"
+  />
+  <figcaption class="italic">
+  </figcaption>
+</figure>

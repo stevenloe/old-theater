@@ -41,42 +41,14 @@
         </div>
       </div>
 
-      
-
-          
       <!-- image grid -->
       <div class="relative">
         <div class="grid grid-cols-3 grid-rows-3 gap-6">
-          <div class="bg-red-100 rounded-full">
-            <img class="rounded-full" src="https://source.unsplash.com/random/190x190?cutecat" alt="" />
-          </div>
-          <div class="rounded-full">
-            <img class="rounded-full" src="https://source.unsplash.com/random/201x201?blackcat" alt="wer" />
-          </div>
-          <div class="rounded-full ">
-            <img class="rounded-full" src="https://source.unsplash.com/random/202x202?meow" alt="werwer" />
-          </div>
-          <div class="rounded-full">
-            <img class="rounded-full" src="https://source.unsplash.com/random/203x203?cat" alt="wer" />
-          </div>
-          <div class="bg-red-208">
-            <img class="rounded-full" src="https://source.unsplash.com/random/204x204?kitty" alt="etrwe" />
-          </div>
-          <div class="bg-red-209">
-            <img class="rounded-full" src="https://source.unsplash.com/random/205x205?kitten" alt="fdsfd" />
-          </div>
-          <div class="bg-red-290">
-            <img class="rounded-full" src="https://source.unsplash.com/random/206x206?sleepycat" alt="sdff" />
-          </div>
-          <div class="rounded-full">
-            <img class="rounded-full" src="https://source.unsplash.com/random/207x207?playingcat" alt="sfds" />
-          </div>
-          <div class="bg-red-2099">
-            <img class="rounded-full" src="https://source.unsplash.com/random/208x208?feline" alt="doo" />
+          <div v-for="photo in images.photos" :key="photo.img" class="rounded-full">
+            <img class="rounded-full" :src="photo.img" :alt="photo.alt" />
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>
@@ -94,6 +66,10 @@ export default {
       type: Object,
       required: true,
     },
+    images: {
+      type: Array,
+      required: true,
+    },
   },
   methods: {
     showDate(date) {
@@ -102,6 +78,17 @@ export default {
     showTime(date) {
       return formatShowDate(date, "time");
     },
+  },
+    created: function () {
+    // shuffle sponsor logos
+    let data = this.images.photos;
+
+    for (let i = data.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * i);
+      let k = data[i];
+      data[i] = data[j];
+      data[j] = k;
+    }
   },
   computed: {
     // formattedPrice() {

@@ -1,0 +1,41 @@
+{
+	"photos": [
+		{
+			"img": "/images/home-members/stan-ellen-aeschleman.webp",
+			"alt": "Members of The Old Theater"
+		},
+		{
+			"img": "/images/home-members/russ-stevenson.webp",
+			"alt": "Members of The Old Theater"
+		},
+		{
+			"img": "/images/home-members/mary-scott.webp",
+			"alt": "Members of The Old Theater"
+		},
+		{
+			"img": "/images/home-members/jay-lauri-gates.webp",
+			"alt": "Members of The Old Theater"
+		},
+		{
+			"img": "/images/home-members/don-henderson-marlene-bob-miller.webp",
+			"alt": "Members of The Old Theater"
+		},
+		{
+			"img": "/images/home-members/carol-small.webp",
+			"alt": "Members of The Old Theater"
+		},
+		{
+			"img": "/images/home-members/70year-anniversary-2016.webp",
+			"alt": "Members of The Old Theater"
+		},
+		{
+			"img": "/images/home-members/ken-belangia.webp",
+			"alt": "Members of The Old Theater"
+		},
+		{
+			"img": "/images/home-members/fay-bond.webp",
+			"alt": "Members of The Old Theater"
+		}
+	],
+	"bgcolor": "9492aa"
+}

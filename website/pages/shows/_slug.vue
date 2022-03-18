@@ -48,13 +48,9 @@
           <client-only>
             <YoutubeWidget v-if="show.youtubeVideo" :videoUrl="show.youtubeVideo"/>
           </client-only>
+
+          <ButtonLink class="mb-24" v-if="show.ticketURL" :url="show.ticketURL" text="BUY TICKETS" />
             
-          <a
-            v-if="show.ticketURL"
-            :href="show.ticketURL"
-            class="block w-full px-4 py-2 mb-3 mr-2 text-lg font-bold tracking-wide text-center text-white uppercase bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700"
-            >Buy tickets</a
-          >
         </div>
       </div>
     </article>
@@ -70,6 +66,7 @@ import ShowPill from "@/components/ShowPill";
 import {isFutureDate} from '@/utils/dates.js'
 import {formatShowDate} from '@/utils/dates.js'
 import {formatPrice} from '@/utils/format.js'
+import ButtonLink from "../../components/ui/ButtonLink.vue"
 
 export default {
   async asyncData({ $content, params }) {
@@ -99,8 +96,9 @@ export default {
     NavBar,
     UiHeadline,
     YoutubeWidget,
-    ShowPill
-  }
+    ShowPill,
+    ButtonLink
+}
 };
 </script>
 

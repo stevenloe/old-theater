@@ -7,7 +7,7 @@
       <!-- <WaveWrapperBasic /> -->
    
     <NewsWidget :news="news" />
-    <Membership :item="membership"/>
+    <Membership :item="membership" :images="homeMemberImages"/>
     <Sponsorship :item="sponsorship" :homeSponsorData="homeSponsorData"/>
     <Amazon :content="amazonSmile"/>
     <WhoWeAre :leftContent="whoWeAreLeftColumn" :rightContent="whoWeAreRightColumn"/>
@@ -55,7 +55,7 @@ export default {
   },
 
   async asyncData({ $content, params }) {
-    const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardData, sponsorship, homeSponsorData, membership, amazonSmile] = await Promise.all(
+    const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardData, sponsorship, homeSponsorData, membership, amazonSmile, homeMemberImages] = await Promise.all(
       [
         $content("shows", params.slug).fetch(),
         $content("news", params.slug).limit(3).fetch(),
@@ -67,6 +67,7 @@ export default {
         $content("data/home/sponsor-logos", params.slug).fetch(),
         $content("home/home-membership", params.slug).fetch(),
         $content("home/home-amazon-smile", params.slug).fetch(),
+        $content("data/members/home-member-photos", params.slug).fetch(),
       ]
     );
 
@@ -86,6 +87,7 @@ export default {
       homeSponsorData,
       membership,
       amazonSmile,
+      homeMemberImages
     };
   },
   layout: "NewLayout",
