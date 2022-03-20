@@ -1,9 +1,9 @@
 ---
 title: The Old Theater Welcomes Steven Loe as Web Developer/Designer
-date: '2020-09-15T21:07:38.963Z'
+date: 2020-09-15T21:07:38.963Z
 subhead: "Steven Loe has joined the Old Theater board as web developer, volunteering to create..."
 folder: /news/
-bgcolor: de98e3
+bgcolor: ffffee
 ---
 
 Steven Loe has joined the Old Theater board as web developer, volunteering to create and maintain a modern website for the Old Theater that will be both mobile and computer friendly.

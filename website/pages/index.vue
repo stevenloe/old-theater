@@ -68,8 +68,13 @@ export default {
         $content("home/home-membership", params.slug).fetch(),
         $content("home/home-amazon-smile", params.slug).fetch(),
         $content("data/members/home-member-photos", params.slug).fetch(),
+      
       ]
     );
+
+    console.log("",)
+
+
 
     const sortedNews = sortByDate(news).slice(0, 5);
 

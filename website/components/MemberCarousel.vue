@@ -15,7 +15,7 @@
           <div
             class="flex py-2 mx-4 text-2xl font-bold leading-tight text-white sm:text-3xl md:text-4xl"
           >
-            Thanks to Our {{ currentYear }} Members!
+            Thanks to Our {{ membershipYear }} Members!
           </div>
 
           <div
@@ -57,10 +57,11 @@ export default {
   },
   async fetch() {
     const { data } = await axios.get(
-      `${this.$axios.defaults.baseURL}data/members2.json`
+      // `${this.$axios.defaults.baseURL}data/members2.json`
+      `${this.$axios.defaults.baseURL}data/members-2022.json`
     );
 
-    let list = data.map((item) => {
+    let list = data.members.map((item) => {
       if (item.spouseFirst) {
         return `${item.firstName} ${item.lastName} & ${item.spouseFirst} ${item.spouseLast}`;
       } else {
@@ -68,7 +69,10 @@ export default {
       }
     });
 
+    
+
     this.members = list;
+    this.membershipYear = data.membershipYear
     this.init();
     this.start();
   },
@@ -81,6 +85,7 @@ export default {
       targets: null,
       membersGrouped: [],
       members: [],
+      membershipYear: null
     };
   },
 

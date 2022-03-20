@@ -30,11 +30,14 @@
 			"alt": "The Oriental Marina & Inn"
 		},
 		{
+			"img": "images/home-sponsors/brantleys.webp",
+			"url": "https://brantleysnc.com/",
+			"alt": "Brantley's Village Restaurant"
+		},
+		{
 			"img": "images/home-sponsors/nautical-wheelers.webp",
 			"url": "https://nauticalwheelersnc.com/",
 			"alt": "Nautical Wheelers"
-		},
-	
-
+		}
 	]
 }

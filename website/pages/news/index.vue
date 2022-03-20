@@ -28,10 +28,9 @@ export default {
   async asyncData({ $content }) {
     let posts = await $content("news")
       .sortBy("date", "desc")
-      .limit(10)
       .fetch();
 
-      posts = sortByDate(posts)
+      // posts = sortByDate(posts)
 
       console.log("BG COLOR ___" , posts[0].bgcolor)
 

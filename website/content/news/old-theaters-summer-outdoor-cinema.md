@@ -4,7 +4,7 @@ description:
 shortDesc: 
 img: 
 imgAlt: some alt text
-date: '2021-06-10T21:09:38.963Z'
+date: 2021-06-10T21:09:38.963Z
 ticketURL: https://example.com
 folder: /news/
 bgcolor: ccccdd

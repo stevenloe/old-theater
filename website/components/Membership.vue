@@ -67,7 +67,7 @@ export default {
       required: true,
     },
     images: {
-      type: Array,
+      type: Object,
       required: true,
     },
   },

@@ -23,7 +23,7 @@
             <p class="">The Old Theater continues to follow the state and local guidance provided with regards to the COVID-19 pandemic.</p>
           </div>
           <div class="col-span-2 sm:col-span-1">
-              <ButtonLink url="/" color="transparent" text="LEARN MORE" /></div>
+              <ButtonLink url="/news/reopening-the-old-theater-for-the-2021-2022-season/" color="transparent" text="LEARN MORE" /></div>
         </div>
       </div>
 

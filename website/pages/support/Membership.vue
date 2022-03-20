@@ -3,7 +3,7 @@
     <WaveText :info="membershipDoc" />
     <WaveText :info="poweredBy" />
     <client-only>
-      <MemberList :memberData="memberList.members" :info="info"/>
+      <MemberList :memberData="memberList" :info="info"/>
     </client-only>
   </div>
 </template>
@@ -18,7 +18,8 @@ export default {
     const [membershipDoc, poweredBy, memberList] = await Promise.all([
       $content("membership/membership", params.slug).fetch(),
       $content("membership/powered-by", params.slug).fetch(),
-      $content("data/members/members2").fetch(),
+      // $content("data/members/members2").fetch(),
+      $content("data/members/members-2022").fetch(),
     ]);
 
     return {

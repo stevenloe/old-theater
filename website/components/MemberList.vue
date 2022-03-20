@@ -14,7 +14,7 @@
       <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
         <!-- Top info section and body text -->
         <UiHeadline class="mb-2" level="2">
-          Welcome {{ currentYear }} Members
+          Welcome {{ membershipYear }} Members
         </UiHeadline>
 
         <ul>
@@ -57,7 +57,7 @@ export default {
   data() {
     return {
       membersGrouped: null,
-      
+      membershipYear: null
     };
   },
   computed: {
@@ -104,7 +104,8 @@ export default {
     },
   },
   created: function () {
-    this.groupMemberData(this.memberData);
+    this.groupMemberData(this.memberData.members);
+    this.membershipYear = this.memberData.membershipYear
   },
   components: { UiHeadline },
 };
