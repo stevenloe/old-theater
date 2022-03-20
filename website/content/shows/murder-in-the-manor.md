@@ -2,7 +2,7 @@
 
 title: Murder in the Manor by NC History Theater with Bill Hand 
 date: "2022-03-26T23:30:00.2Z"
-dateText: Friday March 25th, & Saturday, March 26th at 7:30PM, and Sunday, March 27th, Matinee at 3:00PM
+dateText: Friday March 25th, & Saturday, March 26th at 7:30 pm, and Sunday, March 27th, Matinee at 3:00 pm
 showTime:
 price: $18 Members, Military & Students with ID $15
 presentedby: The Old Theater
@@ -14,10 +14,9 @@ imgAlt: The Old Theater Presents the North Carolina History Theater in "Murder i
 ticketURL: "https://www.showclix.com/event/murder-in-the-manor"
 youtubeVideo: 
 folder: /shows/
-bgcolor: A7A39A
+bgcolor: feda65
 
 ---
-
 
 The Old Theater Presents the North Carolina History Theater in "Murder in the Manor" A Comic Murder Mystery by Bill Hand
  
@@ -29,8 +28,8 @@ General Admission Tickets:  $18.00 or $15.00 for Old Theater Corp. members, mili
 
 Tickets On Sale Now at Nautical Wheelers in Oriental & New Bern, and The Old Theater Box Office on the day of performance. 
 
-Box Office opens on Friday & Saturday at 6:30pm / Doors open at 7:00pm / Show begins at 7:30pm. 
-Box Office opens on Sunday at 2:00pm / Doors open at 2:30pm / Matinee performance at 3:00pm. 
+Box Office opens on Friday & Saturday at 6:30 pm / Doors open at 7:00 pm / Show begins at 7:30 pm. 
+Box Office opens on Sunday at 2:00 pm / Doors open at 2:30 pm / Matinee performance at 3:00 pm. 
 
 Proceeds go to support the Old Theater Corp. and the North Carolina History Theater, both registered 501(c)(3) non-profit organizations. 
 

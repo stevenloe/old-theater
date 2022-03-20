@@ -12,9 +12,9 @@ shortDesc: When hard-charging New York newspaper editor Walter Burns discovers t
 img: his-girl-friday.webp
 imgAlt: Sunday Classic Cinema His Girl Friday 
 ticketURL: 
-youtubeVideo:  IS-KvD2_Zo
+youtubeVideo: IS-KvD2_Zo
 folder: /shows/
-bgcolor: ccA39A
+bgcolor: ffA39A
 ticketURl: https://www.showclix.com/event/diego-figueiredo-and-ken-peplowski
 
 ---
