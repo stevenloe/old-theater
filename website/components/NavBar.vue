@@ -11,12 +11,8 @@
           <nuxt-link to="/" class="w-7/12">
             <Logo
               @click.native="onNavItemClick"
-              class="hover:bg-gray-200"
-            />
-            <!-- <Logo
-              @click.native="onNavItemClick"
               class="bg-yellow-200 sm:bg-orange-400 md:bg-red-300 lg:bg-purple-300 xl:bg-blue-300 hover:bg-gray-200"
-            /> -->
+            />
           </nuxt-link>
           
           <div class="hidden pl-6 md:flex md:w-5/12" aria-label="Search menu button">

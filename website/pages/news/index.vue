@@ -1,9 +1,8 @@
 <template>
   <div>
-    <!-- <article class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl"> -->
       
     <WaveHeadline :info="headlineInfo" />
-      <WaveNewsText v-for="(info, index) in posts" :key="index" :info="info" />
+      <WaveText v-for="(info, index) in posts" :key="index" :info="info" />
 
 
 
@@ -12,7 +11,7 @@
           >Older Posts <span aria-hidden="true">→</span></nuxt-link
         >
       </section>
-    <!-- </article> -->
+
   </div>
 </template>
 
@@ -20,17 +19,18 @@
 <script>
 import UiHeadline from "@/components/ui/UiHeadline";
 import {formatShowDate} from '@/utils/dates.js'
-import {sortByDate} from '@/utils/sort.js'
-import WaveNewsText from "../../components/WaveNewsText.vue";
+// import {sortByDate} from '@/utils/sort.js'
+import WaveText from "../../components/WaveText.vue";
 import WaveHeadline from "../../components/WaveHeadline.vue";
 
 export default {
   async asyncData({ $content }) {
     let posts = await $content("news")
       .sortBy("date", "desc")
+      .limit(10)
       .fetch();
 
-      // posts = sortByDate(posts)
+      //posts = sortByDate(posts)
 
       console.log("BG COLOR ___" , posts[0].bgcolor)
 
@@ -68,7 +68,7 @@ export default {
   layout: "NewLayout",
   components: {
     UiHeadline,
-    WaveNewsText,
+    WaveText,
     WaveHeadline
 },
 
