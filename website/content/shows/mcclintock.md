@@ -12,7 +12,7 @@ shortDesc: Aging rancher George Washington McLintock (John Wayne), a wealthy sel
 img: mcclintock.jpg
 imgAlt: Sunday Classic Cinema Road to Bali 
 ticketURL: 
-youtubeVideo: IS-KvD2_Zo
+youtubeVideo: PC0ilreEcqA
 folder: /shows/
 bgcolor: ffd246
 ticketURl: 

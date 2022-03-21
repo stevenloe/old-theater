@@ -19,7 +19,7 @@
           </div>
 
           <div
-            class="overflow-hidden border-2 "
+            class="overflow-hidden "
           >
             <div class="box-container">
               <div

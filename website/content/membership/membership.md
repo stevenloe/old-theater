@@ -31,7 +31,7 @@ it for 2022. If you are a new member for 2022, thank you and
 welcome! We look forward to seeing everyone throughout the coming
 year.
 
-To join now, download the <a href ="/pdf/2022_membership_form.pdf" >Old Theater Membership Form</a>
+To join now, download the <a href ="../pdf/2022_membership_form.pdf" >Old Theater Membership Form</a>
 
 For more information send an email to
 <a href="mailto:OldTheater@gmail.com">OldTheater@gmail.com</a>. 

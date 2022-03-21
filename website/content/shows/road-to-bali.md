@@ -12,7 +12,7 @@ shortDesc: In this musical, Harold (Bob Hope) and George (Bing Crosby) are two v
 img: road-to-bali.jpg
 imgAlt: Sunday Classic Cinema Road to Bali 
 ticketURL: 
-youtubeVideo: 
+youtubeVideo: Au3KizymRu0
 folder: /shows/
 bgcolor: f4d246
 ticketURl: 

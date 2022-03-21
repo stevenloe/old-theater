@@ -37,6 +37,17 @@ Proceeds go to support the Old Theater Corp. and the North Carolina History Thea
 
 <figure>
   <img
+    src="/images/shows/nc-history-logo.png"
+    alt="North Carolina History Theater Logo"
+    loading="lazy"
+  />
+  <figcaption class="italic">
+     The cast of Murder in the Manor
+  </figcaption>
+</figure>
+
+<figure>
+  <img
     src="/images/shows/murder-in-the-manor-cast1.webp"
     alt="Murder in the Manor at The Old Theater"
     loading="lazy"

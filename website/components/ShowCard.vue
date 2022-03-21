@@ -14,7 +14,13 @@
     <!-- content area -->
       <!-- image card -->
       <div>
-        <nuxt-link :to="show.path">
+        <a v-if="show.presentedby == 'PMS'" href="https://www.pamlicomusic.org">
+          <show-picture
+            :img="`/images/shows/${show.img}`"
+            :alt="show.imgAlt"
+          ></show-picture>
+        </a>
+        <nuxt-link v-else :to="show.path">
           <show-picture
             :img="`/images/shows/${show.img}`"
             :alt="show.imgAlt"
@@ -115,7 +121,7 @@ export default {
   computed: {
     computeShowUrl() {
       // PMS shows should not click through to our _slug page. Instead, take the user to  PMS's Calendar page:
-      return this.show.presentedby == 'PMS' ? 'https://www.pamlicomusic.org/calendar1.html' : this.show.path
+      return this.show.presentedby == 'PMS' ? 'https://www.pamlicomusic.org/' : this.show.path
     },
     bgColor() {
       return `background-color: #${this.show.bgcolor}`;
