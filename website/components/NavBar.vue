@@ -9,16 +9,17 @@
       <div class="header-container">
         <div class="flex">
           <nuxt-link to="/" class="w-7/12">
-            <Logo
-              @click.native="onNavItemClick"
-            />
+            <Logo @click.native="onNavItemClick" />
             <!-- <Logo
               @click.native="onNavItemClick"
               class="bg-yellow-200 sm:bg-orange-400 md:bg-red-300 lg:bg-purple-300 xl:bg-blue-300 hover:bg-gray-200"
             /> -->
           </nuxt-link>
-          
-          <div class="hidden pl-6 md:flex md:w-5/12" aria-label="Search menu button">
+
+          <div
+            class="hidden pl-6 md:flex md:w-5/12"
+            aria-label="Search menu button"
+          >
             <SearchDesktop
               class="w-0 mb-6 place-self-end"
               :isMobile="isMobile"
@@ -205,8 +206,7 @@ export default {
             opacity: "0.4",
           },
         ],
-        "/get-involved": 
-        [
+        "/get-involved": [
           {
             img: "get-involved.webp",
             height: "0.7",
@@ -218,7 +218,8 @@ export default {
             img: " ",
             height: "0.3",
             opacity: "1",
-            bgcolor:  'c8ecf7'        },
+            bgcolor: "c8ecf7",
+          },
         ],
         "/support/membership": [
           {
@@ -281,14 +282,16 @@ export default {
             img: " ",
             height: "0.3",
             opacity: "1",
-            bgcolor:  'c8ecf7'        },
+            bgcolor: "c8ecf7",
+          },
         ],
         "/support/other": [
           {
             img: " ",
             height: "0.3",
             opacity: "1",
-            bgcolor:  'eeecf7'        },
+            bgcolor: "eeecf7",
+          },
         ],
         "/community-partners": [
           {
@@ -297,20 +300,22 @@ export default {
             opacity: "0.6",
           },
         ],
-      
-     "/about/rent-the-theater": [
+
+        "/about/rent-the-theater": [
           {
             img: " ",
             height: "0.3",
             opacity: "1",
-            bgcolor:  'c8ecf7'        },
+            bgcolor: "c8ecf7",
+          },
         ],
-     "/about/history": [
+        "/about/history": [
           {
             img: " ",
             height: "0.3",
             opacity: "1",
-            bgcolor:  'F3F6AC'        },
+            bgcolor: "F3F6AC",
+          },
         ],
         "/about/board-of-directors": [
           {
@@ -319,7 +324,7 @@ export default {
             opacity: "0.8",
           },
         ],
-        "/about/the-old-theater/": [
+        "/about/the-old-theater": [
           {
             img: "old-theater-drawing.webp",
             height: "0.8",
@@ -400,21 +405,29 @@ export default {
       this.isMobileMenuOpen = false;
     },
     setHeroImage() {
-     
       // on every route change, load the hero image for the new page
 
       // handle case where last char of url is a '/'
-      let path = this.$nuxt.$route.path.length > 1 && this.$nuxt.$route.path.slice(-1) === '/' ? this.$nuxt.$route.path.slice(0, -1) : this.$nuxt.$route.path
-      
+      let path =
+        this.$nuxt.$route.path.length > 1 &&
+        this.$nuxt.$route.path.slice(-1) === "/"
+          ? this.$nuxt.$route.path.slice(0, -1)
+          : this.$nuxt.$route.path;
+
+          if(path.includes('/news/')) {
+            path = '/news'
+          }
+      console.log("PATH IS", path, typeof(path));
       if (this.headerImages[path]) {
+        console.log("PATH FOUND");
         this.selectedHeaderImage =
           this.headerImages[path][
             Math.floor(Math.random() * this.headerImages[path].length)
           ];
       } else {
+        console.log("PATH NOT FOUND");
         this.selectedHeaderImage = this.headerImages["default"];
       }
-
     },
   },
 
@@ -435,8 +448,10 @@ export default {
       return `${full} `;
     },
     waveClass() {
-      let bgcolor = this.selectedHeaderImage.bgcolor ? `background-color: #${this.selectedHeaderImage.bgcolor};` : '';
-      return `background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 1151 234' fill='%23eee8aa'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  opacity='${this.selectedHeaderImage.opacity}' fill-rule='evenodd' clip-rule='evenodd' d='M0.591553 0.00100708V233.859C111.126 203.295 221.095 188.013 330.5 188.013C522.428 188.013 647.271 226.586 813.184 226.586C923.792 226.585 1036.08 213.728 1150.04 188.013V4.57764e-05L0.591553 0.00100708Z' fill='white'/%3E%3C/svg%3E"); background-repeat: no-repeat; ${bgcolor}` ;
+      let bgcolor = this.selectedHeaderImage.bgcolor
+        ? `background-color: #${this.selectedHeaderImage.bgcolor};`
+        : "";
+      return `background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 1151 234' fill='%23eee8aa'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  opacity='${this.selectedHeaderImage.opacity}' fill-rule='evenodd' clip-rule='evenodd' d='M0.591553 0.00100708V233.859C111.126 203.295 221.095 188.013 330.5 188.013C522.428 188.013 647.271 226.586 813.184 226.586C923.792 226.585 1036.08 213.728 1150.04 188.013V4.57764e-05L0.591553 0.00100708Z' fill='white'/%3E%3C/svg%3E"); background-repeat: no-repeat; ${bgcolor}`;
     },
     fooClass() {
       return "bar";

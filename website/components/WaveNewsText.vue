@@ -13,12 +13,18 @@
     >
       <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
         <!-- Top info section and body text -->
-        <UiHeadline v-if="info.title" class="mb-3" level="3">{{
+        <div
+          class="mb-1 text-sm font-semibold text-gray-700 uppercase md:text-base lg:text-lg"
+        >
+          {{ showDate(info.date) }}
+        </div>
+        <UiHeadline v-if="info.title" class="mb-2" level="2">{{
           info.title
         }}</UiHeadline>
         <UiHeadline v-if="info.subhead" class="mb-4" level="4">{{
           info.subhead
         }}</UiHeadline>
+
 
         <nuxt-content
           class="mx-auto mb-8 prose prose-lg xl:prose-2xl"
@@ -35,6 +41,7 @@
 import BasePicture from "./BasePicture.vue";
 import UiHeadline from "./ui/UiHeadline.vue";
 import ButtonLink from "./ui/ButtonLink.vue";
+import {formatShowDate} from '@/utils/dates.js'
 
 export default {
   props: {
@@ -46,6 +53,11 @@ export default {
   computed: {
     bgColor() {
       return `background-color: #${this.info.bgcolor}`;
+    },
+  },
+   methods: {
+    showDate(date) {
+      return formatShowDate(date, "date")
     },
   },
   components: {

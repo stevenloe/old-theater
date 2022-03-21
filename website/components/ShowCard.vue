@@ -15,12 +15,8 @@
       <!-- image card -->
       <div>
         <a v-if="show.presentedby == 'PMS'" href="https://www.pamlicomusic.org">
-          <show-picture
-            :img="`/images/shows/${show.img}`"
-            :alt="show.imgAlt"
-          ></show-picture>
         </a>
-        <nuxt-link v-else :to="show.path">
+        <nuxt-link :to="show.path">
           <show-picture
             :img="`/images/shows/${show.img}`"
             :alt="show.imgAlt"
