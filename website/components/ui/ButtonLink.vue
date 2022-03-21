@@ -1,7 +1,7 @@
 <template>
   <div class="mt-2">
     <!-- use nuxt link only for internal links -->
-    <nuxt-link v-if="isInternalLink" :to="url">
+    <nuxt-link v-if="isInternalLink" :to="url" class="no-underline">
       <!--  Any color prop with lentgh procuces a Transparent Button w/ black hover state -->
       <div
         v-if="color"

@@ -25,28 +25,28 @@
               <li class="list-none cursor-pointer">
                 <nuxt-link
                   to="/calendar"
-                  class="tracking-wider footer-link md:text-lg lg:text-xl hover:text-black"
+                  class="tracking-wider no-underline footer-link md:text-lg lg:text-xl hover:text-black"
                   >CALENDAR</nuxt-link
                 >
               </li>
               <li class="list-none cursor-pointer">
                 <nuxt-link
                   to="/shows"
-                  class="justify-start tracking-wider footer-link md:text-lg lg:text-xl hover:text-black"
+                  class="justify-start tracking-wider no-underline footer-link md:text-lg lg:text-xl hover:text-black"
                   >SHOWS</nuxt-link
                 >
               </li>
               <li class="list-none cursor-pointer">
                 <nuxt-link
                   to="/news"
-                  class="justify-start tracking-wider footer-link md:text-lg lg:text-xl hover:text-black"
+                  class="justify-start tracking-wider no-underline footer-link md:text-lg lg:text-xl hover:text-black"
                   >NEWS</nuxt-link
                 >
               </li>
               <li class="list-none cursor-pointer">
                 <nuxt-link
                   to="/about/rent-the-theater"
-                  class="tracking-wider footer-link md:text-lg lg:text-xl hover:text-black"
+                  class="tracking-wider no-underline footer-link md:text-lg lg:text-xl hover:text-black"
                   >RENT THE THEATER</nuxt-link
                 >
               </li>
@@ -59,21 +59,21 @@
               <li class="list-none cursor-pointer">
                 <nuxt-link
                   to="/support/donate"
-                  class="tracking-wider footer-link md:text-lg lg:text-xl hover:text-black"
+                  class="tracking-wider no-underline footer-link md:text-lg lg:text-xl hover:text-black"
                   >DONATE</nuxt-link
                 >
               </li>
               <li class="list-none cursor-pointer">
                 <nuxt-link
                   to="/get-involved"
-                  class="tracking-wider footer-link md:text-lg lg:text-xl hover:text-black"
+                  class="tracking-wider no-underline footer-link md:text-lg lg:text-xl hover:text-black"
                   >GET INVOLVED</nuxt-link
                 >
               </li>
               <li class="list-none cursor-pointer">
                 <nuxt-link
                   to="/contact"
-                  class="justify-start tracking-wider footer-link md:text-lg lg:text-xl hover:text-black"
+                  class="justify-start tracking-wider no-underline footer-link md:text-lg lg:text-xl hover:text-black"
                   >CONTACT US</nuxt-link
                 >
               </li>

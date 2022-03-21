@@ -21,7 +21,7 @@
             >
               <!-- TODO: Use UI Headline here. Adjust sizes to work with  new design -->
               <!-- <UiHeadline class="mb-3 text-white" level="1">{{ content.title }}</UiHeadline>  -->
-              <nuxt-link :to="content.url">
+              <nuxt-link :to="content.url" class="no-underline">
                 {{ content.title }}
               </nuxt-link>
             </h3>

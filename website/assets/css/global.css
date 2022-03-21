@@ -2,6 +2,16 @@
   border: solid 1px #999 !important;
 }
 
+@layer base {
+  a {
+     @apply underline;
+  }
+}
+
+/* .no-underline {
+  text-decoration: none !important;
+} */
+
 /* body {
   background-color: #343434;
 } */

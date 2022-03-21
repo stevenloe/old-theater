@@ -77,9 +77,9 @@ module.exports = {
           css: {
             color: '#000',
             a: {
-              color: '#3182ce',
+              color: '#000000',
               '&:hover': {
-                color: '#2c5282',
+                color: '#333333',
               },
             },
             h1: {

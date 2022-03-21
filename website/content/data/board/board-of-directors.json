@@ -2,10 +2,16 @@
 	"board": {
 		"executives": {
 		"team":
-		[{
+		[
+			{
 				"role": "President",
 				"name": "Izzy Keppner",
 				"img": "/images/board/izzy-keppner.webp"
+			},
+			{
+				"role": "Vice President",
+				"name": "Open",
+				"img": ""
 			},
 			{
 				"role": "Treasurer",
@@ -41,14 +47,14 @@
 				"img": "/images/board/pat-dixon.webp"
 			},
 			{
-				"role": "House & Tickets",
+				"role": "Membership & Volunteers",
 				"name": "AnnMarie Wolf",
 				"img": "/images/board/annmarie-wolf.webp"
 			},
 			{
-				"role": "Membership & Volunteers",
-				"name": "Andrea Bayard",
-				"img": "/images/board/amdrea-bayard.webp"
+				"role": "House & Tickets",
+				"name": "Open",
+				"img": ""
 			},
 			{
 				"role": "Publicity",

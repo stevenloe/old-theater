@@ -29,7 +29,7 @@
         <NuxtLink
           :to="result.folder + result.slug"
           @click.native="close"
-          class="flex items-center px-8 py-4 text-3xl leading-8 text-gray-900 transition duration-150 ease-in-out hover:text-black"
+          class="flex items-center px-8 py-4 text-3xl leading-8 text-gray-900 no-underline transition duration-150 ease-in-out hover:text-black"
         >
           {{ result.title }}
         </NuxtLink>

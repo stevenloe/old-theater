@@ -132,7 +132,7 @@
 
                 <!-- Contact -->
                 <div class="mr-2 rounded hover:bg-gray-200 md:hidden">
-                  <nuxt-link to="/contact/" @click.native="onNavItemClick">
+                  <nuxt-link to="/contact/" @click.native="onNavItemClick" class="no-underline">
                     <div v-if="isMobileMenuOpen" :class="itemStyle">
                       CONTACT US
                     </div>
@@ -300,7 +300,6 @@ export default {
             opacity: "0.6",
           },
         ],
-
         "/about/rent-the-theater": [
           {
             img: " ",
@@ -379,7 +378,7 @@ export default {
           { text: "OTHER WAYS TO SUPPORT US", link: "/support/other", id: 15 },
         ],
       },
-      itemStyle: "mt-1 block px-2 py-2  rounded hover:bg-gray-200 ",
+      itemStyle: "mt-1 block px-2 py-2  rounded hover:bg-gray-200 no-underline",
     };
   },
   methods: {
@@ -428,6 +427,8 @@ export default {
         console.log("PATH NOT FOUND");
         this.selectedHeaderImage = this.headerImages["default"];
       }
+
+      console.log("SELECTED HEADER IMAGE", this.selectedHeaderImage)
     },
   },
 
@@ -459,7 +460,7 @@ export default {
     menuClass() {
       const base =
         "justify-between w-full px-4 pt-2 pb-4 text-base md:flex md:p-0";
-      const mobi = " bg-white";
+      const mobi = " bg-white h-full";
       let result = this.isMobile ? base + mobi : base;
       return `${result} `;
     },
@@ -471,6 +472,8 @@ export default {
         ? ` backgroundImage: url(/images/hero/${this.selectedHeaderImage.img});
        height: calc(100vw * ${this.selectedHeaderImage.height}); `
         : "";
+
+        console.log("BGIMAGE", bgImage)
       return ` ${bgImage}
       grid-column: 1 / -1;
       grid-row: 3;

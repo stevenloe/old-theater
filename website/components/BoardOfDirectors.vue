@@ -48,7 +48,7 @@
             </UiHeadline>
 
             <div
-              v-for="member of content.board.managers.team"
+              v-for="member of managers"
               :key="member.name"
               class="flex w-full"
             >
@@ -59,7 +59,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -79,12 +78,31 @@ export default {
   },
   data() {
     return {
-      bgcolor: '93A38B',
+      bgcolor: "93A38B",
     };
   },
   computed: {
     bgColor() {
       return `background-color: #${this.bgcolor}`;
+    },
+    managers() {
+      let items = this.content.board.managers.team;
+
+      items.sort((a, b) => {
+        let fa = a.role.toLowerCase(),
+          fb = b.role.toLowerCase();
+
+        if (fa < fb) {
+          return -1;
+        }
+        if (fa > fb) {
+          return 1;
+        }
+        return 0;
+      });
+
+      console.log(" MANAGERS ____________________________", items);
+      return items;
     },
   },
   mounted: function () {

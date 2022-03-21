@@ -22,7 +22,7 @@
     :style="[data.style, data.staticStyle]"
     v-bind="data.attrs"
     v-on="listeners"
-    class="font-semibold"
+    class="font-semibold no-underline"
   >
     <slot />
   </Component>

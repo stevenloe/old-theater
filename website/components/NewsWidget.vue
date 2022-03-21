@@ -24,7 +24,7 @@
                 {{ showDate(item.date) }}
               </div>
               <div class="mb-2 text-xl font-semibold">
-                <nuxt-link :to="item.path"> {{ item.title }} </nuxt-link>
+                <nuxt-link :to="item.path" class="no-underline "> {{ item.title }} </nuxt-link>
               </div>
 
               <div class="text-black">

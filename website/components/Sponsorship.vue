@@ -32,7 +32,7 @@
         <!-- Top info section and body text -->
         <div class="flex flex-col justify-between w-full h-full">
           <div>
-            <nuxt-link :to="item.url">
+            <nuxt-link :to="item.url" class="no-underline">
               <UiHeadline class="mb-2 leading-none text-white" level="1">{{
                 item.title
               }}</UiHeadline>

@@ -38,7 +38,7 @@
               class="flex flex-wrap items-center flex-grow-0 w-2/3 pl-2 justify-left"
             >
               <div class="pl-2">
-                <span class="mr-2 font-bold">{{ member.role }}:</span>
+                <span class="mr-2 font-bold"> {{ member.role }}:</span>
                 <span>{{ member.name }}</span>
               </div>
             </div>
@@ -65,11 +65,7 @@ export default {
       required: true,
     },
   },
-  created: function () {
-    this.team.sort((a, b) =>
-      a.role.toLowerCase().localeCompare(b.role.toLowerCase())
-    );
-  },
+
   computed: {
     bgColor() {
       return `background-color: #${this.info.bgcolor}`;

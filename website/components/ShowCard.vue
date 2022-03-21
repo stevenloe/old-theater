@@ -31,7 +31,7 @@
           <div>
             <!-- <h3 class="mb-2 -mt-1 text-6xl font-bold leading-none"> -->
             <!-- TODO: Use UI Headline here. Adjust sizes to work with  new design -->
-            <nuxt-link :to="show.path">
+            <nuxt-link :to="show.path" class="no-underline">
               <UiHeadline class="mb-2" level="1" style="line-height: 1.08em">{{
                 show.title
               }}</UiHeadline>
