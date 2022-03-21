@@ -21,9 +21,6 @@ export default {
     NavBar,
     Footer,
   },
-  // mounted() {
-  //   window.scrollTo(0, 0);
-  // },
   methods: {
     onContentClick() {
       this.$bus.$emit("hide-search", "hide");

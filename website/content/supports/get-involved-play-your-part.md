@@ -1,8 +1,8 @@
 ---
 title: 
 subhead: Play Yout Part
-buttonurl: /get-involved
-buttontext: LEARN MORE
+buttonurl: /contact
+buttontext: CONTACT US
 buttoncolor: transparent
 bgcolor: 6A82A3
 ---

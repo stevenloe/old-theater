@@ -42,7 +42,7 @@
                 loading="lazy"
               />
               <p class="p-1 mb-3 text-sm italic text-blue">
-                Making & serving free popcorn.
+                Free popcorn at all movies
               </p>
             </div>
             <div class="w-full m-2 lg:w-1/3">
@@ -52,7 +52,7 @@
                 alt="Annual member meeting at The Old Theater"
                 loading="lazy"
               />
-              <p class="p-1 mb-3 text-sm italic text-blue">The Box office</p>
+              <p class="p-1 mb-3 text-sm italic text-blue">Annual membership meeting</p>
             </div>
             <div class="w-full m-2 lg:w-1/3">
               <img
@@ -104,7 +104,7 @@
                   alt="Children's Theater Workshop"
                 />
                 <p class="p-1 mb-3 text-sm italic text-blue">
-                  Children's Theater Workshop
+                  Children's Theater Workshop Live Nativity
                 </p>
               </div>
               <div class="w-1/2">
@@ -115,7 +115,7 @@
                   loading="lazy"
                 />
                 <p class="p-1 mb-3 text-sm italic text-blue">
-                  The Polar Express
+                  The Polar Express - Children with Santa
                 </p>
               </div>
             </div>
@@ -154,7 +154,34 @@
                   loading="lazy"
                 />
                 <p class="p-1 mb-3 text-sm italic text-blue">
-                  Ladies of Theater
+                  Ladies of Radio Show
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <div class="flex">
+              <div class="w-1/2 mr-4">
+                <img
+                  src="/images/volunteer/russ.jpg"
+                  class="w-full"
+                  loading="lazy"
+                  alt="Russ at the Old Theater, Oriental, NC"
+                />
+                <p class="p-1 mb-3 text-sm italic text-blue">
+                 Pirate Russ
+                </p>
+              </div>
+              <div class="w-1/2">
+                <img
+                  src="/images/volunteer/ladies_of_theater.jpg"
+                  class="w-full"
+                  alt="Ladies of Theater at the Old Theater Oriental NC"
+                  loading="lazy"
+                />
+                <p class="p-1 mb-3 text-sm italic text-blue">
+                  Ladies of Radio Show
                 </p>
               </div>
             </div>

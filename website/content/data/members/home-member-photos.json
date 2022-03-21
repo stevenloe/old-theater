@@ -1,6 +1,18 @@
 {
 	"photos": [
 		{
+			"img": "/images/home-members/andrea-bayard.webp",
+			"alt": "Members of The Old Theater"
+		},
+		{
+			"img": "/images/home-members/addrean-jim-hahn.webp",
+			"alt": "Members of The Old Theater"
+		},
+		{
+			"img": "/images/home-members/steve-smith-claudine-fields.webp",
+			"alt": "Members of The Old Theater"
+		},
+		{
 			"img": "/images/home-members/stan-ellen-aeschleman.webp",
 			"alt": "Members of The Old Theater"
 		},

@@ -29,7 +29,7 @@
               alt=""
             />
             <p class="p-1 mb-3 text-sm italic text-blue">
-              Making & serving free popcorn
+              Poppin' up popcorn
             </p>
           </div>
 
@@ -45,7 +45,7 @@
                   alt="Jay & Laurie Gates"
                 />
                 <p class="p-1 mb-3 text-sm italic text-blue">
-                  caption here
+                  Hey bartenders!
                 </p>
               </div>
               <div class="w-1/2">
@@ -56,7 +56,7 @@
                   loading="lazy"
                 />
                 <p class="p-1 mb-3 text-sm italic text-blue">
-                  caption here
+                  Treats & sweets
                 </p>
               </div>
             </div>
@@ -72,7 +72,7 @@
                   alt="popcorn"
                 />
                 <p class="p-1 mb-3 text-sm italic text-blue">
-                 caption here
+                 Free popcorn at outdoor cinema
                 </p>
               </div>
               <div class="w-1/2">
@@ -83,7 +83,7 @@
                   loading="lazy"
                 />
                 <p class="p-1 mb-3 text-sm italic text-blue">
-                  More popcorn
+                  Fill 'er up!
                 </p>
               </div>
             </div>

@@ -11,7 +11,7 @@ eventDate: 'March, 21 2020 19:30:00 EST'
 eventTime: '2021-02-05T21:09:38.963Z'
 bgcolor: 8C9B79
 ---
-Julius Rosenwald, who never finished high school and yet rose to become the President of Sears & Roebuck, was influenced by the writings of the educator and former slave, Booker T. Washington, founder of the Tuskegee Institute.  Inspired by a deep concern over racial inequality in America, Rosenwald joined forces with Washington to help African American communities build 5,000 of these schools between 1912 and 1933 – and a future for black children in the South. 
+Julius Rosenwald, who never finished high school, yet rose to become the President of Sears & Roebuck, was influenced by the writings of the educator and former slave, Booker T. Washington, founder of the Tuskegee Institute.  Inspired by a deep concern over racial inequality in America, Rosenwald joined forces with Washington to help African American communities build 5,000 of these schools between 1912 and 1933 – and a future for black children in the South. 
 
 Once the pride of their communities, many of these schools were later abandoned or demolished.  In 2002, the National Trust for Historic Preservation placed the Rosenwald Schools on its 11 Most Endangered Historic Places list.   
 

@@ -1,6 +1,6 @@
 ---
 title: Re-Opening The Old Theater for the 2021-2022 Season
-date: 2020-10-04T21:07:38.963Z
+date: 2021-10-04T21:07:38.963Z
 subhead:
 folder: /news/
 bgcolor: eeddcc

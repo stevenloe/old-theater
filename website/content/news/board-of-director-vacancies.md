@@ -10,13 +10,12 @@ The Old Theater Board of Directors in Oriental is seeking volunteer board member
 
 Openings include:  
 
--  **Vice President**, responsible for setting up leases and managing the shared electronic events calendar.  
+-  **Vice President**, responsible for setting up leases and managing the shared electronic events calendar. The Vice President is also the lead for The Old Theater's Fundraisers.
 
--  **Membership & Volunteer Manager**, responsible for maintaining the member excel workbook throughout the year, coordinating the annual membership mailout and meeting.  Coordinating volunteers for theater sponsored events.
+-  **House Manager & Ticket Master**, responsible for overseeing volunteer staff at events, and tracking ticket sales and box office.
 
 If you are interested in joining The Old Theater team, please email us at Oldtheater@gmail.com or call (252) 249-0477 to discuss further.  We look forward to hearing from you.
 
 *Izzy Keppner*
 
-President
-Old Theater Corporation
+President, Old Theater Corporation

@@ -1,10 +1,10 @@
 ---
 title: Membership
-subhead: Join the Old Theater!
+subhead: Join The Old Theater!
 bgcolor: 738EB3
 ---
          
-Oriental’s Old Theater first opened its doors as a movie theater in
+The Old Theater first opened its doors as a movie theater in
 1946, and served as a social entertainment center until the late
 50s. It was revitalized and reopened in 1995, providing a venue
 where performing arts can thrive in Pamlico County.       
@@ -20,18 +20,18 @@ grants and volunteers on stage and behind the scenes.
           
 Thanks to the generosity of people like YOU, significant
 improvements have been accomplished over the past few years. A
-successful 2021 membership drive will enable us to continue needed
+successful 2022 membership drive will enable us to continue needed
 improvements and the variety of entertainment our community has come
 to enjoy.
                   
 We need and welcome your financial support and look forward to
 hearing from you. If you are a current member of the Old Theater, we
 thank you again for your generous support and hope we can count on
-it for 2021. If you are a new member for 2021, thank you and
+it for 2022. If you are a new member for 2022, thank you and
 welcome! We look forward to seeing everyone throughout the coming
 year.
 
-To join now, download the <a href ="/pdf/2021_membership_form.pdf" >Old Theater Membership Form</a>
+To join now, download the <a href ="/pdf/2022_membership_form.pdf" >Old Theater Membership Form</a>
 
 For more information send an email to
 <a href="mailto:OldTheater@gmail.com">OldTheater@gmail.com</a>. 

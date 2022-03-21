@@ -13,11 +13,9 @@ bgcolor: c8ecf7
 
 
 
-## Have your show or event at Oriental's Old Theater.
+## Have your show, event or meeting at The Old Theater.
 
 You can rent the Old Theater for your business, community or entertainment event. We have a graduated schedule of rates depending on time, date and purpose, and provide support for your technical needs.
-
-For clubs (i.e. Rotary, Women’s Club, etc.) and for-profit businesses the daily rental fee for the Old Theater is $150 plus a non-refundable cleaning fee of $60. All applications must be accompanied by a $150.00 booking deposit. Rental fee includes up to three technical support (i.e. lighting, sound, projection) without extra charge and set up/rehearsal time the day of the event. **Hours of use for this rental fee will be Monday through Thursday.**
 
 Certain users whose purpose is education, and where there is no cost to participants, may use the Old Theater at no cost Monday through Thursday, between 7:30 a.m. and 10:00 p.m. This includes, but is not necessarily limited to, agencies of federal, state, county or municipal government, public or private higher educational institutions and secondary and primary schools, for which the intended use is not a “for-profit” event. Users are entitled to 2 hours of access time and up to three technical support for stage lighting, sound and projection. **Free leasing is reviewed and granted on a per-event basis.**
 

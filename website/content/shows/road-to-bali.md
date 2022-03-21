@@ -5,14 +5,14 @@ date: "2022-04-17T23:30:00.2Z"
 dateText: Sunday, April 17  3:00PM
 showTime:
 price: $6
-presentedby: The Old Theater
+presentedby: OTC
 location: At The Old Theater
 locationDetail: 
 shortDesc: In this musical, Harold (Bob Hope) and George (Bing Crosby) are two vaudeville performers in Australia. After they realize their local gal pals intend to marry them, they sign up for a diving expedition led by the local island prince...
 img: road-to-bali.jpg
 imgAlt: Sunday Classic Cinema Road to Bali 
 ticketURL: 
-youtubeVideo: IS-KvD2_Zo
+youtubeVideo: 
 folder: /shows/
 bgcolor: f4d246
 ticketURl: 

@@ -205,7 +205,8 @@ export default {
             opacity: "0.4",
           },
         ],
-        "/get-involved": [
+        "/get-involved": 
+        [
           {
             img: "get-involved.webp",
             height: "0.7",
@@ -223,10 +224,25 @@ export default {
           {
             img: "membership.webp",
             height: "0.7",
-            opacity: "0.75",
+            opacity: "0.85",
           },
         ],
         "/support/sponsor": [
+          {
+            img: "lady-pirates-captain-bree.webp",
+            height: "0.85",
+            opacity: "0.75",
+          },
+          {
+            img: "scrooged.webp",
+            height: "0.8",
+            opacity: "0.8",
+          },
+          {
+            img: "rocky-horror.webp",
+            height: "0.8",
+            opacity: "0.8",
+          },
           {
             img: "support/back-to-the-future.webp",
             height: "0.66",
@@ -386,19 +402,19 @@ export default {
     setHeroImage() {
      
       // on every route change, load the hero image for the new page
-      let path = this.$nuxt.$route.path;
 
+      // handle case where last char of url is a '/'
+      let path = this.$nuxt.$route.path.length > 1 && this.$nuxt.$route.path.slice(-1) === '/' ? this.$nuxt.$route.path.slice(0, -1) : this.$nuxt.$route.path
+      
       if (this.headerImages[path]) {
         this.selectedHeaderImage =
           this.headerImages[path][
             Math.floor(Math.random() * this.headerImages[path].length)
           ];
-          console.log(">>>>>>>> typeof(this.selectedHeaderImage)", typeof(this.selectedHeaderImage))
       } else {
         this.selectedHeaderImage = this.headerImages["default"];
       }
 
-      console.log("---------- SET HERO IMAGE ----------->> path ", path, "selected image:",  this.selectedHeaderImage);
     },
   },
 
@@ -420,7 +436,6 @@ export default {
     },
     waveClass() {
       let bgcolor = this.selectedHeaderImage.bgcolor ? `background-color: #${this.selectedHeaderImage.bgcolor};` : '';
-      console.log("BGCOLOR ------ ", bgcolor)
       return `background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 1151 234' fill='%23eee8aa'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  opacity='${this.selectedHeaderImage.opacity}' fill-rule='evenodd' clip-rule='evenodd' d='M0.591553 0.00100708V233.859C111.126 203.295 221.095 188.013 330.5 188.013C522.428 188.013 647.271 226.586 813.184 226.586C923.792 226.585 1036.08 213.728 1150.04 188.013V4.57764e-05L0.591553 0.00100708Z' fill='white'/%3E%3C/svg%3E"); background-repeat: no-repeat; ${bgcolor}` ;
     },
     fooClass() {
@@ -437,13 +452,10 @@ export default {
       return this.$nuxt.$route.path;
     },
     heroClass() {
-      console.log("HEADER IMAGE 2", this.selectedHeaderImage.height);
       let bgImage = this.selectedHeaderImage.img
         ? ` backgroundImage: url(/images/hero/${this.selectedHeaderImage.img});
        height: calc(100vw * ${this.selectedHeaderImage.height}); `
         : "";
-
-      console.log("------------  bgImage:", bgImage);
       return ` ${bgImage}
       grid-column: 1 / -1;
       grid-row: 3;
@@ -455,7 +467,6 @@ export default {
   },
   watch: {
     $route() {
-      console.log("------ CHANGE ROUTE----");
       this.$bus.$emit("toggle-search", "close");
       this.setHeroImage();
     },
@@ -486,26 +497,11 @@ export default {
   letter-spacing: 0.03rem;
 }
 
-/* Height of Navbar must be calculated per page. It must be set to the desired height of the hero image */
-/* .hero {
-  grid-column: 1 / -1;
-  grid-row: 3;
-  display: grid;
-  background-repeat: no-repeat;
-  background-size: 100vw auto;
-  grid-gap: 7%;
-} */
-
 .header-container {
   width: 93vw;
   margin: auto;
   margin-top: calc(100vw * 0.02);
 }
-
-/* .home-hero-wave {
-  background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 1151 234' fill='%23eee8aa'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  opacity='0.4' fill-rule='evenodd' clip-rule='evenodd' d='M0.591553 0.00100708V233.859C111.126 203.295 221.095 188.013 330.5 188.013C522.428 188.013 647.271 226.586 813.184 226.586C923.792 226.585 1036.08 213.728 1150.04 188.013V4.57764e-05L0.591553 0.00100708Z' fill='white'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-} */
 
 .home-hero-mask {
   height: calc(100vw * 0.24);

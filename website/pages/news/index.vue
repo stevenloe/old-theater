@@ -4,8 +4,6 @@
     <WaveHeadline :info="headlineInfo" />
       <WaveText v-for="(info, index) in posts" :key="index" :info="info" />
 
-
-
       <section class="flex justify-end" v-if="nextPage">
         <nuxt-link class="font-medium" v-if="nextPage" to="/news/page/2"
           >Older Posts <span aria-hidden="true">→</span></nuxt-link
@@ -34,8 +32,8 @@ export default {
 
       let headlineInfo =  
       {
-        title: "News",
-        bgcolor: posts[0].bgcolor
+        title: "The Old Theater In The News",
+        bgcolor: 'ccffee'
       }
         
   

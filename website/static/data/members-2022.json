@@ -180,7 +180,7 @@
 	{
 		"level": "Playwright",
 		"lastName": "Favinger",
-		"firstName": "Mr. & Mrs. Patrick J",
+		"firstName": "Mr. & Mrs. Patrick J.",
 		"spouseFirst": "",
 		"spouseLast": "",
 		"Id": 43
@@ -316,7 +316,7 @@
 	{
 		"level": "Playwright",
 		"lastName": "Umbach",
-		"firstName": "Waltraud",
+		"firstName": "Wally",
 		"spouseFirst": "",
 		"spouseLast": "",
 		"Id": 60
@@ -540,7 +540,7 @@
 	{
 		"level": "Cameo",
 		"lastName": "Anderson",
-		"firstName": "Maureen K",
+		"firstName": "Maureen K.",
 		"spouseFirst": "",
 		"spouseLast": "",
 		"Id": 0
@@ -548,7 +548,7 @@
 	{
 		"level": "Cameo",
 		"lastName": "Belangia",
-		"firstName": "Kenneth & Sally",
+		"firstName": "Ken & Sally",
 		"spouseFirst": "",
 		"spouseLast": "",
 		"Id": 1
@@ -564,7 +564,7 @@
 	{
 		"level": "Cameo",
 		"lastName": "Carter",
-		"firstName": "F Kent",
+		"firstName": "F. Kent",
 		"spouseFirst": "",
 		"spouseLast": "",
 		"Id": 3
@@ -668,7 +668,7 @@
 	{
 		"level": "Cameo",
 		"lastName": "Riddle",
-		"firstName": "Mr. & Mrs. ME",
+		"firstName": "Mr. & Mrs. M.E.",
 		"spouseFirst": "",
 		"spouseLast": "",
 		"Id": 16

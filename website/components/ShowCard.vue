@@ -47,9 +47,14 @@
                 <img class="object-contain h-12 p-1 mb-2 ml-2 bg-white" 
                 src="/images/community/pms-new-logo-crop-omg.svg"
                 alt="Pamlico Musical Society logo"
+              /></a>
+              <a v-if="show.presentedby == 'ACS'" href="https://www.arapahoecharter.org/">
+                <img class="object-contain h-16 p-1 mb-2 ml-2 bg-white" 
+                src="/images/community/acs-logo.webp"
+                alt="Pamlico Musical Society logo"
               />
               </a>
-                <img  v-else class="object-contain h-10 mb-2 -ml-2 md:h-12" 
+                <img v-if="show.presentedby == 'OTC'"  class="object-contain h-10 mb-2 -ml-2 md:h-12" 
                 src="/images/community/old-theater-logo.svg"
                 alt="Pamlico Musical Society logo"
               />

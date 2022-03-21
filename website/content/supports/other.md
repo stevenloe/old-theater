@@ -26,13 +26,13 @@ When you shop at smile.amazon.com, Amazon will donate 0.5% of your purchase doll
 ### How to set up your smile.amazon account to benefit The Old Theater: 
 
  
-##### 1. Go to [https://smile.amazon.com](https://smile.amazon.com)
-##### 2. Sign into your Amazon account
-##### 3. Under the heading: *"Or pick your own charitable organization"* In the search box, type "Old Theater Corporation". 
-##### 4. Click the Search button
-##### 5. Select "Old Theater Corporation, Oriental, NC" from the list of results
-##### 6. Click the checkbox next to the text "Yes, I understand that I must aways start at **smile.amazon.com** to support The Old Theater Corporation of Oriental, NC"
-##### 7. Navigate back to smile.amazon.com. Bookmark the page
+##### 1. Go to [https://smile.amazon.com](https://smile.amazon.com).
+##### 2. Sign into your Amazon account.
+##### 3. Under the heading: *"Or pick your own charitable organization"* In the search box, type "Old Theater Corporation." 
+##### 4. Click the Search button.
+##### 5. Select "Old Theater Corporation, Oriental, NC" from the list of results.
+##### 6. Click the checkbox next to the text "Yes, I understand that I must aways start at **smile.amazon.com** to support The Old Theater Corporation of Oriental, NC."
+##### 7. Navigate back to smile.amazon.com. Bookmark the page.
 ##### 8. Now, whenever you want to shop and support The Old Theater, click that link and shop away!
 
 

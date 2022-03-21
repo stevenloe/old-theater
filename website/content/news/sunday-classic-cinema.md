@@ -26,9 +26,9 @@ The Old Theater will launch Sunday Classic Cinema on a trial basis through the e
    
 **Please join us at 3:00 p.m. for Sunday Classic Cinema in 2022:**
 
-- March 20:          Two Flash Gordon episodes and His Girl Friday (1940)
-- April 17:             Two Flash Gordon episodes and Road to Bali (1952)
-- May 15:             Two Flash Gordon episodes and McClintock (1963)  
+- March 20:  His Girl Friday (1940)
+- April 17: Road to Bali (1952)
+- May 15: McClintock (1963)  
 
 
 

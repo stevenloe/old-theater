@@ -5,7 +5,7 @@ date: "2022-03-26T23:30:00.2Z"
 dateText: Friday March 25th, & Saturday, March 26th at 7:30 pm, and Sunday, March 27th, Matinee at 3:00 pm
 showTime:
 price: $18 Members, Military & Students with ID $15
-presentedby: The Old Theater
+presentedby: OTC
 location: At The Old Theater
 locationDetail: 
 shortDesc: Murder in the Manor is the first comic murder mystery written by Bill Hand, Director of the North Carolina History Theater of New Bern. 

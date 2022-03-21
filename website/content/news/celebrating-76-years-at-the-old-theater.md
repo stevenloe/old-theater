@@ -1,7 +1,7 @@
 ---
 title: Celebrating 76 years at The Old Theater
 date: 2022-03-09T21:07:38.963Z
-subhead:
+subhead: By Mary Frances Taylor. Published in The Pamlico News, 3/16/2022
 folder: /news/
 bgcolor: cceedd
 ---
@@ -52,8 +52,7 @@ The OTC Annual membership Meeting is scheduled for Tuesday, March 22, 2022, at 6
 
 The Old Theater Corp. is a 501(c)(3) non-profit organization accepting new members and donations online at www.oldtheater.org or by check mailed to P.O. Box 521, Oriental, NC 28571. Community support is always appreciated. 
 
-_By Mary Frances Taylor_
- 
+
  
 
 

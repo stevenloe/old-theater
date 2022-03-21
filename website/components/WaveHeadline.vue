@@ -8,7 +8,7 @@
     </svg>
 
     <div
-      class="grid grid-cols-1 gap-8 pt-12 pb-24 pl-8 pr-8 md:pl-12 md:pr-12 wave-content"
+      class="grid grid-cols-1 gap-8 pt-12 pb-40 pl-8 pr-8 md:pl-12 md:pr-12 wave-content"
       :style="bgColor"
     >
       <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">

@@ -71,14 +71,6 @@ export default {
       required: true,
     },
   },
-  methods: {
-    showDate(date) {
-      return formatShowDate(date, "date");
-    },
-    showTime(date) {
-      return formatShowDate(date, "time");
-    },
-  },
     created: function () {
     // shuffle sponsor logos
     let data = this.images.photos;
@@ -89,22 +81,14 @@ export default {
       data[i] = data[j];
       data[j] = k;
     }
+
+    this.images.photos.length = 9;
   },
   computed: {
-    // formattedPrice() {
-    //   return formatPrice(this.item.price);
-    // },
     bgColor() {
       return `background-color: #${this.item.bgcolor}`;
     },
-    presentedBy() {
-      if (this.item.presentedby == "PMS") {
-        return '<img src="/logos/pms-logo-300-flat.jpg" alt="Pamlico Musical Society Logo">';
-      } else {
-        console.log(" NOT PMS");
-        return this.item.presentedby;
-      }
-    },
+
   },
   components: {
     ShowPicture,
