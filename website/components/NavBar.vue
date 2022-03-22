@@ -405,6 +405,7 @@ export default {
       this.isMobileMenuOpen = false;
     },
     setHeroImage() {
+      this.isMobileMenuOpen = false;
       // on every route change, load the hero image for the new page
 
       // handle case where last char of url is a '/'
@@ -486,8 +487,9 @@ export default {
   },
   watch: {
     $route() {
-      this.$bus.$emit("toggle-search", "close");
       this.setHeroImage();
+      this.$bus.$emit("toggle-search", "close");
+      
     },
   },
   created: function () {
