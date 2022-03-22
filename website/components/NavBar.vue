@@ -206,11 +206,16 @@ export default {
             opacity: "0.4",
           },
         ],
-        "/get-involved": [
+          "/get-involved": [
           {
-            img: "get-involved.webp",
-            height: "0.7",
+            img: "scrooged.webp",
+            height: "0.8",
             opacity: "0.8",
+          },
+          {
+            img: "support/nunsense.webp",
+            height: "0.65",
+            opacity: "0.6",
           },
         ],
         "/calendar": [
@@ -349,6 +354,48 @@ export default {
             opacity: "0.6",
           },
         ],
+        "/shows": [
+          {
+            img: "lady-pirates-captain-bree.webp",
+            height: "0.85",
+            opacity: "0.75",
+          },
+          {
+            img: "scrooged.webp",
+            height: "0.8",
+            opacity: "0.8",
+          },
+          {
+            img: "rocky-horror.webp",
+            height: "0.8",
+            opacity: "0.8",
+          },
+          {
+            img: "support/back-to-the-future.webp",
+            height: "0.66",
+            opacity: "0.75",
+          },
+          {
+            img: "support/goldfinger.webp",
+            height: "0.75",
+            opacity: "0.6",
+          },
+          {
+            img: "support/nunsense.webp",
+            height: "0.65",
+            opacity: "0.6",
+          },
+          {
+            img: "support/master-and-commander.webp",
+            height: "0.65",
+            opacity: "0.6",
+          },
+          {
+            img: "support/zookeepers-wife.webp",
+            height: "0.65",
+            opacity: "0.6",
+          },
+        ],
       },
       aboutMenuItems: {
         title: "ABOUT US",
@@ -417,6 +464,9 @@ export default {
 
           if(path.includes('/news/')) {
             path = '/news'
+          }
+           else if(path.includes('/shows/')) {
+            path = '/shows'
           }
       console.log("PATH IS", path, typeof(path));
       if (this.headerImages[path]) {

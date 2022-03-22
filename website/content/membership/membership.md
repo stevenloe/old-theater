@@ -1,7 +1,7 @@
 ---
 title: Membership
 subhead: Join The Old Theater!
-bgcolor: 738EB3
+bgcolor: a3bEf3
 ---
          
 The Old Theater first opened its doors as a movie theater in

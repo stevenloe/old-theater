@@ -1,45 +1,51 @@
 <template>
-  <div class="mx-auto ">
-    <article class="container mx-auto">
-      <UiHeadline class="pl-4 mb-6" level="1">Upcoming Shows</UiHeadline>
-      <ShowList :shows="futureShows" />
-    </article>
+  <div>
+    <WaveHeadline :info="upcommingHeadlineInfo" />
 
-    <article class="container p-4 mx-auto md:p-8 lg:text-xl xl:text-2xl">
-      <UiHeadline class="mb-6" level="1">Past Shows</UiHeadline>
-      <PastShowList :pastShows="pastShows" />
-    </article>
+    <ShowList :shows="futureShows" />
+
+    <!-- <WaveHeadline :info="pastHeadlineInfo" /> -->
+
+    <!-- <PastShowList :pastShows="pastShows" /> -->
   </div>
 </template>
 
 <script>
-import UiHeadline from "@/components/ui/UiHeadline"
-import ShowList from "@/components/ShowList"
-import PastShowList from "@/components/PastShowList"
+import UiHeadline from "@/components/ui/UiHeadline";
+import ShowList from "@/components/ShowList";
+import PastShowList from "@/components/PastShowList";
+import WaveHeadline from "@/components/WaveHeadline";
 
-import {sortShows} from '@/utils/sort.js'
+import { sortShows } from "@/utils/sort.js";
 
 export default {
   data() {
     return {
       futureShows: [],
       pastShows: [],
+      upcommingHeadlineInfo: {
+        title: "Upcoming Shows",
+        bgcolor: "99DDFF",
+      },
+      pastHeadlineInfo: {
+        title: "Past Shows",
+        bgcolor: "ccffee",
+      },
     };
   },
   async asyncData({ $content }) {
-    const shows = await $content("shows")
-      .sortBy("date", "desc")
-      .fetch();
+    const shows = await $content("shows").sortBy("date", "desc").fetch();
 
-      console.log("SHOWS", shows);
+    console.log("SHOWS", shows);
 
-    return sortShows(shows)
+    return sortShows(shows);
   },
   layout: "NewLayout",
   components: {
     UiHeadline,
     ShowList,
-    PastShowList
+    PastShowList,
+    WaveHeadline,
   },
 };
 </script>

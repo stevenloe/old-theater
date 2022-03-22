@@ -8,70 +8,11 @@
   }
 }
 
-/* .no-underline {
-  text-decoration: none !important;
-} */
-
-/* body {
-  background-color: #343434;
-} */
-
-
-/* test full css here */
-
-/* @font-face {
-}
-@font-face {
-  font-family: "GT Super Display";
-  src: url(../fonts/GT-Super-Display-Medium.woff2) format("woff2"), url(../fonts/GT-Super-Display-Medium.woff) format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham SSm";
-  src: url(../fonts/GothamSSm-Book_Web.woff2) format("woff2"), url(../fonts/GothamSSm-Book_Web.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham SSm";
-  src: url(../fonts/GothamSSm-BookItalic_Web.woff2) format("woff2"), url(../fonts/GothamSSm-BookItalic_Web.woff) format("woff");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Gotham SSm";
-  src: url(../fonts/GothamSSm-Medium_Web.woff2) format("woff2"), url(../fonts/GothamSSm-Medium_Web.woff) format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham SSm";
-  src: url(../fonts/GothamSSm-Bold_Web.woff2) format("woff2"), url(../fonts/GothamSSm-Bold_Web.woff) format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Gotham SSm";
-  src: url(../fonts/GothamSSm-Black_Web.woff2) format("woff2"), url(../fonts/GothamSSm-Black_Web.woff) format("woff");
-  font-weight: 800;
-  font-style: normal;
-}  */
-/*!
- * animate.css -http://daneden.me/animate
- * Version - 3.5.1
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2016 Daniel Eden
- */
 
  .max-width {
    width: 40em;
  }
 
- .wave-section  {
-  
-}
 
 .wave-content {
   margin-top: -8px; 
@@ -80,37 +21,5 @@
 .wave {
   margin-top: -100px;
 }
-
-.orange-bg .wave {
-  fill: orange; 
-}
-.orange-bg .wave-content {
-  background-color: orange;
-}
-
-.blue-bg .wave {
-  fill: blue; 
-}
-
-.blue-bg .wave-content {
-  background-color: blue;
-}
-
-.purple-bg .wave {
-  fill: purple; 
-}
-
-.purple-bg .wave-content {
-  background-color: purple;
-}
-
-.green-bg .wave {
-  fill: green; 
-}
-
-.green-bg .wave-content {
-  background-color: green;
-}
-
 
 
