@@ -31,5 +31,5 @@ bgcolor: c4d8f9
 
 Contact us to find out more about sponsoring a show. 
 <div class="flex">
-  <button-link url="/contact-form" color="transparent" text="CONTACT US"/>
+  <button-link url="/contact-form/" color="transparent" text="CONTACT US"/>
 </div>

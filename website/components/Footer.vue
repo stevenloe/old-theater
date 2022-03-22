@@ -72,7 +72,7 @@
               </li>
               <li class="list-none cursor-pointer">
                 <nuxt-link
-                  to="/contact-form"
+                  to="/contact-form/"
                   class="justify-start tracking-wider no-underline footer-link md:text-lg lg:text-xl hover:text-black"
                   >CONTACT US</nuxt-link
                 >

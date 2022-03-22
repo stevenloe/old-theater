@@ -56,7 +56,7 @@ We will at times reach out to our community to ask for help bringing events to o
 
 Contact us to find out more about sponsoring a show. 
 
-<button-link url="/contact-form" text="CONTACT US"/>
+<button-link url="/contact-form/" text="CONTACT US"/>
    
 
 

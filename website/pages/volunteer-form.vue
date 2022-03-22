@@ -1,4 +1,5 @@
 <template>
+<!-- URL: of page MUST end with a slash. Otherwsise netlify forms do not work. "https://oldtheater.org/volunteer-form/" - Works. "https://oldtheater.org/volunteer-form" - Does not work.-->
   <div class="wave-section">
     <div
       class="z-0 grid grid-cols-1 gap-8 pb-56 pl-8 pr-8 md:pl-12 md:pr-12 wave-content bgColor"

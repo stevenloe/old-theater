@@ -16,5 +16,5 @@ Hope to hear from you!
      
 
 <div class="flex">
-  <button-link url="/volunteer-form" color="black" text="VOLUNTEER NOW"/>
+  <button-link url="/volunteer-form/" color="black" text="VOLUNTEER NOW"/>
 </div>

@@ -4,7 +4,7 @@
       class="z-0 grid grid-cols-1 gap-8 pb-56 pl-8 pr-8 md:pl-12 md:pr-12 wave-content bgColor"
     >
       <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
-        <UiHeadline level="1">Contact-form</UiHeadline>
+        <UiHeadline level="1">Contact Us</UiHeadline>
         <article
           class="p-6 mt-6 lg:p-8 "
         >
