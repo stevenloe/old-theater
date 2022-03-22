@@ -29,7 +29,7 @@
         v-bind:item="item"
         :key="item.id"
         :to="item.link"
-        class="block p-2 no-underline rounded hover:bg-gray-200"
+        class="block p-1 no-underline rounded md:p-2 hover:bg-gray-200"
         >{{ item.text }}</nuxt-link
       >
     </div>

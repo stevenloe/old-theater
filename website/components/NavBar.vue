@@ -390,6 +390,7 @@ export default {
       this.$bus.$emit("resize-window");
     },
     toggleSearch() {
+      console.log("--- toggleSearch() ---");
       this.$bus.$emit("toggle-search");
     },
     onMenuBtnClick() {
@@ -397,10 +398,10 @@ export default {
       this.$bus.$emit("toggle-mobile-menu");
     },
     onNavItemClick() {
-      setTimeout(this.hideMenu, 100);
+      // setTimeout(this.hideMenu, 100);
     },
     hideMenu() {
-      console.log("hideMenu()");
+      console.log("----hideMenu()----");
       this.isMobileMenuOpen = false;
     },
     setHeroImage() {
