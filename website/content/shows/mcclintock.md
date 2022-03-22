@@ -9,7 +9,7 @@ presentedby: OTC
 location: At The Old Theater
 locationDetail: 
 shortDesc: Aging rancher George Washington McLintock (John Wayne), a wealthy self-made man, is forced to deal with numerous personal and professional problems. Seemingly everyone wants a piece of his enormous farmstead...
-img: mcclintock.jpg
+img: mcclintock.webp
 imgAlt: Sunday Classic Cinema Road to Bali 
 ticketURL: 
 youtubeVideo: PC0ilreEcqA

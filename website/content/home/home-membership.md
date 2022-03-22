@@ -6,5 +6,4 @@ bgcolor: '375464'
 ---
 
 
-Enjoy the benefits of membership while providing the support that enables us to continue creating magical experiences both in front of and behind the curtains. We thank our generous donors who help The Old Theater bring outstanding entertainment to our community. Replace this text with new
-
+Members & Volunteers are the heartbeat of The Old Theater. Whether they volunteer on the Board of Directors, use their talents to sing and act in stage productions, or assist with fundraisers, they complete the community that is The Old Theater. Pamlico County and Oriental are lucky to have so many fun loving and talented people! Thank you all! 

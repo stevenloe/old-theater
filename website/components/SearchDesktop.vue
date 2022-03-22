@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div class="w-full search-font">
     <input
     id="search-input"
       v-model="searchQuery"
@@ -10,13 +10,13 @@
     />
     <ul
       v-if="results.length"
-      class="absolute z-40 flex-1 w-auto py-4 pb-6 overflow-scroll bg-gray-200 top-40 dark:bg-gray-900 results" 
+      class="absolute z-40 flex-1 w-auto py-4 pb-6 overflow-scroll bg-gray-200 top-40 results" 
     >
-      <li v-for="result of results" :key="result.slug">
+      <li v-for="result of results" :key="result.slug" class="no-underline">
         <NuxtLink
           :to="result.folder + result.slug"
           @click.native="clearSearch"
-          class="flex items-center px-8 py-2 mx-2 text-lg leading-6 text-black transition duration-150 ease-in-out rounded-lg hover:bg-gray-400 "
+          class="flex items-center px-8 py-2 mx-2 text-lg leading-6 text-black no-underline transition duration-150 ease-in-out rounded-lg hover:bg-gray-400"
         >
           {{ result.title }}
         </NuxtLink>
@@ -99,7 +99,7 @@ export default {
 
   computed: {
     searchClass() {
-      let openClose = this.isOpen ? "open" : "";
+      let openClose = this.isOpen ? "open w-11/12" : "";
       return `${openClose} search w-0 h-10 text-lg text-black focus:outline-none bg-gray-300 placeholder-black`;
     },
   },
@@ -117,8 +117,10 @@ export default {
 }
 
 .open {
-  width: 220px;
   padding: 6px;
   display: block;
+}
+.search-font {
+   font-family: 'Comfortaa', sans-serif;
 }
 </style>

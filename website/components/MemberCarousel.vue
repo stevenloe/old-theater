@@ -200,7 +200,7 @@ export default {
 .name {
   padding-left: 1em;
   padding-right: 1em;
-  font-family: 'Comfortaa', serif;
+  font-family: 'Comfortaa', sans-serif;
   color: #fff;
   text-align: center;
 }

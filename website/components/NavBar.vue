@@ -27,7 +27,7 @@
             />
             <a
               href="#"
-              class="pl-1 pr-0 mb-6 text-gray-900 hover:bg-gray-600 focus:outline-none place-self-end"
+              class="pl-1 pr-0 mb-6 text-gray-900 rounded hover:bg-gray-300 focus:outline-none place-self-end"
               @click="toggleSearch"
             >
               <!-- Search Icon -->
@@ -514,7 +514,7 @@ export default {
 
 <style scoped>
 .josefin-bold {
-  font-family: JosefinSansBold;
+  font-family: JosefinSansBold, sans-serif;
   letter-spacing: 0.03rem;
 }
 

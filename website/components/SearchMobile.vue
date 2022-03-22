@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="border border-gray-500 search-font">
     <input
       v-model="searchQuery"
       type="search"
@@ -25,11 +25,11 @@
         </svg>
       </div>
 
-      <li v-for="result of results" :key="result.slug">
+      <li v-for="result of results" :key="result.slug" class="no-underline search-font">
         <NuxtLink
           :to="result.folder + result.slug"
           @click.native="close"
-          class="flex items-center px-8 py-4 text-3xl leading-8 text-gray-900 no-underline transition duration-150 ease-in-out hover:text-black"
+          class="flex items-center px-8 py-2 text-xl text-gray-900 no-underline transition duration-150 ease-in-out hover:text-black"
         >
           {{ result.title }}
         </NuxtLink>
@@ -116,5 +116,8 @@ export default {
 .open {
   width: 220px;
   padding: 4px;
+}
+.search-font {
+   font-family: 'Comfortaa', sans-serif;
 }
 </style>
