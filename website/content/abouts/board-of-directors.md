@@ -16,7 +16,7 @@ folder: /about/
 **Friday Flicks:** Nancy Crain  
 **Grants** (open)   
 **Graphic Communications:** (open)   
-**House & Tickets:** Russ Stevenson   
+**House & Tickets:** Russ Stevenson     
 **Membership & Volunteers:** Andrea Bayard   
 **Publicity:** Marlena Ivey   
 **Sponsorship:** (open)      
