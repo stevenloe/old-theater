@@ -98,7 +98,7 @@
                   id="email"
                   type="email"
                   name="email"
-                  placeholder="me@mail.com"
+                  placeholder="me@mail.com "
                   required
                 />
               </div>
