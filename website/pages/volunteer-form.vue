@@ -28,7 +28,7 @@
               As one of our volunteers, you’ll serve as a goodwill ambassador
               for the Old Theater and will have funworking on outstanding events
               and productions. No matter what your experience level, the Old
-              Theaterhas opportunities for you to get involved! Tell us how
+              Theater has opportunities for you to get involved! Tell us how
               you’d like to participate in a theater-sponsored event by filling
               out this form.
             </p>
