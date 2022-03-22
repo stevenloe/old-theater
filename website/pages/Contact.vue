@@ -138,7 +138,7 @@
 </template>
 
 <script>
-import UiHeadline from "../../components/ui/UiHeadline.vue";
+import UiHeadline from "../components/ui/UiHeadline.vue";
 export default {
   metaInfo: {
     title: "Contact",

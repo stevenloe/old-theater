@@ -24,4 +24,4 @@ For all users, the daily rate of $250 will apply to any time on Friday, Saturday
 Rates are subject to change without notice. Lessees to provide their own support personnel (stage hands, ticket takers, ushers and other house staff) and arrange for their own advertising and printing of tickets, posters and programs. Technical equipment may be operated by authorized theater personnel only. Requests for technical support must be made at the time of reservation and must be accompanied by detailed lighting/sound requirements. **Technical needs beyond those which are normally provided by the Old Theater are at the Lessee’s expense.**
 
 
-Email to oldtheater@gmail.com for more information. Or click here to download our latest Rental Agreement: [Old Theater Rental Agreement.pdf](../pdf/ot_rental_agreement.pdf)
+Email to oldtheater@gmail.com for more information. Or click here to download our latest Rental Agreement: [Old Theater Rental Agreement.pdf](../pdf/2021-2022-old-theater-rental-agreement.pdf)
