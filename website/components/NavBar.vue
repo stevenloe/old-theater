@@ -226,6 +226,22 @@ export default {
             bgcolor: "c8ecf7",
           },
         ],
+        "/volunteer-form": [
+          {
+            img: " ",
+            height: "0.3",
+            opacity: "1",
+            bgcolor: "c8ecf7",
+          },
+        ],
+        "/contact": [
+          {
+            img: " ",
+            height: "0.3",
+            opacity: "1",
+            bgcolor: "d8fcf7",
+          },
+        ],
         "/support/membership": [
           {
             img: "membership.webp",
