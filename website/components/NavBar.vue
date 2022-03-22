@@ -132,7 +132,7 @@
 
                 <!-- Contact -->
                 <div class="mr-2 rounded hover:bg-gray-200 md:hidden">
-                  <nuxt-link to="/contact/" @click.native="onNavItemClick" class="no-underline">
+                  <nuxt-link to="/contact-form/" @click.native="onNavItemClick" class="no-underline">
                     <div v-if="isMobileMenuOpen" :class="itemStyle">
                       CONTACT US
                     </div>
@@ -239,7 +239,7 @@ export default {
             bgcolor: "c8ecf7",
           },
         ],
-        "/contact": [
+        "/contact-form": [
           {
             img: " ",
             height: "0.3",

@@ -1,7 +1,7 @@
 ---
 title: 
 subhead: Play Yout Part
-buttonurl: /contact
+buttonurl: /contact-form
 buttontext: CONTACT US
 buttoncolor: transparent
 bgcolor: ccffdd
