@@ -384,7 +384,7 @@ export default {
   methods: {
     onResize() {
       console.log("--- onResize() ---");
-      this.isMobileMenuOpen = false;
+      // this.isMobileMenuOpen = false;
       this.isMobile = window.innerWidth < 980;
       this.isSearchOpen = false;
       this.$bus.$emit("resize-window");
