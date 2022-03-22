@@ -175,13 +175,13 @@
               </div>
               <div class="w-1/2">
                 <img
-                  src="/images/volunteer/ladies_of_theater.jpg"
+                  src="/images/volunteer/marilyn-judy.webp"
                   class="w-full"
                   alt="Ladies of Theater at the Old Theater Oriental NC"
                   loading="lazy"
                 />
                 <p class="p-1 mb-3 text-sm italic text-blue">
-                  Ladies of Radio Show
+                  Marilyn & Judy in Nunsense
                 </p>
               </div>
             </div>

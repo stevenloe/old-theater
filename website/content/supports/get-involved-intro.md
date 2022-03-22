@@ -1,7 +1,7 @@
 ---
 title: Get Involved
 subhead: Come Join Us. Be Part of the Old Theater!
-bgcolor: 97A66E
+bgcolor: ddffff
 ---
          
 For decades, The Old Theater has been bringing the best in movies, music, and community theater to Pamlico county. Driven by the passion and energy of its volunteers, the Old Theater brings together community residents to present quality entertainment and moving arts experiences for all ages.
