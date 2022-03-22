@@ -244,7 +244,7 @@ export default {
             img: " ",
             height: "0.3",
             opacity: "1",
-            bgcolor: "d8fcf7",
+            bgcolor: "c8ecf7",
           },
         ],
         "/support/membership": [
@@ -476,7 +476,7 @@ export default {
       this.isMobileMenuOpen = false;
       // on every route change, load the hero image for the new page
 
-      // handle case where last char of url is a '/'
+      // handle case where last char of url is a '/' (remove the slash)
       let path =
         this.$nuxt.$route.path.length > 1 &&
         this.$nuxt.$route.path.slice(-1) === "/"
