@@ -72,7 +72,7 @@
               </div>
   
             </div>
-            <div class="flex flex-wrap mb-6 -mx-3">
+            <!-- <div class="flex flex-wrap mb-6 -mx-3">
             <div class="w-full px-3 mb-6 md:w-1/2 md:mb-0">
               <label
                 class="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase "
@@ -101,7 +101,7 @@
                 placeholder="252-555-4444"
               />
             </div>
-          </div>
+          </div> -->
             <div class="flex flex-wrap mb-6 -mx-3">
               <div class="w-full px-3">
                 <label

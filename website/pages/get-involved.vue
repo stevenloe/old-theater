@@ -1,13 +1,14 @@
 <template>
   <div>
     <WaveText :info="getInvolvedIntro" />
+
     <VolunteersInAction :info="volunteersActionText" />
 
     <WaveText :info="playYourPartText" />
     <WeNeedYou :info="weNeedYouText" />
 
     <client-only>
-      <MemberCarousel bgcolor="486870" />
+      <MemberCarousel bgcolor="688890" />
     </client-only>
   </div>
 </template>

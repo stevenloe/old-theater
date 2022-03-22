@@ -217,6 +217,11 @@ export default {
             height: "0.65",
             opacity: "0.6",
           },
+             {
+            img: "lady-pirates-captain-bree.webp",
+            height: "0.85",
+            opacity: "0.75",
+          },
         ],
         "/calendar": [
           {
