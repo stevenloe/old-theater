@@ -1,7 +1,7 @@
 ---
 
 title: Murder in the Manor by NC History Theater with Bill Hand 
-date: "2022-03-26T23:30:00.2Z"
+date: "2022-03-27T23:30:00.2Z"
 dateText: Friday March 25th, & Saturday, March 26th at 7:30 pm, and Sunday, March 27th, Matinee at 3:00 pm
 showTime:
 price: $18 Members, Military & Students with ID $15
