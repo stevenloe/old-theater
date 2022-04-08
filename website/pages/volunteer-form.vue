@@ -10,20 +10,16 @@
           class="p-6 mt-6 lg:p-8 "
         >
           <form
-            name="volunteer-form"
-            id="volunteer-form"
+            name="volunteer"
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
+            action="/success"
           >
-            <p class="hidden">
-              <label>
-                Don’t fill out this field if you are human<input
-                  class="form-field"
-                  name="bot-field"
-                />
-              </label>
-            </p>
+            
+          <!-- this field must be present, or form will not work -->
+          <input value="volunteer" name="form-name" type="hidden" />
+
             <h2 class="mb-6 text-3xl font-semibold">We Need You!</h2>
             <p class="max-w-3xl mb-8 text-xl">
               As one of our volunteers, you’ll serve as a goodwill ambassador
