@@ -8,7 +8,7 @@ presentedby: PMS
 location: At The Old Theater
 locationDetail: 
 showtype: 
-shortDesc: A child prodigy and internationally renowned concert violinist for over 30 years, Midori transfixes audiences by bringing together graceful precision and intimate expression... 
+shortDesc: The Midori concert on April 23rd is sold out. Please call 252-617-2125 to be put on the waiting list.
 img: midori.jpg
 imgAlt: Midori poster art 
 youtubeVideo: KgSKvOAJMb8
@@ -16,10 +16,3 @@ folder: /shows/
 bgcolor: D99546
 
 ---
-A child prodigy and internationally renowned concert violinist for over 30 years, Midori transfixes audiences by bringing together graceful precision and intimate expression. 
-
-Typically soloing with the likes of symphony orchestras of London, Chicago, Boston, San Francisco, Berlin, Vienna, New York, Los Angeles and St. Petersburg, do not miss this once-in-a-lifetime opportunity to experience Midori live and in concert in Oriental! Midori’s appearance is made possible in part by the non-profit organization Partners in Performance. Founded by Midori, Partners in Performance aims to keep chamber music alive and accessible in the heartland of America.
-
-www.gotomidori.com
-
-Sponsored by: Beth Frazer & Assoc. Inc., ​Yawl’s Cafe at River Dunes, Mary Ann Parham & Doug Sligh
