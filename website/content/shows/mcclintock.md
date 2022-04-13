@@ -2,7 +2,7 @@
 
 title: "Sunday Classic Cinema: McLintock! (1963)"
 date: "2022-05-15T23:30:00.2Z"
-dateText: Sunday, May 15  3:00PM
+dateText: Sunday, May 15,  at 3:00 pm
 showTime:
 price: $6
 presentedby: OTC

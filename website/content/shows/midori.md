@@ -1,7 +1,7 @@
 ---
 title: Midori
 date: "2022-04-23T23:30:00.2Z"
-dateText: April 23, 2022, 7:30 PM
+dateText: April 23, 2022, at 7:30 pm
 showTime: 
 price: Sold Out
 presentedby: PMS
