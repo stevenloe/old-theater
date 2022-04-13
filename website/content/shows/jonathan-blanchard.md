@@ -3,7 +3,7 @@
 title: "Jonathan Blanchard History to Hip Hop"
 date: "2022-05-21T23:30:00.2Z"
 dateText: Saturday, May 21, at 7:30 pm
-showTime:
+showTime: 7:30 pm
 price: $25. Members, Military, and Students $20
 presentedby: OTC
 location: At The Old Theater
