@@ -22,13 +22,13 @@
           <!-- Column 3 -->
           <div class="flex justify-start w-1/2 sm:w-1/3">
             <ul class="px-0">
-              <li class="list-none cursor-pointer">
+              <!-- <li class="list-none cursor-pointer">
                 <nuxt-link
                   to="/calendar"
                   class="tracking-wider no-underline footer-link md:text-lg lg:text-xl hover:text-black"
                   >CALENDAR</nuxt-link
                 >
-              </li>
+              </li> -->
               <li class="list-none cursor-pointer">
                 <nuxt-link
                   to="/shows"

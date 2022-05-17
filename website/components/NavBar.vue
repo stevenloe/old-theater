@@ -95,12 +95,12 @@
                   :class="itemStyle"
                   >HOME</nuxt-link
                 >
-                <nuxt-link
+                <!-- <nuxt-link
                   to="/calendar"
                   @click.native="onNavItemClick"
                   :class="itemStyle"
                   >CALENDAR</nuxt-link
-                >
+                > -->
                 <SubMenu
                   :menuData="supportMenuItems"
                   :isMobile="isMobile"
@@ -321,9 +321,10 @@ export default {
         ],
         "/community-partners": [
           {
-            img: "community-partners-placeholder.webp",
-            height: "0.65",
-            opacity: "0.6",
+            img: " ",
+            height: "0.3",
+            opacity: "0.7",
+            bgcolor: "85b8c5"
           },
         ],
         "/about/rent-the-theater": [
@@ -343,10 +344,11 @@ export default {
           },
         ],
         "/about/board-of-directors": [
-          {
-            img: "board-placeholder.webp",
-            height: "0.6",
-            opacity: "0.8",
+             {
+            img: " ",
+            height: "0.3",
+            opacity: "1",
+            bgcolor: "677949",
           },
         ],
         "/about/the-old-theater": [
