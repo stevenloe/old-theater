@@ -58,7 +58,7 @@ export default {
     const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardData, sponsorship, homeSponsorData, membership, amazonSmile, homeMemberImages] = await Promise.all(
       [
         $content("shows", params.slug).fetch(),
-        $content("news", params.slug).limit(3).fetch(),
+        $content("news", params.slug).fetch(),
         $content("alerts", params.slug).fetch(),
         $content("home/who-we-are-left-column", params.slug).fetch(),
         $content("home/who-we-are-right-column", params.slug).fetch(),
@@ -76,7 +76,9 @@ export default {
 
 
 
-    const sortedNews = sortByDate(news).slice(0, 5);
+    let sortedNews = sortByDate(news).slice(0, 5);
+    sortedNews.length = 3;
+    
 
     const { futureShows, pastShows } = sortShows(shows);
 
