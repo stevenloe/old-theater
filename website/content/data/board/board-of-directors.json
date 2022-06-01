@@ -31,7 +31,13 @@
 		}
 	},
 		"managers": {
-			"team": [{
+			"team": [
+				{
+				"role": "Creative Director",
+				"name": "Patrick Nocera",
+				"img": ""
+			},
+				{
 				"role": "Facilities",
 				"name": "Brian Hough",
 				"img": "/images/board/brian-hough.webp"
