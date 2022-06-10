@@ -50,7 +50,7 @@ During the recent COVID-19 pandemic, when the theater was forced to close its do
 
 The OTC Annual membership Meeting is scheduled for Tuesday, March 22, 2022, at 6:30 PM. New members will be accepted before the program begins. The President, Izzy Keppner, will give an overview of the year’s activities and a look at future projects. There will be a treasurer’s accounting of finances and an unveiling of the new OTC website. Some positions on the Board of Directors are open and volunteers are welcome to apply. 
 
-The Old Theater Corp. is a 501(c)(3) non-profit organization accepting new members and donations online at www.oldtheater.org or by check mailed to P.O. Box 521, Oriental, NC 28571. Community support is always appreciated. 
+The Old Theater Corp. is a 501(c)(3) non-profit organization accepting new members and donations online at www.oldtheater.org/support/donate/ or by check mailed to P.O. Box 521, Oriental, NC 28571. Community support is always appreciated. 
 
 
  

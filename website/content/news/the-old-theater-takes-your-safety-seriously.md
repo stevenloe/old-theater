@@ -1,9 +1,9 @@
 ---
-title: Re-Opening The Old Theater for the 2021-2022 Season
+title: The Old Theatre Takes Your Safety Seriously 
 date: 2021-10-04T21:07:38.963Z
 subhead:
 folder: /news/
-bgcolor: eeddcc
+bgcolor: ffeecc
 ---
 
 The Old Theater continues to follow the state and local guidance regarding the Covid-19 virus.  
