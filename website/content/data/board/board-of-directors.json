@@ -6,12 +6,12 @@
 			{
 				"role": "President",
 				"name": "Carla Fisher",
-				"img": ""
+				"img": "/images/board/carla-fisher.webp"
 			},
 			{
 				"role": "Vice President",
-				"name": "TerryLynn Melody",
-				"img": ""
+				"name": "Teresa Conrads",
+				"img": "/images/board/teresa-conrads.webp"
 			},
 			{
 				"role": "Treasurer",
@@ -35,7 +35,7 @@
 				{
 				"role": "Creative Director",
 				"name": "Patrick Nocera",
-				"img": ""
+				"img": "/images/board/pat-nocera.webp"
 			},
 				{
 				"role": "Facilities",
@@ -49,13 +49,13 @@
 			},
 			{
 				"role": "Membership & Volunteers",
-				"name": "AnnMarie Wolf",
-				"img": "/images/board/annmarie-wolf.webp"
+				"name": "Open",
+				"img": ""
 			},
 			{
 				"role": "House & Tickets",
 				"name": "Olga Herman",
-				"img": ""
+				"img": "/images/board/olga-herman.webp"
 			},
 			{
 				"role": "Publicity",
@@ -70,7 +70,7 @@
 			{
 				"role": "Technical Services",
 				"name": "Mike & Kris Baum",
-				"img": ""
+				"img": "/images/board/kris-baum.webp"
 			},
 			{
 				"role": "Theater Sponsored Events",
