@@ -1,44 +1,58 @@
 ---
-title: Our History
-folder: /about/ 
+title: Celebrating 76 years at The Old Theater
+date: 2022-03-09T21:07:38.963Z
+subhead: By Mary Frances Taylor. Published in The Pamlico News, 3/16/2022
+folder: /news/
 bgcolor: f3f6ac
-
-
 ---
 
+<!-- <figure>
+  <img
+    src="/images/about/sunday-classic-cinema.jpg"
+    alt="Sunday Classic Cinema at The Old Theater"
+    loading="lazy"
+  />
+  <figcaption class="italic">
+  </figcaption>
+</figure> -->
 
-Once upon a time... George Merritt of Swansboro, NC decided Oriental needed a movie house. He purchased land at the corner of Broad and Church Streets from James and Ada Mason in 1946 and, sometime later, built the Mart Theatre, named after his new bride Margaret Jones. According to Billy Johnston, its original projectionist, the first film to be shown at the Mart Theatre was Blue Skies (1946).
+The very first film to ever be shown at The Old Theater was Blue Skies, starring Bing Crosby and Fred Estaire, and the year was 1946. At that time, the name of the theater was Mart Theatre and the cost of a movie ticket was a quarter, candy was a nickle, and popcorn was a dime. Until it closed in the late 1950s, the Mart Theatre was showing films every night of the week. On Sunday and Monday, there was usually a musical or comedy, and on Tuesday, Wednesday, and Thursday a variety of films were shown from drama to detective films. The ever-so-popular cowboy westerns were shown on Friday and Saturday. This historic movie house holds cherished, nostalgic memories for Oriental and it has a most interesting history to tell.
 
-In the summer of 1949, it was sold to Hubert, Thomas and W.J. Smith, Jr. They enlarged the balcony and projection room, added restrooms and got rid of the bats that found their way inside through holes in the buildings concrete block construction: Drawn by lights from the projector, the bats flew around the theater, enhancing the ambiance during scary movie scenes and creating an unwelcome distraction at other times.
+<figure>
+  <img
+    src="/images/about/mart-movie-posters.jpg"
+    alt="Early movie posters at The Old Theater"
+    loading="lazy"
+  />
+  <figcaption class="italic">
+  </figcaption>
+</figure>
 
-By this time, electrical service had come to the outlying areas of Pamlico County and one switch across from the theater controlled all the street lights in Oriental. As a service to the town, Tom or Hubert turned the street lights on each evening before a show and off after locking the theater up at 11:00 p.m.
 
-![mart poster](https://old-theater-pics.netlify.app/img/mart-movie-posters.jpg) 
-*Movie posters from the Mart Theatre. Georgie Powell found them in the walls of her home, put there years ago hen her father, Red Lee, did some construction on the house. Based on the movie release dates, our guess is that the posters are from the mid-1950s. ~Photo: TownDock.net*
+Mart Theatre closed in the late 1950’s and the building eventually was used for storage until 1987 when the Pelican Players, a community theater group, rented it for rehearsals and for storingprops, costumes, and sets.In the early 1990s, the Pamlico County Civic and Cultural Center Project was formed to raise funds necessary to purchase the building and renovate it as a performing arts center for live plays, concerts, and films. The residents of Pamlico County raised more than $80,000 to bring the building up to modern systems and county codes with professional lighting and sound systems, stage curtains, and comfortable seating for 150 moviegoers. 
 
-Until it closed in the late 50s, the Mart Theatre attracted patrons from throughout Pamlico County, many of them using the then-existent train service for their journey. Lifelong residents remember paying 10¢ to see films in those days … and Jackpot Night:
+In 1992, the Old Theater Corporation was formed to facilitate its use and manage operations with endorsements from county legislators, Pamlico County Schools, Pamlico Community College, and the Pamlico Arts Council. The theater reopened to the public on March 15, 1995. In 2007, the Old Theater Corp. added a motorized movie screen and projection equipment so that classic movies and new releases could be shown on the large screen.
 
-*“Each Tuesday night a ticket was drawn. If the person was present, they’d win the jackpot. If there was no winner, the pot would grow by $10 each week. If there were no winners for several weeks, so many people would show up on jackpot night that some could not get into the theater. Tom Smith recalled one man on the sidewalk outside the theater loudly claiming his winnings!”*   
-~The Way It Was by Jim Ragan
 
-The building languished until 1987 when the Pelican Players rented it for rehearsals, storage of props and costumes and construction of sets. Because it was unfit for public use, the Pelican Players performed at the Oriental Women’s Club building. In the meantime Clem Paffe, a resident of Oriental, would ride by the building and ponder the question, *“wouldn’t it be nice if...”*  He asked around and found out there were other people with the same thought. Soon after a meeting of interested citizens was set up and the question rapidly became a reality.
+<figure>
+  <img
+    src="/images/about/old-theater-closed.jpg"
+    alt="The Old Theater"
+    loading="lazy"
+  />
+  <figcaption class="italic">
+  </figcaption>
+</figure> 
 
-![photo of the old theater closed](https://old-theater-pics.netlify.app/img/old-theater-closed.jpg) 
+Today the Old Theater Corp. owns and manages the theater through a Board of Directors comprised of community volunteers whose mission is to ensure that Pamlico County and the town of Oriental have a venue for civic and cultural events. The theater provides a broad range of theater-sponsored events such as films, live plays, performing artists, and fundraising events and is available for use by civic, business, club and charity organizations as well as children’s programs and workshops. Ongoing partners with the theater include the Pamlico Musical Society, Children’s Theater Workshop, Community Band, and Pamlico Chorale to name a few. Beginning in April, the theater will be the location of Arapahoe Charter School theater productions.
 
-The Pamlico County Civic and Cultural Center Project began in the early 1990s with a dream of creating a performing arts center within the county. On May 8, 1992 the Old Theater Corporation, a nonprofit organization, was formed to facilitate acquisition of the theater and assume responsibility for its renovation. Its first priority was to revive the dormant old building … a major undertaking that required a total renovation to bring the building up to modern specifications: its interior was completely gutted and refurbished to include professional lighting and sound systems, stage curtains, seating and much more.
+During the recent COVID-19 pandemic, when the theater was forced to close its doors for a period, renovations were made to the inside which included new stage curtains and a professional-grade air purifying system. Maintenance and improvements of the Old Theater depend on the ongoing support and participation of individual contributors, community businesses, service organizations, grants and folk who volunteer on stage and behind the scenes. It also depends on successful membership drives, leasing income, ticket sales and dedicated service of volunteers who keep the facility running.
 
-*“Since we could not afford to buy new seats at the time of renovation, volunteers brought the original Mart Theater seats to John Bond’s storage building. They removed dirt and paint (including 11 lbs. of chewing gum underneath), sanded and repainted them.”*   
-~Evelyn Stephenson, Past President, Old Theater Corp.
 
-This major undertaking climaxed when the Old Theater reopened to the public on March 15, 1995. In 2007, the addition a motorized movie screen and projection equipment returned the building to its original purpose, providing movie buffs the opportunity to view classic and new release films on a large screen … the way they were meant to be viewed. (The original arc light projectors were donated to Oriental’s History Museum by Billy Johnston and can still be seen there.)
+The Old Theater Corp. is a 501(c)(3) non-profit organization accepting new members and donations online at www.oldtheater.org/support/donate/ or by check mailed to P.O. Box 521, Oriental, NC 28571. Community support is always appreciated. 
 
-![photo of the old theater reopened](https://old-theater-pics.netlify.app/img/old-theater-open.jpg) 
 
-Over the years, the Old Theater has provided the stage for local theatrical groups, including Pelican Players and Oriental Repertory Company, and has been used for a wide variety of events including children’s programs and workshops, a variety of civic, business, club and charity events and professional performers who often say it’s a favorite venue. The intimate setting of the Old Theater provides an unforgettable audience experience and, with 159 seats, no one is more than 40 feet away from the stage.
-
-The Old Theater Corporation continues to manage the facility with a controlling Board of Directors that is comprised of Pamlico County volunteers. Keeping this resource alive and strong requires the additional support and participation of individual contributors, community businesses and service organizations, public grants and folks who volunteer on stage and behind the scenes. Contact us TODAY for more information. 
-
-To read our **Anniversary Commemorative Booklet**, celebrating the Old Theater’s history and 70th anniversary, click here: [Once Upon a Time.pdf](../pdf/once_upon_a_time.pdf)
+ 
 
 
 
