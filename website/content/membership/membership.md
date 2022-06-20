@@ -1,44 +1,38 @@
 ---
 title: Membership
-subhead: Join The Old Theater!
+subhead: The Old Theater Needs YOU!
 bgcolor: a3bEf3
 ---
          
-The Old Theater first opened its doors as a movie theater in
-1946, and served as a social entertainment center until the late
-50s. It was revitalized and reopened in 1995, providing a venue
-where performing arts can thrive in Pamlico County.       
-          
-The Old Theater is owned and managed by the Old Theater Corporation,
-a registered 501(c)(3) non-profit organization. All memberships and
-donations are tax deductible. Its Board is comprised of Pamlico
-County volunteers whose mission is to ensure that Pamlico County and
-the town of Oriental has a venue for civic and cultural events. The
-ability to achieve this mission depends on the ongoing support and
-participation of individuals, businesses, service organizations,
-grants and volunteers on stage and behind the scenes.        
-          
-Thanks to the generosity of people like YOU, significant
-improvements have been accomplished over the past few years. A
-successful 2022 membership drive will enable us to continue needed
-improvements and the variety of entertainment our community has come
-to enjoy.
-                  
-We need and welcome your financial support and look forward to
-hearing from you. If you are a current member of the Old Theater, we
-thank you again for your generous support and hope we can count on
-it for 2022. If you are a new member for 2022, thank you and
-welcome! We look forward to seeing everyone throughout the coming
-year.
+The Old Theater is a vibrant and meaningful part of Oriental’s history and future as a cultural center in our community.  It takes many volunteers to bring those words in a script to life — volunteers who are very active long before the first actor takes the stage.
+
+If you have skills with accounting, project management, grant writing, or websites, or a keen willingness to learn, we especially need your help as we begin our new season.  Specifically, we have openings on our Board of Directors for the positions of: 
+
+Treasurer    
+Events Coordinator  
+Membership and Volunteer Coordinator  
+Grant Writing  
+Website Manager  
+
+If any of these sound intriguing to you, we ask you to please let us know by contacting any Board member, writing us at <a href="mailto:oldtheater@gmail.com">OldTheater@gmail.com</a>, or by contacting me personally at 206-406-1621 for more information. 
+
+Not ready for a full time Board position commitment?  That’s okay!  We still need you!  Many of our departments, including Tech Services (lighting and sound), Front of the House (greeters and ticket takers), graphic art design, publicity distribution, Chili Cookoff volunteers, and sponsorship solicitations also need your help on an occasional or rotating basis.  Brother (or sister!) can you spare some time?
+
+Oh, and did I mention that we also need those actors and actresses, musicians, set designers, directors, and wardrobe folks?  They are the characters that make us laugh and make us cry, and remind us of just why we need this cultural hub.  You can be one!  We can teach you through one of our many new workshops we will be conducting.
+
+Still not ready to take that step?  You can still be a part of the magic at the Old Theater!  After all these other volunteers do their part, we will ask you to do your part by being those “cheeks in the seats” that make it all worthwhile for those who have worked so hard to bring these performances to you!  Attend a performance… or two… or ten!  Consider a membership in the Old Theater to ensure our ability to continue to bring great programming to you for years to come.
 
 To join now, download the <a href ="../pdf/2022_membership_form.pdf" >Old Theater Membership Form</a>
 
-For more information send an email to
-<a href="mailto:OldTheater@gmail.com">OldTheater@gmail.com</a>. 
+Maybe you are beginning to see that there is a role for everyone at The Old Theater!  How might YOU become involved?
 
-**Let the show go on!**
-        
-_Izzy Keppner, President_
-             
-_Andrea Bayard, Membership & Volunteer Manager_
-          
+
+Sincerely,  
+
+
+Carla Fisher  
+President, The Old Theater Corporation  
+
+
+
+
