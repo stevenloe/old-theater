@@ -14,7 +14,7 @@ Membership and Volunteer Coordinator
 Grant Writing  
 Website Manager  
 
-If any of these sound intriguing to you, we ask you to please let us know by contacting any Board member, writing us at <a href="mailto:oldtheater@gmail.com">OldTheater@gmail.com</a>, or by contacting me personally at 206-406-1621 for more information. 
+If any of these sound intriguing to you, we ask you to please let us know by contacting any Board member, writing us at <a href="mailto:oldtheater@gmail.com">OldTheater@gmail.com</a>,  or by contacting me personally at 206-406-1621 for more information. 
 
 Not ready for a full time Board position commitment?  That’s okay!  We still need you!  Many of our departments, including Tech Services (lighting and sound), Front of the House (greeters and ticket takers), graphic art design, publicity distribution, Chili Cookoff volunteers, and sponsorship solicitations also need your help on an occasional or rotating basis.  Brother (or sister!) can you spare some time?
 
