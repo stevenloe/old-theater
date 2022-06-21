@@ -1,30 +1,30 @@
 ---
 title: Membership
-subhead: The Old Theater Needs YOU!
+subhead: 
 bgcolor: a3bEf3
 ---
          
-The Old Theater is a vibrant and meaningful part of Oriental’s history and future as a cultural center in our community.  It takes many volunteers to bring those words in a script to life — volunteers who are very active long before the first actor takes the stage.
+What does it mean to be a member of the Old Theater?  It means a LOT!
 
-If you have skills with accounting, project management, grant writing, or websites, or a keen willingness to learn, we especially need your help as we begin our new season.  Specifically, we have openings on our Board of Directors for the positions of: 
+It means you are playing a supporting role in ensuring the Old Theater remains a vibrant part of our culture in Pamlico County.
 
-Treasurer    
-Events Coordinator  
-Membership and Volunteer Coordinator  
-Grant Writing  
-Website Manager  
+It means our lives are enriched by the stories that are told, both by the writer of the play and the actor who is a part of community theater, simply because there is one.
 
-If any of these sound intriguing to you, we ask you to please let us know by contacting any Board member, writing us at <a href="mailto:oldtheater@gmail.com">oldtheater@gmail.com</a>,  or by contacting me personally at 206-406-1621 for more information. 
+It means we can hear the laughter — those “extra” dollars you gave to enhance your level of membership may just have paid for a microphone or two.
 
-Not ready for a full time Board position commitment?  That’s okay!  We still need you!  Many of our departments, including Tech Services (lighting and sound), Front of the House (greeters and ticket takers), graphic art design, publicity distribution, Chili Cookoff volunteers, and sponsorship solicitations also need your help on an occasional or rotating basis.  Brother (or sister!) can you spare some time?
+It means we can burst with pride as we watch our young people bask in the spotlight, because the lights can go on — your membership helps pay the utility bills.
 
-Oh, and did I mention that we also need those actors and actresses, musicians, set designers, directors, and wardrobe folks?  They are the characters that make us laugh and make us cry, and remind us of just why we need this cultural hub.  You can be one!  We can teach you through one of our many new workshops we will be conducting.
+It means every actor and stage hand feels special:  you are also the audience that comes to see them deliver their lines, sing their tune, or marvel at the set construction they created.
 
-Still not ready to take that step?  You can still be a part of the magic at the Old Theater!  After all these other volunteers do their part, we will ask you to do your part by being those “cheeks in the seats” that make it all worthwhile for those who have worked so hard to bring these performances to you!  Attend a performance… or two… or ten!  Consider a membership in the Old Theater to ensure our ability to continue to bring great programming to you for years to come.
+Your membership dollars help create and maintain a home for other organizations such as the Pamlico Music Society or the Children’s Theater as well as our Old Theater performances.
 
-To join now, download the <a href ="../pdf/2022_membership_form.pdf" >Old Theater Membership Form</a>
+Our members are our lifeblood at the Old Theater!  If you are already a member, we thank you so sincerely for your past support!  We ask you to stand proud with the Old Theater again by renewing your membership today.  Perhaps you can strike a higher note by elevating your membership level this year.
 
-Maybe you are beginning to see that there is a role for everyone at The Old Theater!  How might YOU become involved?
+Never been a member?  Today is the perfect day to become one!  
+
+
+To join now, simply click here: <a href ="../pdf/2022_membership_form.pdf" >Old Theater Membership Form</a>
+
 
 
 Sincerely,  
