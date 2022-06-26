@@ -9,6 +9,22 @@
 			"Id": 88
 		},
 		{
+			"level": "Tony Award",
+			"lastName": "Wager",
+			"firstName": "Christine",
+			"spouseFirst": "",
+			"spouseLast": "",
+			"Id": 100
+		},
+		{
+			"level": "Executive Producer",
+			"lastName": "Manganaro",
+			"firstName": "Anne & Paul",
+			"spouseFirst": "",
+			"spouseLast": "",
+			"Id": 101
+		},
+		{
 			"level": "Executive Producer",
 			"lastName": "Sailcraft Service",
 			"firstName": "",
@@ -47,6 +63,30 @@
 			"spouseFirst": "Nancy",
 			"spouseLast": "Crain",
 			"Id": 38
+		},
+		{
+			"level": "Director",
+			"lastName": "Kaplan",
+			"firstName": "Lynne & Marc",
+			"spouseFirst": "",
+			"spouseLast": "",
+			"Id": 102
+		},
+		{
+			"level": "Director",
+			"lastName": "Maxwell",
+			"firstName": "Mary",
+			"spouseFirst": "",
+			"spouseLast": "",
+			"Id": 103
+		},
+		{
+			"level": "Director",
+			"lastName": "Cap",
+			"firstName": "Peter & Bonnie",
+			"spouseFirst": "",
+			"spouseLast": "",
+			"Id": 104
 		},
 	{
 		"level": "Director",
@@ -143,6 +183,46 @@
 		"spouseFirst": "",
 		"spouseLast": "",
 		"Id": 33
+	},
+	{
+		"level": "Playwright",
+		"lastName": "Nocera",
+		"firstName": "Patrick",
+		"spouseFirst": "Carla",
+		"spouseLast": "Fisher",
+		"Id": 105
+	},
+  {
+		"level": "Playwright",
+		"lastName": "Avery",
+		"firstName": "Carman",
+		"spouseFirst": "",
+		"spouseLast": "",
+		"Id": 106
+	},
+  {
+		"level": "Playwright",
+		"lastName": "Conrads",
+		"firstName": "Teresa",
+		"spouseFirst": "",
+		"spouseLast": "",
+		"Id": 107
+	},
+  {
+		"level": "Playwright",
+		"lastName": "Teeman",
+		"firstName": "Teresa & Johnny",
+		"spouseFirst": "",
+		"spouseLast": "",
+		"Id": 108
+	},
+  {
+		"level": "Playwright",
+		"lastName": "Erichsen",
+		"firstName": "Per & Marian",
+		"spouseFirst": "",
+		"spouseLast": "",
+		"Id": 109
 	},
 	
 	{
@@ -328,6 +408,38 @@
 		"spouseFirst": "",
 		"spouseLast": "",
 		"Id": 61
+	},
+	{
+		"level": "Stage Manager",
+		"lastName": "Baum",
+		"firstName": "Michael & Kris",
+		"spouseFirst": "",
+		"spouseLast": "",
+		"Id": 110
+	},
+  {
+		"level": "Stage Manager",
+		"lastName": "Alitto",
+		"firstName": "Sam",
+		"spouseFirst": "",
+		"spouseLast": "",
+		"Id": 111
+	},
+  {
+		"level": "Stage Manager",
+		"lastName": "Flanagan",
+		"firstName": "Vonda & John",
+		"spouseFirst": "",
+		"spouseLast": "",
+		"Id": 112
+	},
+  {
+		"level": "Stage Manager",
+		"lastName": "Taylor",
+		"firstName": "Mary",
+		"spouseFirst": "",
+		"spouseLast": "",
+		"Id": 113
 	},
 	{
 		"level": "Stage Manager",
@@ -536,6 +648,30 @@
 		"spouseFirst": "",
 		"spouseLast": "",
 		"Id": 87
+	},
+	{
+		"level": "Cameo",
+		"lastName": "Coats",
+		"firstName": "Chaz & Nelda",
+		"spouseFirst": "",
+		"spouseLast": "",
+		"Id": 114
+	},
+  {
+		"level": "Cameo",
+		"lastName": "Jones",
+		"firstName": "Moe",
+		"spouseFirst": "",
+		"spouseLast": "",
+		"Id": 115
+	},
+  {
+		"level": "Cameo",
+		"lastName": "Murphy",
+		"firstName": "Nelle",
+		"spouseFirst": "",
+		"spouseLast": "",
+		"Id": 116
 	},
 	{
 		"level": "Cameo",
