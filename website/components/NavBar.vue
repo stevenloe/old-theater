@@ -377,6 +377,15 @@ export default {
             opacity: "0.6",
           },
         ],
+
+         "/shows-slug": [
+          {
+            img: " ",
+            height: "0.25",
+            opacity: "0.9",
+          },
+        ],
+        
         "/shows": [
           {
             img: "lady-pirates-captain-bree.webp",
@@ -489,7 +498,7 @@ export default {
             path = '/news'
           }
            else if(path.includes('/shows/')) {
-            path = '/shows'
+            path = '/shows-slug'
           }
       console.log("PATH IS", path, typeof(path));
       if (this.headerImages[path]) {

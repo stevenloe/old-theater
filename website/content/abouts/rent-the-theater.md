@@ -1,7 +1,7 @@
 ---
 title: Rent the Theater
 description:  
-shortDesc: Irure eiusmod dolore amet anim non laboris amet.
+shortDesc: 
 folder: /about/
 img: /images/about/old_theater_seats.jpg
 imgAlt: Interior photo of the old theater showing the theater's seats
