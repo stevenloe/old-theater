@@ -23,6 +23,9 @@ img_gallery:
       img: /images/fundraisers/2021/cookoff/819.webp
   - image:
       alt: The Old Theater Chili Cookoff Fundraiser 2021
+      img: /images/fundraisers/2021/cookoff/0.webp
+  - image:
+      alt: The Old Theater Chili Cookoff Fundraiser 2021
       img: /images/fundraisers/2021/cookoff/821.webp
   - image:
       alt: The Old Theater Chili Cookoff Fundraiser 2021
@@ -36,6 +39,9 @@ img_gallery:
   - image:
       alt: The Old Theater Chili Cookoff Fundraiser 2021
       img: /images/fundraisers/2021/cookoff/835.webp
+  - image:
+      alt: The Old Theater Chili Cookoff Fundraiser 2021
+      img: /images/fundraisers/2021/cookoff/1.webp
   - image:
       alt: The Old Theater Chili Cookoff Fundraiser 2021
       img: /images/fundraisers/2021/cookoff/837.webp
@@ -62,10 +68,16 @@ img_gallery:
       img: /images/fundraisers/2021/cookoff/856.webp
   - image:
       alt: The Old Theater Chili Cookoff Fundraiser 2021
+      img: /images/fundraisers/2021/cookoff/2.webp
+  - image:
+      alt: The Old Theater Chili Cookoff Fundraiser 2021
       img: /images/fundraisers/2021/cookoff/860.webp
   - image:
       alt: The Old Theater Chili Cookoff Fundraiser 2021
       img: /images/fundraisers/2021/cookoff/861.webp
+  - image:
+      alt: The Old Theater Chili Cookoff Fundraiser 2021
+      img: /images/fundraisers/2021/cookoff/3.webp
   - image:
       alt: The Old Theater Chili Cookoff Fundraiser 2021
       img: /images/fundraisers/2021/cookoff/863.webp
