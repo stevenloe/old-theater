@@ -28,7 +28,7 @@ Every soul has a motive to kill the deceased, and plenty of broad and silly come
 
 For extra fun, come dressed (optional!) in your Western best!   
 
-Box Office opens one hour before the show ~ Doors open 30 minutes before show begins
+Tickets can be purchased in person at Nautical Wheelers' Oriental and New Bern Locations. Or Online by clicking the "BUY TICKETS NOW" button below. Box Office opens one hour before the show ~ Doors open 30 minutes before show begins
 
 Free Popcorn ~ Beverages by donation. All proceeds go to support the Old Theater and the North Carolina History Theater, both 501(c)(3) non-profit organizations.  
 
