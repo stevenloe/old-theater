@@ -32,7 +32,6 @@ Tickets can be purchased in person at Nautical Wheelers' Oriental and New Bern L
 
 Free Popcorn ~ Beverages by donation. All proceeds go to support the Old Theater and the North Carolina History Theater, both 501(c)(3) non-profit organizations.  
 
-If you would like more information about this show, please call 919-221-5362 or email  oldtheaternews@gmail.com. 
 
 <figure style="max-width:300px;width:100%">
 <a href="https://www.nchistorytheater.org/">
