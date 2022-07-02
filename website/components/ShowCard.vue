@@ -62,14 +62,14 @@
               />
                 </span>
               </div>
-              <div>
-                <span>{{ show.dateText}}</span>
-                {{ show.showTime }}
-              </div>
-              <span>{{ show.price }}</span>
-              <div v-if="show.location">
-                <span>{{ show.location }}</span>
-              </div>
+              <div class="mb-2"><span class="font-bold">Dates: </span>
+              <span>{{ show.dateText }}</span>
+              {{ show.showTime }}
+            </div>
+            <div class="mb-2"><span class="font-bold">Price: </span>{{ show.price }}</div>
+            <div v-if="show.location">
+              <div class="mb-2"><span class="font-bold">Location: </span>{{ show.location }}</div>
+            </div>
             </div>
 
             <div class="hidden my-6 text-xl tracking-wide lg:block lg:mt-6">

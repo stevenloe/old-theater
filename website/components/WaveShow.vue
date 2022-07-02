@@ -21,7 +21,7 @@
             show.title
           }}</UiHeadline>
 
-          <div class="mb-4 md:text-lg lg:text-xl xl:2xl">
+          <div class="mb-4 text-lg sm:text-xl ">
             <div class="flex">
               <span class="flex items-center">
                 <span class="pr-3 font-bold"> Presented by: </span>
@@ -54,13 +54,13 @@
               </span>
             </div>
 
-            <div>
+            <div class="mb-2"><span class="font-bold">Dates: </span>
               <span>{{ show.dateText }}</span>
               {{ show.showTime }}
             </div>
-            <span>{{ show.price }}</span>
+            <div class="mb-2"><span class="font-bold">Price: </span>{{ show.price }}</div>
             <div v-if="show.location">
-              <span>{{ show.location }}</span>
+              <div class="mb-2"><span class="font-bold">Location: </span>{{ show.location }}</div>
             </div>
           </div>
 
