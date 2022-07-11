@@ -1,7 +1,7 @@
 <template>
   <div>
     <DonateWidget backgroundColor="#A5B69D" path="/support/donate" />
-    <ImageWidget backgroundColor="#ffffff" />
+    <!-- <ImageWidget backgroundColor="#ffffff" /> -->
     <ShowList :shows="futureShows" />
 
       <!-- TODO: remove-->
@@ -36,7 +36,7 @@ import WaveWrapperBasic from "@/components/WaveWrapperBasic";
 
 import { sortShows } from "@/utils/sort.js";
 import { sortByDate } from "@/utils/sort.js";
-import ImageWidget from "../components/ImageWidget.vue";
+// import ImageWidget from "../components/ImageWidget.vue";
 
 export default {
   head() {
@@ -111,7 +111,7 @@ export default {
     Amazon,
     DonateWidget,
     WaveWrapperBasic,
-    ImageWidget
+    // ImageWidget
 },
   // TODO:  ^^Remove WaveWrapperBasic 
 };
