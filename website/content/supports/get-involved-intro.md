@@ -1,6 +1,6 @@
 ---
 title: Get Involved
-subhead: Come Join Us. Be Part of the Old Theater!
+subhead: There Is a Role For Everyone At The Old Theater!
 bgcolor: ddffff
 ---
          

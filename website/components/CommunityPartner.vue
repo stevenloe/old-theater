@@ -42,41 +42,7 @@
           class="mx-auto mb-8 prose-sm prose sm:prose lg:prose-lg xl:prose-2xl"
           :document="partner"
         />
-          <!-- <p
-            class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6"
-          >
-            The mission of the Pamlico Musical Society is to present diverse
-            musical experiences that enrich the quality of life in our
-            community. Since 1997, our concert performances and outreach
-            activities have provided opportunities to enjoy and interact with a
-            wide variety of high quality musical groups representing many
-            musical genres.
-          </p>
-          <p
-            class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6"
-          >
-            Our primary performance venue is the Old Theater, where the small
-            hall promotes intimate exchanges between the artists and audiences
-            &mdash; further enhancing the significance of the musical
-            experience. Many of our artists also present an outreach component
-            which extends the impact of our programs to partners including the
-            Pamlico County Public Schools, the Arapahoe Charter School, the
-            Pamlico Christian Academy, HeartWorks, Prime Time, the Holt's Chapel
-            Community Center, and the Pamlico Community College.
-          </p>
-          <p
-            class="mb-4 leading-7 text-gray-900 text-medium lg:leading-9 lg:mb-6"
-          >
-            With a season that runs from September/October through April/May
-            each year, our Grammy-quality programming embraces bluegrass, jazz,
-            classical, folk, rock, Americana, pop, blues and more, offering
-            something special for everyone who loves great music.To learn more
-            visit
-            <a class="underline" href="https://www.pamlicomusic.org"
-              >www.pamlicomusic.org</a
-            >.
-          </p> -->
-       
+  
       </div>
     </div>
   </div>
