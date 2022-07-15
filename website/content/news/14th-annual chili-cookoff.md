@@ -3,7 +3,7 @@ title: Announcing the 14th Annual Chili Cookoff
 date: 2022-07-14T21:07:38.963Z
 subhead: 
 folder: /news/
-bgcolor: ddeeff
+bgcolor: ffaaaa
 ---
 
 <figure>
