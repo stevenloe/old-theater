@@ -12,6 +12,7 @@ The Old Theater is a vibrant and meaningful part of Oriental’s history and fut
 If you have skills with accounting, project management, grant writing, or websites, or a keen willingness to learn, we especially need your help as we begin our new season.  Specifically, we have openings on our Board of Directors for the position of: 
 
 Treasurer  
+Front of House Manager
 
 If any of these sound intriguing to you, we ask you to please let us know by contacting any Board member, writing us at oldtheater@gmail.com, or by contacting me personally at 206-406-1621 for more information. 
 
