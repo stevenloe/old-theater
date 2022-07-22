@@ -10,19 +10,20 @@
 			},
 			{
 				"role": "Vice President",
-				"name": "Teresa Conrads",
-				"img": "/images/board/teresa-conrads.webp"
-			},
-			{
-				"role": "Treasurer",
-				"name": "Shelby Loe",
-				"img": "/images/board/shelby-loe.webp"
+				"name": "Mary Taylor",
+				"img": "/images/board/mary-taylor.webp"
 			},
 			{
 				"role": "Secretary",
 				"name": "Linda Larson",
 				"img": "/images/board/linda-larson.webp"
+			},
+			{
+				"role": "Treasurer",
+				"name": "Heidi Artley",
+				"img": ""
 			}
+
 		],
 		"info": {
 			"title": "Meet Our Board",
@@ -33,24 +34,24 @@
 		"managers": {
 			"team": [
 				{
-				"role": "Creative Director",
+					"role": "Special Events Coordinator",
+					"name": "Teresa Conrads",
+					"img": "/images/board/teresa-conrads.webp"
+				},
+				{
+					"role": "External Events Coordinator",
+					"name": "Lauren Wolfe",
+					"img": ""
+				},
+				{
+				"role": "Production Coordinator",
 				"name": "Patrick Nocera",
 				"img": "/images/board/pat-nocera.webp"
 			},
 				{
-				"role": "Facilities",
+				"role": "Facilities Manager",
 				"name": "Brian Hough",
 				"img": "/images/board/brian-hough.webp"
-			},
-			{
-				"role": "Graphics",
-				"name": "Pat Dixon",
-				"img": "/images/board/pat-dixon.webp"
-			},
-			{
-				"role": "House & Tickets",
-				"name": "Open",
-				"img": ""
 			},
 			{
 				"role": "Membership & Volunteers", 
@@ -58,27 +59,33 @@
 				"img": "/images/board/olga-herman.webp"
 			},
 			{
-				"role": "Publicity",
-				"name": "Mary Taylor",
-				"img": "/images/board/mary-taylor.webp"
-			},
-			{
-				"role": "Sponsorship",
-				"name": "Patrick O’Donnell",
-				"img": "/images/board/patrick-odonnell.webp"
-			},
-			{
-				"role": "Technical Services",
-				"name": "Mike & Kris Baum",
-				"img": "/images/board/kris-baum.webp"
-			},
-			{
-				"role": "Theater Sponsored Events",
-				"name": "Lauren Wolfe",
+				"role": "House & Box Office Manager",
+				"name": "Open",
 				"img": ""
 			},
 			{
-				"role": "Website",
+				"role": "Publicity Manager",
+				"name": "Christine Wager",
+				"img": "/images/board/christine-wager.webp"
+			},
+			{
+				"role": "Technical Services Director",
+				"name": "Scott Johnson",
+				"img": ""
+			},
+			{
+				"role": "Sponsorship Manager",
+				"name": "Patrick Sarge O’Donnell",
+				"img": "/images/board/patrick-odonnell.webp"
+			},
+			{
+				"role": "Graphics Coordinator",
+				"name": "Pat Dixon",
+				"img": "/images/board/pat-dixon.webp"
+			},
+
+			{
+				"role": "Webmaster",
 				"name": "Steven Loe",
 				"img": "/images/board/steven-loe.webp"
 			}
