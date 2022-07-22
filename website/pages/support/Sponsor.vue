@@ -16,7 +16,6 @@ export default {
   async asyncData({ $content, params }) {
     const [membershipDoc, sponsorMovie, sponsorPerformance] = await Promise.all([
       $content("sponsorship/sponsorship", params.slug).fetch(),
-      $content("sponsorship/sponsor-a-movie", params.slug).fetch(),
       $content("sponsorship/sponsor-a-performance", params.slug).fetch()
     
     ]);
