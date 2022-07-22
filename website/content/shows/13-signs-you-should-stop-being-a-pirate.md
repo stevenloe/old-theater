@@ -1,7 +1,6 @@
 ---
 
-title: Blackbeard’s Last Revenge with
-13 Signs You Should Stop Being a Pirate
+title: Blackbeard’s Last Revenge with 13 Signs You Should Stop Being a Pirate
 date: "2022-08-26T23:30:00.2Z"
 dateText:   Friday, August 26 at 7:30 pm
             Saturday, August 27 at 7:30 pm
@@ -14,7 +13,7 @@ location: At The Old Theater
 locationDetail: 
 shortDesc: Shiver me timbers! The Old Theater has recruited a motley crew of local talent to perform a double swashbuckler - Blackbeard’s Last Revenge, written by P.F. Nocera, and 13 Signs You Should Stop Being a Pirate, by A.M. Dittman. Director Nocera portrays a historically accurate snapshot of Blackbeard’s final day and last revenge while the crew faces...
 img: blackbeard-13.webp
-imgAlt: Blackbeard & 13 Signs You Should Stop Being a Pirate poster
+imgAlt: Stop Being a Pirate poster 
 ticketURL: https://www.showclix.com/event/13-signs-you-should-stop-being-a-pirate
 youtubeVideo: 
 folder: /shows/
