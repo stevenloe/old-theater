@@ -38,8 +38,8 @@
               class="flex flex-wrap items-center flex-grow-0 w-2/3 pl-2 justify-left"
             >
               <div class="pl-2">
-                <span class="mr-2 font-bold"> {{ member.role }}:</span>
-                <span>{{ member.name }}</span>
+                <div class="mr-2 font-bold"> {{ member.role }}</div>
+                <div>{{ member.name }}</div>
               </div>
             </div>
           </div>
