@@ -2,10 +2,10 @@
 
 title: Blackbeard’s Last Revenge with 13 Signs You Should Stop Being a Pirate
 date: "2022-08-26T23:30:00.2Z"
-dateText:   Friday, August 26 at 7:30 pm
-            Saturday, August 27 at 7:30 pm
-            Sunday, August 28 at 3:00 pm 
-            Sunday, September 4 at 3:00 pm 
+dateText:   Sunday, Sept 4 at 3:00 pm   
+            Friday, Sept 9 at 7:30 pm   
+            Saturday, Sept 10 at 7:30 pm   
+            Sunday, Sept 11 at 3:00 pm    
 showTime:
 price: $20, $15 for members, military, and students
 presentedby: OTC
