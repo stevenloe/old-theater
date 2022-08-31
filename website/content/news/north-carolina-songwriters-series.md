@@ -14,9 +14,42 @@ The kickoff event of Stories and Songs will be held on **Saturday October 1, 202
 
 Stories and Songs inaugural event will feature three talented NC songwriters performing in the round.  Join Anya Henkle, John Bemis and TerryLynn Melody as they share the stories, inspiration and process behind their songs.  
 
+<figure>
+  <img
+    src="/images/news/john-claude-bemis-songwriter.webp"
+    alt="Songwriter John Bemis"
+    loading="lazy"
+  />
+  <figcaption class="italic">John Bemis
+  </figcaption>
+</figure>
+
 **John Bemis** is a songwriter, singer and multi-instrumentalist who plays American roots music in the band Hooverville.  Originally from Oriental, John now lives in Hillsborough.  As well as being a talented musician he is the author of seven books and was chosen as North Carolina’s Piedmont Laureate for children’s literature. John will also be performing during the Ol’ Front Porch Musical Festival.
 
+
+<figure>
+  <img
+    src="/images/news/anya-hinkle-songwriter.webp"
+    alt="Songwriter Anya Hinkle"
+    loading="lazy"
+  />
+  <figcaption class="italic">Anya Hinkle
+  </figcaption>
+</figure>
+
 **Anya Hinkle’s** music is steeped in the tones of folk and bluegrass learned while growing up in the Appalachian Mountains and seasoned by travels across the world.  Her music incorporates vivid storytelling and vibrant musicianship.  She won the 2019 Merlefest Chris Austin song contest and was runner-up in the International Acoustic Music Awards in 2022.  She has been called a “burgeoning force behind the Appalachian roots revival.” Anya will also be performing during the Ol’ Front Porch Musical Festival.
+
+<figure>
+  <img
+    src="/images/news/terrylynn-melody-songwriter.webp"
+    alt="Songwriter TerryLynn Melody"
+    loading="lazy"
+  />
+  <figcaption class="italic">TerryLynn Melody
+  </figcaption>
+</figure>
+
+
 
 **TerryLynn Melody** started her musical journey performing in churches and theater productions in and around Eastern North Carolina, California and Florida. She has performed live concerts and has a major on-line fan support.  TerryLynn has also produced both  live music events and on-line concert series.  In 2016 she released her debut album “Counting Daydreams”.  The songs on this album have a raw, gritty soulful sound that have the sensibilities of modern American folk music.  
 
