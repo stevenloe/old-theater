@@ -1,7 +1,7 @@
 ---
 
 title: Blackbeard’s Last Revenge with 13 Signs You Should Stop Being a Pirate
-date: "2022-08-26T23:30:00.2Z"
+date: "2022-09-11T23:30:00.2Z"
 dateText:   Sunday, Sept 4 at 3:00 pm   
             Friday, Sept 9 at 7:30 pm   
             Saturday, Sept 10 at 7:30 pm   
