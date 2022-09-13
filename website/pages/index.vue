@@ -1,6 +1,5 @@
 <template>
   <div>
-    <DonateWidget backgroundColor="#A5B69D" path="/support/donate" />
     <!-- <ImageWidget backgroundColor="#ffffff" /> -->
     <ShowList :shows="futureShows" />
 
@@ -19,6 +18,8 @@
         <MemberCarousel bgcolor="723333"/>
       </client-only>
     </div>
+        <DonateWidget backgroundColor="#A5B69D" path="/support/donate" />
+
   </div>
 </template>
 
