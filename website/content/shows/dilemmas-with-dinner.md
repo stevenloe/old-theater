@@ -1,7 +1,7 @@
 ---
 
 title: Dilemas with Dinner
-date: "2022-10-15T23:30:00.2Z"
+date: "2022-11-15T23:30:00.2Z"
 dateText:  Friday November 11 at 7:30 pm,  Saturday November 12 at 7:30 pm,  Friday November 18 at 7:30 pm,  Saturday November 19 at 7:30 pm,  Sunday November 20 at 3:00 pm
 showTime: 
 price: $20, $15 for members, military, and students 
