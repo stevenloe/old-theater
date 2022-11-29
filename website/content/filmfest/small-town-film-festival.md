@@ -21,8 +21,9 @@ bgcolor: 91cff6
 
 ---
 
-<div class="h-2"> </div>
-<p class="p-8 text-lg italic font-black leading-8 bg-yellow-400 md:text-2xl"> Write, shoot, and edit a short 5-7 (maximum with credits) minute film over the weekend and see it PREMIERE on the BIG SCREEN. Win the accolades of all your friends, and watch your film-- an Oriental LEGEND!</p>
+<div class="h-6"> </div>
+<div class="pt-4 pb-4 pl-8 pr-8 text-lg italic font-black leading-8 bg-yellow-400 md:text-2xl">
+<p>Write, shoot, and edit a short 5-7 (maximum with credits) minute film over the weekend.</p>See it on the BIG SCREEN.<p>Win the accolades of all your friends.</p> <p>Become an Oriental LEGEND!</p>  </div>
 
 
 ## Make Your Movie!
