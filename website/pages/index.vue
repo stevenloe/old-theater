@@ -3,8 +3,12 @@
     <!-- <ImageWidget backgroundColor="#ffffff" /> -->
     <ShowList :shows="futureShows" />
 
+    <!-- this is film fest -->
+    <WaveWrapperBasic2  :show="filmfest" bgcolor="723333" />
+
       <!-- TODO: remove-->
       <!-- <WaveWrapperBasic /> -->
+
    
     <NewsWidget :news="news" />
     <Membership :item="membership" :images="homeMemberImages"/>
@@ -33,7 +37,8 @@ import WhoWeAre from "@/components/WhoWeAre";
 import BoardOfDirectors from "@/components/BoardOfDirectors";
 import Amazon from "@/components/Amazon";
 import DonateWidget from "@/components/DonateWidget";
-import WaveWrapperBasic from "@/components/WaveWrapperBasic";
+import WaveWrapperBasic2 from "@/components/WaveWrapperBasic2";
+import WaveShowNoInfo from "@/components/WaveShowNoInfo";
 
 import { sortShows } from "@/utils/sort.js";
 import { sortByDate } from "@/utils/sort.js";
@@ -58,7 +63,7 @@ export default {
   },
 
   async asyncData({ $content, params }) {
-    const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardData, sponsorship, homeSponsorData, membership, amazonSmile, homeMemberImages] = await Promise.all(
+    const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardData, sponsorship, homeSponsorData, membership, amazonSmile, homeMemberImages, filmfest] = await Promise.all(
       [
         $content("shows", params.slug).fetch(),
         $content("news", params.slug).fetch(),
@@ -71,6 +76,7 @@ export default {
         $content("home/home-membership", params.slug).fetch(),
         $content("home/home-amazon-smile", params.slug).fetch(),
         $content("data/members/home-member-photos", params.slug).fetch(),
+        $content("filmfest/small-town-film-festival", params.slug).fetch(),
       
       ]
     );
@@ -97,7 +103,8 @@ export default {
       homeSponsorData,
       membership,
       amazonSmile,
-      homeMemberImages
+      homeMemberImages,
+      filmfest
     };
   },
   layout: "NewLayout",
@@ -111,7 +118,9 @@ export default {
     BoardOfDirectors,
     Amazon,
     DonateWidget,
-    WaveWrapperBasic,
+    WaveWrapperBasic2,
+    WaveShowNoInfo,
+    
     // ImageWidget
 },
   // TODO:  ^^Remove WaveWrapperBasic 

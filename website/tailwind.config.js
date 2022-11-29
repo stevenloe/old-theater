@@ -61,6 +61,8 @@ module.exports = {
       sans:['Comfortaa','sans-serif'],
     },
 
+    
+
       screens: {
         'sm': '640px',
         // => @media (min-width: 640px) { ... }
@@ -85,8 +87,19 @@ module.exports = {
             h1: {
               color: '#111',
               fontWeight: 300
-            }
+            },
+            ol: {
+              'list-style': 'decimal',
+              'margin-left': '1.9rem',
+              'font-weight': 'bold',
+            },
+            ul: {
+              'list-style': 'disc',
+              'margin-left': '1.9rem',
+              'font-weight': 'bold',
+            },
           },
+          
         },
       },
     },
