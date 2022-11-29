@@ -21,10 +21,12 @@ bgcolor: 91cff6
 
 ---
 
-<div class="h-6"> </div>
-<div class="pt-4 pb-4 pl-12 pr-12 text-lg italic font-black leading-8 bg-yellow-400 md:text-2xl">
+<div class="pt-2 pb-2 pl-8 pr-8 bg-yellow-400"> 
 <div class="">
-<p>Write, shoot, and edit a short 5-7 (maximum with credits) minute film over the weekend.</p>See it on the BIG SCREEN.<p>Win the accolades of all your friends.</p> <p>Become an Oriental LEGEND!</p>  </div></div>
+<div class="text-lg italic font-black leading-8 bg-yellow-300 md:text-2xl">
+<p>Write, shoot, and edit a short 5-7 (maximum with credits) minute film over the weekend.</p>See it on the BIG SCREEN.<p>Win the accolades of all your friends.</p> <p>Become an Oriental LEGEND!</p>  
+
+</div></div></div>
 
 
 ## Make Your Movie!
