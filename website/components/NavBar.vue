@@ -378,12 +378,22 @@ export default {
           },
         ],
 
+        "/bonafides-slug": [
+          {
+            img: " ",
+            height: "0.25",
+            opacity: "0.9",
+          },
+          
+        ],
+
          "/shows-slug": [
           {
             img: " ",
             height: "0.25",
             opacity: "0.9",
           },
+          
         ],
         
         "/shows": [
@@ -499,6 +509,9 @@ export default {
           }
            else if(path.includes('/shows/')) {
             path = '/shows-slug'
+          }
+          else if(path.includes('/bonafides/')) {
+            path = '/bonafides-slug'
           }
       console.log("PATH IS", path, typeof(path));
       if (this.headerImages[path]) {

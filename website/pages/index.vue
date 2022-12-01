@@ -6,6 +6,9 @@
     <!-- this is film fest -->
     <WaveWrapperBasic2  :show="filmfest" bgcolor="723333" />
 
+    <!-- This is bonafides -->
+    <ShowList :shows="bonafides" />
+
       <!-- TODO: remove-->
       <!-- <WaveWrapperBasic /> -->
 
@@ -63,7 +66,7 @@ export default {
   },
 
   async asyncData({ $content, params }) {
-    const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardData, sponsorship, homeSponsorData, membership, amazonSmile, homeMemberImages, filmfest] = await Promise.all(
+    const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardData, sponsorship, homeSponsorData, membership, amazonSmile, homeMemberImages, filmfest, bonafides] = await Promise.all(
       [
         $content("shows", params.slug).fetch(),
         $content("news", params.slug).fetch(),
@@ -77,6 +80,7 @@ export default {
         $content("home/home-amazon-smile", params.slug).fetch(),
         $content("data/members/home-member-photos", params.slug).fetch(),
         $content("filmfest/small-town-film-festival", params.slug).fetch(),
+        $content("bonafides", params.slug).fetch(),
       
       ]
     );
@@ -104,7 +108,8 @@ export default {
       membership,
       amazonSmile,
       homeMemberImages,
-      filmfest
+      filmfest, 
+      bonafides,
     };
   },
   layout: "NewLayout",

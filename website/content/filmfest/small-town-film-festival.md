@@ -24,7 +24,7 @@ bgcolor: 91cff6
 <div class="pt-2 pb-2 pl-8 pr-8 bg-yellow-400"> 
 <div class="">
 <div class="text-lg italic font-black leading-8 md:text-2xl">
-<p>Write, shoot, and edit a short 5-7 (maximum with credits) minute film over the weekend.</p>See it on the BIG SCREEN.<p>Win the accolades of all your friends.</p> <p>Become an Oriental LEGEND!</p>  
+<p>Write, shoot, and edit a short 5-7 (maximum with credits) minute film over the weekend.</p>See it on the BIG SCREEN.<p>Win the accolades of all your friends.</p> <p>Become a LOCAL LEGEND!</p>  
 
 </div></div></div>
 
