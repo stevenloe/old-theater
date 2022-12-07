@@ -3,11 +3,13 @@
     <!-- <ImageWidget backgroundColor="#ffffff" /> -->
     <ShowList :shows="futureShows" />
 
+    <!-- This is bonafides -->
+    <ShowList :shows="bonafides" />
+
     <!-- this is film fest -->
     <WaveWrapperBasic2  :show="filmfest" bgcolor="723333" />
 
-    <!-- This is bonafides -->
-    <ShowList :shows="bonafides" />
+
 
       <!-- TODO: remove-->
       <!-- <WaveWrapperBasic /> -->
