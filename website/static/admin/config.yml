@@ -9,8 +9,8 @@ backend:
 media_folder: website/static/images
 public_folder: /images
 
-site_url: https://old-theater.netlify.app
-display_url: https://old-theater.netlify.app
+site_url: https://oldtheater.org
+display_url: https://oldtheater.org
 
 collections:
   - name: 'shows' # Used in routes, e.g., /admin/collections/blog
