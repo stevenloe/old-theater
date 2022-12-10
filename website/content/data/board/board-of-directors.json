@@ -21,7 +21,7 @@
 			{
 				"role": "Treasurer",
 				"name": "Mary Jane Westphal",
-				"img": ""
+				"img": "/images/board/mary-jane-westphal.webp"
 			}
 
 		],
@@ -54,13 +54,18 @@
 				"img": "/images/board/brian-hough.webp"
 			},
 			{
+			"role": "Facilities Manager",
+			"name": "Tim Wall",
+			"img": "/images/board/tim-wall.webp"
+		},
+			{
 				"role": "Membership & Volunteers", 
-				"name": "Olga Herman",
-				"img": "/images/board/olga-herman.webp"
+				"name": "Sheila Gould",
+				"img": "/images/board/sheila-gould.webp"
 			},
 			{
 				"role": "House & Box Office Manager",
-				"name": "Sheila Gould",
+				"name": "Open",
 				"img": ""
 			},
 			{
@@ -71,7 +76,7 @@
 			{
 				"role": "Technical Services Director",
 				"name": "Scott Johnson",
-				"img": ""
+				"img": "/images/board/scott-johnson.webp"
 			},
 			{
 				"role": "Sponsorship Manager",
@@ -80,8 +85,8 @@
 			},
 			{
 				"role": "Graphics Coordinator",
-				"name": "Pat Dixon",
-				"img": "/images/board/pat-dixon.webp"
+				"name": "Open",
+				"img": ""
 			},
 
 			{
