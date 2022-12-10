@@ -2,6 +2,42 @@
   <div>
     <article class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
       <div class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg content-border">
+        <simple-picture
+          class="mb-6"
+          :v-if="post.img"
+          :caption="post.caption"
+          :img="post.img"
+          :alt="post.alt"
+        ></simple-picture>
+        <div
+          class="mb-1 text-sm font-semibold text-gray-700 uppercase md:text-base lg:text-lg"
+        >
+          {{ showDate(post.date) }}
+        </div>
+        <nuxt-link :to="`${post.slug}?page=index`">
+          <UiHeadline level="3" class="mb-4">{{ post.title }}</UiHeadline>
+        </nuxt-link>
+        <nuxt-content
+          :document="post"
+          class="mb-8 prose max-w-none md:prose-lg lg:prose-xl lg:prose-2xl"
+        />
+
+        <div class="grid gap-4 ">
+          <simple-picture
+            v-for="item of post.img_gallery"
+            :key="item.image.img"
+            :alt="item.image.alt"
+            :caption="item.image.caption"
+            :headline="item.image.headline"
+            :img="item.image.img"
+          ></simple-picture>
+        </div>
+      </div>
+    </article>
+
+    
+    <!-- <article class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
+      <div class="p-8 pb-12 mb-8 bg-white rounded-lg shadow-lg content-border">
         <base-picture
           class="mb-6"
           :v-if="post.img"
@@ -33,13 +69,14 @@
           ></gallery-picture>
         </div>
       </div>
-    </article>
+    </article> -->
   </div>
 </template>
 
 
 <script>
 import UiHeadline from "@/components/ui/UiHeadline";
+import SimplePicture from "@/components/SimplePicture";
 import BasePicture from "@/components/BasePicture";
 import GalleryPicture from "@/components/GalleryPicture";
 import { formatShowDate } from "@/utils/dates.js";
@@ -61,6 +98,7 @@ export default {
     UiHeadline,
     BasePicture,
     GalleryPicture,
+    SimplePicture,
   },
 };
 </script>
