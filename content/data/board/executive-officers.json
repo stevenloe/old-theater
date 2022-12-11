@@ -1,0 +1,14 @@
+{
+  "team": [
+    {
+      "name": "Carla Fisher",
+      "role": "President",
+      "img": "/images/board/cat2.jpg"
+    },
+    {
+      "name": "Mary Taylor",
+      "role": "Vice President",
+      "img": "/images/board/cat1.jpg"
+    }
+  ]
+}
