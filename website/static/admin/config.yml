@@ -92,4 +92,36 @@ collections:
               - {label: Image description, name: alt, widget: string}
               - {label: Image Caption, name: caption, widget: string, required: false}
               - {label: Image, name: img, widget: image}
-      
+
+    # Site Section: ABOUT US, Page: Board of Directors
+  - label: "ABOUT US: Board of Directors"
+    name: "board-of-directors"
+    media_folder: '../../static/images/board'
+    public_folder: '/images/board'
+    files:
+      - label: "Executive Officers"
+        name: "executive-officers"
+        file: "content/data/board/executive-officers.json"
+        fields:
+          - label: Executive Officers
+            label_singular: Executive Officer
+            name: team
+            widget: list
+            fields:
+              - {label: Role, name: role, widget: string, required: true}
+              - {label: Name, name: name, widget: string, default: Open}
+              - {label: Photo, name: img, widget: image, hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
+        
+      - label: "Department Managers"
+        name: "department-managers"
+        file: "content/data/board/department-managers.json"
+        fields:
+          - label: Department Managers
+            label_singular: Department Manager
+            name: team
+            widget: list
+            fields:
+              - {label: Role, name: role, widget: string, required: true}
+              - {label: Name, name: name, widget: string, default: Open}
+              - {label: Photo, name: img, widget: image, hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
+                  
