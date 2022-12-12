@@ -13,7 +13,7 @@ site_url: https://oldtheater.org
 display_url: https://oldtheater.org
 
 collections:
-  # Section: home page. Show list on index.
+  # Category: HOME PAGE. Section: Show list.
   - name: 'shows' # Used in routes, e.g., /admin/collections/blog
     label: 'Shows' # Used in the UI
     folder: 'website/content/shows' # The path to the folder where the documents are stored
@@ -38,10 +38,12 @@ collections:
       - {label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
       - {label: 'YouTube Video Id', name: 'youtubeVideo', widget: 'string', required: false  }
       - {label: 'Body', name: 'body', widget: 'markdown'}
+
+  # Category ABOUTS. Pages: Editor Can Create
   - name: 'abouts' # Used in routes, e.g., /admin/collections/blog
     label: 'Abouts' # Used in the UI
     folder: 'website/content/abouts' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
+    create: false # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog'}
       - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/about/'}
@@ -49,6 +51,8 @@ collections:
       - {label: 'Featured Image', name: 'img', widget: 'image', required: false }
       - {label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
       - {label: 'Body', name: 'body', widget: 'markdown'}
+
+  # Category NEWS: Pages: Editor Can Create
   - name: 'news' # Used in routes, e.g., /admin/collections/blog
     label: 'News' # Used in the UI
     folder: 'website/content/news' # The path to the folder where the documents are stored
@@ -62,6 +66,8 @@ collections:
       - { label: 'Featured Image', name: 'img', widget: 'image', required: false }
       - { label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown'}
+
+  # Category:  FUNDRAISERS. Pages: Editor Can Create
   - name: 'fundraisers'
     label: 'Fundraisers'
     media_folder: '/website/static/images/fundraisers/{{year}}'
@@ -94,7 +100,7 @@ collections:
               - {label: Image Caption, name: caption, widget: string, required: false}
               - {label: Image, name: img, widget: image}
 
-    # Site Section: ABOUT US, Page: Board of Directors
+    # Category: ABOUT US, Page: Board of Directors
   - label: "ABOUT US: Board of Directors"
     name: "board-of-directors"
     media_folder: '/website/static/images/board'
@@ -111,7 +117,7 @@ collections:
             fields:
               - {label: Role, name: role, widget: string, required: true}
               - {label: Name, name: name, widget: string, default: Open}
-              - {label: Photo, name: img, widget: image, hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
+              - {label: Photo, name: img, widget: image, required: false, hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
         
       - label: "Department Managers"
         name: "department-managers"
@@ -124,5 +130,5 @@ collections:
             fields:
               - {label: Role, name: role, widget: string, required: true}
               - {label: Name, name: name, widget: string, default: Open}
-              - {label: Photo, name: img, widget: image, hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
+              - {label: Photo, name: img, widget: image, required: false, hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
                   
