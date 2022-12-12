@@ -96,12 +96,12 @@ collections:
     # Site Section: ABOUT US, Page: Board of Directors
   - label: "ABOUT US: Board of Directors"
     name: "board-of-directors"
-    media_folder: '../../static/images/board'
+    media_folder: '../../website/static/images/board'
     public_folder: '/images/board'
     files:
       - label: "Executive Officers"
         name: "executive-officers"
-        file: "content/data/board/executive-officers.json"
+        file: "website/content/data/board/executive-officers.json"
         fields:
           - label: Executive Officers
             label_singular: Executive Officer
@@ -114,7 +114,7 @@ collections:
         
       - label: "Department Managers"
         name: "department-managers"
-        file: "content/data/board/department-managers.json"
+        file: "website/content/data/board/department-managers.json"
         fields:
           - label: Department Managers
             label_singular: Department Manager
