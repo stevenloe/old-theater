@@ -13,6 +13,7 @@ site_url: https://oldtheater.org
 display_url: https://oldtheater.org
 
 collections:
+  # Section: home page. Show list on index.
   - name: 'shows' # Used in routes, e.g., /admin/collections/blog
     label: 'Shows' # Used in the UI
     folder: 'website/content/shows' # The path to the folder where the documents are stored
@@ -96,7 +97,7 @@ collections:
     # Site Section: ABOUT US, Page: Board of Directors
   - label: "ABOUT US: Board of Directors"
     name: "board-of-directors"
-    media_folder: '../../website/static/images/board'
+    media_folder: '/website/static/images/board'
     public_folder: '/images/board'
     files:
       - label: "Executive Officers"
