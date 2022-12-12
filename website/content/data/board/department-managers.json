@@ -6,10 +6,6 @@
       "img": "/images/board/teresa-conrads.webp"
     },
     {
-      "name": "Open",
-      "role": "External Events Coordinator"
-    },
-    {
       "name": "Patrick Nocera",
       "role": "Production Coordinator",
       "img": "/images/board/pat-nocera.webp"
@@ -48,6 +44,11 @@
       "name": "Steven Loe",
       "img": "/images/board/steven-loe.webp",
       "role": "Webmaster"
+    },
+    {
+      "name": "Open",
+      "img": "",
+      "role": "External Events Coordinator"
     }
   ]
 }
