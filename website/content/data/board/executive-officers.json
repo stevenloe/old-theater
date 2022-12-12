@@ -14,6 +14,11 @@
       "name": "Linda Larson",
       "role": "Secretary",
       "img": "/images/board/linda-larson.webp"
+    },
+    {
+      "name": "Mary Jane Westphal",
+      "img": "/images/board/mary-jane-westphal.webp",
+      "role": "Treasurer"
     }
   ]
 }
