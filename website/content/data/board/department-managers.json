@@ -18,6 +18,36 @@
       "name": "Brian Hough",
       "img": "",
       "role": "Facilities Manager"
+    },
+    {
+      "name": "Sheila Gould",
+      "img": "/images/board/sheila-gould.webp",
+      "role": "Membership & Volunteers"
+    },
+    {
+      "name": "Open",
+      "img": "",
+      "role": "House & Box Office Manager"
+    },
+    {
+      "name": "Christine Wager",
+      "img": "/images/board/christine-wager.webp",
+      "role": "Publicity Manager"
+    },
+    {
+      "name": "Scott Johnson",
+      "img": "/images/board/scott-johnson.webp",
+      "role": "Technical Services Director"
+    },
+    {
+      "name": "Open",
+      "img": "",
+      "role": "Graphics Coordinator"
+    },
+    {
+      "name": "Steven Loe",
+      "img": "/images/board/steven-loe.webp",
+      "role": "Webmaster"
     }
   ]
 }
