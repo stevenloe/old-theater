@@ -116,8 +116,8 @@ collections:
             widget: list
             fields:
               - {label: Role, name: role, widget: string, required: true}
-              - {label: Name, name: name, widget: string, default: Open}
-              - {label: Photo, name: img, widget: image, required: false, hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
+              - {label: Name, name: name, widget: string, required: true, default: Open}
+              - {label: Photo, name: img, widget: image, required: false, default: "", hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
         
       - label: "Department Managers"
         name: "department-managers"
@@ -129,6 +129,6 @@ collections:
             widget: list
             fields:
               - {label: Role, name: role, widget: string, required: true}
-              - {label: Name, name: name, widget: string, default: Open}
-              - {label: Photo, name: img, widget: image, required: false, hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
+              - {label: Name, name: name, widget: string, required: true, default: Open}
+              - {label: Photo, name: img, widget: image, required: false, default: "", hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
                   
