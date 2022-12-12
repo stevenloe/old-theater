@@ -1,43 +1,49 @@
 <template>
    <div>
-    <WaveBoardWidget :info="content.board.executives.info" :team="content.board.executives.team"/>
-    <WaveBoardWidget :info="content.board.managers.info" :team="managers"/>
-    
+    <WaveBoardWidget :info="executiveInfo" :team="executives"/>
+    <WaveBoardWidget :info="managerInfo" :team="managers"/>
    </div>
 
 </template>
 
 <script>
 
+
 import WaveBoardWidget from "@/components/WaveBoardWidget";
+import { sortBoardMembers } from "@/utils/sort.js";
 export default {
   async asyncData({ $content, params }) {
-    const content = await $content("data/board/board-of-directors", params.slug).fetch();
+    const [executives, managers] = await Promise.all(
+      [
+        $content("data/board/executive-officers", params.slug).fetch(),
+        $content("data/board/department-managers", params.slug).fetch(),
+      ]
+    );
 
-    //  console.log("BOARD CONTENT", JSON.stringify(content.board.executives.info));
-    return { content };
+   let sortedExecutives = sortBoardMembers(executives.team);
+   let sortedManagers = sortBoardMembers(managers.team);
+
+    return {
+      executives: sortedExecutives,
+      managers: sortedManagers
+    };
   },
-  computed: {
-        managers() {
-      let items = this.content.board.managers.team;
+  data() {
+    return {
+      executiveInfo: {
+			title: "Meet Our Board",
+			subhead: "Executive Officers",
+			bgcolor: "677949"
+		},
+    managerInfo: {
+			title: "",
+			subhead: "Department Managers",
+			bgcolor: "62506D"
+		}
 
-      items.sort((a, b) => {
-        let fa = a.role.toLowerCase(),
-          fb = b.role.toLowerCase();
-
-        if (fa < fb) {
-          return -1;
-        }
-        if (fa > fb) {
-          return 1;
-        }
-        return 0;
-      });
-
-      console.log(" MANAGERS ____________________________", items);
-      return items;
-    },
+    }
   },
+  
   layout: "NewLayout",
   components: {
     WaveBoardWidget

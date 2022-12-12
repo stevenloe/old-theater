@@ -38,5 +38,20 @@ export function sortByDate(news) {
   return news
 }
 
+export function sortBoardMembers(boardList) {
+  boardList.sort((a, b) => {
+    let fa = a.role.toLowerCase(),
+      fb = b.role.toLowerCase();
+      if (fa < fb) {
+        return -1;
+      }
+      if (fa > fb) {
+        return 1;
+      }
+      return 0;
+  });
+
+return boardList
+}
 
 

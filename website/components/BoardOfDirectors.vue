@@ -1,12 +1,6 @@
 <template>
   <div>
-    <!-- <svg class="wave" viewBox="0 0 1442 102" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M1442 102H0V0l.037 63.975C138.699 25.665 276.653 6.51 413.897 6.51c240.77 0 397.382 48.349 605.515 48.349 138.754-.002 279.617-16.117 422.577-48.349L1442 0Z"
-        :fill="`#${leftContent.bgcolor}`"
-      />
-    </svg> -->
-
+    
     <div class="p-12 pb-48 wave-content" :style="bgColor">
       <div>
         <UiHeadline
@@ -28,8 +22,8 @@
             </UiHeadline>
 
             <div
-              v-for="member of content.board.executives.team"
-              :key="member.name"
+              v-for="member, index of executives"
+              :key="index"
               class="flex w-full"
             >
               <div class="pl-2 mb-1 text-base sm:text-lg xl:text-2xl">
@@ -48,8 +42,8 @@
             </UiHeadline>
 
             <div
-              v-for="member of managers"
-              :key="member.name"
+              v-for="member, index of managers"
+              :key="index"
               class="flex w-full"
             >
               <div class="pl-2 mb-1 text-base sm:text-lg xl:text-2xl">
@@ -61,6 +55,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -71,42 +66,40 @@ import UiHeadline from "./ui/UiHeadline.vue";
 
 export default {
   props: {
-    content: {
-      type: Object,
+    executives: {
+      type: Array,
+      required: true,
+    },
+    managers: {
+      type: Array,
       required: true,
     },
   },
   data() {
     return {
       bgcolor: "93A38B",
+      executiveInfo: {
+			title: "Meet Our Board",
+			subhead: "Executive Officers",
+			bgcolor: "677949"
+		},
+    managerInfo: {
+			title: "",
+			subhead: "Department Managers",
+			bgcolor: "62506D"
+		}
     };
   },
   computed: {
     bgColor() {
       return `background-color: #${this.bgcolor}`;
     },
-    managers() {
-      let items = this.content.board.managers.team;
-
-      items.sort((a, b) => {
-        let fa = a.role.toLowerCase(),
-          fb = b.role.toLowerCase();
-
-        if (fa < fb) {
-          return -1;
-        }
-        if (fa > fb) {
-          return 1;
-        }
-        return 0;
-      });
-
-      console.log(" MANAGERS ____________________________", items);
-      return items;
-    },
   },
   mounted: function () {
-    console.log(" M O U NT ____________________________", this.boardData);
+
+
+    console.log( " COMPONENT EXECUTIVES", this.executives);
+
   },
   components: {
     BasePicture,

@@ -24,7 +24,7 @@
         }}</UiHeadline>
 
         <div class="grid gap-8 sm:grid-cols-2 green-300">
-          <div v-for="member of team" :key="member.name" class="flex w-full">
+          <div v-for="member, index of team" :key="index" class="flex w-full">
             <div
               class="flex justify-center w-24 h-24 overflow-hidden rounded-full placeholder"
             >
