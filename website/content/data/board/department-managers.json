@@ -1,0 +1,18 @@
+{
+  "team": [
+    {
+      "name": "Teresa Conrads",
+      "role": "Special Events Coordinator",
+      "img": "/images/board/teresa-conrads.webp"
+    },
+    {
+      "name": "Open",
+      "role": "External Events Coordinator"
+    },
+    {
+      "name": "Patrick Nocera",
+      "role": "Production Coordinator",
+      "img": "/images/board/pat-nocera.webp"
+    }
+  ]
+}
