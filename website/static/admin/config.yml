@@ -14,30 +14,30 @@ display_url: https://oldtheater.org
 
 collections:
   # Category: HOME PAGE. Section: Show list.
-  - name: 'shows' # Used in routes, e.g., /admin/collections/blog
-    label: 'Shows' # Used in the UI
-    folder: 'website/content/shows' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog'}
-      - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Event Date / Time', name: 'date', widget: 'datetime', hint: 'Please select the event Date and Time (At bottom of picker)'}
-      - {label: 'Price', name: 'price', widget: 'string' }
-      - {label: 'Location', name: 'location', widget: 'string' }
-      - {label: 'Location Detail', name: 'locationDetail', widget: 'string', required: false }
-      - {
-          label: 'Show Type',
-          name: 'showtype',
-          widget: 'select',
-          options: [{ label: 'FLICK', value: 'FLICK' }, { label: 'FRIDAY FLICK', value: 'FRIDAY FLICK' },{ label: 'SATURDAY FLICK', value: 'SATURDAY FLICK' }, { label: 'LIVE MUSIC', value: 'LIVE MUSIC' }, { label: 'LIVE THEATER', value: 'LIVE THEATER' }],
-        }
-      - {label: 'Short Description', name: 'shortDesc', widget: 'text' }
-      - {label: 'Ticket Url', name: 'ticketUrl', widget: 'string', required: false  }
-      - {label: 'Featured Image', name: 'img', widget: 'image', choose_url: false,  required: false }
-      - {label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
-      - {label: 'YouTube Video Id', name: 'youtubeVideo', widget: 'string', required: false  }
-      - {label: 'Body', name: 'body', widget: 'markdown'}
+  # - name: 'shows' # Used in routes, e.g., /admin/collections/blog
+  #   label: 'Shows' # Used in the UI
+  #   folder: 'website/content/shows' # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog'}
+  #     - {label: 'Title', name: 'title', widget: 'string'}
+  #     - {label: 'Event Date / Time', name: 'date', widget: 'datetime', hint: 'Please select the event Date and Time (At bottom of picker)'}
+  #     - {label: 'Price', name: 'price', widget: 'string' }
+  #     - {label: 'Location', name: 'location', widget: 'string' }
+  #     - {label: 'Location Detail', name: 'locationDetail', widget: 'string', required: false }
+  #     - {
+  #         label: 'Show Type',
+  #         name: 'showtype',
+  #         widget: 'select',
+  #         options: [{ label: 'FLICK', value: 'FLICK' }, { label: 'FRIDAY FLICK', value: 'FRIDAY FLICK' },{ label: 'SATURDAY FLICK', value: 'SATURDAY FLICK' }, { label: 'LIVE MUSIC', value: 'LIVE MUSIC' }, { label: 'LIVE THEATER', value: 'LIVE THEATER' }],
+  #       }
+  #     - {label: 'Short Description', name: 'shortDesc', widget: 'text' }
+  #     - {label: 'Ticket Url', name: 'ticketUrl', widget: 'string', required: false  }
+  #     - {label: 'Featured Image', name: 'img', widget: 'image', choose_url: false,  required: false }
+  #     - {label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
+  #     - {label: 'YouTube Video Id', name: 'youtubeVideo', widget: 'string', required: false  }
+  #     - {label: 'Body', name: 'body', widget: 'markdown'}
 
   # ABOUT US ########################################################
   # Category ABOUTS. Pages: Editor Can not create or delete
@@ -70,7 +70,7 @@ collections:
 
 
     # Category: ABOUT US, Page: About US: image gallery at bottom of page
-  - label: "About Us Page: Image gallery"
+  - label: "About Us page: Image gallery"
     title: Images for image gallery at bottom of the About Us page
     hint: this is a hint!
     name: "about-us-image-gallery"
@@ -91,7 +91,7 @@ collections:
 
 
     # Category: ABOUT US, Page: About/Board of Directors. Also supplies data for board widget on home page
-  - label: "About Us: Board of Directors Page"
+  - label: "About Us: Board of Directors page"
     name: "board-of-directors"
     media_folder: '/website/static/images/board'
     public_folder: '/images/board'
@@ -123,54 +123,54 @@ collections:
               - {label: Photo, name: img, widget: image, required: false, choose_url: false, default: "", hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
                   
 
-  # Category NEWS: Pages: Editor Can Create
-  - name: 'news' # Used in routes, e.g., /admin/collections/blog
-    label: 'News' # Used in the UI
-    folder: 'website/content/news' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields for each document, usually in front matter
-      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
-      - { label: 'Folder', name: 'folder', widget: 'hidden', default: '/news/' }
-      - { label: 'Title', name: 'title', widget: 'string'}
-      - { label: 'News Item Date', name: 'date', widget: 'datetime', hint: 'Please select the Date of this news item' }
-      - { label: 'Summary', name: 'subhead', widget: 'string', required: true, hint: 'Please enter a short summary of this event' }
-      - { label: 'Featured Image', name: 'img', widget: 'image', choose_url: false, required: false }
-      - { label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
-      - { label: 'Body', name: 'body', widget: 'markdown'}
+  # # Category NEWS: Pages: Editor Can Create
+  # - name: 'news' # Used in routes, e.g., /admin/collections/blog
+  #   label: 'News' # Used in the UI
+  #   folder: 'website/content/news' # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   fields: # The fields for each document, usually in front matter
+  #     - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+  #     - { label: 'Folder', name: 'folder', widget: 'hidden', default: '/news/' }
+  #     - { label: 'Title', name: 'title', widget: 'string'}
+  #     - { label: 'News Item Date', name: 'date', widget: 'datetime', hint: 'Please select the Date of this news item' }
+  #     - { label: 'Summary', name: 'subhead', widget: 'string', required: true, hint: 'Please enter a short summary of this event' }
+  #     - { label: 'Featured Image', name: 'img', widget: 'image', choose_url: false, required: false }
+  #     - { label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
+  #     - { label: 'Body', name: 'body', widget: 'markdown'}
 
       
 
   # Category:  FUNDRAISERS. Pages: Editor Can Create
-  - name: 'fundraisers'
-    label: 'Fundraisers'
-    media_folder: '/website/static/images/fundraisers/{{year}}'
-    public_folder: '/images/fundraisers/{{year}}'
-    folder: '/website/content/fundraisers'
-    create: true
-    format: 'frontmatter'
-    slug: '{{slug}}'
-    # editor:
-    #   preview: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Event Date', name: 'date', widget: 'datetime', hint: 'Please select the event Date'}
-      - { label: 'Summary', name: 'summary', widget: 'string', required: false }
-      - { label: 'Cover Image', name: 'img', widget: 'image', choose_url: false, required: false, allow_multiple: false }
-      - { label: 'Cover Image Alt Text', name: 'alt', widget: 'string', required: false }
-      - { label: 'Cover Image Caption', name: 'caption', widget: 'string', required: false }
-      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
-      - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/support/fundraisers/'}
-      - label: "Image Gallery"
-        name: "img_gallery"
-        widget: "list"
-        fields:
-          - label: Image
-            name: image
-            widget: object
-            fields:
-              - {label: Image Headline, name: headline, widget: string, required: false }
-              - {label: Image description, name: alt, widget: string}
-              - {label: Image Caption, name: caption, widget: string, required: false}
-              - {label: Image, name: img, widget: image , choose_url: false}
+  # - name: 'fundraisers'
+  #   label: 'Fundraisers'
+  #   media_folder: '/website/static/images/fundraisers/{{year}}'
+  #   public_folder: '/images/fundraisers/{{year}}'
+  #   folder: '/website/content/fundraisers'
+  #   create: true
+  #   format: 'frontmatter'
+  #   slug: '{{slug}}'
+  #   # editor:
+  #   #   preview: true
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string', required: true }
+  #     - { label: 'Event Date', name: 'date', widget: 'datetime', hint: 'Please select the event Date'}
+  #     - { label: 'Summary', name: 'summary', widget: 'string', required: false }
+  #     - { label: 'Cover Image', name: 'img', widget: 'image', choose_url: false, required: false, allow_multiple: false }
+  #     - { label: 'Cover Image Alt Text', name: 'alt', widget: 'string', required: false }
+  #     - { label: 'Cover Image Caption', name: 'caption', widget: 'string', required: false }
+  #     - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+  #     - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/support/fundraisers/'}
+  #     - label: "Image Gallery"
+  #       name: "img_gallery"
+  #       widget: "list"
+  #       fields:
+  #         - label: Image
+  #           name: image
+  #           widget: object
+  #           fields:
+  #             - {label: Image Headline, name: headline, widget: string, required: false }
+  #             - {label: Image description, name: alt, widget: string}
+  #             - {label: Image Caption, name: caption, widget: string, required: false}
+  #             - {label: Image, name: img, widget: image , choose_url: false}
 
 
