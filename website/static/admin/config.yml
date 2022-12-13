@@ -34,7 +34,7 @@ collections:
         }
       - {label: 'Short Description', name: 'shortDesc', widget: 'text' }
       - {label: 'Ticket Url', name: 'ticketUrl', widget: 'string', required: false  }
-      - {label: 'Featured Image', name: 'img', widget: 'image', required: false }
+      - {label: 'Featured Image', name: 'img', widget: 'image', choose_url: false,  required: false }
       - {label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
       - {label: 'YouTube Video Id', name: 'youtubeVideo', widget: 'string', required: false  }
       - {label: 'Body', name: 'body', widget: 'markdown'}
@@ -51,7 +51,7 @@ collections:
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog'}
       - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/about/'}
       - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Featured Image', name: 'img', widget: 'image', required: false }
+      - {label: 'Featured Image', name: 'img', widget: 'image', choose_url: false, required: false }
       - {label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
       - {label: 'Body', name: 'body', widget: 'markdown'}
       - label: "PDF Upload"
@@ -75,7 +75,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string'}
       - { label: 'News Item Date', name: 'date', widget: 'datetime', hint: 'Please select the Date of this news item' }
       - { label: 'Summary', name: 'subhead', widget: 'string', required: true, hint: 'Please enter a short summary of this event' }
-      - { label: 'Featured Image', name: 'img', widget: 'image', required: false }
+      - { label: 'Featured Image', name: 'img', widget: 'image', choose_url: false, required: false }
       - { label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown'}
 
@@ -96,7 +96,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
       - { label: 'Event Date', name: 'date', widget: 'datetime', hint: 'Please select the event Date'}
       - { label: 'Summary', name: 'summary', widget: 'string', required: false }
-      - { label: 'Cover Image', name: 'img', widget: 'image', required: false, allow_multiple: false }
+      - { label: 'Cover Image', name: 'img', widget: 'image', choose_url: false, required: false, allow_multiple: false }
       - { label: 'Cover Image Alt Text', name: 'alt', widget: 'string', required: false }
       - { label: 'Cover Image Caption', name: 'caption', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
@@ -112,7 +112,7 @@ collections:
               - {label: Image Headline, name: headline, widget: string, required: false }
               - {label: Image description, name: alt, widget: string}
               - {label: Image Caption, name: caption, widget: string, required: false}
-              - {label: Image, name: img, widget: image}
+              - {label: Image, name: img, widget: image , choose_url: false}
 
     # Category: ABOUT US, Page: Board of Directors
   - label: "ABOUT US: Board of Directors"
