@@ -39,11 +39,14 @@ collections:
       - {label: 'YouTube Video Id', name: 'youtubeVideo', widget: 'string', required: false  }
       - {label: 'Body', name: 'body', widget: 'markdown'}
 
-  # Category ABOUTS. Pages: Editor Can Create
+  # Category ABOUTS. Pages: Editor Can not create or delete
   - name: 'abouts' # Used in routes, e.g., /admin/collections/blog
     label: 'Abouts' # Used in the UI
     folder: 'website/content/abouts' # The path to the folder where the documents are stored
+    media_folder: '/website/static/images/about'
+    public_folder: '/images/about'
     create: false # Allow users to create new documents in this collection
+    delete: false # prevent users from deleting files in this collection
     fields: # The fields for each document, usually in front matter
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog'}
       - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/about/'}
