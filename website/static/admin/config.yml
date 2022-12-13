@@ -39,7 +39,7 @@ collections:
       - {label: 'YouTube Video Id', name: 'youtubeVideo', widget: 'string', required: false  }
       - {label: 'Body', name: 'body', widget: 'markdown'}
 
-  # ABOUT US 
+  # ABOUT US ########################################################
   # Category ABOUTS. Pages: Editor Can not create or delete
   - name: 'abouts' # Used in routes, e.g., /admin/collections/blog
     label: 'Abouts' # Used in the UI
@@ -69,7 +69,7 @@ collections:
     # Category: ABOUT US, Page: About US: image gallery at bottom of page
   - label: "About Us Page: Image gallery"
     hint: Images for image gallery at bottom of the About Us page
-    name: "board-of-directors"
+    name: "about-us-image-gallery"
     media_folder: '/website/static/images/about'
     public_folder: '/images/about'
     files:
@@ -86,7 +86,7 @@ collections:
               - {label: Photo, name: img, widget: image, required: false, choose_url:false, default: "", hint: "NOTE: All photos in this gallery must be of exactly the same dimensions. Otherwise the photos will not display in tidy rows. Gallery was built with images at 910 x 683"}
 
 
-    # Category: ABOUT US, Page: Board of Directors
+    # Category: ABOUT US, Page: About/Board of Directors. Also supplies data for board widget on home page
   - label: "About Us: Board of Directors"
     name: "board-of-directors"
     media_folder: '/website/static/images/board'
