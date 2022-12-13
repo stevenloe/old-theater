@@ -42,7 +42,7 @@ collections:
   # ABOUT US ########################################################
   # Category ABOUTS. Pages: Editor Can not create or delete
   - name: 'abouts' # Used in routes, e.g., /admin/collections/blog
-    label: 'Abouts' # Used in the UI
+    label: 'About Us' # Used in the UI
     folder: 'website/content/abouts' # The path to the folder where the documents are stored
     media_folder: '/website/static/images/about'
     public_folder: '/images/about'
@@ -91,7 +91,7 @@ collections:
 
 
     # Category: ABOUT US, Page: About/Board of Directors. Also supplies data for board widget on home page
-  - label: "About Us: Board of Directors"
+  - label: "About Us: Board of Directors Page"
     name: "board-of-directors"
     media_folder: '/website/static/images/board'
     public_folder: '/images/board'
