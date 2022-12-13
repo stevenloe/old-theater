@@ -52,11 +52,8 @@ collections:
       - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog'}
       - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/about/'}
       - {label: 'Title', name: 'title', widget: 'string'}
-      - {label: 'Featured Image', name: 'img', widget: 'image', choose_url: false, required: false }
-      - {label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
       - {label: 'Body', name: 'body', widget: 'markdown'}
       - {label: Body Image, name: body-image, widget: image, required: false, choose_url: false, default: "", hint: Upload an image that you want to display in this page (optional)}
-      
       - label: "PDF Upload"
         name: "manual_pdf"
         widget: "file"
