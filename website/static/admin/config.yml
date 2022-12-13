@@ -60,6 +60,7 @@ collections:
       - label: "PDF Upload"
         name: "manual_pdf"
         widget: "file"
+        required: false
         media_folder: '/website/static/pdf'
         choose_url: false
         hint: Upload a .PDF file that you want to link to in this page (optional)
