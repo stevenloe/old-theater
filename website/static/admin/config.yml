@@ -54,6 +54,15 @@ collections:
       - {label: 'Featured Image', name: 'img', widget: 'image', required: false }
       - {label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
       - {label: 'Body', name: 'body', widget: 'markdown'}
+      - label: "PDF Upload"
+        name: "manual_pdf"
+        widget: "file"
+        media_folder: '/website/static/pdf'
+        choose_url: false
+        hint: Upload a .PDF file that you want to link to in this page (optional)
+        media_library:
+          config:
+            multiple: true
 
   # Category NEWS: Pages: Editor Can Create
   - name: 'news' # Used in routes, e.g., /admin/collections/blog
@@ -69,6 +78,8 @@ collections:
       - { label: 'Featured Image', name: 'img', widget: 'image', required: false }
       - { label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown'}
+
+      
 
   # Category:  FUNDRAISERS. Pages: Editor Can Create
   - name: 'fundraisers'
@@ -120,7 +131,7 @@ collections:
             fields:
               - {label: Role, name: role, widget: string, required: true}
               - {label: Name, name: name, widget: string, required: true, default: Open}
-              - {label: Photo, name: img, widget: image, required: false, default: "", hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
+              - {label: Photo, name: img, widget: image, required: false, choose_url:false, default: "", hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
         
       - label: "Department Managers"
         name: "department-managers"
@@ -133,5 +144,5 @@ collections:
             fields:
               - {label: Role, name: role, widget: string, required: true}
               - {label: Name, name: name, widget: string, required: true, default: Open}
-              - {label: Photo, name: img, widget: image, required: false, default: "", hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
+              - {label: Photo, name: img, widget: image, required: false, choose_url:false, default: "", hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
                   
