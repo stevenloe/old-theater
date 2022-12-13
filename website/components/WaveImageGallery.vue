@@ -3,7 +3,7 @@
     <svg class="wave" viewBox="0 0 1442 102" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M1442 102H0V0l.037 63.975C138.699 25.665 276.653 6.51 413.897 6.51c240.77 0 397.382 48.349 605.515 48.349 138.754-.002 279.617-16.117 422.577-48.349L1442 0Z"
-        :fill="`#${info.bgcolor}`"
+        :fill="`#${bgcolor}`"
       />
     </svg>
 
@@ -27,10 +27,12 @@ export default {
       type: Object,
       required: true,
     },
+    bgcolor: String,
+    required: true
   },
   computed: {
     bgColor() {
-      return `background-color: #${this.info.bgcolor}`;
+      return `background-color: #${this.bgcolor}`;
     },
   },
   components: {

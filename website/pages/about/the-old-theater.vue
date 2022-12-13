@@ -1,7 +1,7 @@
 <template>
    <div>
      <WaveText :info="content" />
-     <WaveImageGallery :info="imageData" />
+     <WaveImageGallery :info="imageData" bgcolor="9492aa" />
    </div>
    
 </template>
