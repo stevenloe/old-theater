@@ -75,10 +75,10 @@ collections:
     files:
       - label: "About Us page: Image gallery at bottom of page"
         name: "photos"
-        file: "website/content/data/about/theater-photos2.json"
+        file: "website/content/data/about/theater-photos.json"
         fields:
           - label: About Us page - Image gallery at bottom of page
-            label_singular: gallery
+            label_singular: Image
             name: photos
             widget: list
             fields:

@@ -1,0 +1,25 @@
+{
+	"photos": [
+		{
+			"img": "/images/about/galleryabout/christmas2.webp",
+			"url": "https://www.orientalvillageveterinaryhospital.com1/",
+			"alt": "The Old Theater1"
+		},
+		{
+			"img": "/images/about/galleryabout/yellow-curtain.webp",
+			"url": "https://www.orientalvillageveterinaryhospital.com2/",
+			"alt": "The Old Theater2"
+		},
+		{
+			"img": "/images/about/galleryabout/show-in-progress.webp",
+			"url": "https://www.orientalvillageveterinaryhospital.com4/",
+			"alt": "The Old Theater3"
+		},
+		{
+			"img": "/images/about/galleryabout/little-mermaid.webp",
+			"url": "https://www.orientalvillageveterinaryhospital.com/",
+			"alt": "The Old Theater4"
+		}
+	],
+	"bgcolor": "9492aa"
+}
