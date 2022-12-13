@@ -11,7 +11,7 @@
       class="grid grid-cols-1 gap-8 pt-12 pb-48 pl-8 pr-8 md:grid-cols-2 md:pl-12 md:pr-12 wave-content"
       :style="bgColor"
     >
-  <img v-for="photo of info.photos" :key="photo.alt" :src="photo.img" alt="">
+  <img v-for="photo of info.photos" :key="photo.alt" :src="photo.img" :alt="photo.alt">
     </div>
   </div>
 </template>
