@@ -53,14 +53,20 @@ collections:
       - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/about/'}
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Body', name: 'body', widget: 'markdown'}
-      - {label: Body Image, name: body-image, widget: image, required: false, choose_url: false, default: "", hint: Upload an image that you want to display in this page (optional)}
+      - label: Body Image 
+        name: body-image
+        widget: image
+        required: false
+        choose_url: false
+        default: ""
+        hint: "Upload an image that you want to display in this page (optional). There are two ways to display an image on the page after you have uploaded it. 1) Select 'Rich Text' in the toolbar above. In the toolbar, click the '+' and choose 'image'. In the Image widget, select the image wish to display.  2) Select 'Markdown' in the toolbar above. Add this code to page: ![image description](/images/about/my-image-file.jpg). Replace the text 'my-image-file.jpg' with the name of the image you wish to display." 
       - label: "PDF Upload"
         name: "manual_pdf"
         widget: "file"
         required: false
         media_folder: '/website/static/pdf'
         choose_url: false
-        hint: Upload a .PDF file that you want to link to in this page (optional)
+        hint: "Upload a .pdf file that you want to link to in this page (optional). To display a link to your pdf file, Select 'Markdown' in the toolbar above. Add this code to page: [Link text to display](../pdf/my-file.pdf. Replace the text 'my-file.pdf' with the name of the pdf you wish to link to." 
         media_library:
           config:
             multiple: true
