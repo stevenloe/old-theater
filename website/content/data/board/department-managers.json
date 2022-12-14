@@ -49,6 +49,11 @@
       "name": "Open",
       "img": "",
       "role": "External Events Coordinator"
+    },
+    {
+      "name": "Tim Wall",
+      "img": "/images/board/tim-wall.webp",
+      "role": "Facilities Manager"
     }
   ]
 }
