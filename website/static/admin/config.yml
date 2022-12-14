@@ -59,7 +59,7 @@ collections:
         required: false
         choose_url: false
         default: ""
-        hint: "Upload an image that you want to display in this page (optional). There are two ways to display an image on the page after you have uploaded it. **FIRST WAY: Use the Rich Text Editor.** Select 'Rich Text' in the toolbar above. In the toolbar, click the '+' and choose 'image'. In the Image widget, select the image wish to display.  **SECOND WAY: Add Markdown Code to the Page.** Select 'Markdown' in the toolbar above. Add this code to page: `![image description](/images/about/my-image-file.jpg)`. Replace the text 'my-image-file.jpg' with the name of the image you wish to display." 
+        hint: "Upload an image that you want to display in this page (optional). There are two ways to display an image on the page after you have uploaded it. **FIRST WAY- Use the Rich Text Editor:** Select 'Rich Text' in the toolbar above. In the toolbar, click the '+' and choose 'image'. In the Image widget, select the image wish to display.  **SECOND WAY- Add Markdown Code to the Page:** Select 'Markdown' in the toolbar above. Add this code to page: `![image description](/images/about/my-image-file.jpg)`. Replace the text 'my-image-file.jpg' with the name of the image you wish to display." 
       - label: "PDF Upload"
         name: "manual_pdf"
         widget: "file"
@@ -91,7 +91,7 @@ collections:
             widget: list
             fields:
               - {label: Image description, name: alt, widget: string, required: true, hint: description of image}
-              - {label: Photo, name: img, widget: image, required: true, choose_url: false, default: "", hint: "NOTE: All photos in this gallery must be of exactly the same dimensions. Otherwise the photos will not display in tidy rows. Gallery was built with images at 910 x 683"}
+              - {label: Photo, name: img, widget: image, required: true, choose_url: false, default: "", hint: "NOTE: All photos in this gallery must be of exactly the same dimensions. Otherwise the photos will not display in tidy rows. Gallery was built with images at 1000 x 750"}
 
 
     # Category: ABOUT US, Page: About/Board of Directors. Also supplies data for board widget on home page
