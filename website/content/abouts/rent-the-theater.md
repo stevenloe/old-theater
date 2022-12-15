@@ -13,7 +13,7 @@ bgcolor: c8ecf7
 
 
 
-## Have your show, event or meeting at The Old Theater.
+## Have your show, event or meeting at The Old Theater
 
 You can rent the Old Theater for your business, community or entertainment event. We have a graduated schedule of rates depending on time, date and purpose, and provide support for your technical needs.
 
