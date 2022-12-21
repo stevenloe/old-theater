@@ -21,6 +21,16 @@
           info.subhead
         }}</UiHeadline>
 
+         
+          <simple-picture
+          class="mb-6"
+          :v-if="info.img"
+          :caption="info.caption"
+          :img="info.img"
+          :alt="info.alt"
+        ></simple-picture>
+      
+
         <nuxt-content
           class="mx-auto mb-8 prose prose-lg xl:prose-2xl"
           :document="info"
@@ -33,7 +43,7 @@
 </template>
 
 <script>
-import BasePicture from "./BasePicture.vue";
+import SimplePicture from "./SimplePicture.vue";
 import UiHeadline from "./ui/UiHeadline.vue";
 import ButtonLink from "./ui/ButtonLink.vue";
 
@@ -50,7 +60,7 @@ export default {
     },
   },
   components: {
-    BasePicture,
+    SimplePicture,
     UiHeadline,
     ButtonLink
 },
