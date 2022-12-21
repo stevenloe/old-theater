@@ -142,7 +142,7 @@ collections:
       - label: "Background Color"
         name: "bgcolor"
         widget: "select"
-        hint: background color of this section
+        hint: "Background color of this section"
         options:
         - { label: "Blue Bright", value: "91CFF6" }
         - { label: "Blue Bright Light", value: "A7EEF8" }
@@ -165,7 +165,7 @@ collections:
         - { label: "Yellow Bright", value: "F6DF5E" }
         - { label: "Yellow Soft ", value: "F3F6AC" }
         - { label: "Yellow Orange", value: "ffd246" }
-        - { label: 'Image', name: 'img', widget: 'image', allow_multiple: true, choose_url: false, required: false }
+        - { label: 'Image', name: 'img', widget: 'image', choose_url: false, required: false }
         - { label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown'}
 
