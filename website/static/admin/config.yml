@@ -133,6 +133,7 @@ collections:
     folder: 'website/content/news' # The path to the folder where the documents are stored
     media_folder: '/website/static/images/news'
     public_folder: '/images/news'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
       - { label: 'Folder', name: 'folder', widget: 'hidden', default: '/news/' }
@@ -143,67 +144,68 @@ collections:
         name: "bgcolor"
         widget: "select"
         hint: "Background color of this section"
-        default: "Blue Pale"
+        required: true
         options:
-        - { label: "Blue Bright", value: "91CFF6" }
-        - { label: "Blue Bright Light", value: "A7EEF8" }
-        - { label: "Blue Dark", value: "6A82A3" }
-        - { label: "Blue Pale", value: "D1D5F0" }
-        - { label: "Blue Gray ", value: "DDFFFE" }
-        - { label: "Blue Sky", value: "BADEFF" }
+        - { label: "Blue: Bright", value: "91CFF6" }
+        - { label: "Blue: Bright-Light", value: "A7EEF8" }
+        - { label: "Blue: Dark", value: "6A82A3" }
+        - { label: "Blue: Pale", value: "D1D5F0" }
+        - { label: "Blue: Gray ", value: "DDFFFE" }
+        - { label: "Blue: Sky", value: "BADEFF" }
         - { label: "Buff", value: "F9E4CF" }
-        - { label: "Gray Bright", value: "B4C0BA" }
-        - { label: "Gray Neutral Light", value: "EEEEEE" }
-        - { label: "Gray", value: "A7A39A" }
+        - { label: "Gray: Bright", value: "B4C0BA" }
+        - { label: "Gray: Neutral Light", value: "EEEEEE" }
+        - { label: "Gray:", value: "A7A39A" }
         - { label: "Green Gray", value: "B4C0BA" }
         - { label: "Green", value: "A3C693" }
         - { label: "Green Lime", value: "88FF8B" }
-        - { label: "Orange", value: "F8B566" }
-        - { label: "Orange Dark", value: "f59653" }
-        - { label: "Orange Salmon", value: "ffA39A" }
+        - { label: "Orange:", value: "F8B566" }
+        - { label: "Orange: Dark", value: "f59653" }
+        - { label: "Orange: Salmon", value: "ffA39A" }
         - { label: "Pink", value: "FFAAAA" }
         - { label: "Purple", value: "998EB3" }
         - { label: "Tan", value: "B7934B" }
-        - { label: "Yellow Bright", value: "F6DF5E" }
-        - { label: "Yellow Soft ", value: "F3F6AC" }
-        - { label: "Yellow Orange", value: "ffd246" }
-      - { label: 'Image', name: 'img', widget: 'image', choose_url: false, required: false }
+        - { label: "Yellow: Bright", value: "F6DF5E" }
+        - { label: "Yellow: Soft ", value: "F3F6AC" }
+        - { label: "Yellow: Orange", value: "ffd246" }
+      - { label: 'Featured Image', name: 'img', widget: 'image', choose_url: false, required: false }
       - { label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
+      - { label: 'Image Caption', name: 'caption', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown'}
 
       
 
   # Category:  FUNDRAISERS. Pages: Editor Can Create
-  # - name: 'fundraisers'
-  #   label: 'Fundraisers'
-  #   media_folder: '/website/static/images/fundraisers/{{year}}'
-  #   public_folder: '/images/fundraisers/{{year}}'
-  #   folder: '/website/content/fundraisers'
-  #   create: true
-  #   format: 'frontmatter'
-  #   slug: '{{slug}}'
-  #   # editor:
-  #   #   preview: true
-  #   fields:
-  #     - { label: 'Title', name: 'title', widget: 'string', required: true }
-  #     - { label: 'Event Date', name: 'date', widget: 'datetime', hint: 'Please select the event Date'}
-  #     - { label: 'Summary', name: 'summary', widget: 'string', required: false }
-  #     - { label: 'Cover Image', name: 'img', widget: 'image', choose_url: false, required: false, allow_multiple: false }
-  #     - { label: 'Cover Image Alt Text', name: 'alt', widget: 'string', required: false }
-  #     - { label: 'Cover Image Caption', name: 'caption', widget: 'string', required: false }
-  #     - { label: 'Body', name: 'body', widget: 'markdown', required: false }
-  #     - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/support/fundraisers/'}
-  #     - label: "Image Gallery"
-  #       name: "img_gallery"
-  #       widget: "list"
-  #       fields:
-  #         - label: Image
-  #           name: image
-  #           widget: object
-  #           fields:
-  #             - {label: Image Headline, name: headline, widget: string, required: false }
-  #             - {label: Image description, name: alt, widget: string}
-  #             - {label: Image Caption, name: caption, widget: string, required: false}
-  #             - {label: Image, name: img, widget: image , choose_url: false}
+  - name: 'fundraisers'
+    label: 'Fundraisers'
+    media_folder: '/website/static/images/fundraisers/{{year}}'
+    public_folder: '/images/fundraisers/{{year}}'
+    folder: '/website/content/fundraisers'
+    create: true
+    format: 'frontmatter'
+    slug: '{{slug}}'
+    # editor:
+    #   preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Event Date', name: 'date', widget: 'datetime', hint: 'Please select the event Date'}
+      - { label: 'Summary', name: 'summary', widget: 'string', required: false }
+      - { label: 'Cover Image', name: 'img', widget: 'image', choose_url: false, required: false, allow_multiple: false }
+      - { label: 'Cover Image Alt Text', name: 'alt', widget: 'string', required: false }
+      - { label: 'Cover Image Caption', name: 'caption', widget: 'string', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+      - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/support/fundraisers/'}
+      - label: "Image Gallery"
+        name: "img_gallery"
+        widget: "list"
+        fields:
+          - label: Image
+            name: image
+            widget: object
+            fields:
+              - {label: Image Headline, name: headline, widget: string, required: false }
+              - {label: Image description, name: alt, widget: string}
+              - {label: Image Caption, name: caption, widget: string, required: false}
+              - {label: Image, name: img, widget: image , choose_url: false}
 
 
