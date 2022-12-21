@@ -138,11 +138,12 @@ collections:
       - { label: 'Folder', name: 'folder', widget: 'hidden', default: '/news/' }
       - { label: 'Title', name: 'title', widget: 'string'}
       - { label: 'News Item Date', name: 'date', widget: 'datetime', hint: 'Please select the Date of this news item' }
-      - { label: 'Summary', name: 'subhead', widget: 'string', required: true, hint: 'Please enter a short summary of this event' }
+      - { label: 'Summary', name: 'shortDesc', widget: 'string', required: true, hint: 'Please enter a short summary of this event' }
       - label: "Background Color"
         name: "bgcolor"
         widget: "select"
         hint: "Background color of this section"
+        default: "Blue Pale"
         options:
         - { label: "Blue Bright", value: "91CFF6" }
         - { label: "Blue Bright Light", value: "A7EEF8" }
@@ -157,10 +158,11 @@ collections:
         - { label: "Green Gray", value: "B4C0BA" }
         - { label: "Green", value: "A3C693" }
         - { label: "Green Lime", value: "88FF8B" }
-        - { label: "Purple", value: "998EB3" }
         - { label: "Orange", value: "F8B566" }
         - { label: "Orange Dark", value: "f59653" }
         - { label: "Orange Salmon", value: "ffA39A" }
+        - { label: "Pink", value: "FFAAAA" }
+        - { label: "Purple", value: "998EB3" }
         - { label: "Tan", value: "B7934B" }
         - { label: "Yellow Bright", value: "F6DF5E" }
         - { label: "Yellow Soft ", value: "F3F6AC" }
