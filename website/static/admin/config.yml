@@ -203,9 +203,10 @@ collections:
             name: image
             widget: object
             fields:
+              - {label: Image, name: img, widget: image , choose_url: false}
               - {label: Image Headline, name: headline, widget: string, required: false }
               - {label: Image description, name: alt, widget: string}
               - {label: Image Caption, name: caption, widget: string, required: false}
-              - {label: Image, name: img, widget: image , choose_url: false}
+              
 
 
