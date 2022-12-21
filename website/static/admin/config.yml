@@ -131,17 +131,42 @@ collections:
   - name: 'news' # Used in routes, e.g., /admin/collections/blog
     label: 'News' # Used in the UI
     folder: 'website/content/news' # The path to the folder where the documents are stored
-    media_folder: '/website/static/images/board'
-    public_folder: '/images/board'
+    media_folder: '/website/static/images/news'
+    public_folder: '/images/news'
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
-      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
       - { label: 'Folder', name: 'folder', widget: 'hidden', default: '/news/' }
       - { label: 'Title', name: 'title', widget: 'string'}
       - { label: 'News Item Date', name: 'date', widget: 'datetime', hint: 'Please select the Date of this news item' }
       - { label: 'Summary', name: 'subhead', widget: 'string', required: true, hint: 'Please enter a short summary of this event' }
-      - { label: 'Image', name: 'img', widget: 'image', allow_multiple: true, choose_url: false, required: false }
-      - { label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
+      - label: "Background Color"
+        name: "bgcolor"
+        widget: "select"
+        hint: background color of this section
+        options:
+        - { label: "Blue Bright", value: "91CFF6" }
+        - { label: "Blue Bright Light", value: "A7EEF8" }
+        - { label: "Blue Dark", value: "6A82A3" }
+        - { label: "Blue Pale", value: "D1D5F0" }
+        - { label: "Blue Gray ", value: "DDFFFE" }
+        - { label: "Blue Sky", value: "BADEFF" }
+        - { label: "Buff", value: "F9E4CF" }
+        - { label: "Gray Bright", value: "B4C0BA" }
+        - { label: "Gray Neutral Light", value: "EEEEEE" }
+        - { label: "Gray", value: "A7A39A" }
+        - { label: "Green Gray", value: "B4C0BA" }
+        - { label: "Green", value: "A3C693" }
+        - { label: "Green Lime", value: "88FF8B" }
+        - { label: "Purple", value: "998EB3" }
+        - { label: "Orange", value: "F8B566" }
+        - { label: "Orange Dark", value: "f59653" }
+        - { label: "Orange Salmon", value: "ffA39A" }
+        - { label: "Tan", value: "B7934B" }
+        - { label: "Yellow Bright", value: "F6DF5E" }
+        - { label: "Yellow Soft ", value: "F3F6AC" }
+        - { label: "Yellow Orange", value: "ffd246" }
+        - { label: 'Image', name: 'img', widget: 'image', allow_multiple: true, choose_url: false, required: false }
+        - { label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown'}
 
       
