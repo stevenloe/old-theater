@@ -40,34 +40,34 @@ export default {
     // docs: https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss', 
     // docs: https://image.nuxtjs.org/
-    // '@nuxt/image',
+    '@nuxt/image',
   ],
-  // image: {
-  //     // Generate images to `/_nuxt/image/file.png`
-  //     staticFilename: '[publicPath]/images/[name]-[hash][ext]',
-  //   // The screen sizes predefined by `@nuxt/image`:
-  //   screens: {
+  image: {
+      // Generate images to `/_nuxt/image/file.png`
+      staticFilename: '[publicPath]/images/[name]-[hash][ext]',
+    // The screen sizes predefined by `@nuxt/image`:
+    screens: {
 
-  //   },
-  // },
+    },
+  },
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxt/content',
     '@nuxtjs/axios',
   ],
 
-  // image: {
-  //   // The screen sizes predefined by `@nuxt/image`:
-  //   screens: {
-  //     xs: 150,
-  //     sm: 225,
-  //     md: 338,
-  //     lg: 830,
-  //     xl: 762,
-  //     xxl: 1143,
-  //     '2xl': 1715
-  //   },
-  // },
+  image: {
+    // The screen sizes predefined by `@nuxt/image`:
+    screens: {
+      xs: 150,
+      sm: 225,
+      md: 338,
+      lg: 830,
+      xl: 762,
+      xxl: 1143,
+      '2xl': 1715
+    },
+  },
 
   axios: {baseURL: '/'},
 
