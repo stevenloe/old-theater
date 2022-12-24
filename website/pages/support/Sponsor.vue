@@ -2,7 +2,6 @@
   <div>
     <WaveText :info="membershipDoc" />
     <WaveText :info="sponsorMovie" />
-    <WaveText :info="sponsorPerformance" />
     <client-only>
     </client-only>
   </div>
@@ -14,16 +13,14 @@ import WaveText from "../../components/WaveText.vue";
 
 export default {
   async asyncData({ $content, params }) {
-    const [membershipDoc, sponsorMovie, sponsorPerformance] = await Promise.all([
+    const [membershipDoc, sponsorMovie] = await Promise.all([
       $content("sponsorship/sponsorship", params.slug).fetch(),
       $content("sponsorship/sponsor-a-performance", params.slug).fetch()
-    
     ]);
 
     return {
       membershipDoc,
       sponsorMovie,
-      sponsorPerformance
     };
   },
 
