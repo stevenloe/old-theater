@@ -205,7 +205,7 @@ collections:
             fields:
               - {label: Image, name: img, widget: image , choose_url: false}
               - {label: Image Headline, name: headline, widget: string, required: false }
-              - {label: "Image description (alt text)", widget: string}
+              - {label: "Image description (alt text)", name: alt, widget: string}
               - {label: Image Caption, name: caption, widget: string, required: false}
               
 
