@@ -2,7 +2,7 @@
 title: Pamlico Chorale
 order: 3
 subhead: 
-img: /images/community/pamlico_chorale.jpg
+img: /images/community/pamlico_chorale.webp
 alt: Pamlico Chorale performing on The Old Theater's stage
 logo: 
 logoalt: 

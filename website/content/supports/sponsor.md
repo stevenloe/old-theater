@@ -12,7 +12,7 @@ caption1: Production of Nunsense at The Old Theater
 img2: /images/support/blues_brothers.jpg
 alt2: The Blues Brothers poster art
 caption2: Friday Night Flicks at The Old Theater
-img3: /images/support/portrait-street-henri-herbert-1500w.jpg
+img3: /images/support/portrait-street-henri-herbert-1500w.webp
 alt3: Henri Herbert at The Old Theater
 caption3: Henri Herbert
 img4: /images/support/danielle-madrid-and-wendy-osserman2-edit.jpg

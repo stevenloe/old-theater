@@ -8,7 +8,7 @@ bgcolor: c4d8f9
 
 <figure>
   <img
-    src="/images/support/portrait-street-henri-herbert-1500w.jpg"
+    src="/images/support/portrait-street-henri-herbert-1500w.webp"
     alt="Henri Herbert at The Old Theater"
     loading="lazy"
   />

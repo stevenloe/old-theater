@@ -90,7 +90,7 @@ collections:
             name: photos
             widget: list
             fields:
-              - {label: Image description, name: alt, widget: string, required: true, hint: description of image}
+              - {label: Image description (alt text), name: alt, widget: string, required: true, hint: description of image}
               - {label: Photo, name: img, widget: image, required: true, choose_url: false, default: "", hint: "NOTE: All photos in this gallery must be of exactly the same dimensions. Otherwise the photos will not display in tidy rows. Gallery was built with images at 1000 x 750"}
 
 
@@ -191,7 +191,7 @@ collections:
       - { label: 'Event Date', name: 'date', widget: 'datetime', hint: 'Please select the event Date'}
       - { label: 'Summary', name: 'summary', widget: 'string', required: false }
       - { label: 'Cover Image', name: 'img', widget: 'image', choose_url: false, required: false, allow_multiple: false }
-      - { label: 'Cover Image Alt Text', name: 'alt', widget: 'string', required: false }
+      - { label: 'Cover Image description (alt Text)', name: 'alt', widget: 'string', required: false }
       - { label: 'Cover Image Caption', name: 'caption', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
       - {label: 'Folder', name: 'folder', widget: 'hidden', default: '/support/fundraisers/'}
@@ -205,7 +205,7 @@ collections:
             fields:
               - {label: Image, name: img, widget: image , choose_url: false}
               - {label: Image Headline, name: headline, widget: string, required: false }
-              - {label: Image description, name: alt, widget: string}
+              - {label: Image description (alt text), widget: string}
               - {label: Image Caption, name: caption, widget: string, required: false}
               
 
