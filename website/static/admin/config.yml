@@ -201,7 +201,12 @@ collections:
         name: "membership-json"
         hint: "Upload valid, correctly configured member JSON file. Please see documentation for details"
         file: "website/content/data/members/member-list.json"
-        widget: "file"
+        fields:
+          - label: 'Member List JSON'
+            name: 'member-list-json'
+            widget: 'file'
+            hint: "Upload valid, correctly configured member JSON file. Please see documentation for details!"
+
 
         # media_library:
         #   config:
