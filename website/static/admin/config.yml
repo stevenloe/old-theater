@@ -177,7 +177,7 @@ collections:
 
   # Category:  FUNDRAISERS. Pages: Editor Can Create
   - name: 'fundraisers'
-    label: 'Fundraisers'
+    label: 'Support Us > Fundraisers'
     media_folder: '/website/static/images/fundraisers/{{year}}'
     public_folder: '/images/fundraisers/{{year}}'
     folder: '/website/content/fundraisers'
