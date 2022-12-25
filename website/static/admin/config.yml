@@ -173,9 +173,34 @@ collections:
       - { label: 'Image Caption', name: 'caption', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown'}
 
-      
 
-  # Category:  FUNDRAISERS. Pages: Editor Can Create
+  - label: "Support Us > Membership"
+    name: "support-us-membership"
+    media_folder: '/website/static/images/membership'
+    public_folder: '/images/membership'
+    files:
+      - label: "Membership Page: Section 1"
+        name: "membership section 1"
+        file: "website/content/membership/membership.md"
+        fields:
+          - { label: 'Featured Image', name: 'img', widget: 'image', choose_url: false, required: false }
+          - { label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
+          - { label: 'Image Caption', name: 'caption', widget: 'string', required: false }
+          - { label: 'Body', name: 'body', widget: 'markdown'}
+
+      - label: "Membership Page: Section 2"
+        name: "membership section 2"
+        file: "website/content/membership/powered-by.md"
+        fields:
+          - { label: 'Featured Image', name: 'img', widget: 'image', choose_url: false, required: false }
+          - { label: 'Image Description', name: 'imgAlt', widget: 'string', required: false }
+          - { label: 'Image Caption', name: 'caption', widget: 'string', required: false }
+          - { label: 'Body', name: 'body', widget: 'markdown'}
+
+
+  
+
+  # Category:  SUPPORT US > FUNDRAISERS Page (editor can not create)
   - name: 'fundraisers'
     label: 'Support Us > Fundraisers'
     media_folder: '/website/static/images/fundraisers/{{year}}'
