@@ -216,18 +216,22 @@ collections:
     files:
       - label: "Member List JSON"
         name: "member-list-json"
-        file: "website/content/data/members/member-list.json"
-        media_folder: 'website/content/data/members/member-list.json'
-        public_folder: '/content/data/members/'
+
+        media_folder: '/website/content/data/members/'
+        public_folder: '/data/members/'
         fields:
         - label: 'The Member List JSON'
           name: 'the-members-list'
           widget: 'file'
-          hint: "This file supplies data to the membership section of the Support Us > Membership List (bottom of page). It also is the data for the animated member widgets on the Home Community Partners. NOTE: Upload valid, correctly configured member JSON file. Please see documentation for details."
+          hint: "## This file supplies data to the membership section of the Support Us > Membership List (bottom of page). It also is the data for the animated member widgets on the Home Community Partners. NOTE: Upload valid, correctly configured member JSON file. Please see documentation for details."
           choose_url: false
           required: false 
 
 
+
+
+    # media_folder: '/website/static/images/membership'
+    # public_folder: '/images/membership'
   # files:
   #   - label: "Executive Officers"
   #     name: "executive-officers"
