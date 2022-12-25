@@ -217,6 +217,8 @@ collections:
       - label: "Member List JSON"
         name: "member-list-json"
         file: "website/content/data/members/member-list.json"
+        media_folder: 'website/content/data/members/member-list.json'
+        public_folder: '/content/data/members/'
         fields:
         - label: 'The Member List JSON'
           name: 'the-members-list'
