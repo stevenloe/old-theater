@@ -197,6 +197,21 @@ collections:
           - { label: 'Image Caption', name: 'caption', widget: 'string', required: false }
           - { label: 'Body', name: 'body', widget: 'markdown'}
 
+      - label: "Membership List JSON"
+        name: "membership-json"
+        hint: "Upload valid, correctly configured member JSON file. Please see documentation for details"
+        file: "website/content/data/members/member-list.json"
+        widget: "file"
+
+        # media_library:
+        #   config:
+        #     multiple: true
+       
+        # default: "/uploads/general-manual.pdf"
+        # media_library:
+        #   config:
+        #     multiple: false
+
 
   
 
