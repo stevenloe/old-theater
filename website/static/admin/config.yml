@@ -197,17 +197,49 @@ collections:
           - { label: 'Image Caption', name: 'caption', widget: 'string', required: false }
           - { label: 'Body', name: 'body', widget: 'markdown'}
 
+  # - label: "Membership List JSON."
+  #   name: "membership-json"
+  #   hint: "Upload valid, correctly configured member JSON file. Please see documentation for details"
+  #   files:
+  #     file: "website/content/data/members/member-list.json"
+  #     fields:
+  #       - label: 'Member List JSON'
+  #         name: 'member-list-json'
+  #         widget: 'file'
+  #         hint: "This file supplies data to the membership section of the Support Us > Membership List (bottom of page). It also is the data for the animated member widgets on the Home Community Partners. NOTE: Upload valid, correctly configured member JSON file. Please see documentation for details."
+  #         choose_url: false
+  #         required: false 
+
+    # Category: ABOUT US, Page: About/Board of Directors. Also supplies data for board widget on home page
   - label: "Membership List JSON."
-    name: "membership-json"
-    hint: "Upload valid, correctly configured member JSON file. Please see documentation for details"
-    file: "website/content/data/members/member-list.json"
-    fields:
-      - label: 'Member List JSON'
-        name: 'member-list-json'
-        widget: 'file'
-        hint: "This file supplies data to the membership section of the Support Us > Membership List (bottom of page). It also is the data for the animated member widgets on the Home Community Partners. NOTE: Upload valid, correctly configured member JSON file. Please see documentation for details."
-        choose_url: false
-        required: false 
+    name: "membership-list-json"
+    files:
+      - label: "Member List JSON"
+        name: "member-list-json"
+        file: "website/content/data/members/member-list.json"
+        fields:
+        - label: 'The Member List JSON'
+          name: 'the-members-list'
+          widget: 'file'
+          hint: "This file supplies data to the membership section of the Support Us > Membership List (bottom of page). It also is the data for the animated member widgets on the Home Community Partners. NOTE: Upload valid, correctly configured member JSON file. Please see documentation for details."
+          choose_url: false
+          required: false 
+
+
+  # files:
+  #   - label: "Executive Officers"
+  #     name: "executive-officers"
+  #     file: "website/content/data/board/executive-officers.json"
+  #     fields:
+  #       - label: Executive Officers
+  #         label_singular: Executive Officer
+  #         name: team
+  #         widget: list
+  #         fields:
+  #           - {label: Role, name: role, widget: string, required: true}
+  #           - {label: Name, name: name, widget: string, required: true, default: Open}
+  #           - {label: Photo, name: img, widget: image, required: false, choose_url: false, default: "", hint: "NOTE: Photo must be square. Ideal photo size: 400 x 400 pixels"}
+      
 
 
         # media_library:
