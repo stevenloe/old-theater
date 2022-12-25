@@ -197,15 +197,17 @@ collections:
           - { label: 'Image Caption', name: 'caption', widget: 'string', required: false }
           - { label: 'Body', name: 'body', widget: 'markdown'}
 
-      - label: "Membership List JSON"
-        name: "membership-json"
-        hint: "Upload valid, correctly configured member JSON file. Please see documentation for details"
-        file: "website/content/data/members/member-list.json"
-        fields:
-          - label: 'Member List JSON'
-            name: 'member-list-json'
-            widget: 'file'
-            hint: "Upload valid, correctly configured member JSON file. Please see documentation for details!"
+  - label: "Membership List JSON."
+    name: "membership-json"
+    hint: "Upload valid, correctly configured member JSON file. Please see documentation for details"
+    file: "website/content/data/members/member-list.json"
+    fields:
+      - label: 'Member List JSON'
+        name: 'member-list-json'
+        widget: 'file'
+        hint: "This file supplies data to the membership section of the Support Us > Membership List (bottom of page). It also is the data for the animated member widgets on the Home Community Partners. NOTE: Upload valid, correctly configured member JSON file. Please see documentation for details."
+        choose_url: false
+        required: false 
 
 
         # media_library:
