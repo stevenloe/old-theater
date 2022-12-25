@@ -223,7 +223,7 @@ collections:
         - label: 'The Member List JSON'
           name: 'the-members-list'
           widget: 'file'
-          hint: "## This file supplies data to the membership section of the Support Us > Membership List (bottom of page). It also is the data for the animated member widgets on the Home Community Partners. NOTE: Upload valid, correctly configured member JSON file. Please see documentation for details."
+          hint: "**NOTE: BEFORE uploading a member data file, DOWNLOAD the old file at https://oldtheater.org/data/member-list.json and keep as a backup**. This file supplies data to the membership section of the Support Us > Membership List (bottom of page). It also is the data for the animated member widgets on the Home Community Partners. NOTE: file MUST BE called **member-list.json**. Upload valid, correctly configured member JSON file. Please see documentation for JSON file format details."
           choose_url: false
           required: false 
 
