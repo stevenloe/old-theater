@@ -19,7 +19,8 @@ export default {
       $content("membership/membership", params.slug).fetch(),
       $content("membership/powered-by", params.slug).fetch(),
       // $content("data/members/members2").fetch(),
-      $content("data/members/member-list.json").fetch(),
+      // this comes from the content folder NOT from STATIC
+      $content("data/members/members").fetch(),
     ]);
 
     return {
