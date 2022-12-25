@@ -58,7 +58,12 @@ export default {
   async fetch() {
     const { data } = await axios.get(
       // `${this.$axios.defaults.baseURL}data/members2.json`
-      `${this.$axios.defaults.baseURL}data/member-list.json`
+      // `${this.$axios.defaults.baseURL}data/member-list.json`
+
+      // THIS GETS DATA FROM /STATIC. Membership page gets list data from /CONTENT 
+      // NOT GOOD!!!!
+
+      `${this.$axios.defaults.baseURL}data/members-2022.json`
     );
 
     let list = data.members.map((item) => {
