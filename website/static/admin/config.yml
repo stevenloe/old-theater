@@ -216,7 +216,7 @@ collections:
     files:
       - label: "Member List JSON"
         name: "member-list-json"
-        file: "/website/content/data/members/member-list.json"
+        file: "/website/content/data/members/foo.json"
         media_folder: '/website/content/data/members/'
         # public_folder: '/data/members/'
         fields:
