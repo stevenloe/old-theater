@@ -303,3 +303,70 @@ collections:
         file: "website/content/page-intros/community-partners.md"
         fields:
           - { label: 'Body', name: 'body', widget: 'markdown'}
+
+
+  - name: 'Community Parnters' # Used in routes, e.g., /admin/collections/blog
+    label: 'community-partners' # Used in the UI
+    folder: 'website/content/partners' # The path to the folder where the documents are stored
+    media_folder: '/website/static/images/community'
+    public_folder: '/images/community'
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - label: "Display Order"
+        name: "order"
+        widget: "number"
+        value_type: "int"
+        min: 1
+        max: 9999
+        hint: Controls where this article displays on the page. Lower numbers display fist. Each community partner should have a unique order value
+      - { label: 'Title', name: 'title', widget: 'string', hint: Name of partner organization}
+      - { label: 'Subhead', name: 'subhead', widget: 'string', required: false}
+      - label: "Partner Image"
+        name: "img"
+        widget: "image"
+        choose_url: false
+        required: false 
+      - {label: "Parter Image Description", name: "alt", widget: "string", default: "partner image", required: false }
+      - label: "Partner Logo"
+        name: "logo"
+        widget: "image"
+        choose_url: false
+        required: false 
+      - {label: "Logo Description", name: "logoalt", widget: "string", default: "partner logo"}
+      - label: "Logo Height"
+        name: "logoheight"
+        hint: Controls how tall logo will appear on page. Lager values make the logo taller.
+        widget: "select"
+        default: ["h-16"]
+        options: ["h-8", "h-12", "h-16", "h-20", "h-24", "h-32"]
+      - label: "Background Color"
+        name: "bgcolor"
+        widget: "select"
+        hint: "Background color of this section"
+        required: true
+        options:
+        - { label: "Blue: Bright", value: "91CFF6" }
+        - { label: "Blue: Bright-Light", value: "A7EEF8" }
+        - { label: "Blue: Dark", value: "6A82A3" }
+        - { label: "Blue: Pale", value: "D1D5F0" }
+        - { label: "Blue: Gray ", value: "DDFFFE" }
+        - { label: "Blue: Sky", value: "BADEFF" }
+        - { label: "Buff", value: "F9E4CF" }
+        - { label: "Gray: Bright", value: "B4C0BA" }
+        - { label: "Gray: Neutral Light", value: "EEEEEE" }
+        - { label: "Gray:", value: "A7A39A" }
+        - { label: "Green Gray", value: "B4C0BA" }
+        - { label: "Green", value: "A3C693" }
+        - { label: "Green: Lime", value: "88FF8B" }
+        - { label: "Green: Dark", value: "8C9B79" }
+        - { label: "Orange:", value: "F8B566" }
+        - { label: "Orange: Dark", value: "f59653" }
+        - { label: "Orange: Pumpkin", value: "D99546" }
+        - { label: "Orange: Salmon", value: "ffA39A" }
+        - { label: "Pink", value: "FFAAAA" }
+        - { label: "Purple", value: "998EB3" }
+        - { label: "Tan", value: "B7934B" }
+        - { label: "Yellow: Bright", value: "F6DF5E" }
+        - { label: "Yellow: Soft ", value: "F3F6AC" }
+        - { label: "Yellow: Orange", value: "ffd246" }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: true }
