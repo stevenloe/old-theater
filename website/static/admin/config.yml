@@ -130,6 +130,7 @@ collections:
   # # Category NEWS: Pages: Editor Can Create
   - name: 'news' # Used in routes, e.g., /admin/collections/blog
     label: 'News' # Used in the UI
+    label_singular: 'News Article'
     folder: 'website/content/news' # The path to the folder where the documents are stored
     media_folder: '/website/static/images/news'
     public_folder: '/images/news'
@@ -211,7 +212,7 @@ collections:
   #         required: false 
 
     # Category: ABOUT US, Page: About/Board of Directors. Also supplies data for board widget on home page
-  - label: "Membership List JSON."
+  - label: "Membership List JSON Data."
     name: "membership-list-json"
     files:
       - label: "Member List JSON"
@@ -263,6 +264,7 @@ collections:
   # Category:  SUPPORT US > FUNDRAISERS Page (editor can not create)
   - name: 'fundraisers'
     label: 'Support Us > Fundraisers'
+    label_singular: 'Fundraiser'
     media_folder: '/website/static/images/fundraisers/{{year}}'
     public_folder: '/images/fundraisers/{{year}}'
     folder: '/website/content/fundraisers'
@@ -305,8 +307,10 @@ collections:
           - { label: 'Body', name: 'body', widget: 'markdown'}
 
 
-  - name: 'Community Parnters' # Used in routes, e.g., /admin/collections/blog
-    label: 'community-partners' # Used in the UI
+  
+  - label: 'Community Partners' # Used in the UI
+    label_singular: 'Community Partner'
+    name: 'community-partners' # Used in routes, e.g., /admin/collections/blog
     folder: 'website/content/partners' # The path to the folder where the documents are stored
     media_folder: '/website/static/images/community'
     public_folder: '/images/community'
