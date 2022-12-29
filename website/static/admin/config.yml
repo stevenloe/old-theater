@@ -326,7 +326,7 @@ collections:
         widget: "image"
         choose_url: false
         required: false 
-      - {label: "Parter Image Description", name: "alt", widget: "string", default: "partner image", required: false }
+      - {label: "Parter Image Description (Helps Google. Not a caption)", name: "alt", widget: "string", default: "partner image", required: false }
       - label: "Partner Logo"
         name: "logo"
         widget: "image"
@@ -335,7 +335,7 @@ collections:
       - {label: "Logo Description", name: "logoalt", widget: "string", default: "partner logo"}
       - label: "Logo Height"
         name: "logoheight"
-        hint: Controls how tall logo will appear on page. Lager values make the logo taller.
+        hint: Controls how tall logo will appear on page. Bigger values make the logo taller.
         widget: "select"
         default: ["h-16"]
         options: ["h-8", "h-12", "h-16", "h-20", "h-24", "h-32"]
