@@ -293,5 +293,13 @@ collections:
               - {label: "Image description (alt text)", name: alt, widget: string}
               - {label: Image Caption, name: caption, widget: string, required: false}
               
+# Community Partners 
 
-
+  - label: "Community Partners: Page Intro"
+    name: "community-partners-page-intro"
+    files:
+      - label: "Community Partners: Page Intro Text"
+        name: "community-partners-page-intro-text"
+        file: "website/content/page-intros/community-partners.md"
+        fields:
+          - { label: 'Body', name: 'body', widget: 'markdown'}
