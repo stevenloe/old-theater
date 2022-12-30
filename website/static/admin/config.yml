@@ -147,6 +147,7 @@ collections:
         hint: "Background color of this section"
         required: true
         options:
+        - { label: "Blue: Very Pale", value: "ddffff" }
         - { label: "Blue: Bright", value: "91CFF6" }
         - { label: "Blue: Bright-Light", value: "A7EEF8" }
         - { label: "Blue: Dark", value: "6A82A3" }
@@ -157,9 +158,10 @@ collections:
         - { label: "Gray: Bright", value: "B4C0BA" }
         - { label: "Gray: Neutral Light", value: "EEEEEE" }
         - { label: "Gray:", value: "A7A39A" }
+        - { label: "Green: pale", value: "ccffdd" }
         - { label: "Green Gray", value: "B4C0BA" }
         - { label: "Green", value: "A3C693" }
-        - { label: "Green Lime", value: "88FF8B" }
+        - { label: "Green: Lime", value: "88FF8B" }
         - { label: "Orange:", value: "F8B566" }
         - { label: "Orange: Dark", value: "f59653" }
         - { label: "Orange: Salmon", value: "ffA39A" }
@@ -417,6 +419,7 @@ collections:
         - { label: "Orange:", value: "F8B566" }
         - { label: "Orange: Dark", value: "f59653" }
         - { label: "Orange: Pumpkin", value: "D99546" }
+        - { label: "Orange: Pumpkin Bright", value: "f9b566" }
         - { label: "Orange: Salmon", value: "ffA39A" }
         - { label: "Pink", value: "FFAAAA" }
         - { label: "Purple", value: "998EB3" }
