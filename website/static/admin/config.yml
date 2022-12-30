@@ -380,11 +380,11 @@ collections:
 
 ### GET INVOLVED #########################################
   - label: 'Get Involved' # Used in the UI
-    label_singular: 'Get Involved'
+    label_singular: 'Get Involved Section'
     name: 'get-involved' # Used in routes, e.g., /admin/collections/blog
     folder: 'website/content/involved' # The path to the folder where the documents are stored
-    media_folder: '/website/static/images/community'
-    public_folder: '/images/community'
+    media_folder: '/website/static/images/involved'
+    public_folder: '/images/involved'
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
       - label: "Display Order"
@@ -397,6 +397,7 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string', hint: Name of partner organization}
       - { label: 'Subhead', name: 'subhead', widget: 'string', required: false}
       - label: "Background Color"
+        label_singular: 'Background Color'
         name: "bgcolor"
         widget: "select"
         hint: "Background color of this section"
