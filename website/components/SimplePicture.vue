@@ -6,12 +6,12 @@
         v-if="img"
         :src="img"
         :alt="alt"
-        class="overflow-hidden rounded-lg shadow-lg"
+        class="w-full overflow-hidden"
         loading="lazy"
       >
       
 
-      <figcaption class="py-2 mb-4 text-base italic text-gray-700" v-if="caption">
+      <figcaption class="py-2 mb-4 text-base italic text-gray-900" v-if="caption">
         {{ caption }}
       </figcaption>
     </figure>
@@ -24,7 +24,7 @@ export default {
   props: {
     alt: {
       type: String,
-      required: true,
+      required: false,
     },
     caption: {
       type: String,
