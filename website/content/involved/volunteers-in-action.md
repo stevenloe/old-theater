@@ -3,7 +3,7 @@ order: 10
 title: Volunteers in Action
 subhead: 
 bgcolor: bbddff
-img_gallery:
+top_img_gallery:
   - image:
       img: /images/involved/villians_with_horses.webp
       alt: Villians with Horses - How The West Was Dun 

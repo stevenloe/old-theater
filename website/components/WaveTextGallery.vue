@@ -25,7 +25,7 @@
 
        <div class="grid gap-1 ">
           <simple-picture
-            v-for="pic of item.img_gallery"
+            v-for="pic of item.top_img_gallery"
             :key="pic.image.img"
             :alt="pic.image.alt"
             :caption="pic.image.caption"
@@ -40,6 +40,19 @@
           class="mx-auto mb-8 prose prose-lg xl:prose-2xl"
           :document="item"
         />
+
+        <div class="grid gap-1 ">
+          <simple-picture
+            v-for="pic of item.bottom_img_gallery"
+            :key="pic.image.img"
+            :alt="pic.image.alt"
+            :caption="pic.image.caption"
+            :headline="pic.image.headline"
+            :img="pic.image.img"
+          ></simple-picture>
+        </div>
+
+        
     
         <div v-if="item.buttonurl" class="flex"><ButtonLink :url="item.buttonurl" :color="item.buttoncolor" :text="item.buttontext" /></div>
       </div>
