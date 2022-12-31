@@ -393,7 +393,7 @@ collections:
         value_type: "int"
         min: -1000
         max: 9999
-        hint: Controls where this article displays on the page. Lower numbers display fist. Each community partner should have a unique order value
+        hint: Controls where this article displays on the page. Lower numbers display fist. Each article should have a unique order value
       - { label: 'Title', name: 'title', widget: 'string', hint: Name of partner organization}
       - { label: 'Subhead', name: 'subhead', widget: 'string', required: false}
       - label: "Background Color"
