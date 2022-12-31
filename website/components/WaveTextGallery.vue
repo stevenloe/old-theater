@@ -21,15 +21,7 @@
           item.subhead
         }}</UiHeadline>
 
-         
-          <!-- <simple-picture v-for="image in item.img_gallery" :image="image" :key="image.img"
-          class="mb-6"
-          :v-if="image.img"
-          :caption="image.caption"
-          :img="image.img"
-          :alt="image.alt"
-        ></simple-picture>
-       -->
+        
 
        <div class="grid gap-1 ">
           <simple-picture
