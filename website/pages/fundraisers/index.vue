@@ -48,12 +48,11 @@ export default {
   async asyncData({ $content }) {
     const posts = await $content("fundraisers")
       .sortBy("date", "desc")
-      .limit(10)
       .fetch();
 
     console.log("POSTS", posts);
 
-    const nextPage = posts.length === 10;
+    const nextPage = posts.length === 20;
     return { nextPage, posts };
   },
   methods: {

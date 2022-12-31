@@ -1,11 +1,8 @@
 <template>
   <div>
-    <WaveText :info="getInvolvedIntro" />
+    <WaveTextGallery v-for="item of items" :item="item"
+        :key="item.title" />
 
-    <VolunteersInAction :info="volunteersActionText" />
-
-    <WaveText :info="playYourPartText" />
-    <WeNeedYou :info="weNeedYouText" />
 
     <client-only>
       <MemberCarousel bgcolor="688890" />
@@ -16,37 +13,26 @@
 import UiHeadline from "@/components/ui/UiHeadline";
 import MemberList from "@/components/MemberList";
 import BasePicture from "@/components/BasePicture";
-import WaveText from "../components/WaveText.vue";
-import VolunteersInAction from "../components/VolunteersInAction.vue";
-import WeNeedYou from "../components/WeNeedYou.vue";
+import WaveTextGallery from "../components/WaveTextGallery.vue";
+
 import MemberCarousel from "../components/MemberCarousel.vue";
 
 export default {
-  async asyncData({ $content, params }) {
-    const [
-      getInvolvedIntro,
-      volunteersActionText,
-      playYourPartText,
-      weNeedYouText,
-      memberList,
-    ] = await Promise.all([
-      $content("supports/get-involved-intro", params.slug).fetch(),
-      $content(
-        "supports/get-involved-volunteers-in-action",
-        params.slug
-      ).fetch(),
-      $content("supports/get-involved-play-your-part", params.slug).fetch(),
-      $content("supports/get-involved-we-need-you", params.slug).fetch(),
-      $content("data/members/members2").fetch(),
-    ]);
 
+  async asyncData({ $content, params }) {
+    const [members, items] = await Promise.all(
+      [
+        $content("data/members/members2").fetch(),
+        $content("involved", { text: true }).sortBy('order', 'asc').fetch(),
+      ]
+    );
+  
+
+    console.log( "items", items)
     return {
-      getInvolvedIntro,
-      volunteersActionText,
-      playYourPartText,
-      weNeedYouText,
-      memberList,
-    };
+      members, 
+      items
+    }
   },
 
   layout: "NewLayout",
@@ -54,9 +40,8 @@ export default {
     UiHeadline,
     MemberList,
     BasePicture,
-    WaveText,
-    VolunteersInAction,
-    WeNeedYou,
+    WaveTextGallery,
+ 
     MemberCarousel,
   },
 };
