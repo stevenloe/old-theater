@@ -196,14 +196,14 @@ export default {
       noSearchResults: true,
       isMobile: null,
       selectedHeaderImage: {
-            img: "old-theater-drawing-progressive.jpg",
+            img: "old-theater-drawing-crunch.webp",
             height: "0.8",
             opacity: "0.4",
           },
       headerImages: {
         "/": [
           {
-            img: "old-theater-drawing-progressive.jpg",
+            img: "old-theater-drawing-crunch.webp",
             height: "0.8",
             opacity: "0.4",
           },
@@ -355,7 +355,7 @@ export default {
         ],
         "/about/the-old-theater": [
           {
-            img: "old-theater-drawing-progressive.jpg",
+            img: "old-theater-drawing-crunch.webp",
             height: "0.8",
             opacity: "0.4",
           },
