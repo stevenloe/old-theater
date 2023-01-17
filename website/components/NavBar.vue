@@ -185,7 +185,6 @@ import FooterMobile from "~/components/FooterMobile.vue";
 import SubMenu from "~/components/SubMenu.vue";
 import SearchMobile from "~/components/SearchMobile.vue";
 import SearchDesktop from "~/components/SearchDesktop.vue";
-import backgroundImagePath from "~/assets/img/hero/old-theater-drawing-progressive.jpg";
 
 import { debounce } from "@/utils/debounce.js";
 export default {
@@ -196,7 +195,6 @@ export default {
       isMobileMenuOpen: false,
       noSearchResults: true,
       isMobile: null,
-      backgroundImagePath,
       selectedHeaderImage: {
             img: "old-theater-drawing-progressive.jpg",
             height: "0.8",
