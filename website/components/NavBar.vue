@@ -185,7 +185,7 @@ import FooterMobile from "~/components/FooterMobile.vue";
 import SubMenu from "~/components/SubMenu.vue";
 import SearchMobile from "~/components/SearchMobile.vue";
 import SearchDesktop from "~/components/SearchDesktop.vue";
-import backgroundImagePath from "~/assets/img/hero/home-old-theater-drawing.jpg";
+import backgroundImagePath from "~/assets/img/hero/old-theater-drawing-progressive.jpg";
 
 import { debounce } from "@/utils/debounce.js";
 export default {
@@ -198,14 +198,14 @@ export default {
       isMobile: null,
       backgroundImagePath,
       selectedHeaderImage: {
-            img: "home-old-theater-drawing.jpg",
+            img: "old-theater-drawing-progressive.jpg",
             height: "0.8",
             opacity: "0.4",
           },
       headerImages: {
         "/": [
           {
-            img: "home-old-theater-drawing.jpg",
+            img: "old-theater-drawing-progressive.jpg",
             height: "0.8",
             opacity: "0.4",
           },
@@ -357,7 +357,7 @@ export default {
         ],
         "/about/the-old-theater": [
           {
-            img: "home-old-theater-drawing.jpg",
+            img: "old-theater-drawing-progressive.jpg",
             height: "0.8",
             opacity: "0.4",
           },
