@@ -197,7 +197,11 @@ export default {
       noSearchResults: true,
       isMobile: null,
       backgroundImagePath,
-      selectedHeaderImage: {},
+      selectedHeaderImage: {
+            img: "old-theater-drawing.webp",
+            height: "0.8",
+            opacity: "0.4",
+          },
       headerImages: {
         "/": [
           {
@@ -367,13 +371,13 @@ export default {
         ],
         "/news": [
           {
-            img: "/news.webp",
-            height: "0.6",
+            img: "news2.webp",
+            height: "0.7",
             opacity: "0.6",
           },
           {
-            img: "news2.webp",
-            height: "0.7",
+            img: "/news.webp",
+            height: "0.6",
             opacity: "0.6",
           },
         ],
@@ -384,7 +388,6 @@ export default {
             height: "0.25",
             opacity: "0.9",
           },
-          
         ],
 
          "/shows-slug": [
@@ -520,6 +523,7 @@ export default {
           this.headerImages[path][
             Math.floor(Math.random() * this.headerImages[path].length)
           ];
+          // this.headerImages[path][0];
       } else {
         console.log("PATH NOT FOUND");
         this.selectedHeaderImage = this.headerImages["default"];
@@ -529,8 +533,12 @@ export default {
     },
   },
 
-  mounted: function () {
+  beforeMount : function() {
     this.setHeroImage();
+  },
+
+  mounted: function () {
+     //this.setHeroImage();
 
     this.isMounted = true;
     this.onResize();
