@@ -205,7 +205,7 @@ export default {
       headerImages: {
         "/": [
           {
-            img: "old-theater-drawing.webp",
+            img: "home-old-theater-drawing.jpg",
             height: "0.8",
             opacity: "0.4",
           },
