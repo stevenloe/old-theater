@@ -198,7 +198,7 @@ export default {
       isMobile: null,
       backgroundImagePath,
       selectedHeaderImage: {
-            img: "old-theater-drawing.webp",
+            img: "home-old-theater-drawing.jpg",
             height: "0.8",
             opacity: "0.4",
           },
@@ -357,7 +357,7 @@ export default {
         ],
         "/about/the-old-theater": [
           {
-            img: "old-theater-drawing.webp",
+            img: "home-old-theater-drawing.jpg",
             height: "0.8",
             opacity: "0.4",
           },
