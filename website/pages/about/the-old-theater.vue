@@ -1,9 +1,8 @@
 <template>
-   <div>
-     <WaveText :info="content" />
-     <WaveImageGallery :info="imageData" bgcolor="9492aa" />
-   </div>
-   
+  <div>
+    <WaveText :info="content" />
+    <WaveImageGallery :info="imageData" bgcolor="9492aa" />
+  </div>
 </template>
 
 <script>
@@ -12,18 +11,15 @@ import BasePicture from "@/components/BasePicture";
 import WaveText from "../../components/WaveText.vue";
 import WaveImageGallery from "../../components/WaveImageGallery.vue";
 export default {
+  async asyncData({ $content, params }) {
+    const [content, imageData] = await Promise.all([
+      $content("abouts/the-old-theater", params.slug).fetch(),
+      $content("data/about/theater-photos", params.slug).fetch(),
+    ]);
 
-    async asyncData({ $content, params }) {
-    const [content, imageData] = await Promise.all(
-      [
-        $content("abouts/the-old-theater", params.slug).fetch(),
-        $content("data/about/theater-photos", params.slug).fetch()
-      ]
-    );
-
-   
     return {
-      content, imageData
+      content,
+      imageData,
     };
   },
   layout: "NewLayout",
@@ -31,7 +27,7 @@ export default {
     UiHeadline,
     BasePicture,
     WaveText,
-    WaveImageGallery
-}
+    WaveImageGallery,
+  },
 };
 </script>

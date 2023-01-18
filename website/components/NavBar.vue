@@ -10,10 +10,6 @@
         <div class="flex">
           <nuxt-link to="/" class="w-7/12">
             <Logo @click.native="onNavItemClick" />
-            <!-- <Logo
-              @click.native="onNavItemClick"
-              class="bg-yellow-200 sm:bg-orange-400 md:bg-red-300 lg:bg-purple-300 xl:bg-blue-300 hover:bg-gray-200"
-            /> -->
           </nuxt-link>
 
           <div
@@ -27,7 +23,7 @@
             />
             <a
               href="#"
-              class="pl-1 pr-0 mb-6 text-gray-900 rounded hover:bg-gray-300 focus:outline-none place-self-end"
+              class="pl-1 pr-0 mb-6 text-gray-900 rounded  hover:bg-gray-300 focus:outline-none place-self-end"
               @click="toggleSearch"
             >
               <!-- Search Icon -->
@@ -54,7 +50,7 @@
               @click="onMenuBtnClick"
               type="button"
               aria-label="Open / Close Navigation Menu"
-              class="block text-gray-700 hover:text-gray-900 focus:text-gray-900 focus:outline-none"
+              class="block text-gray-700  hover:text-gray-900 focus:text-gray-900 focus:outline-none"
             >
               <svg
                 class="w-8 h-8 fill-current sm:w-12 sm:h-12"
@@ -95,12 +91,6 @@
                   :class="itemStyle"
                   >HOME</nuxt-link
                 >
-                <!-- <nuxt-link
-                  to="/calendar"
-                  @click.native="onNavItemClick"
-                  :class="itemStyle"
-                  >CALENDAR</nuxt-link
-                > -->
                 <SubMenu
                   :menuData="supportMenuItems"
                   :isMobile="isMobile"
@@ -132,7 +122,11 @@
 
                 <!-- Contact -->
                 <div class="mr-2 rounded hover:bg-gray-200 md:hidden">
-                  <nuxt-link to="/contact-form/" @click.native="onNavItemClick" class="no-underline">
+                  <nuxt-link
+                    to="/contact-form/"
+                    @click.native="onNavItemClick"
+                    class="no-underline"
+                  >
                     <div v-if="isMobileMenuOpen" :class="itemStyle">
                       CONTACT US
                     </div>
@@ -144,36 +138,6 @@
         </div>
 
         <FooterMobile :isMobileMenuOpen="isMobileMenuOpen" />
-
-        <!-- search icon on medium screens-->
-        <!-- <div class="hidden md:flex" aria-label="Search menu button" style="border: solid 2px pink">
-        <SearchDesktop
-          class="w-0 "
-          :isMobile="isMobile"
-          isAnimated="true"
-        />
-
-        <a
-          href="#"
-          class="pl-1 pr-3 text-white bg-gray-500 hover:bg-gray-600 focus:outline-none"
-          @click="toggleSearch"
-        >
-          <svg
-            class="w-10 h-8 px-1 pt-1 fill-current"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            width="48"
-            height="48"
-            fill="currentColor"
-          >
-            <g>
-              <path
-                d="M17.545 15.467l-3.779-3.779a6.15 6.15 0 0 0 .898-3.21c0-3.417-2.961-6.377-6.378-6.377A6.185 6.185 0 0 0 2.1 8.287c0 3.416 2.961 6.377 6.377 6.377a6.15 6.15 0 0 0 3.115-.844l3.799 3.801a.953.953 0 0 0 1.346 0l.943-.943c.371-.371.236-.84-.135-1.211zM4.004 8.287a4.282 4.282 0 0 1 4.282-4.283c2.366 0 4.474 2.107 4.474 4.474a4.284 4.284 0 0 1-4.283 4.283c-2.366-.001-4.473-2.109-4.473-4.474z"
-              />
-            </g>
-          </svg>
-        </a>
-      </div> -->
       </div>
     </header>
   </div>
@@ -196,10 +160,10 @@ export default {
       noSearchResults: true,
       isMobile: null,
       selectedHeaderImage: {
-            img: "old-theater-drawing-crunch.webp",
-            height: "0.8",
-            opacity: "0.4",
-          },
+        img: "old-theater-drawing-crunch.webp",
+        height: "0.8",
+        opacity: "0.4",
+      },
       headerImages: {
         "/": [
           {
@@ -208,7 +172,7 @@ export default {
             opacity: "0.4",
           },
         ],
-          "/get-involved": [
+        "/get-involved": [
           {
             img: "scrooged.webp",
             height: "0.8",
@@ -219,7 +183,7 @@ export default {
             height: "0.65",
             opacity: "0.6",
           },
-             {
+          {
             img: "lady-pirates-captain-bree.webp",
             height: "0.85",
             opacity: "0.75",
@@ -326,7 +290,7 @@ export default {
             img: " ",
             height: "0.3",
             opacity: "0.7",
-            bgcolor: "85b8c5"
+            bgcolor: "85b8c5",
           },
         ],
         "/about/rent-the-theater": [
@@ -346,7 +310,7 @@ export default {
           },
         ],
         "/about/board-of-directors": [
-             {
+          {
             img: " ",
             height: "0.3",
             opacity: "1",
@@ -388,15 +352,14 @@ export default {
           },
         ],
 
-         "/shows-slug": [
+        "/shows-slug": [
           {
             img: " ",
             height: "0.25",
             opacity: "0.9",
           },
-          
         ],
-        
+
         "/shows": [
           {
             img: "lady-pirates-captain-bree.webp",
@@ -444,7 +407,6 @@ export default {
         title: "ABOUT US",
         items: [
           { text: "ABOUT US", link: "/about/the-old-theater/", id: 0 },
-          // { text: "Venue", link: "/about/venue/", id: 1 },
           { text: "RENT THE THEATER", link: "/about/rent-the-theater", id: 2 },
           { text: "OUR HISTORY", link: "/about/history", id: 3 },
           {
@@ -473,14 +435,11 @@ export default {
   },
   methods: {
     onResize() {
-      console.log("--- onResize() ---");
-      // this.isMobileMenuOpen = false;
       this.isMobile = window.innerWidth < 980;
       this.isSearchOpen = false;
       this.$bus.$emit("resize-window");
     },
     toggleSearch() {
-      console.log("--- toggleSearch() ---");
       this.$bus.$emit("toggle-search");
     },
     onMenuBtnClick() {
@@ -491,13 +450,11 @@ export default {
       // setTimeout(this.hideMenu, 100);
     },
     hideMenu() {
-      console.log("----hideMenu()----");
       this.isMobileMenuOpen = false;
     },
     setHeroImage() {
       this.isMobileMenuOpen = false;
       // on every route change, load the hero image for the new page
-
       // handle case where last char of url is a '/' (remove the slash)
       let path =
         this.$nuxt.$route.path.length > 1 &&
@@ -505,39 +462,30 @@ export default {
           ? this.$nuxt.$route.path.slice(0, -1)
           : this.$nuxt.$route.path;
 
-          if(path.includes('/news/')) {
-            path = '/news'
-          }
-           else if(path.includes('/shows/')) {
-            path = '/shows-slug'
-          }
-          else if(path.includes('/bonafides/')) {
-            path = '/bonafides-slug'
-          }
-      console.log("PATH IS", path, typeof(path));
+      if (path.includes("/news/")) {
+        path = "/news";
+      } else if (path.includes("/shows/")) {
+        path = "/shows-slug";
+      } else if (path.includes("/bonafides/")) {
+        path = "/bonafides-slug";
+      }
       if (this.headerImages[path]) {
-        console.log("PATH FOUND");
         this.selectedHeaderImage =
           this.headerImages[path][
             Math.floor(Math.random() * this.headerImages[path].length)
           ];
-          // this.headerImages[path][0];
       } else {
-        console.log("PATH NOT FOUND");
+        console.log("Header image path not found");
         this.selectedHeaderImage = this.headerImages["default"];
       }
-
-      console.log("SELECTED HEADER IMAGE", this.selectedHeaderImage)
     },
   },
 
-  beforeMount : function() {
+  beforeMount: function () {
     this.setHeroImage();
   },
 
   mounted: function () {
-     //this.setHeroImage();
-
     this.isMounted = true;
     this.onResize();
     window.addEventListener("resize", debounce(this.onResize, 10));
@@ -557,9 +505,6 @@ export default {
         : "";
       return `background-image: url("data:image/svg+xml,%3Csvg  viewBox='0 0 1151 234' fill='%23eee8aa'  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath  opacity='${this.selectedHeaderImage.opacity}' fill-rule='evenodd' clip-rule='evenodd' d='M0.591553 0.00100708V233.859C111.126 203.295 221.095 188.013 330.5 188.013C522.428 188.013 647.271 226.586 813.184 226.586C923.792 226.585 1036.08 213.728 1150.04 188.013V4.57764e-05L0.591553 0.00100708Z' fill='white'/%3E%3C/svg%3E"); background-repeat: no-repeat; ${bgcolor}`;
     },
-    fooClass() {
-      return "bar";
-    },
     menuClass() {
       const base =
         "justify-between w-full px-4 pt-2 pb-4 text-base md:flex md:p-0";
@@ -575,8 +520,6 @@ export default {
         ? ` backgroundImage: url(/images/hero/${this.selectedHeaderImage.img});
        height: calc(100vw * ${this.selectedHeaderImage.height}); `
         : "";
-
-        console.log("BGIMAGE", bgImage)
       return ` ${bgImage}
       grid-column: 1 / -1;
       grid-row: 3;
@@ -590,16 +533,13 @@ export default {
     $route() {
       this.setHeroImage();
       this.$bus.$emit("toggle-search", "close");
-      
     },
   },
   created: function () {
     this.$bus.$on("no-search-results", (e) => {
       this.noSearchResults = e;
-      console.log("this.noSearchResults:", this.noSearchResults);
     });
     this.$bus.$on("close-mobile-menu", (e) => {
-      console.log("ON close-mobile-menu");
       this.hideMenu();
     });
   },
