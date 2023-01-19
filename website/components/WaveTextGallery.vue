@@ -12,8 +12,8 @@
       :style="bgColor"
     >
       <div class="w-full max-w-4xl mx-auto lg:text-xl xl:text-2xl">
+
         <!-- Top item section and body text -->
-        
         <UiHeadline v-if="item.title" class="mb-2" level="2">{{
           item.title
         }}</UiHeadline>
@@ -21,9 +21,7 @@
           item.subhead
         }}</UiHeadline>
 
-        
-
-       <div class="grid gap-1 ">
+        <div class="grid gap-1">
           <simple-picture
             v-for="pic of item.top_img_gallery"
             :key="pic.image.img"
@@ -34,14 +32,12 @@
           ></simple-picture>
         </div>
 
-     
-
         <nuxt-content
           class="mx-auto mb-8 prose prose-lg xl:prose-2xl"
           :document="item"
         />
 
-        <div class="grid gap-1 ">
+        <div class="grid gap-1">
           <simple-picture
             v-for="pic of item.bottom_img_gallery"
             :key="pic.image.img"
@@ -52,9 +48,13 @@
           ></simple-picture>
         </div>
 
-        
-    
-        <div v-if="item.buttonurl" class="flex"><ButtonLink :url="item.buttonurl" :color="item.buttoncolor" :text="item.buttontext" /></div>
+        <div v-if="item.buttonurl" class="flex">
+          <ButtonLink
+            :url="item.buttonurl"
+            :color="item.buttoncolor"
+            :text="item.buttontext"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -74,14 +74,14 @@ export default {
   },
   computed: {
     bgColor() {
-      console.log("$$$$$$$$$$$$$$$ IMG_GALLERY: ", this.item.img_gallery)
+      console.log("$$$$$$$$$$$$$$$ IMG_GALLERY: ", this.item.img_gallery);
       return `background-color: #${this.item.bgcolor}`;
     },
   },
   components: {
     SimplePicture,
     UiHeadline,
-    ButtonLink
-},
+    ButtonLink,
+  },
 };
 </script>
