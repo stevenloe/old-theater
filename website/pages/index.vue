@@ -1,16 +1,7 @@
 <template>
   <div>
-    <!-- <ImageWidget backgroundColor="#ffffff" /> -->
     <ShowList :shows="futureShows" />
 
-    <!-- This is bonafides -->
-    <ShowList :shows="bonafides" />
-
-    <!-- this is film fest -->
-    <WaveWrapperBasic2 :show="filmfest" bgcolor="723333" />
-
-    <!-- TODO: remove-->
-    <!-- <WaveWrapperBasic /> -->
 
     <NewsWidget :news="news" />
     <Membership :item="membership" :images="homeMemberImages" />
@@ -20,10 +11,7 @@
       :leftContent="whoWeAreLeftColumn"
       :rightContent="whoWeAreRightColumn"
     />
-    <BoardOfDirectors
-      :executives="boardExecutives"
-      :managers="boardManagers"
-    />
+    <BoardOfDirectors :executives="boardExecutives" :managers="boardManagers" />
 
     <div>
       <client-only>
@@ -51,7 +39,6 @@ import { sortShows } from "@/utils/sort.js";
 import { sortByDate } from "@/utils/sort.js";
 import { sortBoardMembers } from "@/utils/sort.js";
 
-
 export default {
   head() {
     return {
@@ -65,33 +52,43 @@ export default {
   },
 
   async asyncData({ $content, params }) {
-    const [shows, news, alerts, whoWeAreLeftColumn, whoWeAreRightColumn, boardExecutives, boardManagers, sponsorship, homeSponsorData, membership, amazonSmile, homeMemberImages, filmfest, bonafides] = await Promise.all(
-      [
-        $content("shows", params.slug).fetch(),
-        $content("news", params.slug).fetch(),
-        $content("alerts", params.slug).fetch(),
-        $content("home/who-we-are-left-column", params.slug).fetch(),
-        $content("home/who-we-are-right-column", params.slug).fetch(),
-        $content("data/board/executive-officers", params.slug).fetch(),
-        $content("data/board/department-managers", params.slug).fetch(),
-        $content("home/home-sponsorship", params.slug).fetch(),
-        $content("data/home/sponsor-logos", params.slug).fetch(),
-        $content("home/home-membership", params.slug).fetch(),
-        $content("home/home-amazon-smile", params.slug).fetch(),
-        $content("data/members/home-member-photos", params.slug).fetch(),
-        $content("filmfest/small-town-film-festival", params.slug).fetch(),
-        $content("bonafides", params.slug).fetch(),
-      ]
-    );
+    const [
+      shows,
+      news,
+      alerts,
+      whoWeAreLeftColumn,
+      whoWeAreRightColumn,
+      boardExecutives,
+      boardManagers,
+      sponsorship,
+      homeSponsorData,
+      membership,
+      amazonSmile,
+      homeMemberImages,
+  
+    ] = await Promise.all([
+      $content("shows", params.slug).fetch(),
+      $content("news", params.slug).fetch(),
+      $content("alerts", params.slug).fetch(),
+      $content("home/who-we-are-left-column", params.slug).fetch(),
+      $content("home/who-we-are-right-column", params.slug).fetch(),
+      $content("data/board/executive-officers", params.slug).fetch(),
+      $content("data/board/department-managers", params.slug).fetch(),
+      $content("home/home-sponsorship", params.slug).fetch(),
+      $content("data/home/sponsor-logos", params.slug).fetch(),
+      $content("home/home-membership", params.slug).fetch(),
+      $content("home/home-amazon-smile", params.slug).fetch(),
+      $content("data/members/home-member-photos", params.slug).fetch(),
+     
+     
+    ]);
 
-   
     let sortedExecutives = sortBoardMembers(boardExecutives.team);
     let sortedManagers = sortBoardMembers(boardManagers.team);
+    const { futureShows, pastShows } = sortShows(shows);
 
     let sortedNews = sortByDate(news).slice(0, 5);
     sortedNews.length = 3;
-    
-    const { futureShows, pastShows } = sortShows(shows);
 
     return {
       shows,
@@ -100,16 +97,16 @@ export default {
       alerts,
       whoWeAreLeftColumn,
       whoWeAreRightColumn,
-      boardExecutives: sortedExecutives, 
+      boardExecutives: sortedExecutives,
       boardManagers: sortedManagers,
       sponsorship,
       homeSponsorData,
       membership,
       amazonSmile,
       homeMemberImages,
-      filmfest, 
-      bonafides,
-    }
+     
+    
+    };
   },
 
   data() {
@@ -117,10 +114,9 @@ export default {
       futureShows: [],
       pastShows: [],
       boardExecutives: [],
-      boardManagers:[],
+      boardManagers: [],
     };
   },
-
 
   layout: "NewLayout",
   components: {
@@ -135,7 +131,7 @@ export default {
     DonateWidget,
     WaveWrapperBasic2,
     WaveShowNoInfo,
-}
+  },
 };
 </script>
 
